@@ -29,6 +29,7 @@
             text-align: center;
             color: #2c3e50;
             margin-bottom: 20px;
+            font-size: 1.5em; /* 移动端标题适配 */
         }
         /* 横向分类导航栏样式 */
         .category-nav {
@@ -76,7 +77,7 @@
             border-color: #3498db;
             box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
         }
-        /* 无结果提示样式 */
+        /* 无结果提示样式 - 强制移动端可见 */
         #noResult {
             display: none;
             text-align: center;
@@ -87,6 +88,7 @@
             border: 1px dashed #eee;
             border-radius: 8px;
             background: #fef9f9;
+            width: 100%; /* 移动端占满宽度 */
         }
         #wordRequest {
             width: 80%;
@@ -155,21 +157,40 @@
             color: #fd7e14;
             font-weight: bold;
         }
-        /* 手机适配 */
+        /* 手机适配 - 重点优化 */
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
+                width: 100%; /* 移动端占满屏幕 */
             }
             th, td {
                 padding: 8px;
                 font-size: 0.9em;
+                word-break: break-all; /* 防止内容溢出 */
             }
             .category-btn {
                 padding: 6px 12px;
                 font-size: 14px;
+                flex: 1; /* 按钮自适应宽度 */
+                min-width: 80px; /* 最小宽度，避免挤压 */
             }
             #wordRequest {
                 width: 90%;
+                max-width: 100%; /* 移动端取消最大宽度限制 */
+            }
+            #noResult {
+                font-size: 14px;
+                padding: 15px;
+                margin: 15px 0;
+                /* 强制显示层级，避免被遮挡 */
+                position: relative;
+                z-index: 10;
+            }
+            #searchInput {
+                width: 95%; /* 移动端搜索框更宽 */
+            }
+            h1 {
+                font-size: 1.2em; /* 进一步缩小标题，适配小屏 */
             }
         }
     </style>
@@ -273,7 +294,7 @@
             </table>
         </div>
 
-        <!-- 核心交互JS：分类切换+搜索+高亮+无结果提示+提交需求 -->
+        <!-- 核心交互JS：修复移动端无结果提示逻辑 -->
         <script>
             // 1. 分类切换功能
             const categoryBtns = document.querySelectorAll('.category-btn');
@@ -301,13 +322,16 @@
                 });
             });
 
-            // 2. 搜索+高亮+无结果提示功能
+            // 2. 搜索+高亮+无结果提示功能（修复移动端逻辑）
             document.getElementById('searchInput').addEventListener('input', function(e) {
                 const keyword = e.target.value.toLowerCase().trim();
                 // 获取当前激活的分类
                 const activeCategory = document.querySelector('.category-btn.active').dataset.category;
                 // 隐藏成功提示
                 document.getElementById('successTip').style.display = 'none';
+                
+                // 标记是否有匹配的行
+                let hasMatchedRow = false;
                 
                 // 遍历所有表格行
                 document.querySelectorAll('table tr').forEach(row => {
@@ -333,6 +357,7 @@
                     // 显示/隐藏行：在激活分类里 且 匹配关键词（关键词为空则只看分类）
                     if (isInActiveCategory && (keyword === '' || hasMatch)) {
                         row.style.display = '';
+                        hasMatchedRow = true; // 标记有匹配行
                         // 高亮关键词
                         if (keyword !== '' && hasMatch) {
                             row.querySelectorAll('td').forEach(td => {
@@ -346,53 +371,59 @@
                     }
                 });
 
-                // 检查是否有可见的单词行
-                const visibleRows = document.querySelectorAll('table tr:not([style*="display: none"]):not(:has(th))');
-                if (visibleRows.length === 0 && keyword !== '') {
+                // 修复：关键词非空 且 无匹配行时，显示无结果提示（移动端强制生效）
+                if (keyword !== '' && !hasMatchedRow) {
                     document.getElementById('noResult').style.display = 'block';
+                    // 移动端强制滚动到提示区域，避免看不见
+                    if (window.innerWidth <= 768) {
+                        document.getElementById('noResult').scrollIntoView({ behavior: 'smooth' });
+                    }
                 } else {
                     document.getElementById('noResult').style.display = 'none';
                 }
             });
 
-// 3. 提交单词需求功能（对接 Cloudflare Worker）
-document.getElementById('submitRequest').addEventListener('click', async function() {
-  const requestText = document.getElementById('wordRequest').value.trim();
-  if (!requestText) {
-    alert('请输入你想学习的单词～');
-    return;
-  }
-  try {
-    const res = await fetch('https://word-submit.feiyuan896.workers.dev/submit-word', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ word: requestText })
-    });
-    const data = await res.json();
-    if (data.msg === '提交成功') {
-      document.getElementById('successTip').style.display = 'block';
-      document.getElementById('wordRequest').value = '';
-    } else {
-      alert(data.msg);
-    }
-  } catch (err) {
-    alert('提交失败，请稍后再试');
-  }
-});
+            // 3. 提交单词需求功能（对接 Cloudflare Worker）
+            document.getElementById('submitRequest').addEventListener('click', async function() {
+              const requestText = document.getElementById('wordRequest').value.trim();
+              if (!requestText) {
+                alert('请输入你想学习的单词～');
+                return;
+              }
+              try {
+                const res = await fetch('https://word-submit.feiyuan896.workers.dev/submit-word', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ word: requestText })
+                });
+                const data = await res.json();
+                if (data.msg === '提交成功') {
+                  document.getElementById('successTip').style.display = 'block';
+                  document.getElementById('wordRequest').value = '';
+                } else {
+                  alert(data.msg);
+                }
+              } catch (err) {
+                alert('提交失败，请稍后再试');
+              }
+            });
+
+            // 页面初始化
             window.addEventListener('load', function() {
                 document.querySelector('.category-btn[data-category="all"]').click();
             });
+
             // 页面加载时自动记录访问（统计网站访问量）
-window.addEventListener('load', async function() {
-  try {
-    await fetch('https://word-submit.feiyuan896.workers.dev/log-visit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' }
-    });
-  } catch (err) {
-    console.log('访问记录失败', err); // 不影响网站正常使用
-  }
-});
+            window.addEventListener('load', async function() {
+              try {
+                await fetch('https://word-submit.feiyuan896.workers.dev/log-visit', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' }
+                });
+              } catch (err) {
+                console.log('访问记录失败', err); // 不影响网站正常使用
+              }
+            });
         </script>
     </div>
 </body>
