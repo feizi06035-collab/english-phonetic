@@ -76,6 +76,48 @@
             border-color: #3498db;
             box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
         }
+        /* 无结果提示样式 */
+        #noResult {
+            display: none;
+            text-align: center;
+            color: #e74c3c;
+            margin: 20px 0;
+            font-size: 16px;
+            padding: 20px;
+            border: 1px dashed #eee;
+            border-radius: 8px;
+            background: #fef9f9;
+        }
+        #wordRequest {
+            width: 80%;
+            max-width: 400px;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            resize: none;
+            font-size: 15px;
+            outline: none;
+        }
+        #submitRequest {
+            padding: 10px 25px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+        #submitRequest:hover {
+            background: #2980b9;
+        }
+        #successTip {
+            display: none;
+            color: #27ae60;
+            margin-top: 10px;
+            font-size: 14px;
+        }
         /* 单词分类容器（默认隐藏，除了全部） */
         .word-category {
             display: none;
@@ -126,6 +168,9 @@
                 padding: 6px 12px;
                 font-size: 14px;
             }
+            #wordRequest {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -149,6 +194,18 @@
                 id="searchInput"
                 placeholder="输入英文/中文/谐音来搜索单词..."
             >
+        </div>
+
+        <!-- 无搜索结果提示 + 单词需求提交 -->
+        <div id="noResult">
+            未找到匹配的单词 😞<br>
+            您可以试试搜索「你好/早上好/开心/红色/数字」等常用词，<br>
+            也可以告诉我您想学习的单词，我会尽快补充到网站里！
+            <br>
+            <textarea id="wordRequest" rows="3" placeholder="例如：不错、漂亮、吃饭..."></textarea>
+            <br>
+            <button id="submitRequest">提交需求</button>
+            <div id="successTip">提交成功！我会尽快补充这个单词～</div>
         </div>
 
         <!-- 全部分类（默认显示） -->
@@ -216,7 +273,7 @@
             </table>
         </div>
 
-        <!-- 核心交互JS：分类切换+搜索+高亮 -->
+        <!-- 核心交互JS：分类切换+搜索+高亮+无结果提示+提交需求 -->
         <script>
             // 1. 分类切换功能
             const categoryBtns = document.querySelectorAll('.category-btn');
@@ -244,11 +301,13 @@
                 });
             });
 
-            // 2. 搜索+高亮功能
+            // 2. 搜索+高亮+无结果提示功能
             document.getElementById('searchInput').addEventListener('input', function(e) {
                 const keyword = e.target.value.toLowerCase().trim();
                 // 获取当前激活的分类
                 const activeCategory = document.querySelector('.category-btn.active').dataset.category;
+                // 隐藏成功提示
+                document.getElementById('successTip').style.display = 'none';
                 
                 // 遍历所有表格行
                 document.querySelectorAll('table tr').forEach(row => {
@@ -286,9 +345,31 @@
                         row.style.display = 'none';
                     }
                 });
+
+                // 检查是否有可见的单词行
+                const visibleRows = document.querySelectorAll('table tr:not([style*="display: none"]):not(:has(th))');
+                if (visibleRows.length === 0 && keyword !== '') {
+                    document.getElementById('noResult').style.display = 'block';
+                } else {
+                    document.getElementById('noResult').style.display = 'none';
+                }
             });
 
-            // 3. 页面加载完成后自动触发“全部”按钮点击
+            // 3. 提交单词需求功能
+            document.getElementById('submitRequest').addEventListener('click', function() {
+                const requestText = document.getElementById('wordRequest').value.trim();
+                if (requestText === '') {
+                    alert('请输入你想学习的单词～');
+                    return;
+                }
+                // 显示成功提示
+                document.getElementById('successTip').style.display = 'block';
+                // 清空输入框
+                document.getElementById('wordRequest').value = '';
+                // （可选）如果想收集需求，可以在这里加代码把内容发送到你的邮箱/表单
+            });
+
+            // 4. 页面加载完成后自动触发“全部”按钮点击
             window.addEventListener('load', function() {
                 document.querySelector('.category-btn[data-category="all"]').click();
             });
