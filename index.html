@@ -114,6 +114,10 @@
         #submitRequest:hover {
             background: #2980b9;
         }
+        #submitRequest:disabled {
+            background: #95a5a6;
+            cursor: not-allowed;
+        }
         #successTip {
             display: none;
             color: #27ae60;
@@ -294,7 +298,7 @@
             </table>
         </div>
 
-        <!-- 核心交互JS：修复移动端无结果提示逻辑 -->
+        <!-- 核心交互JS：修复移动端无结果提示+提交失败 -->
         <script>
             // 1. 分类切换功能
             const categoryBtns = document.querySelectorAll('.category-btn');
@@ -383,29 +387,53 @@
                 }
             });
 
-            // 3. 提交单词需求功能（对接 Cloudflare Worker）
-            document.getElementById('submitRequest').addEventListener('click', async function() {
-              const requestText = document.getElementById('wordRequest').value.trim();
-              if (!requestText) {
-                alert('请输入你想学习的单词～');
-                return;
-              }
-              try {
-                const res = await fetch('https://word-submit.feiyuan896.workers.dev/submit-word', {
-                  method: 'POST',
-                  headers: { 'Content-Type': 'application/json' },
-                  body: JSON.stringify({ word: requestText })
-                });
-                const data = await res.json();
-                if (data.msg === '提交成功') {
-                  document.getElementById('successTip').style.display = 'block';
-                  document.getElementById('wordRequest').value = '';
-                } else {
-                  alert(data.msg);
+            // 3. 提交单词需求功能（修复手机端提交失败，兼容旧浏览器）
+            document.getElementById('submitRequest').addEventListener('click', function() {
+                const requestText = document.getElementById('wordRequest').value.trim();
+                if (!requestText) {
+                    alert('请输入你想学习的单词～');
+                    return;
                 }
-              } catch (err) {
-                alert('提交失败，请稍后再试');
-              }
+
+                // 按钮置灰，防止手机端重复提交
+                const btn = this;
+                btn.disabled = true;
+                btn.textContent = '提交中...';
+
+                // 用Promise写法，兼容手机端旧浏览器（替代async/await）
+                fetch('https://word-submit.feiyuan896.workers.dev/submit-word', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Origin': 'https://mzc0603.xyz' // 显式声明Origin，适配手机端严格CORS
+                    },
+                    body: JSON.stringify({ word: requestText })
+                })
+                .then(res => {
+                    if (!res.ok) throw new Error(`请求失败（状态码：${res.status}）`);
+                    return res.json();
+                })
+                .then(data => {
+                    if (data.msg === '提交成功') {
+                        document.getElementById('successTip').style.display = 'block';
+                        document.getElementById('wordRequest').value = '';
+                        // 3秒后自动隐藏成功提示
+                        setTimeout(() => {
+                            document.getElementById('successTip').style.display = 'none';
+                        }, 3000);
+                    } else {
+                        alert(data.msg || '提交失败，请稍后再试');
+                    }
+                })
+                .catch(err => {
+                    console.error('提交失败详情：', err);
+                    alert('手机端提交失败，请检查网络\n错误原因：' + err.message);
+                })
+                .finally(() => {
+                    // 恢复按钮状态
+                    btn.disabled = false;
+                    btn.textContent = '提交需求';
+                });
             });
 
             // 页面初始化
