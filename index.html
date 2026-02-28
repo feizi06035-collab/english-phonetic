@@ -217,82 +217,80 @@
         </div>
 
         <!-- 核心交互JS：分类切换+搜索+高亮 -->
-        <script>
-            // 1. 分类切换功能
-            const categoryBtns = document.querySelectorAll('.category-btn');
-            const wordCategories = document.querySelectorAll('.word-category');
-            
-            categoryBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    // 移除所有按钮的active状态
-                    categoryBtns.forEach(b => b.classList.remove('active'));
-                    // 给当前按钮加active
-                    this.classList.add('active');
-                    
-                    const targetCategory = this.dataset.category;
-                    // 移除所有分类的active状态
-                    wordCategories.forEach(cat => {
-                        cat.classList.remove('active');
-                        // 显示选中的分类（全部则显示所有）
-                        if (targetCategory === 'all' || cat.id === targetCategory) {
-                            cat.classList.add('active');
-                        }
-                    });
-                    
-                    // 切换分类后重新触发搜索
-                    document.getElementById('searchInput').dispatchEvent(new Event('input'));
-                });
-            });
+// 1. 分类切换功能
+const categoryBtns = document.querySelectorAll('.category-btn');
+const wordCategories = document.querySelectorAll('.word-category');
 
-            // 2. 搜索+高亮功能
-            document.getElementById('searchInput').addEventListener('input', function(e) {
-                const keyword = e.target.value.toLowerCase().trim();
-                // 获取当前激活的分类
-                const activeCategory = document.querySelector('.category-btn.active').dataset.category;
-                
-                // 遍历所有表格行
-                document.querySelectorAll('table tr').forEach(row => {
-                    // 跳过表头
-                    if (row.querySelector('th')) return;
-                    
-                    // 检查当前行所属的分类是否激活
-                    const rowCategory = row.closest('.word-category').id;
-                    const isInActiveCategory = activeCategory === 'all' || rowCategory === activeCategory;
-                    
-                    // 恢复原始文本
-                    row.querySelectorAll('td').forEach(td => {
-                        td.innerHTML = td.dataset.original || td.textContent;
-                        if (!td.dataset.original) {
-                            td.dataset.original = td.textContent;
-                        }
-                    });
-                    
-                    // 处理搜索逻辑
-                    const rowText = row.textContent.toLowerCase();
-                    const hasMatch = rowText.includes(keyword);
-                    
-                    // 显示/隐藏行：在激活分类里 且 匹配关键词（关键词为空则只看分类）
-                    if (isInActiveCategory && (keyword === '' || hasMatch)) {
-                        row.style.display = '';
-                        // 高亮关键词
-                        if (keyword !== '' && hasMatch) {
-                            row.querySelectorAll('td').forEach(td => {
-                                const text = td.dataset.original;
-                                const regex = new RegExp(`(${keyword})`, 'gi');
-                                td.innerHTML = text.replace(regex, '<span class="highlight">$1</span>');
-                            });
-                        }
-                    } else {
-                        row.style.display = 'none';
-                    }
-                });
-            });
-                });
-
-    // 页面加载完成后自动触发“全部”按钮点击
-    window.addEventListener('load', function() {
-      document.querySelector('.category-btn[data-category="all"]').click();
+categoryBtns.forEach(btn => {
+  btn.addEventListener('click', function() {
+    // 移除所有按钮的active状态
+    categoryBtns.forEach(b => b.classList.remove('active'));
+    // 给当前按钮加active
+    this.classList.add('active');
+    
+    const targetCategory = this.dataset.category;
+    // 移除所有分类的active状态
+    wordCategories.forEach(cat => {
+      cat.classList.remove('active');
+      // 显示选中的分类（全部则显示所有）
+      if (targetCategory === 'all' || cat.id === targetCategory) {
+        cat.classList.add('active');
+      }
     });
+    
+    // 切换分类后重新触发搜索
+    document.getElementById('searchInput').dispatchEvent(new Event('input'));
+  });
+});
+
+// 2. 搜索+高亮功能
+document.getElementById('searchInput').addEventListener('input', function(e) {
+  const keyword = e.target.value.toLowerCase().trim();
+  // 获取当前激活的分类
+  const activeCategory = document.querySelector('.category-btn.active').dataset.category;
+  
+  // 遍历所有表格行
+  document.querySelectorAll('table tr').forEach(row => {
+    // 跳过表头
+    if (row.querySelector('th')) return;
+    
+    // 检查当前行所属的分类是否激活
+    const rowCategory = row.closest('.word-category').id;
+    const isInActiveCategory = activeCategory === 'all' || rowCategory === activeCategory;
+    
+    // 恢复原始文本
+    row.querySelectorAll('td').forEach(td => {
+      td.innerHTML = td.dataset.original || td.textContent;
+      if (!td.dataset.original) {
+        td.dataset.original = td.textContent;
+      }
+    });
+    
+    // 处理搜索逻辑
+    const rowText = row.textContent.toLowerCase();
+    const hasMatch = rowText.includes(keyword);
+    
+    // 显示/隐藏行：在激活分类里 且 匹配关键词（关键词为空则只看分类）
+    if (isInActiveCategory && (keyword === '' || hasMatch)) {
+      row.style.display = '';
+      // 高亮关键词
+      if (keyword !== '' && hasMatch) {
+        row.querySelectorAll('td').forEach(td => {
+          const text = td.dataset.original;
+          const regex = new RegExp(`(${keyword})`, 'gi');
+          td.innerHTML = text.replace(regex, '<span class="highlight">$1</span>');
+        });
+      }
+    } else {
+      row.style.display = 'none';
+    }
+  });
+});
+
+// 3. 页面加载完成后自动触发“全部”按钮点击
+window.addEventListener('load', function() {
+  document.querySelector('.category-btn[data-category="all"]').click();
+});
         </script>
     </div>
 </body>
