@@ -13,8 +13,8 @@
     #loginBtn { padding: 10px 25px; background: #3498db; color: white; border: none; border-radius: 6px; cursor: pointer; margin-left: 10px; }
     #loginBtn:hover { background: #2980b9; }
 
-    /* 新增：统计面板样式 */
-    .stats-panel {
+    /* 统计面板样式 */
+    .stats-container {
       display: none;
       margin-bottom: 30px;
       padding: 20px;
@@ -45,12 +45,12 @@
       font-weight: bold;
       color: #3498db;
     }
-    .daily-chart {
-      margin-top: 20px;
-    }
-    .daily-chart h4 {
+    .stats-subtitle {
       color: #333;
-      margin-bottom: 10px;
+      margin: 15px 0 10px 0;
+      font-size: 16px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
     }
     .daily-item {
       display: flex;
@@ -59,7 +59,7 @@
       border-bottom: 1px solid #eee;
     }
 
-    /* 原有表格样式 */
+    /* 数据表格样式 */
     table { width: 100%; border-collapse: collapse; display: none; margin-top: 20px; }
     th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
     th { background: #f5f5f5; color: #333; }
@@ -74,30 +74,48 @@
       <button id="loginBtn" onclick="login()">登录查看</button>
     </div>
 
-    <!-- 新增：统计面板 -->
-    <div class="stats-panel" id="statsPanel">
-      <h3>数据统计</h3>
+    <!-- 统计面板（访问量+提交量） -->
+    <div class="stats-container" id="statsContainer">
+      <!-- 访问量统计 -->
+      <h3 class="stats-subtitle">网站访问量统计（独立访客）</h3>
+      <div class="stats-grid">
+        <div class="stats-card">
+          <h3>总访问人数</h3>
+          <div class="num" id="totalVisits">0</div>
+        </div>
+        <div class="stats-card">
+          <h3>今日访问人数</h3>
+          <div class="num" id="todayVisits">0</div>
+        </div>
+        <div class="stats-card">
+          <h3>本周访问人数</h3>
+          <div class="num" id="weekVisits">0</div>
+        </div>
+      </div>
+
+      <!-- 提交量统计 -->
+      <h3 class="stats-subtitle">单词提交量统计</h3>
       <div class="stats-grid">
         <div class="stats-card">
           <h3>总提交量</h3>
-          <div class="num" id="totalCount">0</div>
+          <div class="num" id="totalSubmit">0</div>
         </div>
         <div class="stats-card">
           <h3>今日提交量</h3>
-          <div class="num" id="todayCount">0</div>
+          <div class="num" id="todaySubmit">0</div>
         </div>
         <div class="stats-card">
           <h3>本周提交量</h3>
-          <div class="num" id="weekCount">0</div>
+          <div class="num" id="weekSubmit">0</div>
         </div>
       </div>
-      <div class="daily-chart">
-        <h4>近7天提交明细</h4>
-        <div id="dailyList"></div>
-      </div>
+
+      <!-- 近7天提交明细 -->
+      <h3 class="stats-subtitle">近7天提交明细</h3>
+      <div id="dailyList"></div>
     </div>
 
-    <!-- 原有数据表格 -->
+    <!-- 提交数据表格 -->
     <table id="dataTable">
       <tr><th>ID</th><th>想学习的单词</th><th>访客IP</th><th>提交时间</th></tr>
       <tbody id="requestList"></tbody>
@@ -105,9 +123,9 @@
   </div>
 
   <script>
-    let password = ''; // 存储登录密码，避免重复输入
+    let password = ''; // 存储登录密码
 
-    // 登录函数（整合统计+数据查询）
+    // 统一登录函数
     async function login() {
       password = document.getElementById('adminPwd').value;
       if (!password) {
@@ -115,16 +133,18 @@
         return;
       }
       
-      // 先获取统计数据
-      await getStats();
-      // 再获取所有提交数据
+      // 先获取访问量统计
+      await getVisitStats();
+      // 再获取提交量统计
+      await getSubmitStats();
+      // 最后获取提交数据列表
       await getRequests();
     }
 
-    // 新增：获取统计数据
-    async function getStats() {
+    // 1. 获取访问量统计（独立访客）
+    async function getVisitStats() {
       try {
-        const res = await fetch(`https://word-submit.feiyuan896.workers.dev/get-stats?password=${encodeURIComponent(password)}`);
+        const res = await fetch(`https://word-submit.feiyuan896.workers.dev/get-visit-stats?password=${encodeURIComponent(password)}`);
         if (res.status === 403) {
           alert('密码错误！');
           return;
@@ -132,13 +152,29 @@
         const data = await res.json();
         
         // 显示统计面板
-        document.getElementById('statsPanel').style.display = 'block';
-        // 更新统计数字
-        document.getElementById('totalCount').textContent = data.total;
-        document.getElementById('todayCount').textContent = data.today;
-        document.getElementById('weekCount').textContent = data.week;
+        document.getElementById('statsContainer').style.display = 'block';
+        // 更新访问量数据
+        document.getElementById('totalVisits').textContent = data.total_visits;
+        document.getElementById('todayVisits').textContent = data.today_visits;
+        document.getElementById('weekVisits').textContent = data.week_visits;
+      } catch (err) {
+        alert('获取访问量数据失败！');
+        console.log(err);
+      }
+    }
 
-        // 渲染近7天明细
+    // 2. 获取提交量统计
+    async function getSubmitStats() {
+      try {
+        const res = await fetch(`https://word-submit.feiyuan896.workers.dev/get-stats?password=${encodeURIComponent(password)}`);
+        const data = await res.json();
+        
+        // 更新提交量数据
+        document.getElementById('totalSubmit').textContent = data.total;
+        document.getElementById('todaySubmit').textContent = data.today;
+        document.getElementById('weekSubmit').textContent = data.week;
+
+        // 渲染近7天提交明细
         const dailyList = document.getElementById('dailyList');
         dailyList.innerHTML = '';
         if (data.daily.length === 0) {
@@ -150,17 +186,17 @@
           div.className = 'daily-item';
           div.innerHTML = `
             <span>${item.date_str}</span>
-            <span>${item.count} 次</span>
+            <span>${item.count} 次提交</span>
           `;
           dailyList.appendChild(div);
         });
       } catch (err) {
-        alert('获取统计数据失败！');
+        alert('获取提交量数据失败！');
         console.log(err);
       }
     }
 
-    // 原有：获取所有提交数据
+    // 3. 获取所有提交数据列表
     async function getRequests() {
       try {
         const res = await fetch(`https://word-submit.feiyuan896.workers.dev/get-requests?password=${encodeURIComponent(password)}`);
