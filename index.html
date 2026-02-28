@@ -355,21 +355,30 @@
                 }
             });
 
-            // 3. 提交单词需求功能
-            document.getElementById('submitRequest').addEventListener('click', function() {
-                const requestText = document.getElementById('wordRequest').value.trim();
-                if (requestText === '') {
-                    alert('请输入你想学习的单词～');
-                    return;
-                }
-                // 显示成功提示
-                document.getElementById('successTip').style.display = 'block';
-                // 清空输入框
-                document.getElementById('wordRequest').value = '';
-                // （可选）如果想收集需求，可以在这里加代码把内容发送到你的邮箱/表单
-            });
-
-            // 4. 页面加载完成后自动触发“全部”按钮点击
+// 3. 提交单词需求功能（对接 Cloudflare Worker）
+document.getElementById('submitRequest').addEventListener('click', async function() {
+  const requestText = document.getElementById('wordRequest').value.trim();
+  if (!requestText) {
+    alert('请输入你想学习的单词～');
+    return;
+  }
+  try {
+    const res = await fetch('https://word-submit.feiyuan896.workers.dev/submit-word', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ word: requestText })
+    });
+    const data = await res.json();
+    if (data.msg === '提交成功') {
+      document.getElementById('successTip').style.display = 'block';
+      document.getElementById('wordRequest').value = '';
+    } else {
+      alert(data.msg);
+    }
+  } catch (err) {
+    alert('提交失败，请稍后再试');
+  }
+});
             window.addEventListener('load', function() {
                 document.querySelector('.category-btn[data-category="all"]').click();
             });
