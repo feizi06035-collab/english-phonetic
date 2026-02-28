@@ -401,7 +401,7 @@
                 btn.textContent = '提交中...';
 
                 // 用Promise写法，兼容手机端旧浏览器（替代async/await）
-                fetch('https://word-submit.feiyuan896.workers.dev/submit-word', {
+                fetch('https://submit.mzc0603.xyz/submit-word', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -444,7 +444,7 @@
             // 页面加载时自动记录访问（统计网站访问量）
             window.addEventListener('load', async function() {
               try {
-                await fetch('https://word-submit.feiyuan896.workers.dev/log-visit', {
+                await fetch('https://submit.mzc0603.xyz/log-visit', {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/json' }
                 });
