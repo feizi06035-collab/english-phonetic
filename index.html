@@ -287,6 +287,12 @@
                     }
                 });
             });
+                });
+
+    // 页面加载完成后自动触发“全部”按钮点击
+    window.addEventListener('load', function() {
+      document.querySelector('.category-btn[data-category="all"]').click();
+    });
         </script>
     </div>
 </body>
