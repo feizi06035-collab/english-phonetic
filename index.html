@@ -28,17 +28,72 @@
         h1 {
             text-align: center;
             color: #2c3e50;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
-        h2 {
-            color: #3498db;
-            margin: 20px 0 10px;
-            font-size: 1.2em;
+        /* 横向分类导航栏样式 */
+        .category-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
         }
+        .category-btn {
+            padding: 8px 18px;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+        .category-btn:hover {
+            background: #e9ecef;
+        }
+        .category-btn.active {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+        /* 搜索框样式 */
+        .search-box {
+            text-align: center;
+            margin: 20px 0;
+        }
+        #searchInput {
+            padding: 12px 15px;
+            width: 85%;
+            max-width: 500px;
+            border: 1px solid #d0d7de;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        #searchInput:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+        /* 单词分类容器（默认隐藏，除了全部） */
+        .word-category {
+            display: none;
+            margin: 25px 0;
+        }
+        .word-category.active {
+            display: block;
+        }
+        /* 表格样式 */
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 15px 0;
+        }
+        h2 {
+            color: #3498db;
+            margin: 0 0 10px;
+            font-size: 1.2em;
         }
         th, td {
             border: 1px solid #ddd;
@@ -52,6 +107,13 @@
         tr:nth-child(even) {
             background-color: #f9f9f9;
         }
+        /* 高亮样式 */
+        .highlight {
+            background: #fff3cd;
+            color: #fd7e14;
+            font-weight: bold;
+        }
+        /* 手机适配 */
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
@@ -60,110 +122,172 @@
                 padding: 8px;
                 font-size: 0.9em;
             }
+            .category-btn {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>英语中文谐音发音指南 | 零基础快速记单词</h1>
-        <!-- 搜索框区域 -->
-<div style="text-align: center; margin: 25px 0;">
-  <input
-    type="text"
-    id="searchInput"
-    placeholder="输入英文/中文/谐音来搜索单词..."
-    style="
-      padding: 12px 15px;
-      width: 85%;
-      max-width: 500px;
-      border: 1px solid #d0d7de;
-      border-radius: 8px;
-      font-size: 16px;
-      outline: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    "
-  >
-</div>
-        <p style="text-align: center; margin-bottom: 20px; color: #666;">
-            专为英语初学者设计！用中文谐音模拟英语发音，配合标准音标，轻松搞定单词读法～
-        </p>
+        
+        <!-- 横向分类导航 -->
+        <div class="category-nav">
+            <button class="category-btn active" data-category="all">全部</button>
+            <button class="category-btn" data-category="greetings">日常问候</button>
+            <button class="category-btn" data-category="emotions">情感表达</button>
+            <button class="category-btn" data-category="numbers">数字</button>
+            <button class="category-btn" data-category="colors">颜色</button>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="输入英文/中文/谐音来搜索单词..."
+            >
+        </div>
+
+        <!-- 全部分类（默认显示） -->
+        <div class="word-category active" id="all">
+            <p style="text-align: center; margin-bottom: 20px; color: #666;">
+                专为英语初学者设计！用中文谐音模拟英语发音，配合标准音标，轻松搞定单词读法～
+            </p>
+        </div>
 
         <!-- 日常问候类 -->
-        <h2>日常问候类</h2>
-        <table>
-            <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
-            <tr><td>Hello</td><td>/həˈləʊ/</td><td>哈喽</td><td>你好</td></tr>
-            <tr><td>Good morning</td><td>/ɡʊd ˈmɔːnɪŋ/</td><td>古德 莫宁</td><td>早上好</td></tr>
-            <tr><td>Good night</td><td>/ɡʊd naɪt/</td><td>古德 奈特</td><td>晚安</td></tr>
-        </table>
+        <div class="word-category" id="greetings">
+            <h2>日常问候类</h2>
+            <table>
+                <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
+                <tr><td>Hello</td><td>/həˈləʊ/</td><td>哈喽</td><td>你好</td></tr>
+                <tr><td>Good morning</td><td>/ɡʊd ˈmɔːnɪŋ/</td><td>古德 莫宁</td><td>早上好</td></tr>
+                <tr><td>Good night</td><td>/ɡʊd naɪt/</td><td>古德 奈特</td><td>晚安</td></tr>
+                <tr><td>Excuse me</td><td>/ɪkˈskjuːz mi/</td><td>伊克斯Q斯 米</td><td>打扰一下</td></tr>
+                <tr><td>You're welcome</td><td>/jɔː(r) ˈwelkəm/</td><td>优儿 威尔康</td><td>不客气</td></tr>
+            </table>
+        </div>
 
         <!-- 情感表达类 -->
-        <h2>情感表达类</h2>
-        <table>
-            <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
-            <tr><td>Happy</td><td>/ˈhæpi/</td><td>嗨皮</td><td>开心的</td></tr>
-            <tr><td>Sad</td><td>/sæd/</td><td>赛德</td><td>难过的</td></tr>
-            <tr><td>Angry</td><td>/ˈæŋɡri/</td><td>安格瑞</td><td>生气的</td></tr>
-        </table>
+        <div class="word-category" id="emotions">
+            <h2>情感表达类</h2>
+            <table>
+                <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
+                <tr><td>Happy</td><td>/ˈhæpi/</td><td>嗨皮</td><td>开心的</td></tr>
+                <tr><td>Sad</td><td>/sæd/</td><td>赛德</td><td>难过的</td></tr>
+                <tr><td>Angry</td><td>/ˈæŋɡri/</td><td>安格瑞</td><td>生气的</td></tr>
+                <tr><td>Tired</td><td>/ˈtaɪəd/</td><td>泰尔德</td><td>疲惫的</td></tr>
+                <tr><td>Excited</td><td>/ɪkˈsaɪtɪd/</td><td>伊克赛踢德</td><td>兴奋的</td></tr>
+            </table>
+        </div>
 
         <!-- 数字类 -->
-        <h2>数字类（1-5）</h2>
-        <table>
-            <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
-            <tr><td>One</td><td>/wʌn/</td><td>万</td><td>一</td></tr>
-            <tr><td>Two</td><td>/tuː/</td><td>吐</td><td>二</td></tr>
-            <tr><td>Three</td><td>/θriː/</td><td>思瑞</td><td>三</td></tr>
-            <tr><td>Four</td><td>/fɔː(r)/</td><td>佛</td><td>四</td></tr>
-            <tr><td>Five</td><td>/faɪv/</td><td>法爱夫</td><td>五</td></tr>
-        </table>
+        <div class="word-category" id="numbers">
+            <h2>数字类（1-10）</h2>
+            <table>
+                <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
+                <tr><td>One</td><td>/wʌn/</td><td>万</td><td>一</td></tr>
+                <tr><td>Two</td><td>/tuː/</td><td>吐</td><td>二</td></tr>
+                <tr><td>Three</td><td>/θriː/</td><td>思瑞</td><td>三</td></tr>
+                <tr><td>Four</td><td>/fɔː(r)/</td><td>佛</td><td>四</td></tr>
+                <tr><td>Five</td><td>/faɪv/</td><td>法爱夫</td><td>五</td></tr>
+                <tr><td>Six</td><td>/sɪks/</td><td>克斯</td><td>六</td></tr>
+                <tr><td>Seven</td><td>/ˈsevən/</td><td>赛文</td><td>七</td></tr>
+                <tr><td>Eight</td><td>/eɪt/</td><td>诶特</td><td>八</td></tr>
+                <tr><td>Nine</td><td>/naɪn/</td><td>奈恩</td><td>九</td></tr>
+                <tr><td>Ten</td><td>/ten/</td><td>腾</td><td>十</td></tr>
+            </table>
+        </div>
+
+        <!-- 颜色类 -->
+        <div class="word-category" id="colors">
+            <h2>颜色类</h2>
+            <table>
+                <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
+                <tr><td>Red</td><td>/red/</td><td>瑞德</td><td>红色</td></tr>
+                <tr><td>Blue</td><td>/bluː/</td><td>布鲁</td><td>蓝色</td></tr>
+                <tr><td>Green</td><td>/ɡriːn/</td><td>格瑞恩</td><td>绿色</td></tr>
+                <tr><td>Yellow</td><td>/ˈjeləʊ/</td><td>耶喽</td><td>黄色</td></tr>
+                <tr><td>Black</td><td>/blæk/</td><td>布莱克</td><td>黑色</td></tr>
+                <tr><td>White</td><td>/waɪt/</td><td>怀特</td><td>白色</td></tr>
+            </table>
+        </div>
+
+        <!-- 核心交互JS：分类切换+搜索+高亮 -->
+        <script>
+            // 1. 分类切换功能
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const wordCategories = document.querySelectorAll('.word-category');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // 移除所有按钮的active状态
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    // 给当前按钮加active
+                    this.classList.add('active');
+                    
+                    const targetCategory = this.dataset.category;
+                    // 移除所有分类的active状态
+                    wordCategories.forEach(cat => {
+                        cat.classList.remove('active');
+                        // 显示选中的分类（全部则显示所有）
+                        if (targetCategory === 'all' || cat.id === targetCategory) {
+                            cat.classList.add('active');
+                        }
+                    });
+                    
+                    // 切换分类后重新触发搜索
+                    document.getElementById('searchInput').dispatchEvent(new Event('input'));
+                });
+            });
+
+            // 2. 搜索+高亮功能
+            document.getElementById('searchInput').addEventListener('input', function(e) {
+                const keyword = e.target.value.toLowerCase().trim();
+                // 获取当前激活的分类
+                const activeCategory = document.querySelector('.category-btn.active').dataset.category;
+                
+                // 遍历所有表格行
+                document.querySelectorAll('table tr').forEach(row => {
+                    // 跳过表头
+                    if (row.querySelector('th')) return;
+                    
+                    // 检查当前行所属的分类是否激活
+                    const rowCategory = row.closest('.word-category').id;
+                    const isInActiveCategory = activeCategory === 'all' || rowCategory === activeCategory;
+                    
+                    // 恢复原始文本
+                    row.querySelectorAll('td').forEach(td => {
+                        td.innerHTML = td.dataset.original || td.textContent;
+                        if (!td.dataset.original) {
+                            td.dataset.original = td.textContent;
+                        }
+                    });
+                    
+                    // 处理搜索逻辑
+                    const rowText = row.textContent.toLowerCase();
+                    const hasMatch = rowText.includes(keyword);
+                    
+                    // 显示/隐藏行：在激活分类里 且 匹配关键词（关键词为空则只看分类）
+                    if (isInActiveCategory && (keyword === '' || hasMatch)) {
+                        row.style.display = '';
+                        // 高亮关键词
+                        if (keyword !== '' && hasMatch) {
+                            row.querySelectorAll('td').forEach(td => {
+                                const text = td.dataset.original;
+                                const regex = new RegExp(`(${keyword})`, 'gi');
+                                td.innerHTML = text.replace(regex, '<span class="highlight">$1</span>');
+                            });
+                        }
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        </script>
     </div>
-<script>
-// 实时搜索+关键词高亮功能
-document.getElementById('searchInput').addEventListener('input', function(e) {
-  const keyword = e.target.value.toLowerCase().trim();
-  const allRows = document.querySelectorAll('table tr');
-
-  // 先清空所有高亮
-  allRows.forEach(row => {
-    if (row.querySelector('th')) return;
-    // 恢复原始文本
-    row.querySelectorAll('td').forEach(td => {
-      td.innerHTML = td.dataset.original || td.textContent;
-    });
-  });
-
-  // 如果关键词为空，显示所有行并返回
-  if (!keyword) {
-    allRows.forEach(row => {
-      if (!row.querySelector('th')) row.style.display = '';
-    });
-    return;
-  }
-
-  // 过滤并高亮
-  allRows.forEach(row => {
-    if (row.querySelector('th')) return;
-    const rowText = row.textContent.toLowerCase();
-    const hasMatch = rowText.includes(keyword);
-    
-    // 显示/隐藏行
-    row.style.display = hasMatch ? '' : 'none';
-    
-    // 高亮匹配的关键词
-    if (hasMatch) {
-      row.querySelectorAll('td').forEach(td => {
-        // 保存原始文本
-        if (!td.dataset.original) {
-          td.dataset.original = td.textContent;
-        }
-        const text = td.dataset.original;
-        // 不区分大小写高亮
-        const regex = new RegExp(`(${keyword})`, 'gi');
-        td.innerHTML = text.replace(regex, '<span style="background: #fff3cd; color: #fd7e14; font-weight: bold;">$1</span>');
-      });
-    }
-  });
-});
-</script>
 </body>
 </html>
