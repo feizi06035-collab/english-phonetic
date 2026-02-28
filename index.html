@@ -382,6 +382,17 @@ document.getElementById('submitRequest').addEventListener('click', async functio
             window.addEventListener('load', function() {
                 document.querySelector('.category-btn[data-category="all"]').click();
             });
+            // 页面加载时自动记录访问（统计网站访问量）
+window.addEventListener('load', async function() {
+  try {
+    await fetch('https://word-submit.feiyuan896.workers.dev/log-visit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' }
+    });
+  } catch (err) {
+    console.log('访问记录失败', err); // 不影响网站正常使用
+  }
+});
         </script>
     </div>
 </body>
