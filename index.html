@@ -117,16 +117,51 @@
             <tr><td>Five</td><td>/faɪv/</td><td>法爱夫</td><td>五</td></tr>
         </table>
     </div>
-    <script>
-// 实时搜索功能
+<script>
+// 实时搜索+关键词高亮功能
 document.getElementById('searchInput').addEventListener('input', function(e) {
   const keyword = e.target.value.toLowerCase().trim();
   const allRows = document.querySelectorAll('table tr');
 
+  // 先清空所有高亮
+  allRows.forEach(row => {
+    if (row.querySelector('th')) return;
+    // 恢复原始文本
+    row.querySelectorAll('td').forEach(td => {
+      td.innerHTML = td.dataset.original || td.textContent;
+    });
+  });
+
+  // 如果关键词为空，显示所有行并返回
+  if (!keyword) {
+    allRows.forEach(row => {
+      if (!row.querySelector('th')) row.style.display = '';
+    });
+    return;
+  }
+
+  // 过滤并高亮
   allRows.forEach(row => {
     if (row.querySelector('th')) return;
     const rowText = row.textContent.toLowerCase();
-    row.style.display = rowText.includes(keyword) ? '' : 'none';
+    const hasMatch = rowText.includes(keyword);
+    
+    // 显示/隐藏行
+    row.style.display = hasMatch ? '' : 'none';
+    
+    // 高亮匹配的关键词
+    if (hasMatch) {
+      row.querySelectorAll('td').forEach(td => {
+        // 保存原始文本
+        if (!td.dataset.original) {
+          td.dataset.original = td.textContent;
+        }
+        const text = td.dataset.original;
+        // 不区分大小写高亮
+        const regex = new RegExp(`(${keyword})`, 'gi');
+        td.innerHTML = text.replace(regex, '<span style="background: #fff3cd; color: #fd7e14; font-weight: bold;">$1</span>');
+      });
+    }
   });
 });
 </script>
