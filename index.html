@@ -66,6 +66,24 @@
 <body>
     <div class="container">
         <h1>英语中文谐音发音指南 | 零基础快速记单词</h1>
+        <!-- 搜索框区域 -->
+<div style="text-align: center; margin: 25px 0;">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="输入英文/中文/谐音来搜索单词..."
+    style="
+      padding: 12px 15px;
+      width: 85%;
+      max-width: 500px;
+      border: 1px solid #d0d7de;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    "
+  >
+</div>
         <p style="text-align: center; margin-bottom: 20px; color: #666;">
             专为英语初学者设计！用中文谐音模拟英语发音，配合标准音标，轻松搞定单词读法～
         </p>
@@ -99,5 +117,18 @@
             <tr><td>Five</td><td>/faɪv/</td><td>法爱夫</td><td>五</td></tr>
         </table>
     </div>
+    <script>
+// 实时搜索功能
+document.getElementById('searchInput').addEventListener('input', function(e) {
+  const keyword = e.target.value.toLowerCase().trim();
+  const allRows = document.querySelectorAll('table tr');
+
+  allRows.forEach(row => {
+    if (row.querySelector('th')) return;
+    const rowText = row.textContent.toLowerCase();
+    row.style.display = rowText.includes(keyword) ? '' : 'none';
+  });
+});
+</script>
 </body>
 </html>
