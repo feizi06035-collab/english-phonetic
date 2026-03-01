@@ -7030,6 +7030,9 @@
 
             // 初始化
             window.addEventListener('load', function() {
+                // 强制滚动到顶部
+                window.scrollTo(0, 0);
+                
                 // 初始化分页状态
                 initPaginationState();
                 
@@ -7057,6 +7060,11 @@
                     }
                 });
                 
+                // 再次确保滚动到顶部
+                setTimeout(() => {
+                    window.scrollTo(0, 0);
+                }, 100);
+                
                 try {
                     fetch('https://submit.mzc0603.xyz/log-visit', {
                         method: 'POST',
@@ -7066,6 +7074,11 @@
                     console.log('访问记录失败', err);
                 }
             });
+            
+            // 防止浏览器记住滚动位置
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+            }
         </script>
 
         <!-- 夜间模式JS（单独的script标签） -->
