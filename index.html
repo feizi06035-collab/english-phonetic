@@ -7047,8 +7047,15 @@
                     renderPagedContent(categoryId);
                 });
                 
-                // 触发分类点击以显示全部
-                document.querySelector('.category-btn[data-category="all"]').click();
+                // 设置默认分类为全部，但不触发点击（避免滚动）
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                document.querySelector('.category-btn[data-category="all"]').classList.add('active');
+                wordCategories.forEach(cat => {
+                    cat.classList.remove('active');
+                    if (cat.id === 'all') {
+                        cat.classList.add('active');
+                    }
+                });
                 
                 try {
                     fetch('https://submit.mzc0603.xyz/log-visit', {
