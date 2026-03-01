@@ -246,6 +246,13 @@
             <input type="text" id="searchInput" placeholder="输入英文/中文/谐音来搜索单词...">
         </div>
 
+        <!-- 夜间模式按钮（放到搜索框下方，位置更合理） -->
+        <div style="text-align:center; margin:15px 0;">
+            <button id="darkModeBtn" style="padding:8px 16px; border-radius:6px; border:none; background:#3498db; color:white; cursor:pointer;">
+                夜间模式
+            </button>
+        </div>
+
         <!-- 无结果提示 -->
         <div id="noResult">
             未找到匹配的单词 😞<br>
@@ -640,25 +647,20 @@
                     console.log('访问记录失败', err);
                 }
             });
-            <!-- 夜间模式按钮 -->
-<div style="text-align:center; margin:15px 0;">
-  <button id="darkModeBtn" style="padding:8px 16px; border-radius:6px; border:none; background:#3498db; color:white; cursor:pointer;">
-    夜间模式
-  </button>
-</div>
+        </script>
 
-<script>
-// 夜间模式切换
-const darkBtn = document.getElementById('darkModeBtn');
-darkBtn.addEventListener('click', function() {
-  document.body.classList.toggle('dark-mode');
-  if(document.body.classList.contains('dark-mode')) {
-    this.textContent = '日间模式';
-  } else {
-    this.textContent = '夜间模式';
-  }
-});
-</script>
+        <!-- 夜间模式JS（单独的script标签） -->
+        <script>
+            // 夜间模式切换
+            const darkBtn = document.getElementById('darkModeBtn');
+            darkBtn.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                if(document.body.classList.contains('dark-mode')) {
+                    this.textContent = '日间模式';
+                } else {
+                    this.textContent = '夜间模式';
+                }
+            });
         </script>
     </div>
 </body>
