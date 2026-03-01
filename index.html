@@ -258,6 +258,8 @@
             <button class="category-btn" data-category="family">家人称呼</button>
             <button class="category-btn" data-category="time">时间常用</button>
             <button class="category-btn" data-category="food">食物基础</button>
+            <!-- 新增：常用语句导航按钮 -->
+<button class="category-btn" data-category="sentences">常用语句</button>
         </div>
 
         <!-- 搜索框 -->
@@ -521,6 +523,23 @@
                 <tr><td><button class="sound-btn" onclick="playSound('Cake')">Cake</button></td><td>/keɪk/</td><td>凯克</td><td>蛋糕</td></tr>
             </table>
         </div>
+        <!-- 新增：常用语句分类内容板块 -->
+<div class="word-category" id="sentences">
+    <h2>常用语句类 | Common Sentences</h2>
+    <table>
+        <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
+        <tr><td><button class="sound-btn" onclick="playSound('How much is it')">How much is it?</button></td><td>/haʊ mʌtʃ ɪz ɪt/</td><td>豪 马奇 伊兹 伊特</td><td>这个多少钱？</td></tr>
+        <tr><td><button class="sound-btn" onclick="playSound('Where is the bathroom')">Where is the bathroom?</button></td><td>/weə(r) ɪz ðə ˈbɑːθruːm/</td><td>威尔 伊兹 泽 巴斯入木</td><td>洗手间在哪里？</td></tr>
+        <tr><td><button class="sound-btn" onclick="playSound('I dont understand')">I don't understand.</button></td><td>/aɪ dəʊnt ˌʌndəˈstænd/</td><td>爱 东特 安德斯坦德</td><td>我不明白。</td></tr>
+        <tr><td><button class="sound-btn" onclick="playSound('Could you help me')">Could you help me?</button></td><td>/kʊd juː help miː/</td><td>库德 优 海尔普 米</td><td>你能帮我吗？</td></tr>
+        <tr><td><button class="sound-btn" onclick="playSound('What time is it')">What time is it?</button></td><td>/wɒt taɪm ɪz ɪt/</td><td>沃特 太木 伊兹 伊特</td><td>现在几点了？</td></tr>
+        <tr><td><button class="sound-btn" onclick="playSound('Ill have a coffee')">I'll have a coffee.</button></td><td>/aɪl hæv ə ˈkɒfi/</td><td>爱欧 哈夫 额 考菲</td><td>我要一杯咖啡。</td></tr>
+        <tr><td><button class="sound-btn" onclick="playSound('Nice to meet you')">Nice to meet you.</button></td><td>/naɪs tuː miːt juː/</td><td>奈斯 图 米特 优</td><td>很高兴认识你。</td></tr>
+        <tr><td><button class="sound-btn" onclick="playSound('See you tomorrow')">See you tomorrow.</button></td><td>/siː juː təˈmɒrəʊ/</td><td>西 优 特猫肉</td><td>明天见。</td></tr>
+        <tr><td><button class="sound-btn" onclick="playSound('Im lost')">I'm lost.</button></td><td>/aɪm lɒst/</td><td>爱姆 劳斯特</td><td>我迷路了。</td></tr>
+        <tr><td><button class="sound-btn" onclick="playSound('Thank you very much')">Thank you very much.</button></td><td>/θæŋk juː ˈveri mʌtʃ/</td><td>三克油 外瑞 马奇</td><td>非常感谢你。</td></tr>
+    </table>
+</div>
 
         <!-- 核心JS -->
         <script>
