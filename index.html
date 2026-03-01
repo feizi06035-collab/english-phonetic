@@ -328,6 +328,31 @@
                 <tr><td><button class="sound-btn" onclick="playSound('Have a nice day')">Have a nice day</button></td><td>/hæv ə naɪs deɪ/</td><td>哈夫 额 奈斯 得</td><td>祝你今天愉快</td></tr>
                 <tr><td><button class="sound-btn" onclick="playSound('Congratulations')">Congratulations</button></td><td>/kənˌɡrætʃuˈleɪʃnz/</td><td>康格瑞丘雷申兹</td><td>恭喜</td></tr>
             </table>
+            <!-- 分页按钮区域 -->
+<div class="pagination" style="text-align:center; margin:25px 0; display:flex; gap:10px; justify-content:center; align-items:center; flex-wrap:wrap;">
+    <button id="prevPage" class="page-btn" disabled style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">上一页</button>
+    <span id="pageInfo" style="padding:8px 12px; font-size:14px; color:#666;">第 1 页 / 共 1 页</span>
+    <button id="nextPage" class="page-btn" style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">下一页</button>
+</div>
+
+<style>
+    .page-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    .page-btn:hover:not(:disabled) {
+        background: #e9ecef;
+    }
+    /* 夜间模式适配 */
+    .dark-mode .page-btn {
+        background: #2d2d2d;
+        border-color: #555;
+        color: #eee;
+    }
+    .dark-mode .page-btn:hover:not(:disabled) {
+        background: #383838;
+    }
+</style>
         </div>
 
         <!-- 情感表达类 -->
@@ -357,6 +382,31 @@
                 <tr><td><button class="sound-btn" onclick="playSound('Hopeful')">Hopeful</button></td><td>/ˈhəʊpfl/</td><td>霍普福</td><td>充满希望的</td></tr>
                 <tr><td><button class="sound-btn" onclick="playSound('Hopeless')">Hopeless</button></td><td>/ˈhəʊpləs/</td><td>霍普勒斯</td><td>绝望的、无望的</td></tr>
             </table>
+            <!-- 分页按钮区域 -->
+<div class="pagination" style="text-align:center; margin:25px 0; display:flex; gap:10px; justify-content:center; align-items:center; flex-wrap:wrap;">
+    <button id="prevPage" class="page-btn" disabled style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">上一页</button>
+    <span id="pageInfo" style="padding:8px 12px; font-size:14px; color:#666;">第 1 页 / 共 1 页</span>
+    <button id="nextPage" class="page-btn" style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">下一页</button>
+</div>
+
+<style>
+    .page-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    .page-btn:hover:not(:disabled) {
+        background: #e9ecef;
+    }
+    /* 夜间模式适配 */
+    .dark-mode .page-btn {
+        background: #2d2d2d;
+        border-color: #555;
+        color: #eee;
+    }
+    .dark-mode .page-btn:hover:not(:disabled) {
+        background: #383838;
+    }
+</style>
         </div>
 
         <!-- 数字类 -->
@@ -395,6 +445,31 @@
                 <tr><td><button class="sound-btn" onclick="playSound('Thousand')">Thousand</button></td><td>/ˈθaʊznd/</td><td>骚怎的</td><td>千</td></tr>
                 <tr><td><button class="sound-btn" onclick="playSound('Ten thousand')">Ten thousand</button></td><td>/ten ˈθaʊznd/</td><td>腾 骚怎的</td><td>万</td></tr>
             </table>
+            <!-- 分页按钮区域 -->
+<div class="pagination" style="text-align:center; margin:25px 0; display:flex; gap:10px; justify-content:center; align-items:center; flex-wrap:wrap;">
+    <button id="prevPage" class="page-btn" disabled style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">上一页</button>
+    <span id="pageInfo" style="padding:8px 12px; font-size:14px; color:#666;">第 1 页 / 共 1 页</span>
+    <button id="nextPage" class="page-btn" style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">下一页</button>
+</div>
+
+<style>
+    .page-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    .page-btn:hover:not(:disabled) {
+        background: #e9ecef;
+    }
+    /* 夜间模式适配 */
+    .dark-mode .page-btn {
+        background: #2d2d2d;
+        border-color: #555;
+        color: #eee;
+    }
+    .dark-mode .page-btn:hover:not(:disabled) {
+        background: #383838;
+    }
+</style>
         </div>
 
         <!-- 颜色类 -->
@@ -421,7 +496,32 @@
                 <tr><td><button class="sound-btn" onclick="playSound('Turquoise')">Turquoise</button></td><td>/ˈtɜːkwɔɪz/</td><td>特阔伊兹</td><td>青绿色、绿松石色</td></tr>
                 <tr><td><button class="sound-btn" onclick="playSound('Magenta')">Magenta</button></td><td>/məˈdʒentə/</td><td>麦金塔</td><td>品红色、洋红色</td></tr>
                 <tr><td><button class="sound-btn" onclick="playSound('Cyan')">Cyan</button></td><td>/ˈsaɪən/</td><td>赛安</td><td>青色、蓝绿色</td></tr>
-            </table>
+            </table
+                <!-- 分页按钮区域 -->
+<div class="pagination" style="text-align:center; margin:25px 0; display:flex; gap:10px; justify-content:center; align-items:center; flex-wrap:wrap;">
+    <button id="prevPage" class="page-btn" disabled style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">上一页</button>
+    <span id="pageInfo" style="padding:8px 12px; font-size:14px; color:#666;">第 1 页 / 共 1 页</span>
+    <button id="nextPage" class="page-btn" style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">下一页</button>
+</div>
+
+<style>
+    .page-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    .page-btn:hover:not(:disabled) {
+        background: #e9ecef;
+    }
+    /* 夜间模式适配 */
+    .dark-mode .page-btn {
+        background: #2d2d2d;
+        border-color: #555;
+        color: #eee;
+    }
+    .dark-mode .page-btn:hover:not(:disabled) {
+        background: #383838;
+    }
+</style>
         </div>
 
         <!-- 家人称呼类 -->
@@ -455,6 +555,31 @@
                 <tr><td><button class="sound-btn" onclick="playSound('Stepdaughter')">Stepdaughter</button></td><td>/ˈstepdɔːtə(r)/</td><td>斯戴普多特</td><td>继女</td></tr>
                 <tr><td><button class="sound-btn" onclick="playSound('Godfather')">Godfather</button></td><td>/ˈɡɒdfɑːðə(r)/</td><td>高德法泽</td><td>教父</td></tr>
             </table>
+            <!-- 分页按钮区域 -->
+<div class="pagination" style="text-align:center; margin:25px 0; display:flex; gap:10px; justify-content:center; align-items:center; flex-wrap:wrap;">
+    <button id="prevPage" class="page-btn" disabled style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">上一页</button>
+    <span id="pageInfo" style="padding:8px 12px; font-size:14px; color:#666;">第 1 页 / 共 1 页</span>
+    <button id="nextPage" class="page-btn" style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">下一页</button>
+</div>
+
+<style>
+    .page-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    .page-btn:hover:not(:disabled) {
+        background: #e9ecef;
+    }
+    /* 夜间模式适配 */
+    .dark-mode .page-btn {
+        background: #2d2d2d;
+        border-color: #555;
+        color: #eee;
+    }
+    .dark-mode .page-btn:hover:not(:disabled) {
+        background: #383838;
+    }
+</style>
         </div>
 
         <!-- 时间常用类 -->
@@ -488,6 +613,31 @@
                 <tr><td><button class="sound-btn" onclick="playSound('Weekend')">Weekend</button></td><td>/ˌwiːkˈend/</td><td>维克恩德</td><td>周末</td></tr>
                 <tr><td><button class="sound-btn" onclick="playSound('Holiday')">Holiday</button></td><td>/ˈhɒlədeɪ/</td><td>霍拉得</td><td>假期、假日</td></tr>
             </table>
+            <!-- 分页按钮区域 -->
+<div class="pagination" style="text-align:center; margin:25px 0; display:flex; gap:10px; justify-content:center; align-items:center; flex-wrap:wrap;">
+    <button id="prevPage" class="page-btn" disabled style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">上一页</button>
+    <span id="pageInfo" style="padding:8px 12px; font-size:14px; color:#666;">第 1 页 / 共 1 页</span>
+    <button id="nextPage" class="page-btn" style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">下一页</button>
+</div>
+
+<style>
+    .page-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    .page-btn:hover:not(:disabled) {
+        background: #e9ecef;
+    }
+    /* 夜间模式适配 */
+    .dark-mode .page-btn {
+        background: #2d2d2d;
+        border-color: #555;
+        color: #eee;
+    }
+    .dark-mode .page-btn:hover:not(:disabled) {
+        background: #383838;
+    }
+</style>
         </div>
 
         <!-- 食物基础类 -->
@@ -521,6 +671,31 @@
                 <tr><td><button class="sound-btn" onclick="playSound('Chocolate')">Chocolate</button></td><td>/ˈtʃɒklət/</td><td>乔克莱特</td><td>巧克力</td></tr>
                 <tr><td><button class="sound-btn" onclick="playSound('Cake')">Cake</button></td><td>/keɪk/</td><td>凯克</td><td>蛋糕</td></tr>
             </table>
+            <!-- 分页按钮区域 -->
+<div class="pagination" style="text-align:center; margin:25px 0; display:flex; gap:10px; justify-content:center; align-items:center; flex-wrap:wrap;">
+    <button id="prevPage" class="page-btn" disabled style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">上一页</button>
+    <span id="pageInfo" style="padding:8px 12px; font-size:14px; color:#666;">第 1 页 / 共 1 页</span>
+    <button id="nextPage" class="page-btn" style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">下一页</button>
+</div>
+
+<style>
+    .page-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    .page-btn:hover:not(:disabled) {
+        background: #e9ecef;
+    }
+    /* 夜间模式适配 */
+    .dark-mode .page-btn {
+        background: #2d2d2d;
+        border-color: #555;
+        color: #eee;
+    }
+    .dark-mode .page-btn:hover:not(:disabled) {
+        background: #383838;
+    }
+</style>
         </div>
         <!-- 新增：常用语句分类内容板块 -->
 <div class="word-category" id="sentences">
@@ -6604,6 +6779,31 @@
         <tr><td><button class="sound-btn" onclick="playSound('Im lost')">I'm lost.</button></td><td>/aɪm lɒst/</td><td>爱姆 劳斯特</td><td>我迷路了。</td></tr>
         <tr><td><button class="sound-btn" onclick="playSound('Thank you very much')">Thank you very much.</button></td><td>/θæŋk juː ˈveri mʌtʃ/</td><td>三克油 外瑞 马奇</td><td>非常感谢你。</td></tr>
     </table>
+    <!-- 分页按钮区域 -->
+<div class="pagination" style="text-align:center; margin:25px 0; display:flex; gap:10px; justify-content:center; align-items:center; flex-wrap:wrap;">
+    <button id="prevPage" class="page-btn" disabled style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">上一页</button>
+    <span id="pageInfo" style="padding:8px 12px; font-size:14px; color:#666;">第 1 页 / 共 1 页</span>
+    <button id="nextPage" class="page-btn" style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">下一页</button>
+</div>
+
+<style>
+    .page-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    .page-btn:hover:not(:disabled) {
+        background: #e9ecef;
+    }
+    /* 夜间模式适配 */
+    .dark-mode .page-btn {
+        background: #2d2d2d;
+        border-color: #555;
+        color: #eee;
+    }
+    .dark-mode .page-btn:hover:not(:disabled) {
+        background: #383838;
+    }
+</style>
 </div>
 
         <!-- 核心JS -->
@@ -6765,6 +6965,31 @@
                 }
             });
         </script>
+        <!-- 分页按钮区域 -->
+<div class="pagination" style="text-align:center; margin:25px 0; display:flex; gap:10px; justify-content:center; align-items:center; flex-wrap:wrap;">
+    <button id="prevPage" class="page-btn" disabled style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">上一页</button>
+    <span id="pageInfo" style="padding:8px 12px; font-size:14px; color:#666;">第 1 页 / 共 1 页</span>
+    <button id="nextPage" class="page-btn" style="padding:8px 16px; border:1px solid #ddd; border-radius:6px; background:#f8f9fa; cursor:pointer;">下一页</button>
+</div>
+
+<style>
+    .page-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    .page-btn:hover:not(:disabled) {
+        background: #e9ecef;
+    }
+    /* 夜间模式适配 */
+    .dark-mode .page-btn {
+        background: #2d2d2d;
+        border-color: #555;
+        color: #eee;
+    }
+    .dark-mode .page-btn:hover:not(:disabled) {
+        background: #383838;
+    }
+</style>
     </div>
     <div id="gotop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
 
@@ -6773,6 +6998,89 @@
         window.addEventListener('scroll',()=>{
             g.style.opacity = window.scrollY>300 ? 1 : 0;
         });
+        <script>
+// 分页配置
+let currentPage = 1;
+const itemsPerPage = 20; // 每页20个
+let currentVisibleRows = [];
+
+// 初始化分页
+function initPagination() {
+    updateVisibleRows();
+    renderCurrentPage();
+}
+
+// 更新当前可见行（分类+搜索结果）
+function updateVisibleRows() {
+    const activeCategory = document.querySelector('.category-btn.active').dataset.category;
+    currentVisibleRows = Array.from(document.querySelectorAll('table tr')).filter(row => {
+        if (row.querySelector('th')) return false;
+        const rowCategory = row.closest('.word-category')?.id;
+        const isInCategory = activeCategory === 'all' || rowCategory === activeCategory;
+        return isInCategory && row.style.display !== 'none';
+    });
+    currentPage = 1;
+}
+
+// 渲染当前页
+function renderCurrentPage() {
+    const totalRows = currentVisibleRows.length;
+    const totalPages = Math.ceil(totalRows / itemsPerPage);
+    const start = (currentPage - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+
+    // 隐藏所有非表头行
+    document.querySelectorAll('table tr').forEach(row => {
+        if (!row.querySelector('th')) row.style.display = 'none';
+    });
+
+    // 显示当前页行
+    currentVisibleRows.slice(start, end).forEach(row => {
+        row.style.display = '';
+    });
+
+    // 更新分页信息
+    document.getElementById('pageInfo').textContent = `第 ${currentPage} 页 / 共 ${totalPages || 1} 页`;
+    document.getElementById('prevPage').disabled = currentPage === 1;
+    document.getElementById('nextPage').disabled = currentPage >= totalPages || totalPages === 0;
+}
+
+// 上一页
+document.getElementById('prevPage').addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        renderCurrentPage();
+    }
+});
+
+// 下一页
+document.getElementById('nextPage').addEventListener('click', () => {
+    const totalPages = Math.ceil(currentVisibleRows.length / itemsPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        renderCurrentPage();
+    }
+});
+
+// 监听分类切换
+document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        updateVisibleRows();
+        renderCurrentPage();
+    });
+});
+
+// 监听搜索
+document.getElementById('searchInput').addEventListener('input', () => {
+    setTimeout(() => {
+        updateVisibleRows();
+        renderCurrentPage();
+    }, 0);
+});
+
+// 页面加载初始化
+window.addEventListener('load', initPagination);
+</script>
     </script>
 </body>
 </html>
