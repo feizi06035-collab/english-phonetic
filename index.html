@@ -7,6 +7,25 @@
     <meta name="description" content="用中文谐音轻松学英语！零基础也能快速掌握日常英语单词发音，包含音标、谐音和中文释义，免费适合初学者。">
     <meta name="keywords" content="英语谐音, 英语发音, 零基础学英语, 英语单词谐音, 英语音标, English Phonetic Guide">
     <style>
+        /* 夜间模式 */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #eee;
+}
+.dark-mode .container {
+  background: #2d2d2d;
+  color: #eee;
+}
+.dark-mode table {
+  background: #2d2d2d;
+  color: #eee;
+}
+.dark-mode td, .dark-mode th {
+  border-color: #555;
+}
+.dark-mode tr:nth-child(even) {
+  background: #383838;
+}
         * {
             margin: 0;
             padding: 0;
@@ -621,6 +640,25 @@
                     console.log('访问记录失败', err);
                 }
             });
+            <!-- 夜间模式按钮 -->
+<div style="text-align:center; margin:15px 0;">
+  <button id="darkModeBtn" style="padding:8px 16px; border-radius:6px; border:none; background:#3498db; color:white; cursor:pointer;">
+    夜间模式
+  </button>
+</div>
+
+<script>
+// 夜间模式切换
+const darkBtn = document.getElementById('darkModeBtn');
+darkBtn.addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+  if(document.body.classList.contains('dark-mode')) {
+    this.textContent = '日间模式';
+  } else {
+    this.textContent = '夜间模式';
+  }
+});
+</script>
         </script>
     </div>
 </body>
