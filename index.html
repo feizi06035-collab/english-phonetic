@@ -33,24 +33,30 @@
             font-size: 1.5em; /* 移动端标题适配 */
         }
         /* 横向分类导航栏样式 */
-        .category-nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            margin: 20px 0;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
-        }
-        .category-btn {
-            padding: 8px 18px;
-            background: #f8f9fa;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 15px;
-            transition: all 0.2s;
-        }
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.category-btn {
+  padding: 6px 12px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.category-btn.active {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
         .category-btn:hover {
             background: #e9ecef;
         }
@@ -206,17 +212,20 @@
         <h1>英语中文谐音发音指南 | English Phonetic Guide | 零基础快速记单词</h1>
         
         <!-- 横向分类导航 -->
-        <div class="category-nav">
-            <button class="category-btn active" data-category="all">全部</button>
-            <button class="category-btn" data-category="greetings">日常问候</button>
-            <button class="category-btn" data-category="emotions">情感表达</button>
-            <button class="category-btn" data-category="numbers">数字</button>
-            <button class="category-btn" data-category="colors">颜色</button>
-            <!-- 原有导航按钮：<button class="category-btn" data-category="colors">颜色</button> -->
-<button class="category-btn" data-category="family">家人称呼</button>
-<button class="category-btn" data-category="time">时间常用</button>
-<button class="category-btn" data-category="food">食物基础</button>
-        </div>
+<!-- 第一行：核心分类 -->
+<div class="category-nav">
+  <button class="category-btn active" data-category="all">全部</button>
+  <button class="category-btn" data-category="greetings">日常问候</button>
+  <button class="category-btn" data-category="emotions">情感表达</button>
+  <button class="category-btn" data-category="numbers">数字</button>
+  <button class="category-btn" data-category="colors">颜色</button>
+</div>
+<!-- 第二行：生活场景分类 -->
+<div class="category-nav">
+  <button class="category-btn" data-category="family">家人称呼</button>
+  <button class="category-btn" data-category="time">时间常用</button>
+  <button class="category-btn" data-category="food">食物基础</button>
+</div>
 
         <!-- 搜索框 -->
         <div class="search-box">
