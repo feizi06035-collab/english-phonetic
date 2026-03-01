@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 新增英文标注的标题（SEO+用户体验双优化） -->
     <title>英语中文谐音发音指南 | English Phonetic Guide | 零基础学英语发音 | 快速记单词</title>
     <meta name="description" content="用中文谐音轻松学英语！零基础也能快速掌握日常英语单词发音，包含音标、谐音和中文释义，免费适合初学者。">
     <meta name="keywords" content="英语谐音, 英语发音, 零基础学英语, 英语单词谐音, 英语音标, English Phonetic Guide">
@@ -30,33 +29,27 @@
             text-align: center;
             color: #2c3e50;
             margin-bottom: 20px;
-            font-size: 1.5em; /* 移动端标题适配 */
+            font-size: 1.5em;
         }
-        /* 横向分类导航栏样式 */
-.category-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-  margin: 15px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-.category-btn {
-  padding: 6px 12px;
-  background: #f8f9fa;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.2s;
-  white-space: nowrap;
-}
-.category-btn.active {
-  background: #3498db;
-  color: white;
-  border-color: #3498db;
-}
+        .category-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin: 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .category-btn {
+            padding: 6px 12px;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
         .category-btn:hover {
             background: #e9ecef;
         }
@@ -65,7 +58,6 @@
             color: white;
             border-color: #3498db;
         }
-        /* 搜索框样式 */
         .search-box {
             text-align: center;
             margin: 20px 0;
@@ -84,7 +76,6 @@
             border-color: #3498db;
             box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
         }
-        /* 无结果提示样式 - 强制移动端可见 */
         #noResult {
             display: none;
             text-align: center;
@@ -95,7 +86,7 @@
             border: 1px dashed #eee;
             border-radius: 8px;
             background: #fef9f9;
-            width: 100%; /* 移动端占满宽度 */
+            width: 100%;
         }
         #wordRequest {
             width: 80%;
@@ -131,7 +122,6 @@
             margin-top: 10px;
             font-size: 14px;
         }
-        /* 单词分类容器（默认隐藏，除了全部） */
         .word-category {
             display: none;
             margin: 25px 0;
@@ -139,7 +129,6 @@
         .word-category.active {
             display: block;
         }
-        /* 表格样式 */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -162,81 +151,83 @@
         tr:nth-child(even) {
             background-color: #f9f9f9;
         }
-        /* 高亮样式 */
         .highlight {
             background: #fff3cd;
             color: #fd7e14;
             font-weight: bold;
         }
-        /* 手机适配 - 重点优化 */
+        /* 发音按钮样式 */
+        .sound-btn {
+            border: none;
+            background: transparent;
+            color: #007bff;
+            cursor: pointer;
+            font-size: inherit;
+            padding: 0;
+        }
+        .sound-btn:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
-                width: 100%; /* 移动端占满屏幕 */
+                width: 100%;
             }
             th, td {
                 padding: 8px;
                 font-size: 0.9em;
-                word-break: break-all; /* 防止内容溢出 */
+                word-break: break-all;
             }
             .category-btn {
                 padding: 6px 12px;
                 font-size: 14px;
-                flex: 1; /* 按钮自适应宽度 */
-                min-width: 80px; /* 最小宽度，避免挤压 */
+                flex: 1;
+                min-width: 80px;
             }
             #wordRequest {
                 width: 90%;
-                max-width: 100%; /* 移动端取消最大宽度限制 */
+                max-width: 100%;
             }
             #noResult {
                 font-size: 14px;
                 padding: 15px;
                 margin: 15px 0;
-                /* 强制显示层级，避免被遮挡 */
                 position: relative;
                 z-index: 10;
             }
             #searchInput {
-                width: 95%; /* 移动端搜索框更宽 */
+                width: 95%;
             }
             h1 {
-                font-size: 1.2em; /* 进一步缩小标题，适配小屏 */
+                font-size: 1.2em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 新增英文标注的页面大标题 -->
         <h1>英语中文谐音发音指南 | English Phonetic Guide | 零基础快速记单词</h1>
         
-        <!-- 横向分类导航 -->
-<!-- 第一行：核心分类 -->
-<div class="category-nav">
-  <button class="category-btn active" data-category="all">全部</button>
-  <button class="category-btn" data-category="greetings">日常问候</button>
-  <button class="category-btn" data-category="emotions">情感表达</button>
-  <button class="category-btn" data-category="numbers">数字</button>
-  <button class="category-btn" data-category="colors">颜色</button>
-</div>
-<!-- 第二行：生活场景分类 -->
-<div class="category-nav">
-  <button class="category-btn" data-category="family">家人称呼</button>
-  <button class="category-btn" data-category="time">时间常用</button>
-  <button class="category-btn" data-category="food">食物基础</button>
-</div>
+        <!-- 导航栏 -->
+        <div class="category-nav">
+            <button class="category-btn active" data-category="all">全部</button>
+            <button class="category-btn" data-category="greetings">日常问候</button>
+            <button class="category-btn" data-category="emotions">情感表达</button>
+            <button class="category-btn" data-category="numbers">数字</button>
+            <button class="category-btn" data-category="colors">颜色</button>
+        </div>
+        <div class="category-nav">
+            <button class="category-btn" data-category="family">家人称呼</button>
+            <button class="category-btn" data-category="time">时间常用</button>
+            <button class="category-btn" data-category="food">食物基础</button>
+        </div>
 
         <!-- 搜索框 -->
         <div class="search-box">
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="输入英文/中文/谐音来搜索单词..."
-            >
+            <input type="text" id="searchInput" placeholder="输入英文/中文/谐音来搜索单词...">
         </div>
 
-        <!-- 无搜索结果提示 + 单词需求提交 -->
+        <!-- 无结果提示 -->
         <div id="noResult">
             未找到匹配的单词 😞<br>
             您可以试试搜索「你好/早上好/开心/红色/数字」等常用词，<br>
@@ -248,7 +239,7 @@
             <div id="successTip">提交成功！我会尽快补充这个单词～</div>
         </div>
 
-        <!-- 全部分类（默认显示） -->
+        <!-- 全部 -->
         <div class="word-category active" id="all">
             <p style="text-align: center; margin-bottom: 20px; color: #666;">
                 专为英语初学者设计！用中文谐音模拟英语发音，配合标准音标，轻松搞定单词读法～
@@ -259,54 +250,37 @@
         <div class="word-category" id="greetings">
             <h2>日常问候类 | Daily Greetings</h2>
             <table>
-                <!-- 直接粘贴到原有日常问候表格最后一行之后 -->
-<tr>
-  <td><button onclick="playSound('Hi')" style="border: none; background: transparent; color: #007bff; cursor: pointer;">Hi</button></td>
-  <td>/haɪ/</td>
-  <td>嗨</td>
-  <td>嗨（非正式问候）</td>
-</tr>
-<tr><td>How are you</td><td>/haʊ ɑː(r) juː/</td><td>豪 啊 优</td><td>你好吗</td></tr>
-<tr><td>How do you do</td><td>/haʊ duː juː duː/</td><td>豪 杜 优 杜</td><td>你好（初次见面）</td></tr>
-<tr><td>Good afternoon</td><td>/ɡʊd ˌɑːftəˈnuːn/</td><td>古德 阿福特努恩</td><td>下午好</td></tr>
-<tr><td>Good evening</td><td>/ɡʊd ˈiːvnɪŋ/</td><td>古德 伊文宁</td><td>晚上好</td></tr>
-<tr><td>Long time no see</td><td>/lɒŋ taɪm nəʊ siː/</td><td>朗 太木 诺 西</td><td>好久不见</td></tr>
-<tr><td>Nice to meet you</td><td>/naɪs tuː miːt juː/</td><td>奈斯 图 米特 优</td><td>很高兴见到你</td></tr>
-<tr><td>How are you doing</td><td>/haʊ ɑː(r) juː ˈduːɪŋ/</td><td>豪 啊 优 杜英</td><td>你最近怎么样</td></tr>
-<tr><td>What's up</td><td>/wɒts ʌp/</td><td>沃茨 阿普</td><td>最近咋样（口语）</td></tr>
-<tr><td>How's it going</td><td>/haʊz ɪt ˈɡəʊɪŋ/</td><td>豪兹 伊特 勾英</td><td>一切还好吗</td></tr>
-<tr><td>I'm fine</td><td>/aɪm faɪn/</td><td>爱姆 凡恩</td><td>我很好</td></tr>
-<tr><td>Very well</td><td>/ˈveri wel/</td><td>外瑞 威尔</td><td>非常好</td></tr>
-<tr><td>Not bad</td><td>/nɒt bæd/</td><td>诺特 拜德</td><td>还不错</td></tr>
-<tr><td>Just so so</td><td>/dʒʌst səʊ səʊ/</td><td>贾斯特 嗦 嗦</td><td>一般般</td></tr>
-<tr><td>Great</td><td>/ɡreɪt/</td><td>格瑞特</td><td>很棒</td></tr>
-<tr><td>Goodbye</td><td>/ˌɡʊdˈbaɪ/</td><td>古德拜</td><td>再见</td></tr>
-<tr><td>See you later</td><td>/siː juː ˈleɪtə/</td><td>西 优 雷特</td><td>回头见</td></tr>
-<tr><td>Take care</td><td>/teɪk keə/</td><td>泰克 凯尔</td><td>保重</td></tr>
-<tr><td>Have a nice day</td><td>/hæv ə naɪs deɪ/</td><td>哈夫 额 奈斯 得</td><td>祝你今天愉快</td></tr>
-<tr><td>Congratulations</td><td>/kənˌɡrætʃuˈleɪʃnz/</td><td>康格瑞丘雷申兹</td><td>恭喜</td></tr>
                 <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
-                <tr><td>Hello</td><td>/həˈləʊ/</td><td>哈喽</td><td>你好</td></tr>
-                <tr><td>Good morning</td><td>/ɡʊd ˈmɔːnɪŋ/</td><td>古德 莫宁</td><td>早上好</td></tr>
-                <tr><td>Good night</td><td>/ɡʊd naɪt/</td><td>古德 奈特</td><td>晚安</td></tr>
-                <tr><td>Excuse me</td><td>/ɪkˈskjuːz mi/</td><td>伊克斯Q斯 米</td><td>打扰一下</td></tr>
-                <tr><td>You're welcome</td><td>/jɔː(r) ˈwelkəm/</td><td>优儿 威尔康</td><td>不客气</td></tr>
-                <!-- 原有行：<tr><td>You're welcome</td><td>/jɔː(r) ˈwelkəm/</td><td>优儿 威尔康</td><td>不客气</td></tr> -->
-<tr><td>Sorry</td><td>/ˈsɒri/</td><td>索里</td><td>对不起</td></tr>
-<tr><td>Please</td><td>/pliːz/</td><td>普利斯</td><td>请</td></tr>
-<tr><td>Thank you</td><td>/θæŋk juː/</td><td>三克油</td><td>谢谢你</td></tr>
-<tr><td>Bye</td><td>/baɪ/</td><td>拜</td><td>再见</td></tr>
-<tr><td>See you</td><td>/siː juː/</td><td>西优</td><td>再见</td></tr>
-                <tr><td>Hi</td><td>/haɪ/</td><td>嗨</td><td>嗨（非正式问候）</td></tr>
-<tr><td>How are you</td><td>/haʊ ɑː(r) juː/</td><td>豪 啊 优</td><td>你好吗</td></tr>
-<tr><td>How do you do</td><td>/haʊ duː juː duː/</td><td>豪 杜 优 杜</td><td>你好（初次见面）</td></tr>
-<tr><td>Good afternoon</td><td>/ɡʊd ˌɑːftəˈnuːn/</td><td>古德 阿福特努恩</td><td>下午好</td></tr>
-<tr><td>Good evening</td><td>/ɡʊd ˈiːvnɪŋ/</td><td>古德 伊文宁</td><td>晚上好</td></tr>
-<tr><td>Long time no see</td><td>/lɒŋ taɪm nəʊ siː/</td><td>朗 太木 诺 西</td><td>好久不见</td></tr>
-<tr><td>Nice to meet you</td><td>/naɪs tuː miːt juː/</td><td>奈斯 图 米特 优</td><td>很高兴见到你</td></tr>
-<tr><td>How are you doing</td><td>/haʊ ɑː(r) juː ˈduːɪŋ/</td><td>豪 啊 优 杜英</td><td>你最近怎么样</td></tr>
-<tr><td>What's up</td><td>/wɒts ʌp/</td><td>沃茨 阿普</td><td>最近咋样（口语）</td></tr>
-<tr><td>How's it going</td><td>/haʊz ɪt ˈɡəʊɪŋ/</td><td>豪兹 伊特 勾英</td><td>一切还好吗</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Hello')">Hello</button></td><td>/həˈləʊ/</td><td>哈喽</td><td>你好</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Good morning')">Good morning</button></td><td>/ɡʊd ˈmɔːnɪŋ/</td><td>古德 莫宁</td><td>早上好</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Good night')">Good night</button></td><td>/ɡʊd naɪt/</td><td>古德 奈特</td><td>晚安</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Excuse me')">Excuse me</button></td><td>/ɪkˈskjuːz mi/</td><td>伊克斯Q斯 米</td><td>打扰一下</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Youre welcome')">You're welcome</button></td><td>/jɔː(r) ˈwelkəm/</td><td>优儿 威尔康</td><td>不客气</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Sorry')">Sorry</button></td><td>/ˈsɒri/</td><td>索里</td><td>对不起</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Please')">Please</button></td><td>/pliːz/</td><td>普利斯</td><td>请</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Thank you')">Thank you</button></td><td>/θæŋk juː/</td><td>三克油</td><td>谢谢你</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Bye')">Bye</button></td><td>/baɪ/</td><td>拜</td><td>再见</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('See you')">See you</button></td><td>/siː juː/</td><td>西优</td><td>再见</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Hi')">Hi</button></td><td>/haɪ/</td><td>嗨</td><td>嗨（非正式问候）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('How are you')">How are you</button></td><td>/haʊ ɑː(r) juː/</td><td>豪 啊 优</td><td>你好吗</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('How do you do')">How do you do</button></td><td>/haʊ duː juː duː/</td><td>豪 杜 优 杜</td><td>你好（初次见面）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Good afternoon')">Good afternoon</button></td><td>/ɡʊd ˌɑːftəˈnuːn/</td><td>古德 阿福特努恩</td><td>下午好</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Good evening')">Good evening</button></td><td>/ɡʊd ˈiːvnɪŋ/</td><td>古德 伊文宁</td><td>晚上好</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Long time no see')">Long time no see</button></td><td>/lɒŋ taɪm nəʊ siː/</td><td>朗 太木 诺 西</td><td>好久不见</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Nice to meet you')">Nice to meet you</button></td><td>/naɪs tuː miːt juː/</td><td>奈斯 图 米特 优</td><td>很高兴见到你</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('How are you doing')">How are you doing</button></td><td>/haʊ ɑː(r) juː ˈduːɪŋ/</td><td>豪 啊 优 杜英</td><td>你最近怎么样</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Whats up')">What's up</button></td><td>/wɒts ʌp/</td><td>沃茨 阿普</td><td>最近咋样（口语）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Hows it going')">How's it going</button></td><td>/haʊz ɪt ˈɡəʊɪŋ/</td><td>豪兹 伊特 勾英</td><td>一切还好吗</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Im fine')">I'm fine</button></td><td>/aɪm faɪn/</td><td>爱姆 凡恩</td><td>我很好</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Very well')">Very well</button></td><td>/ˈveri wel/</td><td>外瑞 威尔</td><td>非常好</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Not bad')">Not bad</button></td><td>/nɒt bæd/</td><td>诺特 拜德</td><td>还不错</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Just so so')">Just so so</button></td><td>/dʒʌst səʊ səʊ/</td><td>贾斯特 嗦 嗦</td><td>一般般</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Great')">Great</button></td><td>/ɡreɪt/</td><td>格瑞特</td><td>很棒</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Goodbye')">Goodbye</button></td><td>/ˌɡʊdˈbaɪ/</td><td>古德拜</td><td>再见</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('See you later')">See you later</button></td><td>/siː juː ˈleɪtə/</td><td>西 优 雷特</td><td>回头见</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Take care')">Take care</button></td><td>/teɪk keə/</td><td>泰克 凯尔</td><td>保重</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Have a nice day')">Have a nice day</button></td><td>/hæv ə naɪs deɪ/</td><td>哈夫 额 奈斯 得</td><td>祝你今天愉快</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Congratulations')">Congratulations</button></td><td>/kənˌɡrætʃuˈleɪʃnz/</td><td>康格瑞丘雷申兹</td><td>恭喜</td></tr>
             </table>
         </div>
 
@@ -314,251 +288,231 @@
         <div class="word-category" id="emotions">
             <h2>情感表达类 | Emotional Expressions</h2>
             <table>
-                <!-- 直接粘贴到原有情感表达表格最后一行之后 -->
-<tr><td>Glad</td><td>/ɡlæd/</td><td>格拉德</td><td>高兴的、乐意的</td></tr>
-<tr><td>Excited</td><td>/ɪkˈsaɪtɪd/</td><td>伊克赛踢德</td><td>兴奋的</td></tr>
-<tr><td>Surprised</td><td>/sə(r)ˈpraɪzd/</td><td>斯普莱兹德</td><td>惊讶的</td></tr>
-<tr><td>Disappointed</td><td>/ˌdɪsəˈpɔɪntɪd/</td><td>迪萨波因踢德</td><td>失望的</td></tr>
-<tr><td>Worried</td><td>/ˈwʌrid/</td><td>沃瑞德</td><td>担心的、焦虑的</td></tr>
-<tr><td>Nervous</td><td>/ˈnɜːvəs/</td><td>讷沃斯</td><td>紧张的</td></tr>
-<tr><td>Scared</td><td>/skeəd/</td><td>斯凯德</td><td>害怕的</td></tr>
-<tr><td>Angry</td><td>/ˈæŋɡri/</td><td>安格瑞</td><td>生气的</td></tr>
-<tr><td>Frustrated</td><td>/frʌˈstreɪtɪd/</td><td>弗瑞斯特瑞踢德</td><td>沮丧的、受挫的</td></tr>
-<tr><td>Sad</td><td>/sæd/</td><td>赛德</td><td>难过的</td></tr>
-<tr><td>Happy</td><td>/ˈhæpi/</td><td>嗨皮</td><td>开心的</td></tr>
-<tr><td>Calm</td><td>/kɑːm/</td><td>卡姆</td><td>平静的、冷静的</td></tr>
-<tr><td>Relaxed</td><td>/rɪˈlækst/</td><td>瑞莱克斯德</td><td>放松的</td></tr>
-<tr><td>Proud</td><td>/praʊd/</td><td>普劳德</td><td>自豪的</td></tr>
-<tr><td>Jealous</td><td>/ˈdʒeləs/</td><td>杰拉斯</td><td>嫉妒的</td></tr>
-<tr><td>Embarrassed</td><td>/ɪmˈbærəst/</td><td>因拜瑞斯特</td><td>尴尬的</td></tr>
-<tr><td>Lonely</td><td>/ˈləʊnli/</td><td>罗尼</td><td>孤独的</td></tr>
-<tr><td>Content</td><td>/kənˈtent/</td><td>肯坦特</td><td>满足的、满意的</td></tr>
-<tr><td>Hopeful</td><td>/ˈhəʊpfl/</td><td>霍普福</td><td>充满希望的</td></tr>
-<tr><td>Hopeless</td><td>/ˈhəʊpləs/</td><td>霍普勒斯</td><td>绝望的、无望的</td></tr>
                 <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
-                <tr><td>Happy</td><td>/ˈhæpi/</td><td>嗨皮</td><td>开心的</td></tr>
-                <tr><td>Sad</td><td>/sæd/</td><td>赛德</td><td>难过的</td></tr>
-                <tr><td>Angry</td><td>/ˈæŋɡri/</td><td>安格瑞</td><td>生气的</td></tr>
-                <tr><td>Tired</td><td>/ˈtaɪəd/</td><td>泰尔德</td><td>疲惫的</td></tr>
-                <tr><td>Excited</td><td>/ɪkˈsaɪtɪd/</td><td>伊克赛踢德</td><td>兴奋的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Happy')">Happy</button></td><td>/ˈhæpi/</td><td>嗨皮</td><td>开心的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Sad')">Sad</button></td><td>/sæd/</td><td>赛德</td><td>难过的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Angry')">Angry</button></td><td>/ˈæŋɡri/</td><td>安格瑞</td><td>生气的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Tired')">Tired</button></td><td>/ˈtaɪəd/</td><td>泰尔德</td><td>疲惫的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Excited')">Excited</button></td><td>/ɪkˈsaɪtɪd/</td><td>伊克赛踢德</td><td>兴奋的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Glad')">Glad</button></td><td>/ɡlæd/</td><td>格拉德</td><td>高兴的、乐意的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Surprised')">Surprised</button></td><td>/sə(r)ˈpraɪzd/</td><td>斯普莱兹德</td><td>惊讶的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Disappointed')">Disappointed</button></td><td>/ˌdɪsəˈpɔɪntɪd/</td><td>迪萨波因踢德</td><td>失望的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Worried')">Worried</button></td><td>/ˈwʌrid/</td><td>沃瑞德</td><td>担心的、焦虑的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Nervous')">Nervous</button></td><td>/ˈnɜːvəs/</td><td>讷沃斯</td><td>紧张的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Scared')">Scared</button></td><td>/skeəd/</td><td>斯凯德</td><td>害怕的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Frustrated')">Frustrated</button></td><td>/frʌˈstreɪtɪd/</td><td>弗瑞斯特瑞踢德</td><td>沮丧的、受挫的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Calm')">Calm</button></td><td>/kɑːm/</td><td>卡姆</td><td>平静的、冷静的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Relaxed')">Relaxed</button></td><td>/rɪˈlækst/</td><td>瑞莱克斯德</td><td>放松的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Proud')">Proud</button></td><td>/praʊd/</td><td>普劳德</td><td>自豪的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Jealous')">Jealous</button></td><td>/ˈdʒeləs/</td><td>杰拉斯</td><td>嫉妒的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Embarrassed')">Embarrassed</button></td><td>/ɪmˈbærəst/</td><td>因拜瑞斯特</td><td>尴尬的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Lonely')">Lonely</button></td><td>/ˈləʊnli/</td><td>罗尼</td><td>孤独的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Content')">Content</button></td><td>/kənˈtent/</td><td>肯坦特</td><td>满足的、满意的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Hopeful')">Hopeful</button></td><td>/ˈhəʊpfl/</td><td>霍普福</td><td>充满希望的</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Hopeless')">Hopeless</button></td><td>/ˈhəʊpləs/</td><td>霍普勒斯</td><td>绝望的、无望的</td></tr>
             </table>
         </div>
 
-        <!-- 数字类（1-10） -->
+        <!-- 数字类 -->
         <div class="word-category" id="numbers">
-            <h2>数字类（1-10） | Numbers (1-10)</h2>
+            <h2>数字类 | Numbers</h2>
             <table>
-                <!-- 直接粘贴到原有数字表格（1-10）最后一行之后 -->
-<tr><td>Eleven</td><td>/ɪˈlevn/</td><td>伊莱文</td><td>十一</td></tr>
-<tr><td>Twelve</td><td>/twelv/</td><td>特威尔夫</td><td>十二</td></tr>
-<tr><td>Thirteen</td><td>/ˌθɜːˈtiːn/</td><td>瑟汀</td><td>十三</td></tr>
-<tr><td>Fourteen</td><td>/ˌfɔːˈtiːn/</td><td>佛汀</td><td>十四</td></tr>
-<tr><td>Fifteen</td><td>/ˌfɪfˈtiːn/</td><td>菲汀</td><td>十五</td></tr>
-<tr><td>Sixteen</td><td>/ˌsɪksˈtiːn/</td><td>西克斯汀</td><td>十六</td></tr>
-<tr><td>Seventeen</td><td>/ˌsevənˈtiːn/</td><td>赛文汀</td><td>十七</td></tr>
-<tr><td>Eighteen</td><td>/ˌeɪˈtiːn/</td><td>埃汀</td><td>十八</td></tr>
-<tr><td>Nineteen</td><td>/ˌnaɪnˈtiːn/</td><td>奈汀</td><td>十九</td></tr>
-<tr><td>Twenty</td><td>/ˈtwenti/</td><td>特温提</td><td>二十</td></tr>
-<tr><td>Thirty</td><td>/ˈθɜːti/</td><td>瑟提</td><td>三十</td></tr>
-<tr><td>Forty</td><td>/ˈfɔːti/</td><td>佛提</td><td>四十</td></tr>
-<tr><td>Fifty</td><td>/ˈfɪfti/</td><td>菲提</td><td>五十</td></tr>
-<tr><td>Sixty</td><td>/ˈsɪksti/</td><td>西克斯提</td><td>六十</td></tr>
-<tr><td>Seventy</td><td>/ˈsevnti/</td><td>赛文提</td><td>七十</td></tr>
-<tr><td>Eighty</td><td>/ˈeɪti/</td><td>埃提</td><td>八十</td></tr>
-<tr><td>Ninety</td><td>/ˈnaɪnti/</td><td>奈提</td><td>九十</td></tr>
-<tr><td>Hundred</td><td>/ˈhʌndrəd/</td><td>汉卓德</td><td>百</td></tr>
-<tr><td>Thousand</td><td>/ˈθaʊznd/</td><td>骚怎的</td><td>千</td></tr>
-<tr><td>Ten thousand</td><td>/ten ˈθaʊznd/</td><td>腾 骚怎的</td><td>万</td></tr>
                 <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
-                <tr><td>One</td><td>/wʌn/</td><td>万</td><td>一</td></tr>
-                <tr><td>Two</td><td>/tuː/</td><td>吐</td><td>二</td></tr>
-                <tr><td>Three</td><td>/θriː/</td><td>思瑞</td><td>三</td></tr>
-                <tr><td>Four</td><td>/fɔː(r)/</td><td>佛</td><td>四</td></tr>
-                <tr><td>Five</td><td>/faɪv/</td><td>法爱夫</td><td>五</td></tr>
-                <tr><td>Six</td><td>/sɪks/</td><td>克斯</td><td>六</td></tr>
-                <tr><td>Seven</td><td>/ˈsevən/</td><td>赛文</td><td>七</td></tr>
-                <tr><td>Eight</td><td>/eɪt/</td><td>诶特</td><td>八</td></tr>
-                <tr><td>Nine</td><td>/naɪn/</td><td>奈恩</td><td>九</td></tr>
-                <tr><td>Ten</td><td>/ten/</td><td>腾</td><td>十</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('One')">One</button></td><td>/wʌn/</td><td>万</td><td>一</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Two')">Two</button></td><td>/tuː/</td><td>吐</td><td>二</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Three')">Three</button></td><td>/θriː/</td><td>思瑞</td><td>三</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Four')">Four</button></td><td>/fɔː(r)/</td><td>佛</td><td>四</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Five')">Five</button></td><td>/faɪv/</td><td>法爱夫</td><td>五</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Six')">Six</button></td><td>/sɪks/</td><td>克斯</td><td>六</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Seven')">Seven</button></td><td>/ˈsevən/</td><td>赛文</td><td>七</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Eight')">Eight</button></td><td>/eɪt/</td><td>诶特</td><td>八</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Nine')">Nine</button></td><td>/naɪn/</td><td>奈恩</td><td>九</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Ten')">Ten</button></td><td>/ten/</td><td>腾</td><td>十</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Eleven')">Eleven</button></td><td>/ɪˈlevn/</td><td>伊莱文</td><td>十一</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Twelve')">Twelve</button></td><td>/twelv/</td><td>特威尔夫</td><td>十二</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Thirteen')">Thirteen</button></td><td>/ˌθɜːˈtiːn/</td><td>瑟汀</td><td>十三</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Fourteen')">Fourteen</button></td><td>/ˌfɔːˈtiːn/</td><td>佛汀</td><td>十四</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Fifteen')">Fifteen</button></td><td>/ˌfɪfˈtiːn/</td><td>菲汀</td><td>十五</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Sixteen')">Sixteen</button></td><td>/ˌsɪksˈtiːn/</td><td>西克斯汀</td><td>十六</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Seventeen')">Seventeen</button></td><td>/ˌsevənˈtiːn/</td><td>赛文汀</td><td>十七</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Eighteen')">Eighteen</button></td><td>/ˌeɪˈtiːn/</td><td>埃汀</td><td>十八</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Nineteen')">Nineteen</button></td><td>/ˌnaɪnˈtiːn/</td><td>奈汀</td><td>十九</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Twenty')">Twenty</button></td><td>/ˈtwenti/</td><td>特温提</td><td>二十</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Thirty')">Thirty</button></td><td>/ˈθɜːti/</td><td>瑟提</td><td>三十</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Forty')">Forty</button></td><td>/ˈfɔːti/</td><td>佛提</td><td>四十</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Fifty')">Fifty</button></td><td>/ˈfɪfti/</td><td>菲提</td><td>五十</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Sixty')">Sixty</button></td><td>/ˈsɪksti/</td><td>西克斯提</td><td>六十</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Seventy')">Seventy</button></td><td>/ˈsevnti/</td><td>赛文提</td><td>七十</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Eighty')">Eighty</button></td><td>/ˈeɪti/</td><td>埃提</td><td>八十</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Ninety')">Ninety</button></td><td>/ˈnaɪnti/</td><td>奈提</td><td>九十</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Hundred')">Hundred</button></td><td>/ˈhʌndrəd/</td><td>汉卓德</td><td>百</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Thousand')">Thousand</button></td><td>/ˈθaʊznd/</td><td>骚怎的</td><td>千</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Ten thousand')">Ten thousand</button></td><td>/ten ˈθaʊznd/</td><td>腾 骚怎的</td><td>万</td></tr>
             </table>
         </div>
-        <!-- 食物基础类 -->
-<div class="word-category" id="food">
-    <h2>食物基础 | Food & Basic</h2>
-    <table>
-        <tr><td>Egg</td><td>/eɡ/</td><td>艾格</td><td>鸡蛋</td></tr>
-<tr><td>Meat</td><td>/miːt/</td><td>米特</td><td>肉</td></tr>
-<tr><td>Chicken</td><td>/ˈtʃɪkɪn/</td><td>奇肯</td><td>鸡肉、鸡</td></tr>
-<tr><td>Beef</td><td>/biːf/</td><td>比夫</td><td>牛肉</td></tr>
-<tr><td>Pork</td><td>/pɔːk/</td><td>坡克</td><td>猪肉</td></tr>
-<tr><td>Fish</td><td>/fɪʃ/</td><td>菲什</td><td>鱼、鱼肉</td></tr>
-<tr><td>Vegetable</td><td>/ˈvedʒtəbl/</td><td>维杰特博</td><td>蔬菜</td></tr>
-<tr><td>Potato</td><td>/pəˈteɪtəʊ/</td><td>坡特头</td><td>土豆、马铃薯</td></tr>
-<tr><td>Tomato</td><td>/təˈmɑːtəʊ/</td><td>托马头</td><td>西红柿、番茄</td></tr>
-<tr><td>Carrot</td><td>/ˈkærət/</td><td>凯瑞特</td><td>胡萝卜</td></tr>
-<tr><td>Apple</td><td>/ˈæpl/</td><td>埃普尔</td><td>苹果</td></tr>
-<tr><td>Banana</td><td>/bəˈnɑːnə/</td><td>巴纳纳</td><td>香蕉</td></tr>
-<tr><td>Orange</td><td>/ˈɒrɪndʒ/</td><td>奥润吉</td><td>橙子、橘子</td></tr>
-<tr><td>Mango</td><td>/ˈmæŋɡəʊ/</td><td>芒勾</td><td>芒果</td></tr>
-<tr><td>Coffee</td><td>/ˈkɒfi/</td><td>考菲</td><td>咖啡</td></tr>
-<tr><td>Juice</td><td>/dʒuːs/</td><td>朱斯</td><td>果汁</td></tr>
-<tr><td>Soup</td><td>/suːp/</td><td>苏普</td><td>汤</td></tr>
-<tr><td>Noodle</td><td>/ˈnuːdl/</td><td>努德尔</td><td>面条</td></tr>
-<tr><td>Chocolate</td><td>/ˈtʃɒklət/</td><td>乔克莱特</td><td>巧克力</td></tr>
-<tr><td>Cake</td><td>/keɪk/</td><td>凯克</td><td>蛋糕</td></tr>
-        <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
-        <tr><td>Water</td><td>/ˈwɔːtə/</td><td>沃特</td><td>水</td></tr>
-        <tr><td>Rice</td><td>/raɪs/</td><td>莱斯</td><td>米饭</td></tr>
-        <tr><td>Milk</td><td>/mɪlk/</td><td>米欧克</td><td>牛奶</td></tr>
-        <tr><td>Tea</td><td>/tiː/</td><td>提</td><td>茶</td></tr>
-        <tr><td>Bread</td><td>/bred/</td><td>布瑞德</td><td>面包</td></tr>
-    </table>
-</div>
-        <!-- 时间常用类 -->
-<div class="word-category" id="time">
-    <h2>时间常用 | Time & Daily Use</h2>
-    <table>
-        <tr><td>Yesterday</td><td>/ˈjestədeɪ/</td><td>耶斯特得</td><td>昨天</td></tr>
-<tr><td>Week</td><td>/wiːk/</td><td>维克</td><td>星期、周</td></tr>
-<tr><td>Monday</td><td>/ˈmʌndeɪ/</td><td>芒得</td><td>星期一</td></tr>
-<tr><td>Tuesday</td><td>/ˈtjuːzdeɪ/</td><td>图斯得</td><td>星期二</td></tr>
-<tr><td>Wednesday</td><td>/ˈwenzdeɪ/</td><td>温兹得</td><td>星期三</td></tr>
-<tr><td>Thursday</td><td>/ˈθɜːzdeɪ/</td><td>瑟兹得</td><td>星期四</td></tr>
-<tr><td>Friday</td><td>/ˈfraɪdeɪ/</td><td>弗赖得</td><td>星期五</td></tr>
-<tr><td>Saturday</td><td>/ˈsætədeɪ/</td><td>萨特得</td><td>星期六</td></tr>
-<tr><td>Sunday</td><td>/ˈsʌndeɪ/</td><td>桑得</td><td>星期日</td></tr>
-<tr><td>Month</td><td>/mʌnθ/</td><td>芒斯</td><td>月份</td></tr>
-<tr><td>Year</td><td>/jɪə(r)/</td><td>耶</td><td>年</td></tr>
-<tr><td>Hour</td><td>/ˈaʊə(r)/</td><td>奥儿</td><td>小时</td></tr>
-<tr><td>Minute</td><td>/ˈmɪnɪt/</td><td>米尼特</td><td>分钟</td></tr>
-<tr><td>Second</td><td>/ˈsekənd/</td><td>塞肯德</td><td>秒</td></tr>
-<tr><td>Morning</td><td>/ˈmɔːnɪŋ/</td><td>莫宁</td><td>早上、上午</td></tr>
-<tr><td>Afternoon</td><td>/ˌɑːftəˈnuːn/</td><td>阿福特努恩</td><td>下午</td></tr>
-<tr><td>Evening</td><td>/ˈiːvnɪŋ/</td><td>伊文宁</td><td>晚上</td></tr>
-<tr><td>Night</td><td>/naɪt/</td><td>奈特</td><td>夜晚</td></tr>
-<tr><td>Weekend</td><td>/ˌwiːkˈend/</td><td>维克恩德</td><td>周末</td></tr>
-<tr><td>Holiday</td><td>/ˈhɒlədeɪ/</td><td>霍拉得</td><td>假期、假日</td></tr>
-        <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
-        <tr><td>Today</td><td>/təˈdeɪ/</td><td>特得</td><td>今天</td></tr>
-        <tr><td>Tomorrow</td><td>/təˈmɒrəʊ/</td><td>特猫肉</td><td>明天</td></tr>
-        <tr><td>Now</td><td>/naʊ/</td><td>闹</td><td>现在</td></tr>
-        <tr><td>Time</td><td>/taɪm/</td><td>太木</td><td>时间</td></tr>
-        <tr><td>Day</td><td>/deɪ/</td><td>得</td><td>天、日子</td></tr>
-    </table>
-</div>
-        <!-- 家人称呼类 -->
-<div class="word-category" id="family">
-    <h2>家人称呼 | Family Members</h2>
-    <table>
-        <!-- 直接粘贴到原有家人称呼表格最后一行之后 -->
-<tr><td>Father</td><td>/ˈfɑːðə(r)/</td><td>法泽</td><td>父亲（正式）</td></tr>
-<tr><td>Mother</td><td>/ˈmʌðə(r)/</td><td>马泽</td><td>母亲（正式）</td></tr>
-<tr><td>Grandpa</td><td>/ˈɡrænpɑː/</td><td>格兰帕</td><td>爷爷/外公（口语）</td></tr>
-<tr><td>Grandma</td><td>/ˈɡræn(d)mɑː/</td><td>格兰玛</td><td>奶奶/外婆（口语）</td></tr>
-<tr><td>Grandfather</td><td>/ˈɡrændfɑːðə(r)/</td><td>格兰德法泽</td><td>祖父/外祖父（正式）</td></tr>
-<tr><td>Grandmother</td><td>/ˈɡrændmʌðə(r)/</td><td>格兰德马泽</td><td>祖母/外祖母（正式）</td></tr>
-<tr><td>Son</td><td>/sʌn/</td><td>桑</td><td>儿子</td></tr>
-<tr><td>Daughter</td><td>/ˈdɔːtə(r)/</td><td>多特</td><td>女儿</td></tr>
-<tr><td>Grandson</td><td>/ˈɡrænsʌn/</td><td>格兰桑</td><td>孙子/外孙</td></tr>
-<tr><td>Granddaughter</td><td>/ˈɡrændɔːtə(r)/</td><td>格兰多特</td><td>孙女/外孙女</td></tr>
-<tr><td>Uncle</td><td>/ˈʌŋkl/</td><td>安扣</td><td>叔叔/伯伯/舅舅/姑父/姨父</td></tr>
-<tr><td>Aunt</td><td>/ɑːnt/</td><td>安特</td><td>阿姨/姑姑/婶婶/舅妈/姨母</td></tr>
-<tr><td>Cousin</td><td>/ˈkʌzn/</td><td>卡曾</td><td>堂/表兄弟姐妹（同辈远亲）</td></tr>
-<tr><td>Nephew</td><td>/ˈnefjuː/</td><td>奈福优</td><td>侄子/外甥</td></tr>
-<tr><td>Niece</td><td>/niːs/</td><td>尼斯</td><td>侄女/外甥女</td></tr>
-<tr><td>Stepfather</td><td>/ˈstepfɑːðə(r)/</td><td>斯戴普法泽</td><td>继父</td></tr>
-<tr><td>Stepmother</td><td>/ˈstepmʌðə(r)/</td><td>斯戴普马泽</td><td>继母</td></tr>
-<tr><td>Stepson</td><td>/ˈstepsʌn/</td><td>斯戴普桑</td><td>继子</td></tr>
-<tr><td>Stepdaughter</td><td>/ˈstepdɔːtə(r)/</td><td>斯戴普多特</td><td>继女</td></tr>
-<tr><td>Godfather</td><td>/ˈɡɒdfɑːðə(r)/</td><td>高德法泽</td><td>教父</td></tr>
-        <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
-        <tr><td>Mom</td><td>/mɒm/</td><td>妈妈</td><td>妈妈</td></tr>
-        <tr><td>Dad</td><td>/dæd/</td><td>戴德</td><td>爸爸</td></tr>
-        <tr><td>Brother</td><td>/ˈbrʌðə/</td><td>布拉泽</td><td>兄弟</td></tr>
-        <tr><td>Sister</td><td>/ˈsɪstə/</td><td>西斯特</td><td>姐妹</td></tr>
-        <tr><td>Friend</td><td>/frend/</td><td>弗伦德</td><td>朋友</td></tr>
-    </table>
-</div>
 
         <!-- 颜色类 -->
         <div class="word-category" id="colors">
             <h2>颜色类 | Colors</h2>
             <table>
-                <!-- 直接粘贴到原有颜色类表格最后一行之后 -->
-<tr><td>Pink</td><td>/pɪŋk/</td><td>品克</td><td>粉色</td></tr>
-<tr><td>Purple</td><td>/ˈpɜːpl/</td><td>珀普尔</td><td>紫色</td></tr>
-<tr><td>Orange</td><td>/ˈɒrɪndʒ/</td><td>奥润吉</td><td>橙色</td></tr>
-<tr><td>Brown</td><td>/braʊn/</td><td>布朗</td><td>棕色</td></tr>
-<tr><td>Gray</td><td>/ɡreɪ/</td><td>格雷</td><td>灰色（美式拼写）</td></tr>
-<tr><td>Grey</td><td>/ɡreɪ/</td><td>格雷</td><td>灰色（英式拼写）</td></tr>
-<tr><td>Black</td><td>/blæk/</td><td>布莱克</td><td>黑色</td></tr>
-<tr><td>White</td><td>/waɪt/</td><td>怀特</td><td>白色</td></tr>
-<tr><td>Beige</td><td>/beɪʒ/</td><td>贝芝</td><td>米色、浅褐色</td></tr>
-<tr><td>Gold</td><td>/ɡəʊld/</td><td>够尔德</td><td>金色</td></tr>
-<tr><td>Silver</td><td>/ˈsɪlvə(r)/</td><td>西尔沃</td><td>银色</td></tr>
-<tr><td>Navy</td><td>/ˈneɪvi/</td><td>内维</td><td>藏青色、海军蓝</td></tr>
-<tr><td>Turquoise</td><td>/ˈtɜːkwɔɪz/</td><td>特阔伊兹</td><td>青绿色、绿松石色</td></tr>
-<tr><td>Magenta</td><td>/məˈdʒentə/</td><td>麦金塔</td><td>品红色、洋红色</td></tr>
-<tr><td>Cyan</td><td>/ˈsaɪən/</td><td>赛安</td><td>青色、蓝绿色</td></tr>
                 <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
-                <tr><td>Red</td><td>/red/</td><td>瑞德</td><td>红色</td></tr>
-                <tr><td>Blue</td><td>/bluː/</td><td>布鲁</td><td>蓝色</td></tr>
-                <tr><td>Green</td><td>/ɡriːn/</td><td>格瑞恩</td><td>绿色</td></tr>
-                <tr><td>Yellow</td><td>/ˈjeləʊ/</td><td>耶喽</td><td>黄色</td></tr>
-                <tr><td>Black</td><td>/blæk/</td><td>布莱克</td><td>黑色</td></tr>
-                <tr><td>White</td><td>/waɪt/</td><td>怀特</td><td>白色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Red')">Red</button></td><td>/red/</td><td>瑞德</td><td>红色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Blue')">Blue</button></td><td>/bluː/</td><td>布鲁</td><td>蓝色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Green')">Green</button></td><td>/ɡriːn/</td><td>格瑞恩</td><td>绿色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Yellow')">Yellow</button></td><td>/ˈjeləʊ/</td><td>耶喽</td><td>黄色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Black')">Black</button></td><td>/blæk/</td><td>布莱克</td><td>黑色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('White')">White</button></td><td>/waɪt/</td><td>怀特</td><td>白色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Pink')">Pink</button></td><td>/pɪŋk/</td><td>品克</td><td>粉色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Purple')">Purple</button></td><td>/ˈpɜːpl/</td><td>珀普尔</td><td>紫色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Orange')">Orange</button></td><td>/ˈɒrɪndʒ/</td><td>奥润吉</td><td>橙色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Brown')">Brown</button></td><td>/braʊn/</td><td>布朗</td><td>棕色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Gray')">Gray</button></td><td>/ɡreɪ/</td><td>格雷</td><td>灰色（美式拼写）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Grey')">Grey</button></td><td>/ɡreɪ/</td><td>格雷</td><td>灰色（英式拼写）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Beige')">Beige</button></td><td>/beɪʒ/</td><td>贝芝</td><td>米色、浅褐色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Gold')">Gold</button></td><td>/ɡəʊld/</td><td>够尔德</td><td>金色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Silver')">Silver</button></td><td>/ˈsɪlvə(r)/</td><td>西尔沃</td><td>银色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Navy')">Navy</button></td><td>/ˈneɪvi/</td><td>内维</td><td>藏青色、海军蓝</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Turquoise')">Turquoise</button></td><td>/ˈtɜːkwɔɪz/</td><td>特阔伊兹</td><td>青绿色、绿松石色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Magenta')">Magenta</button></td><td>/məˈdʒentə/</td><td>麦金塔</td><td>品红色、洋红色</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Cyan')">Cyan</button></td><td>/ˈsaɪən/</td><td>赛安</td><td>青色、蓝绿色</td></tr>
             </table>
         </div>
 
-        <!-- 核心交互JS：修复移动端+大陆网络+超时控制 -->
+        <!-- 家人称呼类 -->
+        <div class="word-category" id="family">
+            <h2>家人称呼 | Family Members</h2>
+            <table>
+                <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Mom')">Mom</button></td><td>/mɒm/</td><td>妈妈</td><td>妈妈</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Dad')">Dad</button></td><td>/dæd/</td><td>戴德</td><td>爸爸</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Brother')">Brother</button></td><td>/ˈbrʌðə/</td><td>布拉泽</td><td>兄弟</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Sister')">Sister</button></td><td>/ˈsɪstə/</td><td>西斯特</td><td>姐妹</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Friend')">Friend</button></td><td>/frend/</td><td>弗伦德</td><td>朋友</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Father')">Father</button></td><td>/ˈfɑːðə(r)/</td><td>法泽</td><td>父亲（正式）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Mother')">Mother</button></td><td>/ˈmʌðə(r)/</td><td>马泽</td><td>母亲（正式）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Grandpa')">Grandpa</button></td><td>/ˈɡrænpɑː/</td><td>格兰帕</td><td>爷爷/外公（口语）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Grandma')">Grandma</button></td><td>/ˈɡræn(d)mɑː/</td><td>格兰玛</td><td>奶奶/外婆（口语）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Grandfather')">Grandfather</button></td><td>/ˈɡrændfɑːðə(r)/</td><td>格兰德法泽</td><td>祖父/外祖父（正式）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Grandmother')">Grandmother</button></td><td>/ˈɡrændmʌðə(r)/</td><td>格兰德马泽</td><td>祖母/外祖母（正式）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Son')">Son</button></td><td>/sʌn/</td><td>桑</td><td>儿子</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Daughter')">Daughter</button></td><td>/ˈdɔːtə(r)/</td><td>多特</td><td>女儿</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Grandson')">Grandson</button></td><td>/ˈɡrænsʌn/</td><td>格兰桑</td><td>孙子/外孙</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Granddaughter')">Granddaughter</button></td><td>/ˈɡrændɔːtə(r)/</td><td>格兰多特</td><td>孙女/外孙女</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Uncle')">Uncle</button></td><td>/ˈʌŋkl/</td><td>安扣</td><td>叔叔/伯伯/舅舅/姑父/姨父</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Aunt')">Aunt</button></td><td>/ɑːnt/</td><td>安特</td><td>阿姨/姑姑/婶婶/舅妈/姨母</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Cousin')">Cousin</button></td><td>/ˈkʌzn/</td><td>卡曾</td><td>堂/表兄弟姐妹（同辈远亲）</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Nephew')">Nephew</button></td><td>/ˈnefjuː/</td><td>奈福优</td><td>侄子/外甥</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Niece')">Niece</button></td><td>/niːs/</td><td>尼斯</td><td>侄女/外甥女</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Stepfather')">Stepfather</button></td><td>/ˈstepfɑːðə(r)/</td><td>斯戴普法泽</td><td>继父</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Stepmother')">Stepmother</button></td><td>/ˈstepmʌðə(r)/</td><td>斯戴普马泽</td><td>继母</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Stepson')">Stepson</button></td><td>/ˈstepsʌn/</td><td>斯戴普桑</td><td>继子</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Stepdaughter')">Stepdaughter</button></td><td>/ˈstepdɔːtə(r)/</td><td>斯戴普多特</td><td>继女</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Godfather')">Godfather</button></td><td>/ˈɡɒdfɑːðə(r)/</td><td>高德法泽</td><td>教父</td></tr>
+            </table>
+        </div>
+
+        <!-- 时间常用类 -->
+        <div class="word-category" id="time">
+            <h2>时间常用 | Time & Daily Use</h2>
+            <table>
+                <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Today')">Today</button></td><td>/təˈdeɪ/</td><td>特得</td><td>今天</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Tomorrow')">Tomorrow</button></td><td>/təˈmɒrəʊ/</td><td>特猫肉</td><td>明天</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Now')">Now</button></td><td>/naʊ/</td><td>闹</td><td>现在</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Time')">Time</button></td><td>/taɪm/</td><td>太木</td><td>时间</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Day')">Day</button></td><td>/deɪ/</td><td>得</td><td>天、日子</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Yesterday')">Yesterday</button></td><td>/ˈjestədeɪ/</td><td>耶斯特得</td><td>昨天</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Week')">Week</button></td><td>/wiːk/</td><td>维克</td><td>星期、周</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Monday')">Monday</button></td><td>/ˈmʌndeɪ/</td><td>芒得</td><td>星期一</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Tuesday')">Tuesday</button></td><td>/ˈtjuːzdeɪ/</td><td>图斯得</td><td>星期二</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Wednesday')">Wednesday</button></td><td>/ˈwenzdeɪ/</td><td>温兹得</td><td>星期三</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Thursday')">Thursday</button></td><td>/ˈθɜːzdeɪ/</td><td>瑟兹得</td><td>星期四</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Friday')">Friday</button></td><td>/ˈfraɪdeɪ/</td><td>弗赖得</td><td>星期五</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Saturday')">Saturday</button></td><td>/ˈsætədeɪ/</td><td>萨特得</td><td>星期六</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Sunday')">Sunday</button></td><td>/ˈsʌndeɪ/</td><td>桑得</td><td>星期日</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Month')">Month</button></td><td>/mʌnθ/</td><td>芒斯</td><td>月份</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Year')">Year</button></td><td>/jɪə(r)/</td><td>耶</td><td>年</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Hour')">Hour</button></td><td>/ˈaʊə(r)/</td><td>奥儿</td><td>小时</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Minute')">Minute</button></td><td>/ˈmɪnɪt/</td><td>米尼特</td><td>分钟</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Second')">Second</button></td><td>/ˈsekənd/</td><td>塞肯德</td><td>秒</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Morning')">Morning</button></td><td>/ˈmɔːnɪŋ/</td><td>莫宁</td><td>早上、上午</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Afternoon')">Afternoon</button></td><td>/ˌɑːftəˈnuːn/</td><td>阿福特努恩</td><td>下午</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Evening')">Evening</button></td><td>/ˈiːvnɪŋ/</td><td>伊文宁</td><td>晚上</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Night')">Night</button></td><td>/naɪt/</td><td>奈特</td><td>夜晚</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Weekend')">Weekend</button></td><td>/ˌwiːkˈend/</td><td>维克恩德</td><td>周末</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Holiday')">Holiday</button></td><td>/ˈhɒlədeɪ/</td><td>霍拉得</td><td>假期、假日</td></tr>
+            </table>
+        </div>
+
+        <!-- 食物基础类 -->
+        <div class="word-category" id="food">
+            <h2>食物基础 | Food & Basic</h2>
+            <table>
+                <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Water')">Water</button></td><td>/ˈwɔːtə/</td><td>沃特</td><td>水</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Rice')">Rice</button></td><td>/raɪs/</td><td>莱斯</td><td>米饭</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Milk')">Milk</button></td><td>/mɪlk/</td><td>米欧克</td><td>牛奶</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Tea')">Tea</button></td><td>/tiː/</td><td>提</td><td>茶</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Bread')">Bread</button></td><td>/bred/</td><td>布瑞德</td><td>面包</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Egg')">Egg</button></td><td>/eɡ/</td><td>艾格</td><td>鸡蛋</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Meat')">Meat</button></td><td>/miːt/</td><td>米特</td><td>肉</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Chicken')">Chicken</button></td><td>/ˈtʃɪkɪn/</td><td>奇肯</td><td>鸡肉、鸡</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Beef')">Beef</button></td><td>/biːf/</td><td>比夫</td><td>牛肉</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Pork')">Pork</button></td><td>/pɔːk/</td><td>坡克</td><td>猪肉</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Fish')">Fish</button></td><td>/fɪʃ/</td><td>菲什</td><td>鱼、鱼肉</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Vegetable')">Vegetable</button></td><td>/ˈvedʒtəbl/</td><td>维杰特博</td><td>蔬菜</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Potato')">Potato</button></td><td>/pəˈteɪtəʊ/</td><td>坡特头</td><td>土豆、马铃薯</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Tomato')">Tomato</button></td><td>/təˈmɑːtəʊ/</td><td>托马头</td><td>西红柿、番茄</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Carrot')">Carrot</button></td><td>/ˈkærət/</td><td>凯瑞特</td><td>胡萝卜</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Apple')">Apple</button></td><td>/ˈæpl/</td><td>埃普尔</td><td>苹果</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Banana')">Banana</button></td><td>/bəˈnɑːnə/</td><td>巴纳纳</td><td>香蕉</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Orange')">Orange</button></td><td>/ˈɒrɪndʒ/</td><td>奥润吉</td><td>橙子、橘子</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Mango')">Mango</button></td><td>/ˈmæŋɡəʊ/</td><td>芒勾</td><td>芒果</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Coffee')">Coffee</button></td><td>/ˈkɒfi/</td><td>考菲</td><td>咖啡</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Juice')">Juice</button></td><td>/dʒuːs/</td><td>朱斯</td><td>果汁</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Soup')">Soup</button></td><td>/suːp/</td><td>苏普</td><td>汤</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Noodle')">Noodle</button></td><td>/ˈnuːdl/</td><td>努德尔</td><td>面条</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Chocolate')">Chocolate</button></td><td>/ˈtʃɒklət/</td><td>乔克莱特</td><td>巧克力</td></tr>
+                <tr><td><button class="sound-btn" onclick="playSound('Cake')">Cake</button></td><td>/keɪk/</td><td>凯克</td><td>蛋糕</td></tr>
+            </table>
+        </div>
+
+        <!-- 核心JS -->
         <script>
-            // 1. 分类切换功能
+            // 分类切换
             const categoryBtns = document.querySelectorAll('.category-btn');
             const wordCategories = document.querySelectorAll('.word-category');
             
             categoryBtns.forEach(btn => {
                 btn.addEventListener('click', function() {
-                    // 移除所有按钮的active状态
                     categoryBtns.forEach(b => b.classList.remove('active'));
-                    // 给当前按钮加active
                     this.classList.add('active');
                     
                     const targetCategory = this.dataset.category;
-                    // 移除所有分类的active状态
                     wordCategories.forEach(cat => {
                         cat.classList.remove('active');
-                        // 显示选中的分类（全部则显示所有）
                         if (targetCategory === 'all' || cat.id === targetCategory) {
                             cat.classList.add('active');
                         }
                     });
-                    
-                    // 切换分类后重新触发搜索
                     document.getElementById('searchInput').dispatchEvent(new Event('input'));
                 });
             });
 
-            // 2. 搜索+高亮+无结果提示功能（修复移动端逻辑）
+            // 搜索功能
             document.getElementById('searchInput').addEventListener('input', function(e) {
                 const keyword = e.target.value.toLowerCase().trim();
-                // 获取当前激活的分类
                 const activeCategory = document.querySelector('.category-btn.active').dataset.category;
-                // 隐藏成功提示
                 document.getElementById('successTip').style.display = 'none';
                 
-                // 标记是否有匹配的行
                 let hasMatchedRow = false;
                 
-                // 遍历所有表格行
                 document.querySelectorAll('table tr').forEach(row => {
-                    // 跳过表头
                     if (row.querySelector('th')) return;
                     
-                    // 检查当前行所属的分类是否激活
                     const rowCategory = row.closest('.word-category').id;
                     const isInActiveCategory = activeCategory === 'all' || rowCategory === activeCategory;
                     
-                    // 恢复原始文本
                     row.querySelectorAll('td').forEach(td => {
                         td.innerHTML = td.dataset.original || td.textContent;
                         if (!td.dataset.original) {
@@ -566,15 +520,12 @@
                         }
                     });
                     
-                    // 处理搜索逻辑
                     const rowText = row.textContent.toLowerCase();
                     const hasMatch = rowText.includes(keyword);
                     
-                    // 显示/隐藏行：在激活分类里 且 匹配关键词（关键词为空则只看分类）
                     if (isInActiveCategory && (keyword === '' || hasMatch)) {
                         row.style.display = '';
-                        hasMatchedRow = true; // 标记有匹配行
-                        // 高亮关键词
+                        hasMatchedRow = true;
                         if (keyword !== '' && hasMatch) {
                             row.querySelectorAll('td').forEach(td => {
                                 const text = td.dataset.original;
@@ -587,10 +538,8 @@
                     }
                 });
 
-                // 修复：关键词非空 且 无匹配行时，显示无结果提示（移动端强制生效）
                 if (keyword !== '' && !hasMatchedRow) {
                     document.getElementById('noResult').style.display = 'block';
-                    // 移动端强制滚动到提示区域，避免看不见
                     if (window.innerWidth <= 768) {
                         document.getElementById('noResult').scrollIntoView({ behavior: 'smooth' });
                     }
@@ -599,7 +548,7 @@
                 }
             });
 
-            // 3. 提交单词需求（加超时+大陆网络适配，用自定义域名）
+            // 提交需求
             document.getElementById('submitRequest').addEventListener('click', function() {
                 const requestText = document.getElementById('wordRequest').value.trim();
                 if (!requestText) {
@@ -611,7 +560,6 @@
                 btn.disabled = true;
                 btn.textContent = '提交中...';
 
-                // 超时控制：10秒没响应就提示失败
                 const timeoutPromise = new Promise((_, reject) => 
                     setTimeout(() => reject(new Error('提交超时，请稍后再试')), 10000)
                 );
@@ -651,30 +599,29 @@
                 });
             });
 
-            // 页面初始化
+            // 发音功能
+            function playSound(word) {
+                // 修复发音空格问题
+                const cleanWord = word.replace(/'/g, '').trim();
+                const utterance = new SpeechSynthesisUtterance(cleanWord);
+                utterance.lang = 'en-US';
+                utterance.volume = 1;
+                window.speechSynthesis.speak(utterance);
+            }
+
+            // 初始化
             window.addEventListener('load', function() {
                 document.querySelector('.category-btn[data-category="all"]').click();
-            });
-
-            // 页面加载时自动记录访问（用自定义域名）
-            window.addEventListener('load', async function() {
-              try {
-                await fetch('https://submit.mzc0603.xyz/log-visit', {
-                  method: 'POST',
-                  headers: { 'Content-Type': 'application/json' }
-                });
-              } catch (err) {
-                console.log('访问记录失败', err); // 不影响网站正常使用
-              }
+                try {
+                    fetch('https://submit.mzc0603.xyz/log-visit', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' }
+                    });
+                } catch (err) {
+                    console.log('访问记录失败', err);
+                }
             });
         </script>
     </div>
-<script>
-  function playSound(word) {
-    const utterance = new SpeechSynthesisUtterance(word);
-    utterance.lang = 'en-US';
-    window.speechSynthesis.speak(utterance);
-  }
-</script>
 </body>
 </html>
