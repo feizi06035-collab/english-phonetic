@@ -651,6 +651,24 @@
 
         <!-- 夜间模式JS（单独的script标签） -->
         <script>
+            #gotop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #3498db; /* 和你网站主题色保持一致 */
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 999;
+}
             // 夜间模式切换
             const darkBtn = document.getElementById('darkModeBtn');
             darkBtn.addEventListener('click', function() {
@@ -663,5 +681,13 @@
             });
         </script>
     </div>
+    <div id="gotop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<script>
+let g=document.getElementById('gotop');
+window.addEventListener('scroll',()=>{
+  g.style.opacity = window.scrollY>300 ? 1 : 0;
+});
+</script>
 </body>
 </html>
