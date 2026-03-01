@@ -144,7 +144,7 @@
     // 1. 获取访问量统计（独立访客）
     async function getVisitStats() {
       try {
-        const res = await fetch(`https://word-submit.feiyuan896.workers.dev/get-visit-stats?password=${encodeURIComponent(password)}`);
+        const res = await fetch(`https://submit.mzc0603.xyz/get-visit-stats?password=${encodeURIComponent(password)}`);
         if (res.status === 403) {
           alert('密码错误！');
           return;
@@ -166,7 +166,7 @@
     // 2. 获取提交量统计
     async function getSubmitStats() {
       try {
-        const res = await fetch(`https://word-submit.feiyuan896.workers.dev/get-stats?password=${encodeURIComponent(password)}`);
+        const res = await fetch(`https://submit.mzc0603.xyz/get-stats?password=${encodeURIComponent(password)}`);
         const data = await res.json();
         
         // 更新提交量数据
@@ -199,7 +199,7 @@
     // 3. 获取所有提交数据列表
     async function getRequests() {
       try {
-        const res = await fetch(`https://word-submit.feiyuan896.workers.dev/get-requests?password=${encodeURIComponent(password)}`);
+        const res = await fetch(`https://submit.mzc0603.xyz/get-requests?password=${encodeURIComponent(password)}`);
         const data = await res.json();
         
         document.getElementById('dataTable').style.display = 'block';
