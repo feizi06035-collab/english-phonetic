@@ -206,6 +206,59 @@
         .sound-btn:hover {
             text-decoration: underline;
         }
+        /* 分页样式 */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin: 25px 0;
+            padding: 15px;
+            flex-wrap: wrap;
+        }
+        .pagination-btn {
+            padding: 8px 14px;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+            min-width: 40px;
+        }
+        .pagination-btn:hover {
+            background: #e9ecef;
+        }
+        .pagination-btn.active {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+        .pagination-btn:disabled {
+            background: #e9ecef;
+            color: #999;
+            cursor: not-allowed;
+        }
+        .pagination-info {
+            color: #666;
+            font-size: 14px;
+            margin: 0 10px;
+        }
+        .dark-mode .pagination-btn {
+            background: #3d3d3d;
+            border-color: #555;
+            color: #eee;
+        }
+        .dark-mode .pagination-btn:hover {
+            background: #4d4d4d;
+        }
+        .dark-mode .pagination-btn.active {
+            background: #3498db;
+            border-color: #3498db;
+        }
+        .dark-mode .pagination-info {
+            color: #aaa;
+        }
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
@@ -238,6 +291,14 @@
             }
             h1 {
                 font-size: 1.2em;
+            }
+            .pagination-btn {
+                padding: 6px 10px;
+                font-size: 12px;
+                min-width: 35px;
+            }
+            .pagination-info {
+                font-size: 12px;
             }
         }
     </style>
@@ -290,6 +351,10 @@
             <p style="text-align: center; margin-bottom: 20px; color: #666;">
                 《10万+词汇》》专为英语初学者设计！用中文谐音模拟英语发音，配合标准音标，轻松搞定单词读法～
             </p>
+            <table id="allWordsTable">
+                <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
+            </table>
+            <div class="pagination" id="pagination-all"></div>
         </div>
 
         <!-- 日常问候类 -->
@@ -6608,6 +6673,251 @@
 
         <!-- 核心JS -->
         <script>
+            // 分页配置
+            const ITEMS_PER_PAGE = 20;
+            const paginationState = {};
+            let allWordsData = [];
+
+            // 初始化分页状态
+            function initPaginationState() {
+                const categories = document.querySelectorAll('.word-category');
+                categories.forEach(cat => {
+                    const categoryId = cat.id;
+                    paginationState[categoryId] = {
+                        currentPage: 1,
+                        filteredData: [],
+                        originalRows: []
+                    };
+                });
+            }
+
+            // 从所有分类中收集单词数据
+            function collectAllWords() {
+                const words = [];
+                const categories = document.querySelectorAll('.word-category:not(#all)');
+                
+                categories.forEach(category => {
+                    const categoryId = category.id;
+                    const rows = category.querySelectorAll('table tr');
+                    
+                    rows.forEach(row => {
+                        if (row.querySelector('th')) return;
+                        
+                        const cells = row.querySelectorAll('td');
+                        if (cells.length >= 4) {
+                            const btn = cells[0].querySelector('button');
+                            const word = btn ? btn.textContent.trim() : '';
+                            const onclickAttr = btn ? btn.getAttribute('onclick') : '';
+                            const phonetic = cells[1] ? cells[1].textContent.trim() : '';
+                            const chinesePhonetic = cells[2] ? cells[2].textContent.trim() : '';
+                            const meaning = cells[3] ? cells[3].textContent.trim() : '';
+                            
+                            words.push({
+                                word: word,
+                                onclickAttr: onclickAttr,
+                                phonetic: phonetic,
+                                chinesePhonetic: chinesePhonetic,
+                                meaning: meaning,
+                                category: categoryId
+                            });
+                        }
+                    });
+                });
+                
+                return words;
+            }
+
+            // 收集分类原始行数据
+            function collectCategoryRows(categoryId) {
+                const category = document.getElementById(categoryId);
+                const rows = [];
+                
+                if (categoryId === 'all') {
+                    return allWordsData.map(item => ({
+                        html: `<td><button class="sound-btn" ${item.onclickAttr}>${item.word}</button></td><td>${item.phonetic}</td><td>${item.chinesePhonetic}</td><td>${item.meaning}</td>`,
+                        text: `${item.word} ${item.phonetic} ${item.chinesePhonetic} ${item.meaning}`.toLowerCase(),
+                        data: item
+                    }));
+                }
+                
+                const table = category.querySelector('table');
+                if (!table) return rows;
+                
+                table.querySelectorAll('tr').forEach(row => {
+                    if (row.querySelector('th')) return;
+                    const cells = row.querySelectorAll('td');
+                    if (cells.length >= 4) {
+                        const btn = cells[0].querySelector('button');
+                        const word = btn ? btn.textContent.trim() : '';
+                        const onclickAttr = btn ? btn.getAttribute('onclick') : '';
+                        const phonetic = cells[1] ? cells[1].textContent.trim() : '';
+                        const chinesePhonetic = cells[2] ? cells[2].textContent.trim() : '';
+                        const meaning = cells[3] ? cells[3].textContent.trim() : '';
+                        
+                        rows.push({
+                            html: row.innerHTML,
+                            text: row.textContent.toLowerCase(),
+                            data: {
+                                word: word,
+                                onclickAttr: onclickAttr,
+                                phonetic: phonetic,
+                                chinesePhonetic: chinesePhonetic,
+                                meaning: meaning,
+                                category: categoryId
+                            }
+                        });
+                    }
+                });
+                
+                return rows;
+            }
+
+            // 创建分页控件
+            function createPaginationControls(categoryId) {
+                const state = paginationState[categoryId];
+                const totalPages = Math.ceil(state.filteredData.length / ITEMS_PER_PAGE) || 1;
+                
+                let paginationContainer = document.getElementById(`pagination-${categoryId}`);
+                if (!paginationContainer) {
+                    paginationContainer = document.createElement('div');
+                    paginationContainer.className = 'pagination';
+                    paginationContainer.id = `pagination-${categoryId}`;
+                    
+                    const category = document.getElementById(categoryId);
+                    const table = categoryId === 'all' ? document.getElementById('allWordsTable') : category.querySelector('table');
+                    if (table && table.parentNode) {
+                        table.parentNode.insertBefore(paginationContainer, table.nextSibling);
+                    }
+                }
+                
+                let html = '';
+                
+                // 上一页按钮
+                html += `<button class="pagination-btn" onclick="changePage('${categoryId}', -1)" ${state.currentPage === 1 ? 'disabled' : ''}>上一页</button>`;
+                
+                // 页码按钮
+                const maxVisiblePages = 5;
+                let startPage = Math.max(1, state.currentPage - Math.floor(maxVisiblePages / 2));
+                let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+                
+                if (endPage - startPage < maxVisiblePages - 1) {
+                    startPage = Math.max(1, endPage - maxVisiblePages + 1);
+                }
+                
+                if (startPage > 1) {
+                    html += `<button class="pagination-btn" onclick="goToPage('${categoryId}', 1)">1</button>`;
+                    if (startPage > 2) {
+                        html += `<span class="pagination-info">...</span>`;
+                    }
+                }
+                
+                for (let i = startPage; i <= endPage; i++) {
+                    html += `<button class="pagination-btn ${i === state.currentPage ? 'active' : ''}" onclick="goToPage('${categoryId}', ${i})">${i}</button>`;
+                }
+                
+                if (endPage < totalPages) {
+                    if (endPage < totalPages - 1) {
+                        html += `<span class="pagination-info">...</span>`;
+                    }
+                    html += `<button class="pagination-btn" onclick="goToPage('${categoryId}', ${totalPages})">${totalPages}</button>`;
+                }
+                
+                // 下一页按钮
+                html += `<button class="pagination-btn" onclick="changePage('${categoryId}', 1)" ${state.currentPage === totalPages ? 'disabled' : ''}>下一页</button>`;
+                
+                // 页码信息
+                html += `<span class="pagination-info">第 ${state.currentPage}/${totalPages} 页 (共 ${state.filteredData.length} 词)</span>`;
+                
+                paginationContainer.innerHTML = html;
+            }
+
+            // 渲染分页后的内容
+            function renderPagedContent(categoryId) {
+                const state = paginationState[categoryId];
+                const startIndex = (state.currentPage - 1) * ITEMS_PER_PAGE;
+                const endIndex = startIndex + ITEMS_PER_PAGE;
+                const pageData = state.filteredData.slice(startIndex, endIndex);
+                
+                if (categoryId === 'all') {
+                    const table = document.getElementById('allWordsTable');
+                    const headerRow = table.querySelector('tr');
+                    table.innerHTML = '';
+                    table.appendChild(headerRow);
+                    
+                    pageData.forEach(item => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `<td><button class="sound-btn" ${item.data.onclickAttr}>${item.data.word}</button></td><td>${item.data.phonetic}</td><td>${item.data.chinesePhonetic}</td><td>${item.data.meaning}</td>`;
+                        table.appendChild(row);
+                    });
+                } else {
+                    const category = document.getElementById(categoryId);
+                    const table = category.querySelector('table');
+                    if (!table) return;
+                    
+                    const headerRow = table.querySelector('tr');
+                    table.innerHTML = '';
+                    table.appendChild(headerRow);
+                    
+                    pageData.forEach(item => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = item.html;
+                        table.appendChild(row);
+                    });
+                }
+                
+                createPaginationControls(categoryId);
+            }
+
+            // 切换页面
+            function changePage(categoryId, direction) {
+                const state = paginationState[categoryId];
+                const totalPages = Math.ceil(state.filteredData.length / ITEMS_PER_PAGE) || 1;
+                const newPage = state.currentPage + direction;
+                
+                if (newPage >= 1 && newPage <= totalPages) {
+                    state.currentPage = newPage;
+                    renderPagedContent(categoryId);
+                    scrollToTableTop(categoryId);
+                }
+            }
+
+            // 跳转到指定页
+            function goToPage(categoryId, page) {
+                const state = paginationState[categoryId];
+                const totalPages = Math.ceil(state.filteredData.length / ITEMS_PER_PAGE) || 1;
+                
+                if (page >= 1 && page <= totalPages) {
+                    state.currentPage = page;
+                    renderPagedContent(categoryId);
+                    scrollToTableTop(categoryId);
+                }
+            }
+
+            // 滚动到表格顶部
+            function scrollToTableTop(categoryId) {
+                const category = document.getElementById(categoryId);
+                if (category && category.classList.contains('active')) {
+                    const table = categoryId === 'all' ? document.getElementById('allWordsTable') : category.querySelector('table');
+                    if (table) {
+                        table.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            }
+
+            // 过滤数据
+            function filterData(categoryId, keyword) {
+                const state = paginationState[categoryId];
+                
+                if (!keyword) {
+                    state.filteredData = [...state.originalRows];
+                } else {
+                    state.filteredData = state.originalRows.filter(item => item.text.includes(keyword));
+                }
+                
+                state.currentPage = 1;
+                renderPagedContent(categoryId);
+            }
+
             // 分类切换
             const categoryBtns = document.querySelectorAll('.category-btn');
             const wordCategories = document.querySelectorAll('.word-category');
@@ -6624,7 +6934,19 @@
                             cat.classList.add('active');
                         }
                     });
-                    document.getElementById('searchInput').dispatchEvent(new Event('input'));
+                    
+                    // 应用搜索过滤并渲染
+                    const keyword = document.getElementById('searchInput').value.toLowerCase().trim();
+                    filterData(targetCategory, keyword);
+                    scrollToTableTop(targetCategory);
+                    
+                    // 显示/隐藏无结果提示
+                    const state = paginationState[targetCategory];
+                    if (state.filteredData.length === 0 && keyword !== '') {
+                        document.getElementById('noResult').style.display = 'block';
+                    } else {
+                        document.getElementById('noResult').style.display = 'none';
+                    }
                 });
             });
 
@@ -6634,44 +6956,13 @@
                 const activeCategory = document.querySelector('.category-btn.active').dataset.category;
                 document.getElementById('successTip').style.display = 'none';
                 
-                let hasMatchedRow = false;
+                filterData(activeCategory, keyword);
+                scrollToTableTop(activeCategory);
                 
-                document.querySelectorAll('table tr').forEach(row => {
-                    if (row.querySelector('th')) return;
-                    
-                    const rowCategory = row.closest('.word-category').id;
-                    const isInActiveCategory = activeCategory === 'all' || rowCategory === activeCategory;
-                    
-                    row.querySelectorAll('td').forEach(td => {
-                        td.innerHTML = td.dataset.original || td.textContent;
-                        if (!td.dataset.original) {
-                            td.dataset.original = td.textContent;
-                        }
-                    });
-                    
-                    const rowText = row.textContent.toLowerCase();
-                    const hasMatch = rowText.includes(keyword);
-                    
-                    if (isInActiveCategory && (keyword === '' || hasMatch)) {
-                        row.style.display = '';
-                        hasMatchedRow = true;
-                        if (keyword !== '' && hasMatch) {
-                            row.querySelectorAll('td').forEach(td => {
-                                const text = td.dataset.original;
-                                const regex = new RegExp(`(${keyword})`, 'gi');
-                                td.innerHTML = text.replace(regex, '<span class="highlight">$1</span>');
-                            });
-                        }
-                    } else {
-                        row.style.display = 'none';
-                    }
-                });
-
-                if (keyword !== '' && !hasMatchedRow) {
+                // 显示/隐藏无结果提示
+                const state = paginationState[activeCategory];
+                if (state.filteredData.length === 0 && keyword !== '') {
                     document.getElementById('noResult').style.display = 'block';
-                    if (window.innerWidth <= 768) {
-                        document.getElementById('noResult').scrollIntoView({ behavior: 'smooth' });
-                    }
                 } else {
                     document.getElementById('noResult').style.display = 'none';
                 }
@@ -6730,7 +7021,6 @@
 
             // 发音功能
             function playSound(word) {
-                // 修复发音空格问题
                 const cleanWord = word.replace(/'/g, '').trim();
                 const utterance = new SpeechSynthesisUtterance(cleanWord);
                 utterance.lang = 'en-US';
@@ -6740,7 +7030,26 @@
 
             // 初始化
             window.addEventListener('load', function() {
+                // 初始化分页状态
+                initPaginationState();
+                
+                // 收集所有单词数据
+                allWordsData = collectAllWords();
+                
+                // 为每个分类收集原始行数据
+                Object.keys(paginationState).forEach(categoryId => {
+                    paginationState[categoryId].originalRows = collectCategoryRows(categoryId);
+                    paginationState[categoryId].filteredData = [...paginationState[categoryId].originalRows];
+                });
+                
+                // 渲染所有分类的分页
+                Object.keys(paginationState).forEach(categoryId => {
+                    renderPagedContent(categoryId);
+                });
+                
+                // 触发分类点击以显示全部
                 document.querySelector('.category-btn[data-category="all"]').click();
+                
                 try {
                     fetch('https://submit.mzc0603.xyz/log-visit', {
                         method: 'POST',
