@@ -527,7 +527,505 @@
     <h2>常用语句类 | Common Sentences</h2>
     <table>
         <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th></tr>
-        <!-- 三、出行类 -->
+        <!-- 游戏类补充 - 角色与职业 -->
+<tr><td><button class="sound-btn" onclick="playSound('Warrior')">Warrior</button></td><td>/ˈwɒriə(r)/</td><td>沃瑞尔</td><td>战士</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Knight')">Knight</button></td><td>/naɪt/</td><td>奈特</td><td>骑士</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Mage')">Mage</button></td><td>/meɪdʒ/</td><td>梅吉</td><td>法师</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Wizard')">Wizard</button></td><td>/ˈwɪzəd/</td><td>威泽德</td><td>巫师</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Archer')">Archer</button></td><td>/ˈɑːtʃə(r)/</td><td>阿彻</td><td>弓箭手</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Ranger')">Ranger</button></td><td>/ˈreɪndʒə(r)/</td><td>雷恩杰</td><td>游侠/斥候</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Rogue')">Rogue</button></td><td>/rəʊɡ/</td><td>罗格</td><td>盗贼/潜行者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Assassin')">Assassin</button></td><td>/əˈsæsɪn/</td><td>阿萨辛</td><td>刺客</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Priest')">Priest</button></td><td>/priːst/</td><td>普瑞斯特</td><td>牧师</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Paladin')">Paladin</button></td><td>/ˈpælədɪn/</td><td>帕拉丁</td><td>圣骑士</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Necromancer')">Necromancer</button></td><td>/ˈnekrəʊmænsə(r)/</td><td>内克罗曼瑟</td><td>死灵法师</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Summoner')">Summoner</button></td><td>/ˈsʌmənə(r)/</td><td>萨莫纳</td><td>召唤师</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Tank')">Tank</button></td><td>/tæŋk/</td><td>坦克</td><td>坦克/承伤位</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Healer')">Healer</button></td><td>/ˈhiːlə(r)/</td><td>希勒</td><td>治疗/奶妈</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('DPS')">DPS</button></td><td>/ˌdiː piː es/</td><td>迪皮埃斯</td><td>输出位</td></tr>
+
+<!-- 游戏类补充 - 地图与场景 -->
+<tr><td><button class="sound-btn" onclick="playSound('Map')">Map</button></td><td>/mæp/</td><td>麦普</td><td>地图</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('MiniMap')">Mini Map</button></td><td>/ˈmɪni mæp/</td><td>迷你麦普</td><td>小地图</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Dungeon')">Dungeon</button></td><td>/ˈdʌndʒən/</td><td>丹真</td><td>地下城/副本</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Raid')">Raid</button></td><td>/reɪd/</td><td>瑞德</td><td>团队副本/突袭</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Arena')">Arena</button></td><td>/əˈriːnə/</td><td>艾瑞纳</td><td>竞技场</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Battlefield')">Battlefield</button></td><td>/ˈbætlfiːld/</td><td>巴特菲尔德</td><td>战场</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('SafeZone')">Safe Zone</button></td><td>/seɪf zəʊn/</td><td>塞夫宗</td><td>安全区</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('SpawnPoint')">Spawn Point</button></td><td>/spɔːn pɔɪnt/</td><td>斯庞波因特</td><td>出生点/复活点</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Checkpoint')">Checkpoint</button></td><td>/ˈtʃekpɔɪnt/</td><td>切克波因特</td><td>存档点/检查点</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Portal')">Portal</button></td><td>/ˈpɔːtl/</td><td>波特</td><td>传送门</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Teleport')">Teleport</button></td><td>/ˈtelɪpɔːt/</td><td>泰利波特</td><td>传送</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Camp')">Camp</button></td><td>/kæmp/</td><td>坎普</td><td>营地/野怪点</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Town')">Town</button></td><td>/taʊn/</td><td>汤</td><td>城镇</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Village')">Village</button></td><td>/ˈvɪlɪdʒ/</td><td>维利奇</td><td>村庄</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Castle')">Castle</button></td><td>/ˈkɑːsl/</td><td>卡斯尔</td><td>城堡</td></tr>
+
+<!-- 游戏类补充 - 装备与道具 -->
+<tr><td><button class="sound-btn" onclick="playSound('Weapon')">Weapon</button></td><td>/ˈwepən/</td><td>维彭</td><td>武器</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Armor')">Armor</button></td><td>/ˈɑːmə(r)/</td><td>阿默</td><td>护甲</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Helmet')">Helmet</button></td><td>/ˈhelmɪt/</td><td>赫尔米特</td><td>头盔</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Shield')">Shield</button></td><td>/ʃiːld/</td><td>希尔德</td><td>盾牌</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Potion')">Potion</button></td><td>/ˈpəʊʃn/</td><td>波申</td><td>药水</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Elixir')">Elixir</button></td><td>/ɪˈlɪksə(r)/</td><td>伊利克瑟</td><td>灵药/精华</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Scroll')">Scroll</button></td><td>/skrəʊl/</td><td>斯克罗尔</td><td>卷轴</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Gem')">Gem</button></td><td>/dʒem/</td><td>杰姆</td><td>宝石</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Rune')">Rune</button></td><td>/ruːn/</td><td>鲁恩</td><td>符文</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Amulet')">Amulet</button></td><td>/ˈæmjələt/</td><td>阿米尤莱特</td><td>项链</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Ring')">Ring</button></td><td>/rɪŋ/</td><td>瑞英</td><td>戒指</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Boots')">Boots</button></td><td>/buːts/</td><td>布茨</td><td>鞋子</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Gloves')">Gloves</button></td><td>/ɡlʌvz/</td><td>格拉夫兹</td><td>手套</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Cape')">Cape</button></td><td>/keɪp/</td><td>凯普</td><td>披风</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Legendary')">Legendary</button></td><td>/ˈledʒəndri/</td><td>莱真德里</td><td>传说级</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Epic')">Epic</button></td><td>/ˈepɪk/</td><td>艾皮克</td><td>史诗级</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Rare')">Rare</button></td><td>/reə(r)/</td><td>瑞尔</td><td>稀有级</td></tr>
+
+<!-- 游戏类补充 - 状态与效果 -->
+<tr><td><button class="sound-btn" onclick="playSound('Stun')">Stun</button></td><td>/stʌn/</td><td>斯坦</td><td>眩晕</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Freeze')">Freeze</button></td><td>/friːz/</td><td>弗瑞兹</td><td>冻结</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Poison')">Poison</button></td><td>/ˈpɔɪzn/</td><td>波森</td><td>中毒</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Burn')">Burn</button></td><td>/bɜːn/</td><td>伯恩</td><td>燃烧</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Silence')">Silence</button></td><td>/ˈsaɪləns/</td><td>赛伦斯</td><td>沉默</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fear')">Fear</button></td><td>/fɪə(r)/</td><td>菲尔</td><td>恐惧</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Charm')">Charm</button></td><td>/tʃɑːm/</td><td>查姆</td><td>魅惑</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Root')">Root</button></td><td>/ruːt/</td><td>鲁特</td><td>定身</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Invincible')">Invincible</button></td><td>/ɪnˈvɪnsəbl/</td><td>因温瑟博</td><td>无敌</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Invisible')">Invisible</button></td><td>/ɪnˈvɪzəbl/</td><td>因维泽博</td><td>隐身</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Regeneration')">Regeneration</button></td><td>/rɪˌdʒenəˈreɪʃn/</td><td>瑞杰内瑞申</td><td>生命恢复</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Immunity')">Immunity</button></td><td>/ɪˈmjuːnəti/</td><td>伊缪内提</td><td>免疫</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Reflect')">Reflect</button></td><td>/rɪˈflekt/</td><td>瑞弗莱特</td><td>反弹</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('DodgeChance')">Dodge Chance</button></td><td>/dɒdʒ tʃɑːns/</td><td>多吉昌斯</td><td>闪避率</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('CritChance')">Crit Chance</button></td><td>/krɪt tʃɑːns/</td><td>克里特昌斯</td><td>暴击率</td></tr>
+<!-- RPG 补充 1-40：角色 / 种族 / 外观 -->
+<tr><td><button class="sound-btn" onclick="playSound('Fairy')">Fairy</button></td><td>/ˈfeəri/</td><td>费瑞</td><td>精灵/仙子</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Goblin')">Goblin</button></td><td>/ˈɡɒblɪn/</td><td>哥布林</td><td>哥布林</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Troll')">Troll</button></td><td>/trɒl/</td><td>特罗尔</td><td>巨魔</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Undead')">Undead</button></td><td>/ˌʌnˈded/</td><td>安戴德</td><td>亡灵</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Vampire')">Vampire</button></td><td>/ˈvæmpaɪə(r)/</td><td>瓦姆派尔</td><td>吸血鬼</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Werewolf')">Werewolf</button></td><td>/ˈweəwʊlf/</td><td>威尔沃尔夫</td><td>狼人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Golem')">Golem</button></td><td>/ˈɡəʊləm/</td><td>戈莱姆</td><td>魔像/石巨人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Skeleton')">Skeleton</button></td><td>/ˈskelɪtn/</td><td>斯凯莱顿</td><td>骷髅</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Zombie')">Zombie</button></td><td>/ˈzɒmbi/</td><td>僵尸</td><td>僵尸</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Dragon')">Dragon</button></td><td>/ˈdræɡən/</td><td>德拉贡</td><td>龙</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Beast')">Beast</button></td><td>/biːst/</td><td>比斯特</td><td>野兽</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Spirit')">Spirit</button></td><td>/ˈspɪrɪt/</td><td>斯皮瑞特</td><td>灵体</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Wraith')">Wraith</button></td><td>/reɪθ/</td><td>雷伊斯</td><td>怨灵</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Dryad')">Dryad</button></td><td>/ˈdraɪæd/</td><td>德莱德</td><td>树精</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Centaur')">Centaur</button></td><td>/ˈsentɔː(r)/</td><td>森托尔</td><td>半人马</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Harpy')">Harpy</button></td><td>/ˈhɑːpi/</td><td>哈比</td><td>鹰身女妖</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Minotaur')">Minotaur</button></td><td>/ˈmɪnətɔː(r)/</td><td>米诺托尔</td><td>牛头人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Succubus')">Succubus</button></td><td>/ˈsʌkjʊbəs/</td><td>萨克优巴斯</td><td>魅魔</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Lizardfolk')">Lizardfolk</button></td><td>/ˈlɪzədfəʊk/</td><td>利泽德福克斯</td><td>蜥蜴人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Angel')">Angel</button></td><td>/ˈeɪndʒl/</td><td>安吉尔</td><td>天使</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Archangel')">Archangel</button></td><td>/ˈɑːkeɪndʒl/</td><td>阿克安吉尔</td><td>大天使</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Devil')">Devil</button></td><td>/ˈdevl/</td><td>德弗尔</td><td>恶魔</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Outfit')">Outfit</button></td><td>/ˈaʊtfɪt/</td><td>奥特菲特</td><td>套装</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Costume')">Costume</button></td><td>/ˈkɒstjuːm/</td><td>科斯丘姆</td><td>时装</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Hair')">Hair</button></td><td>/heə(r)/</td><td>海尔</td><td>发型</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Face')">Face</button></td><td>/feɪs/</td><td>费斯</td><td>脸型</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Skin')">Skin</button></td><td>/skɪn/</td><td>斯金</td><td>皮肤</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Gender')">Gender</button></td><td>/ˈdʒendə(r)/</td><td>詹德</td><td>性别</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Age')">Age</button></td><td>/eɪdʒ/</td><td>艾吉</td><td>年龄</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Title')">Title</button></td><td>/ˈtaɪtl/</td><td>泰特尔</td><td>称号</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Reputation')">Reputation</button></td><td>/ˌrepjuˈteɪʃn/</td><td>瑞普优泰申</td><td>声望</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fame')">Fame</button></td><td>/feɪm/</td><td>费姆</td><td>名气</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Karma')">Karma</button></td><td>/ˈkɑːmə/</td><td>卡尔玛</td><td>善恶值</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Level')">Level</button></td><td>/ˈlevl/</td><td>莱沃尔</td><td>等级</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('MaxLevel')">Max Level</button></td><td>/mæks ˈlevl/</td><td>麦克斯莱沃尔</td><td>满级</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Prestige')">Prestige</button></td><td>/preˈstiːʒ/</td><td>普雷斯蒂奇</td><td>威望/转生</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Rebirth')">Rebirth</button></td><td>/ˌriːˈbɜːθ/</td><td>瑞伯斯</td><td>转生</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('ClassChange')">Class Change</button></td><td>/klɑːs tʃeɪndʒ/</td><td>克拉斯陈吉</td><td>转职</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Mastery')">Mastery</button></td><td>/ˈmɑːstəri/</td><td>马斯特里</td><td>精通</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Specialization')">Specialization</button></td><td>/ˌspeʃəlaɪˈzeɪʃn/</td><td>斯佩舍莱泽申</td><td>专精</td></tr>
+
+<!-- RPG 补充 41-80：属性 / 状态 / 战斗 -->
+<tr><td><button class="sound-btn" onclick="playSound('Health')">Health</button></td><td>/helθ/</td><td>海尔思</td><td>生命值</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Mana')">Mana</button></td><td>/ˈmɑːnə/</td><td>玛娜</td><td>魔力</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Stamina')">Stamina</button></td><td>/ˈstæmɪnə/</td><td>斯塔米纳</td><td>耐力</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Focus')">Focus</button></td><td>/ˈfəʊkəs/</td><td>福克斯</td><td>专注值</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Rage')">Rage</button></td><td>/reɪdʒ/</td><td>雷吉</td><td>怒气</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Energy')">Energy</button></td><td>/ˈenədʒi/</td><td>艾纳吉</td><td>能量</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Power')">Power</button></td><td>/ˈpaʊə(r)/</td><td>帕尔</td><td>攻击力</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Defense')">Defense</button></td><td>/dɪˈfens/</td><td>迪芬斯</td><td>防御力</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('MagicAttack')">Magic Attack</button></td><td>/ˈmædʒɪk əˈtæk/</td><td>麦吉克阿泰克</td><td>魔法攻击</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('MagicDefense')">Magic Defense</button></td><td>/ˈmædʒɪk dɪˈfens/</td><td>麦吉克迪芬斯</td><td>魔法防御</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Accuracy')">Accuracy</button></td><td>/ˈækjərəsi/</td><td>阿克优瑞斯</td><td>命中</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Evasion')">Evasion</button></td><td>/ɪˈveɪʒn/</td><td>伊维申</td><td>闪避</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Resistance')">Resistance</button></td><td>/rɪˈzɪstəns/</td><td>瑞兹斯特恩斯</td><td>抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Immune')">Immune</button></td><td>/ɪˈmjuːn/</td><td>伊缪恩</td><td>免疫</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Vulnerable')">Vulnerable</button></td><td>/ˈvʌlnərəbl/</td><td>瓦勒纳博</td><td>易伤</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Taunt')">Taunt</button></td><td>/tɔːnt/</td><td>托恩特</td><td>嘲讽</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Sleep')">Sleep</button></td><td>/sliːp/</td><td>斯利普</td><td>睡眠</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Confuse')">Confuse</button></td><td>/kənˈfjuːz/</td><td>肯夫优兹</td><td>混乱</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Berserk')">Berserk</button></td><td>/bəˈsɜːk/</td><td>伯瑟克</td><td>狂暴</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Charm')">Charm</button></td><td>/tʃɑːm/</td><td>查姆</td><td>魅惑</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Curse')">Curse</button></td><td>/kɜːs/</td><td>克斯</td><td>诅咒</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Bless')">Bless</button></td><td>/bles/</td><td>布勒斯</td><td>祝福</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Haste')">Haste</button></td><td>/heɪst/</td><td>黑斯特</td><td>加速</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Slow')">Slow</button></td><td>/sləʊ/</td><td>斯洛</td><td>减速</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Regen')">Regen</button></td><td>/ˈriːdʒən/</td><td>瑞真</td><td>恢复</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Lifesteal')">Lifesteal</button></td><td>/ˈlaɪfstiːl/</td><td>莱夫斯蒂尔</td><td>吸血</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Manasteal')">Manasteal</button></td><td>/ˈmɑːnəstiːl/</td><td>玛娜斯蒂尔</td><td>吸魔</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Thorn')">Thorn</button></td><td>/θɔːn/</td><td>索恩</td><td>反伤</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Dodge')">Dodge</button></td><td>/dɒdʒ/</td><td>多吉</td><td>闪避</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Parry')">Parry</button></td><td>/ˈpæri/</td><td>帕瑞</td><td>格挡</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Block')">Block</button></td><td>/blɒk/</td><td>布洛克</td><td>抵挡</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Counter')">Counter</button></td><td>/ˈkaʊntə(r)/</td><td>考恩特</td><td>反击</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Retaliate')">Retaliate</button></td><td>/rɪˈtælieɪt/</td><td>瑞泰利埃特</td><td> retaliate</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Aggro')">Aggro</button></td><td>/ˈæɡrəʊ/</td><td>阿格罗</td><td>仇恨</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Target')">Target</button></td><td>/ˈtɑːɡɪt/</td><td>塔吉特</td><td>目标</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Ally')">Ally</button></td><td>/ˈælaɪ/</td><td>阿莱</td><td>盟友</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Foe')">Foe</button></td><td>/fəʊ/</td><td>佛</td><td>敌人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Minion')">Minion</button></td><td>/ˈmɪniən/</td><td>米尼恩</td><td>小怪/召唤物</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Boss')">Boss</button></td><td>/bɒs/</td><td>波斯</td><td>BOSS</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Elite')">Elite</button></td><td>/eɪˈliːt/</td><td>伊利特</td><td>精英怪</td></tr>
+
+<!-- RPG 补充 81-120：技能 / 魔法 / 天赋 -->
+<tr><td><button class="sound-btn" onclick="playSound('Spell')">Spell</button></td><td>/spel/</td><td>斯佩尔</td><td>法术</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fireball')">Fireball</button></td><td>/ˈfaɪəbɔːl/</td><td>法尔波尔</td><td>火球术</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Frost')">Frost</button></td><td>/frɒst/</td><td>弗罗斯特</td><td>冰霜</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Ice')">Ice</button></td><td>/aɪs/</td><td>艾斯</td><td>冰</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Lightning')">Lightning</button></td><td>/ˈlaɪtnɪŋ/</td><td>莱特宁</td><td>闪电</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Storm')">Storm</button></td><td>/stɔːm/</td><td>斯托姆</td><td>风暴</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Nature')">Nature</button></td><td>/ˈneɪtʃə(r)/</td><td>内彻</td><td>自然</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Poison')">Poison</button></td><td>/ˈpɔɪzn/</td><td>波森</td><td>毒</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Holy')">Holy</button></td><td>/ˈhəʊli/</td><td>霍利</td><td>神圣</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Shadow')">Shadow</button></td><td>/ˈʃædəʊ/</td><td>沙斗</td><td>暗影</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Chaos')">Chaos</button></td><td>/ˈkeɪɒs/</td><td>凯奥斯</td><td>混沌</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Astral')">Astral</button></td><td>/ˈæstrəl/</td><td>阿斯特拉尔</td><td>星界</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Heal')">Heal</button></td><td>/hiːl/</td><td>希尔</td><td>治疗</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('GroupHeal')">Group Heal</button></td><td>/ɡruːp hiːl/</td><td>格鲁普希尔</td><td>群体治疗</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Revive')">Revive</button></td><td>/rɪˈvaɪv/</td><td>瑞瓦夫</td><td>复活</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Resurrect')">Resurrect</button></td><td>/ˌrezəˈrekt/</td><td>瑞泽雷克特</td><td>复活（法术）</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Barrier')">Barrier</button></td><td>/ˈbæriə(r)/</td><td>巴里尔</td><td>护盾</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Aura')">Aura</button></td><td>/ˈɔːrə/</td><td>奥拉</td><td>光环</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('AoE')">AoE</button></td><td>/ˌeɪ əʊ ˈiː/</td><td>埃欧伊</td><td>范围伤害</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Single')">Single</button></td><td>/ˈsɪŋɡl/</td><td>辛格尔</td><td>单体</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Channel')">Channel</button></td><td>/ˈtʃænl/</td><td>钱诺</td><td>引导法术</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Instant')">Instant</button></td><td>/ˈɪnstənt/</td><td>因斯坦特</td><td>瞬发</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Passive')">Passive</button></td><td>/ˈpæsɪv/</td><td>帕西弗</td><td>被动技能</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Active')">Active</button></td><td>/ˈæktɪv/</td><td>阿克提夫</td><td>主动技能</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Ultimate')">Ultimate</button></td><td>/ˈʌltɪmət/</td><td>阿尔提马特</td><td>大招</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Signature')">Signature</button></td><td>/ˈsɪɡnətʃə(r)/</td><td>西格尼彻</td><td>招牌技能</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Cooldown')">Cooldown</button></td><td>/ˈkuːldaʊn/</td><td>库尔当</td><td>冷却</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('ManaCost')">Mana Cost</button></td><td>/ˈmɑːnə kɒst/</td><td>玛娜考斯特</td><td>耗蓝</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Cast')">Cast</button></td><td>/kɑːst/</td><td>卡斯特</td><td>施法</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Spellbook')">Spellbook</button></td><td>/ˈspelbʊk/</td><td>斯佩尔布克</td><td>法术书</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Learn')">Learn</button></td><td>/lɜːn/</td><td>勒恩</td><td>学习</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Teach')">Teach</button></td><td>/tiːtʃ/</td><td>提奇</td><td>传授</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Forge')">Forge</button></td><td>/fɔːdʒ/</td><td>弗吉</td><td>锻造</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Enchant')">Enchant</button></td><td>/ɪnˈtʃɑːnt/</td><td>因昌特</td><td>附魔</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Gem')">Gem</button></td><td>/dʒem/</td><td>杰姆</td><td>宝石</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Rune')">Rune</button></td><td>/ruːn/</td><td>鲁恩</td><td>符文</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Socket')">Socket</button></td><td>/ˈsɒkɪt/</td><td>索克特</td><td>插槽</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Upgrade')">Upgrade</button></td><td>/ˌʌpˈɡreɪd/</td><td>阿普格雷德</td><td>升级</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Refine')">Refine</button></td><td>/rɪˈfaɪn/</td><td>瑞法因</td><td>精炼</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Enhance')">Enhance</button></td><td>/ɪnˈhɑːns/</td><td>因汉斯</td><td>强化</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Durability')">Durability</button></td><td>/ˌdjʊərəˈbɪləti/</td><td>杜勒比勒提</td><td>耐久度</td></tr>
+
+<!-- RPG 补充 121-160：物品 / 道具 / 货币 -->
+<tr><td><button class="sound-btn" onclick="playSound('Potion')">Potion</button></td><td>/ˈpəʊʃn/</td><td>波申</td><td>药水</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Elixir')">Elixir</button></td><td>/ɪˈlɪksə(r)/</td><td>伊利克瑟</td><td>灵药</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Antidote')">Antidote</button></td><td>/ˈæntidəʊt/</td><td>安提多特</td><td>解毒药</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Remedy')">Remedy</button></td><td>/ˈremədi/</td><td>瑞麦迪</td><td>万能药</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Essence')">Essence</button></td><td>/ˈesns/</td><td>艾斯恩斯</td><td>精华</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Shard')">Shard</button></td><td>/ʃɑːd/</td><td>夏尔的</td><td>碎片</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Crystal')">Crystal</button></td><td>/ˈkrɪstl/</td><td>克里斯托</td><td>水晶</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Ore')">Ore</button></td><td>/ɔː(r)/</td><td>奥尔</td><td>矿石</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Herb')">Herb</button></td><td>/hɜːb/</td><td>赫尔布</td><td>草药</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Seed')">Seed</button></td><td>/siːd/</td><td>西德</td><td>种子</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Meat')">Meat</button></td><td>/miːt/</td><td>米特</td><td>肉</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Hide')">Hide</button></td><td>/haɪd/</td><td>海德</td><td>兽皮</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Claw')">Claw</button></td><td>/klɔː/</td><td>克劳</td><td>爪子</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fang')">Fang</button></td><td>/fæŋ/</td><td>方</td><td>獠牙</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Scale')">Scale</button></td><td>/skeɪl/</td><td>斯凯尔</td><td>鳞片</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Feather')">Feather</button></td><td>/ˈfeðə(r)/</td><td>费泽</td><td>羽毛</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Wing')">Wing</button></td><td>/wɪŋ/</td><td>温</td><td>翅膀</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Horn')">Horn</button></td><td>/hɔːn/</td><td>霍尔恩</td><td>角</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Eye')">Eye</button></td><td>/aɪ/</td><td>艾</td><td>眼球</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Heart')">Heart</button></td><td>/hɑːt/</td><td>哈特</td><td>心脏</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Key')">Key</button></td><td>/kiː/</td><td>奇</td><td>钥匙</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Map')">Map</button></td><td>/mæp/</td><td>麦普</td><td>地图</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Letter')">Letter</button></td><td>/ˈletə(r)/</td><td>莱特尔</td><td>信件</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Note')">Note</button></td><td>/nəʊt/</td><td>诺特</td><td>笔记</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Contract')">Contract</button></td><td>/ˈkɒntrækt/</td><td>康查克特</td><td>契约</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Idol')">Idol</button></td><td>/ˈaɪdl/</td><td>艾德尔</td><td>神像</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Relic')">Relic</button></td><td>/ˈrelɪk/</td><td>瑞利克</td><td>遗迹宝物</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Artifact')">Artifact</button></td><td>/ˈɑːtɪfækt/</td><td>阿提法克特</td><td>神器</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Treasure')">Treasure</button></td><td>/ˈtreʒə(r)/</td><td>特雷热</td><td>宝藏</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Loot')">Loot</button></td><td>/luːt/</td><td>鲁特</td><td>战利品</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Drop')">Drop</button></td><td>/drɒp/</td><td>卓普</td><td>掉落</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Rarity')">Rarity</button></td><td>/ˈreərəti/</td><td>雷勒提</td><td>稀有度</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Normal')">Normal</button></td><td>/ˈnɔːml/</td><td>诺摩尔</td><td>普通</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Magic')">Magic</button></td><td>/ˈmædʒɪk/</td><td>麦吉克</td><td>魔法级</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Unique')">Unique</button></td><td>/juˈniːk/</td><td>优尼克</td><td>唯一</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Heroic')">Heroic</button></td><td>/həˈrəʊɪk/</td><td>赫罗伊克</td><td>英雄级</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Mythic')">Mythic</button></td><td>/ˈmɪθɪk/</td><td>米西克</td><td>神话级</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Gold')">Gold</button></td><td>/ɡəʊld/</td><td>古尔德</td><td>金币</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Silver')">Silver</button></td><td>/ˈsɪlvə(r)/</td><td>西尔弗</td><td>银币</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Coin')">Coin</button></td><td>/kɔɪn/</td><td>科因</td><td>硬币</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Gemstone')">Gemstone</button></td><td>/ˈdʒemstəʊn/</td><td>杰姆斯顿</td><td>宝石</td></tr>
+
+<!-- RPG 补充 161-200：场景 / 任务 / 系统 -->
+<tr><td><button class="sound-btn" onclick="playSound('Field')">Field</button></td><td>/fiːld/</td><td>菲尔德</td><td>野外</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Forest')">Forest</button></td><td>/ˈfɒrɪst/</td><td>福瑞斯特</td><td>森林</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Cave')">Cave</button></td><td>/keɪv/</td><td>凯夫</td><td>洞穴</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Mountain')">Mountain</button></td><td>/ˈmaʊntən/</td><td>马恩滕</td><td>山脉</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Volcano')">Volcano</button></td><td>/vɒlˈkeɪnəʊ/</td><td>沃尔凯诺</td><td>火山</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Desert')">Desert</button></td><td>/ˈdezət/</td><td>德泽特</td><td>沙漠</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Swamp')">Swamp</button></td><td>/swɒmp/</td><td>斯瓦普</td><td>沼泽</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Tundra')">Tundra</button></td><td>/ˈtʌndrə/</td><td>坦德拉</td><td>冻土</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Ruins')">Ruins</button></td><td>/ˈruːɪnz/</td><td>鲁因兹</td><td>废墟</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Temple')">Temple</button></td><td>/ˈtempl/</td><td>坦普尔</td><td>神殿</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Shrine')">Shrine</button></td><td>/ʃraɪn/</td><td>斯莱恩</td><td>神龛</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Tower')">Tower</button></td><td>/ˈtaʊə(r)/</td><td>托尔</td><td>塔</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Keep')">Keep</button></td><td>/kiːp/</td><td>基普</td><td>堡垒</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fort')">Fort</button></td><td>/fɔːt/</td><td>福特</td><td>要塞</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Crypt')">Crypt</button></td><td>/krɪpt/</td><td>克里普特</td><td>地穴</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Labyrinth')">Labyrinth</button></td><td>/ˈlæbərɪnθ/</td><td>拉伯林思</td><td>迷宫</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Haven')">Haven</button></td><td>/ˈheɪvn/</td><td>黑文</td><td>避难所</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Outpost')">Outpost</button></td><td>/ˈaʊtpəʊst/</td><td>奥特波斯特</td><td>前哨</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Capital')">Capital</button></td><td>/ˈkæpɪtl/</td><td>卡皮特尔</td><td>首都</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('City')">City</button></td><td>/ˈsɪti/</td><td>西提</td><td>城市</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Accept')">Accept</button></td><td>/əkˈsept/</td><td>阿克塞普特</td><td>接受任务</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Complete')">Complete</button></td><td>/kəmˈpliːt/</td><td>康普利特</td><td>完成</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Cancel')">Cancel</button></td><td>/ˈkænsl/</td><td>坎瑟尔</td><td>取消</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Reward')">Reward</button></td><td>/rɪˈwɔːd/</td><td>瑞沃德</td><td>奖励</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Bonus')">Bonus</button></td><td>/ˈbəʊnəs/</td><td>博纳斯</td><td>额外奖励</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Collection')">Collection</button></td><td>/kəˈlekʃn/</td><td>克莱克申</td><td>收集</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Explore')">Explore</button></td><td>/ɪkˈsplɔː(r)/</td><td>伊克斯普洛尔</td><td>探索</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Journey')">Journey</button></td><td>/ˈdʒɜːni/</td><td>杰尼</td><td>旅程</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Adventure')">Adventure</button></td><td>/ədˈventʃə(r)/</td><td>阿德温彻</td><td>冒险</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Questgiver')">Questgiver</button></td><td>/ˈkwestɡɪvə(r)/</td><td>奎斯特吉弗</td><td>任务发布者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Merchant')">Merchant</button></td><td>/ˈmɜːtʃənt/</td><td>默辰特</td><td>商人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Buy')">Buy</button></td><td>/baɪ/</td><td>拜</td><td>购买</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Sell')">Sell</button></td><td>/sel/</td><td>塞尔</td><td>出售</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Repair')">Repair</button></td><td>/rɪˈpeə(r)/</td><td>瑞佩尔</td><td>修理</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Storage')">Storage</button></td><td>/ˈstɔːrɪdʒ/</td><td>斯托里奇</td><td>仓库</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Bank')">Bank</button></td><td>/bæŋk/</td><td>班克</td><td>银行</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Craft')">Craft</button></td><td>/krɑːft/</td><td>克拉夫特</td><td>制作</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Disenchant')">Disenchant</button></td><td>/ˌdɪsɪnˈtʃɑːnt/</td><td>迪森昌特</td><td>分解</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Salvage')">Salvage</button></td><td>/ˈsælvɪdʒ/</td><td>萨尔维奇</td><td>打捞/拆解</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Save')">Save</button></td><td>/seɪv/</td><td>塞夫</td><td>存档</td></tr>
+<!-- ========================== RPG 300 个补充 ========================== -->
+<!-- 1-60 角色 / 职业 / 种族 / 称号 -->
+<tr><td><button class="sound-btn" onclick="playSound('Sorceress')">Sorceress</button></td><td>/ˈsɔːsərəs/</td><td>索瑟瑞斯</td><td>女巫</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Bard')">Bard</button></td><td>/bɑːd/</td><td>巴德</td><td>吟游诗人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Monk')">Monk</button></td><td>/mʌŋk/</td><td>蒙克</td><td>武僧</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Ninja')">Ninja</button></td><td>/ˈnɪndʒə/</td><td>忍者</td><td>忍者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Samurai')">Samurai</button></td><td>/ˈsæməraɪ/</td><td>萨穆莱</td><td>武士</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Dragoon')">Dragoon</button></td><td>/drəˈɡuːn/</td><td>德拉贡</td><td>龙骑士</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Beastmaster')">Beastmaster</button></td><td>/ˈbiːstmɑːstə/</td><td>比斯特马斯特</td><td>驯兽师</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Spellblade')">Spellblade</button></td><td>/ˈspelbleɪd/</td><td>斯佩尔布雷德</td><td>魔剑士</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Berserker')">Berserker</button></td><td>/bəˈsɜːkə/</td><td>伯瑟克</td><td>狂战士</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Rune Knight')">Rune Knight</button></td><td>/ruːn naɪt/</td><td>鲁恩奈特</td><td>符文骑士</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Sage')">Sage</button></td><td>/seɪdʒ/</td><td>塞奇</td><td>贤者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Warlock')">Warlock</button></td><td>/ˈwɔːlɒk/</td><td>沃洛克</td><td>术士</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Shaman')">Shaman</button></td><td>/ˈʃeɪmən/</td><td>萨满</td><td>萨满</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Warden')">Warden</button></td><td>/ˈwɔːdn/</td><td>沃登</td><td>守望者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Champion')">Champion</button></td><td>/ˈtʃæmpiən/</td><td>钱皮恩</td><td>冠军</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Hercules')">Hercules</button></td><td>/ˈhɜːkjuliːz/</td><td>赫丘利斯</td><td>大力士</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Guardian')">Guardian</button></td><td>/ˈɡɑːdiən/</td><td>加迪安</td><td>守护者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Vanquisher')">Vanquisher</button></td><td>/ˈvæŋkwɪʃə/</td><td>万奎舍</td><td>征服者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Wanderer')">Wanderer</button></td><td>/ˈwɒndərə/</td><td>万德勒</td><td>流浪者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Seer')">Seer</button></td><td>/sɪə/</td><td>希尔</td><td>先知</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Oracle')">Oracle</button></td><td>/ˈɒrəkl/</td><td>奥拉克尔</td><td>神谕者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Djinn')">Djinn</button></td><td>/dʒɪn/</td><td>金恩</td><td>灯神</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Yeti')">Yeti</button></td><td>/ˈjeti/</td><td>耶提</td><td>雪人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Gargoyle')">Gargoyle</button></td><td>/ˈɡɑːɡɔɪl/</td><td>加戈伊尔</td><td>石像鬼</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Manticore')">Manticore</button></td><td>/ˈmæntɪkɔː/</td><td>曼提科尔</td><td>蝎尾狮</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Pegasus')">Pegasus</button></td><td>/ˈpeɡəsəs/</td><td>佩加索斯</td><td>飞马</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Phoenix')">Phoenix</button></td><td>/ˈfiːnɪks/</td><td>菲尼克斯</td><td>凤凰</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Kitsune')">Kitsune</button></td><td>/kɪtˈsuːneɪ/</td><td> Kitsune</td><td>九尾狐</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Oni')">Oni</button></td><td>/ˈəʊni/</td><td>欧尼</td><td>鬼/恶鬼</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Titan')">Titan</button></td><td>/ˈtaɪtn/</td><td>泰坦</td><td>泰坦</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Lich')">Lich</button></td><td>/lɪtʃ/</td><td>利奇</td><td>巫妖</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Dreadknight')">Dreadknight</button></td><td>/dred naɪt/</td><td>德雷德奈特</td><td>恐惧骑士</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Valkyrie')">Valkyrie</button></td><td>/vælˈkɪri/</td><td>瓦尔基里</td><td>女武神</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('High Elf')">High Elf</button></td><td>/haɪ elf/</td><td>海埃尔夫</td><td>高等精灵</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Dark Elf')">Dark Elf</button></td><td>/dɑːk elf/</td><td>达克埃尔夫</td><td>黑暗精灵</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Wood Elf')">Wood Elf</button></td><td>/wʊd elf/</td><td>伍德埃尔夫</td><td>木精灵</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Half Elf')">Half Elf</button></td><td>/hɑːf elf/</td><td>哈夫埃尔夫</td><td>半精灵</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Half Orc')">Half Orc</button></td><td>/hɑːf ɔːk/</td><td>哈夫奥克</td><td>半兽人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Astral Elf')">Astral Elf</button></td><td>/ˈæstrəl elf/</td><td>阿斯特拉尔</td><td>星界精灵</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Frost Giant')">Frost Giant</button></td><td>/frɒst ˈdʒaɪənt/</td><td>弗罗斯特</td><td>冰霜巨人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fire Giant')">Fire Giant</button></td><td>/faɪə ˈdʒaɪənt/</td><td>法尔</td><td>火焰巨人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Hill Giant')">Hill Giant</button></td><td>/hɪl ˈdʒaɪənt/</td><td>希尔</td><td>山丘巨人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Stone Giant')">Stone Giant</button></td><td>/stəʊn ˈdʒaɪənt/</td><td>斯通</td><td>石巨人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Cloud Giant')">Cloud Giant</button></td><td>/klaʊd ˈdʒaɪənt/</td><td>克劳德</td><td>云巨人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Storm Giant')">Storm Giant</button></td><td>/stɔːm ˈdʒaɪənt/</td><td>斯托姆</td><td>风暴巨人</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fortune')">Fortune</button></td><td>/ˈfɔːtʃuːn/</td><td>福琼</td><td>幸运</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Glory')">Glory</button></td><td>/ˈɡlɔːri/</td><td>格洛瑞</td><td>荣耀</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Honor')">Honor</button></td><td>/ˈɒnə/</td><td>奥纳</td><td>荣誉</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Destiny')">Destiny</button></td><td>/ˈdestəni/</td><td>德斯蒂尼</td><td>命运</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Legend')">Legend</button></td><td>/ˈledʒənd/</td><td>莱真德</td><td>传奇</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Myth')">Myth</button></td><td>/mɪθ/</td><td>密斯</td><td>神话</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Prophet')">Prophet</button></td><td>/ˈprɒfɪt/</td><td>普罗菲特</td><td>先知</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Savior')">Savior</button></td><td>/ˈseɪvjə/</td><td>塞维尔</td><td>救世主</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Conqueror')">Conqueror</button></td><td>/ˈkɒŋkərə/</td><td>康科勒</td><td>征服者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Defender')">Defender</button></td><td>/dɪˈfendə/</td><td>迪芬德</td><td>守护者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Avenger')">Avenger</button></td><td>/əˈvendʒə/</td><td>阿文杰</td><td>复仇者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Protector')">Protector</button></td><td>/prəˈtektə/</td><td>普罗泰克</td><td>保护者</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Warlord')">Warlord</button></td><td>/ˈwɔːlɔːd/</td><td>沃洛德</td><td>军阀</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Overlord')">Overlord</button></td><td>/ˈəʊvəlɔːd/</td><td>奥弗洛德</td><td>霸主</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Archmage')">Archmage</button></td><td>/ˈɑːtʃmeɪdʒ/</td><td>阿奇梅吉</td><td>大法师</td></tr>
+
+<!-- 61-120 属性 / 状态 / 战斗机制 -->
+<tr><td><button class="sound-btn" onclick="playSound('Resolve')">Resolve</button></td><td>/rɪˈzɒlv/</td><td>瑞佐尔夫</td><td>决心</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Willpower')">Willpower</button></td><td>/ˈwɪlpaʊə/</td><td>威尔帕瓦</td><td>意志力</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Endurance')">Endurance</button></td><td>/ɪnˈdjʊərəns/</td><td>因迪伦斯</td><td>耐力</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Constitution')">Constitution</button></td><td>/ˌkɒnstɪˈtjuːʃn/</td><td>康斯提申</td><td>体质</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Wisdom')">Wisdom</button></td><td>/ˈwɪzdəm/</td><td>威兹德姆</td><td>智慧</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Charisma')">Charisma</button></td><td>/kəˈrɪzmə/</td><td>卡瑞斯玛</td><td>魅力</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Perception')">Perception</button></td><td>/pəˈsepʃn/</td><td>珀塞申</td><td>感知</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fortitude')">Fortitude</button></td><td>/ˈfɔːtɪtjuːd/</td><td>福提丘德</td><td>坚韧</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Reflex')">Reflex</button></td><td>/ˈriːfleks/</td><td>瑞弗莱克斯</td><td>反射</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Will')">Will</button></td><td>/wɪl/</td><td>威尔</td><td>意志</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('All Stats')">All Stats</button></td><td>/ɔːl stæts/</td><td>奥斯泰茨</td><td>全属性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Base Stat')">Base Stat</button></td><td>/beɪs stæt/</td><td>贝斯泰特</td><td>基础属性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Bonus Stat')">Bonus Stat</button></td><td>/ˈbəʊnəs stæt/</td><td>博纳斯泰特</td><td>额外属性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Total Stat')">Total Stat</button></td><td>/ˈtəʊtl stæt/</td><td>托泰特</td><td>总属性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Attack Speed')">Attack Speed</button></td><td>/əˈtæk spiːd/</td><td>阿泰克斯皮德</td><td>攻击速度</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Cast Speed')">Cast Speed</button></td><td>/kɑːst spiːd/</td><td>卡斯特斯皮德</td><td>施法速度</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Move Speed')">Move Speed</button></td><td>/muːv spiːd/</td><td>穆夫斯皮德</td><td>移动速度</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Crit Damage')">Crit Damage</button></td><td>/krɪt ˈdæmɪdʒ/</td><td>克里特丹吉</td><td>暴击伤害</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Final Damage')">Final Damage</button></td><td>/ˈfaɪnl ˈdæmɪdʒ/</td><td>法尔丹吉</td><td>最终伤害</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Damage Taken')">Damage Taken</button></td><td>/ˈdæmɪdʒ ˈteɪkən/</td><td>丹吉泰肯</td><td>承受伤害</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Damage Reduce')">Damage Reduce</button></td><td>/ˈdæmɪdʒ rɪˈdjuːs/</td><td>丹吉瑞久斯</td><td>减伤</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Heal Bonus')">Heal Bonus</button></td><td>/hiːl ˈbəʊnəs/</td><td>希尔博纳斯</td><td>治疗加成</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Shield Bonus')">Shield Bonus</button></td><td>/ʃiːld ˈbəʊnəs/</td><td>希尔博纳斯</td><td>护盾加成</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Aura Bonus')">Aura Bonus</button></td><td>/ˈɔːrə ˈbəʊnəs/</td><td>奥拉博纳斯</td><td>光环加成</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Amp Damage')">Amp Damage</button></td><td>/æmp ˈdæmɪdʒ/</td><td>安普丹吉</td><td>增伤</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fire Resist')">Fire Resist</button></td><td>/faɪə rɪˈzɪst/</td><td>法尔瑞斯特</td><td>火抗</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Ice Resist')">Ice Resist</button></td><td>/aɪs rɪˈzɪst/</td><td>艾斯瑞斯特</td><td>冰抗</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Lightning Resist')">Lightning Resist</button></td><td>/ˈlaɪtnɪŋ rɪˈzɪst/</td><td>莱特宁瑞斯特</td><td>电抗</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Poison Resist')">Poison Resist</button></td><td>/ˈpɔɪzn rɪˈzɪst/</td><td>波森瑞斯特</td><td>毒抗</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Holy Resist')">Holy Resist</button></td><td>/ˈhəʊli rɪˈzɪst/</td><td>霍利瑞斯特</td><td>神圣抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Shadow Resist')">Shadow Resist</button></td><td>/ˈʃædəʊ rɪˈzɪst/</td><td>沙斗瑞斯特</td><td>暗影抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Nature Resist')">Nature Resist</button></td><td>/ˈneɪtʃə rɪˈzɪst/</td><td>内彻瑞斯特</td><td>自然抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Chaos Resist')">Chaos Resist</button></td><td>/ˈkeɪɒs rɪˈzɪst/</td><td>凯奥斯瑞斯特</td><td>混沌抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('All Resist')">All Resist</button></td><td>/ɔːl rɪˈzɪst/</td><td>奥瑞斯特</td><td>全抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fear Resist')">Fear Resist</button></td><td>/fɪə rɪˈzɪst/</td><td>菲尔瑞斯特</td><td>恐惧抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Stun Resist')">Stun Resist</button></td><td>/stʌn rɪˈzɪst/</td><td>斯坦瑞斯特</td><td>眩晕抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Silence Resist')">Silence Resist</button></td><td>/ˈsaɪləns rɪˈzɪst/</td><td>赛伦斯瑞斯特</td><td>沉默抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Charm Resist')">Charm Resist</button></td><td>/tʃɑːm rɪˈzɪst/</td><td>查姆瑞斯特</td><td>魅惑抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Sleep Resist')">Sleep Resist</button></td><td>/sliːp rɪˈzɪst/</td><td>斯利普瑞斯特</td><td>睡眠抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Confuse Resist')">Confuse Resist</button></td><td>/kənˈfjuːz rɪˈzɪst/</td><td>肯夫优兹瑞斯特</td><td>混乱抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Curse Resist')">Curse Resist</button></td><td>/kɜːs rɪˈzɪst/</td><td>克斯瑞斯特</td><td>诅咒抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Blind')">Blind</button></td><td>/blaɪnd/</td><td>布莱恩德</td><td>致盲</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Weaken')">Weaken</button></td><td>/ˈwiːkən/</td><td>维肯</td><td>虚弱</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Plague')">Plague</button></td><td>/pleɪɡ/</td><td>普雷格</td><td>瘟疫</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Rot')">Rot</button></td><td>/rɒt/</td><td>罗特</td><td>腐烂</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Wither')">Wither</button></td><td>/ˈwɪðə/</td><td>威泽</td><td>枯萎</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Petrify')">Petrify</button></td><td>/ˈpetrɪfaɪ/</td><td>佩特里法伊</td><td>石化</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Entangle')">Entangle</button></td><td>/ɪnˈtæŋɡl/</td><td>因坦格尔</td><td>缠绕</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Knockback')">Knockback</button></td><td>/ˈnɒkbæk/</td><td>诺克贝克</td><td>击退</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Knockdown')">Knockdown</button></td><td>/ˈnɒkdaʊn/</td><td>诺克当</td><td>击倒</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Pull')">Pull</button></td><td>/pʊl/</td><td>普尔</td><td>拉拽</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Taunt Resist')">Taunt Resist</button></td><td>/tɔːnt rɪˈzɪst/</td><td>托恩特瑞斯特</td><td>嘲讽抗性</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Death Sentence')">Death Sentence</button></td><td>/deθ ˈsentəns/</td><td>德斯森滕斯</td><td>死刑</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Doom')">Doom</button></td><td>/duːm/</td><td>杜姆</td><td>末日</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Mark')">Mark</button></td><td>/mɑːk/</td><td>马克</td><td>标记</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Precision')">Precision</button></td><td>/prɪˈsɪʒn/</td><td>普雷申</td><td>精准</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Ferocity')">Ferocity</button></td><td>/fəˈrɒsəti/</td><td>费罗西提</td><td>凶猛</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Tenacity')">Tenacity</button></td><td>/təˈnæsəti/</td><td>特纳西提</td><td>坚韧</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Vigor')">Vigor</button></td><td>/ˈvɪɡə/</td><td>维格</td><td>活力</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Might')">Might</button></td><td>/maɪt/</td><td>麦特</td><td>威能</td></tr>
+
+<!-- 121-180 技能 / 魔法 / 大招 / 被动 -->
+<tr><td><button class="sound-btn" onclick="playSound('Meteor')">Meteor</button></td><td>/ˈmiːtiə/</td><td>米提尔</td><td>陨石术</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Blizzard')">Blizzard</button></td><td>/ˈblɪzəd/</td><td>布利扎德</td><td>暴风雪</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Thunderstorm')">Thunderstorm</button></td><td>/ˈθʌndəstɔːm/</td><td>桑德斯托姆</td><td>雷暴</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Earthquake')">Earthquake</button></td><td>/ˈɜːθkweɪk/</td><td>厄斯奎克</td><td>地震</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Tornado')">Tornado</button></td><td>/tɔːˈneɪdəʊ/</td><td>托内多</td><td>龙卷风</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Tsunami')">Tsunami</button></td><td>/tsuːˈnɑːmi/</td><td>海啸</td><td>海啸</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Volcano')">Volcano</button></td><td>/vɒlˈkeɪnəʊ/</td><td>沃尔凯诺</td><td>火山爆发</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Sunfire')">Sunfire</button></td><td>/ˈsʌnfaɪə/</td><td>桑法尔</td><td>太阳之火</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Moonlight')">Moonlight</button></td><td>/ˈmuːnlaɪt/</td><td>穆恩莱特</td><td>月光</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Starfall')">Starfall</button></td><td>/ˈstɑːfɔːl/</td><td>斯塔福尔</td><td>星落</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Nova')">Nova</button></td><td>/ˈnəʊvə/</td><td>诺瓦</td><td>新星</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Orb')">Orb</button></td><td>/ɔːb/</td><td>奥布</td><td>法球</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Beam')">Beam</button></td><td>/biːm/</td><td>比姆</td><td>光束</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Lance')">Lance</button></td><td>/lɑːns/</td><td>兰斯</td><td>长枪/光矛</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Strike')">Strike</button></td><td>/straɪk/</td><td>斯特莱克</td><td>打击</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Slash')">Slash</button></td><td>/slæʃ/</td><td>斯拉什</td><td>斩击</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Thrust')">Thrust</button></td><td>/θrʌst/</td><td>斯拉斯</td><td>刺击</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Cleave')">Cleave</button></td><td>/kliːv/</td><td>克利夫</td><td>顺劈</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Whirlwind')">Whirlwind</button></td><td>/ˈwɜːlwɪnd/</td><td>沃尔温德</td><td>旋风斩</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Eviscerate')">Eviscerate</button></td><td>/ɪˈvɪsəreɪt/</td><td>伊维瑟雷特</td><td>剔骨</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Backstab')">Backstab</button></td><td>/ˈbækstæb/</td><td>巴克斯坦布</td><td>背刺</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Ambush')">Ambush</button></td><td>/ˈæmbʊʃ/</td><td>安布希</td><td>伏击</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Vanish')">Vanish</button></td><td>/ˈvænɪʃ/</td><td>凡尼什</td><td>消失</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Smoke Bomb')">Smoke Bomb</button></td><td>/sməʊk bɒm/</td><td>斯莫克邦姆</td><td>烟雾弹</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Flash')">Flash</button></td><td>/flæʃ/</td><td>弗拉什</td><td>闪现</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Blink')">Blink</button></td><td>/blɪŋk/</td><td>布林克</td><td>闪烁</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Phase')">Phase</button></td><td>/feɪz/</td><td>费兹</td><td>相位</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Warp')">Warp</button></td><td>/wɔːp/</td><td>沃普</td><td>扭曲</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Haste Aura')">Haste Aura</button></td><td>/heɪst ˈɔːrə/</td><td>黑斯特奥拉</td><td>加速光环</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Resist Aura')">Resist Aura</button></td><td>/rɪˈzɪst ˈɔːrə/</td><td>瑞斯特奥拉</td><td>抗性光环</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Devotion Aura')">Devotion Aura</button></td><td>/dɪˈvəʊʃn ˈɔːrə/</td><td>迪沃申奥拉</td><td>虔诚光环</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Concentration')">Concentration</button></td><td>/ˌkɒnsnˈtreɪʃn/</td><td>康森特雷申</td><td>专注</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Meditation')">Meditation</button></td><td>/ˌmedɪˈteɪʃn/</td><td>麦迪泰申</td><td>冥想</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Regeneration')">Regeneration</button></td><td>/rɪˌdʒenəˈreɪʃn/</td><td>瑞杰内申</td><td>再生</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Mana Regen')">Mana Regen</button></td><td>/ˈmɑːnə rɪˈdʒen/</td><td>玛娜瑞真</td><td>法力回复</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Health Regen')">Health Regen</button></td><td>/helθ rɪˈdʒen/</td><td>海尔思瑞真</td><td>生命回复</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Stamina Regen')">Stamina Regen</button></td><td>/ˈstæmɪnə rɪˈdʒen/</td><td>斯塔米纳瑞真</td><td>耐力回复</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Combo Power')">Combo Power</button></td><td>/ˈkɒmbə ˈpaʊə/</td><td>康博帕瓦</td><td>连击点</td></tr> Finisher
+<tr><td><button class="sound-btn" onclick="playSound('Finisher')">Finisher</button></td><td>/ˈfɪnɪʃə/</td><td>菲尼舍</td><td>终结技</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Preparation')">Preparation</button></td><td>/ˌprepəˈreɪʃn/</td><td>普雷帕雷申</td><td>预备</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Counterattack')">Counterattack</button></td><td>/ˈkaʊntərətæk/</td><td>考恩特阿泰克</td><td>反击</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Riposte')">Riposte</button></td><td>/rɪˈpɒst/</td><td>瑞波斯特</td><td>还击</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Vital Strike')">Vital Strike</button></td><td>/ˈvaɪtl straɪk/</td><td>瓦特尔斯特莱克</td><td>要害打击</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Mercy')">Mercy</button></td><td>/ˈmɜːsi/</td><td>莫西</td><td>仁慈</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Judgment')">Judgment</button></td><td>/ˈdʒʌdʒmənt/</td><td>贾奇门特</td><td>审判</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Smite')">Smite</button></td><td>/smaɪt/</td><td>斯麦特</td><td>惩戒</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Holy Light')">Holy Light</button></td><td>/ˈhəʊli laɪt/</td><td>霍利莱特</td><td>圣光</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Divine Shield')">Divine Shield</button></td><td>/dɪˈvaɪn ʃiːld/</td><td>迪凡希尔</td><td>神圣护盾</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Redemption')">Redemption</button></td><td>/rɪˈdempʃn/</td><td>瑞登申</td><td>救赎</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Penance')">Penance</button></td><td>/ˈpenəns/</td><td>佩南斯</td><td>忏悔</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Soul Heal')">Soul Heal</button></td><td>/səʊl hiːl/</td><td>索尔希尔</td><td>灵魂治疗</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Mind Blast')">Mind Blast</button></td><td>/maɪnd blɑːst/</td><td>麦德布拉斯特</td><td>心灵震爆</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Psychic Scream')">Psychic Scream</button></td><td>/ˈsaɪkɪk skriːm/</td><td>赛克斯科里姆</td><td>精神尖啸</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fear Ward')">Fear Ward</button></td><td>/fɪə wɔːd/</td><td>菲尔沃德</td><td>反恐结界</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Demon Skin')">Demon Skin</button></td><td>/ˈdiːmən skɪn/</td><td>迪蒙斯金</td><td>恶魔皮肤</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Soul Link')">Soul Link</button></td><td>/səʊl lɪŋk/</td><td>索尔林克</td><td>灵魂链接</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Drain Life')">Drain Life</button></td><td>/dreɪn laɪf/</td><td>德雷恩莱夫</td><td>吸取生命</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Drain Mana')">Drain Mana</button></td><td>/dreɪn ˈmɑːnə/</td><td>德雷恩玛娜</td><td>吸取法力</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Corruption')">Corruption</button></td><td>/kəˈrʌpʃn/</td><td>卡腊普申</td><td>腐蚀</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Agony')">Agony</button></td><td>/ˈæɡəni/</td><td>艾格尼</td><td>痛苦</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Exorcism')">Exorcism</button></td><td>/ˈeksɔːsɪzəm/</td><td>埃克索西斯</td><td>驱魔</td></tr>
+
+<!-- 181-240 装备 / 武器 / 防具 / 饰品 -->
+<tr><td><button class="sound-btn" onclick="playSound('Greatsword')">Greatsword</button></td><td>/ˈɡreɪtsɔːd/</td><td>格雷特索德</td><td>大剑</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Longsword')">Longsword</button></td><td>/ˈlɒŋsɔːd/</td><td>朗索德</td><td>长剑</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Shortsword')">Shortsword</button></td><td>/ˈʃɔːtsɔːd/</td><td>肖特索德</td><td>短剑</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Dagger')">Dagger</button></td><td>/ˈdæɡə/</td><td>达格</td><td>匕首</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Axe')">Axe</button></td><td>/æks/</td><td>阿克塞斯</td><td>斧头</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Mace')">Mace</button></td><td>/meɪs/</td><td>梅斯</td><td>钉头锤</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Hammer')">Hammer</button></td><td>/ˈhæmə/</td><td>哈默</td><td>锤子</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Spear')">Spear</button></td><td>/spɪə/</td><td>斯皮尔</td><td>长矛</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Staff')">Staff</button></td><td>/stɑːf/</td><td>斯塔夫</td><td>法杖</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Wand')">Wand</button></td><td>/wɒnd/</td><td>万德</td><td>魔杖</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Bow')">Bow</button></td><td>/bəʊ/</td><td>波</td><td>弓</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Crossbow')">Crossbow</button></td><td>/ˈkrɒsbəʊ/</td><td>克罗斯波</td><td>弩</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Gun')">Gun</button></td><td>/ɡʌn/</td><td>冈</td><td>枪械</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Claw')">Claw</button></td><td>/klɔː/</td><td>克劳</td><td>爪</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Fist')">Fist</button></td><td>/fɪst/</td><td>菲斯特</td><td>拳套</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Scythe')">Scythe</button></td><td>/saɪð/</td><td>赛兹</td><td>镰刀</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Blade')">Blade</button></td><td>/bleɪd/</td><td>布雷德</td><td>刀刃</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Saber')">Saber</button></td><td>/ˈseɪbə/</td><td>萨伯</td><td>军刀</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Rapier')">Rapier</button></td><td>/ˈreɪpiə/</td><td>雷皮尔</td><td>细剑</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Flail')">Flail</button></td><td>/fleɪl/</td><td>弗莱尔</td><td>连枷</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Polearm')">Polearm</button></td><td>/ˈpəʊlɑːm/</td><td>波拉姆</td><td>长柄武器</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Halberd')">Halberd</button></td><td>/ˈhælbəd/</td><td>哈尔伯德</td><td>戟</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Leather Armor')">Leather Armor</button></td><td>/ˈleðə ˈɑːmə/</td><td>莱泽阿默</td><td>皮甲</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Chain Armor')">Chain Armor</button></td><td>/tʃeɪn ˈɑːmə/</td><td>陈阿默</td><td>锁甲</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Plate Armor')">Plate Armor</button></td><td>/pleɪt ˈɑːmə/</td><td>普雷特阿默</td><td>板甲</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Cloth Armor')">Cloth Armor</button></td><td>/klɒθ ˈɑːmə/</td><td>克洛斯阿默</td><td>布甲</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Robes')">Robes</button></td><td>/rəʊbz/</td><td>罗伯兹</td><td>长袍</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Vest')">Vest</button></td><td>/vest/</td><td>维斯特</td><td>背心</td></tr>
+<tr><td><button class="sound-btn" onclick="playSound('Pauldrons')">Pauldrons</button></td><td>/ˈpɔːldrənz/</td><td>波尔德朗兹</td><td>肩甲</td></tr>
+
 <tr><td><button class="sound-btn" onclick="playSound('Subway')">Subway</button></td><td>/ˈsʌbweɪ/</td><td>萨布维</td><td>地铁</td></tr>
 <tr><td><button class="sound-btn" onclick="playSound('Bus')">Bus</button></td><td>/bʌs/</td><td>巴斯</td><td>公交车</td></tr>
 <tr><td><button class="sound-btn" onclick="playSound('Taxi')">Taxi</button></td><td>/ˈtæksi/</td><td>泰克西</td><td>出租车</td></tr>
