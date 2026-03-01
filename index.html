@@ -669,5 +669,16 @@
             });
         </script>
     </div>
+    <script>
+  // 单词发音功能：点击播放美式发音
+  function playSound(word) {
+    // 创建语音对象
+    const utterance = new SpeechSynthesisUtterance(word);
+    // 设置发音语言（美式英语）
+    utterance.lang = 'en-US';
+    // 播放发音
+    window.speechSynthesis.speak(utterance);
+  }
+</script>
 </body>
 </html>
