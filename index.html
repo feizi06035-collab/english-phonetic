@@ -261,7 +261,7 @@
             <table>
                 <!-- 直接粘贴到原有日常问候表格最后一行之后 -->
 <tr>
-  <td><button onclick="playSound('Hi')" style="border:none;background:none;color:#007bff;cursor:pointer;">Hi</button></td>
+  <td><button onclick="playSound('Hi')" style="border: none; background: transparent; color: #007bff; cursor: pointer;">Hi</button></td>
   <td>/haɪ/</td>
   <td>嗨</td>
   <td>嗨（非正式问候）</td>
@@ -669,14 +669,10 @@
             });
         </script>
     </div>
-    <script>
-  // 单词发音功能：点击播放美式发音
+<script>
   function playSound(word) {
-    // 创建语音对象
     const utterance = new SpeechSynthesisUtterance(word);
-    // 设置发音语言（美式英语）
     utterance.lang = 'en-US';
-    // 播放发音
     window.speechSynthesis.speak(utterance);
   }
 </script>
