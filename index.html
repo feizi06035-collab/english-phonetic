@@ -4582,10 +4582,10 @@
             function playPracticeWord() {
                 if (practiceState.currentWord) {
                     playSound(practiceState.currentWord.word);
-                    // 显示当前播放的单词内容
+                    // 显示当前播放的单词内容（中文谐音和释义）
                     const displayDiv = document.getElementById('currentWordDisplay');
                     if (displayDiv) {
-                        displayDiv.innerHTML = `<span class="word">${practiceState.currentWord.word}</span><span class="phonetic">${practiceState.currentWord.phonetic}</span>`;
+                        displayDiv.innerHTML = `<span class="word">${practiceState.currentWord.homophone}</span><span class="phonetic">${practiceState.currentWord.meaning}</span>`;
                     }
                 }
             }
