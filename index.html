@@ -3017,20 +3017,50 @@
             // 获取全量单词数组（用于全部分类的搜索）
             function getAllWords() {
                 let allWords = [];
-                Object.keys(wordData).forEach(category => {
-                    wordData[category].forEach(word => {
-                        allWords.push({
-                            category: category,
-                            ...word
+                
+                // 优先从 wordDatabase 获取数据
+                if (typeof wordDatabase !== 'undefined') {
+                    Object.keys(wordDatabase).forEach(category => {
+                        wordDatabase[category].forEach(wordItem => {
+                            const sentence = wordItem.sentence + ' → 【' + wordItem.translation + '】→ ' + wordItem.homophoneSentence;
+                            allWords.push({
+                                category: category,
+                                wordText: wordItem.word,
+                                phonetic: wordItem.phonetic,
+                                homophone: wordItem.homophone,
+                                meaning: wordItem.meaning,
+                                sentence: sentence,
+                                cells: [wordItem.word, wordItem.phonetic, wordItem.homophone, wordItem.meaning, sentence],
+                                cellsHtml: [
+                                    '<button class="sound-btn" onclick="playSound(\'' + wordItem.word.replace(/'/g, "\\'") + '\')">' + wordItem.word + '</button>',
+                                    wordItem.phonetic,
+                                    wordItem.homophone,
+                                    wordItem.meaning,
+                                    sentence
+                                ]
+                            });
                         });
                     });
-                });
+                } else {
+                    // 如果 wordDatabase 未定义，从 wordData 获取
+                    Object.keys(wordData).forEach(category => {
+                        wordData[category].forEach(word => {
+                            allWords.push({
+                                category: category,
+                                ...word
+                            });
+                        });
+                    });
+                }
+                
+                console.log('getAllWords returned', allWords.length, 'words');
                 return allWords;
             }
             
             // 搜索功能
             document.getElementById('searchInput').addEventListener('input', function() {
                 const searchTerm = this.value.toLowerCase().trim();
+                console.log('Search term:', searchTerm);
                 let hasResults = false;
                 let matchCount = 0;
                 
@@ -3070,6 +3100,7 @@
                 
                 // 搜索全量单词数组（覆盖所有分类）
                 const searchWords = getAllWords();
+                console.log('Searching in', searchWords.length, 'words');
                 
                 // 遍历搜索范围，查找匹配的结果
                 searchWords.forEach(word => {
@@ -4930,20 +4961,48 @@
             function getCurrentCategoryWords() {
                 const activeCategory = document.querySelector('.category-btn.active')?.dataset.category || 'all';
                 console.log('getCurrentCategoryWords called, activeCategory:', activeCategory);
-                console.log('wordData keys:', Object.keys(wordData));
-                console.log('wordData counts:', Object.keys(wordData).map(k => k + ': ' + wordData[k].length));
                 
                 let words = [];
                 
-                if (activeCategory === 'all') {
-                    // 获取所有分类的单词
-                    Object.keys(wordData).forEach(category => {
-                        words = words.concat(wordData[category]);
-                    });
+                // 优先从 wordDatabase 获取数据
+                if (typeof wordDatabase !== 'undefined') {
+                    if (activeCategory === 'all') {
+                        // 获取所有分类的单词
+                        Object.keys(wordDatabase).forEach(category => {
+                            wordDatabase[category].forEach(wordItem => {
+                                const sentence = wordItem.sentence + ' → 【' + wordItem.translation + '】→ ' + wordItem.homophoneSentence;
+                                words.push({
+                                    wordText: wordItem.word,
+                                    phonetic: wordItem.phonetic,
+                                    homophone: wordItem.homophone,
+                                    meaning: wordItem.meaning,
+                                    cells: [wordItem.word, wordItem.phonetic, wordItem.homophone, wordItem.meaning, sentence]
+                                });
+                            });
+                        });
+                    } else {
+                        // 获取指定分类的单词
+                        const categoryWords = wordDatabase[activeCategory] || [];
+                        categoryWords.forEach(wordItem => {
+                            const sentence = wordItem.sentence + ' → 【' + wordItem.translation + '】→ ' + wordItem.homophoneSentence;
+                            words.push({
+                                wordText: wordItem.word,
+                                phonetic: wordItem.phonetic,
+                                homophone: wordItem.homophone,
+                                meaning: wordItem.meaning,
+                                cells: [wordItem.word, wordItem.phonetic, wordItem.homophone, wordItem.meaning, sentence]
+                            });
+                        });
+                    }
                 } else {
-                    // 获取指定分类的单词
-                    words = wordData[activeCategory] || [];
-                    console.log('Category', activeCategory, 'has', words.length, 'words');
+                    // 如果 wordDatabase 未定义，从 wordData 获取
+                    if (activeCategory === 'all') {
+                        Object.keys(wordData).forEach(category => {
+                            words = words.concat(wordData[category]);
+                        });
+                    } else {
+                        words = wordData[activeCategory] || [];
+                    }
                 }
                 
                 console.log('Total words returned:', words.length);
