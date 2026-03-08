@@ -4809,8 +4809,9 @@
                 
                 let words = [];
                 
-                // 优先从 wordDatabase 获取数据
-                if (typeof wordDatabase !== 'undefined') {
+                // 方法1: 优先从 wordDatabase 获取数据
+                if (typeof wordDatabase !== 'undefined' && wordDatabase) {
+                    console.log('Using wordDatabase, categories:', Object.keys(wordDatabase));
                     if (activeCategory === 'all') {
                         // 获取所有分类的单词
                         Object.keys(wordDatabase).forEach(category => {
@@ -4839,15 +4840,56 @@
                             });
                         });
                     }
-                } else {
-                    // 如果 wordDatabase 未定义，从 wordData 获取
+                }
+                
+                // 方法2: 如果 wordDatabase 没有数据，尝试从 wordData 获取
+                if (words.length === 0 && typeof wordData !== 'undefined') {
+                    console.log('Trying wordData, categories:', Object.keys(wordData));
                     if (activeCategory === 'all') {
                         Object.keys(wordData).forEach(category => {
-                            words = words.concat(wordData[category]);
+                            if (wordData[category] && wordData[category].length > 0) {
+                                words = words.concat(wordData[category]);
+                            }
                         });
                     } else {
                         words = wordData[activeCategory] || [];
                     }
+                }
+                
+                // 方法3: 如果还是没有数据，直接从 DOM 表格中获取
+                if (words.length === 0) {
+                    console.log('Trying to get words from DOM');
+                    const categoryElements = activeCategory === 'all' 
+                        ? document.querySelectorAll('.word-category')
+                        : [document.getElementById(activeCategory)].filter(Boolean);
+                    
+                    categoryElements.forEach(catEl => {
+                        if (catEl.id === 'all') return; // 跳过 all 容器
+                        
+                        const rows = catEl.querySelectorAll('table tbody tr');
+                        console.log('Category', catEl.id, 'has', rows.length, 'rows');
+                        
+                        rows.forEach(row => {
+                            const cells = row.querySelectorAll('td');
+                            if (cells.length >= 5) {
+                                const wordText = cells[0].textContent.trim();
+                                const phonetic = cells[1].textContent.trim();
+                                const homophone = cells[2].textContent.trim();
+                                const meaning = cells[3].textContent.trim();
+                                const sentence = cells[4].textContent.trim();
+                                
+                                if (wordText) {
+                                    words.push({
+                                        wordText: wordText,
+                                        phonetic: phonetic,
+                                        homophone: homophone,
+                                        meaning: meaning,
+                                        cells: [wordText, phonetic, homophone, meaning, sentence]
+                                    });
+                                }
+                            }
+                        });
+                    });
                 }
                 
                 console.log('Total words returned:', words.length);
