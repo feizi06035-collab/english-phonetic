@@ -2949,17 +2949,29 @@
             
             // 初始化单词数据
             function initWordData() {
+                console.log('initWordData called, wordDatabase:', typeof wordDatabase);
+                
                 if (typeof wordDatabase === 'undefined') {
                     console.log('wordDatabase not loaded, using static HTML');
                     return;
                 }
                 
+                console.log('wordDatabase categories:', Object.keys(wordDatabase));
+                
                 Object.keys(wordDatabase).forEach(category => {
+                    console.log('Processing category:', category, 'words count:', wordDatabase[category].length);
+                    
                     const categoryElement = document.getElementById(category);
-                    if (!categoryElement) return;
+                    if (!categoryElement) {
+                        console.log('Category element not found:', category);
+                        return;
+                    }
                     
                     const tbody = categoryElement.querySelector('table tbody');
-                    if (!tbody) return;
+                    if (!tbody) {
+                        console.log('Tbody not found for category:', category);
+                        return;
+                    }
                     
                     tbody.innerHTML = '';
                     
@@ -4917,6 +4929,10 @@
             // 获取当前分类的所有单词
             function getCurrentCategoryWords() {
                 const activeCategory = document.querySelector('.category-btn.active')?.dataset.category || 'all';
+                console.log('getCurrentCategoryWords called, activeCategory:', activeCategory);
+                console.log('wordData keys:', Object.keys(wordData));
+                console.log('wordData counts:', Object.keys(wordData).map(k => k + ': ' + wordData[k].length));
+                
                 let words = [];
                 
                 if (activeCategory === 'all') {
@@ -4927,8 +4943,10 @@
                 } else {
                     // 获取指定分类的单词
                     words = wordData[activeCategory] || [];
+                    console.log('Category', activeCategory, 'has', words.length, 'words');
                 }
                 
+                console.log('Total words returned:', words.length);
                 return words;
             }
 
