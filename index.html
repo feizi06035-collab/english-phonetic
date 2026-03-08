@@ -1341,6 +1341,15 @@
             border-radius: 3px;
         }
         
+        /* 搜索结果中匹配词高亮 */
+        .search-match-highlight {
+            color: #e74c3c !important;
+            font-weight: bold;
+            background: rgba(231, 76, 60, 0.15);
+            padding: 1px 3px;
+            border-radius: 3px;
+        }
+        
         /* 练习模态框 */
         .modal {
             display: none;
@@ -4730,17 +4739,23 @@
                     resultsDiv.style.display = 'block';
                     resultsCount.textContent = `找到 ${matchedWords.length} 个结果`;
                     
-                    resultsContent.innerHTML = matchedWords.map(data => `
+                    resultsContent.innerHTML = matchedWords.map(data => {
+                        // 高亮匹配的搜索词
+                        const highlightedWord = highlightMatch(data.word, query);
+                        const highlightedHomophone = highlightMatch(data.homophone, query);
+                        const highlightedMeaning = highlightMatch(data.meaning, query);
+                        
+                        return `
                         <div class="search-result-item" onclick="goToWord('${data.category}', '${data.word}')">
                             <div>
-                                <span class="search-result-word">${data.word}</span>
+                                <span class="search-result-word">${highlightedWord}</span>
                                 <span class="search-result-phonetic">${data.phonetic}</span>
                             </div>
-                            <div class="search-result-homophone">谐音：${data.homophone}</div>
-                            <div class="search-result-meaning">释义：${data.meaning}</div>
+                            <div class="search-result-homophone">谐音：${highlightedHomophone}</div>
+                            <div class="search-result-meaning">释义：${highlightedMeaning}</div>
                             <span class="search-result-category">${data.categoryName}</span>
                         </div>
-                    `).join('');
+                    `}).join('');
                 } else {
                     // 未找到，显示提交按钮
                     resultsDiv.style.display = 'block';
@@ -4820,6 +4835,18 @@
                 // 关闭模态框并清空表单
                 closeSubmitWordModal();
                 document.getElementById('submitWordForm').reset();
+            }
+            
+            // 高亮匹配的文字
+            function highlightMatch(text, query) {
+                if (!query || !text) return text;
+                const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+                return text.replace(regex, '<span class="search-match-highlight">$1</span>');
+            }
+            
+            // 转义正则特殊字符
+            function escapeRegex(string) {
+                return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             }
             
             // 直接提交搜索词到后端
