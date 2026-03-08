@@ -4565,21 +4565,25 @@
             
             function selectAnswer(selected) {
                 if (practiceState.answered) return;
-                practiceState.answered = true;
                 
                 const buttons = document.querySelectorAll('.option-btn');
                 const feedback = document.getElementById('practiceFeedback');
                 
-                buttons.forEach(btn => {
-                    btn.disabled = true;
-                    if (btn.textContent === practiceState.currentWord.word) {
-                        btn.classList.add('correct');
-                    } else if (btn.textContent === selected.word && selected.word !== practiceState.currentWord.word) {
-                        btn.classList.add('wrong');
-                    }
-                });
+                // 检查是否答对
+                const isCorrect = selected.word === practiceState.currentWord.word;
                 
-                if (selected.word === practiceState.currentWord.word) {
+                if (isCorrect) {
+                    // 答对了
+                    practiceState.answered = true;
+                    
+                    // 禁用所有按钮
+                    buttons.forEach(function(btn) {
+                        btn.disabled = true;
+                        if (btn.textContent === practiceState.currentWord.word) {
+                            btn.classList.add('correct');
+                        }
+                    });
+                    
                     feedback.innerHTML = '🎉 回答正确！';
                     feedback.className = 'practice-feedback show success';
                     // 答对后自动进入下一题，延迟1.5秒让用户看到正确提示
@@ -4593,21 +4597,19 @@
                         }, 300);
                     }, 1500);
                 } else {
-                    // 答错后显示提示，但不禁用按钮，让用户可以重新选择
+                    // 答错了，不禁用所有按钮，只标记当前选中的为错误
+                    const clickedBtn = Array.from(buttons).find(function(btn) {
+                        return btn.textContent === selected.word;
+                    });
+                    if (clickedBtn) {
+                        clickedBtn.classList.add('wrong');
+                        clickedBtn.disabled = true; // 只禁用选错的这个选项
+                    }
+                    
                     const correct = practiceState.currentWord;
                     feedback.innerHTML = `❌ 回答错误！请重新选择<br><small>提示：正确答案是 ${correct.word}</small>`;
                     feedback.className = 'practice-feedback show error';
-                    
-                    // 标记当前选中的按钮为错误
-                    buttons.forEach(function(btn) {
-                        if (btn.textContent === selected.word) {
-                            btn.classList.add('wrong');
-                            btn.disabled = true; // 禁用已选错的选项
-                        }
-                    });
-                    
-                    // 不设置 practiceState.answered = true，让用户可以继续选择
-                    practiceState.answered = false;
+                    // 不设置 practiceState.answered = true，让用户可以继续选择其他选项
                 }
             }
         </script>
