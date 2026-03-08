@@ -5715,11 +5715,28 @@
                         return;
                     }
                     
-                    // 全部播放完毕（或当前页播放完毕）
-                    if (autoPlayIndex >= autoPlayWords.length) {
-                        console.log('播放完毕');
-                        stopAutoPlay();
+                    // 当前页播放完毕，自动跳转到下一页
+                    if (currentPage < totalPages) {
+                        console.log('当前页播放完毕，翻页到下一页');
+                        currentPage++;
+                        updatePaginationControls();
+                        showPage(currentPage);
+                        // 更新状态提示
+                        updateAutoplayStatus();
+                        // 重新获取单词列表
+                        setTimeout(() => {
+                            autoPlayWords = getCurrentPageWords();
+                            autoPlayIndex = 0;
+                            if (autoPlayWords.length > 0) {
+                                playNextWord();
+                            }
+                        }, 300);
+                        return;
                     }
+                    
+                    // 全部播放完毕
+                    console.log('全部播放完毕');
+                    stopAutoPlay();
                     return;
                 }
 
