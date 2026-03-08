@@ -3527,10 +3527,10 @@
                 console.log('开始全部播放:', category, playAllState.words.length, '个单词');
                 
                 window.updatePlayAllUI(category, true);
-                window.playNextWord();
+                window.playNextCategoryWord();
             };
             
-            window.playNextWord = function() {
+            window.playNextCategoryWord = function() {
                 if (!playAllState.isPlaying) return;
                 
                 if (playAllState.currentIndex >= playAllState.words.length) {
@@ -3558,7 +3558,7 @@
                 playAllState.currentIndex++;
                 
                 playAllState.timeoutId = setTimeout(() => {
-                    window.playNextWord();
+                    window.playNextCategoryWord();
                 }, playAllState.interval);
             };
             
