@@ -1423,6 +1423,35 @@
             box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
         }
         
+        .current-word-display {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: var(--border-radius);
+            font-size: 14px;
+            color: var(--text-color);
+            min-height: 20px;
+        }
+        
+        .current-word-display .word {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 16px;
+        }
+        
+        .current-word-display .phonetic {
+            color: #666;
+            margin-left: 10px;
+        }
+        
+        .dark-theme .current-word-display {
+            background: rgba(59, 130, 246, 0.2);
+        }
+        
+        .dark-theme .current-word-display .phonetic {
+            color: #9ca3af;
+        }
+        
         .practice-options {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -2313,6 +2342,7 @@
                 <h2>听语音，选择正确的单词</h2>
                 <div class="practice-question">
                     <button onclick="playPracticeWord()" class="play-question-btn">🔊 播放语音</button>
+                    <div id="currentWordDisplay" class="current-word-display"></div>
                 </div>
                 <div class="practice-options" id="practiceOptions"></div>
                 <div id="practiceFeedback" class="practice-feedback"></div>
@@ -4552,6 +4582,11 @@
             function playPracticeWord() {
                 if (practiceState.currentWord) {
                     playSound(practiceState.currentWord.word);
+                    // 显示当前播放的单词内容
+                    const displayDiv = document.getElementById('currentWordDisplay');
+                    if (displayDiv) {
+                        displayDiv.innerHTML = `<span class="word">${practiceState.currentWord.word}</span><span class="phonetic">${practiceState.currentWord.phonetic}</span>`;
+                    }
                 }
             }
             
