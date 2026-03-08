@@ -1592,9 +1592,10 @@
         }
         
         .search-result-homophone {
-            color: #e74c3c;
+            color: #e74c3c !important;
             margin-left: 10px;
             font-size: 14px;
+            font-weight: bold;
         }
         
         .search-result-meaning {
@@ -4734,9 +4735,9 @@
                             <div>
                                 <span class="search-result-word">${data.word}</span>
                                 <span class="search-result-phonetic">${data.phonetic}</span>
-                                <span class="search-result-homophone">${data.homophone}</span>
                             </div>
-                            <div class="search-result-meaning">${data.meaning}</div>
+                            <div class="search-result-homophone">谐音：${data.homophone}</div>
+                            <div class="search-result-meaning">释义：${data.meaning}</div>
                             <span class="search-result-category">${data.categoryName}</span>
                         </div>
                     `).join('');
