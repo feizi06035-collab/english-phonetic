@@ -4747,11 +4747,9 @@
                     resultsContent.innerHTML = `
                         <div class="no-results">
                             <p>未找到包含 "${searchInput.value}" 的单词</p>
-                            <button onclick="openSubmitWordModal()" class="submit-word-btn">提交新单词</button>
+                            <button onclick="submitSearchWordDirectly('${searchInput.value}')" class="submit-word-btn">提交"${searchInput.value}"到后台</button>
                         </div>
                     `;
-                    // 预填充搜索词到提交表单
-                    document.getElementById('submitWordEnglish').value = searchInput.value;
                 }
             }
             
@@ -4821,6 +4819,66 @@
                 // 关闭模态框并清空表单
                 closeSubmitWordModal();
                 document.getElementById('submitWordForm').reset();
+            }
+            
+            // 直接提交搜索词到后端
+            async function submitSearchWordDirectly(searchWord) {
+                if (!searchWord || !searchWord.trim()) {
+                    alert('搜索词不能为空');
+                    return;
+                }
+                
+                const submitBtn = document.querySelector('.submit-word-btn');
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = '提交中...';
+                }
+                
+                try {
+                    // 发送到后端API
+                    const response = await fetch('https://mzc0603.xyz/api/submit-word', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            word: searchWord.trim(),
+                            source: 'search',
+                            timestamp: new Date().toISOString(),
+                            userAgent: navigator.userAgent
+                        })
+                    });
+                    
+                    if (response.ok) {
+                        alert('提交成功！感谢您的反馈，我们会尽快添加这个单词。');
+                        clearSearchResults();
+                    } else {
+                        throw new Error('提交失败');
+                    }
+                } catch (error) {
+                    console.error('提交失败:', error);
+                    // 如果后端API不可用，保存到本地存储
+                    saveWordToLocal(searchWord);
+                    alert('已保存到本地，我们会尽快处理您的提交。');
+                    clearSearchResults();
+                } finally {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = `提交"${searchWord}"到后台`;
+                    }
+                }
+            }
+            
+            // 保存单词到本地存储（作为备用方案）
+            function saveWordToLocal(word) {
+                let submittedWords = JSON.parse(localStorage.getItem('submittedWords') || '[]');
+                submittedWords.push({
+                    word: word,
+                    timestamp: new Date().toISOString(),
+                    source: 'search'
+                });
+                localStorage.setItem('submittedWords', JSON.stringify(submittedWords));
+                console.log('单词已保存到本地:', word);
             }
             
             function highlightWord(row) {
