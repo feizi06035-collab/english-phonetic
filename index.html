@@ -1034,6 +1034,89 @@
             text-decoration: none;
         }
         
+        .sound-btn.playing {
+            background: rgba(52, 152, 219, 0.2);
+            animation: pulse 1s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .play-all-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+            padding: 10px 15px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .play-all-btn {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 2px 6px rgba(52, 152, 219, 0.3);
+        }
+        
+        .play-all-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+        }
+        
+        .play-all-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .play-all-btn.playing {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+        }
+        
+        .play-all-btn.playing:hover {
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+        }
+        
+        .play-progress {
+            font-size: 13px;
+            color: #666;
+            min-width: 80px;
+        }
+        
+        .play-speed-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: auto;
+        }
+        
+        .play-speed-control label {
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .play-speed-control select {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            font-size: 13px;
+            background: white;
+            cursor: pointer;
+        }
+        
         /* 单词请求区域 */
         #wordRequest {
             width: 80%;
@@ -1922,6 +2005,29 @@
         .dark-theme .share-option:hover {
             background: #374151;
         }
+        .dark-theme .play-all-container {
+            background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+        }
+        .dark-theme .play-all-btn {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        }
+        .dark-theme .play-all-btn.playing {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        }
+        .dark-theme .play-progress {
+            color: #9ca3af;
+        }
+        .dark-theme .play-speed-control label {
+            color: #9ca3af;
+        }
+        .dark-theme .play-speed-control select {
+            background: #374151;
+            border-color: #4b5563;
+            color: #f3f4f6;
+        }
+        .dark-theme .sound-btn.playing {
+            background: rgba(59, 130, 246, 0.3);
+        }
     </style>
     <script src="word-data.js"></script>
 </head>
@@ -1995,6 +2101,21 @@
             <!-- 日常问候类 -->
             <section class="word-category" id="greetings" aria-label="日常问候类词汇">
                 <h2>日常问候类 | Daily Greetings</h2>
+                <div class="play-all-container" data-category="greetings">
+                    <button class="play-all-btn" onclick="togglePlayAll('greetings')">
+                        <span class="play-icon">▶</span>
+                        <span class="play-text">全部播放</span>
+                    </button>
+                    <span class="play-progress"></span>
+                    <div class="play-speed-control">
+                        <label>间隔:</label>
+                        <select onchange="setPlaySpeed(this.value)">
+                            <option value="1500">快 (1.5秒)</option>
+                            <option value="2500" selected>中 (2.5秒)</option>
+                            <option value="3500">慢 (3.5秒)</option>
+                        </select>
+                    </div>
+                </div>
                 <table aria-label="日常问候类单词列表">
                     <thead>
                         <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th><th>例句</th></tr>
@@ -2039,6 +2160,21 @@
             <!-- 情感表达类 -->
             <section class="word-category" id="emotions" aria-label="情感表达类词汇">
                 <h2>情感表达类 | Emotional Expressions</h2>
+                <div class="play-all-container" data-category="emotions">
+                    <button class="play-all-btn" onclick="togglePlayAll('emotions')">
+                        <span class="play-icon">▶</span>
+                        <span class="play-text">全部播放</span>
+                    </button>
+                    <span class="play-progress"></span>
+                    <div class="play-speed-control">
+                        <label>间隔:</label>
+                        <select onchange="setPlaySpeed(this.value)">
+                            <option value="1500">快 (1.5秒)</option>
+                            <option value="2500" selected>中 (2.5秒)</option>
+                            <option value="3500">慢 (3.5秒)</option>
+                        </select>
+                    </div>
+                </div>
                 <table aria-label="情感表达类单词列表">
                     <thead>
                         <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th><th>例句</th></tr>
@@ -2075,6 +2211,21 @@
             <!-- 数字类 -->
             <section class="word-category" id="numbers" aria-label="数字类词汇">
                 <h2>数字类 | Numbers</h2>
+                <div class="play-all-container" data-category="numbers">
+                    <button class="play-all-btn" onclick="togglePlayAll('numbers')">
+                        <span class="play-icon">▶</span>
+                        <span class="play-text">全部播放</span>
+                    </button>
+                    <span class="play-progress"></span>
+                    <div class="play-speed-control">
+                        <label>间隔:</label>
+                        <select onchange="setPlaySpeed(this.value)">
+                            <option value="1500">快 (1.5秒)</option>
+                            <option value="2500" selected>中 (2.5秒)</option>
+                            <option value="3500">慢 (3.5秒)</option>
+                        </select>
+                    </div>
+                </div>
                 <table aria-label="数字类单词列表">
                     <thead>
                         <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th><th>例句</th></tr>
@@ -2157,6 +2308,21 @@
             <!-- 颜色类 -->
             <section class="word-category" id="colors" aria-label="颜色类词汇">
                 <h2>颜色类 | Colors</h2>
+                <div class="play-all-container" data-category="colors">
+                    <button class="play-all-btn" onclick="togglePlayAll('colors')">
+                        <span class="play-icon">▶</span>
+                        <span class="play-text">全部播放</span>
+                    </button>
+                    <span class="play-progress"></span>
+                    <div class="play-speed-control">
+                        <label>间隔:</label>
+                        <select onchange="setPlaySpeed(this.value)">
+                            <option value="1500">快 (1.5秒)</option>
+                            <option value="2500" selected>中 (2.5秒)</option>
+                            <option value="3500">慢 (3.5秒)</option>
+                        </select>
+                    </div>
+                </div>
                 <table aria-label="颜色类单词列表">
                     <thead>
                         <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th><th>例句</th></tr>
@@ -2193,6 +2359,21 @@
             <!-- 家人称呼类 -->
             <section class="word-category" id="family" aria-label="家人称呼类词汇">
                 <h2>家人称呼类 | Family Members</h2>
+                <div class="play-all-container" data-category="family">
+                    <button class="play-all-btn" onclick="togglePlayAll('family')">
+                        <span class="play-icon">▶</span>
+                        <span class="play-text">全部播放</span>
+                    </button>
+                    <span class="play-progress"></span>
+                    <div class="play-speed-control">
+                        <label>间隔:</label>
+                        <select onchange="setPlaySpeed(this.value)">
+                            <option value="1500">快 (1.5秒)</option>
+                            <option value="2500" selected>中 (2.5秒)</option>
+                            <option value="3500">慢 (3.5秒)</option>
+                        </select>
+                    </div>
+                </div>
                 <table aria-label="家人称呼类单词列表">
                     <thead>
                         <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th><th>例句</th></tr>
@@ -2238,6 +2419,21 @@
             <!-- 时间常用类 -->
             <section class="word-category" id="time" aria-label="时间常用类词汇">
                 <h2>时间常用类 | Time Expressions</h2>
+                <div class="play-all-container" data-category="time">
+                    <button class="play-all-btn" onclick="togglePlayAll('time')">
+                        <span class="play-icon">▶</span>
+                        <span class="play-text">全部播放</span>
+                    </button>
+                    <span class="play-progress"></span>
+                    <div class="play-speed-control">
+                        <label>间隔:</label>
+                        <select onchange="setPlaySpeed(this.value)">
+                            <option value="1500">快 (1.5秒)</option>
+                            <option value="2500" selected>中 (2.5秒)</option>
+                            <option value="3500">慢 (3.5秒)</option>
+                        </select>
+                    </div>
+                </div>
                 <table aria-label="时间常用类单词列表">
                     <thead>
                         <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th><th>例句</th></tr>
@@ -2275,6 +2471,21 @@
             <!-- 食物基础类 -->
             <section class="word-category" id="food" aria-label="食物基础类词汇">
                 <h2>食物基础类 | Basic Food</h2>
+                <div class="play-all-container" data-category="food">
+                    <button class="play-all-btn" onclick="togglePlayAll('food')">
+                        <span class="play-icon">▶</span>
+                        <span class="play-text">全部播放</span>
+                    </button>
+                    <span class="play-progress"></span>
+                    <div class="play-speed-control">
+                        <label>间隔:</label>
+                        <select onchange="setPlaySpeed(this.value)">
+                            <option value="1500">快 (1.5秒)</option>
+                            <option value="2500" selected>中 (2.5秒)</option>
+                            <option value="3500">慢 (3.5秒)</option>
+                        </select>
+                    </div>
+                </div>
                 <table aria-label="食物基础类单词列表">
                     <thead>
                         <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th><th>例句</th></tr>
@@ -2312,6 +2523,21 @@
             <!-- 常用语句类 -->
             <section class="word-category" id="sentences" aria-label="常用语句类词汇">
                 <h2>常用语句类 | Common Sentences</h2>
+                <div class="play-all-container" data-category="sentences">
+                    <button class="play-all-btn" onclick="togglePlayAll('sentences')">
+                        <span class="play-icon">▶</span>
+                        <span class="play-text">全部播放</span>
+                    </button>
+                    <span class="play-progress"></span>
+                    <div class="play-speed-control">
+                        <label>间隔:</label>
+                        <select onchange="setPlaySpeed(this.value)">
+                            <option value="1500">快 (1.5秒)</option>
+                            <option value="2500" selected>中 (2.5秒)</option>
+                            <option value="3500">慢 (3.5秒)</option>
+                        </select>
+                    </div>
+                </div>
                 <table aria-label="常用语句类单词列表">
                     <thead>
                         <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th><th>例句</th></tr>
@@ -3244,6 +3470,142 @@
                 } else {
                     // 所有方案都失败，显示错误提示
                     showVoiceError();
+                }
+            }
+            
+            // ===============================================
+            // 全部播放功能
+            // ===============================================
+            let playAllState = {
+                isPlaying: false,
+                currentIndex: 0,
+                words: [],
+                category: null,
+                timeoutId: null,
+                interval: 2500
+            };
+            
+            function setPlaySpeed(speed) {
+                playAllState.interval = parseInt(speed);
+            }
+            
+            function togglePlayAll(category) {
+                if (playAllState.isPlaying && playAllState.category === category) {
+                    stopPlayAll();
+                } else {
+                    startPlayAll(category);
+                }
+            }
+            
+            function startPlayAll(category) {
+                if (playAllState.isPlaying) {
+                    stopPlayAll();
+                }
+                
+                const section = document.getElementById(category);
+                if (!section) return;
+                
+                const soundButtons = section.querySelectorAll('.sound-btn');
+                if (soundButtons.length === 0) return;
+                
+                playAllState.isPlaying = true;
+                playAllState.category = category;
+                playAllState.currentIndex = 0;
+                playAllState.words = Array.from(soundButtons).map(btn => {
+                    const onclickAttr = btn.getAttribute('onclick');
+                    const match = onclickAttr && onclickAttr.match(/playSound\('([^']+)'\)/);
+                    return match ? match[1] : btn.textContent.trim();
+                });
+                
+                updatePlayAllUI(category, true);
+                playNextWord();
+            }
+            
+            function playNextWord() {
+                if (!playAllState.isPlaying) return;
+                
+                if (playAllState.currentIndex >= playAllState.words.length) {
+                    stopPlayAll();
+                    return;
+                }
+                
+                const category = playAllState.category;
+                const section = document.getElementById(category);
+                const soundButtons = section.querySelectorAll('.sound-btn');
+                
+                soundButtons.forEach(btn => btn.classList.remove('playing'));
+                
+                const currentBtn = soundButtons[playAllState.currentIndex];
+                if (currentBtn) {
+                    currentBtn.classList.add('playing');
+                    currentBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                
+                const word = playAllState.words[playAllState.currentIndex];
+                playSound(word);
+                
+                updateProgress(category, playAllState.currentIndex + 1, playAllState.words.length);
+                
+                playAllState.currentIndex++;
+                
+                playAllState.timeoutId = setTimeout(() => {
+                    playNextWord();
+                }, playAllState.interval);
+            }
+            
+            function stopPlayAll() {
+                if (playAllState.timeoutId) {
+                    clearTimeout(playAllState.timeoutId);
+                    playAllState.timeoutId = null;
+                }
+                
+                const category = playAllState.category;
+                if (category) {
+                    const section = document.getElementById(category);
+                    if (section) {
+                        const soundButtons = section.querySelectorAll('.sound-btn');
+                        soundButtons.forEach(btn => btn.classList.remove('playing'));
+                    }
+                    updatePlayAllUI(category, false);
+                    updateProgress(category, 0, 0);
+                }
+                
+                playAllState.isPlaying = false;
+                playAllState.category = null;
+                playAllState.currentIndex = 0;
+                playAllState.words = [];
+            }
+            
+            function updatePlayAllUI(category, isPlaying) {
+                const container = document.querySelector(`.play-all-container[data-category="${category}"]`);
+                if (!container) return;
+                
+                const btn = container.querySelector('.play-all-btn');
+                const icon = btn.querySelector('.play-icon');
+                const text = btn.querySelector('.play-text');
+                
+                if (isPlaying) {
+                    btn.classList.add('playing');
+                    icon.textContent = '⏹';
+                    text.textContent = '停止播放';
+                } else {
+                    btn.classList.remove('playing');
+                    icon.textContent = '▶';
+                    text.textContent = '全部播放';
+                }
+            }
+            
+            function updateProgress(category, current, total) {
+                const container = document.querySelector(`.play-all-container[data-category="${category}"]`);
+                if (!container) return;
+                
+                const progress = container.querySelector('.play-progress');
+                if (progress) {
+                    if (total > 0) {
+                        progress.textContent = `${current}/${total}`;
+                    } else {
+                        progress.textContent = '';
+                    }
                 }
             }
             
