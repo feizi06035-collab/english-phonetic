@@ -2061,6 +2061,7 @@
             background: #374151;
         }
     </style>
+    <script src="word-data.js"></script>
 </head>
 <body>
     <div class="container">
@@ -2905,6 +2906,7 @@
             // 初始化时应用URL状态
             window.addEventListener('DOMContentLoaded', function() {
                 applyURLState();
+                initWordData();
             });
             
             // 全量单词数据源 - 键值对格式（分类名: 单词数组）
@@ -2946,54 +2948,58 @@
             
             // 初始化单词数据
             function initWordData() {
-                // 遍历所有分类
-                Object.keys(wordData).forEach(category => {
+                if (typeof wordDatabase === 'undefined') {
+                    console.log('wordDatabase not loaded, using static HTML');
+                    return;
+                }
+                
+                Object.keys(wordDatabase).forEach(category => {
                     const categoryElement = document.getElementById(category);
-                    if (categoryElement) {
-                        const rows = categoryElement.querySelectorAll('table tr');
+                    if (!categoryElement) return;
+                    
+                    const tbody = categoryElement.querySelector('table tbody');
+                    if (!tbody) return;
+                    
+                    tbody.innerHTML = '';
+                    
+                    wordDatabase[category].forEach(wordItem => {
+                        const row = document.createElement('tr');
+                        const sentence = wordItem.sentence + ' → 【' + wordItem.translation + '】→ ' + wordItem.homophoneSentence;
                         
-                        rows.forEach(row => {
-                            // 跳过表头行（包含th的行）
-                            if (row.querySelector('th')) return;
-                            
-                            const cells = row.querySelectorAll('td');
-                            if (cells.length >= 5) {
-                                // 获取单词信息
-                                const wordText = cells[0].textContent.trim();
-                                const phonetic = cells[1].textContent.trim();
-                                const homophone = cells[2].textContent.trim();
-                                const meaning = cells[3].textContent.trim();
-                                
-                                // 保存原始HTML内容，包括播放按钮
-                                const cellsHtml = Array.from(cells).map(cell => cell.innerHTML);
-                                wordData[category].push({
-                                    row: row,
-                                    cells: Array.from(cells).map(cell => cell.textContent),
-                                    cellsHtml: cellsHtml,
-                                    wordText: wordText,
-                                    phonetic: phonetic,
-                                    homophone: homophone,
-                                    meaning: meaning
-                                });
-                                
-                                // 在例句列末尾添加分享按钮
-                                const sentenceCell = cells[4];
-                                const shareBtn = document.createElement('button');
-                                shareBtn.className = 'share-btn';
-                                shareBtn.innerHTML = '📤';
-                                shareBtn.title = '分享此单词';
-                                shareBtn.onclick = function() {
-                                    openWordShareModal(wordText, phonetic, homophone, meaning);
-                                };
-                                sentenceCell.appendChild(shareBtn);
-                            }
+                        row.innerHTML = 
+                            '<td><button class="sound-btn" onclick="playSound(\'' + wordItem.word.replace(/'/g, "\\'") + '\')">' + wordItem.word + '</button></td>' +
+                            '<td>' + wordItem.phonetic + '</td>' +
+                            '<td>' + wordItem.homophone + '</td>' +
+                            '<td>' + wordItem.meaning + '</td>' +
+                            '<td>' + sentence + '</td>';
+                        
+                        tbody.appendChild(row);
+                        
+                        const cells = row.querySelectorAll('td');
+                        const cellsHtml = Array.from(cells).map(cell => cell.innerHTML);
+                        
+                        wordData[category].push({
+                            row: row,
+                            cells: [wordItem.word, wordItem.phonetic, wordItem.homophone, wordItem.meaning, sentence],
+                            cellsHtml: cellsHtml,
+                            wordText: wordItem.word,
+                            phonetic: wordItem.phonetic,
+                            homophone: wordItem.homophone,
+                            meaning: wordItem.meaning
                         });
-                    }
+                        
+                        const sentenceCell = cells[4];
+                        const shareBtn = document.createElement('button');
+                        shareBtn.className = 'share-btn';
+                        shareBtn.innerHTML = '📤';
+                        shareBtn.title = '分享此单词';
+                        shareBtn.onclick = function() {
+                            openWordShareModal(wordItem.word, wordItem.phonetic, wordItem.homophone, wordItem.meaning);
+                        };
+                        sentenceCell.appendChild(shareBtn);
+                    });
                 });
             }
-            
-            // 初始化单词数据
-            initWordData();
             
             // 获取全量单词数组（用于全部分类的搜索）
             function getAllWords() {
