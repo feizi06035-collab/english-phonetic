@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单词详情 | English Phonetic Guide</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .word-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .word-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .word-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .word-phonetic {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .word-body {
+            padding: 30px;
+        }
+        
+        .word-info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .word-info-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .word-info-label {
+            font-size: 14px;
+            color: #6b7280;
+            width: 80px;
+            flex-shrink: 0;
+        }
+        
+        .word-info-value {
+            font-size: 16px;
+            color: #333;
+            flex: 1;
+        }
+        
+        .word-homophone {
+            font-size: 20px;
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .word-meaning {
+            font-size: 18px;
+            color: #333;
+        }
+        
+        .word-sentence {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .word-sentence .translation {
+            display: block;
+            margin-top: 8px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        
+        .word-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        .btn {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #f3f4f6;
+            color: #333;
+        }
+        
+        .btn-secondary:hover {
+            background: #e5e7eb;
+        }
+        
+        .not-found {
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .not-found-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .not-found-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .not-found-text {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+        
+        .play-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            margin-left: 10px;
+            transition: all 0.3s;
+        }
+        
+        .play-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 60px;
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @media (max-width: 480px) {
+            .word-title {
+                font-size: 28px;
+            }
+            
+            .word-header {
+                padding: 20px;
+            }
+            
+            .word-body {
+                padding: 20px;
+            }
+            
+            .word-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="word-card">
+        <div id="wordContent">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p>加载中...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入共享数据文件 -->
+    <script src="word-data.js"></script>
+    <script>
+        
+        // 从URL获取单词
+        function getWordFromURL() {
+            const path = window.location.pathname;
+            const match = path.match(/\/word\/(.+)$/);
+            if (match) {
+                return match[1].replace(/-/g, ' ');
+            }
+            
+            const params = new URLSearchParams(window.location.search);
+            return params.get('w');
+        }
+        
+        // 查找单词
+        function findWord(searchWord) {
+            const normalizedSearch = searchWord.toLowerCase().trim();
+            return wordDatabase.find(item => 
+                item.word.toLowerCase() === normalizedSearch
+            );
+        }
+        
+        // 播放发音
+        function playSound(word) {
+            const cleanWord = word.replace(/'/g, '').trim();
+            const utterance = new SpeechSynthesisUtterance(cleanWord);
+            utterance.lang = 'en-US';
+            utterance.rate = 0.8;
+            speechSynthesis.speak(utterance);
+        }
+        
+        // 渲染单词卡片
+        function renderWordCard(wordData) {
+            const content = document.getElementById('wordContent');
+            
+            if (!wordData) {
+                content.innerHTML = `
+                    <div class="not-found">
+                        <div class="not-found-icon">🔍</div>
+                        <h2 class="not-found-title">未找到该单词</h2>
+                        <p class="not-found-text">抱歉，我们暂时没有收录这个单词</p>
+                        <button class="btn btn-primary" onclick="goHome()">返回首页</button>
+                    </div>
+                `;
+                return;
+            }
+            
+            content.innerHTML = `
+                <div class="word-header">
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <h1 class="word-title">${wordData.word}</h1>
+                        <button class="play-btn" onclick="playSound('${wordData.word.replace(/'/g, "\\'")}')">🔊</button>
+                    </div>
+                    <p class="word-phonetic">${wordData.phonetic}</p>
+                </div>
+                <div class="word-body">
+                    <div class="word-info-item">
+                        <span class="word-info-label">中文谐音</span>
+                        <span class="word-info-value word-homophone">${wordData.homophone}</span>
+                    </div>
+                    <div class="word-info-item">
+                        <span class="word-info-label">中文释义</span>
+                        <span class="word-info-value word-meaning">${wordData.meaning}</span>
+                    </div>
+                    <div class="word-info-item">
+                        <span class="word-info-label">例句</span>
+                        <div class="word-info-value word-sentence">
+                            ${wordData.sentence}
+                            <span class="translation">【${wordData.translation}】</span>
+                            <span class="translation">谐音：${wordData.homophoneSentence}</span>
+                        </div>
+                    </div>
+                    <div class="word-actions">
+                        <button class="btn btn-primary" onclick="shareWord()">
+                            📤 分享
+                        </button>
+                        <button class="btn btn-secondary" onclick="goHome()">
+                            🏠 返回首页
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // 分享单词
+        function shareWord() {
+            const word = getWordFromURL();
+            if (!word) return;
+            
+            const slug = word.replace(/\s+/g, '-');
+            const link = `https://mzc0603.xyz/word/${slug}`;
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: `学习单词：${word}`,
+                    text: `我在学习单词「${word}」，一起来学习吧！`,
+                    url: link
+                });
+            } else {
+                navigator.clipboard.writeText(link).then(() => {
+                    alert('链接已复制到剪贴板！');
+                });
+            }
+        }
+        
+        // 返回首页
+        function goHome() {
+            window.location.href = 'https://mzc0603.xyz/';
+        }
+        
+        // 初始化
+        function init() {
+            const searchWord = getWordFromURL();
+            if (searchWord) {
+                const wordData = findWord(searchWord);
+                renderWordCard(wordData);
+                
+                // 更新页面标题
+                if (wordData) {
+                    document.title = `${wordData.word} - ${wordData.meaning} | English Phonetic Guide`;
+                } else {
+                    document.title = '未找到单词 | English Phonetic Guide';
+                }
+            } else {
+                goHome();
+            }
+        }
+        
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Sitemap: https://mzc0603.xyz/sitemap.xml
+
+# 额外补充：单独放行主流搜索引擎爬虫（可选，增强兼容性）
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
