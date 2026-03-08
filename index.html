@@ -2351,6 +2351,9 @@
         <div id="gotop" onclick="window.scrollTo({top:0,behavior:'smooth'})"></div>
 
         <script>
+            // ==================== 全局变量初始化 ====================
+            window.audioUnlocked = false;
+
             // ==================== URL路由配置 ====================
             // 检测是否为本地开发环境
             const isLocalDev = window.location.hostname === 'localhost' || 
