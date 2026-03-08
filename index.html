@@ -2976,6 +2976,16 @@
                         tbody.appendChild(row);
                         
                         const cells = row.querySelectorAll('td');
+                        const sentenceCell = cells[4];
+                        const shareBtn = document.createElement('button');
+                        shareBtn.className = 'share-btn';
+                        shareBtn.innerHTML = '📤';
+                        shareBtn.title = '分享此单词';
+                        shareBtn.onclick = function() {
+                            openWordShareModal(wordItem.word, wordItem.phonetic, wordItem.homophone, wordItem.meaning);
+                        };
+                        sentenceCell.appendChild(shareBtn);
+                        
                         const cellsHtml = Array.from(cells).map(cell => cell.innerHTML);
                         
                         wordData[category].push({
@@ -2987,16 +2997,6 @@
                             homophone: wordItem.homophone,
                             meaning: wordItem.meaning
                         });
-                        
-                        const sentenceCell = cells[4];
-                        const shareBtn = document.createElement('button');
-                        shareBtn.className = 'share-btn';
-                        shareBtn.innerHTML = '📤';
-                        shareBtn.title = '分享此单词';
-                        shareBtn.onclick = function() {
-                            openWordShareModal(wordItem.word, wordItem.phonetic, wordItem.homophone, wordItem.meaning);
-                        };
-                        sentenceCell.appendChild(shareBtn);
                     });
                 });
             }
