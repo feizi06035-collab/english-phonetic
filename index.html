@@ -4455,8 +4455,7 @@
                 initSentencePlayIcons();
                 
                 // 确保页面在用户交互后才能播放音频
-                document.addEventListener('touchstart', function() {
-                    // 首次用户交互，解锁音频播放
+                function unlockAudio() {
                     if (!window.audioUnlocked) {
                         window.audioUnlocked = true;
                         console.log('音频已解锁');
@@ -4464,7 +4463,12 @@
                         const silentAudio = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQQAAAAA');
                         silentAudio.play().catch(e => console.log('静音音频播放失败:', e));
                     }
-                }, { once: true });
+                }
+                
+                // 监听多种用户交互事件（兼容桌面和移动设备）
+                document.addEventListener('click', unlockAudio, { once: true });
+                document.addEventListener('touchstart', unlockAudio, { once: true });
+                document.addEventListener('keydown', unlockAudio, { once: true });
             });
 
         </script>
