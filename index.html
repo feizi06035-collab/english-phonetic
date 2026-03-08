@@ -3064,6 +3064,11 @@
                 let hasResults = false;
                 let matchCount = 0;
                 
+                // 搜索时停止自动播放
+                if (typeof isAutoPlaying !== 'undefined' && isAutoPlaying) {
+                    stopAutoPlay();
+                }
+                
                 const searchResults = document.getElementById('searchResults');
                 const searchResultsTable = document.getElementById('searchResultsTable');
                 const searchNoResult = document.getElementById('searchNoResult');
@@ -4940,12 +4945,6 @@
                 });
             });
 
-            document.getElementById('searchInput').addEventListener('input', function() {
-                currentPage = 1;
-                updatePaginationControls();
-                showPage(currentPage);
-            });
-
             // ==================== 自动播放功能 ====================
             let isAutoPlaying = false;
             let playSpeed = 1;
@@ -5435,13 +5434,6 @@
                         }, 300);
                     }
                 });
-            });
-
-            // 搜索时停止自动播放
-            document.getElementById('searchInput').addEventListener('input', function() {
-                if (isAutoPlaying) {
-                    stopAutoPlay();
-                }
             });
 
             // 分页切换时停止自动播放
