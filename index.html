@@ -4555,7 +4555,10 @@
                 if (selected.word === practiceState.currentWord.word) {
                     feedback.innerHTML = '🎉 回答正确！';
                     feedback.className = 'practice-feedback show success';
-                    document.getElementById('nextBtn').style.display = 'block';
+                    // 答对后自动进入下一题，延迟1.5秒让用户看到正确提示
+                    setTimeout(() => {
+                        nextQuestion();
+                    }, 1500);
                 } else {
                     const correct = practiceState.currentWord;
                     feedback.innerHTML = `❌ 回答错误！<br>正确答案是：<strong>${correct.word}</strong><br>谐音：${correct.homophone}<br>释义：${correct.meaning}`;
