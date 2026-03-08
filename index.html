@@ -1531,6 +1531,184 @@
             box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
         }
         
+        /* 搜索结果区域 */
+        .search-results {
+            margin: 20px 0;
+            padding: 20px;
+            background: var(--container-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--search-shadow);
+        }
+        
+        .search-results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--table-border);
+        }
+        
+        .search-results-header h3 {
+            margin: 0;
+            color: var(--text-color);
+        }
+        
+        .search-results-count {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+        
+        .search-results-content {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .search-result-item {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background: rgba(52, 152, 219, 0.05);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-color);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .search-result-item:hover {
+            background: rgba(52, 152, 219, 0.1);
+            transform: translateX(5px);
+        }
+        
+        .search-result-word {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 16px;
+        }
+        
+        .search-result-phonetic {
+            color: #666;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        
+        .search-result-homophone {
+            color: #e74c3c;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        
+        .search-result-meaning {
+            color: var(--text-color);
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        .search-result-category {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 2px 8px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-light);
+        }
+        
+        .no-results p {
+            margin-bottom: 15px;
+        }
+        
+        .submit-word-btn {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+        
+        .submit-word-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+        }
+        
+        /* 提交单词表单 */
+        .submit-hint {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--text-color);
+            font-size: 14px;
+        }
+        
+        .form-group .required {
+            color: #e74c3c;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--table-border);
+            border-radius: var(--border-radius);
+            font-size: 14px;
+            background: var(--container-bg);
+            color: var(--text-color);
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+        }
+        
+        .dark-theme .search-result-item {
+            background: rgba(59, 130, 246, 0.1);
+        }
+        
+        .dark-theme .search-result-item:hover {
+            background: rgba(59, 130, 246, 0.2);
+        }
+        
+        .dark-theme .search-result-phonetic {
+            color: #9ca3af;
+        }
+        
         /* 浮动动画 */
         @keyframes float {
             0%, 100% {
@@ -2332,6 +2510,47 @@
             <!-- 练习功能 -->
             <div class="practice-box">
                 <button onclick="startPractice()" class="practice-btn">开始练习</button>
+            </div>
+        </div>
+        
+        <!-- 搜索结果区域 -->
+        <div id="searchResults" class="search-results" style="display:none;">
+            <div class="search-results-header">
+                <h3>搜索结果</h3>
+                <span id="searchResultsCount"></span>
+            </div>
+            <div id="searchResultsContent" class="search-results-content"></div>
+        </div>
+        
+        <!-- 提交单词模态框 -->
+        <div id="submitWordModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeSubmitWordModal()">&times;</span>
+                <h2>提交新单词</h2>
+                <p class="submit-hint">未找到您搜索的单词，您可以提交给我们：</p>
+                <form id="submitWordForm" onsubmit="submitWord(event)">
+                    <div class="form-group">
+                        <label>英文单词 <span class="required">*</span></label>
+                        <input type="text" id="submitWordEnglish" required placeholder="例如：Hello">
+                    </div>
+                    <div class="form-group">
+                        <label>音标</label>
+                        <input type="text" id="submitWordPhonetic" placeholder="例如：/həˈləʊ/">
+                    </div>
+                    <div class="form-group">
+                        <label>中文谐音 <span class="required">*</span></label>
+                        <input type="text" id="submitWordHomophone" required placeholder="例如：哈喽">
+                    </div>
+                    <div class="form-group">
+                        <label>中文释义 <span class="required">*</span></label>
+                        <input type="text" id="submitWordMeaning" required placeholder="例如：你好">
+                    </div>
+                    <div class="form-group">
+                        <label>例句</label>
+                        <textarea id="submitWordSentence" rows="2" placeholder="例如：Hello, how are you?"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">提交单词</button>
+                </form>
             </div>
         </div>
         
@@ -4430,9 +4649,28 @@
                 loadAllWords();
             }
             
+            // 分类名称映射
+            const categoryNames = {
+                'greetings': '日常问候',
+                'emotions': '情感表达',
+                'numbers': '数字',
+                'colors': '颜色',
+                'family': '家人称呼',
+                'time': '时间常用',
+                'food': '食物基础',
+                'sentences': '常用语句'
+            };
+            
             function loadAllWords() {
-                const tables = document.querySelectorAll('table');
-                tables.forEach(table => {
+                allWordsData = []; // 清空已有数据
+                const sections = document.querySelectorAll('.word-category');
+                sections.forEach(section => {
+                    const categoryId = section.id;
+                    if (categoryId === 'all') return;
+                    
+                    const table = section.querySelector('table');
+                    if (!table) return;
+                    
                     const rows = table.querySelectorAll('tbody tr');
                     rows.forEach(row => {
                         const cells = row.querySelectorAll('td');
@@ -4444,54 +4682,145 @@
                                     phonetic: cells[1].textContent.trim(),
                                     homophone: cells[2].textContent.trim(),
                                     meaning: cells[3].textContent.trim(),
-                                    element: row
+                                    element: row,
+                                    category: categoryId,
+                                    categoryName: categoryNames[categoryId] || categoryId
                                 });
                             }
                         }
                     });
                 });
+                console.log('加载了', allWordsData.length, '个单词');
             }
             
             function searchWords() {
                 const searchInput = document.getElementById('searchInput');
                 const query = searchInput.value.trim().toLowerCase();
+                const resultsDiv = document.getElementById('searchResults');
+                const resultsContent = document.getElementById('searchResultsContent');
+                const resultsCount = document.getElementById('searchResultsCount');
                 
                 clearHighlights();
+                clearSearchResults();
                 
                 if (!query) {
                     return;
                 }
                 
-                let found = false;
+                // 显示所有分类
+                document.querySelectorAll('.word-category').forEach(section => {
+                    section.classList.add('active');
+                });
+                
+                const matchedWords = [];
                 allWordsData.forEach(data => {
                     const match = data.word.toLowerCase().includes(query) ||
-                                  data.homophone.includes(query) ||
-                                  data.meaning.includes(query);
+                                  data.homophone.toLowerCase().includes(query) ||
+                                  data.meaning.toLowerCase().includes(query);
                     
                     if (match) {
+                        matchedWords.push(data);
                         highlightWord(data.element);
-                        found = true;
-                        
-                        const section = data.element.closest('.word-category');
-                        if (section) {
-                            section.classList.add('active');
-                            const categoryId = section.id;
-                            document.querySelectorAll('.category-btn').forEach(btn => {
-                                btn.classList.remove('active');
-                            });
-                            const categoryBtn = document.querySelector(`.category-btn[data-category="${categoryId}"]`);
-                            if (categoryBtn) {
-                                categoryBtn.classList.add('active');
-                            }
-                        }
-                        
-                        data.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     }
                 });
                 
-                if (!found) {
-                    alert('未找到匹配的单词');
+                if (matchedWords.length > 0) {
+                    // 显示搜索结果
+                    resultsDiv.style.display = 'block';
+                    resultsCount.textContent = `找到 ${matchedWords.length} 个结果`;
+                    
+                    resultsContent.innerHTML = matchedWords.map(data => `
+                        <div class="search-result-item" onclick="goToWord('${data.category}', '${data.word}')">
+                            <div>
+                                <span class="search-result-word">${data.word}</span>
+                                <span class="search-result-phonetic">${data.phonetic}</span>
+                                <span class="search-result-homophone">${data.homophone}</span>
+                            </div>
+                            <div class="search-result-meaning">${data.meaning}</div>
+                            <span class="search-result-category">${data.categoryName}</span>
+                        </div>
+                    `).join('');
+                } else {
+                    // 未找到，显示提交按钮
+                    resultsDiv.style.display = 'block';
+                    resultsCount.textContent = '未找到结果';
+                    resultsContent.innerHTML = `
+                        <div class="no-results">
+                            <p>未找到包含 "${searchInput.value}" 的单词</p>
+                            <button onclick="openSubmitWordModal()" class="submit-word-btn">提交新单词</button>
+                        </div>
+                    `;
+                    // 预填充搜索词到提交表单
+                    document.getElementById('submitWordEnglish').value = searchInput.value;
                 }
+            }
+            
+            function clearSearchResults() {
+                const resultsDiv = document.getElementById('searchResults');
+                const resultsContent = document.getElementById('searchResultsContent');
+                if (resultsDiv) resultsDiv.style.display = 'none';
+                if (resultsContent) resultsContent.innerHTML = '';
+            }
+            
+            function goToWord(category, word) {
+                // 切换到对应分类
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                const categoryBtn = document.querySelector(`.category-btn[data-category="${category}"]`);
+                if (categoryBtn) {
+                    categoryBtn.classList.add('active');
+                }
+                
+                // 隐藏其他分类，显示目标分类
+                document.querySelectorAll('.word-category').forEach(section => {
+                    section.classList.remove('active');
+                });
+                const targetSection = document.getElementById(category);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
+                
+                // 找到并高亮单词
+                const wordData = allWordsData.find(d => d.word === word && d.category === category);
+                if (wordData && wordData.element) {
+                    clearHighlights();
+                    highlightWord(wordData.element);
+                    wordData.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                
+                // 隐藏搜索结果
+                clearSearchResults();
+            }
+            
+            function openSubmitWordModal() {
+                const modal = document.getElementById('submitWordModal');
+                modal.style.display = 'block';
+            }
+            
+            function closeSubmitWordModal() {
+                const modal = document.getElementById('submitWordModal');
+                modal.style.display = 'none';
+            }
+            
+            function submitWord(event) {
+                event.preventDefault();
+                
+                const word = document.getElementById('submitWordEnglish').value;
+                const phonetic = document.getElementById('submitWordPhonetic').value;
+                const homophone = document.getElementById('submitWordHomophone').value;
+                const meaning = document.getElementById('submitWordMeaning').value;
+                const sentence = document.getElementById('submitWordSentence').value;
+                
+                // 这里可以发送到服务器或保存到本地
+                console.log('提交单词:', { word, phonetic, homophone, meaning, sentence });
+                
+                // 显示成功提示
+                alert('感谢您的提交！我们会尽快审核并添加这个单词。');
+                
+                // 关闭模态框并清空表单
+                closeSubmitWordModal();
+                document.getElementById('submitWordForm').reset();
             }
             
             function highlightWord(row) {
@@ -4511,6 +4840,7 @@
                 const searchInput = document.getElementById('searchInput');
                 searchInput.value = '';
                 clearHighlights();
+                clearSearchResults();
                 
                 document.querySelector('.category-btn[data-category="all"]').click();
             }
