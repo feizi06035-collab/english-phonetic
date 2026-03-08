@@ -4507,25 +4507,40 @@
             }
             
             function nextQuestion() {
+                console.log('nextQuestion 被调用');
                 practiceState.answered = false;
+                practiceState.currentWord = null;
+                practiceState.options = [];
+                
                 const feedback = document.getElementById('practiceFeedback');
                 feedback.classList.remove('show', 'success', 'error');
+                feedback.style.display = 'none';
                 document.getElementById('nextBtn').style.display = 'none';
                 
                 const optionsDiv = document.getElementById('practiceOptions');
                 optionsDiv.innerHTML = '';
                 
-                const shuffled = [...allWordsData].sort(() => Math.random() - 0.5);
+                if (allWordsData.length < 4) {
+                    console.error('单词数据不足');
+                    feedback.innerHTML = '单词数据加载中，请稍后再试';
+                    feedback.className = 'practice-feedback show error';
+                    feedback.style.display = 'block';
+                    return;
+                }
+                
+                const shuffled = [...allWordsData].sort(function() { return Math.random() - 0.5; });
                 const selected = shuffled.slice(0, 4);
                 
                 practiceState.currentWord = selected[0];
-                practiceState.options = selected.sort(() => Math.random() - 0.5);
+                practiceState.options = selected.sort(function() { return Math.random() - 0.5; });
                 
-                practiceState.options.forEach((option, index) => {
+                console.log('生成新题目:', practiceState.currentWord.word);
+                
+                practiceState.options.forEach(function(option) {
                     const btn = document.createElement('button');
                     btn.className = 'option-btn';
                     btn.textContent = option.word;
-                    btn.onclick = () => selectAnswer(option);
+                    btn.onclick = function() { selectAnswer(option); };
                     optionsDiv.appendChild(btn);
                 });
             }
@@ -4556,7 +4571,9 @@
                     feedback.innerHTML = '🎉 回答正确！';
                     feedback.className = 'practice-feedback show success';
                     // 答对后自动进入下一题，延迟1.5秒让用户看到正确提示
-                    setTimeout(() => {
+                    console.log('回答正确，准备自动进入下一题');
+                    setTimeout(function() {
+                        console.log('执行自动跳转');
                         nextQuestion();
                     }, 1500);
                 } else {
