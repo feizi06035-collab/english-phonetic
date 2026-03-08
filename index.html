@@ -3485,28 +3485,35 @@
                 interval: 2500
             };
             
-            function setPlaySpeed(speed) {
+            // 将函数暴露到全局作用域
+            window.setPlaySpeed = function(speed) {
                 playAllState.interval = parseInt(speed);
-            }
+            };
             
-            function togglePlayAll(category) {
+            window.togglePlayAll = function(category) {
                 if (playAllState.isPlaying && playAllState.category === category) {
-                    stopPlayAll();
+                    window.stopPlayAll();
                 } else {
-                    startPlayAll(category);
+                    window.startPlayAll(category);
                 }
-            }
+            };
             
-            function startPlayAll(category) {
+            window.startPlayAll = function(category) {
                 if (playAllState.isPlaying) {
-                    stopPlayAll();
+                    window.stopPlayAll();
                 }
                 
                 const section = document.getElementById(category);
-                if (!section) return;
+                if (!section) {
+                    console.error('未找到分类:', category);
+                    return;
+                }
                 
                 const soundButtons = section.querySelectorAll('.sound-btn');
-                if (soundButtons.length === 0) return;
+                if (soundButtons.length === 0) {
+                    console.error('该分类没有可播放的单词');
+                    return;
+                }
                 
                 playAllState.isPlaying = true;
                 playAllState.category = category;
@@ -3517,15 +3524,17 @@
                     return match ? match[1] : btn.textContent.trim();
                 });
                 
-                updatePlayAllUI(category, true);
-                playNextWord();
-            }
+                console.log('开始全部播放:', category, playAllState.words.length, '个单词');
+                
+                window.updatePlayAllUI(category, true);
+                window.playNextWord();
+            };
             
-            function playNextWord() {
+            window.playNextWord = function() {
                 if (!playAllState.isPlaying) return;
                 
                 if (playAllState.currentIndex >= playAllState.words.length) {
-                    stopPlayAll();
+                    window.stopPlayAll();
                     return;
                 }
                 
@@ -3544,16 +3553,16 @@
                 const word = playAllState.words[playAllState.currentIndex];
                 playSound(word);
                 
-                updateProgress(category, playAllState.currentIndex + 1, playAllState.words.length);
+                window.updateProgress(category, playAllState.currentIndex + 1, playAllState.words.length);
                 
                 playAllState.currentIndex++;
                 
                 playAllState.timeoutId = setTimeout(() => {
-                    playNextWord();
+                    window.playNextWord();
                 }, playAllState.interval);
-            }
+            };
             
-            function stopPlayAll() {
+            window.stopPlayAll = function() {
                 if (playAllState.timeoutId) {
                     clearTimeout(playAllState.timeoutId);
                     playAllState.timeoutId = null;
@@ -3566,17 +3575,17 @@
                         const soundButtons = section.querySelectorAll('.sound-btn');
                         soundButtons.forEach(btn => btn.classList.remove('playing'));
                     }
-                    updatePlayAllUI(category, false);
-                    updateProgress(category, 0, 0);
+                    window.updatePlayAllUI(category, false);
+                    window.updateProgress(category, 0, 0);
                 }
                 
                 playAllState.isPlaying = false;
                 playAllState.category = null;
                 playAllState.currentIndex = 0;
                 playAllState.words = [];
-            }
+            };
             
-            function updatePlayAllUI(category, isPlaying) {
+            window.updatePlayAllUI = function(category, isPlaying) {
                 const container = document.querySelector(`.play-all-container[data-category="${category}"]`);
                 if (!container) return;
                 
@@ -3593,9 +3602,9 @@
                     icon.textContent = '▶';
                     text.textContent = '全部播放';
                 }
-            }
+            };
             
-            function updateProgress(category, current, total) {
+            window.updateProgress = function(category, current, total) {
                 const container = document.querySelector(`.play-all-container[data-category="${category}"]`);
                 if (!container) return;
                 
