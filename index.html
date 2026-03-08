@@ -4593,10 +4593,21 @@
                         }, 300);
                     }, 1500);
                 } else {
+                    // 答错后显示提示，但不禁用按钮，让用户可以重新选择
                     const correct = practiceState.currentWord;
-                    feedback.innerHTML = `❌ 回答错误！<br>正确答案是：<strong>${correct.word}</strong><br>谐音：${correct.homophone}<br>释义：${correct.meaning}`;
+                    feedback.innerHTML = `❌ 回答错误！请重新选择<br><small>提示：正确答案是 ${correct.word}</small>`;
                     feedback.className = 'practice-feedback show error';
-                    document.getElementById('nextBtn').style.display = 'block';
+                    
+                    // 标记当前选中的按钮为错误
+                    buttons.forEach(function(btn) {
+                        if (btn.textContent === selected.word) {
+                            btn.classList.add('wrong');
+                            btn.disabled = true; // 禁用已选错的选项
+                        }
+                    });
+                    
+                    // 不设置 practiceState.answered = true，让用户可以继续选择
+                    practiceState.answered = false;
                 }
             }
         </script>
