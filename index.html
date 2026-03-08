@@ -3617,7 +3617,7 @@
                         progress.textContent = '';
                     }
                 }
-            }
+            };
             
             // 显示语音错误提示
             function showVoiceError() {
@@ -3628,9 +3628,9 @@
             // ===============================================
             // 例句播放功能
             // ===============================================
-            let currentSentenceCell = null; // 当前正在播放例句的单元格
-            let sentenceUtterance = null; // 当前例句的语音合成对象
-            let isPlayingSentence = false; // 是否正在播放例句
+            var currentSentenceCell = null; // 当前正在播放例句的单元格
+            var sentenceUtterance = null; // 当前例句的语音合成对象
+            var isPlayingSentence = false; // 是否正在播放例句
             
             // 从例句文本中提取英文部分
             function extractEnglishSentence(sentenceText) {
@@ -4792,15 +4792,15 @@
             });
 
             // ==================== 自动播放功能 ====================
-            let isAutoPlaying = false;
-            let playSpeed = 1;
-            let playRange = 'all'; // 'all' 或 'current'
-            let isLooping = false; // 循环播放状态
-            let autoPlayIndex = 0;
-            let autoPlayWords = [];
-            let autoPlayTimeout = null;
-            let currentHighlightRow = null;
-            let currentPlayingWord = ''; // 当前播放的单词
+            var isAutoPlaying = false;
+            var playSpeed = 1;
+            var playRange = 'all'; // 'all' 或 'current'
+            var isLooping = false; // 循环播放状态
+            var autoPlayIndex = 0;
+            var autoPlayWords = [];
+            var autoPlayTimeout = null;
+            var currentHighlightRow = null;
+            var currentPlayingWord = ''; // 当前播放的单词
 
             // 获取当前分类的所有单词
             function getCurrentCategoryWords() {
