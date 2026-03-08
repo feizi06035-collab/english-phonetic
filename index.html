@@ -5590,6 +5590,8 @@
 
             // 高亮当前播放的行
             function highlightRow(index) {
+                console.log('highlightRow called with index:', index);
+                
                 // 清除之前的高亮
                 if (currentHighlightRow) {
                     currentHighlightRow.style.backgroundColor = '';
@@ -5603,8 +5605,17 @@
                     currentHighlightRow = null;
                 }
                 
-                // 获取当前可见的单词行
-                const allRows = document.querySelectorAll('.word-category table tr');
+                // 获取当前激活的分类
+                const activeSection = document.querySelector('.word-category.active');
+                if (!activeSection) {
+                    console.log('No active section found');
+                    return;
+                }
+                
+                // 获取当前可见的单词行（只在当前激活的分类中查找）
+                const allRows = activeSection.querySelectorAll('table tr');
+                console.log('Total rows in active section:', allRows.length);
+                
                 const visibleRows = Array.from(allRows).filter(row => {
                     // 排除表头行
                     if (row.querySelector('th')) return false;
@@ -5612,23 +5623,36 @@
                     if (row.style.display === 'none') return false;
                     return true;
                 });
+                
+                console.log('Visible rows count:', visibleRows.length, 'Requested index:', index);
+                
                 if (index >= 0 && index < visibleRows.length) {
                     const row = visibleRows[index];
+                    console.log('Highlighting row:', row);
+                    
                     // 设置高亮样式
                     row.style.backgroundColor = '#cce5ff';
                     row.style.border = '1px solid #007bff';
                     row.style.borderRadius = '4px';
                     currentHighlightRow = row;
                     
+                    // 滚动到该行
+                    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
                     // 添加播放图标到第一列
                     const firstCell = row.querySelector('td:first-child');
                     if (firstCell) {
-                        const iconSpan = document.createElement('span');
-                        iconSpan.className = 'playing-icon';
-                        iconSpan.textContent = '▶️ ';
-                        iconSpan.style.marginRight = '4px';
-                        firstCell.insertBefore(iconSpan, firstCell.firstChild);
+                        // 检查是否已有图标
+                        if (!firstCell.querySelector('.playing-icon')) {
+                            const iconSpan = document.createElement('span');
+                            iconSpan.className = 'playing-icon';
+                            iconSpan.textContent = '▶️ ';
+                            iconSpan.style.marginRight = '4px';
+                            firstCell.insertBefore(iconSpan, firstCell.firstChild);
+                        }
                     }
+                } else {
+                    console.log('Index out of range, cannot highlight');
                 }
             }
 
