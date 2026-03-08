@@ -5718,6 +5718,17 @@
                     // 当前页播放完毕，自动跳转到下一页
                     if (currentPage < totalPages) {
                         console.log('当前页播放完毕，翻页到下一页');
+                        // 清除当前页的高亮
+                        if (currentHighlightRow) {
+                            currentHighlightRow.style.backgroundColor = '';
+                            currentHighlightRow.style.border = '';
+                            currentHighlightRow.style.borderRadius = '';
+                            const firstCell = currentHighlightRow.querySelector('td:first-child');
+                            if (firstCell && firstCell.querySelector('.playing-icon')) {
+                                firstCell.querySelector('.playing-icon').remove();
+                            }
+                            currentHighlightRow = null;
+                        }
                         currentPage++;
                         updatePaginationControls();
                         showPage(currentPage);
@@ -5730,7 +5741,7 @@
                             if (autoPlayWords.length > 0) {
                                 playNextWord();
                             }
-                        }, 300);
+                        }, 500);
                         return;
                     }
                     
