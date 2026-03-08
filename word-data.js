@@ -53,7 +53,17 @@ const wordDatabase = {
         { word: 'Forty', phonetic: '/ˈfɔːti/', homophone: '佛踢', meaning: '四十', sentence: 'Forty students in class.', translation: '班里有四十个学生。', homophoneSentence: '佛踢斯丢等茨因克莱斯.' },
         { word: 'Fifty', phonetic: '/ˈfɪfti/', homophone: '菲夫踢', meaning: '五十', sentence: 'Fifty percent off.', translation: '五折优惠。', homophoneSentence: '菲夫踢波森特奥夫.' },
         { word: 'Hundred', phonetic: '/ˈhʌndrəd/', homophone: '汉德瑞德', meaning: '百', sentence: 'One hundred percent.', translation: '百分之百。', homophoneSentence: '万汉德瑞德波森特.' },
-        { word: 'Zero', phonetic: '/ˈzɪərəʊ/', homophone: '泽柔', meaning: '零', sentence: 'The temperature is zero.', translation: '温度是零度。', homophoneSentence: '则坦普雷彻依兹泽柔.' }
+        { word: 'Zero', phonetic: '/ˈzɪərəʊ/', homophone: '泽柔', meaning: '零', sentence: 'The temperature is zero.', translation: '温度是零度。', homophoneSentence: '则坦普雷彻依兹泽柔.' },
+        { word: 'Sixty', phonetic: '/ˈsɪksti/', homophone: '西克斯踢', meaning: '六十', sentence: 'Sixty seconds in a minute.', translation: '一分钟六十秒。', homophoneSentence: '西克斯踢赛肯兹因啊米尼特.' },
+        { word: 'Seventy', phonetic: '/ˈsevnti/', homophone: '赛文踢', meaning: '七十', sentence: 'Seventy years old.', translation: '七十岁。', homophoneSentence: '赛文踢耶斯欧德.' },
+        { word: 'Eighty', phonetic: '/ˈeɪti/', homophone: '艾踢', meaning: '八十', sentence: 'Eighty people came.', translation: '八十个人来了。', homophoneSentence: '艾踢皮普欧凯姆.' },
+        { word: 'Ninety', phonetic: '/ˈnaɪnti/', homophone: '奈恩踢', meaning: '九十', sentence: 'Ninety percent done.', translation: '完成了百分之九十。', homophoneSentence: '奈恩踢波森特丹.' },
+        { word: 'Thousand', phonetic: '/ˈθaʊznd/', homophone: '萨赞德', meaning: '千', sentence: 'One thousand dollars.', translation: '一千美元。', homophoneSentence: '万萨赞德道乐兹.' },
+        { word: 'Million', phonetic: '/ˈmɪljən/', homophone: '米尔金', meaning: '百万', sentence: 'One million dreams.', translation: '一百万个梦想。', homophoneSentence: '万米尔金追姆兹.' },
+        { word: 'Billion', phonetic: '/ˈbɪljən/', homophone: '比尔金', meaning: '十亿', sentence: 'A billion stars.', translation: '十亿颗星星。', homophoneSentence: '啊比尔金星兹.' },
+        { word: 'First', phonetic: '/fɜːst/', homophone: '弗斯特', meaning: '第一', sentence: 'First come, first served.', translation: '先到先得。', homophoneSentence: '弗斯特卡姆,弗斯特瑟夫德.' },
+        { word: 'Second', phonetic: '/ˈsekənd/', homophone: '赛肯德', meaning: '第二', sentence: 'Second place winner.', translation: '第二名获得者。', homophoneSentence: '赛肯德普雷斯温纳.' },
+        { word: 'Third', phonetic: '/θɜːd/', homophone: '瑟德', meaning: '第三', sentence: 'Third time lucky.', translation: '第三次走运。', homophoneSentence: '瑟德泰姆拉基.' }
     ],
     colors: [
         { word: 'Red', phonetic: '/red/', homophone: '瑞德', meaning: '红色', sentence: 'The rose is red.', translation: '玫瑰是红色的。', homophoneSentence: '则柔兹瑞德.' },
