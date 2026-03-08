@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>英语中文谐音发音指南 | 零基础快速记单词 | 日常英语谐音大全</title>
     <meta name="description" content="零基础学英语必备！英语中文谐音发音指南，覆盖日常问候、情感表达、数字颜色等场景，附音标+中文释义，快速记住单词发音。">
-    <meta name="keywords" content="英语谐音, 英语发音, 零基础学英语, 中文谐音记单词, 日常英语谐音">
+    <meta name="keywords" content="英语谐音, 英语发音, 零基础学英语, 中文谐音记单词, 日常英语谐音，英语中文谐音在线学习">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -5605,16 +5605,22 @@
                     currentHighlightRow = null;
                 }
                 
-                // 获取当前激活的分类
-                const activeSection = document.querySelector('.word-category.active');
-                if (!activeSection) {
-                    console.log('No active section found');
-                    return;
+                // 获取当前播放模式
+                const activeCategory = document.querySelector('.category-btn.active')?.dataset.category || 'all';
+                console.log('Active category:', activeCategory);
+                
+                // 获取所有可见的单词行
+                let allRows;
+                if (activeCategory === 'all') {
+                    // 全部模式下，获取所有分类的行
+                    allRows = document.querySelectorAll('.word-category:not(#all) table tr');
+                } else {
+                    // 单个分类模式下，只获取当前分类的行
+                    const activeSection = document.getElementById(activeCategory);
+                    allRows = activeSection ? activeSection.querySelectorAll('table tr') : [];
                 }
                 
-                // 获取当前可见的单词行（只在当前激活的分类中查找）
-                const allRows = activeSection.querySelectorAll('table tr');
-                console.log('Total rows in active section:', allRows.length);
+                console.log('Total rows found:', allRows.length);
                 
                 const visibleRows = Array.from(allRows).filter(row => {
                     // 排除表头行
