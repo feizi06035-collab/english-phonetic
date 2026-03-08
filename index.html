@@ -2907,6 +2907,7 @@
             window.addEventListener('DOMContentLoaded', function() {
                 initWordData();
                 initPagination();
+                initSearch();
                 applyURLState();
             });
             
@@ -3014,169 +3015,170 @@
                 });
             }
             
-            // 获取全量单词数组（用于全部分类的搜索）
-            function getAllWords() {
-                let allWords = [];
-                
-                // 优先从 wordDatabase 获取数据
-                if (typeof wordDatabase !== 'undefined') {
-                    Object.keys(wordDatabase).forEach(category => {
-                        wordDatabase[category].forEach(wordItem => {
-                            const sentence = wordItem.sentence + ' → 【' + wordItem.translation + '】→ ' + wordItem.homophoneSentence;
-                            allWords.push({
-                                category: category,
-                                wordText: wordItem.word,
-                                phonetic: wordItem.phonetic,
-                                homophone: wordItem.homophone,
-                                meaning: wordItem.meaning,
-                                sentence: sentence,
-                                cells: [wordItem.word, wordItem.phonetic, wordItem.homophone, wordItem.meaning, sentence],
-                                cellsHtml: [
-                                    '<button class="sound-btn" onclick="playSound(\'' + wordItem.word.replace(/'/g, "\\'") + '\')">' + wordItem.word + '</button>',
-                                    wordItem.phonetic,
-                                    wordItem.homophone,
-                                    wordItem.meaning,
-                                    sentence
-                                ]
-                            });
-                        });
-                    });
-                } else {
-                    // 如果 wordDatabase 未定义，从 wordData 获取
-                    Object.keys(wordData).forEach(category => {
-                        wordData[category].forEach(word => {
-                            allWords.push({
-                                category: category,
-                                ...word
-                            });
-                        });
-                    });
-                }
-                
-                console.log('getAllWords returned', allWords.length, 'words');
-                return allWords;
-            }
-            
-            // 搜索功能
-            document.getElementById('searchInput').addEventListener('input', function() {
-                const searchTerm = this.value.toLowerCase().trim();
-                console.log('Search term:', searchTerm);
-                let hasResults = false;
-                let matchCount = 0;
-                
-                // 搜索时停止自动播放
-                if (typeof isAutoPlaying !== 'undefined' && isAutoPlaying) {
-                    stopAutoPlay();
-                }
+            // ==================== 搜索功能 ====================
+            function performSearch(searchTerm) {
+                console.log('performSearch called with:', searchTerm);
                 
                 const searchResults = document.getElementById('searchResults');
                 const searchResultsTable = document.getElementById('searchResultsTable');
                 const searchNoResult = document.getElementById('searchNoResult');
                 
-                // 清除之前的高亮
-                clearHighlights();
-                
-                if (searchTerm === '') {
-                    // 搜索框为空时，隐藏搜索结果区块，恢复原分类列表
-                    searchResults.style.display = 'none';
-                    document.querySelectorAll('.word-category').forEach(cat => {
-                        if (cat.id !== 'all') {
-                            cat.style.display = 'none';
-                        }
-                    });
-                    initPagination();
+                if (!searchResults || !searchResultsTable) {
+                    console.error('Search elements not found');
                     return;
                 }
                 
-                // 显示搜索结果区块
-                searchResults.style.display = 'block';
-                
                 // 清空搜索结果表格（保留表头）
-                while (searchResultsTable.rows.length > 1) {
-                    searchResultsTable.deleteRow(1);
+                const tbody = searchResultsTable.querySelector('tbody');
+                if (tbody) {
+                    tbody.innerHTML = '';
+                } else {
+                    searchResultsTable.innerHTML = '<tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th><th>例句</th></tr>';
                 }
                 
-                // 隐藏所有分类容器
-                document.querySelectorAll('.word-category').forEach(cat => {
-                    if (cat.id !== 'all') {
-                        cat.style.display = 'none';
-                    }
-                });
+                if (!searchTerm) {
+                    searchResults.style.display = 'none';
+                    searchNoResult.style.display = 'none';
+                    return;
+                }
                 
-                // 搜索全量单词数组（覆盖所有分类）
-                const searchWords = getAllWords();
-                console.log('Searching in', searchWords.length, 'words');
+                searchResults.style.display = 'block';
                 
-                // 遍历搜索范围，查找匹配的结果
-                searchWords.forEach(word => {
-                    const cells = word.cells;
-                    const cellsHtml = word.cellsHtml;
-                    let match = false;
-                    let rowHtml = '<tr>';
-                    
-                    cells.forEach((text, index) => {
-                        if (text.toLowerCase().includes(searchTerm)) {
-                            match = true;
-                            // 高亮匹配的文本，保留HTML结构
-                            const originalHtml = cellsHtml[index];
-                            const highlightedHtml = originalHtml.replace(new RegExp(`(${searchTerm})`, 'gi'), '<span class="highlight">$1</span>');
-                            rowHtml += `<td>${highlightedHtml}</td>`;
-                        } else {
-                            rowHtml += `<td>${cellsHtml[index]}</td>`;
-                        }
-                    });
-                    
-                    rowHtml += '</tr>';
-                    
-                    if (match) {
-                        hasResults = true;
-                        matchCount++;
-                        // 添加到搜索结果表格
-                        const tbody = searchResultsTable.querySelector('tbody') || searchResultsTable;
-                        tbody.insertAdjacentHTML('beforeend', rowHtml);
+                // 检查 wordDatabase 是否存在
+                if (typeof wordDatabase === 'undefined') {
+                    console.error('wordDatabase is not defined');
+                    searchNoResult.style.display = 'block';
+                    return;
+                }
+                
+                let matchCount = 0;
+                const term = searchTerm.toLowerCase();
+                
+                // 遍历所有分类和单词
+                Object.keys(wordDatabase).forEach(category => {
+                    wordDatabase[category].forEach(wordItem => {
+                        // 检查是否匹配（英文、音标、中文谐音、中文释义、例句）
+                        const word = (wordItem.word || '').toLowerCase();
+                        const phonetic = (wordItem.phonetic || '').toLowerCase();
+                        const homophone = (wordItem.homophone || '').toLowerCase();
+                        const meaning = (wordItem.meaning || '').toLowerCase();
+                        const sentence = (wordItem.sentence || '').toLowerCase();
+                        const translation = (wordItem.translation || '').toLowerCase();
+                        const homophoneSentence = (wordItem.homophoneSentence || '').toLowerCase();
                         
-                        // 为新添加的行添加分享按钮
-                        const newRow = searchResultsTable.rows[searchResultsTable.rows.length - 1];
-                        const sentenceCell = newRow.cells[4];
-                        if (sentenceCell && word.wordText) {
+                        if (word.includes(term) || 
+                            phonetic.includes(term) || 
+                            homophone.includes(term) || 
+                            meaning.includes(term) || 
+                            sentence.includes(term) ||
+                            translation.includes(term) ||
+                            homophoneSentence.includes(term)) {
+                            
+                            matchCount++;
+                            
+                            // 构建例句
+                            const fullSentence = wordItem.sentence + ' → 【' + wordItem.translation + '】→ ' + wordItem.homophoneSentence;
+                            
+                            // 创建新行
+                            const newRow = searchResultsTable.insertRow();
+                            
+                            // 英文列（带播放按钮）
+                            const wordCell = newRow.insertCell();
+                            wordCell.innerHTML = '<button class="sound-btn" onclick="playSound(\'' + wordItem.word.replace(/'/g, "\\'") + '\')">' + wordItem.word + '</button>';
+                            
+                            // 音标列
+                            const phoneticCell = newRow.insertCell();
+                            phoneticCell.textContent = wordItem.phonetic;
+                            
+                            // 中文谐音列
+                            const homophoneCell = newRow.insertCell();
+                            homophoneCell.textContent = wordItem.homophone;
+                            
+                            // 中文释义列
+                            const meaningCell = newRow.insertCell();
+                            meaningCell.textContent = wordItem.meaning;
+                            
+                            // 例句列（带分享按钮）
+                            const sentenceCell = newRow.insertCell();
+                            sentenceCell.innerHTML = fullSentence;
+                            
+                            // 添加分享按钮
                             const shareBtn = document.createElement('button');
                             shareBtn.className = 'share-btn';
                             shareBtn.innerHTML = '📤';
                             shareBtn.title = '分享此单词';
                             shareBtn.onclick = function() {
-                                openWordShareModal(word.wordText, word.phonetic, word.homophone, word.meaning);
+                                openWordShareModal(wordItem.word, wordItem.phonetic, wordItem.homophone, wordItem.meaning);
                             };
                             sentenceCell.appendChild(shareBtn);
                         }
-                    }
+                    });
                 });
                 
-                // 更新搜索结果标题，显示匹配数量
+                console.log('Found', matchCount, 'matches');
+                
+                // 更新搜索结果标题
                 const searchResultsTitle = searchResults.querySelector('h2');
                 if (searchResultsTitle) {
-                    searchResultsTitle.textContent = `搜索结果 (${matchCount} 个匹配)`;
+                    searchResultsTitle.textContent = '搜索结果 (' + matchCount + ' 个匹配)';
                 }
                 
                 // 显示或隐藏"无匹配内容"提示
-                searchNoResult.style.display = hasResults ? 'none' : 'block';
+                searchNoResult.style.display = matchCount > 0 ? 'none' : 'block';
                 
-                if (!hasResults && searchTerm) {
-                    // 获取原始搜索词（保留原始大小写）
-                    const rawSearchTerm = this.value.trim();
-                    
-                    // 更新提示消息
+                if (matchCount === 0) {
                     const noResultMessage = document.getElementById('noResultMessage');
                     if (noResultMessage) {
-                        noResultMessage.textContent = `未找到「${rawSearchTerm}」相关单词，您可以提交想要的单词，我们会尽快补充！`;
+                        noResultMessage.textContent = '未找到「' + searchTerm + '」相关单词，您可以提交想要的单词，我们会尽快补充！';
                     }
-                    
-                    // 填充输入框1的默认值（使用原始大小写）
-                    const requestWordInput = document.getElementById('requestWord');
-                    if (requestWordInput) {
-                        requestWordInput.value = rawSearchTerm;
+                    const requestWord = document.getElementById('requestWord');
+                    if (requestWord) {
+                        requestWord.value = searchTerm;
                     }
                 }
-            });
+            }
+            
+            // 初始化搜索功能
+            function initSearch() {
+                const searchInput = document.getElementById('searchInput');
+                if (!searchInput) {
+                    console.error('searchInput not found');
+                    return;
+                }
+                
+                console.log('Initializing search...');
+                
+                // 使用防抖处理
+                let searchTimeout = null;
+                
+                searchInput.addEventListener('input', function() {
+                    const searchTerm = this.value.trim();
+                    
+                    // 清除之前的定时器
+                    if (searchTimeout) {
+                        clearTimeout(searchTimeout);
+                    }
+                    
+                    // 延迟搜索（防抖）
+                    searchTimeout = setTimeout(function() {
+                        // 搜索时停止自动播放
+                        if (typeof isAutoPlaying !== 'undefined' && isAutoPlaying) {
+                            stopAutoPlay();
+                        }
+                        
+                        // 隐藏所有分类容器
+                        document.querySelectorAll('.word-category').forEach(cat => {
+                            if (cat.id !== 'all') {
+                                cat.style.display = 'none';
+                            }
+                        });
+                        
+                        performSearch(searchTerm);
+                    }, 300);
+                });
+                
+                console.log('Search initialized');
+            }
             
             // 清除高亮
             function clearHighlights() {
