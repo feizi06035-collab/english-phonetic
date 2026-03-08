@@ -4498,6 +4498,10 @@
                 const modal = document.getElementById('practiceModal');
                 modal.style.display = 'block';
                 nextQuestion();
+                // 延迟500毫秒后自动播放语音，确保题目已生成
+                setTimeout(function() {
+                    playPracticeWord();
+                }, 500);
             }
             
             function closePractice() {
@@ -4575,6 +4579,10 @@
                     setTimeout(function() {
                         console.log('执行自动跳转');
                         nextQuestion();
+                        // 进入下一题后自动播放语音
+                        setTimeout(function() {
+                            playPracticeWord();
+                        }, 300);
                     }, 1500);
                 } else {
                     const correct = practiceState.currentWord;
