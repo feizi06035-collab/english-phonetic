@@ -2316,7 +2316,7 @@
                 </div>
                 <div class="practice-options" id="practiceOptions"></div>
                 <div id="practiceFeedback" class="practice-feedback"></div>
-                <button onclick="nextQuestion()" id="nextBtn" class="next-btn" style="display:none;">下一题</button>
+                <button onclick="nextQuestionWithAudio()" id="nextBtn" class="next-btn" style="display:none;">下一题</button>
             </div>
         </div>
 
@@ -4553,6 +4553,14 @@
                 if (practiceState.currentWord) {
                     playSound(practiceState.currentWord.word);
                 }
+            }
+            
+            function nextQuestionWithAudio() {
+                nextQuestion();
+                // 延迟300毫秒后自动播放语音
+                setTimeout(function() {
+                    playPracticeWord();
+                }, 300);
             }
             
             function selectAnswer(selected) {
