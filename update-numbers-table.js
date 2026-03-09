@@ -7,7 +7,7 @@ const wordDataPath = path.join(__dirname, 'word-data.js');
 const wordDataContent = fs.readFileSync(wordDataPath, 'utf8');
 
 // 提取numbers数据
-const numbersRegex = /numbers:\s*\[(.*?)\],/s;
+const numbersRegex = /numbers:\s*\[(.*?)\]\s*,/s;
 const match = wordDataContent.match(numbersRegex);
 
 if (match) {
@@ -63,8 +63,12 @@ if (match) {
     if (numbersData.length > 0) {
         // 生成表格行
         const tableRows = numbersData.map(word => {
-            const soundWord = word.word.replace(/\s+/g, '');
-            return `                <tr><td><button class="sound-btn" onclick="playSound('${soundWord}')">${word.word}</button></td><td>${word.phonetic}</td><td>${word.homophone}</td><td>${word.meaning}</td><td>${word.sentence}</td></tr>`;
+            const soundWord = word.word.replace(/\s+/g, '').replace(/'/g, "\\'");
+            const safeWord = word.word.replace(/'/g, "&apos;");
+            const safeSentence = word.sentence.replace(/'/g, "&apos;");
+            const safeTranslation = word.translation.replace(/'/g, "&apos;");
+            const safeHomophoneSentence = word.homophoneSentence.replace(/'/g, "&apos;");
+            return `                <tr><td><button class="sound-btn" onclick="playSound('${soundWord}')">${safeWord}</button></td><td>${word.phonetic}</td><td>${word.homophone}</td><td>${word.meaning}</td><td>${safeSentence} → 【${safeTranslation}】→ ${safeHomophoneSentence}</td></tr>`;
         }).join('\n');
         
         // 读取index.html文件

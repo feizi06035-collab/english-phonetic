@@ -1,4 +1,4 @@
-// 修复word-data.js文件的数据格式问题
+// 修复word-data.js文件中的数据格式问题
 const fs = require('fs');
 const path = require('path');
 
@@ -6,7 +6,7 @@ const path = require('path');
 const wordDataPath = path.join(__dirname, 'word-data.js');
 let wordDataContent = fs.readFileSync(wordDataPath, 'utf8');
 
-// 修复数字分类的数据格式
+// 修复numbers部分的格式问题
 const numbersRegex = /numbers:\s*\[(.*?)\],/s;
 const numbersMatch = wordDataContent.match(numbersRegex);
 
@@ -28,7 +28,7 @@ if (numbersMatch) {
         if (braceCount === 0 && (char === ',' || char === ' ')) {
             if (currentRow.trim()) {
                 // 清理多余的逗号
-                const cleanedRow = currentRow.trim().replace(/,,/g, ',');
+                const cleanedRow = currentRow.trim().replace(/,,/g, ',').replace(/,$/, '');
                 if (cleanedRow) {
                     cleanedNumbers.push(cleanedRow);
                 }
@@ -37,16 +37,26 @@ if (numbersMatch) {
         }
     }
     
-    // 重新生成数字分类的内容
-    const newNumbersContent = cleanedNumbers.map(item => `        ${item}`).join(',\n');
-    wordDataContent = wordDataContent.replace(numbersRegex, `numbers: [\n${newNumbersContent}\n    ],`);
+    // 处理最后一行
+    if (currentRow.trim()) {
+        const cleanedRow = currentRow.trim().replace(/,,/g, ',').replace(/,$/, '');
+        if (cleanedRow) {
+            cleanedNumbers.push(cleanedRow);
+        }
+    }
     
-    console.log('成功修复数字分类的数据格式');
+    // 重新组合numbers数据
+    const newNumbersContent = 'numbers: [\n' + cleanedNumbers.map(row => '        ' + row).join(',\n') + '\n    ],';
+    
+    // 替换原始数据
+    wordDataContent = wordDataContent.replace(numbersRegex, newNumbersContent);
+    
+    console.log('成功修复numbers部分的格式问题');
 } else {
-    console.error('未找到numbers部分');
+    console.error('未找到numbers数据');
 }
 
-// 修复常用语句分类的数据格式
+// 修复sentences部分的格式问题
 const sentencesRegex = /sentences:\s*\[(.*?)\]/s;
 const sentencesMatch = wordDataContent.match(sentencesRegex);
 
@@ -68,7 +78,7 @@ if (sentencesMatch) {
         if (braceCount === 0 && (char === ',' || char === ' ')) {
             if (currentRow.trim()) {
                 // 清理多余的逗号
-                const cleanedRow = currentRow.trim().replace(/,,/g, ',');
+                const cleanedRow = currentRow.trim().replace(/,,/g, ',').replace(/,$/, '');
                 if (cleanedRow) {
                     cleanedSentences.push(cleanedRow);
                 }
@@ -77,15 +87,25 @@ if (sentencesMatch) {
         }
     }
     
-    // 重新生成常用语句分类的内容
-    const newSentencesContent = cleanedSentences.map(item => `        ${item}`).join(',\n');
-    wordDataContent = wordDataContent.replace(sentencesRegex, `sentences: [\n${newSentencesContent}\n    ]`);
+    // 处理最后一行
+    if (currentRow.trim()) {
+        const cleanedRow = currentRow.trim().replace(/,,/g, ',').replace(/,$/, '');
+        if (cleanedRow) {
+            cleanedSentences.push(cleanedRow);
+        }
+    }
     
-    console.log('成功修复常用语句分类的数据格式');
+    // 重新组合sentences数据
+    const newSentencesContent = 'sentences: [\n' + cleanedSentences.map(row => '        ' + row).join(',\n') + '\n    ]';
+    
+    // 替换原始数据
+    wordDataContent = wordDataContent.replace(sentencesRegex, newSentencesContent);
+    
+    console.log('成功修复sentences部分的格式问题');
 } else {
-    console.error('未找到sentences部分');
+    console.error('未找到sentences数据');
 }
 
-// 写入修复后的文件
+// 写入修复后的数据
 fs.writeFileSync(wordDataPath, wordDataContent, 'utf8');
-console.log('成功修复word-data.js文件的数据格式');
+console.log('成功写入修复后的word-data.js文件');

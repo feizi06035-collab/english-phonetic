@@ -7,7 +7,7 @@ const wordDataPath = path.join(__dirname, 'word-data.js');
 const wordDataContent = fs.readFileSync(wordDataPath, 'utf8');
 
 // 提取sentences数据
-const sentencesRegex = /sentences:\s*\[(.*?)\s*\]/s;
+const sentencesRegex = /sentences:\s*\[([\s\S]*?)\s*\]/;
 const match = wordDataContent.match(sentencesRegex);
 
 if (match) {
@@ -17,17 +17,20 @@ if (match) {
     const wordObjects = sentencesText.match(/\{[^}]*\}/g) || [];
     
     const sentencesData = wordObjects.map(objStr => {
-        // 提取各个字段
-        const wordMatch = objStr.match(/word:\s*['"]([^'"]*(?:\\.[^'"]*)*)['"]/);
-        const phoneticMatch = objStr.match(/phonetic:\s*['"]([^'"]*(?:\\.[^'"]*)*)['"]/);
-        const homophoneMatch = objStr.match(/homophone:\s*['"]([^'"]*(?:\\.[^'"]*)*)['"]/);
-        const meaningMatch = objStr.match(/meaning:\s*['"]([^'"]*(?:\\.[^'"]*)*)['"]/);
-        const sentenceMatch = objStr.match(/sentence:\s*['"]([^'"]*(?:\\.[^'"]*)*)['"]/);
-        const translationMatch = objStr.match(/translation:\s*['"]([^'"]*(?:\\.[^'"]*)*)['"]/);
-        const homophoneSentenceMatch = objStr.match(/homophoneSentence:\s*['"]([^'"]*(?:\\.[^'"]*)*)['"]/);
+        // 提取各个字段，使用更复杂的正则表达式来处理转义的单引号
+        const wordMatch = objStr.match(/word:\s*'([^']*(?:\\.[^']*)*)'/);
+        const phoneticMatch = objStr.match(/phonetic:\s*'([^']*(?:\\.[^']*)*)'/);
+        const homophoneMatch = objStr.match(/homophone:\s*'([^']*(?:\\.[^']*)*)'/);
+        const meaningMatch = objStr.match(/meaning:\s*'([^']*(?:\\.[^']*)*)'/);
+        const sentenceMatch = objStr.match(/sentence:\s*'([^']*(?:\\.[^']*)*)'/);
+        const translationMatch = objStr.match(/translation:\s*'([^']*(?:\\.[^']*)*)'/);
+        const homophoneSentenceMatch = objStr.match(/homophoneSentence:\s*'([^']*(?:\\.[^']*)*)'/);
         
         // 处理转义字符
-        const unescape = (str) => str ? str.replace(/\\'/g, "'") : '';
+        const unescape = (str) => {
+            if (!str) return '';
+            return str.replace(/\\'/g, "'").replace(/\\"/g, '"');
+        };
         
         return {
             word: wordMatch ? unescape(wordMatch[1]) : '',
@@ -61,28 +64,10 @@ if (match) {
         
         if (tableMatch) {
             // 替换表格内容
-            const newTableContent = `<!-- 常用语句类 -->
-            <section class="word-category" id="sentences" aria-label="常用语句类词汇">
-                <h2>常用语句类 | Common Sentences</h2>
-                <table aria-label="常用语句类单词列表">
-                    <thead>
-                        <tr>
-                            <th>单词</th>
-                            <th>音标</th>
-                            <th>谐音</th>
-                            <th>释义</th>
-                            <th>例句</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-${tableRows}
-                    </tbody>
-                </table>`;
-            
-            indexContent = indexContent.replace(/<!-- 常用语句类 -->[\s\S]*?<\/tbody>/, newTableContent);
+            const updatedContent = indexContent.replace(sentencesTableRegex, `<!-- 常用语句类 -->\n                    <table aria-label="常用语句类单词列表">\n                        <thead>\n                            <tr>\n                                <th>单词</th>\n                                <th>音标</th>\n                                <th>中文谐音</th>\n                                <th>释义</th>\n                                <th>例句</th>\n                            </tr>\n                        </thead>\n                        <tbody>\n${tableRows}\n                        </tbody>\n                    </table>`);
             
             // 写入更新后的index.html
-            fs.writeFileSync(indexPath, indexContent, 'utf8');
+            fs.writeFileSync(indexPath, updatedContent, 'utf8');
             console.log('成功更新index.html中的常用语句分类表格');
         } else {
             console.error('未找到常用语句分类的表格位置');
