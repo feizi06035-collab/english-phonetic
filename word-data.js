@@ -887,3 +887,5 @@ const wordDatabase = {
         { word: 'Until next time', phonetic: '/ənˈtɪl nekst taɪm/', homophone: '安替欧 耐克斯 泰姆', meaning: '下次见', sentence: 'Until next time, my friend!', translation: '下次见，我的朋友！', homophoneSentence: '安替欧耐克斯泰姆,麦夫瑞恩德!' }
     ]
 };
+
+// Test modification
