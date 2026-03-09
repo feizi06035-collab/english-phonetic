@@ -8630,10 +8630,14 @@
                     // 仅播放当前页
                     autoPlayWords = getCurrentPageWords();
                     console.log('当前页播放模式，单词数量:', autoPlayWords.length);
+                    // 当前页模式：从第一个单词开始
+                    autoPlayIndex = 0;
                 } else {
                     // 播放全部分类（跨分页）
                     autoPlayWords = getCurrentCategoryWords();
                     console.log('全部播放模式，单词数量:', autoPlayWords.length);
+                    // 全部模式：从当前页的第一个单词开始
+                    autoPlayIndex = (currentPage - 1) * WORDS_PER_PAGE;
                 }
                 
                 if (autoPlayWords.length === 0) {
@@ -8642,13 +8646,10 @@
                     return;
                 }
                 
-                // 从第一个单词开始
-                autoPlayIndex = 0;
-                
                 // 更新状态提示
                 updateAutoplayStatus();
                 
-                console.log('开始自动播放，共', autoPlayWords.length, '个单词');
+                console.log('开始自动播放，共', autoPlayWords.length, '个单词，从索引', autoPlayIndex, '开始');
                 
                 // 开始播放
                 playNextWord();
