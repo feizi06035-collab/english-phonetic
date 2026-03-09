@@ -1262,6 +1262,39 @@
             min-width: 250px;
         }
         
+        /* 响应式调整 */
+        @media (max-width: 480px) {
+            .search-box {
+                min-width: unset;
+                gap: 6px;
+            }
+            
+            #searchInput {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            
+            .search-btn, .clear-btn {
+                padding: 10px 14px;
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .search-box {
+                flex-wrap: wrap;
+            }
+            
+            #searchInput {
+                flex: 1 1 100%;
+            }
+            
+            .search-btn, .clear-btn {
+                flex: 1 1 calc(50% - 3px);
+                text-align: center;
+            }
+        }
+        
         #searchInput {
             flex: 1;
             padding: 12px 15px;
