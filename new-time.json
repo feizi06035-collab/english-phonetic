@@ -1,0 +1,2036 @@
+[
+  {
+    "word": "Second",
+    "phonetic": "/ˈsekənd/",
+    "homophone": "赛肯德",
+    "meaning": "秒",
+    "sentence": "Wait a second.",
+    "translation": "等一秒。",
+    "homophoneSentence": "维特啊赛肯德."
+  },
+  {
+    "word": "Minute",
+    "phonetic": "/ˈmɪnɪt/",
+    "homophone": "米尼特",
+    "meaning": "分钟",
+    "sentence": "Just a minute.",
+    "translation": "等一下。",
+    "homophoneSentence": "加斯特啊米尼特."
+  },
+  {
+    "word": "Hour",
+    "phonetic": "/ˈaʊə(r)/",
+    "homophone": "阿沃",
+    "meaning": "小时",
+    "sentence": "An hour has passed.",
+    "translation": "一小时过去了。",
+    "homophoneSentence": "安阿沃哈兹帕斯特."
+  },
+  {
+    "word": "Day",
+    "phonetic": "/deɪ/",
+    "homophone": "戴",
+    "meaning": "天",
+    "sentence": "Have a nice day!",
+    "translation": "祝你今天愉快！",
+    "homophoneSentence": "哈弗啊奈斯戴!"
+  },
+  {
+    "word": "Dawn",
+    "phonetic": "/dɔːn/",
+    "homophone": "道恩",
+    "meaning": "黎明",
+    "sentence": "The sun rises at dawn.",
+    "translation": "太阳在黎明升起。",
+    "homophoneSentence": "则桑瑞兹兹at道恩."
+  },
+  {
+    "word": "Dusk",
+    "phonetic": "/dʌsk/",
+    "homophone": "达斯克",
+    "meaning": "黄昏",
+    "sentence": "The sky is orange at dusk.",
+    "translation": "黄昏时天空是橙色的。",
+    "homophoneSentence": "则斯凯is奥润吉at达斯克."
+  },
+  {
+    "word": "Midnight",
+    "phonetic": "/ˈmɪdnaɪt/",
+    "homophone": "米德奈特",
+    "meaning": "午夜",
+    "sentence": "The party ends at midnight.",
+    "translation": "派对在午夜结束。",
+    "homophoneSentence": "则帕提恩兹at米德奈特."
+  },
+  {
+    "word": "Noon",
+    "phonetic": "/nuːn/",
+    "homophone": "努恩",
+    "meaning": "中午",
+    "sentence": "Lets meet at noon.",
+    "translation": "我们中午见面吧。",
+    "homophoneSentence": "来茨米特at努恩."
+  },
+  {
+    "word": "Sunrise",
+    "phonetic": "/ˈsʌnraɪz/",
+    "homophone": "桑瑞兹",
+    "meaning": "日出",
+    "sentence": "The sunrise is beautiful.",
+    "translation": "日出很美。",
+    "homophoneSentence": "则桑瑞兹is比优特夫."
+  },
+  {
+    "word": "Sunset",
+    "phonetic": "/ˈsʌnset/",
+    "homophone": "桑赛特",
+    "meaning": "日落",
+    "sentence": "Watch the sunset together.",
+    "translation": "一起看日落。",
+    "homophoneSentence": "沃奇则桑赛特托盖泽."
+  },
+  {
+    "word": "Twilight",
+    "phonetic": "/ˈtwaɪlaɪt/",
+    "homophone": "特外莱特",
+    "meaning": "暮光",
+    "sentence": "The twilight sky is purple.",
+    "translation": "暮光中的天空是紫色的。",
+    "homophoneSentence": "则特外莱特斯凯is珀普."
+  },
+  {
+    "word": "Daybreak",
+    "phonetic": "/ˈdeɪbreɪk/",
+    "homophone": "戴布瑞克",
+    "meaning": "破晓",
+    "sentence": "Birds sing at daybreak.",
+    "translation": "鸟儿在破晓时歌唱。",
+    "homophoneSentence": "伯兹辛at戴布瑞克."
+  },
+  {
+    "word": "Daylight",
+    "phonetic": "/ˈdeɪlaɪt/",
+    "homophone": "戴莱特",
+    "meaning": "日光",
+    "sentence": "Save daylight for work.",
+    "translation": "利用日光工作。",
+    "homophoneSentence": "赛夫戴莱特佛沃克."
+  },
+  {
+    "word": "Nighttime",
+    "phonetic": "/ˈnaɪttaɪm/",
+    "homophone": "奈特泰姆",
+    "meaning": "夜间",
+    "sentence": "Stars shine at nighttime.",
+    "translation": "星星在夜间闪耀。",
+    "homophoneSentence": "斯塔兹夏恩at奈特泰姆."
+  },
+  {
+    "word": "Daytime",
+    "phonetic": "/ˈdeɪtaɪm/",
+    "homophone": "戴泰姆",
+    "meaning": "白天",
+    "sentence": "I work in the daytime.",
+    "translation": "我白天工作。",
+    "homophoneSentence": "爱沃克因则戴泰姆."
+  },
+  {
+    "word": "Monday",
+    "phonetic": "/ˈmʌndeɪ/",
+    "homophone": "曼戴",
+    "meaning": "星期一",
+    "sentence": "Monday is the first day.",
+    "translation": "周一是第一天。",
+    "homophoneSentence": "曼戴is则弗斯特戴."
+  },
+  {
+    "word": "Tuesday",
+    "phonetic": "/ˈtjuːzdeɪ/",
+    "homophone": "图兹戴",
+    "meaning": "星期二",
+    "sentence": "Tuesday is my busy day.",
+    "translation": "周二是我忙碌的一天。",
+    "homophoneSentence": "图兹戴is麦比兹戴."
+  },
+  {
+    "word": "Wednesday",
+    "phonetic": "/ˈwenzdeɪ/",
+    "homophone": "温兹戴",
+    "meaning": "星期三",
+    "sentence": "Wednesday is midweek.",
+    "translation": "周三是一周中间。",
+    "homophoneSentence": "温兹戴is米德维克."
+  },
+  {
+    "word": "Thursday",
+    "phonetic": "/ˈθɜːzdeɪ/",
+    "homophone": "瑟兹戴",
+    "meaning": "星期四",
+    "sentence": "Thursday is almost Friday.",
+    "translation": "周四快到周五了。",
+    "homophoneSentence": "瑟兹戴is奥莫斯特弗莱戴."
+  },
+  {
+    "word": "Friday",
+    "phonetic": "/ˈfraɪdeɪ/",
+    "homophone": "弗莱戴",
+    "meaning": "星期五",
+    "sentence": "Friday is my favorite day.",
+    "translation": "周五是我最喜欢的一天。",
+    "homophoneSentence": "弗莱戴is麦费沃瑞特戴."
+  },
+  {
+    "word": "Saturday",
+    "phonetic": "/ˈsætədeɪ/",
+    "homophone": "萨特戴",
+    "meaning": "星期六",
+    "sentence": "Saturday is for rest.",
+    "translation": "周六是用来休息的。",
+    "homophoneSentence": "萨特戴is佛瑞斯特."
+  },
+  {
+    "word": "Sunday",
+    "phonetic": "/ˈsʌndeɪ/",
+    "homophone": "桑戴",
+    "meaning": "星期日",
+    "sentence": "Sunday is family day.",
+    "translation": "周日是家庭日。",
+    "homophoneSentence": "桑戴is法米利戴."
+  },
+  {
+    "word": "Weekend",
+    "phonetic": "/ˌwiːkˈend/",
+    "homophone": "维克恩德",
+    "meaning": "周末",
+    "sentence": "Have a nice weekend!",
+    "translation": "周末愉快！",
+    "homophoneSentence": "哈弗啊奈斯维克恩德!"
+  },
+  {
+    "word": "Weekday",
+    "phonetic": "/ˈwiːkdeɪ/",
+    "homophone": "维克戴",
+    "meaning": "工作日",
+    "sentence": "I work on weekdays.",
+    "translation": "我工作日上班。",
+    "homophoneSentence": "爱沃克on维克戴兹."
+  },
+  {
+    "word": "January",
+    "phonetic": "/ˈdʒænjuəri/",
+    "homophone": "詹纽瑞",
+    "meaning": "一月",
+    "sentence": "January is the first month.",
+    "translation": "一月是第一个月。",
+    "homophoneSentence": "詹纽瑞is则弗斯特芒斯."
+  },
+  {
+    "word": "February",
+    "phonetic": "/ˈfebruəri/",
+    "homophone": "费布鲁瑞",
+    "meaning": "二月",
+    "sentence": "February is short.",
+    "translation": "二月很短。",
+    "homophoneSentence": "费布鲁瑞is肖特."
+  },
+  {
+    "word": "March",
+    "phonetic": "/mɑːtʃ/",
+    "homophone": "马奇",
+    "meaning": "三月",
+    "sentence": "March brings spring.",
+    "translation": "三月带来春天。",
+    "homophoneSentence": "马奇布林兹斯普林."
+  },
+  {
+    "word": "April",
+    "phonetic": "/ˈeɪprəl/",
+    "homophone": "艾普瑞",
+    "meaning": "四月",
+    "sentence": "April showers bring flowers.",
+    "translation": "四月雨带来五月花。",
+    "homophoneSentence": "艾普瑞肖沃兹布林弗劳沃兹."
+  },
+  {
+    "word": "May",
+    "phonetic": "/meɪ/",
+    "homophone": "梅",
+    "meaning": "五月",
+    "sentence": "May is beautiful.",
+    "translation": "五月很美。",
+    "homophoneSentence": "梅is比优特夫."
+  },
+  {
+    "word": "June",
+    "phonetic": "/dʒuːn/",
+    "homophone": "朱恩",
+    "meaning": "六月",
+    "sentence": "June is summer time.",
+    "translation": "六月是夏天。",
+    "homophoneSentence": "朱恩is萨默泰姆."
+  },
+  {
+    "word": "July",
+    "phonetic": "/dʒuˈlaɪ/",
+    "homophone": "朱莱",
+    "meaning": "七月",
+    "sentence": "July is hot.",
+    "translation": "七月很热。",
+    "homophoneSentence": "朱莱is哈特."
+  },
+  {
+    "word": "August",
+    "phonetic": "/ˈɔːɡəst/",
+    "homophone": "奥格斯特",
+    "meaning": "八月",
+    "sentence": "August is the hottest month.",
+    "translation": "八月是最热的月份。",
+    "homophoneSentence": "奥格斯特is则哈特斯特芒斯."
+  },
+  {
+    "word": "September",
+    "phonetic": "/sepˈtembə(r)/",
+    "homophone": "赛普坦伯",
+    "meaning": "九月",
+    "sentence": "September means autumn.",
+    "translation": "九月意味着秋天。",
+    "homophoneSentence": "赛普坦伯米恩兹奥特姆."
+  },
+  {
+    "word": "October",
+    "phonetic": "/ɒkˈtəʊbə(r)/",
+    "homophone": "奥克托伯",
+    "meaning": "十月",
+    "sentence": "October has Halloween.",
+    "translation": "十月有万圣节。",
+    "homophoneSentence": "奥克托伯哈兹哈洛温."
+  },
+  {
+    "word": "November",
+    "phonetic": "/nəʊˈvembə(r)/",
+    "homophone": "诺文伯",
+    "meaning": "十一月",
+    "sentence": "November is cool.",
+    "translation": "十一月很凉爽。",
+    "homophoneSentence": "诺文伯is库."
+  },
+  {
+    "word": "December",
+    "phonetic": "/dɪˈsembə(r)/",
+    "homophone": "迪森伯",
+    "meaning": "十二月",
+    "sentence": "December has Christmas.",
+    "translation": "十二月有圣诞节。",
+    "homophoneSentence": "迪森伯哈兹克里斯马斯."
+  },
+  {
+    "word": "Spring",
+    "phonetic": "/sprɪŋ/",
+    "homophone": "斯普林",
+    "meaning": "春天",
+    "sentence": "Spring brings new life.",
+    "translation": "春天带来新生命。",
+    "homophoneSentence": "斯普林布林兹纽莱夫."
+  },
+  {
+    "word": "Summer",
+    "phonetic": "/ˈsʌmə(r)/",
+    "homophone": "萨默",
+    "meaning": "夏天",
+    "sentence": "Summer is hot and sunny.",
+    "translation": "夏天又热又晴。",
+    "homophoneSentence": "萨默is哈特安德桑尼."
+  },
+  {
+    "word": "Autumn",
+    "phonetic": "/ˈɔːtəm/",
+    "homophone": "奥特姆",
+    "meaning": "秋天",
+    "sentence": "Autumn leaves are colorful.",
+    "translation": "秋叶色彩斑斓。",
+    "homophoneSentence": "奥特姆利夫兹啊卡乐夫."
+  },
+  {
+    "word": "Fall",
+    "phonetic": "/fɔːl/",
+    "homophone": "弗奥",
+    "meaning": "秋天",
+    "sentence": "Fall is harvest time.",
+    "translation": "秋天是收获季节。",
+    "homophoneSentence": "弗奥is哈维斯泰姆."
+  },
+  {
+    "word": "Winter",
+    "phonetic": "/ˈwɪntə(r)/",
+    "homophone": "温特",
+    "meaning": "冬天",
+    "sentence": "Winter is cold and snowy.",
+    "translation": "冬天又冷又多雪。",
+    "homophoneSentence": "温特is扣德安德斯诺尼."
+  },
+  {
+    "word": "Season",
+    "phonetic": "/ˈsiːzn/",
+    "homophone": "西森",
+    "meaning": "季节",
+    "sentence": "There are four seasons.",
+    "translation": "有四个季节。",
+    "homophoneSentence": "泽阿啊弗西森兹."
+  },
+  {
+    "word": "Decade",
+    "phonetic": "/ˈdekeɪd/",
+    "homophone": "戴凯德",
+    "meaning": "十年",
+    "sentence": "A decade has ten years.",
+    "translation": "十年有十个年头。",
+    "homophoneSentence": "啊戴凯德哈兹坦耶兹."
+  },
+  {
+    "word": "Century",
+    "phonetic": "/ˈsentʃəri/",
+    "homophone": "森丘瑞",
+    "meaning": "世纪",
+    "sentence": "A century has 100 years.",
+    "translation": "一世纪有一百年。",
+    "homophoneSentence": "啊森丘瑞哈兹100耶兹."
+  },
+  {
+    "word": "Millennium",
+    "phonetic": "/mɪˈleniəm/",
+    "homophone": "米莱尼厄姆",
+    "meaning": "千年",
+    "sentence": "A new millennium began.",
+    "translation": "新千年开始了。",
+    "homophoneSentence": "啊纽米莱尼厄姆比根."
+  },
+  {
+    "word": "Now",
+    "phonetic": "/naʊ/",
+    "homophone": "闹",
+    "meaning": "现在",
+    "sentence": "Do it now!",
+    "translation": "现在就做！",
+    "homophoneSentence": "杜伊特闹!"
+  },
+  {
+    "word": "Then",
+    "phonetic": "/ðen/",
+    "homophone": "泽恩",
+    "meaning": "那时",
+    "sentence": "I was young then.",
+    "translation": "那时我还年轻。",
+    "homophoneSentence": "爱沃兹杨泽恩."
+  },
+  {
+    "word": "Soon",
+    "phonetic": "/suːn/",
+    "homophone": "苏恩",
+    "meaning": "很快",
+    "sentence": "I will come soon.",
+    "translation": "我很快就来。",
+    "homophoneSentence": "爱威尔卡姆苏恩."
+  },
+  {
+    "word": "Later",
+    "phonetic": "/ˈleɪtə(r)/",
+    "homophone": "莱特",
+    "meaning": "稍后",
+    "sentence": "See you later!",
+    "translation": "回头见！",
+    "homophoneSentence": "西油莱特!"
+  },
+  {
+    "word": "Ago",
+    "phonetic": "/əˈɡəʊ/",
+    "homophone": "阿够",
+    "meaning": "以前",
+    "sentence": "It happened long ago.",
+    "translation": "这发生在很久以前。",
+    "homophoneSentence": "伊特海潘德朗阿够."
+  },
+  {
+    "word": "Early",
+    "phonetic": "/ˈɜːli/",
+    "homophone": "厄利",
+    "meaning": "早",
+    "sentence": "The early bird catches worms.",
+    "translation": "早起的鸟儿有虫吃。",
+    "homophoneSentence": "则厄利伯德凯奇兹沃姆兹."
+  },
+  {
+    "word": "Late",
+    "phonetic": "/leɪt/",
+    "homophone": "莱特",
+    "meaning": "晚",
+    "sentence": "Dont be late!",
+    "translation": "别迟到！",
+    "homophoneSentence": "东特比莱特!"
+  },
+  {
+    "word": "Recently",
+    "phonetic": "/ˈriːsntli/",
+    "homophone": "瑞森特利",
+    "meaning": "最近",
+    "sentence": "I recently moved here.",
+    "translation": "我最近搬到这里。",
+    "homophoneSentence": "爱瑞森特利穆夫德希尔."
+  },
+  {
+    "word": "Lately",
+    "phonetic": "/ˈleɪtli/",
+    "homophone": "莱特利",
+    "meaning": "近来",
+    "sentence": "Have you seen him lately?",
+    "translation": "你近来见过他吗？",
+    "homophoneSentence": "哈弗油辛希姆莱特利?"
+  },
+  {
+    "word": "Currently",
+    "phonetic": "/ˈkʌrəntli/",
+    "homophone": "卡伦特利",
+    "meaning": "目前",
+    "sentence": "I am currently busy.",
+    "translation": "我目前很忙。",
+    "homophoneSentence": "爱安姆卡伦特利比兹."
+  },
+  {
+    "word": "Presently",
+    "phonetic": "/ˈprezntli/",
+    "homophone": "普雷森特利",
+    "meaning": "不久",
+    "sentence": "He will arrive presently.",
+    "translation": "他不久就会到。",
+    "homophoneSentence": "希尔阿莱夫普雷森特利."
+  },
+  {
+    "word": "Previously",
+    "phonetic": "/ˈpriːviəsli/",
+    "homophone": "普瑞威尔斯利",
+    "meaning": "以前",
+    "sentence": "I mentioned it previously.",
+    "translation": "我以前提到过。",
+    "homophoneSentence": "爱门申德伊特普瑞威尔斯利."
+  },
+  {
+    "word": "Forever",
+    "phonetic": "/fərˈevə(r)/",
+    "homophone": "弗埃沃",
+    "meaning": "永远",
+    "sentence": "I will love you forever.",
+    "translation": "我会永远爱你。",
+    "homophoneSentence": "爱威尔拉夫油弗埃沃."
+  },
+  {
+    "word": "Eternity",
+    "phonetic": "/ɪˈtɜːnəti/",
+    "homophone": "伊特尼提",
+    "meaning": "永恒",
+    "sentence": "Love lasts for eternity.",
+    "translation": "爱持续到永恒。",
+    "homophoneSentence": "拉夫拉斯特弗伊特尼提."
+  },
+  {
+    "word": "Always",
+    "phonetic": "/ˈɔːlweɪz/",
+    "homophone": "奥韦兹",
+    "meaning": "总是",
+    "sentence": "I always wake up early.",
+    "translation": "我总是早起。",
+    "homophoneSentence": "爱奥韦兹维克阿普厄利."
+  },
+  {
+    "word": "Usually",
+    "phonetic": "/ˈjuːʒuəli/",
+    "homophone": "尤舒利",
+    "meaning": "通常",
+    "sentence": "I usually eat breakfast.",
+    "translation": "我通常吃早餐。",
+    "homophoneSentence": "爱尤舒利伊特布瑞克法斯特."
+  },
+  {
+    "word": "Often",
+    "phonetic": "/ˈɒfn/",
+    "homophone": "奥芬",
+    "meaning": "经常",
+    "sentence": "I often go to the gym.",
+    "translation": "我经常去健身房。",
+    "homophoneSentence": "爱奥芬够图则吉姆."
+  },
+  {
+    "word": "Sometimes",
+    "phonetic": "/ˈsʌmtaɪmz/",
+    "homophone": "萨姆泰姆兹",
+    "meaning": "有时",
+    "sentence": "I sometimes watch TV.",
+    "translation": "我有时看电视。",
+    "homophoneSentence": "爱萨姆泰姆兹沃奇TV."
+  },
+  {
+    "word": "Rarely",
+    "phonetic": "/ˈreəli/",
+    "homophone": "瑞利",
+    "meaning": "很少",
+    "sentence": "I rarely eat fast food.",
+    "translation": "我很少吃快餐。",
+    "homophoneSentence": "爱瑞利伊特法斯特福德."
+  },
+  {
+    "word": "Seldom",
+    "phonetic": "/ˈseldəm/",
+    "homophone": "塞尔德姆",
+    "meaning": "很少",
+    "sentence": "He seldom smiles.",
+    "translation": "他很少笑。",
+    "homophoneSentence": "希尔塞尔德姆斯迈尔兹."
+  },
+  {
+    "word": "Never",
+    "phonetic": "/ˈnevə(r)/",
+    "homophone": "内沃",
+    "meaning": "从不",
+    "sentence": "I never give up!",
+    "translation": "我从不放弃！",
+    "homophoneSentence": "爱内沃吉夫阿普!"
+  },
+  {
+    "word": "Daily",
+    "phonetic": "/ˈdeɪli/",
+    "homophone": "戴利",
+    "meaning": "每日",
+    "sentence": "I exercise daily.",
+    "translation": "我每天锻炼。",
+    "homophoneSentence": "爱埃克瑟赛兹戴利."
+  },
+  {
+    "word": "Weekly",
+    "phonetic": "/ˈwiːkli/",
+    "homophone": "维克利",
+    "meaning": "每周",
+    "sentence": "We meet weekly.",
+    "translation": "我们每周见面。",
+    "homophoneSentence": "威米特维克利."
+  },
+  {
+    "word": "Monthly",
+    "phonetic": "/ˈmʌnθli/",
+    "homophone": "芒斯利",
+    "meaning": "每月",
+    "sentence": "The magazine is monthly.",
+    "translation": "这本杂志是月刊。",
+    "homophoneSentence": "则麦格津is芒斯利."
+  },
+  {
+    "word": "Yearly",
+    "phonetic": "/ˈjɪəli/",
+    "homophone": "耶利",
+    "meaning": "每年",
+    "sentence": "We have a yearly meeting.",
+    "translation": "我们有年度会议。",
+    "homophoneSentence": "威哈弗啊耶利米廷."
+  },
+  {
+    "word": "Annually",
+    "phonetic": "/ˈænjuəli/",
+    "homophone": "安纽利",
+    "meaning": "每年",
+    "sentence": "The event occurs annually.",
+    "translation": "这个活动每年举行。",
+    "homophoneSentence": "则伊文特奥克斯安纽利."
+  },
+  {
+    "word": "Quarterly",
+    "phonetic": "/ˈkwɔːtəli/",
+    "homophone": "夸特利",
+    "meaning": "每季度",
+    "sentence": "We report quarterly.",
+    "translation": "我们每季度报告。",
+    "homophoneSentence": "威瑞波特夸特利."
+  },
+  {
+    "word": "Fortnight",
+    "phonetic": "/ˈfɔːtnaɪt/",
+    "homophone": "福特奈特",
+    "meaning": "两周",
+    "sentence": "See you in a fortnight.",
+    "translation": "两周后见。",
+    "homophoneSentence": "西油因啊福特奈特."
+  },
+  {
+    "word": "Instant",
+    "phonetic": "/ˈɪnstənt/",
+    "homophone": "因斯坦特",
+    "meaning": "瞬间",
+    "sentence": "It happened in an instant.",
+    "translation": "这发生在一瞬间。",
+    "homophoneSentence": "伊特海潘德因安因斯坦特."
+  },
+  {
+    "word": "Moment",
+    "phonetic": "/ˈməʊmənt/",
+    "homophone": "莫门特",
+    "meaning": "时刻",
+    "sentence": "Wait a moment please.",
+    "translation": "请等一下。",
+    "homophoneSentence": "维特啊莫门特普利斯."
+  },
+  {
+    "word": "While",
+    "phonetic": "/waɪl/",
+    "homophone": "怀尔",
+    "meaning": "一会儿",
+    "sentence": "Wait for a while.",
+    "translation": "等一会儿。",
+    "homophoneSentence": "维特弗啊怀尔."
+  },
+  {
+    "word": "Duration",
+    "phonetic": "/djuˈreɪʃn/",
+    "homophone": "杜瑞申",
+    "meaning": "持续时间",
+    "sentence": "The duration is two hours.",
+    "translation": "持续时间是两小时。",
+    "homophoneSentence": "则杜瑞申is图阿沃兹."
+  },
+  {
+    "word": "Period",
+    "phonetic": "/ˈpɪəriəd/",
+    "homophone": "皮瑞厄德",
+    "meaning": "时期",
+    "sentence": "This is a busy period.",
+    "translation": "这是一个忙碌的时期。",
+    "homophoneSentence": "则斯is啊比兹皮瑞厄德."
+  },
+  {
+    "word": "Era",
+    "phonetic": "/ˈɪərə/",
+    "homophone": "伊拉",
+    "meaning": "时代",
+    "sentence": "We live in a digital era.",
+    "translation": "我们生活在数字时代。",
+    "homophoneSentence": "威利夫因啊迪吉特尔伊拉."
+  },
+  {
+    "word": "Epoch",
+    "phonetic": "/ˈiːpɒk/",
+    "homophone": "伊波克",
+    "meaning": "纪元",
+    "sentence": "A new epoch has begun.",
+    "translation": "新纪元已经开始。",
+    "homophoneSentence": "啊纽伊波克哈兹比根."
+  },
+  {
+    "word": "Age",
+    "phonetic": "/eɪdʒ/",
+    "homophone": "艾吉",
+    "meaning": "年龄/时代",
+    "sentence": "We live in the digital age.",
+    "translation": "我们生活在数字时代。",
+    "homophoneSentence": "威利夫因则迪吉特尔艾吉."
+  },
+  {
+    "word": "Generation",
+    "phonetic": "/ˌdʒenəˈreɪʃn/",
+    "homophone": "杰纳瑞申",
+    "meaning": "一代人",
+    "sentence": "The new generation is smart.",
+    "translation": "新一代人很聪明。",
+    "homophoneSentence": "则纽杰纳瑞申is斯马特."
+  },
+  {
+    "word": "Lifetime",
+    "phonetic": "/ˈlaɪftaɪm/",
+    "homophone": "莱夫泰姆",
+    "meaning": "一生",
+    "sentence": "This happens once in a lifetime.",
+    "translation": "这一生只发生一次。",
+    "homophoneSentence": "则斯海彭兹旺斯因啊莱夫泰姆."
+  },
+  {
+    "word": "Before",
+    "phonetic": "/bɪˈfɔː(r)/",
+    "homophone": "比弗奥",
+    "meaning": "在...之前",
+    "sentence": "Call me before you go.",
+    "translation": "走之前给我打电话。",
+    "homophoneSentence": "考密比弗油够."
+  },
+  {
+    "word": "After",
+    "phonetic": "/ˈɑːftə(r)/",
+    "homophone": "阿夫特",
+    "meaning": "在...之后",
+    "sentence": "Call me after you arrive.",
+    "translation": "到达后给我打电话。",
+    "homophoneSentence": "考密阿夫特油阿莱夫."
+  },
+  {
+    "word": "During",
+    "phonetic": "/ˈdjʊərɪŋ/",
+    "homophone": "杜瑞英",
+    "meaning": "在...期间",
+    "sentence": "I slept during the movie.",
+    "translation": "我在电影期间睡着了。",
+    "homophoneSentence": "爱斯利普特杜瑞英则穆维."
+  },
+  {
+    "word": "Since",
+    "phonetic": "/sɪns/",
+    "homophone": "辛斯",
+    "meaning": "自从",
+    "sentence": "I have been here since morning.",
+    "translation": "我从早上就在这里。",
+    "homophoneSentence": "爱哈弗宾希尔辛斯莫宁."
+  },
+  {
+    "word": "Until",
+    "phonetic": "/ənˈtɪl/",
+    "homophone": "安提尔",
+    "meaning": "直到",
+    "sentence": "Wait until I come back.",
+    "translation": "等到我回来。",
+    "homophoneSentence": "维特安提尔爱卡姆拜克."
+  },
+  {
+    "word": "Till",
+    "phonetic": "/tɪl/",
+    "homophone": "提尔",
+    "meaning": "直到",
+    "sentence": "Open from 9 till 5.",
+    "translation": "从9点到5点营业。",
+    "homophoneSentence": "欧盆弗罗姆9提尔5."
+  },
+  {
+    "word": "Past",
+    "phonetic": "/pɑːst/",
+    "homophone": "帕斯特",
+    "meaning": "过去",
+    "sentence": "The past is gone.",
+    "translation": "过去已逝。",
+    "homophoneSentence": "则帕斯特is冈."
+  },
+  {
+    "word": "Future",
+    "phonetic": "/ˈfjuːtʃə(r)/",
+    "homophone": "菲尤彻",
+    "meaning": "未来",
+    "sentence": "The future is bright.",
+    "translation": "未来是光明的。",
+    "homophoneSentence": "则菲尤彻is布莱特."
+  },
+  {
+    "word": "Present",
+    "phonetic": "/ˈpreznt/",
+    "homophone": "普雷森特",
+    "meaning": "现在",
+    "sentence": "Live in the present.",
+    "translation": "活在当下。",
+    "homophoneSentence": "利夫因则普雷森特."
+  },
+  {
+    "word": "History",
+    "phonetic": "/ˈhɪstri/",
+    "homophone": "希斯特瑞",
+    "meaning": "历史",
+    "sentence": "History teaches us lessons.",
+    "translation": "历史给我们教训。",
+    "homophoneSentence": "希斯特瑞提奇兹阿斯莱森兹."
+  },
+  {
+    "word": "Calendar",
+    "phonetic": "/ˈkælɪndə(r)/",
+    "homophone": "卡伦德",
+    "meaning": "日历",
+    "sentence": "Check the calendar please.",
+    "translation": "请查看日历。",
+    "homophoneSentence": "切克则卡伦德普利斯."
+  },
+  {
+    "word": "Schedule",
+    "phonetic": "/ˈʃedjuːl/",
+    "homophone": "谢杜尔",
+    "meaning": "日程表",
+    "sentence": "My schedule is full.",
+    "translation": "我的日程排满了。",
+    "homophoneSentence": "麦谢杜尔is夫欧."
+  },
+  {
+    "word": "Timetable",
+    "phonetic": "/ˈtaɪmteɪbl/",
+    "homophone": "泰姆泰布尔",
+    "meaning": "时间表",
+    "sentence": "Check the train timetable.",
+    "translation": "查看火车时刻表。",
+    "homophoneSentence": "切克则吹恩泰姆泰布尔."
+  },
+  {
+    "word": "Deadline",
+    "phonetic": "/ˈdedlaɪn/",
+    "homophone": "戴德莱恩",
+    "meaning": "截止日期",
+    "sentence": "The deadline is tomorrow.",
+    "translation": "截止日期是明天。",
+    "homophoneSentence": "则戴德莱恩is特莫罗."
+  },
+  {
+    "word": "Appointment",
+    "phonetic": "/əˈpɔɪntmənt/",
+    "homophone": "阿波因特门特",
+    "meaning": "预约",
+    "sentence": "I have an appointment.",
+    "translation": "我有一个预约。",
+    "homophoneSentence": "爱哈弗安阿波因特门特."
+  },
+  {
+    "word": "Clock",
+    "phonetic": "/klɒk/",
+    "homophone": "克洛克",
+    "meaning": "时钟",
+    "sentence": "The clock is ticking.",
+    "translation": "时钟在滴答作响。",
+    "homophoneSentence": "则克洛克is提克英."
+  },
+  {
+    "word": "Watch",
+    "phonetic": "/wɒtʃ/",
+    "homophone": "沃奇",
+    "meaning": "手表",
+    "sentence": "My watch stopped.",
+    "translation": "我的手表停了。",
+    "homophoneSentence": "麦沃奇斯塔普特."
+  },
+  {
+    "word": "Timer",
+    "phonetic": "/ˈtaɪmə(r)/",
+    "homophone": "泰默",
+    "meaning": "计时器",
+    "sentence": "Set a timer for 10 minutes.",
+    "translation": "设置10分钟计时器。",
+    "homophoneSentence": "赛特啊泰默弗10米尼兹."
+  },
+  {
+    "word": "Alarm",
+    "phonetic": "/əˈlɑːm/",
+    "homophone": "阿拉姆",
+    "meaning": "闹钟",
+    "sentence": "The alarm woke me up.",
+    "translation": "闹钟把我叫醒了。",
+    "homophoneSentence": "则阿拉姆沃克密阿普."
+  },
+  {
+    "word": "Timezone",
+    "phonetic": "/ˈtaɪmzəʊn/",
+    "homophone": "泰姆佐恩",
+    "meaning": "时区",
+    "sentence": "We are in different timezones.",
+    "translation": "我们在不同的时区。",
+    "homophoneSentence": "威啊因迪弗伦特泰姆佐恩兹."
+  },
+  {
+    "word": "Midday",
+    "phonetic": "/ˌmɪdˈdeɪ/",
+    "homophone": "米德戴",
+    "meaning": "正午",
+    "sentence": "Lets meet at midday.",
+    "translation": "我们正午见面吧。",
+    "homophoneSentence": "来茨米特at米德戴."
+  },
+  {
+    "word": "Overnight",
+    "phonetic": "/ˌəʊvəˈnaɪt/",
+    "homophone": "欧沃奈特",
+    "meaning": "一夜之间",
+    "sentence": "It happened overnight.",
+    "translation": "这发生在一夜之间。",
+    "homophoneSentence": "伊特海潘德欧沃奈特."
+  },
+  {
+    "word": "Daylong",
+    "phonetic": "/ˈdeɪlɒŋ/",
+    "homophone": "戴朗",
+    "meaning": "整天的",
+    "sentence": "It was a daylong meeting.",
+    "translation": "这是一个全天会议。",
+    "homophoneSentence": "伊特沃兹啊戴朗米廷."
+  },
+  {
+    "word": "Yearlong",
+    "phonetic": "/ˈjɪəlɒŋ/",
+    "homophone": "耶朗",
+    "meaning": "一年的",
+    "sentence": "It was a yearlong project.",
+    "translation": "这是一个为期一年的项目。",
+    "homophoneSentence": "伊特沃兹啊耶朗普罗杰克特."
+  },
+  {
+    "word": "Timeless",
+    "phonetic": "/ˈtaɪmləs/",
+    "homophone": "泰姆勒斯",
+    "meaning": "永恒的",
+    "sentence": "This song is timeless.",
+    "translation": "这首歌是永恒的。",
+    "homophoneSentence": "则斯桑is泰姆勒斯."
+  },
+  {
+    "word": "Timely",
+    "phonetic": "/ˈtaɪmli/",
+    "homophone": "泰姆利",
+    "meaning": "及时的",
+    "sentence": "Thanks for your timely help.",
+    "translation": "感谢你及时的帮助。",
+    "homophoneSentence": "三克斯佛尤尔泰姆利海尔普."
+  },
+  {
+    "word": "Untimely",
+    "phonetic": "/ʌnˈtaɪmli/",
+    "homophone": "安泰姆利",
+    "meaning": "不合时宜的",
+    "sentence": "His death was untimely.",
+    "translation": "他的死亡不合时宜。",
+    "homophoneSentence": "希兹戴斯沃兹安泰姆利."
+  },
+  {
+    "word": "Punctual",
+    "phonetic": "/ˈpʌŋktʃuəl/",
+    "homophone": "庞克丘尔",
+    "meaning": "准时的",
+    "sentence": "Please be punctual.",
+    "translation": "请准时。",
+    "homophoneSentence": "普利斯比庞克丘尔."
+  },
+  {
+    "word": "Prompt",
+    "phonetic": "/prɒmpt/",
+    "homophone": "普罗姆普特",
+    "meaning": "迅速的",
+    "sentence": "Thank you for your prompt reply.",
+    "translation": "感谢你的迅速回复。",
+    "homophoneSentence": "三克油佛尤尔普罗姆普特瑞普莱."
+  },
+  {
+    "word": "Delay",
+    "phonetic": "/dɪˈleɪ/",
+    "homophone": "迪莱",
+    "meaning": "延迟",
+    "sentence": "The flight was delayed.",
+    "translation": "航班延误了。",
+    "homophoneSentence": "则弗莱特沃兹迪莱德."
+  },
+  {
+    "word": "Postpone",
+    "phonetic": "/pəˈspəʊn/",
+    "homophone": "波斯波恩",
+    "meaning": "推迟",
+    "sentence": "We need to postpone the meeting.",
+    "translation": "我们需要推迟会议。",
+    "homophoneSentence": "威尼德图波斯波恩则米廷."
+  },
+  {
+    "word": "Cancel",
+    "phonetic": "/ˈkænsl/",
+    "homophone": "坎索",
+    "meaning": "取消",
+    "sentence": "The event was cancelled.",
+    "translation": "活动被取消了。",
+    "homophoneSentence": "则伊文特沃兹坎索尔德."
+  },
+  {
+    "word": "Reschedule",
+    "phonetic": "/ˌriːˈʃedjuːl/",
+    "homophone": "瑞谢杜尔",
+    "meaning": "重新安排",
+    "sentence": "Lets reschedule the meeting.",
+    "translation": "让我们重新安排会议。",
+    "homophoneSentence": "来茨瑞谢杜尔则米廷."
+  },
+  {
+    "word": "Begin",
+    "phonetic": "/bɪˈɡɪn/",
+    "homophone": "比根",
+    "meaning": "开始",
+    "sentence": "Lets begin the meeting.",
+    "translation": "让我们开始会议。",
+    "homophoneSentence": "来茨比根则米廷."
+  },
+  {
+    "word": "Start",
+    "phonetic": "/stɑːt/",
+    "homophone": "斯塔特",
+    "meaning": "开始",
+    "sentence": "The movie starts at 7.",
+    "translation": "电影7点开始。",
+    "homophoneSentence": "则穆维斯塔茨at7."
+  },
+  {
+    "word": "End",
+    "phonetic": "/end/",
+    "homophone": "恩德",
+    "meaning": "结束",
+    "sentence": "The movie ends at 9.",
+    "translation": "电影9点结束。",
+    "homophoneSentence": "则穆维恩兹at9."
+  },
+  {
+    "word": "Finish",
+    "phonetic": "/ˈfɪnɪʃ/",
+    "homophone": "菲尼什",
+    "meaning": "完成",
+    "sentence": "I will finish soon.",
+    "translation": "我很快就完成。",
+    "homophoneSentence": "爱威尔菲尼什苏恩."
+  },
+  {
+    "word": "Continue",
+    "phonetic": "/kənˈtɪnjuː/",
+    "homophone": "康提纽",
+    "meaning": "继续",
+    "sentence": "Please continue working.",
+    "translation": "请继续工作。",
+    "homophoneSentence": "普利斯康提纽沃克英."
+  },
+  {
+    "word": "Pause",
+    "phonetic": "/pɔːz/",
+    "homophone": "波兹",
+    "meaning": "暂停",
+    "sentence": "Lets take a pause.",
+    "translation": "让我们暂停一下。",
+    "homophoneSentence": "来茨泰克啊波兹."
+  },
+  {
+    "word": "Resume",
+    "phonetic": "/rɪˈzjuːm/",
+    "homophone": "瑞朱姆",
+    "meaning": "恢复",
+    "sentence": "Lets resume the meeting.",
+    "translation": "让我们恢复会议。",
+    "homophoneSentence": "来茨瑞朱姆则米廷."
+  },
+  {
+    "word": "Elapsed",
+    "phonetic": "/ɪˈlæpst/",
+    "homophone": "伊拉普斯特",
+    "meaning": "流逝的",
+    "sentence": "Much time has elapsed.",
+    "translation": "很多时间已经流逝。",
+    "homophoneSentence": "马奇泰姆哈兹伊拉普斯特."
+  },
+  {
+    "word": "Remaining",
+    "phonetic": "/rɪˈmeɪnɪŋ/",
+    "homophone": "瑞梅宁",
+    "meaning": "剩余的",
+    "sentence": "We have 5 minutes remaining.",
+    "translation": "我们还剩5分钟。",
+    "homophoneSentence": "威哈弗5米尼兹瑞梅宁."
+  },
+  {
+    "word": "Upcoming",
+    "phonetic": "/ˈʌpkʌmɪŋ/",
+    "homophone": "阿普卡明",
+    "meaning": "即将到来的",
+    "sentence": "The upcoming event is big.",
+    "translation": "即将到来的活动很重要。",
+    "homophoneSentence": "则阿普卡明伊文特is比格."
+  },
+  {
+    "word": "Previous",
+    "phonetic": "/ˈpriːviəs/",
+    "homophone": "普瑞威尔斯",
+    "meaning": "先前的",
+    "sentence": "The previous meeting was short.",
+    "translation": "上次会议很短。",
+    "homophoneSentence": "则普瑞威尔斯米廷沃兹肖特."
+  },
+  {
+    "word": "Next",
+    "phonetic": "/nekst/",
+    "homophone": "奈克斯特",
+    "meaning": "下一个",
+    "sentence": "The next meeting is Monday.",
+    "translation": "下次会议是周一。",
+    "homophoneSentence": "则奈克斯特米廷is曼戴."
+  },
+  {
+    "word": "Last",
+    "phonetic": "/lɑːst/",
+    "homophone": "拉斯特",
+    "meaning": "最后的",
+    "sentence": "This is the last chance.",
+    "translation": "这是最后的机会。",
+    "homophoneSentence": "则斯is则拉斯特钱斯."
+  },
+  {
+    "word": "First",
+    "phonetic": "/fɜːst/",
+    "homophone": "弗斯特",
+    "meaning": "第一",
+    "sentence": "This is my first time.",
+    "translation": "这是我第一次。",
+    "homophoneSentence": "则斯is麦弗斯特泰姆."
+  },
+  {
+    "word": "Final",
+    "phonetic": "/ˈfaɪnl/",
+    "homophone": "法伊纳尔",
+    "meaning": "最后的",
+    "sentence": "This is the final exam.",
+    "translation": "这是期末考试。",
+    "homophoneSentence": "则斯is则法伊纳尔伊克赞."
+  },
+  {
+    "word": "Initial",
+    "phonetic": "/ɪˈnɪʃl/",
+    "homophone": "伊尼歇尔",
+    "meaning": "最初的",
+    "sentence": "My initial plan was different.",
+    "translation": "我最初的计划不同。",
+    "homophoneSentence": "麦伊尼歇尔普兰沃兹迪弗伦特."
+  },
+  {
+    "word": "Prior",
+    "phonetic": "/ˈpraɪə(r)/",
+    "homophone": "普莱厄",
+    "meaning": "先前的",
+    "sentence": "I had no prior knowledge.",
+    "translation": "我之前不知道。",
+    "homophoneSentence": "爱哈德诺普莱厄纳利吉."
+  },
+  {
+    "word": "Subsequent",
+    "phonetic": "/ˈsʌbsɪkwənt/",
+    "homophone": "萨布西昆特",
+    "meaning": "随后的",
+    "sentence": "Subsequent events proved me right.",
+    "translation": "随后的事件证明我是对的。",
+    "homophoneSentence": "萨布西昆特伊文茨普鲁夫德密莱特."
+  },
+  {
+    "word": "Simultaneous",
+    "phonetic": "/ˌsɪmlˈteɪniəs/",
+    "homophone": "西莫泰尼厄斯",
+    "meaning": "同时的",
+    "sentence": "The events were simultaneous.",
+    "translation": "这些事件是同时发生的。",
+    "homophoneSentence": "则伊文茨沃西莫泰尼厄斯."
+  },
+  {
+    "word": "Concurrent",
+    "phonetic": "/kənˈkʌrənt/",
+    "homophone": "康卡伦特",
+    "meaning": "并发的",
+    "sentence": "The processes are concurrent.",
+    "translation": "这些过程是并发的。",
+    "homophoneSentence": "则普罗塞西兹啊康卡伦特."
+  },
+  {
+    "word": "Immediate",
+    "phonetic": "/ɪˈmiːdiət/",
+    "homophone": "伊米迪厄特",
+    "meaning": "立即的",
+    "sentence": "I need an immediate response.",
+    "translation": "我需要立即回复。",
+    "homophoneSentence": "爱尼德安伊米迪厄特瑞斯庞斯."
+  },
+  {
+    "word": "Urgent",
+    "phonetic": "/ˈɜːdʒənt/",
+    "homophone": "厄金特",
+    "meaning": "紧急的",
+    "sentence": "This is an urgent matter.",
+    "translation": "这是一件紧急的事情。",
+    "homophoneSentence": "则斯is安厄金特麦特."
+  },
+  {
+    "word": "Sudden",
+    "phonetic": "/ˈsʌdn/",
+    "homophone": "萨德恩",
+    "meaning": "突然的",
+    "sentence": "There was a sudden change.",
+    "translation": "突然发生了变化。",
+    "homophoneSentence": "泽沃兹啊萨德恩切吉."
+  },
+  {
+    "word": "Gradual",
+    "phonetic": "/ˈɡrædʒuəl/",
+    "homophone": "格雷朱尔",
+    "meaning": "逐渐的",
+    "sentence": "The change was gradual.",
+    "translation": "变化是逐渐的。",
+    "homophoneSentence": "则切吉沃兹格雷朱尔."
+  },
+  {
+    "word": "Steady",
+    "phonetic": "/ˈstedi/",
+    "homophone": "斯特迪",
+    "meaning": "稳定的",
+    "sentence": "Keep a steady pace.",
+    "translation": "保持稳定的节奏。",
+    "homophoneSentence": "基普啊斯特迪佩斯."
+  },
+  {
+    "word": "Occasional",
+    "phonetic": "/əˈkeɪʒənl/",
+    "homophone": "阿凯申纳尔",
+    "meaning": "偶尔的",
+    "sentence": "I make occasional visits.",
+    "translation": "我偶尔去拜访。",
+    "homophoneSentence": "爱梅克阿凯申纳尔维兹兹."
+  },
+  {
+    "word": "Frequent",
+    "phonetic": "/ˈfriːkwənt/",
+    "homophone": "弗瑞昆特",
+    "meaning": "频繁的",
+    "sentence": "He is a frequent visitor.",
+    "translation": "他是常客。",
+    "homophoneSentence": "希尔is啊弗瑞昆特维兹特."
+  },
+  {
+    "word": "Regular",
+    "phonetic": "/ˈreɡjələ(r)/",
+    "homophone": "雷古勒",
+    "meaning": "定期的",
+    "sentence": "I am a regular customer.",
+    "translation": "我是常客。",
+    "homophoneSentence": "爱安姆啊雷古勒卡斯托默."
+  },
+  {
+    "word": "Periodic",
+    "phonetic": "/ˌpɪəriˈɒdɪk/",
+    "homophone": "皮瑞奥迪克",
+    "meaning": "周期的",
+    "sentence": "We do periodic checks.",
+    "translation": "我们做定期检查。",
+    "homophoneSentence": "威杜皮瑞奥迪克切克斯."
+  },
+  {
+    "word": "Intermittent",
+    "phonetic": "/ˌɪntəˈmɪtənt/",
+    "homophone": "因特米特恩特",
+    "meaning": "间歇的",
+    "sentence": "The rain was intermittent.",
+    "translation": "雨是间歇性的。",
+    "homophoneSentence": "则瑞恩沃兹因特米特恩特."
+  },
+  {
+    "word": "Continuous",
+    "phonetic": "/kənˈtɪnjuəs/",
+    "homophone": "康提纽厄斯",
+    "meaning": "连续的",
+    "sentence": "The noise was continuous.",
+    "translation": "噪音是连续的。",
+    "homophoneSentence": "则诺伊斯沃兹康提纽厄斯."
+  },
+  {
+    "word": "Constant",
+    "phonetic": "/ˈkɒnstənt/",
+    "homophone": "康斯坦特",
+    "meaning": "持续的",
+    "sentence": "He needs constant care.",
+    "translation": "他需要持续照顾。",
+    "homophoneSentence": "希尔尼兹康斯坦特凯尔."
+  },
+  {
+    "word": "Perpetual",
+    "phonetic": "/pəˈpetʃuəl/",
+    "homophone": "珀佩丘尔",
+    "meaning": "永久的",
+    "sentence": "He is in perpetual motion.",
+    "translation": "他总是在运动。",
+    "homophoneSentence": "希尔is因珀佩丘尔莫申."
+  },
+  {
+    "word": "Temporary",
+    "phonetic": "/ˈtemprəri/",
+    "homophone": "坦珀拉瑞",
+    "meaning": "暂时的",
+    "sentence": "This is a temporary solution.",
+    "translation": "这是暂时的解决方案。",
+    "homophoneSentence": "则斯is啊坦珀拉瑞瑟卢申."
+  },
+  {
+    "word": "Permanent",
+    "phonetic": "/ˈpɜːmənənt/",
+    "homophone": "珀曼嫩特",
+    "meaning": "永久的",
+    "sentence": "I want a permanent job.",
+    "translation": "我想要一份永久的工作。",
+    "homophoneSentence": "爱旺特啊珀曼嫩特贾布."
+  },
+  {
+    "word": "Brief",
+    "phonetic": "/briːf/",
+    "homophone": "布瑞夫",
+    "meaning": "简短的",
+    "sentence": "Please be brief.",
+    "translation": "请简短。",
+    "homophoneSentence": "普利斯比布瑞夫."
+  },
+  {
+    "word": "Short",
+    "phonetic": "/ʃɔːt/",
+    "homophone": "肖特",
+    "meaning": "短的",
+    "sentence": "The meeting was short.",
+    "translation": "会议很短。",
+    "homophoneSentence": "则米廷沃兹肖特."
+  },
+  {
+    "word": "Long",
+    "phonetic": "/lɒŋ/",
+    "homophone": "朗",
+    "meaning": "长的",
+    "sentence": "It was a long journey.",
+    "translation": "这是一段漫长的旅程。",
+    "homophoneSentence": "伊特沃兹啊朗贾尼."
+  },
+  {
+    "word": "Lengthy",
+    "phonetic": "/ˈleŋθi/",
+    "homophone": "伦吉",
+    "meaning": "冗长的",
+    "sentence": "It was a lengthy process.",
+    "translation": "这是一个漫长的过程。",
+    "homophoneSentence": "伊特沃兹啊伦吉普罗塞斯."
+  },
+  {
+    "word": "Quick",
+    "phonetic": "/kwɪk/",
+    "homophone": "奎克",
+    "meaning": "快的",
+    "sentence": "Have a quick look.",
+    "translation": "快速看一下。",
+    "homophoneSentence": "哈弗啊奎克卢克."
+  },
+  {
+    "word": "Rapid",
+    "phonetic": "/ˈræpɪd/",
+    "homophone": "瑞皮德",
+    "meaning": "迅速的",
+    "sentence": "There was rapid growth.",
+    "translation": "增长迅速。",
+    "homophoneSentence": "泽沃兹瑞皮德格欧斯."
+  },
+  {
+    "word": "Fast",
+    "phonetic": "/fɑːst/",
+    "homophone": "法斯特",
+    "meaning": "快的",
+    "sentence": "Time flies so fast.",
+    "translation": "时间过得真快。",
+    "homophoneSentence": "泰姆弗莱兹搜法斯特."
+  },
+  {
+    "word": "Slow",
+    "phonetic": "/sləʊ/",
+    "homophone": "斯洛",
+    "meaning": "慢的",
+    "sentence": "The internet is slow.",
+    "translation": "网络很慢。",
+    "homophoneSentence": "则因特奈特is斯洛."
+  },
+  {
+    "word": "Leisurely",
+    "phonetic": "/ˈleʒəli/",
+    "homophone": "莱哲利",
+    "meaning": "悠闲的",
+    "sentence": "We took a leisurely walk.",
+    "translation": "我们悠闲地散步。",
+    "homophoneSentence": "威图克啊莱哲利沃克."
+  },
+  {
+    "word": "Hasty",
+    "phonetic": "/ˈheɪsti/",
+    "homophone": "海斯蒂",
+    "meaning": "匆忙的",
+    "sentence": "Dont make a hasty decision.",
+    "translation": "不要匆忙做决定。",
+    "homophoneSentence": "东特梅克啊海斯蒂迪西詹."
+  },
+  {
+    "word": "Premature",
+    "phonetic": "/ˈpremətʃə(r)/",
+    "homophone": "普雷马彻",
+    "meaning": "过早的",
+    "sentence": "Its too premature to decide.",
+    "translation": "现在决定还为时过早。",
+    "homophoneSentence": "伊茨图普雷马彻图迪赛德."
+  },
+  {
+    "word": "Overdue",
+    "phonetic": "/ˌəʊvəˈdjuː/",
+    "homophone": "欧沃杜",
+    "meaning": "过期的",
+    "sentence": "The book is overdue.",
+    "translation": "这本书过期了。",
+    "homophoneSentence": "则布克is欧沃杜."
+  },
+  {
+    "word": "Due",
+    "phonetic": "/djuː/",
+    "homophone": "杜",
+    "meaning": "到期的",
+    "sentence": "The report is due tomorrow.",
+    "translation": "报告明天到期。",
+    "homophoneSentence": "则瑞波特is杜特莫罗."
+  },
+  {
+    "word": "Onetime",
+    "phonetic": "/ˈwʌntaɪm/",
+    "homophone": "万泰姆",
+    "meaning": "一次性的",
+    "sentence": "Its a onetime offer.",
+    "translation": "这是一次性优惠。",
+    "homophoneSentence": "伊茨啊万泰姆奥弗."
+  },
+  {
+    "word": "Parttime",
+    "phonetic": "/ˌpɑːtˈtaɪm/",
+    "homophone": "帕特泰姆",
+    "meaning": "兼职的",
+    "sentence": "I work parttime.",
+    "translation": "我做兼职。",
+    "homophoneSentence": "爱沃克帕特泰姆."
+  },
+  {
+    "word": "Fulltime",
+    "phonetic": "/ˌfʊlˈtaɪm/",
+    "homophone": "夫欧泰姆",
+    "meaning": "全职的",
+    "sentence": "I work fulltime.",
+    "translation": "我做全职。",
+    "homophoneSentence": "爱沃克夫欧泰姆."
+  },
+  {
+    "word": "Overtime",
+    "phonetic": "/ˈəʊvətaɪm/",
+    "homophone": "欧沃泰姆",
+    "meaning": "加班",
+    "sentence": "I worked overtime yesterday.",
+    "translation": "我昨天加班了。",
+    "homophoneSentence": "爱沃克特欧沃泰姆耶斯特戴."
+  },
+  {
+    "word": "Bedtime",
+    "phonetic": "/ˈbedtaɪm/",
+    "homophone": "贝德泰姆",
+    "meaning": "就寝时间",
+    "sentence": "Its past my bedtime.",
+    "translation": "已经过了我的睡觉时间。",
+    "homophoneSentence": "伊茨帕斯特麦贝德泰姆."
+  },
+  {
+    "word": "Lunchtime",
+    "phonetic": "/ˈlʌntʃtaɪm/",
+    "homophone": "兰奇泰姆",
+    "meaning": "午餐时间",
+    "sentence": "Lets meet at lunchtime.",
+    "translation": "我们午餐时间见面吧。",
+    "homophoneSentence": "来茨米特at兰奇泰姆."
+  },
+  {
+    "word": "Dinnertime",
+    "phonetic": "/ˈdɪnətaɪm/",
+    "homophone": "迪纳泰姆",
+    "meaning": "晚餐时间",
+    "sentence": "Its almost dinnertime.",
+    "translation": "快到晚餐时间了。",
+    "homophoneSentence": "伊茨奥莫斯特迪纳泰姆."
+  },
+  {
+    "word": "Breakfast",
+    "phonetic": "/ˈbrekfəst/",
+    "homophone": "布瑞克法斯特",
+    "meaning": "早餐",
+    "sentence": "I eat breakfast at 7.",
+    "translation": "我7点吃早餐。",
+    "homophoneSentence": "爱伊特布瑞克法斯特at7."
+  },
+  {
+    "word": "Lunch",
+    "phonetic": "/lʌntʃ/",
+    "homophone": "兰奇",
+    "meaning": "午餐",
+    "sentence": "Lets have lunch together.",
+    "translation": "我们一起吃午餐吧。",
+    "homophoneSentence": "来茨哈弗兰奇托盖泽."
+  },
+  {
+    "word": "Dinner",
+    "phonetic": "/ˈdɪnə(r)/",
+    "homophone": "迪纳",
+    "meaning": "晚餐",
+    "sentence": "Dinner is ready!",
+    "translation": "晚餐准备好了！",
+    "homophoneSentence": "迪纳is瑞迪!"
+  },
+  {
+    "word": "Supper",
+    "phonetic": "/ˈsʌpə(r)/",
+    "homophone": "萨珀",
+    "meaning": "晚饭",
+    "sentence": "We had a light supper.",
+    "translation": "我们吃了一顿简单的晚饭。",
+    "homophoneSentence": "威哈德啊莱特萨珀."
+  },
+  {
+    "word": "Snack",
+    "phonetic": "/snæk/",
+    "homophone": "斯奈克",
+    "meaning": "零食",
+    "sentence": "I need a snack.",
+    "translation": "我需要吃点零食。",
+    "homophoneSentence": "爱尼德啊斯奈克."
+  },
+  {
+    "word": "Brunch",
+    "phonetic": "/brʌntʃ/",
+    "homophone": "布兰奇",
+    "meaning": "早午餐",
+    "sentence": "Lets have brunch on Sunday.",
+    "translation": "我们周日吃早午餐吧。",
+    "homophoneSentence": "来茨哈弗布兰奇on桑戴."
+  },
+  {
+    "word": "Predawn",
+    "phonetic": "/priːˈdɔːn/",
+    "homophone": "普瑞道恩",
+    "meaning": "黎明前",
+    "sentence": "We left in the predawn hours.",
+    "translation": "我们在黎明前离开了。",
+    "homophoneSentence": "威莱夫特因则普瑞道恩阿沃兹."
+  },
+  {
+    "word": "Nowadays",
+    "phonetic": "/ˈnaʊədeɪz/",
+    "homophone": "闹韦兹",
+    "meaning": "如今",
+    "sentence": "Nowadays everyone has a phone.",
+    "translation": "如今每个人都有手机。",
+    "homophoneSentence": "闹韦兹爱乌瑞万哈兹啊冯."
+  },
+  {
+    "word": "Someday",
+    "phonetic": "/ˈsʌmdeɪ/",
+    "homophone": "萨姆戴",
+    "meaning": "某天",
+    "sentence": "Someday I will travel the world.",
+    "translation": "某天我会环游世界。",
+    "homophoneSentence": "萨姆戴爱威尔特拉沃则沃德."
+  },
+  {
+    "word": "Everyday",
+    "phonetic": "/ˈevrideɪ/",
+    "homophone": "爱乌瑞戴",
+    "meaning": "每天",
+    "sentence": "I exercise everyday.",
+    "translation": "我每天锻炼。",
+    "homophoneSentence": "爱埃克瑟赛兹爱乌瑞戴."
+  },
+  {
+    "word": "One day",
+    "phonetic": "/wʌn deɪ/",
+    "homophone": "万戴",
+    "meaning": "有一天",
+    "sentence": "One day I will be rich.",
+    "translation": "有一天我会变富。",
+    "homophoneSentence": "万戴爱威尔比瑞奇."
+  },
+  {
+    "word": "The other day",
+    "phonetic": "/ði ˈʌðə deɪ/",
+    "homophone": "迪阿泽戴",
+    "meaning": "前几天",
+    "sentence": "I saw him the other day.",
+    "translation": "我前几天见到他了。",
+    "homophoneSentence": "爱索希姆则阿泽戴."
+  },
+  {
+    "word": "Day by day",
+    "phonetic": "/deɪ baɪ deɪ/",
+    "homophone": "戴拜戴",
+    "meaning": "一天天",
+    "sentence": "Day by day, I get stronger.",
+    "translation": "我一天天变强。",
+    "homophoneSentence": "戴拜戴,爱盖特斯特朗格."
+  },
+  {
+    "word": "Day after day",
+    "phonetic": "/deɪ ˈɑːftə deɪ/",
+    "homophone": "戴阿夫特戴",
+    "meaning": "日复一日",
+    "sentence": "Day after day, nothing changed.",
+    "translation": "日复一日，什么都没变。",
+    "homophoneSentence": "戴阿夫特戴,纳辛切吉德."
+  },
+  {
+    "word": "Year after year",
+    "phonetic": "/jɪə ˈɑːftə jɪə/",
+    "homophone": "耶阿夫特耶",
+    "meaning": "年复一年",
+    "sentence": "Year after year, we grow older.",
+    "translation": "年复一年，我们变老。",
+    "homophoneSentence": "耶阿夫特耶,威格欧欧德."
+  },
+  {
+    "word": "Time after time",
+    "phonetic": "/taɪm ˈɑːftə taɪm/",
+    "homophone": "泰姆阿夫特泰姆",
+    "meaning": "一次又一次",
+    "sentence": "Time after time, I tried again.",
+    "translation": "我一次又一次地尝试。",
+    "homophoneSentence": "泰姆阿夫特泰姆,爱揣德阿根."
+  },
+  {
+    "word": "From time to time",
+    "phonetic": "/frɒm taɪm tuː taɪm/",
+    "homophone": "弗罗姆泰姆图泰姆",
+    "meaning": "有时",
+    "sentence": "I visit them from time to time.",
+    "translation": "我有时去看望他们。",
+    "homophoneSentence": "爱维兹特泽姆弗罗姆泰姆图泰姆."
+  },
+  {
+    "word": "At times",
+    "phonetic": "/æt taɪmz/",
+    "homophone": "艾特泰姆兹",
+    "meaning": "有时",
+    "sentence": "At times, I feel lonely.",
+    "translation": "有时我感到孤独。",
+    "homophoneSentence": "艾特泰姆兹,爱菲尔隆利."
+  },
+  {
+    "word": "In time",
+    "phonetic": "/ɪn taɪm/",
+    "homophone": "因泰姆",
+    "meaning": "及时",
+    "sentence": "We arrived in time.",
+    "translation": "我们及时到达。",
+    "homophoneSentence": "威阿莱夫德因泰姆."
+  },
+  {
+    "word": "On time",
+    "phonetic": "/ɒn taɪm/",
+    "homophone": "昂泰姆",
+    "meaning": "准时",
+    "sentence": "Please be on time.",
+    "translation": "请准时。",
+    "homophoneSentence": "普利斯比昂泰姆."
+  },
+  {
+    "word": "In no time",
+    "phonetic": "/ɪn nəʊ taɪm/",
+    "homophone": "因诺泰姆",
+    "meaning": "很快",
+    "sentence": "I will be back in no time.",
+    "translation": "我很快就回来。",
+    "homophoneSentence": "爱威尔比拜克因诺泰姆."
+  },
+  {
+    "word": "At the same time",
+    "phonetic": "/æt ðə seɪm taɪm/",
+    "homophone": "艾特则赛姆泰姆",
+    "meaning": "同时",
+    "sentence": "We arrived at the same time.",
+    "translation": "我们同时到达。",
+    "homophoneSentence": "威阿莱夫德艾特则赛姆泰姆."
+  },
+  {
+    "word": "All the time",
+    "phonetic": "/ɔːl ðə taɪm/",
+    "homophone": "奥则泰姆",
+    "meaning": "一直",
+    "sentence": "He talks all the time.",
+    "translation": "他一直在说话。",
+    "homophoneSentence": "希尔托克斯奥则泰姆."
+  },
+  {
+    "word": "Most of the time",
+    "phonetic": "/məʊst əv ðə taɪm/",
+    "homophone": "莫斯特奥夫则泰姆",
+    "meaning": "大部分时间",
+    "sentence": "Most of the time, I am happy.",
+    "translation": "大部分时间我很快乐。",
+    "homophoneSentence": "莫斯特奥夫则泰姆,爱安姆哈皮."
+  },
+  {
+    "word": "Ahead of time",
+    "phonetic": "/əˈhed əv taɪm/",
+    "homophone": "阿海德奥夫泰姆",
+    "meaning": "提前",
+    "sentence": "I finished ahead of time.",
+    "translation": "我提前完成了。",
+    "homophoneSentence": "爱菲尼什德阿海德奥夫泰姆."
+  },
+  {
+    "word": "Behind time",
+    "phonetic": "/bɪˈhaɪnd taɪm/",
+    "homophone": "比海恩德泰姆",
+    "meaning": "迟到",
+    "sentence": "The train is behind time.",
+    "translation": "火车晚点了。",
+    "homophoneSentence": "则吹恩is比海恩德泰姆."
+  },
+  {
+    "word": "Out of time",
+    "phonetic": "/aʊt əv taɪm/",
+    "homophone": "奥特奥夫泰姆",
+    "meaning": "没时间了",
+    "sentence": "We are out of time!",
+    "translation": "我们没时间了！",
+    "homophoneSentence": "威啊奥特奥夫泰姆!"
+  },
+  {
+    "word": "Just in time",
+    "phonetic": "/dʒʌst ɪn taɪm/",
+    "homophone": "加斯特因泰姆",
+    "meaning": "刚好及时",
+    "sentence": "We arrived just in time.",
+    "translation": "我们刚好及时到达。",
+    "homophoneSentence": "威阿莱夫德加斯特因泰姆."
+  },
+  {
+    "word": "Take time",
+    "phonetic": "/teɪk taɪm/",
+    "homophone": "泰克泰姆",
+    "meaning": "慢慢来",
+    "sentence": "Take time to relax.",
+    "translation": "花时间放松。",
+    "homophoneSentence": "泰克泰姆图瑞莱克斯."
+  },
+  {
+    "word": "Save time",
+    "phonetic": "/seɪv taɪm/",
+    "homophone": "赛夫泰姆",
+    "meaning": "节省时间",
+    "sentence": "This tool saves time.",
+    "translation": "这个工具节省时间。",
+    "homophoneSentence": "则斯图赛夫兹泰姆."
+  },
+  {
+    "word": "Waste time",
+    "phonetic": "/weɪst taɪm/",
+    "homophone": "韦斯特泰姆",
+    "meaning": "浪费时间",
+    "sentence": "Dont waste time!",
+    "translation": "别浪费时间！",
+    "homophoneSentence": "东特韦斯特泰姆!"
+  },
+  {
+    "word": "Kill time",
+    "phonetic": "/kɪl taɪm/",
+    "homophone": "基尔泰姆",
+    "meaning": "消磨时间",
+    "sentence": "I read to kill time.",
+    "translation": "我读书消磨时间。",
+    "homophoneSentence": "爱瑞德图基尔泰姆."
+  },
+  {
+    "word": "Spend time",
+    "phonetic": "/spend taɪm/",
+    "homophone": "斯彭德泰姆",
+    "meaning": "花时间",
+    "sentence": "I spend time with family.",
+    "translation": "我花时间陪家人。",
+    "homophoneSentence": "爱斯彭德泰姆威斯法米利."
+  },
+  {
+    "word": "Pass time",
+    "phonetic": "/pɑːs taɪm/",
+    "homophone": "帕斯泰姆",
+    "meaning": "打发时间",
+    "sentence": "I play games to pass time.",
+    "translation": "我玩游戏打发时间。",
+    "homophoneSentence": "爱普雷盖姆斯图帕斯泰姆."
+  },
+  {
+    "word": "Tell time",
+    "phonetic": "/tel taɪm/",
+    "homophone": "泰尔泰姆",
+    "meaning": "看时间",
+    "sentence": "Can you tell time?",
+    "translation": "你会看时间吗？",
+    "homophoneSentence": "看油泰尔泰姆?"
+  },
+  {
+    "word": "Keep time",
+    "phonetic": "/kiːp taɪm/",
+    "homophone": "基普泰姆",
+    "meaning": "计时",
+    "sentence": "This clock keeps good time.",
+    "translation": "这个钟走得很准。",
+    "homophoneSentence": "则斯克洛克基普斯古德泰姆."
+  },
+  {
+    "word": "Lose time",
+    "phonetic": "/luːz taɪm/",
+    "homophone": "卢兹泰姆",
+    "meaning": "浪费时间",
+    "sentence": "We lost time in traffic.",
+    "translation": "我们在交通中浪费时间。",
+    "homophoneSentence": "威洛斯特泰姆因特拉菲克."
+  },
+  {
+    "word": "Make time",
+    "phonetic": "/meɪk taɪm/",
+    "homophone": "梅克泰姆",
+    "meaning": "腾出时间",
+    "sentence": "I will make time for you.",
+    "translation": "我会为你腾出时间。",
+    "homophoneSentence": "爱威尔梅克泰姆佛油."
+  },
+  {
+    "word": "Find time",
+    "phonetic": "/faɪnd taɪm/",
+    "homophone": "法因德泰姆",
+    "meaning": "找时间",
+    "sentence": "I need to find time to study.",
+    "translation": "我需要找时间学习。",
+    "homophoneSentence": "爱尼德图法因德泰姆图斯塔迪."
+  },
+  {
+    "word": "Have time",
+    "phonetic": "/hæv taɪm/",
+    "homophone": "哈弗泰姆",
+    "meaning": "有时间",
+    "sentence": "Do you have time?",
+    "translation": "你有时间吗？",
+    "homophoneSentence": "杜油哈弗泰姆?"
+  },
+  {
+    "word": "No time",
+    "phonetic": "/nəʊ taɪm/",
+    "homophone": "诺泰姆",
+    "meaning": "没时间",
+    "sentence": "I have no time now.",
+    "translation": "我现在没时间。",
+    "homophoneSentence": "爱哈弗诺泰姆闹."
+  },
+  {
+    "word": "Free time",
+    "phonetic": "/friː taɪm/",
+    "homophone": "弗瑞泰姆",
+    "meaning": "空闲时间",
+    "sentence": "I read in my free time.",
+    "translation": "我空闲时间读书。",
+    "homophoneSentence": "爱瑞德因麦弗瑞泰姆."
+  },
+  {
+    "word": "Spare time",
+    "phonetic": "/speə taɪm/",
+    "homophone": "斯佩尔泰姆",
+    "meaning": "业余时间",
+    "sentence": "What do you do in spare time?",
+    "translation": "你业余时间做什么？",
+    "homophoneSentence": "沃特杜油杜因斯佩尔泰姆?"
+  },
+  {
+    "word": "Quality time",
+    "phonetic": "/ˈkwɒləti taɪm/",
+    "homophone": "夸利提泰姆",
+    "meaning": "优质时光",
+    "sentence": "We spent quality time together.",
+    "translation": "我们一起度过了优质时光。",
+    "homophoneSentence": "威斯彭特夸利提泰姆托盖泽."
+  },
+  {
+    "word": "Hard times",
+    "phonetic": "/hɑːd taɪmz/",
+    "homophone": "哈德泰姆兹",
+    "meaning": "困难时期",
+    "sentence": "We went through hard times.",
+    "translation": "我们经历了困难时期。",
+    "homophoneSentence": "威温特斯鲁哈德泰姆兹."
+  },
+  {
+    "word": "Good times",
+    "phonetic": "/ɡʊd taɪmz/",
+    "homophone": "古德泰姆兹",
+    "meaning": "美好时光",
+    "sentence": "We had good times together.",
+    "translation": "我们有过美好时光。",
+    "homophoneSentence": "威哈德古德泰姆兹托盖泽."
+  },
+  {
+    "word": "Old times",
+    "phonetic": "/əʊld taɪmz/",
+    "homophone": "欧德泰姆兹",
+    "meaning": "旧时光",
+    "sentence": "We talked about old times.",
+    "translation": "我们谈论旧时光。",
+    "homophoneSentence": "威托克特阿包特欧德泰姆兹."
+  },
+  {
+    "word": "Ancient times",
+    "phonetic": "/ˈeɪnʃənt taɪmz/",
+    "homophone": "艾申特泰姆兹",
+    "meaning": "古代",
+    "sentence": "In ancient times, people lived simply.",
+    "translation": "古代人们生活简单。",
+    "homophoneSentence": "因艾申特泰姆兹,皮波利夫德辛普利."
+  },
+  {
+    "word": "Modern times",
+    "phonetic": "/ˈmɒdn taɪmz/",
+    "homophone": "莫德恩泰姆兹",
+    "meaning": "现代",
+    "sentence": "In modern times, life is fast.",
+    "translation": "现代生活节奏快。",
+    "homophoneSentence": "因莫德恩泰姆兹,莱夫is法斯特."
+  },
+  {
+    "word": "Prime time",
+    "phonetic": "/praɪm taɪm/",
+    "homophone": "普莱姆泰姆",
+    "meaning": "黄金时段",
+    "sentence": "The show airs at prime time.",
+    "translation": "这个节目在黄金时段播出。",
+    "homophoneSentence": "则肖艾尔斯at普莱姆泰姆."
+  },
+  {
+    "word": "Real time",
+    "phonetic": "/riːəl taɪm/",
+    "homophone": "瑞尔泰姆",
+    "meaning": "实时",
+    "sentence": "We track data in real time.",
+    "translation": "我们实时追踪数据。",
+    "homophoneSentence": "威特瑞克戴特因瑞尔泰姆."
+  },
+  {
+    "word": "Big time",
+    "phonetic": "/bɪɡ taɪm/",
+    "homophone": "比格泰姆",
+    "meaning": "很大程度",
+    "sentence": "He made it big time!",
+    "translation": "他大获成功！",
+    "homophoneSentence": "希尔梅德伊特比格泰姆!"
+  },
+  {
+    "word": "Small time",
+    "phonetic": "/smɔːl taɪm/",
+    "homophone": "斯莫尔泰姆",
+    "meaning": "小规模",
+    "sentence": "He is a small time actor.",
+    "translation": "他是个小演员。",
+    "homophoneSentence": "希尔is啊斯莫尔泰姆艾克特."
+  },
+  {
+    "word": "Long time",
+    "phonetic": "/lɒŋ taɪm/",
+    "homophone": "朗泰姆",
+    "meaning": "很长时间",
+    "sentence": "It has been a long time.",
+    "translation": "已经很久了。",
+    "homophoneSentence": "伊特哈兹宾啊朗泰姆."
+  },
+  {
+    "word": "Short time",
+    "phonetic": "/ʃɔːt taɪm/",
+    "homophone": "肖特泰姆",
+    "meaning": "短时间",
+    "sentence": "It only takes a short time.",
+    "translation": "只需要很短的时间。",
+    "homophoneSentence": "伊特欧尼泰克斯啊肖特泰姆."
+  }
+]
