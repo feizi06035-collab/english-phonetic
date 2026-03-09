@@ -34,8 +34,9 @@
     <priority>0.8</priority>
   </url>
   <url>
+      <url>
     <loc>https://mzc0603.xyz/category/emotions</loc>
-    <lastmod>2026-03-06</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -72,8 +73,9 @@
     <priority>0.7</priority>
   </url>
   <url>
+      <url>
     <loc>https://mzc0603.xyz/category/emotions?page=2</loc>
-    <lastmod>2026-03-06</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -11029,6 +11031,25 @@
     <loc>https://mzc0603.xyz/word/see-you</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://mzc0603.xyz/category/emotions?page=3</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mzc0603.xyz/category/emotions?page=4</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mzc0603.xyz/category/emotions?page=5</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 </urlset>
