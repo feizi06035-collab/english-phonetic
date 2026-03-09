@@ -46,13 +46,13 @@ if (match) {
             return `                <tr><td><button class="sound-btn" onclick="playSound('${soundWord}')">${safeWord}</button></td><td>${word.phonetic}</td><td>${word.homophone}</td><td>${word.meaning}</td><td>${safeSentence} → 【${safeTranslation}】→ ${safeHomophoneSentence}</td></tr>`;
         }).join('\n');
         
-        const tablePattern = /<!-- 日常问候 -->[\s\S]*?<table aria-label="日常问候单词列表">[\s\S]*?<tbody>([\s\S]*?)<\/tbody>/;
+        const tablePattern = /<!-- 日常问候类 -->[\s\S]*?<table aria-label="日常问候类单词列表">[\s\S]*?<tbody>([\s\S]*?)<\/tbody>/
         const tableMatch = indexContent.match(tablePattern);
         
         if (tableMatch) {
             const newTableContent = indexContent.replace(
                 tablePattern,
-                `<!-- 日常问候 -->\n        <table aria-label="日常问候单词列表">\n            <thead>\n                <tr>\n                    <th>单词</th>\n                    <th>音标</th>\n                    <th>中文谐音</th>\n                    <th>中文释义</th>\n                    <th>例句</th>\n                </tr>\n            </thead>\n            <tbody>\n${tableRows}\n            </tbody>`
+                `<!-- 日常问候类 -->\n                <table aria-label="日常问候类单词列表">\n                    <thead>\n                        <tr><th>英文</th><th>音标</th><th>中文谐音</th><th>中文释义</th><th>例句</th></tr>\n                    </thead>\n                    <tbody>\n${tableRows}\n                    </tbody>`
             );
             
             fs.writeFileSync(indexPath, newTableContent, 'utf8');
