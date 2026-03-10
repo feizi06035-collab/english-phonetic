@@ -1,70 +1,107 @@
 const fs = require('fs');
 const path = require('path');
 
-const sitemapPath = path.join(__dirname, '../sitemap.xml');
-const wordDataPath = path.join(__dirname, '../word-data.js');
+class SitemapUpdater {
+    constructor() {
+        this.projectRoot = path.resolve(__dirname, '..');
+        this.sitemapPath = path.join(this.projectRoot, 'sitemap.xml');
+        this.newNumbersPath = path.join(this.projectRoot, 'scripts', 'new-numbers.json');
+    }
 
-console.log('Loading word data...');
-const wordDatabase = require(wordDataPath);
-const foodWords = wordDatabase.food;
+    loadNewNumbers() {
+        const data = fs.readFileSync(this.newNumbersPath, 'utf8');
+        return JSON.parse(data).numbers;
+    }
 
-console.log(`Loaded ${foodWords.length} food words`);
+    loadSitemap() {
+        return fs.readFileSync(this.sitemapPath, 'utf8');
+    }
 
-console.log('Reading sitemap.xml...');
-let sitemapContent = fs.readFileSync(sitemapPath, 'utf8');
+    generateWordUrl(word) {
+        // 转换为小写，替换空格为连字符
+        const wordSlug = word.toLowerCase().replace(/\s+/g, '-');
+        return `https://mzc0603.xyz/word/${wordSlug}`;
+    }
 
-console.log('Finding position to insert new food word URLs...');
-const urlsetEnd = sitemapContent.indexOf('</urlset>');
-
-if (urlsetEnd === -1) {
-    console.error('Could not find </urlset> in sitemap.xml');
-    process.exit(1);
-}
-
-console.log('Generating new food word URLs...');
-const today = new Date().toISOString().split('T')[0];
-const newUrls = foodWords.map(item => {
-    const wordSlug = item.word.toLowerCase().replace(/\s+/g, '-');
-    return `  <url>
-    <loc>https://mzc0603.xyz/word/${wordSlug}</loc>
-    <lastmod>${today}</lastmod>
+    generateUrlEntry(word) {
+        const url = this.generateWordUrl(word);
+        return `  <url>
+    <loc>${url}</loc>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>`;
-}).join('\n');
+    }
 
-console.log('Checking for existing food word URLs...');
-const existingFoodUrls = new Set();
-const urlRegex = /<loc>https:\/\/mzc0603\.xyz\/word\/([^<]+)<\/loc>/g;
-let match;
-while ((match = urlRegex.exec(sitemapContent)) !== null) {
-    existingFoodUrls.add(match[1]);
+    checkExistingUrls(sitemapContent, newUrls) {
+        const existingUrls = new Set();
+        const urlRegex = /<loc>(https:\/\/mzc0603\.xyz\/word\/[^<]+)<\/loc>/g;
+        let match;
+        while ((match = urlRegex.exec(sitemapContent)) !== null) {
+            existingUrls.add(match[1]);
+        }
+
+        return newUrls.filter(url => !existingUrls.has(url));
+    }
+
+    updateSitemap() {
+        try {
+            const words = this.loadNewNumbers();
+            const sitemapContent = this.loadSitemap();
+
+            // 生成新的URL条目
+            const newUrlEntries = [];
+            const newUrls = [];
+
+            for (const wordData of words) {
+                const url = this.generateWordUrl(wordData.word);
+                newUrls.push(url);
+                newUrlEntries.push(this.generateUrlEntry(wordData.word));
+            }
+
+            // 检查是否已存在
+            const existingUrls = new Set();
+            const urlRegex = /<loc>(https:\/\/mzc0603\.xyz\/word\/[^<]+)<\/loc>/g;
+            let urlMatch;
+            while ((urlMatch = urlRegex.exec(sitemapContent)) !== null) {
+                existingUrls.add(urlMatch[1]);
+            }
+
+            const uniqueUrlEntries = [];
+            for (let i = 0; i < newUrls.length; i++) {
+                if (!existingUrls.has(newUrls[i])) {
+                    uniqueUrlEntries.push(newUrlEntries[i]);
+                }
+            }
+
+            if (uniqueUrlEntries.length === 0) {
+                console.log('All word URLs already exist in sitemap.xml');
+                return;
+            }
+
+            // 找到合适的位置插入新链接（在数字分类链接之后）
+            const numbersCategoryRegex = /(<url>\s*<loc>https:\/\/mzc0603\.xyz\/category\/numbers\?page=2<\/loc>[\s\S]*?<\/url>)/;
+            const categoryMatch = sitemapContent.match(numbersCategoryRegex);
+
+            if (categoryMatch) {
+                const insertionPoint = categoryMatch.index + categoryMatch[0].length;
+                const newSitemapContent = 
+                    sitemapContent.substring(0, insertionPoint) + '\n' +
+                    uniqueUrlEntries.join('\n') + '\n' +
+                    sitemapContent.substring(insertionPoint);
+
+                fs.writeFileSync(this.sitemapPath, newSitemapContent);
+                console.log(`Added ${uniqueUrlEntries.length} new word URLs to sitemap.xml`);
+            } else {
+                console.error('Could not find numbers category in sitemap.xml');
+            }
+
+        } catch (error) {
+            console.error('Error updating sitemap:', error);
+        }
+    }
 }
 
-console.log(`Found ${existingFoodUrls.size} existing word URLs`);
-
-console.log('Filtering out existing URLs...');
-const uniqueNewUrls = foodWords.filter(item => {
-    const wordSlug = item.word.toLowerCase().replace(/\s+/g, '-');
-    return !existingFoodUrls.has(wordSlug);
-}).map(item => {
-    const wordSlug = item.word.toLowerCase().replace(/\s+/g, '-');
-    return `  <url>
-    <loc>https://mzc0603.xyz/word/${wordSlug}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>`;
-}).join('\n');
-
-if (uniqueNewUrls) {
-    console.log(`Adding ${uniqueNewUrls.split('\n').filter(line => line.trim()).length / 5} new food word URLs`);
-    const newSitemap = sitemapContent.substring(0, urlsetEnd) + '\n' + uniqueNewUrls + '\n' + sitemapContent.substring(urlsetEnd);
-    
-    console.log('Writing updated sitemap.xml...');
-    fs.writeFileSync(sitemapPath, newSitemap, 'utf8');
-    
-    console.log('Done! sitemap.xml has been updated.');
-} else {
-    console.log('No new food word URLs to add. All are already present.');
-}
+// 执行更新
+const updater = new SitemapUpdater();
+updater.updateSitemap();

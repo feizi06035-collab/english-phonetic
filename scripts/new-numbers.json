@@ -1,0 +1,184 @@
+{
+  "numbers": [
+    {
+      "word": "Octillion",
+      "phonetic": "/ɒkˈtɪljən/",
+      "homophone": "奥克提林",
+      "meaning": "千的九次方",
+      "sentence": "An octillion is a very large number.",
+      "translation": "千的九次方是一个非常大的数字。",
+      "homophoneSentence": "安奥克提林依兹啊歪瑞拉吉日安波."
+    },
+    {
+      "word": "Nonillion",
+      "phonetic": "/nəˈnɪljən/",
+      "homophone": "诺尼林",
+      "meaning": "千的十次方",
+      "sentence": "A nonillion is even larger than an octillion.",
+      "translation": "千的十次方比千的九次方还要大。",
+      "homophoneSentence": "啊诺尼林依兹依文拉吉日安则安奥克提林."
+    },
+    {
+      "word": "Decillion",
+      "phonetic": "/dɪˈsɪljən/",
+      "homophone": "迪西林",
+      "meaning": "千的十一次方",
+      "sentence": "A decillion is a 1 followed by 33 zeros.",
+      "translation": "千的十一次方是1后面跟着33个零。",
+      "homophoneSentence": "啊迪西林依兹啊万佛楼拜33泽柔兹."
+    },
+    {
+      "word": "Googol",
+      "phonetic": "/ˈɡuːɡɒl/",
+      "homophone": "古格尔",
+      "meaning": "10的100次方",
+      "sentence": "A googol is a 1 followed by 100 zeros.",
+      "translation": "古格尔是1后面跟着100个零。",
+      "homophoneSentence": "啊古格尔依兹啊万佛楼拜100泽柔兹."
+    },
+    {
+      "word": "Googolplex",
+      "phonetic": "/ˈɡuːɡɒlplex/",
+      "homophone": "古格尔普莱克斯",
+      "meaning": "10的古格尔次方",
+      "sentence": "A googolplex is an extremely large number.",
+      "translation": "古格尔普莱克斯是一个极其大的数字。",
+      "homophoneSentence": "啊古格尔普莱克斯依兹安伊克斯垂木利拉吉日安波."
+    },
+    {
+      "word": "Prime number",
+      "phonetic": "/praɪm ˈnʌmbə(r)/",
+      "homophone": "普莱姆南波",
+      "meaning": "质数",
+      "sentence": "Two is the only even prime number.",
+      "translation": "二是唯一的偶质数。",
+      "homophoneSentence": "图依兹则欧尼依文普莱姆南波."
+    },
+    {
+      "word": "Composite number",
+      "phonetic": "/ˈkɒmpəzɪt ˈnʌmbə(r)/",
+      "homophone": "康普泽特南波",
+      "meaning": "合数",
+      "sentence": "Four is a composite number.",
+      "translation": "四是一个合数。",
+      "homophoneSentence": "佛依兹啊康普泽特南波."
+    },
+    {
+      "word": "Even number",
+      "phonetic": "/ˈiːvn ˈnʌmbə(r)/",
+      "homophone": "依文南波",
+      "meaning": "偶数",
+      "sentence": "Six is an even number.",
+      "translation": "六是一个偶数。",
+      "homophoneSentence": "西克斯依兹安依文南波."
+    },
+    {
+      "word": "Odd number",
+      "phonetic": "/ɒd ˈnʌmbə(r)/",
+      "homophone": "奥德南波",
+      "meaning": "奇数",
+      "sentence": "Seven is an odd number.",
+      "translation": "七是一个奇数。",
+      "homophoneSentence": "赛文依兹安奥德南波."
+    },
+    {
+      "word": "Rational number",
+      "phonetic": "/ˈræʃnəl ˈnʌmbə(r)/",
+      "homophone": "拉申诺南波",
+      "meaning": "有理数",
+      "sentence": "A rational number can be expressed as a fraction.",
+      "translation": "有理数可以表示为分数。",
+      "homophoneSentence": "啊拉申诺南波坎比依克斯普雷斯特艾兹啊夫拉克申."
+    },
+    {
+      "word": "Irrational number",
+      "phonetic": "/ɪˈræʃnəl ˈnʌmbə(r)/",
+      "homophone": "伊拉申诺南波",
+      "meaning": "无理数",
+      "sentence": "Pi is an irrational number.",
+      "translation": "π是一个无理数。",
+      "homophoneSentence": "派依兹安伊拉申诺南波."
+    },
+    {
+      "word": "Real number",
+      "phonetic": "/riːl ˈnʌmbə(r)/",
+      "homophone": "瑞欧南波",
+      "meaning": "实数",
+      "sentence": "All rational and irrational numbers are real numbers.",
+      "translation": "所有有理数和无理数都是实数。",
+      "homophoneSentence": "奥拉申诺安伊拉申诺南波兹啊瑞欧南波兹."
+    },
+    {
+      "word": "Imaginary number",
+      "phonetic": "/ɪˈmædʒɪnəri ˈnʌmbə(r)/",
+      "homophone": "伊玛金诺南波",
+      "meaning": "虚数",
+      "sentence": "The square root of -1 is an imaginary number.",
+      "translation": "-1的平方根是一个虚数。",
+      "homophoneSentence": "则斯阔尔如特奥夫负万依兹安伊玛金诺南波."
+    },
+    {
+      "word": "Complex number",
+      "phonetic": "/ˈkɒmpleks ˈnʌmbə(r)/",
+      "homophone": "康普莱克斯南波",
+      "meaning": "复数",
+      "sentence": "A complex number has both real and imaginary parts.",
+      "translation": "复数同时具有实部和虚部。",
+      "homophoneSentence": "啊康普莱克斯南波海兹波思瑞欧安伊玛金诺帕茨."
+    },
+    {
+      "word": "Integer",
+      "phonetic": "/ˈɪntɪdʒə(r)/",
+      "homophone": "因特吉",
+      "meaning": "整数",
+      "sentence": "Five is an integer.",
+      "translation": "五是一个整数。",
+      "homophoneSentence": "法艾夫依兹安因特吉."
+    },
+    {
+      "word": "Fraction",
+      "phonetic": "/ˈfrækʃn/",
+      "homophone": "弗拉克申",
+      "meaning": "分数",
+      "sentence": "One half is a fraction.",
+      "translation": "二分之一是一个分数。",
+      "homophoneSentence": "万哈夫依兹啊弗拉克申."
+    },
+    {
+      "word": "Decimal",
+      "phonetic": "/ˈdesɪml/",
+      "homophone": "迪西莫",
+      "meaning": "小数",
+      "sentence": "3.14 is a decimal.",
+      "translation": "3.14是一个小数。",
+      "homophoneSentence": "斯瑞点依四依兹啊迪西莫."
+    },
+    {
+      "word": "Percentage",
+      "phonetic": "/pəˈsentɪdʒ/",
+      "homophone": "波森提奇",
+      "meaning": "百分比",
+      "sentence": "Fifty percentage means half.",
+      "translation": "百分之五十意味着一半。",
+      "homophoneSentence": "菲夫踢波森提奇明斯哈夫."
+    },
+    {
+      "word": "Proportion",
+      "phonetic": "/prəˈpɔːʃn/",
+      "homophone": "普罗波申",
+      "meaning": "比例",
+      "sentence": "The proportion of boys to girls is 2:1.",
+      "translation": "男孩与女孩的比例是2:1。",
+      "homophoneSentence": "则普罗波申奥夫波伊兹图格尔兹依兹图比万."
+    },
+    {
+      "word": "Ratio",
+      "phonetic": "/ˈreɪʃiəʊ/",
+      "homophone": "瑞修",
+      "meaning": "比率",
+      "sentence": "The ratio of water to milk is 3:1.",
+      "translation": "水与牛奶的比率是3:1。",
+      "homophoneSentence": "则瑞修奥夫沃特图米尔依兹斯瑞比万."
+    }
+  ]
+}
