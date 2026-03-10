@@ -1,0 +1,1453 @@
+{
+  "food": [
+    {
+      "word": "Orange",
+      "phonetic": "/ˈɒrɪndʒ/",
+      "homophone": "奥瑞恩奇",
+      "meaning": "橙子",
+      "sentence": "I like oranges.",
+      "translation": "我喜欢橙子。",
+      "homophoneSentence": "爱来克斯奥瑞恩奇兹."
+    },
+    {
+      "word": "Grape",
+      "phonetic": "/ɡreɪp/",
+      "homophone": "格雷普",
+      "meaning": "葡萄",
+      "sentence": "Grapes are sweet.",
+      "translation": "葡萄很甜。",
+      "homophoneSentence": "格雷普兹阿斯威特."
+    },
+    {
+      "word": "Strawberry",
+      "phonetic": "/ˈstrɔːbəri/",
+      "homophone": "斯特罗伯瑞",
+      "meaning": "草莓",
+      "sentence": "Strawberries are red.",
+      "translation": "草莓是红色的。",
+      "homophoneSentence": "斯特罗伯瑞兹阿瑞德."
+    },
+    {
+      "word": "Watermelon",
+      "phonetic": "/ˈwɔːtəmelən/",
+      "homophone": "沃特梅伦",
+      "meaning": "西瓜",
+      "sentence": "Watermelon is juicy.",
+      "translation": "西瓜很多汁。",
+      "homophoneSentence": "沃特梅伦is朱斯."
+    },
+    {
+      "word": "Pineapple",
+      "phonetic": "/ˈpaɪnæpl/",
+      "homophone": "派恩艾坡",
+      "meaning": "菠萝",
+      "sentence": "Pineapple is tropical.",
+      "translation": "菠萝是热带水果。",
+      "homophoneSentence": "派恩艾坡is特罗皮克尔."
+    },
+    {
+      "word": "Mango",
+      "phonetic": "/ˈmæŋɡəʊ/",
+      "homophone": "曼戈",
+      "meaning": "芒果",
+      "sentence": "Mango is delicious.",
+      "translation": "芒果很美味。",
+      "homophoneSentence": "曼戈is迪利舍斯."
+    },
+    {
+      "word": "Peach",
+      "phonetic": "/piːtʃ/",
+      "homophone": "皮奇",
+      "meaning": "桃子",
+      "sentence": "Peaches are fuzzy.",
+      "translation": "桃子有毛。",
+      "homophoneSentence": "皮奇兹阿法泽."
+    },
+    {
+      "word": "Cherry",
+      "phonetic": "/ˈtʃeri/",
+      "homophone": "切瑞",
+      "meaning": "樱桃",
+      "sentence": "Cherries are small.",
+      "translation": "樱桃很小。",
+      "homophoneSentence": "切瑞兹阿斯莫尔."
+    },
+    {
+      "word": "Lemon",
+      "phonetic": "/ˈlemən/",
+      "homophone": "莱蒙",
+      "meaning": "柠檬",
+      "sentence": "Lemon is sour.",
+      "translation": "柠檬很酸。",
+      "homophoneSentence": "莱蒙is绍厄."
+    },
+    {
+      "word": "Lime",
+      "phonetic": "/laɪm/",
+      "homophone": "莱姆",
+      "meaning": "青柠",
+      "sentence": "Lime is green.",
+      "translation": "青柠是绿色的。",
+      "homophoneSentence": "莱姆is格林."
+    },
+    {
+      "word": "Pear",
+      "phonetic": "/peə(r)/",
+      "homophone": "佩尔",
+      "meaning": "梨",
+      "sentence": "Pear is sweet.",
+      "translation": "梨很甜。",
+      "homophoneSentence": "佩尔is威特."
+    },
+    {
+      "word": "Plum",
+      "phonetic": "/plʌm/",
+      "homophone": "普拉姆",
+      "meaning": "李子",
+      "sentence": "Plum is purple.",
+      "translation": "李子是紫色的。",
+      "homophoneSentence": "普拉姆is珀普尔."
+    },
+    {
+      "word": "Kiwi",
+      "phonetic": "/ˈkiːwiː/",
+      "homophone": "基维",
+      "meaning": "猕猴桃",
+      "sentence": "Kiwi is fuzzy.",
+      "translation": "猕猴桃有毛。",
+      "homophoneSentence": "基维is法泽."
+    },
+    {
+      "word": "Papaya",
+      "phonetic": "/pəˈpaɪə/",
+      "homophone": "帕帕亚",
+      "meaning": "木瓜",
+      "sentence": "Papaya is healthy.",
+      "translation": "木瓜很健康。",
+      "homophoneSentence": "帕帕亚is海尔思."
+    },
+    {
+      "word": "Coconut",
+      "phonetic": "/ˈkəʊkənʌt/",
+      "homophone": "科科纳特",
+      "meaning": "椰子",
+      "sentence": "Coconut has milk.",
+      "translation": "椰子有椰奶。",
+      "homophoneSentence": "科科纳特哈兹米尔克."
+    },
+    {
+      "word": "Avocado",
+      "phonetic": "/ˌævəˈkɑːdəʊ/",
+      "homophone": "阿沃卡多",
+      "meaning": "牛油果",
+      "sentence": "Avocado is creamy.",
+      "translation": "牛油果很奶油。",
+      "homophoneSentence": "阿沃卡多is克里米."
+    },
+    {
+      "word": "Tomato",
+      "phonetic": "/təˈmɑːtəʊ/",
+      "homophone": "托马托",
+      "meaning": "番茄",
+      "sentence": "Tomato is red.",
+      "translation": "番茄是红色的。",
+      "homophoneSentence": "托马托is瑞德."
+    },
+    {
+      "word": "Potato",
+      "phonetic": "/pəˈteɪtəʊ/",
+      "homophone": "帕特托",
+      "meaning": "土豆",
+      "sentence": "Potato is a vegetable.",
+      "translation": "土豆是蔬菜。",
+      "homophoneSentence": "帕特托is啊维吉塔波尔."
+    },
+    {
+      "word": "Carrot",
+      "phonetic": "/ˈkærət/",
+      "homophone": "凯若特",
+      "meaning": "胡萝卜",
+      "sentence": "Carrot is orange.",
+      "translation": "胡萝卜是橙色的。",
+      "homophoneSentence": "凯若特is奥瑞恩奇."
+    },
+    {
+      "word": "Onion",
+      "phonetic": "/ˈʌnjən/",
+      "homophone": "安尼恩",
+      "meaning": "洋葱",
+      "sentence": "Onion makes me cry.",
+      "translation": "洋葱让我流泪。",
+      "homophoneSentence": "安尼恩梅克斯密克赖."
+    },
+    {
+      "word": "Garlic",
+      "phonetic": "/ˈɡɑːlɪk/",
+      "homophone": "加里克",
+      "meaning": "大蒜",
+      "sentence": "Garlic is strong.",
+      "translation": "大蒜很辣。",
+      "homophoneSentence": "加里克is斯特朗."
+    },
+    {
+      "word": "Ginger",
+      "phonetic": "/ˈdʒɪndʒə(r)/",
+      "homophone": "金哲",
+      "meaning": "生姜",
+      "sentence": "Ginger is spicy.",
+      "translation": "生姜很辣。",
+      "homophoneSentence": "金哲is斯派塞."
+    },
+    {
+      "word": "Cabbage",
+      "phonetic": "/ˈkæbɪdʒ/",
+      "homophone": "凯比奇",
+      "meaning": "卷心菜",
+      "sentence": "Cabbage is green.",
+      "translation": "卷心菜是绿色的。",
+      "homophoneSentence": "凯比奇is格林."
+    },
+    {
+      "word": "Broccoli",
+      "phonetic": "/ˈbrɒkəli/",
+      "homophone": "布罗科利",
+      "meaning": "西兰花",
+      "sentence": "Broccoli is healthy.",
+      "translation": "西兰花很健康。",
+      "homophoneSentence": "布罗科利is海尔思."
+    },
+    {
+      "word": "Spinach",
+      "phonetic": "/ˈspɪnɪdʒ/",
+      "homophone": "斯皮尼奇",
+      "meaning": "菠菜",
+      "sentence": "Spinach has iron.",
+      "translation": "菠菜含铁。",
+      "homophoneSentence": "斯皮尼奇哈兹艾恩."
+    },
+    {
+      "word": "Lettuce",
+      "phonetic": "/ˈletɪs/",
+      "homophone": "莱蒂斯",
+      "meaning": "生菜",
+      "sentence": "Lettuce is crispy.",
+      "translation": "生菜很脆。",
+      "homophoneSentence": "莱蒂斯is克里斯佩."
+    },
+    {
+      "word": "Cucumber",
+      "phonetic": "/ˈkjuːkʌmbə(r)/",
+      "homophone": "库坎伯",
+      "meaning": "黄瓜",
+      "sentence": "Cucumber is cool.",
+      "translation": "黄瓜很凉。",
+      "homophoneSentence": "库坎伯is库尔."
+    },
+    {
+      "word": "Pepper",
+      "phonetic": "/ˈpepə(r)/",
+      "homophone": "佩珀",
+      "meaning": "辣椒",
+      "sentence": "Pepper is hot.",
+      "translation": "辣椒很辣。",
+      "homophoneSentence": "佩珀is浩特."
+    },
+    {
+      "word": "Eggplant",
+      "phonetic": "/ˈeɡplɑːnt/",
+      "homophone": "艾格普兰特",
+      "meaning": "茄子",
+      "sentence": "Eggplant is purple.",
+      "translation": "茄子是紫色的。",
+      "homophoneSentence": "艾格普兰特is珀普尔."
+    },
+    {
+      "word": "Pumpkin",
+      "phonetic": "/ˈpʌmpkɪn/",
+      "homophone": "帕姆普金",
+      "meaning": "南瓜",
+      "sentence": "Pumpkin is orange.",
+      "translation": "南瓜是橙色的。",
+      "homophoneSentence": "帕姆普金is奥瑞恩奇."
+    },
+    {
+      "word": "Corn",
+      "phonetic": "/kɔːn/",
+      "homophone": "科恩",
+      "meaning": "玉米",
+      "sentence": "Corn is yellow.",
+      "translation": "玉米是黄色的。",
+      "homophoneSentence": "科恩is耶洛."
+    },
+    {
+      "word": "Peas",
+      "phonetic": "/piːz/",
+      "homophone": "皮兹",
+      "meaning": "豌豆",
+      "sentence": "Peas are green.",
+      "translation": "豌豆是绿色的。",
+      "homophoneSentence": "皮兹阿格林."
+    },
+    {
+      "word": "Beans",
+      "phonetic": "/biːnz/",
+      "homophone": "宾兹",
+      "meaning": "豆子",
+      "sentence": "Beans are healthy.",
+      "translation": "豆子很健康。",
+      "homophoneSentence": "宾兹阿海尔思."
+    },
+    {
+      "word": "Mushroom",
+      "phonetic": "/ˈmʌʃrum/",
+      "homophone": "马什鲁姆",
+      "meaning": "蘑菇",
+      "sentence": "Mushroom is soft.",
+      "translation": "蘑菇很软。",
+      "homophoneSentence": "马什鲁姆is索夫特."
+    },
+    {
+      "word": "Chicken",
+      "phonetic": "/ˈtʃɪkɪn/",
+      "homophone": "奇肯",
+      "meaning": "鸡肉",
+      "sentence": "Chicken is popular.",
+      "translation": "鸡肉很受欢迎。",
+      "homophoneSentence": "奇肯is帕皮尤勒."
+    },
+    {
+      "word": "Beef",
+      "phonetic": "/biːf/",
+      "homophone": "比夫",
+      "meaning": "牛肉",
+      "sentence": "Beef is tasty.",
+      "translation": "牛肉很好吃。",
+      "homophoneSentence": "比夫is泰斯特."
+    },
+    {
+      "word": "Pork",
+      "phonetic": "/pɔːk/",
+      "homophone": "波克",
+      "meaning": "猪肉",
+      "sentence": "Pork is common.",
+      "translation": "猪肉很常见。",
+      "homophoneSentence": "波克is卡蒙."
+    },
+    {
+      "word": "Lamb",
+      "phonetic": "/læm/",
+      "homophone": "拉姆",
+      "meaning": "羊肉",
+      "sentence": "Lamb is tender.",
+      "translation": "羊肉很嫩。",
+      "homophoneSentence": "拉姆is滕德."
+    },
+    {
+      "word": "Fish",
+      "phonetic": "/fɪʃ/",
+      "homophone": "菲什",
+      "meaning": "鱼",
+      "sentence": "Fish is healthy.",
+      "translation": "鱼很健康。",
+      "homophoneSentence": "菲什is海尔思."
+    },
+    {
+      "word": "Shrimp",
+      "phonetic": "/ʃrɪmp/",
+      "homophone": "什里姆普",
+      "meaning": "虾",
+      "sentence": "Shrimp is delicious.",
+      "translation": "虾很美味。",
+      "homophoneSentence": "什里姆普is迪利舍斯."
+    },
+    {
+      "word": "Crab",
+      "phonetic": "/kræb/",
+      "homophone": "克拉布",
+      "meaning": "螃蟹",
+      "sentence": "Crab has shell.",
+      "translation": "螃蟹有壳。",
+      "homophoneSentence": "克拉布哈兹谢尔."
+    },
+    {
+      "word": "Lobster",
+      "phonetic": "/ˈlɒbstə(r)/",
+      "homophone": "洛布斯特",
+      "meaning": "龙虾",
+      "sentence": "Lobster is expensive.",
+      "translation": "龙虾很贵。",
+      "homophoneSentence": "洛布斯特is伊克斯彭西夫."
+    },
+    {
+      "word": "Salmon",
+      "phonetic": "/ˈsæmən/",
+      "homophone": "萨蒙",
+      "meaning": "三文鱼",
+      "sentence": "Salmon is pink.",
+      "translation": "三文鱼是粉色的。",
+      "homophoneSentence": "萨蒙is平克."
+    },
+    {
+      "word": "Tuna",
+      "phonetic": "/ˈtuːnə/",
+      "homophone": "图纳",
+      "meaning": "金枪鱼",
+      "sentence": "Tuna is canned.",
+      "translation": "金枪鱼是罐装的。",
+      "homophoneSentence": "图纳is坎德."
+    },
+    {
+      "word": "Squid",
+      "phonetic": "/skwɪd/",
+      "homophone": "斯奎德",
+      "meaning": "鱿鱼",
+      "sentence": "Squid is chewy.",
+      "translation": "鱿鱼很有嚼劲。",
+      "homophoneSentence": "斯奎德is丘."
+    },
+    {
+      "word": "Octopus",
+      "phonetic": "/ˈɒktəpəs/",
+      "homophone": "奥克托普斯",
+      "meaning": "章鱼",
+      "sentence": "Octopus has tentacles.",
+      "translation": "章鱼有触手。",
+      "homophoneSentence": "奥克托普斯哈兹坦塔克尔兹."
+    },
+    {
+      "word": "Cheese",
+      "phonetic": "/tʃiːz/",
+      "homophone": "奇兹",
+      "meaning": "奶酪",
+      "sentence": "Cheese is yellow.",
+      "translation": "奶酪是黄色的。",
+      "homophoneSentence": "奇兹is耶洛."
+    },
+    {
+      "word": "Butter",
+      "phonetic": "/ˈbʌtə(r)/",
+      "homophone": "巴特",
+      "meaning": "黄油",
+      "sentence": "Butter is soft.",
+      "translation": "黄油很软。",
+      "homophoneSentence": "巴特is索夫特."
+    },
+    {
+      "word": "Cream",
+      "phonetic": "/kriːm/",
+      "homophone": "克里姆",
+      "meaning": "奶油",
+      "sentence": "Cream is rich.",
+      "translation": "奶油很浓郁。",
+      "homophoneSentence": "克里姆is里奇."
+    },
+    {
+      "word": "Yogurt",
+      "phonetic": "/ˈjɒɡət/",
+      "homophone": "约格特",
+      "meaning": "酸奶",
+      "sentence": "Yogurt is healthy.",
+      "translation": "酸奶很健康。",
+      "homophoneSentence": "约格特is海尔思."
+    },
+    {
+      "word": "Ice cream",
+      "phonetic": "/aɪs kriːm/",
+      "homophone": "艾斯克里姆",
+      "meaning": "冰淇淋",
+      "sentence": "Ice cream is cold.",
+      "translation": "冰淇淋很冷。",
+      "homophoneSentence": "艾斯克里姆is扣尔德."
+    },
+    {
+      "word": "Cake",
+      "phonetic": "/keɪk/",
+      "homophone": "凯克",
+      "meaning": "蛋糕",
+      "sentence": "Cake is sweet.",
+      "translation": "蛋糕很甜。",
+      "homophoneSentence": "凯克is威特."
+    },
+    {
+      "word": "Cookie",
+      "phonetic": "/ˈkʊki/",
+      "homophone": "库奇",
+      "meaning": "饼干",
+      "sentence": "Cookie is crunchy.",
+      "translation": "饼干很脆。",
+      "homophoneSentence": "库奇is克兰奇."
+    },
+    {
+      "word": "Chocolate",
+      "phonetic": "/ˈtʃɒklət/",
+      "homophone": "乔克利特",
+      "meaning": "巧克力",
+      "sentence": "Chocolate is sweet.",
+      "translation": "巧克力很甜。",
+      "homophoneSentence": "乔克利特is威特."
+    },
+    {
+      "word": "Candy",
+      "phonetic": "/ˈkændi/",
+      "homophone": "坎迪",
+      "meaning": "糖果",
+      "sentence": "Candy is sugary.",
+      "translation": "糖果很甜。",
+      "homophoneSentence": "坎迪is舒格里."
+    },
+    {
+      "word": "Honey",
+      "phonetic": "/ˈhʌni/",
+      "homophone": "哈尼",
+      "meaning": "蜂蜜",
+      "sentence": "Honey is sweet.",
+      "translation": "蜂蜜很甜。",
+      "homophoneSentence": "哈尼is威特."
+    },
+    {
+      "word": "Sugar",
+      "phonetic": "/ˈʃʊɡə(r)/",
+      "homophone": "舒格",
+      "meaning": "糖",
+      "sentence": "Sugar is white.",
+      "translation": "糖是白色的。",
+      "homophoneSentence": "舒格is怀特."
+    },
+    {
+      "word": "Salt",
+      "phonetic": "/sɔːlt/",
+      "homophone": "索尔特",
+      "meaning": "盐",
+      "sentence": "Salt is salty.",
+      "translation": "盐是咸的。",
+      "homophoneSentence": "索尔特is索尔蒂."
+    },
+    {
+      "word": "Pepper",
+      "phonetic": "/ˈpepə(r)/",
+      "homophone": "佩珀",
+      "meaning": "胡椒",
+      "sentence": "Pepper is spicy.",
+      "translation": "胡椒很辣。",
+      "homophoneSentence": "佩珀is斯派塞."
+    },
+    {
+      "word": "Ketchup",
+      "phonetic": "/ˈketʃəp/",
+      "homophone": "凯查普",
+      "meaning": "番茄酱",
+      "sentence": "Ketchup is red.",
+      "translation": "番茄酱是红色的。",
+      "homophoneSentence": "凯查普is瑞德."
+    },
+    {
+      "word": "Mustard",
+      "phonetic": "/ˈmʌstəd/",
+      "homophone": "马斯塔德",
+      "meaning": "芥末",
+      "sentence": "Mustard is yellow.",
+      "translation": "芥末是黄色的。",
+      "homophoneSentence": "马斯塔德is耶洛."
+    },
+    {
+      "word": "Mayonnaise",
+      "phonetic": "/ˌmeɪəˈneɪz/",
+      "homophone": "梅奥内兹",
+      "meaning": "蛋黄酱",
+      "sentence": "Mayonnaise is creamy.",
+      "translation": "蛋黄酱很奶油。",
+      "homophoneSentence": "梅奥内兹is克里米."
+    },
+    {
+      "word": "Vinegar",
+      "phonetic": "/ˈvɪnɪɡə(r)/",
+      "homophone": "维尼格",
+      "meaning": "醋",
+      "sentence": "Vinegar is sour.",
+      "translation": "醋很酸。",
+      "homophoneSentence": "维尼格is绍厄."
+    },
+    {
+      "word": "Oil",
+      "phonetic": "/ɔɪl/",
+      "homophone": "奥伊尔",
+      "meaning": "油",
+      "sentence": "Oil is liquid.",
+      "translation": "油是液体。",
+      "homophoneSentence": "奥伊尔is利奎德."
+    },
+    {
+      "word": "Flour",
+      "phonetic": "/ˈflaʊə(r)/",
+      "homophone": "弗劳尔",
+      "meaning": "面粉",
+      "sentence": "Flour is white.",
+      "translation": "面粉是白色的。",
+      "homophoneSentence": "弗劳尔is怀特."
+    },
+    {
+      "word": "Rice",
+      "phonetic": "/raɪs/",
+      "homophone": "莱斯",
+      "meaning": "米饭",
+      "sentence": "Rice is a staple.",
+      "translation": "米饭是主食。",
+      "homophoneSentence": "莱斯is啊斯泰普尔."
+    },
+    {
+      "word": "Noodle",
+      "phonetic": "/ˈnuːdl/",
+      "homophone": "努德尔",
+      "meaning": "面条",
+      "sentence": "Noodle is long.",
+      "translation": "面条很长。",
+      "homophoneSentence": "努德尔is朗."
+    },
+    {
+      "word": "Pasta",
+      "phonetic": "/ˈpæstə/",
+      "homophone": "帕斯塔",
+      "meaning": "意大利面",
+      "sentence": "Pasta is Italian.",
+      "translation": "意大利面是意大利的。",
+      "homophoneSentence": "帕斯塔is伊塔利恩."
+    },
+    {
+      "word": "Pizza",
+      "phonetic": "/ˈpiːtsə/",
+      "homophone": "皮萨",
+      "meaning": "披萨",
+      "sentence": "Pizza is popular.",
+      "translation": "披萨很受欢迎。",
+      "homophoneSentence": "皮萨is帕皮尤勒."
+    },
+    {
+      "word": "Burger",
+      "phonetic": "/ˈbɜːɡə(r)/",
+      "homophone": "伯格",
+      "meaning": "汉堡",
+      "sentence": "Burger is tasty.",
+      "translation": "汉堡很好吃。",
+      "homophoneSentence": "伯格is泰斯特."
+    },
+    {
+      "word": "Sandwich",
+      "phonetic": "/ˈsænwɪdʒ/",
+      "homophone": "桑威奇",
+      "meaning": "三明治",
+      "sentence": "Sandwich is easy.",
+      "translation": "三明治很方便。",
+      "homophoneSentence": "桑威奇is伊泽."
+    },
+    {
+      "word": "Salad",
+      "phonetic": "/ˈsæləd/",
+      "homophone": "萨拉德",
+      "meaning": "沙拉",
+      "sentence": "Salad is fresh.",
+      "translation": "沙拉很新鲜。",
+      "homophoneSentence": "萨拉德is弗瑞什."
+    },
+    {
+      "word": "Soup",
+      "phonetic": "/suːp/",
+      "homophone": "苏普",
+      "meaning": "汤",
+      "sentence": "Soup is hot.",
+      "translation": "汤很热。",
+      "homophoneSentence": "苏普is浩特."
+    },
+    {
+      "word": "Stew",
+      "phonetic": "/stjuː/",
+      "homophone": "斯图",
+      "meaning": "炖菜",
+      "sentence": "Stew is thick.",
+      "translation": "炖菜很浓。",
+      "homophoneSentence": "斯图is斯克."
+    },
+    {
+      "word": "Roast",
+      "phonetic": "/rəʊst/",
+      "homophone": "罗斯特",
+      "meaning": "烤肉",
+      "sentence": "Roast is delicious.",
+      "translation": "烤肉很美味。",
+      "homophoneSentence": "罗斯特is迪利舍斯."
+    },
+    {
+      "word": "Grill",
+      "phonetic": "/ɡrɪl/",
+      "homophone": "格里尔",
+      "meaning": "烧烤",
+      "sentence": "Grill is smoky.",
+      "translation": "烧烤很香。",
+      "homophoneSentence": "格里尔is斯莫基."
+    },
+    {
+      "word": "Fry",
+      "phonetic": "/fraɪ/",
+      "homophone": "弗莱",
+      "meaning": "油炸",
+      "sentence": "Fry is crispy.",
+      "translation": "油炸很脆。",
+      "homophoneSentence": "弗莱is克里斯佩."
+    },
+    {
+      "word": "Bake",
+      "phonetic": "/beɪk/",
+      "homophone": "贝克",
+      "meaning": "烘焙",
+      "sentence": "Bake is warm.",
+      "translation": "烘焙很温暖。",
+      "homophoneSentence": "贝克is沃姆."
+    },
+    {
+      "word": "Boil",
+      "phonetic": "/bɔɪl/",
+      "homophone": "博伊尔",
+      "meaning": "煮",
+      "sentence": "Boil is simple.",
+      "translation": "煮很简单。",
+      "homophoneSentence": "博伊尔is辛普尔."
+    },
+    {
+      "word": "Steam",
+      "phonetic": "/stiːm/",
+      "homophone": "斯蒂姆",
+      "meaning": "蒸",
+      "sentence": "Steam is healthy.",
+      "translation": "蒸很健康。",
+      "homophoneSentence": "斯蒂姆is海尔思."
+    },
+    {
+      "word": "Coffee",
+      "phonetic": "/ˈkɒfi/",
+      "homophone": "科菲",
+      "meaning": "咖啡",
+      "sentence": "Coffee is bitter.",
+      "translation": "咖啡很苦。",
+      "homophoneSentence": "科菲is比特."
+    },
+    {
+      "word": "Tea",
+      "phonetic": "/tiː/",
+      "homophone": "蒂",
+      "meaning": "茶",
+      "sentence": "Tea is relaxing.",
+      "translation": "茶很放松。",
+      "homophoneSentence": "蒂is瑞莱克辛."
+    },
+    {
+      "word": "Juice",
+      "phonetic": "/dʒuːs/",
+      "homophone": "朱斯",
+      "meaning": "果汁",
+      "sentence": "Juice is sweet.",
+      "translation": "果汁很甜。",
+      "homophoneSentence": "朱斯is威特."
+    },
+    {
+      "word": "Soda",
+      "phonetic": "/ˈsəʊdə/",
+      "homophone": "索达",
+      "meaning": "汽水",
+      "sentence": "Soda is bubbly.",
+      "translation": "汽水有气泡。",
+      "homophoneSentence": "索达is巴布里."
+    },
+    {
+      "word": "Beer",
+      "phonetic": "/bɪə(r)/",
+      "homophone": "比尔",
+      "meaning": "啤酒",
+      "sentence": "Beer is cold.",
+      "translation": "啤酒很冷。",
+      "homophoneSentence": "比尔is扣尔德."
+    },
+    {
+      "word": "Wine",
+      "phonetic": "/waɪn/",
+      "homophone": "瓦恩",
+      "meaning": "葡萄酒",
+      "sentence": "Wine is red.",
+      "translation": "葡萄酒是红色的。",
+      "homophoneSentence": "瓦恩is瑞德."
+    },
+    {
+      "word": "Whiskey",
+      "phonetic": "/ˈwɪski/",
+      "homophone": "威斯基",
+      "meaning": "威士忌",
+      "sentence": "Whiskey is strong.",
+      "translation": "威士忌很烈。",
+      "homophoneSentence": "威斯基is斯特朗."
+    },
+    {
+      "word": "Vodka",
+      "phonetic": "/ˈvɒdkə/",
+      "homophone": "沃德卡",
+      "meaning": "伏特加",
+      "sentence": "Vodka is clear.",
+      "translation": "伏特加很清澈。",
+      "homophoneSentence": "沃德卡is克利尔."
+    },
+    {
+      "word": "Rum",
+      "phonetic": "/rʌm/",
+      "homophone": "拉姆",
+      "meaning": "朗姆酒",
+      "sentence": "Rum is sweet.",
+      "translation": "朗姆酒很甜。",
+      "homophoneSentence": "拉姆is威特."
+    },
+    {
+      "word": "Gin",
+      "phonetic": "/dʒɪn/",
+      "homophone": "金",
+      "meaning": "金酒",
+      "sentence": "Gin is botanical.",
+      "translation": "金酒有植物味。",
+      "homophoneSentence": "金is博塔尼克尔."
+    },
+    {
+      "word": "Brandy",
+      "phonetic": "/ˈbrændi/",
+      "homophone": "布兰迪",
+      "meaning": "白兰地",
+      "sentence": "Brandy is aged.",
+      "translation": "白兰地是陈年的。",
+      "homophoneSentence": "布兰迪is艾吉德."
+    },
+    {
+      "word": "Champagne",
+      "phonetic": "/ʃæmˈpeɪn/",
+      "homophone": "香槟",
+      "meaning": "香槟",
+      "sentence": "Champagne is bubbly.",
+      "translation": "香槟有气泡。",
+      "homophoneSentence": "香槟is巴布里."
+    },
+    {
+      "word": "Cocktail",
+      "phonetic": "/ˈkɒkteɪl/",
+      "homophone": "科克泰尔",
+      "meaning": "鸡尾酒",
+      "sentence": "Cocktail is mixed.",
+      "translation": "鸡尾酒是混合的。",
+      "homophoneSentence": "科克泰尔is米克斯特."
+    },
+    {
+      "word": "Smoothie",
+      "phonetic": "/ˈsmuːði/",
+      "homophone": "斯穆西",
+      "meaning": "冰沙",
+      "sentence": "Smoothie is thick.",
+      "translation": "冰沙很浓。",
+      "homophoneSentence": "斯穆西is斯克."
+    },
+    {
+      "word": "Milkshake",
+      "phonetic": "/ˈmɪlkʃeɪk/",
+      "homophone": "米尔克谢克",
+      "meaning": "奶昔",
+      "sentence": "Milkshake is creamy.",
+      "translation": "奶昔很奶油。",
+      "homophoneSentence": "米尔克谢克is克里米."
+    },
+    {
+      "word": "Lemonade",
+      "phonetic": "/ˌleməˈneɪd/",
+      "homophone": "莱蒙内德",
+      "meaning": "柠檬水",
+      "sentence": "Lemonade is sour.",
+      "translation": "柠檬水很酸。",
+      "homophoneSentence": "莱蒙内德is绍厄."
+    },
+    {
+      "word": "Hot chocolate",
+      "phonetic": "/hɒt ˈtʃɒklət/",
+      "homophone": "浩特乔克利特",
+      "meaning": "热巧克力",
+      "sentence": "Hot chocolate is warm.",
+      "translation": "热巧克力很温暖。",
+      "homophoneSentence": "浩特乔克利特is沃姆."
+    },
+    {
+      "word": "Cappuccino",
+      "phonetic": "/ˌkæpəˈtʃiːnəʊ/",
+      "homophone": "卡普奇诺",
+      "meaning": "卡布奇诺",
+      "sentence": "Cappuccino is foamy.",
+      "translation": "卡布奇诺有泡沫。",
+      "homophoneSentence": "卡普奇诺is弗米."
+    },
+    {
+      "word": "Espresso",
+      "phonetic": "/eˈspresəʊ/",
+      "homophone": "埃斯普雷索",
+      "meaning": "浓缩咖啡",
+      "sentence": "Espresso is strong.",
+      "translation": "浓缩咖啡很烈。",
+      "homophoneSentence": "埃斯普雷索is斯特朗."
+    },
+    {
+      "word": "Latte",
+      "phonetic": "/ˈlæteɪ/",
+      "homophone": "拉泰",
+      "meaning": "拿铁",
+      "sentence": "Latte is milky.",
+      "translation": "拿铁有奶。",
+      "homophoneSentence": "拉泰is米尔克."
+    },
+    {
+      "word": "Mocha",
+      "phonetic": "/ˈmɒkə/",
+      "homophone": "莫卡",
+      "meaning": "摩卡",
+      "sentence": "Mocha is chocolatey.",
+      "translation": "摩卡有巧克力味。",
+      "homophoneSentence": "莫卡is乔克利特."
+    },
+    {
+      "word": "Green tea",
+      "phonetic": "/ɡriːn tiː/",
+      "homophone": "格林蒂",
+      "meaning": "绿茶",
+      "sentence": "Green tea is healthy.",
+      "translation": "绿茶很健康。",
+      "homophoneSentence": "格林蒂is海尔思."
+    },
+    {
+      "word": "Black tea",
+      "phonetic": "/blæk tiː/",
+      "homophone": "布莱克蒂",
+      "meaning": "红茶",
+      "sentence": "Black tea is common.",
+      "translation": "红茶很常见。",
+      "homophoneSentence": "布莱克蒂is卡蒙."
+    },
+    {
+      "word": "Herbal tea",
+      "phonetic": "/ˈhɜːbl tiː/",
+      "homophone": "赫巴尔蒂",
+      "meaning": "花草茶",
+      "sentence": "Herbal tea is natural.",
+      "translation": "花草茶很天然。",
+      "homophoneSentence": "赫巴尔蒂is纳彻尔."
+    },
+    {
+      "word": "Fruit tea",
+      "phonetic": "/fruːt tiː/",
+      "homophone": "弗鲁特蒂",
+      "meaning": "水果茶",
+      "sentence": "Fruit tea is sweet.",
+      "translation": "水果茶很甜。",
+      "homophoneSentence": "弗鲁特蒂is威特."
+    },
+    {
+      "word": "Oolong tea",
+      "phonetic": "/ˈuːlɒŋ tiː/",
+      "homophone": "乌龙蒂",
+      "meaning": "乌龙茶",
+      "sentence": "Oolong tea is Chinese.",
+      "translation": "乌龙茶是中国的。",
+      "homophoneSentence": "乌龙蒂is恰尼斯."
+    },
+    {
+      "word": "Puer tea",
+      "phonetic": "/puˈɜːr tiː/",
+      "homophone": "普洱蒂",
+      "meaning": "普洱茶",
+      "sentence": "Puer tea is aged.",
+      "translation": "普洱茶是陈年的。",
+      "homophoneSentence": "普洱蒂is艾吉德."
+    },
+    {
+      "word": "White tea",
+      "phonetic": "/waɪt tiː/",
+      "homophone": "怀特蒂",
+      "meaning": "白茶",
+      "sentence": "White tea is delicate.",
+      "translation": "白茶很精致。",
+      "homophoneSentence": "怀特蒂is迪利凯特."
+    },
+    {
+      "word": "Matcha",
+      "phonetic": "/ˈmætʃə/",
+      "homophone": "抹茶",
+      "meaning": "抹茶",
+      "sentence": "Matcha is green.",
+      "translation": "抹茶是绿色的。",
+      "homophoneSentence": "抹茶is格林."
+    },
+    {
+      "word": "Chai",
+      "phonetic": "/tʃaɪ/",
+      "homophone": " chai ",
+      "meaning": "印度奶茶",
+      "sentence": "Chai is spiced.",
+      "translation": "印度奶茶有香料。",
+      "homophoneSentence": " chai is斯派斯."
+    },
+    {
+      "word": "Mint tea",
+      "phonetic": "/mɪnt tiː/",
+      "homophone": "明蒂",
+      "meaning": "薄荷茶",
+      "sentence": "Mint tea is refreshing.",
+      "translation": "薄荷茶很提神。",
+      "homophoneSentence": "明蒂is瑞弗雷兴."
+    },
+    {
+      "word": "Lavender tea",
+      "phonetic": "/ˈlævəndə tiː/",
+      "homophone": "拉文德蒂",
+      "meaning": "薰衣草茶",
+      "sentence": "Lavender tea is calming.",
+      "translation": "薰衣草茶很平静。",
+      "homophoneSentence": "拉文德蒂is卡明."
+    },
+    {
+      "word": "Rooibos tea",
+      "phonetic": "/ˈrɔɪbɒs tiː/",
+      "homophone": "鲁伊博斯蒂",
+      "meaning": "路易波士茶",
+      "sentence": "Rooibos tea is caffeine-free.",
+      "translation": "路易波士茶不含咖啡因。",
+      "homophoneSentence": "鲁伊博斯蒂is卡夫因弗里."
+    },
+    {
+      "word": "Chamomile tea",
+      "phonetic": "/ˈkæməmaɪl tiː/",
+      "homophone": "卡梅麦尔蒂",
+      "meaning": "洋甘菊茶",
+      "sentence": "Chamomile tea is soothing.",
+      "translation": "洋甘菊茶很舒缓。",
+      "homophoneSentence": "卡梅麦尔蒂is苏兴."
+    },
+    {
+      "word": "Ginger tea",
+      "phonetic": "/ˈdʒɪndʒə tiː/",
+      "homophone": "金哲蒂",
+      "meaning": "姜茶",
+      "sentence": "Ginger tea is warming.",
+      "translation": "姜茶很温暖。",
+      "homophoneSentence": "金哲蒂is沃明."
+    },
+    {
+      "word": "Hibiscus tea",
+      "phonetic": "/hɪˈbɪskəs tiː/",
+      "homophone": "希比斯科斯蒂",
+      "meaning": "芙蓉茶",
+      "sentence": "Hibiscus tea is red.",
+      "translation": "芙蓉茶是红色的。",
+      "homophoneSentence": "希比斯科斯蒂is瑞德."
+    },
+    {
+      "word": "Jasmine tea",
+      "phonetic": "/ˈdʒæzmɪn tiː/",
+      "homophone": "杰斯敏蒂",
+      "meaning": "茉莉花茶",
+      "sentence": "Jasmine tea is fragrant.",
+      "translation": "茉莉花茶很香。",
+      "homophoneSentence": "杰斯敏蒂is弗雷格兰特."
+    },
+    {
+      "word": "Rose tea",
+      "phonetic": "/rəʊz tiː/",
+      "homophone": "罗斯蒂",
+      "meaning": "玫瑰茶",
+      "sentence": "Rose tea is floral.",
+      "translation": "玫瑰茶有花香。",
+      "homophoneSentence": "罗斯蒂is弗洛尔."
+    },
+    {
+      "word": "Blackberry",
+      "phonetic": "/ˈblækbəri/",
+      "homophone": "布莱克伯瑞",
+      "meaning": "黑莓",
+      "sentence": "Blackberry is dark.",
+      "translation": "黑莓是深色的。",
+      "homophoneSentence": "布莱克伯瑞is达克."
+    },
+    {
+      "word": "Blueberry",
+      "phonetic": "/ˈbluːbəri/",
+      "homophone": "布鲁伯瑞",
+      "meaning": "蓝莓",
+      "sentence": "Blueberry is blue.",
+      "translation": "蓝莓是蓝色的。",
+      "homophoneSentence": "布鲁伯瑞is布鲁."
+    },
+    {
+      "word": "Raspberry",
+      "phonetic": "/ˈrɑːzberi/",
+      "homophone": "拉斯伯瑞",
+      "meaning": "树莓",
+      "sentence": "Raspberry is red.",
+      "translation": "树莓是红色的。",
+      "homophoneSentence": "拉斯伯瑞is瑞德."
+    },
+    {
+      "word": "Cranberry",
+      "phonetic": "/ˈkrænbəri/",
+      "homophone": "克兰伯瑞",
+      "meaning": "蔓越莓",
+      "sentence": "Cranberry is tart.",
+      "translation": "蔓越莓很酸。",
+      "homophoneSentence": "克兰伯瑞is塔特."
+    },
+    {
+      "word": "Gooseberry",
+      "phonetic": "/ˈɡuːzbəri/",
+      "homophone": "古斯伯瑞",
+      "meaning": "醋栗",
+      "sentence": "Gooseberry is sour.",
+      "translation": "醋栗很酸。",
+      "homophoneSentence": "古斯伯瑞is绍厄."
+    },
+    {
+      "word": "Currant",
+      "phonetic": "/ˈkʌrənt/",
+      "homophone": "柯伦特",
+      "meaning": "醋栗",
+      "sentence": "Currant is small.",
+      "translation": "醋栗很小。",
+      "homophoneSentence": "柯伦特is斯莫尔."
+    },
+    {
+      "word": "Fig",
+      "phonetic": "/fɪɡ/",
+      "homophone": "菲格",
+      "meaning": "无花果",
+      "sentence": "Fig is sweet.",
+      "translation": "无花果很甜。",
+      "homophoneSentence": "菲格is威特."
+    },
+    {
+      "word": "Date",
+      "phonetic": "/deɪt/",
+      "homophone": "戴特",
+      "meaning": "枣",
+      "sentence": "Date is chewy.",
+      "translation": "枣很有嚼劲。",
+      "homophoneSentence": "戴特is丘."
+    },
+    {
+      "word": "Prune",
+      "phonetic": "/pruːn/",
+      "homophone": "普鲁恩",
+      "meaning": "李子干",
+      "sentence": "Prune is dried.",
+      "translation": "李子干是干的。",
+      "homophoneSentence": "普鲁恩is德赖德."
+    },
+    {
+      "word": "Raisin",
+      "phonetic": "/ˈreɪzn/",
+      "homophone": "瑞森",
+      "meaning": "葡萄干",
+      "sentence": "Raisin is sweet.",
+      "translation": "葡萄干很甜。",
+      "homophoneSentence": "瑞森is威特."
+    },
+    {
+      "word": "Apricot",
+      "phonetic": "/ˈeɪprɪkɒt/",
+      "homophone": "艾普里科特",
+      "meaning": "杏",
+      "sentence": "Apricot is orange.",
+      "translation": "杏是橙色的。",
+      "homophoneSentence": "艾普里科特is奥瑞恩奇."
+    },
+    {
+      "word": "Nectarine",
+      "phonetic": "/ˈnektəriːn/",
+      "homophone": "内克塔林",
+      "meaning": "油桃",
+      "sentence": "Nectarine is smooth.",
+      "translation": "油桃很光滑。",
+      "homophoneSentence": "内克塔林is斯穆思."
+    },
+    {
+      "word": "Persimmon",
+      "phonetic": "/pəˈsɪmən/",
+      "homophone": "佩尔西曼",
+      "meaning": "柿子",
+      "sentence": "Persimmon is sweet.",
+      "translation": "柿子很甜。",
+      "homophoneSentence": "佩尔西曼is威特."
+    },
+    {
+      "word": "Guava",
+      "phonetic": "/ˈɡwɑːvə/",
+      "homophone": "瓜瓦",
+      "meaning": "番石榴",
+      "sentence": "Guava is tropical.",
+      "translation": "番石榴是热带的。",
+      "homophoneSentence": "瓜瓦is特罗皮克尔."
+    },
+    {
+      "word": "Lychee",
+      "phonetic": "/ˈlaɪtʃiː/",
+      "homophone": "荔枝",
+      "meaning": "荔枝",
+      "sentence": "Lychee is sweet.",
+      "translation": "荔枝很甜。",
+      "homophoneSentence": "荔枝is威特."
+    },
+    {
+      "word": "Longan",
+      "phonetic": "/ˈlɒŋɡən/",
+      "homophone": "龙眼",
+      "meaning": "龙眼",
+      "sentence": "Longan is small.",
+      "translation": "龙眼很小。",
+      "homophoneSentence": "龙眼is斯莫尔."
+    },
+    {
+      "word": "Dragon fruit",
+      "phonetic": "/ˈdræɡən fruːt/",
+      "homophone": "德拉根弗鲁特",
+      "meaning": "火龙果",
+      "sentence": "Dragon fruit is pink.",
+      "translation": "火龙果是粉色的。",
+      "homophoneSentence": "德拉根弗鲁特is平克."
+    },
+    {
+      "word": "Star fruit",
+      "phonetic": "/stɑː fruːt/",
+      "homophone": "斯塔弗鲁特",
+      "meaning": "杨桃",
+      "sentence": "Star fruit is star-shaped.",
+      "translation": "杨桃是星形的。",
+      "homophoneSentence": "斯塔弗鲁特is斯塔夏普."
+    },
+    {
+      "word": "Passion fruit",
+      "phonetic": "/ˈpæʃn fruːt/",
+      "homophone": "帕申弗鲁特",
+      "meaning": "百香果",
+      "sentence": "Passion fruit is tangy.",
+      "translation": "百香果很酸。",
+      "homophoneSentence": "帕申弗鲁特is坦吉."
+    },
+    {
+      "word": "Jackfruit",
+      "phonetic": "/ˈdʒækfruːt/",
+      "homophone": "杰克弗鲁特",
+      "meaning": "菠萝蜜",
+      "sentence": "Jackfruit is big.",
+      "translation": "菠萝蜜很大。",
+      "homophoneSentence": "杰克弗鲁特is比格."
+    },
+    {
+      "word": "Durian",
+      "phonetic": "/ˈdʊəriən/",
+      "homophone": "榴莲",
+      "meaning": "榴莲",
+      "sentence": "Durian is smelly.",
+      "translation": "榴莲很臭。",
+      "homophoneSentence": "榴莲is斯梅利."
+    },
+    {
+      "word": "Mangosteen",
+      "phonetic": "/ˈmæŋɡəstiːn/",
+      "homophone": "曼戈斯汀",
+      "meaning": "山竹",
+      "sentence": "Mangosteen is sweet.",
+      "translation": "山竹很甜。",
+      "homophoneSentence": "曼戈斯汀is威特."
+    },
+    {
+      "word": "Rambutan",
+      "phonetic": "/ræmˈbuːtn/",
+      "homophone": "兰布坦",
+      "meaning": "红毛丹",
+      "sentence": "Rambutan is hairy.",
+      "translation": "红毛丹有毛。",
+      "homophoneSentence": "兰布坦is海瑞."
+    },
+    {
+      "word": "Custard apple",
+      "phonetic": "/ˈkʌstəd ˈæpl/",
+      "homophone": "卡斯特德艾坡",
+      "meaning": "释迦果",
+      "sentence": "Custard apple is creamy.",
+      "translation": "释迦果很奶油。",
+      "homophoneSentence": "卡斯特德艾坡is克里米."
+    },
+    {
+      "word": "Pomelo",
+      "phonetic": "/ˈpɒmələʊ/",
+      "homophone": "波梅洛",
+      "meaning": "柚子",
+      "sentence": "Pomelo is big.",
+      "translation": "柚子很大。",
+      "homophoneSentence": "波梅洛is比格."
+    },
+    {
+      "word": "Kumquat",
+      "phonetic": "/ˈkʌmkwɒt/",
+      "homophone": " kumquat ",
+      "meaning": "金桔",
+      "sentence": "Kumquat is small.",
+      "translation": "金桔很小。",
+      "homophoneSentence": " kumquat is斯莫尔."
+    },
+    {
+      "word": "Cantaloupe",
+      "phonetic": "/ˈkæntəluːp/",
+      "homophone": "坎塔卢普",
+      "meaning": "哈密瓜",
+      "sentence": "Cantaloupe is sweet.",
+      "translation": "哈密瓜很甜。",
+      "homophoneSentence": "坎塔卢普is威特."
+    },
+    {
+      "word": "Honeydew",
+      "phonetic": "/ˈhʌnɪdjuː/",
+      "homophone": "哈尼杜",
+      "meaning": "白兰瓜",
+      "sentence": "Honeydew is green.",
+      "translation": "白兰瓜是绿色的。",
+      "homophoneSentence": "哈尼杜is格林."
+    },
+    {
+      "word": "Watercress",
+      "phonetic": "/ˈwɔːtəkres/",
+      "homophone": "沃特克雷斯",
+      "meaning": "豆瓣菜",
+      "sentence": "Watercress is peppery.",
+      "translation": "豆瓣菜很辣。",
+      "homophoneSentence": "沃特克雷斯is佩珀里."
+    },
+    {
+      "word": "Kale",
+      "phonetic": "/keɪl/",
+      "homophone": "凯尔",
+      "meaning": "羽衣甘蓝",
+      "sentence": "Kale is healthy.",
+      "translation": "羽衣甘蓝很健康。",
+      "homophoneSentence": "凯尔is海尔思."
+    },
+    {
+      "word": "Collard greens",
+      "phonetic": "/ˈkɒlɑːd ɡriːnz/",
+      "homophone": "科拉德格林兹",
+      "meaning": "羽衣甘蓝",
+      "sentence": "Collard greens are green.",
+      "translation": "羽衣甘蓝是绿色的。",
+      "homophoneSentence": "科拉德格林兹阿格林."
+    },
+    {
+      "word": "Mustard greens",
+      "phonetic": "/ˈmʌstəd ɡriːnz/",
+      "homophone": "马斯塔德格林兹",
+      "meaning": "芥菜",
+      "sentence": "Mustard greens are spicy.",
+      "translation": "芥菜很辣。",
+      "homophoneSentence": "马斯塔德格林兹阿斯派塞."
+    },
+    {
+      "word": "Turnip",
+      "phonetic": "/ˈtɜːnɪp/",
+      "homophone": "特尼普",
+      "meaning": "萝卜",
+      "sentence": "Turnip is white.",
+      "translation": "萝卜是白色的。",
+      "homophoneSentence": "特尼普is怀特."
+    },
+    {
+      "word": "Radish",
+      "phonetic": "/ˈrædɪʃ/",
+      "homophone": "拉迪什",
+      "meaning": "小萝卜",
+      "sentence": "Radish is red.",
+      "translation": "小萝卜是红色的。",
+      "homophoneSentence": "拉迪什is瑞德."
+    },
+    {
+      "word": "Beetroot",
+      "phonetic": "/ˈbiːtruːt/",
+      "homophone": "比特鲁特",
+      "meaning": "甜菜根",
+      "sentence": "Beetroot is red.",
+      "translation": "甜菜根是红色的。",
+      "homophoneSentence": "比特鲁特is瑞德."
+    },
+    {
+      "word": "Parsnip",
+      "phonetic": "/ˈpɑːsnɪp/",
+      "homophone": "帕斯诺普",
+      "meaning": "欧洲防风草",
+      "sentence": "Parsnip is white.",
+      "translation": "欧洲防风草是白色的。",
+      "homophoneSentence": "帕斯诺普is怀特."
+    },
+    {
+      "word": "Celeriac",
+      "phonetic": "/sɪˈleriæk/",
+      "homophone": "塞莱里亚克",
+      "meaning": "芹菜根",
+      "sentence": "Celeriac is white.",
+      "translation": "芹菜根是白色的。",
+      "homophoneSentence": "塞莱里亚克is怀特."
+    },
+    {
+      "word": "Celery",
+      "phonetic": "/ˈseləri/",
+      "homophone": "塞拉里",
+      "meaning": "芹菜",
+      "sentence": "Celery is green.",
+      "translation": "芹菜是绿色的。",
+      "homophoneSentence": "塞拉里is格林."
+    },
+    {
+      "word": "Asparagus",
+      "phonetic": "/əˈspærəɡəs/",
+      "homophone": "阿斯帕拉格斯",
+      "meaning": "芦笋",
+      "sentence": "Asparagus is green.",
+      "translation": "芦笋是绿色的。",
+      "homophoneSentence": "阿斯帕拉格斯is格林."
+    },
+    {
+      "word": "Artichoke",
+      "phonetic": "/ˈɑːtɪtʃəʊk/",
+      "homophone": "阿蒂乔克",
+      "meaning": "洋蓟",
+      "sentence": "Artichoke is green.",
+      "translation": "洋蓟是绿色的。",
+      "homophoneSentence": "阿蒂乔克is格林."
+    },
+    {
+      "word": "Cauliflower",
+      "phonetic": "/ˈkɒliflaʊə(r)/",
+      "homophone": "考利弗劳尔",
+      "meaning": "花椰菜",
+      "sentence": "Cauliflower is white.",
+      "translation": "花椰菜是白色的。",
+      "homophoneSentence": "考利弗劳尔is怀特."
+    },
+    {
+      "word": "Broccolini",
+      "phonetic": "/brəˈkɒlɪni/",
+      "homophone": "布罗科利尼",
+      "meaning": "小西兰花",
+      "sentence": "Broccolini is green.",
+      "translation": "小西兰花是绿色的。",
+      "homophoneSentence": "布罗科利尼is格林."
+    },
+    {
+      "word": "Kohlrabi",
+      "phonetic": "/ˌkəʊlˈrɑːbi/",
+      "homophone": "科尔拉比",
+      "meaning": "大头菜",
+      "sentence": "Kohlrabi is crunchy.",
+      "translation": "大头菜很脆。",
+      "homophoneSentence": "科尔拉比is克兰奇."
+    }
+  ]
+}
