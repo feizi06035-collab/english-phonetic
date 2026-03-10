@@ -93,15 +93,20 @@ class WordManager {
     /**
      * 从JSON文件加载单词数据
      * @param {string} jsonPath - JSON文件路径
+     * @param {string} category - 分类名称
      * @returns {Array} 单词数据数组
      */
-    loadWordsFromJson(jsonPath) {
+    loadWordsFromJson(jsonPath, category) {
         try {
             const jsonContent = fs.readFileSync(jsonPath, 'utf8');
             const data = JSON.parse(jsonContent);
-            // 提取第一个分类的单词数据
-            const category = Object.keys(data)[0];
-            return data[category];
+            // 根据分类名称提取单词数据
+            if (data[category]) {
+                return data[category];
+            } else {
+                console.error(`JSON文件中未找到${category}分类`);
+                return [];
+            }
         } catch (error) {
             console.error('加载JSON文件失败:', error);
             return [];
@@ -218,7 +223,7 @@ class WordManager {
         console.log(`开始处理${category}分类单词数据...`);
         
         // 加载单词数据
-        const words = this.loadWordsFromJson(inputJson);
+        const words = this.loadWordsFromJson(inputJson, category);
         
         if (words.length === 0) {
             console.error('没有找到单词数据');
