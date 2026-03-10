@@ -880,10 +880,10 @@
             background: #5a5a5a;
         }
         
-        /* 分类导航 - 一行横向导航 */
+        /* 分类导航 - 限制显示5个 */
         .category-nav {
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             gap: 6px;
             justify-content: flex-start;
             margin: 6px 0 8px;
@@ -891,9 +891,8 @@
             background: #f8f9fa;
             border-radius: 8px;
             box-shadow: var(--card-shadow);
-            overflow-x: auto;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
+            max-height: 50px;
+            overflow: hidden;
         }
         
         .category-nav::-webkit-scrollbar {

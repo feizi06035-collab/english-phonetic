@@ -1,0 +1,23 @@
+﻿Checking for problem patterns...
+
+Missing closing quote: found 3856 matches
+  "' },
+..."
+  "' },
+..."
+  "' },
+..."
+  "' },
+..."
+  "' },
+..."
+Double single quotes: none found
+Unescaped quote in string: found 13562 matches
+  "', phonetic: '/藞m蓴藧n瑟艐/', homophone:..."
+  "', meaning: '鏃╂櫒', sentence:..."
+  "', translation: '鏃╀笂濂斤紒', homophoneSentence:..."
+  "' },
+        { word: 'Afternoon', phonetic:..."
+  "', homophone: '闃垮か鐗瑰姫鎭?, meaning:..."
+
+Lines with odd number of single quotes: 101

@@ -1,24 +1,30 @@
-// 更新sitemap.xml，添加新单词链接
 const fs = require('fs');
 const path = require('path');
 
-const projectRoot = path.resolve(__dirname, '..');
-const sitemapPath = path.join(projectRoot, 'sitemap.xml');
-const newGreetingsPath = path.join(__dirname, 'new-greetings.json');
+const sitemapPath = path.join(__dirname, '../sitemap.xml');
+const wordDataPath = path.join(__dirname, '../word-data.js');
 
-// 读取新单词
-const newGreetings = JSON.parse(fs.readFileSync(newGreetingsPath, 'utf8'));
-console.log(`读取了 ${newGreetings.length} 个新单词`);
+console.log('Loading word data...');
+const wordDatabase = require(wordDataPath);
+const foodWords = wordDatabase.food;
 
-// 读取sitemap.xml
+console.log(`Loaded ${foodWords.length} food words`);
+
+console.log('Reading sitemap.xml...');
 let sitemapContent = fs.readFileSync(sitemapPath, 'utf8');
 
-// 获取当前日期
-const today = new Date().toISOString().split('T')[0];
+console.log('Finding position to insert new food word URLs...');
+const urlsetEnd = sitemapContent.indexOf('</urlset>');
 
-// 构建新URL条目的字符串
-const newUrlsString = newGreetings.map(word => {
-    const wordSlug = word.word.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+if (urlsetEnd === -1) {
+    console.error('Could not find </urlset> in sitemap.xml');
+    process.exit(1);
+}
+
+console.log('Generating new food word URLs...');
+const today = new Date().toISOString().split('T')[0];
+const newUrls = foodWords.map(item => {
+    const wordSlug = item.word.toLowerCase().replace(/\s+/g, '-');
     return `  <url>
     <loc>https://mzc0603.xyz/word/${wordSlug}</loc>
     <lastmod>${today}</lastmod>
@@ -27,21 +33,38 @@ const newUrlsString = newGreetings.map(word => {
   </url>`;
 }).join('\n');
 
-// 找到sitemap的结束位置（</urlset>之前）
-const sitemapEndPattern = /(<\/urlset>)/;
-const match = sitemapContent.match(sitemapEndPattern);
-
-if (!match) {
-    console.error('无法找到sitemap的结束位置');
-    process.exit(1);
+console.log('Checking for existing food word URLs...');
+const existingFoodUrls = new Set();
+const urlRegex = /<loc>https:\/\/mzc0603\.xyz\/word\/([^<]+)<\/loc>/g;
+let match;
+while ((match = urlRegex.exec(sitemapContent)) !== null) {
+    existingFoodUrls.add(match[1]);
 }
 
-// 在sitemap结束前插入新URL
-const updatedContent = sitemapContent.replace(
-    sitemapEndPattern,
-    `  <!-- 新增日常问候类单词 -->\n${newUrlsString}\n$1`
-);
+console.log(`Found ${existingFoodUrls.size} existing word URLs`);
 
-// 写回文件
-fs.writeFileSync(sitemapPath, updatedContent);
-console.log(`成功将 ${newGreetings.length} 个新单词链接添加到sitemap.xml`);
+console.log('Filtering out existing URLs...');
+const uniqueNewUrls = foodWords.filter(item => {
+    const wordSlug = item.word.toLowerCase().replace(/\s+/g, '-');
+    return !existingFoodUrls.has(wordSlug);
+}).map(item => {
+    const wordSlug = item.word.toLowerCase().replace(/\s+/g, '-');
+    return `  <url>
+    <loc>https://mzc0603.xyz/word/${wordSlug}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>`;
+}).join('\n');
+
+if (uniqueNewUrls) {
+    console.log(`Adding ${uniqueNewUrls.split('\n').filter(line => line.trim()).length / 5} new food word URLs`);
+    const newSitemap = sitemapContent.substring(0, urlsetEnd) + '\n' + uniqueNewUrls + '\n' + sitemapContent.substring(urlsetEnd);
+    
+    console.log('Writing updated sitemap.xml...');
+    fs.writeFileSync(sitemapPath, newSitemap, 'utf8');
+    
+    console.log('Done! sitemap.xml has been updated.');
+} else {
+    console.log('No new food word URLs to add. All are already present.');
+}
