@@ -53,37 +53,72 @@ class WordManager {
 
             // 找到对应分类表格的位置（使用更简单的匹配方式）
             const sectionStart = indexHtmlContent.indexOf(`<section class="word-category" id="${category}"`);
+            
             if (sectionStart === -1) {
-                console.error(`无法找到${category}分类的section`);
-                return false;
-            }
-            
-            const tbodyStart = indexHtmlContent.indexOf('<tbody>', sectionStart);
-            const tbodyEnd = indexHtmlContent.indexOf('</tbody>', tbodyStart);
-            
-            if (tbodyStart === -1 || tbodyEnd === -1) {
-                console.error(`无法找到${category}分类的tbody`);
-                return false;
-            }
-            
-            // 提取现有内容
-            const existingContent = indexHtmlContent.substring(tbodyStart + 7, tbodyEnd).trim();
-            
-            // 构建更新后的内容
-            let updatedContent;
-            if (append) {
-                // 追加到现有表格
-                const newTbodyContent = existingContent + (existingContent ? '\n' : '') + newRowsString;
-                updatedContent = indexHtmlContent.substring(0, tbodyStart + 7) + newTbodyContent + indexHtmlContent.substring(tbodyEnd);
+                // 分类不存在，添加新分类section
+                console.log(`未找到${category}分类的section，将添加新section`);
+                
+                // 找到最后一个分类section的结束位置
+                const lastSectionEnd = indexHtmlContent.lastIndexOf('</section>');
+                if (lastSectionEnd === -1) {
+                    console.error('无法找到index.html文件的正确结构');
+                    return false;
+                }
+                
+                // 获取分类的中文名称
+                let categoryName = category;
+                switch(category) {
+                    case 'greetings': categoryName = '问候语'; break;
+                    case 'emotions': categoryName = '情感表达'; break;
+                    case 'numbers': categoryName = '数字'; break;
+                    case 'colors': categoryName = '颜色'; break;
+                    case 'family': categoryName = '家人称呼'; break;
+                    case 'time': categoryName = '时间'; break;
+                    case 'food': categoryName = '食物'; break;
+                    case 'sentences': categoryName = '常用句子'; break;
+                    case 'conversations': categoryName = '交流对话'; break;
+                    default: categoryName = category;
+                }
+                
+                // 构建新分类section
+                const newSection = `\n\n<section class="word-category" id="${category}">\n    <h2>${categoryName}</h2>\n    <table>\n        <thead>\n            <tr>\n                <th>单词</th>\n                <th>音标</th>\n                <th>谐音</th>\n                <th>含义</th>\n                <th>例句 → 翻译 → 谐音朗读</th>\n            </tr>\n        </thead>\n        <tbody>\n${newRowsString}\n        </tbody>\n    </table>\n</section>`;
+                
+                // 构建更新后的内容
+                const updatedContent = indexHtmlContent.substring(0, lastSectionEnd) + newSection + indexHtmlContent.substring(lastSectionEnd);
+                
+                // 写回文件
+                fs.writeFileSync(this.indexHtmlPath, updatedContent);
+                console.log(`成功添加 ${words.length} 个${category}类单词到index.html`);
+                return true;
             } else {
-                // 替换整个表格内容
-                updatedContent = indexHtmlContent.substring(0, tbodyStart + 7) + newRowsString + indexHtmlContent.substring(tbodyEnd);
-            }
+                // 分类存在，更新现有表格
+                const tbodyStart = indexHtmlContent.indexOf('<tbody>', sectionStart);
+                const tbodyEnd = indexHtmlContent.indexOf('</tbody>', tbodyStart);
+                
+                if (tbodyStart === -1 || tbodyEnd === -1) {
+                    console.error(`无法找到${category}分类的tbody`);
+                    return false;
+                }
+                
+                // 提取现有内容
+                const existingContent = indexHtmlContent.substring(tbodyStart + 7, tbodyEnd).trim();
+                
+                // 构建更新后的内容
+                let updatedContent;
+                if (append) {
+                    // 追加到现有表格
+                    const newTbodyContent = existingContent + (existingContent ? '\n' : '') + newRowsString;
+                    updatedContent = indexHtmlContent.substring(0, tbodyStart + 7) + newTbodyContent + indexHtmlContent.substring(tbodyEnd);
+                } else {
+                    // 替换整个表格内容
+                    updatedContent = indexHtmlContent.substring(0, tbodyStart + 7) + newRowsString + indexHtmlContent.substring(tbodyEnd);
+                }
 
-            // 写回文件
-            fs.writeFileSync(this.indexHtmlPath, updatedContent);
-            console.log(`成功将 ${words.length} 个${category}类单词${append ? '追加' : '更新'}到index.html`);
-            return true;
+                // 写回文件
+                fs.writeFileSync(this.indexHtmlPath, updatedContent);
+                console.log(`成功将 ${words.length} 个${category}类单词${append ? '追加' : '更新'}到index.html`);
+                return true;
+            }
         } catch (error) {
             console.error('更新HTML表格失败:', error);
             return false;
@@ -148,65 +183,88 @@ class WordManager {
             
             // 找到分类的开始位置
             const categoryStart = wordDataContent.indexOf(`${category}:`);
+            
             if (categoryStart === -1) {
-                console.error(`无法找到${category}分类`);
-                return false;
-            }
-            
-            // 找到分类数组的开始和结束位置
-            const arrayStart = wordDataContent.indexOf('[', categoryStart);
-            let arrayEnd = arrayStart;
-            let braceCount = 1;
-            
-            for (let i = arrayStart + 1; i < wordDataContent.length; i++) {
-                if (wordDataContent[i] === '[') braceCount++;
-                if (wordDataContent[i] === ']') braceCount--;
-                if (braceCount === 0) {
-                    arrayEnd = i;
-                    break;
+                // 分类不存在，添加新分类
+                console.log(`未找到${category}分类，将添加新分类`);
+                
+                // 找到最后一个分类的结束位置
+                const lastCategoryEnd = wordDataContent.lastIndexOf('],');
+                if (lastCategoryEnd === -1) {
+                    console.error('无法找到word-data.js文件的正确结构');
+                    return false;
                 }
-            }
-            
-            if (arrayEnd === arrayStart) {
-                console.error(`无法找到${category}分类的结束位置`);
-                return false;
-            }
-            
-            // 提取现有数据
-            const existingContent = wordDataContent.substring(arrayStart + 1, arrayEnd).trim();
-            
-            // 处理单词数据
-            let newContent;
-            if (append) {
-                // 构建新单词字符串
-                const newWordsStr = words.map(word => {
+                
+                // 构建新分类的字符串
+                const newCategoryStr = words.map(word => {
                     return `        { word: '${word.word}', phonetic: '${word.phonetic}', homophone: '${word.homophone}', meaning: '${word.meaning}', sentence: '${word.sentence.replace(/'/g, "\\'")}', translation: '${word.translation.replace(/'/g, "\\'")}', homophoneSentence: '${word.homophoneSentence.replace(/'/g, "\\'")}' },`;
                 }).join('\n');
                 
                 // 构建新内容
-                if (existingContent) {
-                    newContent = existingContent + '\n' + newWordsStr;
-                } else {
-                    newContent = newWordsStr;
-                }
-                console.log(`成功添加 ${words.length} 个新单词到${category}分类`);
-            } else {
-                // 替换模式
-                const newWordsStr = words.map(word => {
-                    return `        { word: '${word.word}', phonetic: '${word.phonetic}', homophone: '${word.homophone}', meaning: '${word.meaning}', sentence: '${word.sentence.replace(/'/g, "\\'")}', translation: '${word.translation.replace(/'/g, "\\'")}', homophoneSentence: '${word.homophoneSentence.replace(/'/g, "\\'")}' },`;
-                }).join('\n');
+                const updatedContent = wordDataContent.substring(0, lastCategoryEnd + 1) + '\n,\n    ' + category + ': [\n' + newCategoryStr + '\n    ]' + wordDataContent.substring(lastCategoryEnd + 1);
                 
-                newContent = newWordsStr;
-                console.log(`成功替换${category}分类的单词数据`);
+                // 写回文件
+                fs.writeFileSync(this.wordDataPath, updatedContent);
+                console.log(`成功添加 ${words.length} 个新单词到${category}分类`);
+                console.log(`成功更新word-data.js文件`);
+                return true;
+            } else {
+                // 分类存在，更新现有分类
+                // 找到分类数组的开始和结束位置
+                const arrayStart = wordDataContent.indexOf('[', categoryStart);
+                let arrayEnd = arrayStart;
+                let braceCount = 1;
+                
+                for (let i = arrayStart + 1; i < wordDataContent.length; i++) {
+                    if (wordDataContent[i] === '[') braceCount++;
+                    if (wordDataContent[i] === ']') braceCount--;
+                    if (braceCount === 0) {
+                        arrayEnd = i;
+                        break;
+                    }
+                }
+                
+                if (arrayEnd === arrayStart) {
+                    console.error(`无法找到${category}分类的结束位置`);
+                    return false;
+                }
+                
+                // 提取现有数据
+                const existingContent = wordDataContent.substring(arrayStart + 1, arrayEnd).trim();
+                
+                // 处理单词数据
+                let newContent;
+                if (append) {
+                    // 构建新单词字符串
+                    const newWordsStr = words.map(word => {
+                        return `        { word: '${word.word}', phonetic: '${word.phonetic}', homophone: '${word.homophone}', meaning: '${word.meaning}', sentence: '${word.sentence.replace(/'/g, "\\'")}', translation: '${word.translation.replace(/'/g, "\\'")}', homophoneSentence: '${word.homophoneSentence.replace(/'/g, "\\'")}' },`;
+                    }).join('\n');
+                    
+                    // 构建新内容
+                    if (existingContent) {
+                        newContent = existingContent + '\n' + newWordsStr;
+                    } else {
+                        newContent = newWordsStr;
+                    }
+                    console.log(`成功添加 ${words.length} 个新单词到${category}分类`);
+                } else {
+                    // 替换模式
+                    const newWordsStr = words.map(word => {
+                        return `        { word: '${word.word}', phonetic: '${word.phonetic}', homophone: '${word.homophone}', meaning: '${word.meaning}', sentence: '${word.sentence.replace(/'/g, "\\'")}', translation: '${word.translation.replace(/'/g, "\\'")}', homophoneSentence: '${word.homophoneSentence.replace(/'/g, "\\'")}' },`;
+                    }).join('\n');
+                    
+                    newContent = newWordsStr;
+                    console.log(`成功替换${category}分类的单词数据`);
+                }
+                
+                // 构建更新后的内容
+                const updatedContent = wordDataContent.substring(0, arrayStart + 1) + '\n' + newContent + '\n    ' + wordDataContent.substring(arrayEnd);
+                
+                // 写回文件
+                fs.writeFileSync(this.wordDataPath, updatedContent);
+                console.log(`成功更新word-data.js文件`);
+                return true;
             }
-            
-            // 构建更新后的内容
-            const updatedContent = wordDataContent.substring(0, arrayStart + 1) + '\n' + newContent + '\n    ' + wordDataContent.substring(arrayEnd);
-            
-            // 写回文件
-            fs.writeFileSync(this.wordDataPath, updatedContent);
-            console.log(`成功更新word-data.js文件`);
-            return true;
         } catch (error) {
             console.error('更新word-data.js失败:', error);
             return false;
