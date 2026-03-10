@@ -1,6 +1,6 @@
 const wordDatabase = {
     greetings: [
-{ word: 'Morning', phonetic: '/ˈmɔːnɪŋ/', homophone: '莫宁', meaning: '早晨', sentence: 'Good morning!', translation: '早上好！', homophoneSentence: '古德莫宁!' },
+        { word: 'Morning', phonetic: '/ˈmɔːnɪŋ/', homophone: '莫宁', meaning: '早晨', sentence: 'Good morning!', translation: '早上好！', homophoneSentence: '古德莫宁!' },
         { word: 'Afternoon', phonetic: '/ˌɑːftəˈnuːn/', homophone: '阿夫特努恩', meaning: '下午', sentence: 'Good afternoon!', translation: '下午好！', homophoneSentence: '古德阿夫特努恩!' },
         { word: 'Evening', phonetic: '/ˈiːvnɪŋ/', homophone: '伊夫宁', meaning: '晚上', sentence: 'Good evening!', translation: '晚上好！', homophoneSentence: '古德伊夫宁!' },
         { word: 'Night', phonetic: '/naɪt/', homophone: '奈特', meaning: '夜晚', sentence: 'Good night!', translation: '晚安！', homophoneSentence: '古德奈特!' },
