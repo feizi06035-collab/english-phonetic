@@ -5,7 +5,7 @@ const path = require('path');
 
 class WordManager {
     constructor() {
-        this.projectRoot = path.resolve(__dirname, '..');
+        this.projectRoot = path.resolve(__dirname, '../..');
         this.indexHtmlPath = path.join(this.projectRoot, 'index.html');
         this.wordDataPath = path.join(this.projectRoot, 'word-data.js');
     }

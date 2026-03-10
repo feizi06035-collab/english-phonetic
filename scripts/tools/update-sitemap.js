@@ -3,14 +3,14 @@ const path = require('path');
 
 class SitemapUpdater {
     constructor() {
-        this.projectRoot = path.resolve(__dirname, '..');
+        this.projectRoot = path.resolve(__dirname, '../..');
         this.sitemapPath = path.join(this.projectRoot, 'sitemap.xml');
-        this.newNumbersPath = path.join(this.projectRoot, 'scripts', 'new-numbers.json');
+        this.newFamilyPath = path.join(this.projectRoot, 'scripts', 'data', 'new-family.json');
     }
 
-    loadNewNumbers() {
-        const data = fs.readFileSync(this.newNumbersPath, 'utf8');
-        return JSON.parse(data).numbers;
+    loadNewFamily() {
+        const data = fs.readFileSync(this.newFamilyPath, 'utf8');
+        return JSON.parse(data).family;
     }
 
     loadSitemap() {
@@ -27,7 +27,7 @@ class SitemapUpdater {
         const url = this.generateWordUrl(word);
         return `  <url>
     <loc>${url}</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>`;
@@ -46,7 +46,7 @@ class SitemapUpdater {
 
     updateSitemap() {
         try {
-            const words = this.loadNewNumbers();
+            const words = this.loadNewFamily();
             const sitemapContent = this.loadSitemap();
 
             // 生成新的URL条目
