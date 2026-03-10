@@ -9429,6 +9429,7 @@
             function showPage(page) {
                 const activeCategory = document.querySelector('.category-btn.active').dataset.category;
                 let wordCount = 0;
+                let categoryWordCount = 0;
                 let startIndex = (page - 1) * WORDS_PER_PAGE;
                 let endIndex = page * WORDS_PER_PAGE;
                 let firstCategory = true;
@@ -9459,6 +9460,11 @@
                         const rows = cat.querySelectorAll('table tr');
                         let hasVisibleRows = false;
                         
+                        // 重置分类内单词计数（当选择特定分类时）
+                        if (activeCategory !== 'all' && cat.id === activeCategory) {
+                            categoryWordCount = 0;
+                        }
+                        
                         rows.forEach((row, index) => {
                             // 处理表头行（第一行）
                             if (index === 0) {
@@ -9478,10 +9484,26 @@
                                 }
                                 return;
                             }
-                            // 计算全局索引
-                            const globalIndex = wordCount + (index - 1);
+                            
+                            // 计算索引
+                            let currentIndex;
+                            if (activeCategory === 'all') {
+                                // 在"全部"分类下，使用全局索引
+                                currentIndex = wordCount + (index - 1);
+                            } else {
+                                // 在特定分类下，使用分类内索引
+                                if (cat.id === activeCategory) {
+                                    currentIndex = categoryWordCount;
+                                    categoryWordCount++;
+                                } else {
+                                    // 非活动分类，跳过
+                                    row.style.display = 'none';
+                                    return;
+                                }
+                            }
+                            
                             // 检查是否在当前页面范围内
-                            if (globalIndex >= startIndex && globalIndex < endIndex) {
+                            if (currentIndex >= startIndex && currentIndex < endIndex) {
                                 row.style.display = '';
                                 hasVisibleRows = true;
                             } else {
