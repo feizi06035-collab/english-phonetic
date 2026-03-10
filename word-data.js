@@ -4469,7 +4469,7 @@ const wordDatabase = {
         { word: 'Take care', phonetic: '/teɪk keə/', homophone: '忒克 凯尔', meaning: '保重', sentence: 'Take care, stay safe!', translation: '保重，注意安全！', homophoneSentence: '忒克凯尔,斯戴塞夫!' },
         { word: 'Have a good day', phonetic: '/hæv ə ɡʊd deɪ/', homophone: '海夫 啊 古德 戴', meaning: '祝你有个好一天', sentence: 'Have a good day at work!', translation: '祝你工作愉快！', homophoneSentence: '海夫啊古德戴艾特沃克!' },
         { word: 'Have a nice weekend', phonetic: '/hæv ə naɪs ˌwiːkˈend/', homophone: '海夫 啊 奈斯 威肯德', meaning: '周末愉快', sentence: 'Have a nice weekend!', translation: '周末愉快！', homophoneSentence: '海夫啊奈斯威肯德!' },
-        { word: 'Until next time', phonetic: '/ənˈtɪl nekst taɪm/', homophone: '安替欧 耐克斯 泰姆', meaning: '下次见', sentence: 'Until next time, my friend!', translation: '下次见，我的朋友！', homophoneSentence: '安替欧耐克斯泰姆,麦夫瑞恩德!' }
+        { word: 'Until next time', phonetic: '/ənˈtɪl nekst taɪm/', homophone: '安替欧 耐克斯 泰姆', meaning: '下次见', sentence: 'Until next time, my friend!', translation: '下次见，我的朋友！', homophoneSentence: '安替欧耐克斯泰姆,麦夫瑞恩德!' },
         { word: 'Howdy', phonetic: '/ˈhaʊdi/', homophone: '豪迪', meaning: '你好', sentence: 'Howdy, partner!', translation: '你好，伙伴！', homophoneSentence: '豪迪，帕特纳!' },
         { word: 'Salutations', phonetic: '/ˌsæljuˈteɪʃənz/', homophone: '萨柳忒申兹', meaning: '问候', sentence: 'Salutations to all!', translation: '向大家问好！', homophoneSentence: '萨柳忒申兹图奥!' },
         { word: 'Greetings', phonetic: '/ɡrɪˈtiːŋz/', homophone: '格瑞廷兹', meaning: '问候', sentence: 'Season\'s greetings!', translation: '节日问候！', homophoneSentence: '西森兹格瑞廷兹!' },
