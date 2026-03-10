@@ -5,12 +5,12 @@ class SitemapUpdater {
     constructor() {
         this.projectRoot = path.resolve(__dirname, '../..');
         this.sitemapPath = path.join(this.projectRoot, 'sitemap.xml');
-        this.newFamilyPath = path.join(this.projectRoot, 'scripts', 'data', 'new-family.json');
+        this.newTimePath = path.join(this.projectRoot, 'scripts', 'data', 'new-time.json');
     }
 
-    loadNewFamily() {
-        const data = fs.readFileSync(this.newFamilyPath, 'utf8');
-        return JSON.parse(data).family;
+    loadNewTime() {
+        const data = fs.readFileSync(this.newTimePath, 'utf8');
+        return JSON.parse(data).time;
     }
 
     loadSitemap() {
@@ -46,7 +46,7 @@ class SitemapUpdater {
 
     updateSitemap() {
         try {
-            const words = this.loadNewFamily();
+            const words = this.loadNewTime();
             const sitemapContent = this.loadSitemap();
 
             // 生成新的URL条目
