@@ -4576,7 +4576,7 @@ const wordDatabase = {
         { word: 'Do you like', phonetic: '/duː juː laɪk/', homophone: '度油莱克', meaning: '你喜欢', sentence: 'Do you like coffee?', translation: '你喜欢咖啡吗？', homophoneSentence: '度油莱克咖啡?' },
         { word: 'Yes, I do', phonetic: '/jes aɪ duː/', homophone: '耶斯，爱度', meaning: '是的，我喜欢', sentence: 'Yes, I do.', translation: '是的，我喜欢。', homophoneSentence: '耶斯，爱度.' },
         { word: 'No, I don't', phonetic: '/nəʊ aɪ dəʊnt/', homophone: '诺，爱东特', meaning: '不，我不喜欢', sentence: 'No, I don\'t.', translation: '不，我不喜欢。', homophoneSentence: '诺，爱东特.' },
-        { word: 'What's your favorite', phonetic: '/wɒts jɔː ˈfeɪvərɪt/', homophone: '沃特兹哟费沃里特', meaning: '你最喜欢的', sentence: 'What\'s your favorite color?', translation: '你最喜欢的颜色是什么？', homophoneSentence: '沃特兹哟费沃里特卡勒?' },
+        { word: 'What's your favorite', phonetic: '/wɒts jɔː ˈfeɪvərɪt/', homophone: '沃特兹哟费沃里特', meaning: '你最喜欢的', sentence: 'What\'s your favorite color?', translation: '你最喜欢的颜色是什么？', homophoneSentence: '沃特兹哟费沃里特卡勒?' }
     ]
 };
 
