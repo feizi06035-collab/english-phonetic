@@ -5,12 +5,11 @@ class SitemapUpdater {
     constructor() {
         this.projectRoot = path.resolve(__dirname, '../..');
         this.sitemapPath = path.join(this.projectRoot, 'sitemap.xml');
-        this.newTimePath = path.join(this.projectRoot, 'scripts', 'data', 'new-time.json');
     }
 
-    loadNewTime() {
-        const data = fs.readFileSync(this.newTimePath, 'utf8');
-        return JSON.parse(data).time;
+    loadWordData(jsonPath) {
+        const data = fs.readFileSync(jsonPath, 'utf8');
+        return JSON.parse(data);
     }
 
     loadSitemap() {
@@ -18,7 +17,6 @@ class SitemapUpdater {
     }
 
     generateWordUrl(word) {
-        // 转换为小写，替换空格为连字符
         const wordSlug = word.toLowerCase().replace(/\s+/g, '-');
         return `https://mzc0603.xyz/word/${wordSlug}`;
     }
@@ -33,23 +31,24 @@ class SitemapUpdater {
   </url>`;
     }
 
-    checkExistingUrls(sitemapContent, newUrls) {
-        const existingUrls = new Set();
-        const urlRegex = /<loc>(https:\/\/mzc0603\.xyz\/word\/[^<]+)<\/loc>/g;
-        let match;
-        while ((match = urlRegex.exec(sitemapContent)) !== null) {
-            existingUrls.add(match[1]);
-        }
-
-        return newUrls.filter(url => !existingUrls.has(url));
-    }
-
-    updateSitemap() {
+    updateSitemap(jsonPath, category = 'all') {
         try {
-            const words = this.loadNewTime();
+            const wordData = this.loadWordData(jsonPath);
             const sitemapContent = this.loadSitemap();
 
-            // 生成新的URL条目
+            let words = [];
+            
+            if (category === 'all') {
+                for (const cat of Object.keys(wordData)) {
+                    words = words.concat(wordData[cat]);
+                }
+            } else if (wordData[category]) {
+                words = wordData[category];
+            } else {
+                console.error(`Category ${category} not found in JSON file`);
+                return;
+            }
+
             const newUrlEntries = [];
             const newUrls = [];
 
@@ -59,7 +58,6 @@ class SitemapUpdater {
                 newUrlEntries.push(this.generateUrlEntry(wordData.word));
             }
 
-            // 检查是否已存在
             const existingUrls = new Set();
             const urlRegex = /<loc>(https:\/\/mzc0603\.xyz\/word\/[^<]+)<\/loc>/g;
             let urlMatch;
@@ -79,7 +77,6 @@ class SitemapUpdater {
                 return;
             }
 
-            // 找到合适的位置插入新链接（在数字分类链接之后）
             const numbersCategoryRegex = /(<url>\s*<loc>https:\/\/mzc0603\.xyz\/category\/numbers\?page=2<\/loc>[\s\S]*?<\/url>)/;
             const categoryMatch = sitemapContent.match(numbersCategoryRegex);
 
@@ -102,6 +99,17 @@ class SitemapUpdater {
     }
 }
 
-// 执行更新
 const updater = new SitemapUpdater();
-updater.updateSitemap();
+const args = process.argv.slice(2);
+
+if (args.length < 1) {
+    console.log('用法: node update-sitemap.js <JSON文件路径> [分类名称]');
+    console.log('示例: node update-sitemap.js scripts/data/new-all.json all');
+    console.log('示例: node update-sitemap.js scripts/data/new-numbers.json numbers');
+    process.exit(1);
+}
+
+const jsonPath = args[0];
+const category = args[1] || 'all';
+
+updater.updateSitemap(jsonPath, category);
