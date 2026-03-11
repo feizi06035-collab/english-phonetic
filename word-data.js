@@ -4231,8 +4231,7 @@ const wordDatabase = {
         { word: 'Bitter', phonetic: '/ˈbɪtə/', homophone: '比特泽', meaning: '苦的', sentence: 'I like bitter food.', translation: '我喜欢苦的食物。', homophoneSentence: '爱莱克比特泽福德.' },
         { word: 'Salty', phonetic: '/ˈsɔːlti/', homophone: '索尔蒂', meaning: '咸的', sentence: 'I like salty food.', translation: '我喜欢咸的食物。', homophoneSentence: '爱莱克索尔蒂福德.' },
         { word: 'Savory', phonetic: '/ˈseɪvəri/', homophone: '塞沃里', meaning: '咸鲜的', sentence: 'I like savory food.', translation: '我喜欢咸鲜的食物。', homophoneSentence: '爱莱克塞沃里福德.' },
-    ]
-,
+    ],
     conversations: [
         { word: 'How are you', phonetic: '/haʊ ɑː juː/', homophone: '好啊油', meaning: '你好吗', sentence: 'How are you today?', translation: '你今天好吗？', homophoneSentence: '好啊油特戴?' },
         { word: 'I'm fine', phonetic: '/aɪm faɪn/', homophone: '爱姆法因', meaning: '我很好', sentence: 'I\'m fine, thank you.', translation: '我很好，谢谢。', homophoneSentence: '爱姆法因，森克油.' },
