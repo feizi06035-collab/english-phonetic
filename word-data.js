@@ -1,6 +1,6 @@
 const wordDatabase = {
     greetings: [
-{ word: 'Morning', phonetic: '/ˈmɔːnɪŋ/', homophone: '莫宁', meaning: '早晨', sentence: 'Good morning!', translation: '早上好！', homophoneSentence: '古德莫宁!' },
+        { word: 'Morning', phonetic: '/ˈmɔːnɪŋ/', homophone: '莫宁', meaning: '早晨', sentence: 'Good morning!', translation: '早上好！', homophoneSentence: '古德莫宁!' },
         { word: 'Afternoon', phonetic: '/ˌɑːftəˈnuːn/', homophone: '阿夫特努恩', meaning: '下午', sentence: 'Good afternoon!', translation: '下午好！', homophoneSentence: '古德阿夫特努恩!' },
         { word: 'Evening', phonetic: '/ˈiːvnɪŋ/', homophone: '伊夫宁', meaning: '晚上', sentence: 'Good evening!', translation: '晚上好！', homophoneSentence: '古德伊夫宁!' },
         { word: 'Night', phonetic: '/naɪt/', homophone: '奈特', meaning: '夜晚', sentence: 'Good night!', translation: '晚安！', homophoneSentence: '古德奈特!' },
@@ -720,7 +720,7 @@ const wordDatabase = {
         { word: 'Good night', phonetic: '/ɡʊd naɪt/', homophone: '古德奈特', meaning: '晚安', sentence: 'Good night!', translation: '晚安！', homophoneSentence: '古德奈特!' },
         { word: 'Bye', phonetic: '/baɪ/', homophone: '拜', meaning: '拜拜', sentence: 'Bye!', translation: '拜拜！', homophoneSentence: '拜!' },
         { word: 'Goodbye', phonetic: '/ˌɡʊdˈbaɪ/', homophone: '古德拜', meaning: '再见', sentence: 'Goodbye!', translation: '再见！', homophoneSentence: '古德拜!' },
-        { word: 'See you', phonetic: '/siː juː/', homophone: '西优', meaning: '再见', sentence: 'See you!', translation: '再见！', homophoneSentence: '西优!' },
+        { word: 'See you', phonetic: '/siː juː/', homophone: '西优', meaning: '再见', sentence: 'See you!', translation: '再见！', homophoneSentence: '西优!' },,,
         { word: 'Hello', phonetic: '/həˈləʊ/', homophone: '哈喽', meaning: '你好', sentence: 'Hello!', translation: '你好！', homophoneSentence: '哈喽!' },
         { word: 'Hi', phonetic: '/haɪ/', homophone: '嗨', meaning: '嗨', sentence: 'Hi!', translation: '嗨！', homophoneSentence: '嗨!' },
         { word: 'Hey', phonetic: '/heɪ/', homophone: '嘿', meaning: '嘿', sentence: 'Hey!', translation: '嘿！', homophoneSentence: '嘿!' },
@@ -1085,12 +1085,12 @@ const wordDatabase = {
         { word: 'Great job', phonetic: '/ɡreɪt dʒɒb/', homophone: '格瑞特焦布', meaning: '做得好', sentence: 'Great job!', translation: '做得好！', homophoneSentence: '格瑞特焦布!' },
         { word: 'Hey there', phonetic: '/heɪ ðeə/', homophone: '嘿泽尔', meaning: '你好', sentence: 'Hey there, how are you?', translation: '嘿，你好吗？', homophoneSentence: '嘿泽尔，好啊油?' },
         { word: "What's up", phonetic: '/wɒts ʌp/', homophone: '沃特兹阿普', meaning: '怎么了', sentence: 'What\'s up with you?', translation: '你怎么了？', homophoneSentence: '沃特兹阿普威泽油?' },
-        { word: 'How's it going', phonetic: '/haʊz ɪt ˈɡəʊɪŋ/', homophone: '好兹伊特勾英', meaning: '最近怎么样', sentence: 'How\'s it going lately?', translation: '最近怎么样？', homophoneSentence: '好兹伊特勾英雷特利?' },
+        { word: "How's it going", phonetic: '/haʊz ɪt ˈɡəʊɪŋ/', homophone: '好兹伊特勾英', meaning: '最近怎么样', sentence: 'How\'s it going lately?', translation: '最近怎么样？', homophoneSentence: '好兹伊特勾英雷特利?' },
         { word: 'Long time no see', phonetic: '/lɒŋ taɪm nəʊ siː/', homophone: '朗泰姆诺西', meaning: '好久不见', sentence: 'Long time no see!', translation: '好久不见！', homophoneSentence: '朗泰姆诺西!' },
         { word: 'Good to see you', phonetic: '/ɡʊd tuː siː juː/', homophone: '古德图西油', meaning: '很高兴见到你', sentence: 'Good to see you again!', translation: '很高兴再次见到你！', homophoneSentence: '古德图西油阿根!' },
         { word: 'Nice to meet you', phonetic: '/naɪs tuː miːt juː/', homophone: '奈斯图米特油', meaning: '很高兴认识你', sentence: 'Nice to meet you!', translation: '很高兴认识你！', homophoneSentence: '奈斯图米特油!' },
         { word: 'How are you doing', phonetic: '/haʊ ɑː juː ˈduːɪŋ/', homophone: '好啊油杜英', meaning: '你好吗', sentence: 'How are you doing today?', translation: '你今天好吗？', homophoneSentence: '好啊油杜英特戴?' },
-        { word: "What's new', phonetic: '/wɒts njuː/', homophone: '沃特兹纽', meaning: '有什么新鲜事', sentence: 'What\'s new with you?', translation: '你有什么新鲜事？', homophoneSentence: '沃特兹纽威泽油?' },
+        { word: "What's new", phonetic: '/wɒts njuː/', homophone: '沃特兹纽', meaning: '有什么新鲜事', sentence: 'What\'s new with you?', translation: '你有什么新鲜事？', homophoneSentence: '沃特兹纽威泽油?' },
         { word: 'How have you been', phonetic: '/haʊ hæv juː biːn/', homophone: '好海夫油宾', meaning: '你最近怎么样', sentence: 'How have you been?', translation: '你最近怎么样？', homophoneSentence: '好海夫油宾?' },
         { word: 'Welcome back', phonetic: '/ˈwelkəm bæk/', homophone: '威尔康拜克', meaning: '欢迎回来', sentence: 'Welcome back!', translation: '欢迎回来！', homophoneSentence: '威尔康拜克!' },
         { word: 'Good day', phonetic: '/ɡʊd deɪ/', homophone: '古德戴', meaning: '日安', sentence: 'Good day to you!', translation: '日安！', homophoneSentence: '古德戴图油!' },
@@ -1113,7 +1113,173 @@ const wordDatabase = {
         { word: 'Excellent', phonetic: '/ˈeksələnt/', homophone: '艾克塞伦特', meaning: '优秀的', sentence: 'Excellent work!', translation: '工作优秀！', homophoneSentence: '艾克塞伦特沃克!' },
         { word: 'Perfect', phonetic: '/ˈpɜːfɪkt/', homophone: '珀费克特', meaning: '完美的', sentence: 'Perfect!', translation: '完美！', homophoneSentence: '珀费克特!' },
         { word: 'Awesome', phonetic: '/ˈɔːsəm/', homophone: '奥瑟姆', meaning: '太棒了', sentence: 'Awesome!', translation: '太棒了！', homophoneSentence: '奥瑟姆!' },
-    ],
+    
+        { word: 'Welcome to our family', phonetic: '/ˈwelkəm tuː ˈaʊə ˈfæməli/', homophone: '威尔康图奥阿法梅里', meaning: '欢迎加入我们家庭', sentence: 'Welcome to our family!', translation: '欢迎加入我们家庭！', homophoneSentence: '威尔康图奥阿法梅里!' },
+
+        { word: 'Welcome to our team', phonetic: '/ˈwelkəm tuː ˈaʊə tiːm/', homophone: '威尔康图奥阿蒂姆', meaning: '欢迎加入我们团队', sentence: 'Welcome to our team!', translation: '欢迎加入我们团队！', homophoneSentence: '威尔康图奥阿蒂姆!' },
+
+        { word: 'Welcome to our store', phonetic: '/ˈwelkəm tuː ˈaʊə stɔː/', homophone: '威尔康图奥阿斯托', meaning: '欢迎来到我们商店', sentence: 'Welcome to our store!', translation: '欢迎来到我们商店！', homophoneSentence: '威尔康图奥阿斯托!' },
+
+        { word: 'Have a great day', phonetic: '/hæv ə ɡreɪt deɪ/', homophone: '海夫阿格瑞特戴', meaning: '祝你有个美好的一天', sentence: 'Have a great day!', translation: '祝你有个美好的一天！', homophoneSentence: '海夫阿格瑞特戴!' },
+
+        { word: 'Have a wonderful day', phonetic: '/hæv ə ˈwʌndəfl deɪ/', homophone: '海夫阿旺德夫欧戴', meaning: '祝你有个精彩的一天', sentence: 'Have a wonderful day!', translation: '祝你有个精彩的一天！', homophoneSentence: '海夫阿旺德夫欧戴!' },
+
+        { word: 'Have a fantastic day', phonetic: '/hæv ə fænˈtæstɪk deɪ/', homophone: '海夫阿范塔斯蒂克戴', meaning: '祝你有个美妙的一天', sentence: 'Have a fantastic day!', translation: '祝你有个美妙的一天！', homophoneSentence: '海夫阿范塔斯蒂克戴!' },
+
+        { word: 'Have a lovely day', phonetic: '/hæv ə ˈlʌvli deɪ/', homophone: '海夫阿拉夫利戴', meaning: '祝你有个可爱的一天', sentence: 'Have a lovely day!', translation: '祝你有个可爱的一天！', homophoneSentence: '海夫阿拉夫利戴!' },
+
+        { word: 'Have a pleasant day', phonetic: '/hæv ə ˈpleznt deɪ/', homophone: '海夫阿普莱森特戴', meaning: '祝你有个愉快的一天', sentence: 'Have a pleasant day!', translation: '祝你有个愉快的一天！', homophoneSentence: '海夫阿普莱森特戴!' },
+
+        { word: 'Have a joyful day', phonetic: '/hæv ə ˈdʒɔɪfl deɪ/', homophone: '海夫阿乔伊夫戴', meaning: '祝你有个快乐的一天', sentence: 'Have a joyful day!', translation: '祝你有个快乐的一天！', homophoneSentence: '海夫阿乔伊夫戴!' },
+
+        { word: 'Have a happy day', phonetic: '/hæv ə ˈhæpi deɪ/', homophone: '海夫阿哈皮戴', meaning: '祝你有个开心的一天', sentence: 'Have a happy day!', translation: '祝你有个开心的一天！', homophoneSentence: '海夫阿哈皮戴!' },
+
+        { word: 'Have a blessed day', phonetic: '/hæv ə ˈblest deɪ/', homophone: '海夫阿布雷斯戴', meaning: '祝你有个幸福的一天', sentence: 'Have a blessed day!', translation: '祝你有个幸福的一天！', homophoneSentence: '海夫阿布雷斯戴!' },
+
+        { word: 'Have a wonderful weekend', phonetic: '/hæv ə ˈwʌndəfl ˌwiːkˈend/', homophone: '海夫阿旺德夫欧威肯德', meaning: '祝你周末愉快', sentence: 'Have a wonderful weekend!', translation: '祝你周末愉快！', homophoneSentence: '海夫阿旺德夫欧威肯德!' },
+
+        { word: 'Have a great weekend', phonetic: '/hæv ə ɡreɪt ˌwiːkˈend/', homophone: '海夫阿格瑞特威肯德', meaning: '祝你周末愉快', sentence: 'Have a great weekend!', translation: '祝你周末愉快！', homophoneSentence: '海夫阿格瑞特威肯德!' },
+
+        { word: 'Have a wonderful holiday', phonetic: '/hæv ə ˈwʌndəfl ˈhɒlədeɪ/', homophone: '海夫阿旺德夫欧霍勒戴', meaning: '祝你假期愉快', sentence: 'Have a wonderful holiday!', translation: '祝你假期愉快！', homophoneSentence: '海夫阿旺德夫欧霍勒戴!' },
+
+        { word: 'Have a great holiday', phonetic: '/hæv ə ɡreɪt ˈhɒlədeɪ/', homophone: '海夫阿格瑞特霍勒戴', meaning: '祝你假期愉快', sentence: 'Have a great holiday!', translation: '祝你假期愉快！', homophoneSentence: '海夫阿格瑞特霍勒戴!' },
+
+        { word: 'Have a nice holiday', phonetic: '/hæv ə naɪs ˈhɒlədeɪ/', homophone: '海夫阿奈斯霍勒戴', meaning: '祝你假期愉快', sentence: 'Have a nice holiday!', translation: '祝你假期愉快！', homophoneSentence: '海夫阿奈斯霍勒戴!' },
+
+        { word: 'Have a good holiday', phonetic: '/hæv ə ɡʊd ˈhɒlədeɪ/', homophone: '海夫阿古德霍勒戴', meaning: '祝你假期愉快', sentence: 'Have a good holiday!', translation: '祝你假期愉快！', homophoneSentence: '海夫阿古德霍勒戴!' },
+
+        { word: 'Good night everyone', phonetic: '/ɡʊd naɪt ˈevriwʌn/', homophone: '古德奈特埃弗里万', meaning: '大家晚安', sentence: 'Good night everyone!', translation: '大家晚安！', homophoneSentence: '古德奈特埃弗里万!' },
+
+        { word: 'Hey everyone', phonetic: '/heɪ ˈevriwʌn/', homophone: '嘿埃弗里万', meaning: '大家好', sentence: 'Hey everyone!', translation: '大家好！', homophoneSentence: '嘿埃弗里万!' },
+
+        { word: 'Howdy everyone', phonetic: '/ˈhaʊdi ˈevriwʌn/', homophone: '豪迪埃弗里万', meaning: '大家好', sentence: 'Howdy everyone!', translation: '大家好！', homophoneSentence: '豪迪埃弗里万!' },
+
+        { word: 'Welcome everyone', phonetic: '/ˈwelkəm ˈevriwʌn/', homophone: '威尔康埃弗里万', meaning: '欢迎大家', sentence: 'Welcome everyone!', translation: '欢迎大家！', homophoneSentence: '威尔康埃弗里万!' },
+
+        { word: 'Good day everyone', phonetic: '/ɡʊd deɪ ˈevriwʌn/', homophone: '古德戴埃弗里万', meaning: '大家好', sentence: 'Good day everyone!', translation: '大家好！', homophoneSentence: '古德戴埃弗里万!' },
+
+        { word: 'Have a great day everyone', phonetic: '/hæv ə ɡreɪt deɪ ˈevriwʌn/', homophone: '海夫阿格瑞特戴埃弗里万', meaning: '大家今天愉快', sentence: 'Have a great day everyone!', translation: '大家今天愉快！', homophoneSentence: '海夫阿格瑞特戴埃弗里万!' },
+
+        { word: 'See you later everyone', phonetic: '/siː juː ˈleɪtə ˈevriwʌn/', homophone: '西油雷特埃弗里万', meaning: '大家待会见', sentence: 'See you later everyone!', translation: '大家待会见！', homophoneSentence: '西油雷特埃弗里万!' },
+
+        { word: 'See you soon everyone', phonetic: '/siː juː suːn ˈevriwʌn/', homophone: '西油苏恩埃弗里万', meaning: '大家很快见', sentence: 'See you soon everyone!', translation: '大家很快见！', homophoneSentence: '西油苏恩埃弗里万!' },
+
+        { word: "Good day to you", phonetic: "/ɡʊd deɪ tuː juː/", homophone: "古德戴图优", meaning: "祝你日安", sentence: "Good day to you!", translation: "祝你日安！", homophoneSentence: "古德戴图优!" },
+
+        { word: "Good day sir", phonetic: "/ɡʊd deɪ sɜːr/", homophone: "古德戴瑟", meaning: "先生日安", sentence: "Good day sir!", translation: "先生日安！", homophoneSentence: "古德戴瑟!" },
+
+        { word: "Good day madam", phonetic: "/ɡʊd deɪ ˈmædəm/", homophone: "古德戴麦德姆", meaning: "女士日安", sentence: "Good day madam!", translation: "女士日安！", homophoneSentence: "古德戴麦德姆!" },
+
+        { word: "Rise and shine", phonetic: "/raɪz ænd ʃaɪn/", homophone: "瑞兹安德晒恩", meaning: "起床啦", sentence: "Rise and shine!", translation: "起床啦！", homophoneSentence: "瑞兹安德晒恩!" },
+
+        { word: "Bright and early", phonetic: "/braɪt ænd ˈɜːli/", homophone: "布瑞特安德厄利", meaning: "一大早就", sentence: "Bright and early today!", translation: "今天一大早就！", homophoneSentence: "布瑞特安德厄利特戴!" },
+
+        { word: "Morning has broken", phonetic: "/ˈmɔːnɪŋ hæz ˈbrəʊkən/", homophone: "莫宁海兹布柔肯", meaning: "早晨来临", sentence: "Morning has broken!", translation: "早晨来临了！", homophoneSentence: "莫宁海兹布柔肯!" },
+
+        { word: "Beautiful morning", phonetic: "/ˈbjuːtɪfl ˈmɔːnɪŋ/", homophone: "比优提夫欧莫宁", meaning: "美好的早晨", sentence: "What a beautiful morning!", translation: "多么美好的早晨！", homophoneSentence: "沃特啊比优提夫欧莫宁!" },
+
+        { word: "Lovely morning", phonetic: "/ˈlʌvli ˈmɔːnɪŋ/", homophone: "拉夫利莫宁", meaning: "可爱的早晨", sentence: "Lovely morning!", translation: "可爱的早晨！", homophoneSentence: "拉夫利莫宁!" },
+
+        { word: "Pleasant morning", phonetic: "/ˈpleznt ˈmɔːnɪŋ/", homophone: "普莱曾特莫宁", meaning: "愉快的早晨", sentence: "Pleasant morning!", translation: "愉快的早晨！", homophoneSentence: "普莱曾特莫宁!" },
+
+        { word: "Good afternoon sir", phonetic: "/ɡʊd ˌɑːftəˈnuːn sɜːr/", homophone: "古德阿夫特努恩瑟", meaning: "先生下午好", sentence: "Good afternoon sir!", translation: "先生下午好！", homophoneSentence: "古德阿夫特努恩瑟!" },
+
+        { word: "Good afternoon madam", phonetic: "/ɡʊd ˌɑːftəˈnuːn ˈmædəm/", homophone: "古德阿夫特努恩麦德姆", meaning: "女士下午好", sentence: "Good afternoon madam!", translation: "女士下午好！", homophoneSentence: "古德阿夫特努恩麦德姆!" },
+
+        { word: "Afternoon greetings", phonetic: "/ˌɑːftəˈnuːn ɡriːtɪŋz/", homophone: "阿夫特努恩格瑞听兹", meaning: "下午问候", sentence: "Afternoon greetings!", translation: "下午问候！", homophoneSentence: "阿夫特努恩格瑞听兹!" },
+
+        { word: "Pleasant afternoon", phonetic: "/ˈpleznt ˌɑːftəˈnuːn/", homophone: "普莱曾特阿夫特努恩", meaning: "愉快的下午", sentence: "Have a pleasant afternoon!", translation: "祝你下午愉快！", homophoneSentence: "海夫啊普莱曾特阿夫特努恩!" },
+
+        { word: "Good evening sir", phonetic: "/ɡʊd ˈiːvnɪŋ sɜːr/", homophone: "古德伊夫宁瑟", meaning: "先生晚上好", sentence: "Good evening sir!", translation: "先生晚上好！", homophoneSentence: "古德伊夫宁瑟!" },
+
+        { word: "Good evening madam", phonetic: "/ɡʊd ˈiːvnɪŋ ˈmædəm/", homophone: "古德伊夫宁麦德姆", meaning: "女士晚上好", sentence: "Good evening madam!", translation: "女士晚上好！", homophoneSentence: "古德伊夫宁麦德姆!" },
+
+        { word: "Evening greetings", phonetic: "/ˈiːvnɪŋ ɡriːtɪŋz/", homophone: "伊夫宁格瑞听兹", meaning: "晚上问候", sentence: "Evening greetings!", translation: "晚上问候！", homophoneSentence: "伊夫宁格瑞听兹!" },
+
+        { word: "Lovely evening", phonetic: "/ˈlʌvli ˈiːvnɪŋ/", homophone: "拉夫利伊夫宁", meaning: "美好的晚上", sentence: "Lovely evening!", translation: "美好的晚上！", homophoneSentence: "拉夫利伊夫宁!" },
+
+        { word: "Pleasant evening", phonetic: "/ˈpleznt ˈiːvnɪŋ/", homophone: "普莱曾特伊夫宁", meaning: "愉快的晚上", sentence: "Have a pleasant evening!", translation: "祝你晚上愉快！", homophoneSentence: "海夫啊普莱曾特伊夫宁!" },
+
+        { word: "Night night", phonetic: "/naɪt naɪt/", homophone: "奈特奈特", meaning: "晚安晚安", sentence: "Night night!", translation: "晚安晚安！", homophoneSentence: "奈特奈特!" },
+
+        { word: "Rest well", phonetic: "/rest wel/", homophone: "瑞斯特威尔", meaning: "好好休息", sentence: "Rest well!", translation: "好好休息！", homophoneSentence: "瑞斯特威尔!" },
+
+        { word: "Pleasant dreams", phonetic: "/ˈpleznt driːmz/", homophone: "普莱曾特德瑞姆兹", meaning: "愉快的梦", sentence: "Pleasant dreams!", translation: "祝你做个愉快的梦！", homophoneSentence: "普莱曾特德瑞姆兹!" },
+
+        { word: "Goodnight sleep tight", phonetic: "/ɡʊdnaɪt sliːp taɪt/", homophone: "古德奈特斯利普泰特", meaning: "晚安睡个好觉", sentence: "Goodnight sleep tight!", translation: "晚安睡个好觉！", homophoneSentence: "古德奈特斯利普泰特!" },
+
+        { word: "See you in the morning", phonetic: "/siː juː ɪn ðə ˈmɔːnɪŋ/", homophone: "西优因泽莫宁", meaning: "早上见", sentence: "See you in the morning!", translation: "早上见！", homophoneSentence: "西优因泽莫宁!" },
+
+        { word: "Until tomorrow", phonetic: "/ənˈtɪl təˈmɒrəʊ/", homophone: "安提尔特莫柔", meaning: "直到明天", sentence: "Until tomorrow!", translation: "明天见！", homophoneSentence: "安提尔特莫柔!" },
+
+        { word: "Have a good night", phonetic: "/hæv ə ɡʊd naɪt/", homophone: "海夫阿古德奈特", meaning: "祝你晚安", sentence: "Have a good night!", translation: "祝你晚安！", homophoneSentence: "海夫阿古德奈特!" },
+
+        { word: "See you around", phonetic: "/siː juː əˈraʊnd/", homophone: "西优阿柔德", meaning: "回头见", sentence: "See you around!", translation: "回头见！", homophoneSentence: "西优阿柔德!" },
+
+        { word: "Farewell for now", phonetic: "/ˌfeəˈwel fɔː naʊ/", homophone: "夫尔威尔佛纳", meaning: "暂时告别", sentence: "Farewell for now!", translation: "暂时告别！", homophoneSentence: "夫尔威尔佛纳!" },
+
+        { word: "It is a pleasure to meet you", phonetic: "/ɪts ə ˈpleʒə tuː miːt juː/", homophone: "伊茨啊普莱舍图米特优", meaning: "很高兴认识你", sentence: "It is a pleasure to meet you!", translation: "很高兴认识你！", homophoneSentence: "伊茨啊普莱舍图米特优!" },
+
+        { word: "Glad to see you", phonetic: "/ɡlæd tuː siː juː/", homophone: "格拉德图西优", meaning: "很高兴见到你", sentence: "Glad to see you!", translation: "很高兴见到你！", homophoneSentence: "格拉德图西优!" },
+
+        { word: "Good to see you again", phonetic: "/ɡʊd tuː siː juː əˈɡen/", homophone: "古德图西优阿盖恩", meaning: "很高兴再次见到你", sentence: "Good to see you again!", translation: "很高兴再次见到你！", homophoneSentence: "古德图西优阿盖恩!" },
+
+        { word: "Fancy meeting you here", phonetic: "/ˈfænsi ˈmiːtɪŋ juː hɪə/", homophone: "范西米听优希尔", meaning: "真巧在这里见到你", sentence: "Fancy meeting you here!", translation: "真巧在这里见到你！", homophoneSentence: "范西米听优希尔!" },
+
+        { word: "Small world", phonetic: "/smɔːl wɜːld/", homophone: "斯莫尔沃德", meaning: "世界真小", sentence: "Small world!", translation: "世界真小！", homophoneSentence: "斯莫尔沃德!" },
+
+        { word: "Happy Valentine Day", phonetic: "/ˈhæpi ˈvæləntaɪnz deɪ/", homophone: "嗨皮瓦伦泰恩兹戴", meaning: "情人节快乐", sentence: "Happy Valentine Day!", translation: "情人节快乐！", homophoneSentence: "嗨皮瓦伦泰恩兹戴!" },
+
+        { word: "Happy Mother Day", phonetic: "/ˈhæpi ˈmʌðəz deɪ/", homophone: "嗨皮马泽兹戴", meaning: "母亲节快乐", sentence: "Happy Mother Day!", translation: "母亲节快乐！", homophoneSentence: "嗨皮马泽兹戴!" },
+
+        { word: "Happy Father Day", phonetic: "/ˈhæpi ˈfɑːðəz deɪ/", homophone: "嗨皮法泽兹戴", meaning: "父亲节快乐", sentence: "Happy Father Day!", translation: "父亲节快乐！", homophoneSentence: "嗨皮法泽兹戴!" },
+
+        { word: "Happy birthday to you", phonetic: "/ˈhæpi ˈbɜːθdeɪ tuː juː/", homophone: "嗨皮波斯戴图优", meaning: "祝你生日快乐", sentence: "Happy birthday to you!", translation: "祝你生日快乐！", homophoneSentence: "嗨皮波斯戴图优!" },
+
+        { word: "Many happy returns", phonetic: "/ˈmeni ˈhæpi rɪˈtɜːnz/", homophone: "麦尼嗨瑞瑞腾兹", meaning: "祝你年年有今日", sentence: "Many happy returns!", translation: "祝你年年有今日！", homophoneSentence: "麦尼嗨瑞瑞腾兹!" },
+
+        { word: "Thanks so much", phonetic: "/θæŋks səʊ mʌtʃ/", homophone: "桑克斯搜马奇", meaning: "非常感谢", sentence: "Thanks so much!", translation: "非常感谢！", homophoneSentence: "桑克斯搜马奇!" },
+
+        { word: "Many thanks", phonetic: "/ˈmeni θæŋks/", homophone: "麦尼桑克斯", meaning: "多谢", sentence: "Many thanks!", translation: "多谢！", homophoneSentence: "麦尼桑克斯!" },
+
+        { word: "Thanks a million", phonetic: "/θæŋks ə ˈmɪljən/", homophone: "桑克斯阿米尔金", meaning: "万分感谢", sentence: "Thanks a million!", translation: "万分感谢！", homophoneSentence: "桑克斯阿米尔金!" },
+
+        { word: "I really appreciate it", phonetic: "/aɪ ˈrɪəli əˈpriːʃieɪt ɪt/", homophone: "爱瑞尔利阿普瑞希埃特伊特", meaning: "我真的很感激", sentence: "I really appreciate it!", translation: "我真的很感激！", homophoneSentence: "爱瑞尔利阿普瑞希埃特伊特!" },
+
+        { word: "I am so grateful", phonetic: "/aɪm səʊ ˈɡreɪtfl/", homophone: "艾姆搜格瑞特夫欧", meaning: "我非常感激", sentence: "I am so grateful!", translation: "我非常感激！", homophoneSentence: "艾姆搜格瑞特夫欧!" },
+
+        { word: "You are too kind", phonetic: "/jɔːr tuː kaɪnd/", homophone: "优儿图凯德", meaning: "你太客气了", sentence: "You are too kind!", translation: "你太客气了！", homophoneSentence: "优儿图凯德!" },
+
+        { word: "That is very kind of you", phonetic: "/ðæts ˈveri kaɪnd ɒv juː/", homophone: "戴茨歪瑞凯德奥夫优", meaning: "你真是太好了", sentence: "That is very kind of you!", translation: "你真是太好了！", homophoneSentence: "戴茨歪瑞凯德奥夫优!" },
+
+        { word: "I am so sorry", phonetic: "/aɪm səʊ ˈsɒri/", homophone: "艾姆搜索瑞", meaning: "我很抱歉", sentence: "I am so sorry!", translation: "我很抱歉！", homophoneSentence: "艾姆搜索瑞!" },
+
+        { word: "I did not mean to", phonetic: "/aɪ ˈdɪdnt miːn tuː/", homophone: "爱戴德恩特明图", meaning: "我不是故意的", sentence: "I did not mean to!", translation: "我不是故意的！", homophoneSentence: "爱戴德恩特明图!" },
+
+        { word: "It was an accident", phonetic: "/ɪt wɒz ən ˈæksɪdənt/", homophone: "伊特沃兹安阿克西登特", meaning: "那是个意外", sentence: "It was an accident!", translation: "那是个意外！", homophoneSentence: "伊特沃兹安阿克西登特!" },
+
+        { word: "I feel terrible", phonetic: "/aɪ fiːl ˈterəbl/", homophone: "爱菲尔泰瑞波欧", meaning: "我感觉很糟糕", sentence: "I feel terrible!", translation: "我感觉很糟糕！", homophoneSentence: "爱菲尔泰瑞波欧!" },
+
+        { word: "How careless of me", phonetic: "/haʊ ˈkeələs ɒv miː/", homophone: "好凯尔勒斯奥夫米", meaning: "我真粗心", sentence: "How careless of me!", translation: "我真粗心！", homophoneSentence: "好凯尔勒斯奥夫米!" },
+
+        { word: "I owe you an apology", phonetic: "/aɪ əʊ juː ən əˈpɒlədʒi/", homophone: "爱欧优安阿波勒吉", meaning: "我欠你一个道歉", sentence: "I owe you an apology!", translation: "我欠你一个道歉！", homophoneSentence: "爱欧优安阿波勒吉!" },
+
+        { word: "Pardon my mistake", phonetic: "/ˈpɑːdn maɪ mɪˈsteɪk/", homophone: "帕登麦米斯泰克", meaning: "请原谅我的错误", sentence: "Pardon my mistake!", translation: "请原谅我的错误！", homophoneSentence: "帕登麦米斯泰克!" },
+
+        { word: "Would you like to join us", phonetic: "/wʊd juː laɪk tuː dʒɔɪn ʌs/", homophone: "伍德优来克图卓因阿斯", meaning: "你愿意加入我们吗", sentence: "Would you like to join us?", translation: "你愿意加入我们吗？", homophoneSentence: "伍德优来克图卓因阿斯?" },
+
+        { word: "Come and join us", phonetic: "/kʌm ænd dʒɔɪn ʌs/", homophone: "卡姆安德卓因阿斯", meaning: "来加入我们吧", sentence: "Come and join us!", translation: "来加入我们吧！", homophoneSentence: "卡姆安德卓因阿斯!" },
+
+        { word: "You are welcome to come", phonetic: "/jɔːr ˈwelkəm tuː kʌm/", homophone: "优儿威尔康图卡姆", meaning: "欢迎你来", sentence: "You are welcome to come!", translation: "欢迎你来！", homophoneSentence: "优儿威尔康图卡姆!" },
+
+        { word: "Feel free to join", phonetic: "/fiːl friː tuː dʒɔɪn/", homophone: "菲尔弗里图卓因", meaning: "随意加入", sentence: "Feel free to join!", translation: "随意加入！", homophoneSentence: "菲尔弗里图卓因!" },
+
+        { word: "We would love to have you", phonetic: "/wiːd lʌv tuː hæv juː/", homophone: "维德拉夫图海夫优", meaning: "我们很高兴有你", sentence: "We would love to have you!", translation: "我们很高兴有你！", homophoneSentence: "维德拉夫图海夫优!" },
+
+        { word: "Take a seat", phonetic: "/teɪk ə siːt/", homophone: "忒克阿西特", meaning: "请坐", sentence: "Please take a seat!", translation: "请坐！", homophoneSentence: "普利兹忒克阿西特!" },
+
+        { word: "Have a drink", phonetic: "/hæv ə drɪŋk/", homophone: "海夫阿德林克", meaning: "喝一杯", sentence: "Have a drink!", translation: "喝一杯！", homophoneSentence: "海夫阿德林克!" },
+],
     emotions: [
 { word: 'Happy', phonetic: '/ˈhæpi/', homophone: '嗨皮', meaning: '开心的', sentence: 'I\'m so happy today!', translation: '我今天很开心！', homophoneSentence: '爱姆搜嗨皮特戴!' },
         { word: 'Sad', phonetic: '/sæd/', homophone: '赛德', meaning: '难过的', sentence: 'Don\'t be sad, cheer up!', translation: '别难过，振作起来！', homophoneSentence: '东特比赛德,切尔啊普!' },
@@ -1617,7 +1783,7 @@ const wordDatabase = {
         { word: 'Excitement', phonetic: '/ɪkˈsaɪtmənt/', homophone: '伊克赛特蒙特', meaning: '兴奋', sentence: 'Full of excitement!', translation: '充满兴奋！', homophoneSentence: '富欧奥夫伊克赛特蒙特!' },
         { word: 'Enthusiasm', phonetic: '/ɪnˈθjuːziæzəm/', homophone: '因丘兹艾泽姆', meaning: '热情', sentence: 'Show enthusiasm!', translation: '展现热情！', homophoneSentence: '肖因丘兹艾泽姆!' },
         { word: 'Passion', phonetic: '/ˈpæʃn/', homophone: '帕申', meaning: '激情', sentence: 'Full of passion!', translation: '充满激情！', homophoneSentence: '富欧奥夫帕申!' },
-        { word: 'Zeal', phonetic: '/ziːl/', homophone: '泽尔', meaning: '热情', sentence: 'With great zeal!', translation: '充满热情！', homophoneSentence: '威兹格瑞特泽尔!' }
+        { word: 'Zeal', phonetic: '/ziːl/', homophone: '泽尔', meaning: '热情', sentence: 'With great zeal!', translation: '充满热情！', homophoneSentence: '威兹格瑞特泽尔!' },
         { word: 'Howdy', phonetic: '/ˈhaʊdi/', homophone: '豪迪', meaning: '你好', sentence: 'Howdy, partner!', translation: '你好，伙伴！', homophoneSentence: '豪迪，帕特纳!' },
         { word: 'Salutations', phonetic: '/ˌsæljuˈteɪʃənz/', homophone: '萨柳忒申兹', meaning: '问候', sentence: 'Salutations to all!', translation: '向大家问好！', homophoneSentence: '萨柳忒申兹图奥!' },
         { word: 'Greetings', phonetic: '/ɡrɪˈtiːŋz/', homophone: '格瑞廷兹', meaning: '问候', sentence: 'Season\'s greetings!', translation: '节日问候！', homophoneSentence: '西森兹格瑞廷兹!' },
@@ -1706,199 +1872,365 @@ const wordDatabase = {
         { word: 'Joyful', phonetic: '/ˈdʒɔɪfl/', homophone: '乔伊夫', meaning: '快乐的', sentence: 'They are joyful.', translation: '他们很快乐。', homophoneSentence: '泽阿乔伊夫.' },
         { word: 'Cheerful', phonetic: '/ˈtʃɪəfl/', homophone: '切尔夫', meaning: '愉快的', sentence: 'She is cheerful.', translation: '她很愉快。', homophoneSentence: '西伊切尔夫.' },
         { word: 'Happy', phonetic: '/ˈhæpi/', homophone: '哈皮', meaning: '开心的', sentence: 'I\'m happy.', translation: '我很开心。', homophoneSentence: '爱姆哈皮.' },
+        { word: 'Mellow', phonetic: '/ˈmeləʊ/', homophone: '梅洛', meaning: '柔和的', sentence: 'The music is mellow.', translation: '音乐很柔和。', homophoneSentence: '泽谬齐伊梅洛.' },
+        { word: 'Fuzzy', phonetic: '/ˈfʌzi/', homophone: '法齐', meaning: '模糊的', sentence: 'My head feels fuzzy.', translation: '我的头感觉模糊。', homophoneSentence: '麦海德菲尔法齐.' },
+        { word: 'Cozy', phonetic: '/ˈkəʊzi/', homophone: '扣齐', meaning: '舒适的', sentence: 'The room is cozy.', translation: '房间很舒适。', homophoneSentence: '泽如姆伊扣齐.' },
         { word: 'Sad', phonetic: '/sæd/', homophone: '萨德', meaning: '悲伤的', sentence: 'I\'m sad.', translation: '我很悲伤。', homophoneSentence: '爱姆萨德.' },
         { word: 'Angry', phonetic: '/ˈæŋɡri/', homophone: '安格瑞', meaning: '生气的', sentence: 'He is angry.', translation: '他很生气。', homophoneSentence: '黑伊安格瑞.' },
         { word: 'Scared', phonetic: '/skeəd/', homophone: '斯凯德', meaning: '害怕的', sentence: 'I\'m scared.', translation: '我很害怕。', homophoneSentence: '爱姆斯凯德.' },
         { word: 'Anxious', phonetic: '/ˈæŋkʃəs/', homophone: '安克舍斯', meaning: '焦虑的', sentence: 'She is anxious.', translation: '她很焦虑。', homophoneSentence: '西伊安克舍斯.' },
-    ],
+    
+        { word: 'Unhappy', phonetic: '/ʌnˈhæpi/', homophone: '昂哈皮', meaning: '不开心的', sentence: 'I feel unhappy!', translation: '我感到不开心！', homophoneSentence: '爱菲尔昂哈皮!' },
+
+        { word: 'Lonely', phonetic: '/ˈləʊnli/', homophone: '龙利', meaning: '孤独的', sentence: 'I feel lonely!', translation: '我感到孤独！', homophoneSentence: '爱菲尔龙利!' },
+
+        { word: 'Isolated', phonetic: '/ˈaɪsəleɪtɪd/', homophone: '艾索雷特德', meaning: '孤立的', sentence: 'I feel isolated!', translation: '我感到孤立！', homophoneSentence: '爱菲尔艾索雷特德!' },
+
+        { word: 'Alone', phonetic: '/əˈləʊn/', homophone: '阿龙', meaning: '孤独的', sentence: 'I feel alone!', translation: '我感到孤独！', homophoneSentence: '爱菲尔阿龙!' },
+
+        { word: 'Mad', phonetic: '/mæd/', homophone: '麦德', meaning: '生气的', sentence: 'I feel mad!', translation: '我感到生气！', homophoneSentence: '爱菲尔麦德!' },
+
+        { word: 'Furious', phonetic: '/ˈfjʊəriəs/', homophone: '菲尤瑞尔斯', meaning: '暴怒的', sentence: 'I feel furious!', translation: '我感到暴怒！', homophoneSentence: '爱菲尔菲尤瑞尔斯!' },
+
+        { word: 'Enraged', phonetic: '/ɪnˈreɪdʒd/', homophone: '伊恩瑞吉德', meaning: '愤怒的', sentence: 'I feel enraged!', translation: '我感到愤怒！', homophoneSentence: '爱菲尔伊恩瑞吉德!' },
+
+        { word: 'Annoyed', phonetic: '/əˈnɔɪd/', homophone: '阿诺伊德', meaning: '恼怒的', sentence: 'I feel annoyed!', translation: '我感到恼怒！', homophoneSentence: '爱菲尔阿诺伊德!' },
+
+        { word: 'Irritated', phonetic: '/ˈɪrɪteɪtɪd/', homophone: '伊瑞泰特德', meaning: '烦躁的', sentence: 'I feel irritated!', translation: '我感到烦躁！', homophoneSentence: '爱菲尔伊瑞泰特德!' },
+
+        { word: "Exhilarated", phonetic: "/ɪɡˈzɪləreɪtɪd/", homophone: "伊格齐勒瑞提德", meaning: "振奋的", sentence: "I feel exhilarated!", translation: "我感到振奋！", homophoneSentence: "爱菲尔伊格齐勒瑞提德!" },
+
+        { word: "Contented", phonetic: "/kənˈtentɪd/", homophone: "康滕提德", meaning: "满足的", sentence: "I feel contented!", translation: "我感到满足！", homophoneSentence: "爱菲尔康滕提德!" },
+
+        { word: "Devastated", phonetic: "/ˈdevəsteɪtɪd/", homophone: "戴瓦斯蒂提德", meaning: "崩溃的", sentence: "I am devastated!", translation: "我崩溃了！", homophoneSentence: "艾姆戴瓦斯蒂提德!" },
+
+        { word: "Crushed", phonetic: "/krʌʃt/", homophone: "克拉什特", meaning: " crushing的", sentence: "I feel crushed!", translation: "我感到 crushing！", homophoneSentence: "爱菲尔克拉什特!" },
+
+        { word: "Despondent", phonetic: "/dɪˈspɒndənt/", homophone: "迪斯庞登特", meaning: "沮丧的", sentence: "I am despondent!", translation: "我很沮丧！", homophoneSentence: "艾姆迪斯庞登特!" },
+
+        { word: "Sorrowful", phonetic: "/ˈsɒrəʊfl/", homophone: "索柔夫欧", meaning: "悲伤的", sentence: "I am sorrowful!", translation: "我很悲伤！", homophoneSentence: "艾姆索柔夫欧!" },
+
+        { word: "Woeful", phonetic: "/ˈwəʊfl/", homophone: "沃夫欧", meaning: "悲哀的", sentence: "I feel woeful!", translation: "我感到悲哀！", homophoneSentence: "爱菲尔沃夫欧!" },
+
+        { word: "Infuriated", phonetic: "/ɪnˈfjʊərieɪtɪd/", homophone: "伊恩菲尤瑞埃提德", meaning: "被激怒的", sentence: "I am infuriated!", translation: "我被激怒了！", homophoneSentence: "艾姆伊恩菲尤瑞埃提德!" },
+
+        { word: "Livid", phonetic: "/ˈlɪvɪd/", homophone: "利维德", meaning: "大怒的", sentence: "I am livid!", translation: "我大怒！", homophoneSentence: "艾姆利维德!" },
+
+        { word: "Resentful", phonetic: "/rɪˈzentfl/", homophone: "瑞森特夫欧", meaning: "怨恨的", sentence: "I feel resentful!", translation: "我感到怨恨！", homophoneSentence: "爱菲尔瑞森特夫欧!" },
+
+        { word: "Terrified", phonetic: "/ˈterɪfaɪd/", homophone: "泰瑞法艾德", meaning: "恐惧的", sentence: "I am terrified!", translation: "我吓坏了！", homophoneSentence: "艾姆泰瑞法艾德!" },
+
+        { word: "Petrified", phonetic: "/ˈpetrɪfaɪd/", homophone: "佩特里法艾德", meaning: "吓呆的", sentence: "I am petrified!", translation: "我吓呆了！", homophoneSentence: "艾姆佩特里法艾德!" },
+
+        { word: "Horrified", phonetic: "/ˈhɒrɪfaɪd/", homophone: "霍瑞法艾德", meaning: "惊骇的", sentence: "I am horrified!", translation: "我惊骇了！", homophoneSentence: "艾姆霍瑞法艾德!" },
+
+        { word: "Panicked", phonetic: "/ˈpænɪkt/", homophone: "帕尼科特", meaning: "恐慌的", sentence: "I am panicked!", translation: "我恐慌了！", homophoneSentence: "艾姆帕尼科特!" },
+
+        { word: "Apprehensive", phonetic: "/ˌæprɪˈhensɪv/", homophone: "阿普瑞亨西夫", meaning: "忧虑的", sentence: "I feel apprehensive!", translation: "我感到忧虑！", homophoneSentence: "爱菲尔阿普瑞亨西夫!" },
+
+        { word: "Bewildered", phonetic: "/bɪˈwɪldəd/", homophone: "比威尔德", meaning: "困惑的", sentence: "I am bewildered!", translation: "我很困惑！", homophoneSentence: "艾姆比威尔德!" },
+
+        { word: "Perplexed", phonetic: "/pəˈplekst/", homophone: "波普莱克斯特", meaning: "困惑的", sentence: "I am perplexed!", translation: "我很困惑！", homophoneSentence: "艾姆波普莱克斯特!" },
+
+        { word: "Baffled", phonetic: "/ˈbæfld/", homophone: "巴夫尔德", meaning: "困惑的", sentence: "I am baffled!", translation: "我很困惑！", homophoneSentence: "艾姆巴夫尔德!" },
+
+        { word: "Puzzled", phonetic: "/ˈpʌzld/", homophone: "帕兹尔德", meaning: "迷惑的", sentence: "I am puzzled!", translation: "我很迷惑！", homophoneSentence: "艾姆帕兹尔德!" },
+
+        { word: "Confused", phonetic: "/kənˈfjuːzd/", homophone: "康菲优兹德", meaning: "困惑的", sentence: "I am confused!", translation: "我很困惑！", homophoneSentence: "艾姆康菲优兹德!" },
+
+        { word: "Disoriented", phonetic: "/dɪsˈɔːrientɪd/", homophone: "迪斯奥瑞恩提德", meaning: "迷失方向的", sentence: "I feel disoriented!", translation: "我感到迷失方向！", homophoneSentence: "爱菲尔迪斯奥瑞恩提德!" },
+
+        { word: "Lost", phonetic: "/lɒst/", homophone: "洛斯特", meaning: "迷茫的", sentence: "I feel lost!", translation: "我感到迷茫！", homophoneSentence: "爱菲尔洛斯特!" },
+
+        { word: "Uncertain", phonetic: "/ʌnˈsɜːtn/", homophone: "安瑟腾", meaning: "不确定的", sentence: "I feel uncertain!", translation: "我不确定！", homophoneSentence: "爱菲尔安瑟腾!" },
+
+        { word: "Doubtful", phonetic: "/ˈdaʊtfl/", homophone: "道特夫欧", meaning: "怀疑的", sentence: "I am doubtful!", translation: "我很怀疑！", homophoneSentence: "艾姆道特夫欧!" },
+
+        { word: "Skeptical", phonetic: "/ˈskeptɪkl/", homophone: "斯凯普提克尔", meaning: "怀疑的", sentence: "I am skeptical!", translation: "我很怀疑！", homophoneSentence: "艾姆斯凯普提克尔!" },
+
+        { word: "Suspicious", phonetic: "/səˈspɪʃəs/", homophone: "色斯皮修斯", meaning: "怀疑的", sentence: "I am suspicious!", translation: "我很怀疑！", homophoneSentence: "艾姆色斯皮修斯!" },
+
+        { word: "Cautious", phonetic: "/ˈkɔːʃəs/", homophone: "考修斯", meaning: "谨慎的", sentence: "I am cautious!", translation: "我很谨慎！", homophoneSentence: "艾姆考修斯!" },
+
+        { word: "Wary", phonetic: "/ˈweəri/", homophone: "威瑞", meaning: "警惕的", sentence: "I am wary!", translation: "我很警惕！", homophoneSentence: "艾姆威瑞!" },
+
+        { word: "Reserved", phonetic: "/rɪˈzɜːvd/", homophone: "瑞泽夫德", meaning: "含蓄的", sentence: "I am reserved!", translation: "我很含蓄！", homophoneSentence: "艾姆瑞泽夫德!" },
+
+        { word: "Withdrawn", phonetic: "/wɪðˈdrɔːn/", homophone: "威兹德龙", meaning: "孤僻的", sentence: "I feel withdrawn!", translation: "我感到孤僻！", homophoneSentence: "爱菲尔威兹德龙!" },
+
+        { word: "Indifferent", phonetic: "/ɪnˈdɪfrənt/", homophone: "因迪夫伦特", meaning: "漠不关心的", sentence: "I am indifferent!", translation: "我漠不关心！", homophoneSentence: "艾姆因迪夫伦特!" },
+
+        { word: "Apathetic", phonetic: "/ˌæpəˈθetɪk/", homophone: "阿帕塞提克", meaning: "冷漠的", sentence: "I feel apathetic!", translation: "我感到冷漠！", homophoneSentence: "爱菲尔阿帕塞提克!" },
+
+        { word: "Uninterested", phonetic: "/ʌnˈɪntrəstɪd/", homophone: "安因特瑞斯蒂德", meaning: "不感兴趣的", sentence: "I am uninterested!", translation: "我不感兴趣！", homophoneSentence: "艾姆安因特瑞斯蒂德!" },
+
+        { word: "Bored", phonetic: "/bɔːd/", homophone: "博德", meaning: "无聊的", sentence: "I am bored!", translation: "我很无聊！", homophoneSentence: "艾姆博德!" },
+
+        { word: "Burned out", phonetic: "/bɜːnd aʊt/", homophone: "伯恩德奥特", meaning: " burnout的", sentence: "I am burned out!", translation: "我 burnout了！", homophoneSentence: "艾姆伯恩德奥特!" },
+
+        { word: "Stuck", phonetic: "/stʌk/", homophone: "斯塔克", meaning: "被困住的", sentence: "I feel stuck!", translation: "我感到被困住了！", homophoneSentence: "爱菲尔斯塔克!" },
+
+        { word: "Trapped", phonetic: "/træpt/", homophone: "特拉普特", meaning: "被困的", sentence: "I feel trapped!", translation: "我感到被困了！", homophoneSentence: "爱菲尔特拉普特!" },
+
+        { word: "Confined", phonetic: "/kənˈfaɪnd/", homophone: "康法艾恩德", meaning: "受限制的", sentence: "I feel confined!", translation: "我感到受限制！", homophoneSentence: "爱菲尔康法艾恩德!" },
+
+        { word: "Restricted", phonetic: "/rɪˈstrɪktɪd/", homophone: "瑞斯崔克提德", meaning: "受限制的", sentence: "I feel restricted!", translation: "我感到受限制！", homophoneSentence: "爱菲尔瑞斯崔克提德!" },
+
+        { word: "Limited", phonetic: "/ˈlɪmɪtɪd/", homophone: "利米提德", meaning: "有限的", sentence: "I feel limited!", translation: "我感到有限！", homophoneSentence: "爱菲尔利米提德!" },
+
+        { word: "Powerless", phonetic: "/ˈpaʊələs/", homophone: "鲍威尔勒斯", meaning: "无力的", sentence: "I feel powerless!", translation: "我感到无力！", homophoneSentence: "爱菲尔鲍威尔勒斯!" },
+
+        { word: "Helpless", phonetic: "/ˈhelpləs/", homophone: "海尔普勒斯", meaning: "无助的", sentence: "I feel helpless!", translation: "我感到无助！", homophoneSentence: "爱菲尔海尔普勒斯!" },
+
+        { word: "Vulnerable", phonetic: "/ˈvʌlnərəbl/", homophone: "瓦尔纳瑞波欧", meaning: "脆弱的", sentence: "I feel vulnerable!", translation: "我感到脆弱！", homophoneSentence: "爱菲尔瓦尔纳瑞波欧!" },
+
+        { word: "Exposed", phonetic: "/ɪkˈspəʊzd/", homophone: "伊克斯波兹德", meaning: "暴露的", sentence: "I feel exposed!", translation: "我感到暴露！", homophoneSentence: "爱菲尔伊克斯波兹德!" },
+
+        { word: "Insecure", phonetic: "/ˌɪnsɪˈkjʊə/", homophone: "因西克优尔", meaning: "不安全的", sentence: "I feel insecure!", translation: "我感到不安全！", homophoneSentence: "爱菲尔因西克优尔!" },
+
+        { word: "Inferior", phonetic: "/ɪnˈfɪəriə/", homophone: "因菲瑞尔", meaning: "自卑的", sentence: "I feel inferior!", translation: "我感到自卑！", homophoneSentence: "爱菲尔因菲瑞尔!" },
+
+        { word: "Worthless", phonetic: "/ˈwɜːθləs/", homophone: "沃斯勒斯", meaning: "无价值的", sentence: "I feel worthless!", translation: "我感到无价值！", homophoneSentence: "爱菲尔沃斯勒斯!" },
+
+        { word: "Inadequate", phonetic: "/ɪnˈædɪkwət/", homophone: "因阿迪奎特", meaning: "不足的", sentence: "I feel inadequate!", translation: "我感到不足！", homophoneSentence: "爱菲尔因阿迪奎特!" },
+
+        { word: "Incompetent", phonetic: "/ɪnˈkɒmpɪtənt/", homophone: "因康皮特恩特", meaning: "无能的", sentence: "I feel incompetent!", translation: "我感到无能！", homophoneSentence: "爱菲尔因康皮特恩特!" },
+
+        { word: "Unworthy", phonetic: "/ʌnˈwɜːði/", homophone: "安沃斯", meaning: "不值得的", sentence: "I feel unworthy!", translation: "我感到不值得！", homophoneSentence: "爱菲尔安沃斯!" },
+
+        { word: "Ashamed", phonetic: "/əˈʃeɪmd/", homophone: "阿什艾姆德", meaning: "羞愧的", sentence: "I feel ashamed!", translation: "我感到羞愧！", homophoneSentence: "爱菲尔阿什艾姆德!" },
+
+        { word: "Embarrassed", phonetic: "/ɪmˈbærəst/", homophone: "伊姆巴瑞斯特", meaning: "尴尬的", sentence: "I am embarrassed!", translation: "我很尴尬！", homophoneSentence: "艾姆伊姆巴瑞斯特!" },
+
+        { word: "Humiliated", phonetic: "/hjuːˈmɪlieɪtɪd/", homophone: "休米利埃提德", meaning: "羞辱的", sentence: "I feel humiliated!", translation: "我感到羞辱！", homophoneSentence: "爱菲尔休米利埃提德!" },
+
+        { word: "Disgraced", phonetic: "/dɪsˈɡreɪst/", homophone: "迪斯格瑞斯特", meaning: "耻辱的", sentence: "I feel disgraced!", translation: "我感到耻辱！", homophoneSentence: "爱菲尔迪斯格瑞斯特!" },
+
+        { word: "Guilty", phonetic: "/ˈɡɪlti/", homophone: "吉尔提", meaning: "内疚的", sentence: "I feel guilty!", translation: "我感到内疚！", homophoneSentence: "爱菲尔吉尔提!" },
+
+        { word: "Remorseful", phonetic: "/rɪˈmɔːsfl/", homophone: "瑞莫斯夫欧", meaning: "悔恨的", sentence: "I feel remorseful!", translation: "我感到悔恨！", homophoneSentence: "爱菲尔瑞莫斯夫欧!" },
+
+        { word: "Regretful", phonetic: "/rɪˈɡretfl/", homophone: "瑞格瑞特夫欧", meaning: "后悔的", sentence: "I feel regretful!", translation: "我感到后悔！", homophoneSentence: "爱菲尔瑞格瑞特夫欧!" },
+
+        { word: "Contrite", phonetic: "/ˈkɒntraɪt/", homophone: "康特瑞特", meaning: "悔悟的", sentence: "I feel contrite!", translation: "我感到悔悟！", homophoneSentence: "爱菲尔康特瑞特!" },
+
+        { word: "Penitent", phonetic: "/ˈpenɪtənt/", homophone: "佩尼腾特", meaning: "忏悔的", sentence: "I feel penitent!", translation: "我感到忏悔！", homophoneSentence: "爱菲尔佩尼腾特!" },
+
+        { word: "Forgiven", phonetic: "/fəˈɡɪvn/", homophone: "夫给文", meaning: "被宽恕的", sentence: "I feel forgiven!", translation: "我感到被宽恕！", homophoneSentence: "爱菲尔夫给文!" },
+
+        { word: "Relieved", phonetic: "/rɪˈliːvd/", homophone: "瑞利夫德", meaning: "释然的", sentence: "I feel relieved!", translation: "我感到释然！", homophoneSentence: "爱菲尔瑞利夫德!" },
+
+        { word: "Liberated", phonetic: "/ˈlɪbəreɪtɪd/", homophone: "利伯瑞提德", meaning: "解放的", sentence: "I feel liberated!", translation: "我感到解放！", homophoneSentence: "爱菲尔利伯瑞提德!" },
+
+        { word: "Composed", phonetic: "/kəmˈpəʊzd/", homophone: "康波兹德", meaning: "沉着的", sentence: "I feel composed!", translation: "我感到沉着！", homophoneSentence: "爱菲尔康波兹德!" },
+
+        { word: "Centered", phonetic: "/ˈsentəd/", homophone: "森特德", meaning: "专注的", sentence: "I feel centered!", translation: "我感到专注！", homophoneSentence: "爱菲尔森特德!" },
+
+        { word: "Balanced", phonetic: "/ˈbælənst/", homophone: "巴伦斯德", meaning: "平衡的", sentence: "I feel balanced!", translation: "我感到平衡！", homophoneSentence: "爱菲尔巴伦斯德!" },
+
+        { word: "Unified", phonetic: "/ˈjuːnɪfaɪd/", homophone: "尤尼法艾德", meaning: "统一的", sentence: "I feel unified!", translation: "我感到统一！", homophoneSentence: "爱菲尔尤尼法艾德!" },
+
+        { word: "Connected", phonetic: "/kəˈnektɪd/", homophone: "康内克提德", meaning: "连接的", sentence: "I feel connected!", translation: "我感到连接！", homophoneSentence: "爱菲尔康内克提德!" },
+
+        { word: "Loved", phonetic: "/lʌvd/", homophone: "拉夫德", meaning: "被爱的", sentence: "I feel loved!", translation: "我感到被爱！", homophoneSentence: "爱菲尔拉夫德!" },
+
+        { word: "Cherished", phonetic: "/ˈtʃerɪʃt/", homophone: "切瑞什特", meaning: "珍爱的", sentence: "I feel cherished!", translation: "我感到被珍爱！", homophoneSentence: "爱菲尔切瑞什特!" },
+
+        { word: "Valued", phonetic: "/ˈvæljuːd/", homophone: "瓦尔优德", meaning: "受重视的", sentence: "I feel valued!", translation: "我感到受重视！", homophoneSentence: "爱菲尔瓦尔优德!" },
+
+        { word: "Appreciated", phonetic: "/əˈpriːʃieɪtɪd/", homophone: "阿普瑞希埃提德", meaning: "被赏识的", sentence: "I feel appreciated!", translation: "我感到被赏识！", homophoneSentence: "爱菲尔阿普瑞希埃提德!" },
+
+        { word: "Respected", phonetic: "/rɪˈspektɪd/", homophone: "瑞斯佩克提德", meaning: "受尊敬的", sentence: "I feel respected!", translation: "我感到受尊敬！", homophoneSentence: "爱菲尔瑞斯佩克提德!" },
+
+        { word: "Admired", phonetic: "/ədˈmaɪəd/", homophone: "阿德迈尔德", meaning: "被钦佩的", sentence: "I feel admired!", translation: "我感到被钦佩！", homophoneSentence: "爱菲尔阿德迈尔德!" },
+
+        { word: "Honored", phonetic: "/ˈɒnəd/", homophone: "奥纳德", meaning: "荣幸的", sentence: "I feel honored!", translation: "我感到荣幸！", homophoneSentence: "爱菲尔奥纳德!" },
+
+        { word: "Fulfilled", phonetic: "/fʊlˈfɪld/", homophone: "富尔菲尔德", meaning: "满足的", sentence: "I feel fulfilled!", translation: "我感到满足！", homophoneSentence: "爱菲尔富尔菲尔德!" },
+
+        { word: "Complete", phonetic: "/kəmˈpliːt/", homophone: "康普利特", meaning: "完整的", sentence: "I feel complete!", translation: "我感到完整！", homophoneSentence: "爱菲尔康普利特!" },
+
+        { word: "Whole", phonetic: "/həʊl/", homophone: "霍尔", meaning: "完整的", sentence: "I feel whole!", translation: "我感到完整！", homophoneSentence: "爱菲尔霍尔!" },
+],
     numbers: [
-{ word: 'One', phonetic: '/wʌn/', homophone: '万', meaning: '一', sentence: 'I have one apple.', translation: '我有一个苹果。', homophoneSentence: '爱哈夫万啊普欧.' ,
-        },
-        { word: 'Two', phonetic: '/tuː/', homophone: '图', meaning: '二', sentence: 'Two plus two equals four.', translation: '二加二等于四。', homophoneSentence: '图普拉斯图一阔尔斯佛.' ,
-        },
-        { word: 'Three', phonetic: '/θriː/', homophone: '斯瑞', meaning: '三', sentence: 'Three little birds.', translation: '三只小鸟。', homophoneSentence: '斯瑞里特波兹.' ,
-        },
-        { word: 'Four', phonetic: '/fɔː(r)/', homophone: '佛', meaning: '四', sentence: 'Four seasons a year.', translation: '一年四季。', homophoneSentence: '佛西森兹啊耶.' ,
-        },
-        { word: 'Five', phonetic: '/faɪv/', homophone: '法艾夫', meaning: '五', sentence: 'Give me five!', translation: '击个掌！', homophoneSentence: '基夫米法艾夫!' ,
-        },
-        { word: 'Six', phonetic: '/sɪks/', homophone: '西克斯', meaning: '六', sentence: 'Six is a lucky number.', translation: '六是个幸运数字。', homophoneSentence: '西克斯依兹啊拉基南波.' ,
-        },
-        { word: 'Seven', phonetic: '/ˈsevn/', homophone: '赛文', meaning: '七', sentence: 'Seven days a week.', translation: '一周七天。', homophoneSentence: '赛文戴兹啊维克.' ,
-        },
-        { word: 'Eight', phonetic: '/eɪt/', homophone: '艾特', meaning: '八', sentence: 'Eight hours sleep.', translation: '八小时睡眠。', homophoneSentence: '艾特阿瓦斯斯利普.' ,
-        },
-        { word: 'Nine', phonetic: '/naɪn/', homophone: '奈恩', meaning: '九', sentence: 'Nine lives of a cat.', translation: '猫有九条命。', homophoneSentence: '奈恩来夫兹奥夫啊凯特.' ,
-        },
-        { word: 'Ten', phonetic: '/ten/', homophone: '坦', meaning: '十', sentence: 'Ten fingers on hands.', translation: '双手十指。', homophoneSentence: '坦芬格兹昂汉兹.' ,
-        },
-        { word: 'Eleven', phonetic: '/ɪˈlevn/', homophone: '伊莱文', meaning: '十一', sentence: 'I have eleven books.', translation: '我有十一本书。', homophoneSentence: '爱哈夫伊莱文布克斯.' ,
-        },
-        { word: 'Twelve', phonetic: '/twelv/', homophone: '特维尔夫', meaning: '十二', sentence: 'Twelve months a year.', translation: '一年十二个月。', homophoneSentence: '特维尔夫芒斯啊耶.' ,
-        },
-        { word: 'Thirteen', phonetic: '/ˌθɜːˈtiːn/', homophone: '瑟廷', meaning: '十三', sentence: 'Thirteen is an unlucky number.', translation: '十三是个不吉利的数字。', homophoneSentence: '瑟廷依兹安昂拉基南波.' ,
-        },
-        { word: 'Fourteen', phonetic: '/ˌfɔːˈtiːn/', homophone: '佛廷', meaning: '十四', sentence: 'I am fourteen years old.', translation: '我十四岁了。', homophoneSentence: '爱阿姆佛廷耶斯欧德.' ,
-        },
-        { word: 'Fifteen', phonetic: '/ˌfɪfˈtiːn/', homophone: '菲廷', meaning: '十五', sentence: 'Fifteen minutes passed.', translation: '十五分钟过去了。', homophoneSentence: '菲廷米尼特斯帕斯德.' ,
-        },
-        { word: 'Sixteen', phonetic: '/ˌsɪksˈtiːn/', homophone: '西克斯廷', meaning: '十六', sentence: 'She is sixteen years old.', translation: '她十六岁了。', homophoneSentence: '西依兹西克斯廷耶斯欧德.' ,
-        },
-        { word: 'Seventeen', phonetic: '/ˌsevnˈtiːn/', homophone: '赛文廷', meaning: '十七', sentence: 'Seventeen students in class.', translation: '班里有十七个学生。', homophoneSentence: '赛文廷斯丢等茨因克莱斯.' ,
-        },
-        { word: 'Eighteen', phonetic: '/ˌeɪˈtiːn/', homophone: '艾廷', meaning: '十八', sentence: 'Eighteen is the legal age.', translation: '十八岁是法定年龄。', homophoneSentence: '艾廷依兹则里够累吉.' ,
-        },
-        { word: 'Nineteen', phonetic: '/ˌnaɪnˈtiːn/', homophone: '奈恩廷', meaning: '十九', sentence: 'Nineteen is my lucky number.', translation: '十九是我的幸运数字。', homophoneSentence: '奈恩廷依兹麦拉基南波.' ,
-        },
-        { word: 'Twenty', phonetic: '/ˈtwenti/', homophone: '湍踢', meaning: '二十', sentence: 'Twenty dollars for that.', translation: '那个二十美元。', homophoneSentence: '湍踢道乐兹佛扎特.' ,
-        },
-        { word: 'Thirty', phonetic: '/ˈθɜːti/', homophone: '瑟踢', meaning: '三十', sentence: 'Thirty days in April.', translation: '四月有三十天。', homophoneSentence: '瑟踢戴兹因艾普瑞欧.' ,
-        },
-        { word: 'Forty', phonetic: '/ˈfɔːti/', homophone: '佛踢', meaning: '四十', sentence: 'Forty students in class.', translation: '班里有四十个学生。', homophoneSentence: '佛踢斯丢等茨因克莱斯.' ,
-        },
-        { word: 'Fifty', phonetic: '/ˈfɪfti/', homophone: '菲夫踢', meaning: '五十', sentence: 'Fifty percent off.', translation: '五折优惠。', homophoneSentence: '菲夫踢波森特奥夫.' ,
-        },
-        { word: 'Hundred', phonetic: '/ˈhʌndrəd/', homophone: '汉德瑞德', meaning: '百', sentence: 'One hundred percent.', translation: '百分之百。', homophoneSentence: '万汉德瑞德波森特.' ,
-        },
-        { word: 'Zero', phonetic: '/ˈzɪərəʊ/', homophone: '泽柔', meaning: '零', sentence: 'The temperature is zero.', translation: '温度是零度。', homophoneSentence: '则坦普雷彻依兹泽柔.' ,
-        },
-        { word: 'Sixty', phonetic: '/ˈsɪksti/', homophone: '西克斯踢', meaning: '六十', sentence: 'Sixty seconds in a minute.', translation: '一分钟六十秒。', homophoneSentence: '西克斯踢赛肯兹因啊米尼特.' ,
-        },
-        { word: 'Seventy', phonetic: '/ˈsevnti/', homophone: '赛文踢', meaning: '七十', sentence: 'Seventy years old.', translation: '七十岁。', homophoneSentence: '赛文踢耶斯欧德.' ,
-        },
-        { word: 'Eighty', phonetic: '/ˈeɪti/', homophone: '艾踢', meaning: '八十', sentence: 'Eighty people came.', translation: '八十个人来了。', homophoneSentence: '艾踢皮普欧凯姆.' ,
-        },
-        { word: 'Ninety', phonetic: '/ˈnaɪnti/', homophone: '奈恩踢', meaning: '九十', sentence: 'Ninety percent done.', translation: '完成了百分之九十。', homophoneSentence: '奈恩踢波森特丹.' ,
-        },
-        { word: 'Thousand', phonetic: '/ˈθaʊznd/', homophone: '萨赞德', meaning: '千', sentence: 'One thousand dollars.', translation: '一千美元。', homophoneSentence: '万萨赞德道乐兹.' ,
-        },
-        { word: 'Million', phonetic: '/ˈmɪljən/', homophone: '米尔金', meaning: '百万', sentence: 'One million dreams.', translation: '一百万个梦想。', homophoneSentence: '万米尔金追姆兹.' ,
-        },
-        { word: 'Billion', phonetic: '/ˈbɪljən/', homophone: '比尔金', meaning: '十亿', sentence: 'A billion stars.', translation: '十亿颗星星。', homophoneSentence: '啊比尔金星兹.' ,
-        },
-        { word: 'First', phonetic: '/fɜːst/', homophone: '弗斯特', meaning: '第一', sentence: 'First come, first served.', translation: '先到先得。', homophoneSentence: '弗斯特卡姆,弗斯特瑟夫德.' ,
-        },
-        { word: 'Second', phonetic: '/ˈsekənd/', homophone: '赛肯德', meaning: '第二', sentence: 'Second place winner.', translation: '第二名获得者。', homophoneSentence: '赛肯德普雷斯温纳.' ,
-        },
-        { word: 'Third', phonetic: '/θɜːd/', homophone: '瑟德', meaning: '第三', sentence: 'Third time lucky.', translation: '第三次走运。', homophoneSentence: '瑟德泰姆拉基.' ,
-        },
-        { word: 'Fourth', phonetic: '/fɔːθ/', homophone: '佛斯', meaning: '第四', sentence: 'Fourth of July.', translation: '七月四日。', homophoneSentence: '佛斯奥夫朱来.' ,
-        },
-        { word: 'Fifth', phonetic: '/fɪfθ/', homophone: '菲夫斯', meaning: '第五', sentence: 'Fifth floor please.', translation: '请去五楼。', homophoneSentence: '菲夫斯弗洛普利斯.' ,
-        },
-        { word: 'Sixth', phonetic: '/sɪksθ/', homophone: '西克斯斯', meaning: '第六', sentence: 'June is the sixth month.', translation: '六月是第六个月。', homophoneSentence: '朱恩依兹则西克斯斯芒斯.' ,
-        },
-        { word: 'Seventh', phonetic: '/ˈsevnθ/', homophone: '赛文斯', meaning: '第七', sentence: 'Seventh day of the week.', translation: '一周的第七天。', homophoneSentence: '赛文斯戴奥夫则维克.' ,
-        },
-        { word: 'Eighth', phonetic: '/eɪtθ/', homophone: '艾特斯', meaning: '第八', sentence: 'Eighth birthday party.', translation: '八岁生日派对。', homophoneSentence: '艾特斯伯斯戴帕提.' ,
-        },
-        { word: 'Ninth', phonetic: '/naɪnθ/', homophone: '奈恩斯', meaning: '第九', sentence: 'Ninth grade student.', translation: '九年级学生。', homophoneSentence: '奈恩斯格瑞德斯丢等特.' ,
-        },
-        { word: 'Tenth', phonetic: '/tenθ/', homophone: '坦斯', meaning: '第十', sentence: 'Tenth anniversary.', translation: '十周年纪念。', homophoneSentence: '坦斯艾尼沃瑟瑞.' ,
-        },
-        { word: 'Twentieth', phonetic: '/ˈtwentiəθ/', homophone: '湍踢艾斯', meaning: '第二十', sentence: 'Twentieth century.', translation: '二十世纪。', homophoneSentence: '湍踢艾斯森彻瑞.' ,
-        },
-        { word: 'Thirtieth', phonetic: '/ˈθɜːtiəθ/', homophone: '瑟踢艾斯', meaning: '第三十', sentence: 'Thirtieth birthday.', translation: '三十岁生日。', homophoneSentence: '瑟踢艾斯伯斯戴.' ,
-        },
-        { word: 'Half', phonetic: '/hɑːf/', homophone: '哈夫', meaning: '一半', sentence: 'Half an hour.', translation: '半小时。', homophoneSentence: '哈夫安阿瓦.' ,
-        },
-        { word: 'Quarter', phonetic: '/ˈkwɔːtə(r)/', homophone: '阔特', meaning: '四分之一', sentence: 'A quarter past three.', translation: '三点一刻。', homophoneSentence: '啊阔特帕斯特斯瑞.' ,
-        },
-        { word: 'Double', phonetic: '/ˈdʌbl/', homophone: '达波', meaning: '双倍', sentence: 'Double the amount.', translation: '数量翻倍。', homophoneSentence: '达波则额芒特.' ,
-        },
-        { word: 'Triple', phonetic: '/ˈtrɪpl/', homophone: '吹波', meaning: '三倍', sentence: 'Triple the price.', translation: '价格三倍。', homophoneSentence: '吹波则普瑞斯.' ,
-        },
-        { word: 'Pair', phonetic: '/peə(r)/', homophone: '佩尔', meaning: '一对', sentence: 'A pair of shoes.', translation: '一双鞋。', homophoneSentence: '啊佩尔奥夫舒兹.' ,
-        },
-        { word: 'Dozen', phonetic: '/ˈdʌzn/', homophone: '达赞', meaning: '一打', sentence: 'A dozen eggs.', translation: '一打鸡蛋。', homophoneSentence: '啊达赞艾格斯.' ,
-        },
-        { word: 'Percent', phonetic: '/pəˈsent/', homophone: '波森特', meaning: '百分比', sentence: 'Ten percent off.', translation: '打九折。', homophoneSentence: '坦波森特奥夫.' ,
-        },
-        { word: 'Point', phonetic: '/pɔɪnt/', homophone: '坡因特', meaning: '小数点', sentence: 'Three point five.', translation: '三点五。', homophoneSentence: '斯瑞坡因特法艾夫.' ,
-        { word: 'Ten thousand', phonetic: '/ten ˈθaʊznd/', homophone: '坦萨赞德', meaning: '一万', sentence: 'Ten thousand dollars.', translation: '一万美元。', homophoneSentence: '坦萨赞德道乐兹.' ,
-        { word: 'Hundred thousand', phonetic: '/ˈhʌndrəd ˈθaʊznd/', homophone: '汉德瑞德萨赞德', meaning: '十万', sentence: 'Hundred thousand people.', translation: '十万人。', homophoneSentence: '汉德瑞德萨赞德皮普欧.' ,
-        { word: 'Millionaire', phonetic: '/ˌmɪljəˈneə(r)/', homophone: '米尔金艾尔', meaning: '百万富翁', sentence: 'He is a millionaire.', translation: '他是个百万富翁。', homophoneSentence: '希依兹啊米尔金艾尔.' ,
-        { word: 'Billionaire', phonetic: '/ˌbɪljəˈneə(r)/', homophone: '比尔金艾尔', meaning: '十亿富翁', sentence: 'She is a billionaire.', translation: '她是个十亿富翁。', homophoneSentence: '西依兹啊比尔金艾尔.' ,
-        { word: 'Trillion', phonetic: '/ˈtrɪljən/', homophone: '吹林', meaning: '万亿', sentence: 'A trillion stars.', translation: '一万亿颗星星。', homophoneSentence: '啊吹林星兹.' ,
-        { word: 'Quadrillion', phonetic: '/kwɒˈdrɪljən/', homophone: '阔德林', meaning: '千万亿', sentence: 'Quadrillion bytes.', translation: '千万亿字节。', homophoneSentence: '阔德林拜茨.' ,
-        { word: 'Third', phonetic: '/θɜːd/', homophone: '瑟德', meaning: '三分之一', sentence: 'One third of the cake.', translation: '蛋糕的三分之一。', homophoneSentence: '万瑟德奥夫则凯克.' ,
-        { word: 'Fourth', phonetic: '/fɔːθ/', homophone: '佛斯', meaning: '四分之一', sentence: 'One fourth of the pizza.', translation: '披萨的四分之一。', homophoneSentence: '万佛斯奥夫则披萨.' ,
-        { word: 'Fifth', phonetic: '/fɪfθ/', homophone: '菲夫斯', meaning: '五分之一', sentence: 'One fifth of the pie.', translation: '派的五分之一。', homophoneSentence: '万菲夫斯奥夫则派.' ,
-        { word: 'Sixth', phonetic: '/sɪksθ/', homophone: '西克斯斯', meaning: '六分之一', sentence: 'One sixth of the book.', translation: '书的六分之一。', homophoneSentence: '万西克斯斯奥夫则布克.' ,
-        { word: 'Seventh', phonetic: '/ˈsevnθ/', homophone: '赛文斯', meaning: '七分之一', sentence: 'One seventh of the class.', translation: '班级的七分之一。', homophoneSentence: '万赛文斯奥夫则克莱斯.' ,
-        { word: 'Eighth', phonetic: '/eɪtθ/', homophone: '艾特斯', meaning: '八分之一', sentence: 'One eighth of the cake.', translation: '蛋糕的八分之一。', homophoneSentence: '万艾特斯奥夫则凯克.' ,
-        { word: 'Ninth', phonetic: '/naɪnθ/', homophone: '奈恩斯', meaning: '九分之一', sentence: 'One ninth of the pizza.', translation: '披萨的九分之一。', homophoneSentence: '万奈恩斯奥夫则披萨.' ,
-        { word: 'Tenth', phonetic: '/tenθ/', homophone: '坦斯', meaning: '十分之一', sentence: 'One tenth of the pie.', translation: '派的十分之一。', homophoneSentence: '万坦斯奥夫则派.' ,
-        { word: 'Zero point one', phonetic: '/ˈzɪərəʊ pɔɪnt wʌn/', homophone: '泽柔坡因特万', meaning: '零点一', sentence: 'Zero point one percent.', translation: '百分之零点一。', homophoneSentence: '泽柔坡因特万波森特.' ,
-        { word: 'Zero point five', phonetic: '/ˈzɪərəʊ pɔɪnt faɪv/', homophone: '泽柔坡因特法艾夫', meaning: '零点五', sentence: 'Zero point five meters.', translation: '零点五米。', homophoneSentence: '泽柔坡因特法艾夫米特斯.' ,
-        { word: 'One point five', phonetic: '/wʌn pɔɪnt faɪv/', homophone: '万坡因特法艾夫', meaning: '一点五', sentence: 'One point five hours.', translation: '一个半小时。', homophoneSentence: '万坡因特法艾夫阿瓦斯.' ,
-        { word: 'Two point five', phonetic: '/tuː pɔɪnt faɪv/', homophone: '图坡因特法艾夫', meaning: '二点五', sentence: 'Two point five miles.', translation: '二点五英里。', homophoneSentence: '图坡因特法艾夫迈尔斯.' ,
-        { word: 'Three point five', phonetic: '/θriː pɔɪnt faɪv/', homophone: '斯瑞坡因特法艾夫', meaning: '三点五', sentence: 'Three point five kilograms.', translation: '三点五公斤。', homophoneSentence: '斯瑞坡因特法艾夫基楼格拉姆斯.' ,
-        { word: 'Addition', phonetic: '/əˈdɪʃn/', homophone: '阿迪申', meaning: '加法', sentence: 'Addition is easy.', translation: '加法很简单。', homophoneSentence: '阿迪申依兹伊兹.' ,
-        { word: 'Subtraction', phonetic: '/səbˈtrækʃn/', homophone: '萨布拽克申', meaning: '减法', sentence: 'Subtraction is simple.', translation: '减法很简单。', homophoneSentence: '萨布拽克申依兹辛普尔.' ,
-        { word: 'Multiplication', phonetic: '/ˌmʌltɪplɪˈkeɪʃn/', homophone: '马尔踢普利凯申', meaning: '乘法', sentence: 'Multiplication tables.', translation: '乘法表。', homophoneSentence: '马尔踢普利凯申泰布尔兹.' ,
-        { word: 'Division', phonetic: '/dɪˈvɪʒn/', homophone: '迪维申', meaning: '除法', sentence: 'Division can be hard.', translation: '除法可能很难。', homophoneSentence: '迪维申坎比哈德.' ,
-        { word: 'Equals', phonetic: '/ˈiːkwəlz/', homophone: '伊阔尔斯', meaning: '等于', sentence: 'Two plus two equals four.', translation: '二加二等于四。', homophoneSentence: '图普拉斯图伊阔尔斯佛.' ,
-        { word: 'Plus', phonetic: '/plʌs/', homophone: '普拉斯', meaning: '加', sentence: 'Three plus four equals seven.', translation: '三加四等于七。', homophoneSentence: '斯瑞普拉斯佛伊阔尔斯赛文.' ,
-        { word: 'Minus', phonetic: '/ˈmaɪnəs/', homophone: '麦纳斯', meaning: '减', sentence: 'Five minus three equals two.', translation: '五减三等于二。', homophoneSentence: '法艾夫麦纳斯斯瑞伊阔尔斯图.' ,
-        { word: 'Times', phonetic: '/taɪmz/', homophone: '泰姆斯', meaning: '乘', sentence: 'Three times four equals twelve.', translation: '三乘四等于十二。', homophoneSentence: '斯瑞泰姆斯佛伊阔尔斯特维尔夫.' ,
-        { word: 'Divide', phonetic: '/dɪˈvaɪd/', homophone: '迪外德', meaning: '除', sentence: 'Twelve divided by three equals four.', translation: '十二除以三等于四。', homophoneSentence: '特维尔夫迪外德拜斯瑞伊阔尔斯佛.' ,
-        { word: 'Square', phonetic: '/skweə(r)/', homophone: '斯阔尔', meaning: '平方', sentence: 'Three squared is nine.', translation: '三的平方是九。', homophoneSentence: '斯瑞斯阔尔的依兹奈恩.' ,
-        { word: 'Cube', phonetic: '/kjuːb/', homophone: '丘布', meaning: '立方', sentence: 'Two cubed is eight.', translation: '二的立方是八。', homophoneSentence: '图丘布的依兹艾特.' ,
-        { word: 'Square root', phonetic: '/skweə ruːt/', homophone: '斯阔尔如特', meaning: '平方根', sentence: 'The square root of nine is three.', translation: '九的平方根是三。', homophoneSentence: '则斯阔尔如特奥夫奈恩依兹斯瑞.' ,
-        { word: 'Kilogram', phonetic: '/ˈkɪləɡræm/', homophone: '基楼格拉姆', meaning: '公斤', sentence: 'One kilogram of apples.', translation: '一公斤苹果。', homophoneSentence: '万基楼格拉姆奥夫艾坡z.' ,
-        { word: 'Gram', phonetic: '/ɡræm/', homophone: '格拉姆', meaning: '克', sentence: 'One gram of sugar.', translation: '一克糖。', homophoneSentence: '万格拉姆奥夫苏格.' ,
-        { word: 'Kilometer', phonetic: '/kɪˈlɒmɪtə(r)/', homophone: '基楼米特', meaning: '公里', sentence: 'One kilometer away.', translation: '一公里远。', homophoneSentence: '万基楼米特阿威.' ,
-        { word: 'Meter', phonetic: '/ˈmiːtə(r)/', homophone: '米特', meaning: '米', sentence: 'One meter tall.', translation: '一米高。', homophoneSentence: '万米特套.' ,
-        { word: 'Centimeter', phonetic: '/ˈsentɪmiːtə(r)/', homophone: '森提米特', meaning: '厘米', sentence: 'One centimeter long.', translation: '一厘米长。', homophoneSentence: '万森提米特长.' ,
-        { word: 'Millimeter', phonetic: '/ˈmɪlimiːtə(r)/', homophone: '米里米特', meaning: '毫米', sentence: 'One millimeter thick.', translation: '一毫米厚。', homophoneSentence: '万米里米特西克.' ,
-        { word: 'Liter', phonetic: '/ˈliːtə(r)/', homophone: '里特', meaning: '升', sentence: 'One liter of water.', translation: '一升水。', homophoneSentence: '万里特奥夫沃特.' ,
-        { word: 'Milliliter', phonetic: '/ˈmɪliliːtə(r)/', homophone: '米里里特', meaning: '毫升', sentence: 'One milliliter of medicine.', translation: '一毫升药。', homophoneSentence: '万米里里特奥夫麦迪森.' ,
-        { word: 'Kilowatt', phonetic: '/ˈkɪləwɒt/', homophone: '基楼瓦特', meaning: '千瓦', sentence: 'One kilowatt power.', translation: '一千瓦功率。', homophoneSentence: '万基楼瓦特泡尔.' ,
-        { word: 'Watt', phonetic: '/wɒt/', homophone: '瓦特', meaning: '瓦', sentence: 'One watt bulb.', translation: '一瓦灯泡。', homophoneSentence: '万瓦特布尔布.' ,
-        { word: 'Second', phonetic: '/ˈsekənd/', homophone: '赛肯德', meaning: '秒', sentence: 'One second please.', translation: '请等一秒。', homophoneSentence: '万赛肯德普利斯.' ,
-        { word: 'Minute', phonetic: '/ˈmɪnɪt/', homophone: '米尼特', meaning: '分钟', sentence: 'One minute wait.', translation: '等一分钟。', homophoneSentence: '万米尼特威特.' ,
-        { word: 'Hour', phonetic: '/ˈaʊə(r)/', homophone: '阿瓦', meaning: '小时', sentence: 'One hour later.', translation: '一小时后。', homophoneSentence: '万阿瓦雷特.' ,
-        { word: 'Day', phonetic: '/deɪ/', homophone: '戴', meaning: '天', sentence: 'One day off.', translation: '休息一天。', homophoneSentence: '万戴奥夫.' ,
-        { word: 'Week', phonetic: '/wiːk/', homophone: '维克', meaning: '周', sentence: 'One week vacation.', translation: '一周假期。', homophoneSentence: '万维克沃凯申.' ,
-        { word: 'Month', phonetic: '/mʌnθ/', homophone: '芒斯', meaning: '月', sentence: 'One month ago.', translation: '一个月前。', homophoneSentence: '万芒斯阿狗.' ,
-        { word: 'Year', phonetic: '/jɪə(r)/', homophone: '耶', meaning: '年', sentence: 'One year old.', translation: '一岁。', homophoneSentence: '万耶欧德.' ,
-        { word: 'Decade', phonetic: '/ˈdekeɪd/', homophone: '德凯德', meaning: '十年', sentence: 'One decade later.', translation: '十年后。', homophoneSentence: '万德凯德雷特.' ,
-        { word: 'Century', phonetic: '/ˈsentʃəri/', homophone: '森彻瑞', meaning: '世纪', sentence: 'One century ago.', translation: '一个世纪前。', homophoneSentence: '万森彻瑞阿狗.' ,
-        { word: 'Millennium', phonetic: '/mɪˈleniəm/', homophone: '米伦尼姆', meaning: '千年', sentence: 'One millennium history.', translation: '一千年历史。', homophoneSentence: '万米伦尼姆历史.' ,
-        { word: 'Dollar', phonetic: '/ˈdɒlə(r)/', homophone: '道乐', meaning: '美元', sentence: 'One dollar bill.', translation: '一美元纸币。', homophoneSentence: '万道乐比尔.' ,
-        { word: 'Cent', phonetic: '/sent/', homophone: '森特', meaning: '美分', sentence: 'One cent coin.', translation: '一美分硬币。', homophoneSentence: '万森特扣因.' ,
-        { word: 'Pound', phonetic: '/paʊnd/', homophone: '磅', meaning: '英镑', sentence: 'One pound note.', translation: '一英镑纸币。', homophoneSentence: '万磅诺特.' ,
-        { word: 'Penny', phonetic: '/ˈpeni/', homophone: '佩尼', meaning: '便士', sentence: 'One penny coin.', translation: '一便士硬币。', homophoneSentence: '万佩尼扣因.' ,
-        { word: 'Euro', phonetic: '/ˈjʊərəʊ/', homophone: '优柔', meaning: '欧元', sentence: 'One euro coin.', translation: '一欧元硬币。', homophoneSentence: '万优柔扣因.' ,
-        { word: 'Yen', phonetic: '/jen/', homophone: ' yen', meaning: '日元', sentence: 'One yen coin.', translation: '一日元硬币。', homophoneSentence: '万 yen 扣因.' ,
-        { word: 'Eleventh', phonetic: '/ɪˈlevnθ/', homophone: '伊莱文斯', meaning: '第十一', sentence: 'Eleventh hour.', translation: '最后时刻。', homophoneSentence: '伊莱文斯阿瓦.' ,
-        { word: 'Twelfth', phonetic: '/twelfθ/', homophone: '特维尔夫斯', meaning: '第十二', sentence: 'Twelfth night.', translation: '第十二夜。', homophoneSentence: '特维尔夫斯奈特.' ,
-        { word: 'Thirteenth', phonetic: '/ˌθɜːˈtiːnθ/', homophone: '瑟廷斯', meaning: '第十三', sentence: 'Thirteenth floor.', translation: '十三楼。', homophoneSentence: '瑟廷斯弗洛.' ,
-        { word: 'Fourteenth', phonetic: '/ˌfɔːˈtiːnθ/', homophone: '佛廷斯', meaning: '第十四', sentence: 'Fourteenth birthday.', translation: '十四岁生日。', homophoneSentence: '佛廷斯伯斯戴.' ,
-        { word: 'Fifteenth', phonetic: '/ˌfɪfˈtiːnθ/', homophone: '菲廷斯', meaning: '第十五', sentence: 'Fifteenth of March.', translation: '三月十五日。', homophoneSentence: '菲廷斯奥夫马奇.' ,
-        { word: 'Sixteenth', phonetic: '/ˌsɪksˈtiːnθ/', homophone: '西克斯廷斯', meaning: '第十六', sentence: 'Sixteenth century.', translation: '十六世纪。', homophoneSentence: '西克斯廷斯森彻瑞.' ,
-        { word: 'Seventeenth', phonetic: '/ˌsevnˈtiːnθ/', homophone: '赛文廷斯', meaning: '第十七', sentence: 'Seventeenth chapter.', translation: '第十七章。', homophoneSentence: '赛文廷斯查普特.' ,
-        { word: 'Eighteenth', phonetic: '/ˌeɪˈtiːnθ/', homophone: '艾廷斯', meaning: '第十八', sentence: 'Eighteenth century.', translation: '十八世纪。', homophoneSentence: '艾廷斯森彻瑞.' ,
-        { word: 'Nineteenth', phonetic: '/ˌnaɪnˈtiːnθ/', homophone: '奈恩廷斯', meaning: '第十九', sentence: 'Nineteenth century.', translation: '十九世纪。', homophoneSentence: '奈恩廷斯森彻瑞.' ,
-        { word: 'Twentieth', phonetic: '/ˈtwentiəθ/', homophone: '湍踢艾斯', meaning: '第二十', sentence: 'Twentieth century.', translation: '二十世纪。', homophoneSentence: '湍踢艾斯森彻瑞.' ,
-        { word: 'Thirtieth', phonetic: '/ˈθɜːtiəθ/', homophone: '瑟踢艾斯', meaning: '第三十', sentence: 'Thirtieth birthday.', translation: '三十岁生日。', homophoneSentence: '瑟踢艾斯伯斯戴.' ,
-        { word: 'Fortieth', phonetic: '/ˈfɔːtiəθ/', homophone: '佛踢艾斯', meaning: '第四十', sentence: 'Fortieth anniversary.', translation: '四十周年纪念。', homophoneSentence: '佛踢艾斯艾尼沃瑟瑞.' ,
-        { word: 'Fiftieth', phonetic: '/ˈfɪftiəθ/', homophone: '菲夫踢艾斯', meaning: '第五十', sentence: 'Fiftieth birthday.', translation: '五十岁生日。', homophoneSentence: '菲夫踢艾斯伯斯戴.' ,
-        { word: 'Sixtieth', phonetic: '/ˈsɪkstiəθ/', homophone: '西克斯踢艾斯', meaning: '第六十', sentence: 'Sixtieth anniversary.', translation: '六十周年纪念。', homophoneSentence: '西克斯踢艾斯艾尼沃瑟瑞.' ,
-        { word: 'Seventieth', phonetic: '/ˈsevntiəθ/', homophone: '赛文踢艾斯', meaning: '第七十', sentence: 'Seventieth birthday.', translation: '七十岁生日。', homophoneSentence: '赛文踢艾斯伯斯戴.' ,
-        { word: 'Eightieth', phonetic: '/ˈeɪtiəθ/', homophone: '艾踢艾斯', meaning: '第八十', sentence: 'Eightieth anniversary.', translation: '八十周年纪念。', homophoneSentence: '艾踢艾斯艾尼沃瑟瑞.' ,
-        { word: 'Ninetieth', phonetic: '/ˈnaɪntiəθ/', homophone: '奈恩踢艾斯', meaning: '第九十', sentence: 'Ninetieth birthday.', translation: '九十岁生日。', homophoneSentence: '奈恩踢艾斯伯斯戴.' ,
-        { word: 'Hundredth', phonetic: '/ˈhʌndrədθ/', homophone: '汉德瑞德斯', meaning: '第一百', sentence: 'Hundredth day.', translation: '第一百天。', homophoneSentence: '汉德瑞德斯戴.' ,
-        { word: 'Single', phonetic: '/ˈsɪŋɡl/', homophone: '辛格', meaning: '单个', sentence: 'Single room.', translation: '单人间。', homophoneSentence: '辛格如姆.' ,
-        { word: 'Double', phonetic: '/ˈdʌbl/', homophone: '达波', meaning: '双倍', sentence: 'Double room.', translation: '双人间。', homophoneSentence: '达波如姆.' ,
-        { word: 'Triple', phonetic: '/ˈtrɪpl/', homophone: '吹波', meaning: '三倍', sentence: 'Triple bonus.', translation: '三倍奖金。', homophoneSentence: '吹波波纳斯.' ,
-        { word: 'Quadruple', phonetic: '/ˈkwɒdrʊpl/', homophone: '阔朱波', meaning: '四倍', sentence: 'Quadruple the price.', translation: '价格四倍。', homophoneSentence: '阔朱波则普瑞斯.' ,
-        { word: 'Quintuple', phonetic: '/ˈkwɪntjʊpl/', homophone: '昆丘波', meaning: '五倍', sentence: 'Quintuple the amount.', translation: '数量五倍。', homophoneSentence: '昆丘波则额芒特.' ,
-        { word: 'Sextuple', phonetic: '/ˈsekstjʊpl/', homophone: '塞克斯丘波', meaning: '六倍', sentence: 'Sextuple the profit.', translation: '利润六倍。', homophoneSentence: '塞克斯丘波则普罗菲特.' ,
-        { word: 'Septuple', phonetic: '/ˈseptjʊpl/', homophone: '塞普丘波', meaning: '七倍', sentence: 'Septuple the sales.', translation: '销售额七倍。', homophoneSentence: '塞普丘波则塞尔斯.' ,
-        { word: 'Octuple', phonetic: '/ˈɒktjʊpl/', homophone: '奥克丘波', meaning: '八倍', sentence: 'Octuple the speed.', translation: '速度八倍。', homophoneSentence: '奥克丘波则斯皮德.' ,
-        { word: 'Nonuple', phonetic: '/ˈnɒnjʊpl/', homophone: '农丘波', meaning: '九倍', sentence: 'Nonuple the output.', translation: '产量九倍。', homophoneSentence: '农丘波则奥普特普特.' ,
+        { word: 'One', phonetic: '/wʌn/', homophone: '万', meaning: '一', sentence: 'I have one apple.', translation: '我有一个苹果。', homophoneSentence: '爱哈夫万啊普欧.' },
+        { word: 'Two', phonetic: '/tuː/', homophone: '图', meaning: '二', sentence: 'Two plus two equals four.', translation: '二加二等于四。', homophoneSentence: '图普拉斯图一阔尔斯佛.' },
+        { word: 'Three', phonetic: '/θriː/', homophone: '斯瑞', meaning: '三', sentence: 'Three little birds.', translation: '三只小鸟。', homophoneSentence: '斯瑞里特波兹.'  },
+
+        { word: 'Four', phonetic: '/fɔː(r)/', homophone: '佛', meaning: '四', sentence: 'Four seasons a year.', translation: '一年四季。', homophoneSentence: '佛西森兹啊耶.'  },
+
+        { word: 'Five', phonetic: '/faɪv/', homophone: '法艾夫', meaning: '五', sentence: 'Give me five!', translation: '击个掌！', homophoneSentence: '基夫米法艾夫!'  },
+
+        { word: 'Six', phonetic: '/sɪks/', homophone: '西克斯', meaning: '六', sentence: 'Six is a lucky number.', translation: '六是个幸运数字。', homophoneSentence: '西克斯依兹啊拉基南波.'  },
+
+        { word: 'Seven', phonetic: '/ˈsevn/', homophone: '赛文', meaning: '七', sentence: 'Seven days a week.', translation: '一周七天。', homophoneSentence: '赛文戴兹啊维克.'  },
+
+        { word: 'Eight', phonetic: '/eɪt/', homophone: '艾特', meaning: '八', sentence: 'Eight hours sleep.', translation: '八小时睡眠。', homophoneSentence: '艾特阿瓦斯斯利普.'  },
+
+        { word: 'Nine', phonetic: '/naɪn/', homophone: '奈恩', meaning: '九', sentence: 'Nine lives of a cat.', translation: '猫有九条命。', homophoneSentence: '奈恩来夫兹奥夫啊凯特.'  },
+
+        { word: 'Ten', phonetic: '/ten/', homophone: '坦', meaning: '十', sentence: 'Ten fingers on hands.', translation: '双手十指。', homophoneSentence: '坦芬格兹昂汉兹.'  },
+
+        { word: 'Eleven', phonetic: '/ɪˈlevn/', homophone: '伊莱文', meaning: '十一', sentence: 'I have eleven books.', translation: '我有十一本书。', homophoneSentence: '爱哈夫伊莱文布克斯.'  },
+
+        { word: 'Twelve', phonetic: '/twelv/', homophone: '特维尔夫', meaning: '十二', sentence: 'Twelve months a year.', translation: '一年十二个月。', homophoneSentence: '特维尔夫芒斯啊耶.'  },
+
+        { word: 'Thirteen', phonetic: '/ˌθɜːˈtiːn/', homophone: '瑟廷', meaning: '十三', sentence: 'Thirteen is an unlucky number.', translation: '十三是个不吉利的数字。', homophoneSentence: '瑟廷依兹安昂拉基南波.'  },
+
+        { word: 'Fourteen', phonetic: '/ˌfɔːˈtiːn/', homophone: '佛廷', meaning: '十四', sentence: 'I am fourteen years old.', translation: '我十四岁了。', homophoneSentence: '爱阿姆佛廷耶斯欧德.'  },
+
+        { word: 'Fifteen', phonetic: '/ˌfɪfˈtiːn/', homophone: '菲廷', meaning: '十五', sentence: 'Fifteen minutes passed.', translation: '十五分钟过去了。', homophoneSentence: '菲廷米尼特斯帕斯德.'  },
+
+        { word: 'Sixteen', phonetic: '/ˌsɪksˈtiːn/', homophone: '西克斯廷', meaning: '十六', sentence: 'She is sixteen years old.', translation: '她十六岁了。', homophoneSentence: '西依兹西克斯廷耶斯欧德.'  },
+
+        { word: 'Seventeen', phonetic: '/ˌsevnˈtiːn/', homophone: '赛文廷', meaning: '十七', sentence: 'Seventeen students in class.', translation: '班里有十七个学生。', homophoneSentence: '赛文廷斯丢等茨因克莱斯.'  },
+
+        { word: 'Eighteen', phonetic: '/ˌeɪˈtiːn/', homophone: '艾廷', meaning: '十八', sentence: 'Eighteen is the legal age.', translation: '十八岁是法定年龄。', homophoneSentence: '艾廷依兹则里够累吉.'  },
+
+        { word: 'Nineteen', phonetic: '/ˌnaɪnˈtiːn/', homophone: '奈恩廷', meaning: '十九', sentence: 'Nineteen is my lucky number.', translation: '十九是我的幸运数字。', homophoneSentence: '奈恩廷依兹麦拉基南波.'  },
+
+        { word: 'Twenty', phonetic: '/ˈtwenti/', homophone: '湍踢', meaning: '二十', sentence: 'Twenty dollars for that.', translation: '那个二十美元。', homophoneSentence: '湍踢道乐兹佛扎特.'  },
+
+        { word: 'Thirty', phonetic: '/ˈθɜːti/', homophone: '瑟踢', meaning: '三十', sentence: 'Thirty days in April.', translation: '四月有三十天。', homophoneSentence: '瑟踢戴兹因艾普瑞欧.'  },
+
+        { word: 'Forty', phonetic: '/ˈfɔːti/', homophone: '佛踢', meaning: '四十', sentence: 'Forty students in class.', translation: '班里有四十个学生。', homophoneSentence: '佛踢斯丢等茨因克莱斯.'  },
+
+        { word: 'Fifty', phonetic: '/ˈfɪfti/', homophone: '菲夫踢', meaning: '五十', sentence: 'Fifty percent off.', translation: '五折优惠。', homophoneSentence: '菲夫踢波森特奥夫.'  },
+
+        { word: 'Hundred', phonetic: '/ˈhʌndrəd/', homophone: '汉德瑞德', meaning: '百', sentence: 'One hundred percent.', translation: '百分之百。', homophoneSentence: '万汉德瑞德波森特.'  },
+
+        { word: 'Zero', phonetic: '/ˈzɪərəʊ/', homophone: '泽柔', meaning: '零', sentence: 'The temperature is zero.', translation: '温度是零度。', homophoneSentence: '则坦普雷彻依兹泽柔.'  },
+
+        { word: 'Sixty', phonetic: '/ˈsɪksti/', homophone: '西克斯踢', meaning: '六十', sentence: 'Sixty seconds in a minute.', translation: '一分钟六十秒。', homophoneSentence: '西克斯踢赛肯兹因啊米尼特.'  },
+
+        { word: 'Seventy', phonetic: '/ˈsevnti/', homophone: '赛文踢', meaning: '七十', sentence: 'Seventy years old.', translation: '七十岁。', homophoneSentence: '赛文踢耶斯欧德.'  },
+
+        { word: 'Eighty', phonetic: '/ˈeɪti/', homophone: '艾踢', meaning: '八十', sentence: 'Eighty people came.', translation: '八十个人来了。', homophoneSentence: '艾踢皮普欧凯姆.'  },
+
+        { word: 'Ninety', phonetic: '/ˈnaɪnti/', homophone: '奈恩踢', meaning: '九十', sentence: 'Ninety percent done.', translation: '完成了百分之九十。', homophoneSentence: '奈恩踢波森特丹.'  },
+
+        { word: 'Thousand', phonetic: '/ˈθaʊznd/', homophone: '萨赞德', meaning: '千', sentence: 'One thousand dollars.', translation: '一千美元。', homophoneSentence: '万萨赞德道乐兹.'  },
+
+        { word: 'Million', phonetic: '/ˈmɪljən/', homophone: '米尔金', meaning: '百万', sentence: 'One million dreams.', translation: '一百万个梦想。', homophoneSentence: '万米尔金追姆兹.'  },
+
+        { word: 'Billion', phonetic: '/ˈbɪljən/', homophone: '比尔金', meaning: '十亿', sentence: 'A billion stars.', translation: '十亿颗星星。', homophoneSentence: '啊比尔金星兹.'  },
+
+        { word: 'First', phonetic: '/fɜːst/', homophone: '弗斯特', meaning: '第一', sentence: 'First come, first served.', translation: '先到先得。', homophoneSentence: '弗斯特卡姆,弗斯特瑟夫德.'  },
+
+        { word: 'Second', phonetic: '/ˈsekənd/', homophone: '赛肯德', meaning: '第二', sentence: 'Second place winner.', translation: '第二名获得者。', homophoneSentence: '赛肯德普雷斯温纳.'  },
+
+        { word: 'Third', phonetic: '/θɜːd/', homophone: '瑟德', meaning: '第三', sentence: 'Third time lucky.', translation: '第三次走运。', homophoneSentence: '瑟德泰姆拉基.'  },
+
+        { word: 'Fourth', phonetic: '/fɔːθ/', homophone: '佛斯', meaning: '第四', sentence: 'Fourth of July.', translation: '七月四日。', homophoneSentence: '佛斯奥夫朱来.'  },
+
+        { word: 'Fifth', phonetic: '/fɪfθ/', homophone: '菲夫斯', meaning: '第五', sentence: 'Fifth floor please.', translation: '请去五楼。', homophoneSentence: '菲夫斯弗洛普利斯.'  },
+
+        { word: 'Sixth', phonetic: '/sɪksθ/', homophone: '西克斯斯', meaning: '第六', sentence: 'June is the sixth month.', translation: '六月是第六个月。', homophoneSentence: '朱恩依兹则西克斯斯芒斯.'  },
+
+        { word: 'Seventh', phonetic: '/ˈsevnθ/', homophone: '赛文斯', meaning: '第七', sentence: 'Seventh day of the week.', translation: '一周的第七天。', homophoneSentence: '赛文斯戴奥夫则维克.'  },
+
+        { word: 'Eighth', phonetic: '/eɪtθ/', homophone: '艾特斯', meaning: '第八', sentence: 'Eighth birthday party.', translation: '八岁生日派对。', homophoneSentence: '艾特斯伯斯戴帕提.'  },
+
+        { word: 'Ninth', phonetic: '/naɪnθ/', homophone: '奈恩斯', meaning: '第九', sentence: 'Ninth grade student.', translation: '九年级学生。', homophoneSentence: '奈恩斯格瑞德斯丢等特.'  },
+
+        { word: 'Tenth', phonetic: '/tenθ/', homophone: '坦斯', meaning: '第十', sentence: 'Tenth anniversary.', translation: '十周年纪念。', homophoneSentence: '坦斯艾尼沃瑟瑞.' },
+        { word: 'Twentieth', phonetic: '/ˈtwentiəθ/', homophone: '湍踢艾斯', meaning: '第二十', sentence: 'Twentieth century.', translation: '二十世纪。', homophoneSentence: '湍踢艾斯森彻瑞.'  },
+
+        { word: 'Thirtieth', phonetic: '/ˈθɜːtiəθ/', homophone: '瑟踢艾斯', meaning: '第三十', sentence: 'Thirtieth birthday.', translation: '三十岁生日。', homophoneSentence: '瑟踢艾斯伯斯戴.' },
+        { word: 'Half', phonetic: '/hɑːf/', homophone: '哈夫', meaning: '一半', sentence: 'Half an hour.', translation: '半小时。', homophoneSentence: '哈夫安阿瓦.' },
+        { word: 'Quarter', phonetic: '/ˈkwɔːtə(r)/', homophone: '阔特', meaning: '四分之一', sentence: 'A quarter past three.', translation: '三点一刻。', homophoneSentence: '啊阔特帕斯特斯瑞.'  },
+
+        { word: 'Double', phonetic: '/ˈdʌbl/', homophone: '达波', meaning: '双倍', sentence: 'Double the amount.', translation: '数量翻倍。', homophoneSentence: '达波则额芒特.' },
+        { word: 'Triple', phonetic: '/ˈtrɪpl/', homophone: '吹波', meaning: '三倍', sentence: 'Triple the price.', translation: '价格三倍。', homophoneSentence: '吹波则普瑞斯.'  },
+
+        { word: 'Pair', phonetic: '/peə(r)/', homophone: '佩尔', meaning: '一对', sentence: 'A pair of shoes.', translation: '一双鞋。', homophoneSentence: '啊佩尔奥夫舒兹.' },
+        { word: 'Dozen', phonetic: '/ˈdʌzn/', homophone: '达赞', meaning: '一打', sentence: 'A dozen eggs.', translation: '一打鸡蛋。', homophoneSentence: '啊达赞艾格斯.' },
+        { word: 'Percent', phonetic: '/pəˈsent/', homophone: '波森特', meaning: '百分比', sentence: 'Ten percent off.', translation: '打九折。', homophoneSentence: '坦波森特奥夫.' },
+        { word: 'Point', phonetic: '/pɔɪnt/', homophone: '坡因特', meaning: '小数点', sentence: 'Three point five.', translation: '三点五。', homophoneSentence: '斯瑞坡因特法艾夫.' },
+        { word: 'Ten thousand', phonetic: '/ten ˈθaʊznd/', homophone: '坦萨赞德', meaning: '一万', sentence: 'Ten thousand dollars.', translation: '一万美元。', homophoneSentence: '坦萨赞德道乐兹.' },
+        { word: 'Hundred thousand', phonetic: '/ˈhʌndrəd ˈθaʊznd/', homophone: '汉德瑞德萨赞德', meaning: '十万', sentence: 'Hundred thousand people.', translation: '十万人。', homophoneSentence: '汉德瑞德萨赞德皮普欧.' },
+        { word: 'Millionaire', phonetic: '/ˌmɪljəˈneə(r)/', homophone: '米尔金艾尔', meaning: '百万富翁', sentence: 'He is a millionaire.', translation: '他是个百万富翁。', homophoneSentence: '希依兹啊米尔金艾尔.' },
+        { word: 'Billionaire', phonetic: '/ˌbɪljəˈneə(r)/', homophone: '比尔金艾尔', meaning: '十亿富翁', sentence: 'She is a billionaire.', translation: '她是个十亿富翁。', homophoneSentence: '西依兹啊比尔金艾尔.' },
+        { word: 'Trillion', phonetic: '/ˈtrɪljən/', homophone: '吹林', meaning: '万亿', sentence: 'A trillion stars.', translation: '一万亿颗星星。', homophoneSentence: '啊吹林星兹.' },
+        { word: 'Quadrillion', phonetic: '/kwɒˈdrɪljən/', homophone: '阔德林', meaning: '千万亿', sentence: 'Quadrillion bytes.', translation: '千万亿字节。', homophoneSentence: '阔德林拜茨.' },
+        { word: 'Third', phonetic: '/θɜːd/', homophone: '瑟德', meaning: '三分之一', sentence: 'One third of the cake.', translation: '蛋糕的三分之一。', homophoneSentence: '万瑟德奥夫则凯克.' },
+        { word: 'Fourth', phonetic: '/fɔːθ/', homophone: '佛斯', meaning: '四分之一', sentence: 'One fourth of the pizza.', translation: '披萨的四分之一。', homophoneSentence: '万佛斯奥夫则披萨.' },
+        { word: 'Fifth', phonetic: '/fɪfθ/', homophone: '菲夫斯', meaning: '五分之一', sentence: 'One fifth of the pie.', translation: '派的五分之一。', homophoneSentence: '万菲夫斯奥夫则派.' },
+        { word: 'Sixth', phonetic: '/sɪksθ/', homophone: '西克斯斯', meaning: '六分之一', sentence: 'One sixth of the book.', translation: '书的六分之一。', homophoneSentence: '万西克斯斯奥夫则布克.' },
+        { word: 'Seventh', phonetic: '/ˈsevnθ/', homophone: '赛文斯', meaning: '七分之一', sentence: 'One seventh of the class.', translation: '班级的七分之一。', homophoneSentence: '万赛文斯奥夫则克莱斯.' },
+        { word: 'Eighth', phonetic: '/eɪtθ/', homophone: '艾特斯', meaning: '八分之一', sentence: 'One eighth of the cake.', translation: '蛋糕的八分之一。', homophoneSentence: '万艾特斯奥夫则凯克.' },
+        { word: 'Ninth', phonetic: '/naɪnθ/', homophone: '奈恩斯', meaning: '九分之一', sentence: 'One ninth of the pizza.', translation: '披萨的九分之一。', homophoneSentence: '万奈恩斯奥夫则披萨.' },
+        { word: 'Tenth', phonetic: '/tenθ/', homophone: '坦斯', meaning: '十分之一', sentence: 'One tenth of the pie.', translation: '派的十分之一。', homophoneSentence: '万坦斯奥夫则派.' },
+        { word: 'Zero point one', phonetic: '/ˈzɪərəʊ pɔɪnt wʌn/', homophone: '泽柔坡因特万', meaning: '零点一', sentence: 'Zero point one percent.', translation: '百分之零点一。', homophoneSentence: '泽柔坡因特万波森特.' },
+        { word: 'Zero point five', phonetic: '/ˈzɪərəʊ pɔɪnt faɪv/', homophone: '泽柔坡因特法艾夫', meaning: '零点五', sentence: 'Zero point five meters.', translation: '零点五米。', homophoneSentence: '泽柔坡因特法艾夫米特斯.' },
+        { word: 'One point five', phonetic: '/wʌn pɔɪnt faɪv/', homophone: '万坡因特法艾夫', meaning: '一点五', sentence: 'One point five hours.', translation: '一个半小时。', homophoneSentence: '万坡因特法艾夫阿瓦斯.' },
+        { word: 'Two point five', phonetic: '/tuː pɔɪnt faɪv/', homophone: '图坡因特法艾夫', meaning: '二点五', sentence: 'Two point five miles.', translation: '二点五英里。', homophoneSentence: '图坡因特法艾夫迈尔斯.' },
+        { word: 'Three point five', phonetic: '/θriː pɔɪnt faɪv/', homophone: '斯瑞坡因特法艾夫', meaning: '三点五', sentence: 'Three point five kilograms.', translation: '三点五公斤。', homophoneSentence: '斯瑞坡因特法艾夫基楼格拉姆斯.' },
+        { word: 'Addition', phonetic: '/əˈdɪʃn/', homophone: '阿迪申', meaning: '加法', sentence: 'Addition is easy.', translation: '加法很简单。', homophoneSentence: '阿迪申依兹伊兹.' },
+        { word: 'Subtraction', phonetic: '/səbˈtrækʃn/', homophone: '萨布拽克申', meaning: '减法', sentence: 'Subtraction is simple.', translation: '减法很简单。', homophoneSentence: '萨布拽克申依兹辛普尔.' },
+        { word: 'Multiplication', phonetic: '/ˌmʌltɪplɪˈkeɪʃn/', homophone: '马尔踢普利凯申', meaning: '乘法', sentence: 'Multiplication tables.', translation: '乘法表。', homophoneSentence: '马尔踢普利凯申泰布尔兹.' },
+        { word: 'Division', phonetic: '/dɪˈvɪʒn/', homophone: '迪维申', meaning: '除法', sentence: 'Division can be hard.', translation: '除法可能很难。', homophoneSentence: '迪维申坎比哈德.' },
+        { word: 'Equals', phonetic: '/ˈiːkwəlz/', homophone: '伊阔尔斯', meaning: '等于', sentence: 'Two plus two equals four.', translation: '二加二等于四。', homophoneSentence: '图普拉斯图伊阔尔斯佛.' },
+        { word: 'Plus', phonetic: '/plʌs/', homophone: '普拉斯', meaning: '加', sentence: 'Three plus four equals seven.', translation: '三加四等于七。', homophoneSentence: '斯瑞普拉斯佛伊阔尔斯赛文.' },
+        { word: 'Minus', phonetic: '/ˈmaɪnəs/', homophone: '麦纳斯', meaning: '减', sentence: 'Five minus three equals two.', translation: '五减三等于二。', homophoneSentence: '法艾夫麦纳斯斯瑞伊阔尔斯图.' },
+        { word: 'Times', phonetic: '/taɪmz/', homophone: '泰姆斯', meaning: '乘', sentence: 'Three times four equals twelve.', translation: '三乘四等于十二。', homophoneSentence: '斯瑞泰姆斯佛伊阔尔斯特维尔夫.' },
+        { word: 'Divide', phonetic: '/dɪˈvaɪd/', homophone: '迪外德', meaning: '除', sentence: 'Twelve divided by three equals four.', translation: '十二除以三等于四。', homophoneSentence: '特维尔夫迪外德拜斯瑞伊阔尔斯佛.' },
+        { word: 'Square', phonetic: '/skweə(r)/', homophone: '斯阔尔', meaning: '平方', sentence: 'Three squared is nine.', translation: '三的平方是九。', homophoneSentence: '斯瑞斯阔尔的依兹奈恩.' },
+        { word: 'Cube', phonetic: '/kjuːb/', homophone: '丘布', meaning: '立方', sentence: 'Two cubed is eight.', translation: '二的立方是八。', homophoneSentence: '图丘布的依兹艾特.' },
+        { word: 'Square root', phonetic: '/skweə ruːt/', homophone: '斯阔尔如特', meaning: '平方根', sentence: 'The square root of nine is three.', translation: '九的平方根是三。', homophoneSentence: '则斯阔尔如特奥夫奈恩依兹斯瑞.' },
+        { word: 'Kilogram', phonetic: '/ˈkɪləɡræm/', homophone: '基楼格拉姆', meaning: '公斤', sentence: 'One kilogram of apples.', translation: '一公斤苹果。', homophoneSentence: '万基楼格拉姆奥夫艾坡z.' },
+        { word: 'Gram', phonetic: '/ɡræm/', homophone: '格拉姆', meaning: '克', sentence: 'One gram of sugar.', translation: '一克糖。', homophoneSentence: '万格拉姆奥夫苏格.' },
+        { word: 'Kilometer', phonetic: '/kɪˈlɒmɪtə(r)/', homophone: '基楼米特', meaning: '公里', sentence: 'One kilometer away.', translation: '一公里远。', homophoneSentence: '万基楼米特阿威.' },
+        { word: 'Meter', phonetic: '/ˈmiːtə(r)/', homophone: '米特', meaning: '米', sentence: 'One meter tall.', translation: '一米高。', homophoneSentence: '万米特套.' },
+        { word: 'Centimeter', phonetic: '/ˈsentɪmiːtə(r)/', homophone: '森提米特', meaning: '厘米', sentence: 'One centimeter long.', translation: '一厘米长。', homophoneSentence: '万森提米特长.' },
+        { word: 'Millimeter', phonetic: '/ˈmɪlimiːtə(r)/', homophone: '米里米特', meaning: '毫米', sentence: 'One millimeter thick.', translation: '一毫米厚。', homophoneSentence: '万米里米特西克.' },
+        { word: 'Liter', phonetic: '/ˈliːtə(r)/', homophone: '里特', meaning: '升', sentence: 'One liter of water.', translation: '一升水。', homophoneSentence: '万里特奥夫沃特.' },
+        { word: 'Milliliter', phonetic: '/ˈmɪliliːtə(r)/', homophone: '米里里特', meaning: '毫升', sentence: 'One milliliter of medicine.', translation: '一毫升药。', homophoneSentence: '万米里里特奥夫麦迪森.' },
+        { word: 'Kilowatt', phonetic: '/ˈkɪləwɒt/', homophone: '基楼瓦特', meaning: '千瓦', sentence: 'One kilowatt power.', translation: '一千瓦功率。', homophoneSentence: '万基楼瓦特泡尔.' },
+        { word: 'Watt', phonetic: '/wɒt/', homophone: '瓦特', meaning: '瓦', sentence: 'One watt bulb.', translation: '一瓦灯泡。', homophoneSentence: '万瓦特布尔布.' },
+        { word: 'Second', phonetic: '/ˈsekənd/', homophone: '赛肯德', meaning: '秒', sentence: 'One second please.', translation: '请等一秒。', homophoneSentence: '万赛肯德普利斯.' },
+        { word: 'Minute', phonetic: '/ˈmɪnɪt/', homophone: '米尼特', meaning: '分钟', sentence: 'One minute wait.', translation: '等一分钟。', homophoneSentence: '万米尼特威特.' },
+        { word: 'Hour', phonetic: '/ˈaʊə(r)/', homophone: '阿瓦', meaning: '小时', sentence: 'One hour later.', translation: '一小时后。', homophoneSentence: '万阿瓦雷特.' },
+        { word: 'Day', phonetic: '/deɪ/', homophone: '戴', meaning: '天', sentence: 'One day off.', translation: '休息一天。', homophoneSentence: '万戴奥夫.' },
+        { word: 'Week', phonetic: '/wiːk/', homophone: '维克', meaning: '周', sentence: 'One week vacation.', translation: '一周假期。', homophoneSentence: '万维克沃凯申.' },
+        { word: 'Month', phonetic: '/mʌnθ/', homophone: '芒斯', meaning: '月', sentence: 'One month ago.', translation: '一个月前。', homophoneSentence: '万芒斯阿狗.' },
+        { word: 'Year', phonetic: '/jɪə(r)/', homophone: '耶', meaning: '年', sentence: 'One year old.', translation: '一岁。', homophoneSentence: '万耶欧德.' },
+        { word: 'Decade', phonetic: '/ˈdekeɪd/', homophone: '德凯德', meaning: '十年', sentence: 'One decade later.', translation: '十年后。', homophoneSentence: '万德凯德雷特.' },
+        { word: 'Century', phonetic: '/ˈsentʃəri/', homophone: '森彻瑞', meaning: '世纪', sentence: 'One century ago.', translation: '一个世纪前。', homophoneSentence: '万森彻瑞阿狗.' },
+        { word: 'Millennium', phonetic: '/mɪˈleniəm/', homophone: '米伦尼姆', meaning: '千年', sentence: 'One millennium history.', translation: '一千年历史。', homophoneSentence: '万米伦尼姆历史.' },
+        { word: 'Dollar', phonetic: '/ˈdɒlə(r)/', homophone: '道乐', meaning: '美元', sentence: 'One dollar bill.', translation: '一美元纸币。', homophoneSentence: '万道乐比尔.' },
+        { word: 'Cent', phonetic: '/sent/', homophone: '森特', meaning: '美分', sentence: 'One cent coin.', translation: '一美分硬币。', homophoneSentence: '万森特扣因.' },
+        { word: 'Pound', phonetic: '/paʊnd/', homophone: '磅', meaning: '英镑', sentence: 'One pound note.', translation: '一英镑纸币。', homophoneSentence: '万磅诺特.' },
+        { word: 'Penny', phonetic: '/ˈpeni/', homophone: '佩尼', meaning: '便士', sentence: 'One penny coin.', translation: '一便士硬币。', homophoneSentence: '万佩尼扣因.' },
+        { word: 'Euro', phonetic: '/ˈjʊərəʊ/', homophone: '优柔', meaning: '欧元', sentence: 'One euro coin.', translation: '一欧元硬币。', homophoneSentence: '万优柔扣因.' },
+        { word: 'Yen', phonetic: '/jen/', homophone: ' yen', meaning: '日元', sentence: 'One yen coin.', translation: '一日元硬币。', homophoneSentence: '万 yen 扣因.' },
+        { word: 'Eleventh', phonetic: '/ɪˈlevnθ/', homophone: '伊莱文斯', meaning: '第十一', sentence: 'Eleventh hour.', translation: '最后时刻。', homophoneSentence: '伊莱文斯阿瓦.' },
+        { word: 'Twelfth', phonetic: '/twelfθ/', homophone: '特维尔夫斯', meaning: '第十二', sentence: 'Twelfth night.', translation: '第十二夜。', homophoneSentence: '特维尔夫斯奈特.' },
+        { word: 'Thirteenth', phonetic: '/ˌθɜːˈtiːnθ/', homophone: '瑟廷斯', meaning: '第十三', sentence: 'Thirteenth floor.', translation: '十三楼。', homophoneSentence: '瑟廷斯弗洛.' },
+        { word: 'Fourteenth', phonetic: '/ˌfɔːˈtiːnθ/', homophone: '佛廷斯', meaning: '第十四', sentence: 'Fourteenth birthday.', translation: '十四岁生日。', homophoneSentence: '佛廷斯伯斯戴.' },
+        { word: 'Fifteenth', phonetic: '/ˌfɪfˈtiːnθ/', homophone: '菲廷斯', meaning: '第十五', sentence: 'Fifteenth of March.', translation: '三月十五日。', homophoneSentence: '菲廷斯奥夫马奇.'  },
+        { word: 'Sixteenth', phonetic: '/ˌsɪksˈtiːnθ/', homophone: '西克斯廷斯', meaning: '第十六', sentence: 'Sixteenth century.', translation: '十六世纪。', homophoneSentence: '西克斯廷斯森彻瑞.'  },
+        { word: 'Seventeenth', phonetic: '/ˌsevnˈtiːnθ/', homophone: '赛文廷斯', meaning: '第十七', sentence: 'Seventeenth chapter.', translation: '第十七章。', homophoneSentence: '赛文廷斯查普特.'  },
+        { word: 'Eighteenth', phonetic: '/ˌeɪˈtiːnθ/', homophone: '艾廷斯', meaning: '第十八', sentence: 'Eighteenth century.', translation: '十八世纪。', homophoneSentence: '艾廷斯森彻瑞.'  },
+        { word: 'Nineteenth', phonetic: '/ˌnaɪnˈtiːnθ/', homophone: '奈恩廷斯', meaning: '第十九', sentence: 'Nineteenth century.', translation: '十九世纪。', homophoneSentence: '奈恩廷斯森彻瑞.'  },
+        { word: 'Twentieth', phonetic: '/ˈtwentiəθ/', homophone: '湍踢艾斯', meaning: '第二十', sentence: 'Twentieth century.', translation: '二十世纪。', homophoneSentence: '湍踢艾斯森彻瑞.'  },
+        { word: 'Thirtieth', phonetic: '/ˈθɜːtiəθ/', homophone: '瑟踢艾斯', meaning: '第三十', sentence: 'Thirtieth birthday.', translation: '三十岁生日。', homophoneSentence: '瑟踢艾斯伯斯戴.'  },
+        { word: 'Fortieth', phonetic: '/ˈfɔːtiəθ/', homophone: '佛踢艾斯', meaning: '第四十', sentence: 'Fortieth anniversary.', translation: '四十周年纪念。', homophoneSentence: '佛踢艾斯艾尼沃瑟瑞.'  },
+        { word: 'Fiftieth', phonetic: '/ˈfɪftiəθ/', homophone: '菲夫踢艾斯', meaning: '第五十', sentence: 'Fiftieth birthday.', translation: '五十岁生日。', homophoneSentence: '菲夫踢艾斯伯斯戴.'  },
+        { word: 'Sixtieth', phonetic: '/ˈsɪkstiəθ/', homophone: '西克斯踢艾斯', meaning: '第六十', sentence: 'Sixtieth anniversary.', translation: '六十周年纪念。', homophoneSentence: '西克斯踢艾斯艾尼沃瑟瑞.'  },
+        { word: 'Seventieth', phonetic: '/ˈsevntiəθ/', homophone: '赛文踢艾斯', meaning: '第七十', sentence: 'Seventieth birthday.', translation: '七十岁生日。', homophoneSentence: '赛文踢艾斯伯斯戴.'  },
+        { word: 'Eightieth', phonetic: '/ˈeɪtiəθ/', homophone: '艾踢艾斯', meaning: '第八十', sentence: 'Eightieth anniversary.', translation: '八十周年纪念。', homophoneSentence: '艾踢艾斯艾尼沃瑟瑞.'  },
+        { word: 'Ninetieth', phonetic: '/ˈnaɪntiəθ/', homophone: '奈恩踢艾斯', meaning: '第九十', sentence: 'Ninetieth birthday.', translation: '九十岁生日。', homophoneSentence: '奈恩踢艾斯伯斯戴.'  },
+        { word: 'Hundredth', phonetic: '/ˈhʌndrədθ/', homophone: '汉德瑞德斯', meaning: '第一百', sentence: 'Hundredth day.', translation: '第一百天。', homophoneSentence: '汉德瑞德斯戴.'  },
+        { word: 'Single', phonetic: '/ˈsɪŋɡl/', homophone: '辛格', meaning: '单个', sentence: 'Single room.', translation: '单人间。', homophoneSentence: '辛格如姆.'  },
+        { word: 'Double', phonetic: '/ˈdʌbl/', homophone: '达波', meaning: '双倍', sentence: 'Double room.', translation: '双人间。', homophoneSentence: '达波如姆.'  },
+        { word: 'Triple', phonetic: '/ˈtrɪpl/', homophone: '吹波', meaning: '三倍', sentence: 'Triple bonus.', translation: '三倍奖金。', homophoneSentence: '吹波波纳斯.'  },
+        { word: 'Quadruple', phonetic: '/ˈkwɒdrʊpl/', homophone: '阔朱波', meaning: '四倍', sentence: 'Quadruple the price.', translation: '价格四倍。', homophoneSentence: '阔朱波则普瑞斯.'  },
+        { word: 'Quintuple', phonetic: '/ˈkwɪntjʊpl/', homophone: '昆丘波', meaning: '五倍', sentence: 'Quintuple the amount.', translation: '数量五倍。', homophoneSentence: '昆丘波则额芒特.'  },
+        { word: 'Sextuple', phonetic: '/ˈsekstjʊpl/', homophone: '塞克斯丘波', meaning: '六倍', sentence: 'Sextuple the profit.', translation: '利润六倍。', homophoneSentence: '塞克斯丘波则普罗菲特.'  },
+        { word: 'Septuple', phonetic: '/ˈseptjʊpl/', homophone: '塞普丘波', meaning: '七倍', sentence: 'Septuple the sales.', translation: '销售额七倍。', homophoneSentence: '塞普丘波则塞尔斯.'  },
+        { word: 'Octuple', phonetic: '/ˈɒktjʊpl/', homophone: '奥克丘波', meaning: '八倍', sentence: 'Octuple the speed.', translation: '速度八倍。', homophoneSentence: '奥克丘波则斯皮德.'  },
+        { word: 'Nonuple', phonetic: '/ˈnɒnjʊpl/', homophone: '农丘波', meaning: '九倍', sentence: 'Nonuple the output.', translation: '产量九倍。', homophoneSentence: '农丘波则奥普特普特.'  },
         { word: 'Decuple', phonetic: '/ˈdekjʊpl/', homophone: '德丘波', meaning: '十倍', sentence: 'Decuple the income.', translation: '收入十倍。', homophoneSentence: '德丘波则因卡姆.' },
         { word: 'Twenty-one', phonetic: '/twenty one/', homophone: '湍踢万', meaning: '21', sentence: 'I have 21 dollars.', translation: '我有21美元。', homophoneSentence: '爱哈夫湍踢万道乐兹.' },
         { word: 'Twenty-two', phonetic: '/twenty two/', homophone: '湍踢图', meaning: '22', sentence: 'I have 22 dollars.', translation: '我有22美元。', homophoneSentence: '爱哈夫湍踢图道乐兹.' },
@@ -3002,12 +3334,12 @@ const wordDatabase = {
         { word: 'Degree', phonetic: '/dɪˈɡriː/', homophone: '迪格瑞', meaning: '度', sentence: 'Ninety degrees.', translation: '九十度。', homophoneSentence: '奈恩踢迪格瑞兹.' },
         { word: 'Celsius', phonetic: '/ˈselsiəs/', homophone: '塞尔修斯', meaning: '摄氏', sentence: 'Twenty degrees Celsius.', translation: '二十摄氏度。', homophoneSentence: '湍踢迪格瑞兹塞尔修斯.' },
         { word: 'Fahrenheit', phonetic: '/ˈfærənhaɪt/', homophone: '法伦海特', meaning: '华氏', sentence: 'Sixty-eight degrees Fahrenheit.', translation: '六十八华氏度。', homophoneSentence: '西克斯踢艾特迪格瑞兹法伦海特.' },
-        { word: 'One o'clock', phonetic: '/wʌn əˈklɒk/', homophone: '万阿克洛克', meaning: '一点钟', sentence: 'It's one o'clock.', translation: '现在一点钟。', homophoneSentence: '伊茨万阿克洛克.' },
-        { word: 'Two o'clock', phonetic: '/tuː əˈklɒk/', homophone: '图阿克洛克', meaning: '两点钟', sentence: 'It's two o'clock.', translation: '现在两点钟。', homophoneSentence: '伊茨图阿克洛克.' },
-        { word: 'Three o'clock', phonetic: '/θriː əˈklɒk/', homophone: '斯瑞阿克洛克', meaning: '三点钟', sentence: 'It's three o'clock.', translation: '现在三点钟。', homophoneSentence: '伊茨斯瑞阿克洛克.' },
-        { word: 'Half past one', phonetic: '/hɑːf pɑːst wʌn/', homophone: '哈夫帕斯特万', meaning: '一点半', sentence: 'It's half past one.', translation: '现在一点半。', homophoneSentence: '伊茨哈夫帕斯特万.' },
-        { word: 'Quarter past one', phonetic: '/ˈkwɔːtə pɑːst wʌn/', homophone: '阔特帕斯特万', meaning: '一点十五', sentence: 'It's quarter past one.', translation: '现在一点十五。', homophoneSentence: '伊茨阔特帕斯特万.' },
-        { word: 'Quarter to two', phonetic: '/ˈkwɔːtə tuː tuː/', homophone: '阔特图图', meaning: '一点四十五', sentence: 'It's quarter to two.', translation: '现在一点四十五。', homophoneSentence: '伊茨阔特图图.' },
+        { word: "One o'clock", phonetic: "/wʌn əˈklɒk/", homophone: "万阿克洛克", meaning: "一点钟", sentence: "It's one o'clock.", translation: "现在一点钟。", homophoneSentence: "伊茨万阿克洛克." },
+        { word: "Two o'clock", phonetic: "/tuː əˈklɒk/", homophone: "图阿克洛克", meaning: "两点钟", sentence: "It's two o'clock.", translation: "现在两点钟。", homophoneSentence: "伊茨图阿克洛克." },
+        { word: "Three o'clock", phonetic: "/θriː əˈklɒk/", homophone: "斯瑞阿克洛克", meaning: "三点钟", sentence: "It's three o'clock.", translation: "现在三点钟。", homophoneSentence: "伊茨斯瑞阿克洛克." },
+        { word: "Half past one", phonetic: "/hɑːf pɑːst wʌn/", homophone: "哈夫帕斯特万", meaning: "一点半", sentence: "It's half past one.", translation: "现在一点半。", homophoneSentence: "伊茨哈夫帕斯特万." },
+        { word: "Quarter past one", phonetic: "/ˈkwɔːtə pɑːst wʌn/", homophone: "阔特帕斯特万", meaning: "一点十五", sentence: "It's quarter past one.", translation: "现在一点十五。", homophoneSentence: "伊茨阔特帕斯特万." },
+        { word: "Quarter to two", phonetic: "/ˈkwɔːtə tuː tuː/", homophone: "阔特图图", meaning: "一点四十五", sentence: "It's quarter to two.", translation: "现在一点四十五。", homophoneSentence: "伊茨阔特图图." },
         { word: 'Five minutes', phonetic: '/faɪv ˈmɪnɪts/', homophone: '法艾夫米尼茨', meaning: '五分钟', sentence: 'Wait five minutes.', translation: '等五分钟。', homophoneSentence: '威特法艾夫米尼茨.' },
         { word: 'Ten minutes', phonetic: '/ten ˈmɪnɪts/', homophone: '坦米尼茨', meaning: '十分钟', sentence: 'Ten minutes left.', translation: '还剩十分钟。', homophoneSentence: '坦米尼茨莱夫特.' },
         { word: 'Half an hour', phonetic: '/hɑːf ən ˈaʊə/', homophone: '哈夫安阿瓦', meaning: '半小时', sentence: 'Half an hour later.', translation: '半小时后。', homophoneSentence: '哈夫安阿瓦雷特.' },
@@ -3025,7 +3357,7 @@ const wordDatabase = {
         { word: 'One pound', phonetic: '/wʌn paʊnd/', homophone: '万庞德', meaning: '一英镑', sentence: 'One pound coin.', translation: '一英镑硬币。', homophoneSentence: '万庞德阔因.' },
         { word: 'One yuan', phonetic: '/wʌn juːˈɑːn/', homophone: '万元', meaning: '一元', sentence: 'One yuan only.', translation: '仅一元。', homophoneSentence: '万元昂利.' },
         { word: 'Score', phonetic: '/skɔː/', homophone: '斯阔', meaning: '二十', sentence: 'A score of people.', translation: '二十人。', homophoneSentence: '啊斯阔奥夫皮普欧.' },
-        { word: 'Gross', phonetic: '/ɡrəʊs/', homophone: '格若斯', meaning: '一罗', sentence: 'A gross of pencils.', translation: '一罗铅笔。', homophoneSentence: '啊格若斯奥夫喷西尔斯.' }
+        { word: 'Gross', phonetic: '/ɡrəʊs/', homophone: '格若斯', meaning: '一罗', sentence: 'A gross of pencils.', translation: '一罗铅笔。', homophoneSentence: '啊格若斯奥夫喷西尔斯.' },
         { word: 'Octillion', phonetic: '/ɒkˈtɪljən/', homophone: '奥克提林', meaning: '千的九次方', sentence: 'An octillion is a very large number.', translation: '千的九次方是一个非常大的数字。', homophoneSentence: '安奥克提林依兹啊歪瑞拉吉日安波.' },
         { word: 'Nonillion', phonetic: '/nəˈnɪljən/', homophone: '诺尼林', meaning: '千的十次方', sentence: 'A nonillion is even larger than an octillion.', translation: '千的十次方比千的九次方还要大。', homophoneSentence: '啊诺尼林依兹依文拉吉日安则安奥克提林.' },
         { word: 'Decillion', phonetic: '/dɪˈsɪljən/', homophone: '迪西林', meaning: '千的十一次方', sentence: 'A decillion is a 1 followed by 33 zeros.', translation: '千的十一次方是1后面跟着33个零。', homophoneSentence: '啊迪西林依兹啊万佛楼拜33泽柔兹.' },
@@ -3115,7 +3447,7 @@ const wordDatabase = {
         { word: 'Googol', phonetic: '/ˈɡuːɡɒl/', homophone: '古戈尔', meaning: ' googol', sentence: 'A googol is 1 followed by 100 zeros.', translation: 'googol是1后面跟着100个零。', homophoneSentence: '啊古戈尔伊兹万夫罗勒德拜100泽罗斯.' },
         { word: 'Googolplex', phonetic: '/ˈɡuːɡɒlplex/', homophone: '古戈尔普莱克斯', meaning: ' googolplex', sentence: 'A googolplex is 1 followed by a googol zeros.', translation: 'googolplex是1后面跟着一个googol个零。', homophoneSentence: '啊古戈尔普莱克斯伊兹万夫罗勒德拜啊古戈尔泽罗斯.' },
         { word: 'Pi', phonetic: '/paɪ/', homophone: '派', meaning: '圆周率', sentence: 'Pi is approximately 3.14159.', translation: '圆周率约为3.14159。', homophoneSentence: '派伊兹阿普罗克斯密特利3.14159.' },
-        { word: 'Euler's number', phonetic: '/ˈɔɪlərz ˈnʌmbə/', homophone: '欧拉兹南伯', meaning: '欧拉数', sentence: 'Euler\'s number is approximately 2.71828.', translation: '欧拉数约为2.71828。', homophoneSentence: '欧拉兹南伯伊兹阿普罗克斯密特利2.71828.' },
+        { word: "Euler's number", phonetic: "/ˈɔɪlərz ˈnʌmbə/", homophone: "欧拉兹南伯", meaning: "欧拉数", sentence: "Euler's number is approximately 2.71828.", translation: "欧拉数约为2.71828。", homophoneSentence: "欧拉兹南伯伊兹阿普罗克斯密特利2.71828." },
         { word: 'Golden ratio', phonetic: '/ˈɡəʊldən ˈreɪʃiəʊ/', homophone: '戈尔登瑞修', meaning: '黄金比例', sentence: 'The golden ratio is approximately 1.618.', translation: '黄金比例约为1.618。', homophoneSentence: '泽戈尔登瑞修伊兹阿普罗克斯密特利1.618.' },
         { word: 'Infinity', phonetic: '/ɪnˈfɪnəti/', homophone: '因菲尼蒂', meaning: '无限', sentence: 'Infinity is a concept, not a number.', translation: '无限是一个概念，不是一个数字。', homophoneSentence: '因菲尼蒂伊兹啊概念，诺特啊南伯.' },
         { word: 'Zero', phonetic: '/ˈzɪərəʊ/', homophone: '泽罗', meaning: '零', sentence: 'Zero is a number.', translation: '零是一个数字。', homophoneSentence: '泽罗伊兹啊南伯.' },
@@ -3157,7 +3489,207 @@ const wordDatabase = {
         { word: 'Quattuortrigintillion', phonetic: '/ˌkwɒtjʊətrɪˈdʒɪntɪljən/', homophone: '夸图奥特里金蒂利恩', meaning: '三十四乘方', sentence: 'A quattuortrigintillion is an enormous number.', translation: '三十四乘方是一个巨大的数字。', homophoneSentence: '啊夸图奥特里金蒂利恩伊安伊诺莫尔斯南伯.' },
         { word: 'Quintrigintillion', phonetic: '/ˌkwɪntrɪˈdʒɪntɪljən/', homophone: '昆特里金蒂利恩', meaning: '三十五乘方', sentence: 'A quintrigintillion is a very large number.', translation: '三十五乘方是一个非常大的数字。', homophoneSentence: '啊昆特里金蒂利恩伊扎歪瑞拉只南伯.' },
         { word: 'Sextrigintillion', phonetic: '/ˌsɛkstrɪˈdʒɪntɪljən/', homophone: '塞克斯特里金蒂利恩', meaning: '三十六乘方', sentence: 'A sextrigintillion is even larger.', translation: '三十六乘方甚至更大。', homophoneSentence: '啊塞克斯特里金蒂利恩伊文拉只.' },
-    ],
+    
+        { word: 'Three million', phonetic: '/θriː ˈmɪljən/', homophone: '斯瑞米尔金', meaning: '三百万', sentence: 'Three million dollars.', translation: '三百万美元。', homophoneSentence: '斯瑞米尔金道乐兹.' },
+
+        { word: 'Four million', phonetic: '/fɔː ˈmɪljən/', homophone: '佛米尔金', meaning: '四百万', sentence: 'Four million dollars.', translation: '四百万美元。', homophoneSentence: '佛米尔金道乐兹.' },
+
+        { word: 'Five million', phonetic: '/faɪv ˈmɪljən/', homophone: '法艾夫米尔金', meaning: '五百万', sentence: 'Five million dollars.', translation: '五百万美元。', homophoneSentence: '法艾夫米尔金道乐兹.' },
+
+        { word: 'Six million', phonetic: '/sɪks ˈmɪljən/', homophone: '西克斯米尔金', meaning: '六百万', sentence: 'Six million dollars.', translation: '六百万美元。', homophoneSentence: '西克斯米尔金道乐兹.' },
+
+        { word: 'Seven million', phonetic: '/ˈsevn ˈmɪljən/', homophone: '赛文米尔金', meaning: '七百万', sentence: 'Seven million dollars.', translation: '七百万美元。', homophoneSentence: '赛文米尔金道乐兹.' },
+
+        { word: 'Eight million', phonetic: '/eɪt ˈmɪljən/', homophone: '艾特米尔金', meaning: '八百万', sentence: 'Eight million dollars.', translation: '八百万美元。', homophoneSentence: '艾特米尔金道乐兹.' },
+
+        { word: 'Nine million', phonetic: '/naɪn ˈmɪljən/', homophone: '奈恩米尔金', meaning: '九百万', sentence: 'Nine million dollars.', translation: '九百万美元。', homophoneSentence: '奈恩米尔金道乐兹.' },
+
+        { word: 'Ten million', phonetic: '/ten ˈmɪljən/', homophone: '坦米尔金', meaning: '一千万', sentence: 'Ten million dollars.', translation: '一千万美元。', homophoneSentence: '坦米尔金道乐兹.' },
+
+        { word: 'Hundred million', phonetic: '/ˈhʌndrəd ˈmɪljən/', homophone: '汉德瑞德米尔金', meaning: '一亿', sentence: 'Hundred million dollars.', translation: '一亿美元。', homophoneSentence: '汉德瑞德米尔金道乐兹.' },
+
+        { word: 'One billion', phonetic: '/wʌn ˈbɪljən/', homophone: '万比林', meaning: '十亿', sentence: 'One billion dollars.', translation: '十亿美元。', homophoneSentence: '万比林道乐兹.' },
+
+        { word: 'Two billion', phonetic: '/tuː ˈbɪljən/', homophone: '图比林', meaning: '二十亿', sentence: 'Two billion dollars.', translation: '二十亿美元。', homophoneSentence: '图比林道乐兹.' },
+
+        { word: 'Three billion', phonetic: '/θriː ˈbɪljən/', homophone: '斯瑞比林', meaning: '三十亿', sentence: 'Three billion dollars.', translation: '三十亿美元。', homophoneSentence: '斯瑞比林道乐兹.' },
+
+        { word: 'Four billion', phonetic: '/fɔː ˈbɪljən/', homophone: '佛比林', meaning: '四十亿', sentence: 'Four billion dollars.', translation: '四十亿美元。', homophoneSentence: '佛比林道乐兹.' },
+
+        { word: 'Five billion', phonetic: '/faɪv ˈbɪljən/', homophone: '法艾夫比林', meaning: '五十亿', sentence: 'Five billion dollars.', translation: '五十亿美元。', homophoneSentence: '法艾夫比林道乐兹.' },
+
+        { word: 'Six billion', phonetic: '/sɪks ˈbɪljən/', homophone: '西克斯比林', meaning: '六十亿', sentence: 'Six billion dollars.', translation: '六十亿美元。', homophoneSentence: '西克斯比林道乐兹.' },
+
+        { word: 'Seven billion', phonetic: '/ˈsevn ˈbɪljən/', homophone: '赛文比林', meaning: '七十亿', sentence: 'Seven billion dollars.', translation: '七十亿美元。', homophoneSentence: '赛文比林道乐兹.' },
+
+        { word: 'Eight billion', phonetic: '/eɪt ˈbɪljən/', homophone: '艾特比林', meaning: '八十亿', sentence: 'Eight billion dollars.', translation: '八十亿美元。', homophoneSentence: '艾特比林道乐兹.' },
+
+        { word: 'Nine billion', phonetic: '/naɪn ˈbɪljən/', homophone: '奈恩比林', meaning: '九十亿', sentence: 'Nine billion dollars.', translation: '九十亿美元。', homophoneSentence: '奈恩比林道乐兹.' },
+
+        { word: 'Ten billion', phonetic: '/ten ˈbɪljən/', homophone: '坦比林', meaning: '一百亿', sentence: 'Ten billion dollars.', translation: '一百亿美元。', homophoneSentence: '坦比林道乐兹.' },
+
+        { word: 'Hundred billion', phonetic: '/ˈhʌndrəd ˈbɪljən/', homophone: '汉德瑞德比林', meaning: '一千亿', sentence: 'Hundred billion dollars.', translation: '一千亿美元。', homophoneSentence: '汉德瑞德比林道乐兹.' },
+
+        { word: 'One trillion', phonetic: '/wʌn ˈtrɪljən/', homophone: '万吹林', meaning: '一万亿', sentence: 'One trillion dollars.', translation: '一万亿美元。', homophoneSentence: '万吹林道乐兹.' },
+
+        { word: 'Two trillion', phonetic: '/tuː ˈtrɪljən/', homophone: '图吹林', meaning: '二万亿', sentence: 'Two trillion dollars.', translation: '二万亿美元。', homophoneSentence: '图吹林道乐兹.' },
+
+        { word: 'Three trillion', phonetic: '/θriː ˈtrɪljən/', homophone: '斯瑞吹林', meaning: '三万亿', sentence: 'Three trillion dollars.', translation: '三万亿美元。', homophoneSentence: '斯瑞吹林道乐兹.' },
+
+        { word: 'Four trillion', phonetic: '/fɔː ˈtrɪljən/', homophone: '佛吹林', meaning: '四万亿', sentence: 'Four trillion dollars.', translation: '四万亿美元。', homophoneSentence: '佛吹林道乐兹.' },
+
+        { word: 'Five trillion', phonetic: '/faɪv ˈtrɪljən/', homophone: '法艾夫吹林', meaning: '五万亿', sentence: 'Five trillion dollars.', translation: '五万亿美元。', homophoneSentence: '法艾夫吹林道乐兹.' },
+
+        { word: 'Six trillion', phonetic: '/sɪks ˈtrɪljən/', homophone: '西克斯吹林', meaning: '六万亿', sentence: 'Six trillion dollars.', translation: '六万亿美元。', homophoneSentence: '西克斯吹林道乐兹.' },
+
+        { word: 'Seven trillion', phonetic: '/ˈsevn ˈtrɪljən/', homophone: '赛文吹林', meaning: '七万亿', sentence: 'Seven trillion dollars.', translation: '七万亿美元。', homophoneSentence: '赛文吹林道乐兹.' },
+
+        { word: 'Eight trillion', phonetic: '/eɪt ˈtrɪljən/', homophone: '艾特吹林', meaning: '八万亿', sentence: 'Eight trillion dollars.', translation: '八万亿美元。', homophoneSentence: '艾特吹林道乐兹.' },
+
+        { word: 'Nine trillion', phonetic: '/naɪn ˈtrɪljən/', homophone: '奈恩吹林', meaning: '九万亿', sentence: 'Nine trillion dollars.', translation: '九万亿美元。', homophoneSentence: '奈恩吹林道乐兹.' },
+
+        { word: 'Ten trillion', phonetic: '/ten ˈtrɪljən/', homophone: '坦吹林', meaning: '十万亿', sentence: 'Ten trillion dollars.', translation: '十万亿美元。', homophoneSentence: '坦吹林道乐兹.' },
+
+        { word: 'Hundred trillion', phonetic: '/ˈhʌndrəd ˈtrɪljən/', homophone: '汉德瑞吹林', meaning: '一百万亿', sentence: 'Hundred trillion dollars.', translation: '一百万亿美元。', homophoneSentence: '汉德瑞吹林道乐兹.' },
+
+        { word: 'One quadrillion', phonetic: '/wʌn kwɒˈdrɪljən/', homophone: '万夸德林', meaning: '千万亿', sentence: 'One quadrillion dollars.', translation: '千万亿美元。', homophoneSentence: '万夸德林道乐兹.' },
+
+        { word: 'Two quadrillion', phonetic: '/tuː kwɒˈdrɪljən/', homophone: '图夸德林', meaning: '两千万亿', sentence: 'Two quadrillion dollars.', translation: '两千万亿美元。', homophoneSentence: '图夸德林道乐兹.' },
+
+        { word: 'Three quadrillion', phonetic: '/θriː kwɒˈdrɪljən/', homophone: '斯瑞夸德林', meaning: '三千万亿', sentence: 'Three quadrillion dollars.', translation: '三千万亿美元。', homophoneSentence: '斯瑞夸德林道乐兹.' },
+
+        { word: 'Four quadrillion', phonetic: '/fɔː kwɒˈdrɪljən/', homophone: '佛夸德林', meaning: '四千万亿', sentence: 'Four quadrillion dollars.', translation: '四千万亿美元。', homophoneSentence: '佛夸德林道乐兹.' },
+
+        { word: 'Five quadrillion', phonetic: '/faɪv kwɒˈdrɪljən/', homophone: '法艾夫夸德林', meaning: '五千万亿', sentence: 'Five quadrillion dollars.', translation: '五千万亿美元。', homophoneSentence: '法艾夫夸德林道乐兹.' },
+
+        { word: 'Six quadrillion', phonetic: '/sɪks kwɒˈdrɪljən/', homophone: '西克斯夸德林', meaning: '六千万亿', sentence: 'Six quadrillion dollars.', translation: '六千万亿美元。', homophoneSentence: '西克斯夸德林道乐兹.' },
+
+        { word: 'Seven quadrillion', phonetic: '/ˈsevn kwɒˈdrɪljən/', homophone: '赛文夸德林', meaning: '七千万亿', sentence: 'Seven quadrillion dollars.', translation: '七千万亿美元。', homophoneSentence: '赛文夸德林道乐兹.' },
+
+        { word: 'Eight quadrillion', phonetic: '/eɪt kwɒˈdrɪljən/', homophone: '艾特夸德林', meaning: '八千万亿', sentence: 'Eight quadrillion dollars.', translation: '八千万亿美元。', homophoneSentence: '艾特夸德林道乐兹.' },
+
+        { word: 'Nine quadrillion', phonetic: '/naɪn kwɒˈdrɪljən/', homophone: '奈恩夸德林', meaning: '九千万亿', sentence: 'Nine quadrillion dollars.', translation: '九千万亿美元。', homophoneSentence: '奈恩夸德林道乐兹.' },
+
+        { word: 'Ten quadrillion', phonetic: '/ten kwɒˈdrɪljən/', homophone: '坦夸德林', meaning: '十万亿', sentence: 'Ten quadrillion dollars.', translation: '十万亿美元。', homophoneSentence: '坦夸德林道乐兹.' },
+
+        { word: 'Hundred quadrillion', phonetic: '/ˈhʌndrəd kwɒˈdrɪljən/', homophone: '汉德瑞夸德林', meaning: '一百万亿', sentence: 'Hundred quadrillion dollars.', translation: '一百万亿美元。', homophoneSentence: '汉德瑞夸德林道乐兹.' },
+
+        { word: 'One quintillion', phonetic: '/wʌn kwɪnˈtɪljən/', homophone: '万昆特林', meaning: '一亿亿亿', sentence: 'One quintillion dollars.', translation: '一亿亿亿美元。', homophoneSentence: '万昆特林道乐兹.' },
+
+        { word: 'Two quintillion', phonetic: '/tuː kwɪnˈtɪljən/', homophone: '图昆特林', meaning: '二亿亿亿', sentence: 'Two quintillion dollars.', translation: '二亿亿亿美元。', homophoneSentence: '图昆特林道乐兹.' },
+
+        { word: 'Three quintillion', phonetic: '/θriː kwɪnˈtɪljən/', homophone: '斯瑞昆特林', meaning: '三亿亿亿', sentence: 'Three quintillion dollars.', translation: '三亿亿亿美元。', homophoneSentence: '斯瑞昆特林道乐兹.' },
+
+        { word: 'Four quintillion', phonetic: '/fɔː kwɪnˈtɪljən/', homophone: '佛昆特林', meaning: '四亿亿亿', sentence: 'Four quintillion dollars.', translation: '四亿亿亿美元。', homophoneSentence: '佛昆特林道乐兹.' },
+
+        { word: 'Five quintillion', phonetic: '/faɪv kwɪnˈtɪljən/', homophone: '法艾夫昆特林', meaning: '五亿亿亿', sentence: 'Five quintillion dollars.', translation: '五亿亿亿美元。', homophoneSentence: '法艾夫昆特林道乐兹.' },
+
+        { word: 'Six quintillion', phonetic: '/sɪks kwɪnˈtɪljən/', homophone: '西克斯昆特林', meaning: '六亿亿亿', sentence: 'Six quintillion dollars.', translation: '六亿亿亿美元。', homophoneSentence: '西克斯昆特林道乐兹.' },
+
+        { word: "Eleven million", phonetic: "/ɪˈlevn ˈmɪljən/", homophone: "伊莱文米尔金", meaning: "一千一百万", sentence: "Eleven million dollars.", translation: "一千一百万美元。", homophoneSentence: "伊莱文米尔金道乐兹." },
+
+        { word: "Twelve million", phonetic: "/twelv ˈmɪljən/", homophone: "特威尔夫米尔金", meaning: "一千二百万", sentence: "Twelve million dollars.", translation: "一千二百万美元。", homophoneSentence: "特威尔夫米尔金道乐兹." },
+
+        { word: "Thirteen million", phonetic: "/ˌθɜːˈtiːn ˈmɪljən/", homophone: "瑟廷米尔金", meaning: "一千三百万", sentence: "Thirteen million dollars.", translation: "一千三百万美元。", homophoneSentence: "瑟廷米尔金道乐兹." },
+
+        { word: "Fourteen million", phonetic: "/ˌfɔːˈtiːn ˈmɪljən/", homophone: "佛廷米尔金", meaning: "一千四百万", sentence: "Fourteen million dollars.", translation: "一千四百万美元。", homophoneSentence: "佛廷米尔金道乐兹." },
+
+        { word: "Fifteen million", phonetic: "/ˌfɪfˈtiːn ˈmɪljən/", homophone: "菲夫廷米尔金", meaning: "一千五百万", sentence: "Fifteen million dollars.", translation: "一千五百万美元。", homophoneSentence: "菲夫廷米尔金道乐兹." },
+
+        { word: "Sixteen million", phonetic: "/ˌsɪksˈtiːn ˈmɪljən/", homophone: "西克斯廷米尔金", meaning: "一千六百万", sentence: "Sixteen million dollars.", translation: "一千六百万美元。", homophoneSentence: "西克斯廷米尔金道乐兹." },
+
+        { word: "Seventeen million", phonetic: "/ˌsevnˈtiːn ˈmɪljən/", homophone: "赛文廷米尔金", meaning: "一千七百万", sentence: "Seventeen million dollars.", translation: "一千七百万美元。", homophoneSentence: "赛文廷米尔金道乐兹." },
+
+        { word: "Eighteen million", phonetic: "/ˌeɪˈtiːn ˈmɪljən/", homophone: "艾廷米尔金", meaning: "一千八百万", sentence: "Eighteen million dollars.", translation: "一千八百万美元。", homophoneSentence: "艾廷米尔金道乐兹." },
+
+        { word: "Nineteen million", phonetic: "/ˌnaɪnˈtiːn ˈmɪljən/", homophone: "奈恩廷米尔金", meaning: "一千九百万", sentence: "Nineteen million dollars.", translation: "一千九百万美元。", homophoneSentence: "奈恩廷米尔金道乐兹." },
+
+        { word: "Twenty million", phonetic: "/ˈtwenti ˈmɪljən/", homophone: "特温提米尔金", meaning: "二千万", sentence: "Twenty million dollars.", translation: "二千万美元。", homophoneSentence: "特温提米尔金道乐兹." },
+
+        { word: "Thirty million", phonetic: "/ˈθɜːti ˈmɪljən/", homophone: "瑟提米尔金", meaning: "三千万", sentence: "Thirty million dollars.", translation: "三千万美元。", homophoneSentence: "瑟提米尔金道乐兹." },
+
+        { word: "Forty million", phonetic: "/ˈfɔːti ˈmɪljən/", homophone: "佛提米尔金", meaning: "四千万", sentence: "Forty million dollars.", translation: "四千万美元。", homophoneSentence: "佛提米尔金道乐兹." },
+
+        { word: "Fifty million", phonetic: "/ˈfɪfti ˈmɪljən/", homophone: "菲夫提米尔金", meaning: "五千万", sentence: "Fifty million dollars.", translation: "五千万美元。", homophoneSentence: "菲夫提米尔金道乐兹." },
+
+        { word: "Sixty million", phonetic: "/ˈsɪksti ˈmɪljən/", homophone: "西克斯提米尔金", meaning: "六千万", sentence: "Sixty million dollars.", translation: "六千万美元。", homophoneSentence: "西克斯提米尔金道乐兹." },
+
+        { word: "Seventy million", phonetic: "/ˈsevnti ˈmɪljən/", homophone: "赛文提米尔金", meaning: "七千万", sentence: "Seventy million dollars.", translation: "七千万美元。", homophoneSentence: "赛文提米尔金道乐兹." },
+
+        { word: "Eighty million", phonetic: "/ˈeɪti ˈmɪljən/", homophone: "艾提米尔金", meaning: "八千万", sentence: "Eighty million dollars.", translation: "八千万美元。", homophoneSentence: "艾提米尔金道乐兹." },
+
+        { word: "Ninety million", phonetic: "/ˈnaɪnti ˈmɪljən/", homophone: "奈恩提米尔金", meaning: "九千万", sentence: "Ninety million dollars.", translation: "九千万美元。", homophoneSentence: "奈恩提米尔金道乐兹." },
+
+        { word: "One hundred million", phonetic: "/wʌn ˈhʌndrəd ˈmɪljən/", homophone: "万汉卓德米尔金", meaning: "一亿", sentence: "One hundred million dollars.", translation: "一亿美元。", homophoneSentence: "万汉卓德米尔金道乐兹." },
+
+        { word: "Two hundred million", phonetic: "/tuː ˈhʌndrəd ˈmɪljən/", homophone: "图汉卓德米尔金", meaning: "二亿", sentence: "Two hundred million dollars.", translation: "二亿美元。", homophoneSentence: "图汉卓德米尔金道乐兹." },
+
+        { word: "Three hundred million", phonetic: "/θriː ˈhʌndrəd ˈmɪljən/", homophone: "斯瑞汉卓德米尔金", meaning: "三亿", sentence: "Three hundred million dollars.", translation: "三亿美元。", homophoneSentence: "斯瑞汉卓德米尔金道乐兹." },
+
+        { word: "Four hundred million", phonetic: "/fɔː ˈhʌndrəd ˈmɪljən/", homophone: "佛汉卓德米尔金", meaning: "四亿", sentence: "Four hundred million dollars.", translation: "四亿美元。", homophoneSentence: "佛汉卓德米尔金道乐兹." },
+
+        { word: "Five hundred million", phonetic: "/faɪv ˈhʌndrəd ˈmɪljən/", homophone: "法艾夫汉卓德米尔金", meaning: "五亿", sentence: "Five hundred million dollars.", translation: "五亿美元。", homophoneSentence: "法艾夫汉卓德米尔金道乐兹." },
+
+        { word: "Six hundred million", phonetic: "/sɪks ˈhʌndrəd ˈmɪljən/", homophone: "西克斯汉卓德米尔金", meaning: "六亿", sentence: "Six hundred million dollars.", translation: "六亿美元。", homophoneSentence: "西克斯汉卓德米尔金道乐兹." },
+
+        { word: "Seven hundred million", phonetic: "/ˈsevn ˈhʌndrəd ˈmɪljən/", homophone: "赛文汉卓德米尔金", meaning: "七亿", sentence: "Seven hundred million dollars.", translation: "七亿美元。", homophoneSentence: "赛文汉卓德米尔金道乐兹." },
+
+        { word: "Eight hundred million", phonetic: "/eɪt ˈhʌndrəd ˈmɪljən/", homophone: "艾特汉卓德米尔金", meaning: "八亿", sentence: "Eight hundred million dollars.", translation: "八亿美元。", homophoneSentence: "艾特汉卓德米尔金道乐兹." },
+
+        { word: "Nine hundred million", phonetic: "/naɪn ˈhʌndrəd ˈmɪljən/", homophone: "奈恩汉卓德米尔金", meaning: "九亿", sentence: "Nine hundred million dollars.", translation: "九亿美元。", homophoneSentence: "奈恩汉卓德米尔金道乐兹." },
+
+        { word: "Twenty billion", phonetic: "/ˈtwenti ˈbɪljən/", homophone: "特温提比尔金", meaning: "二百亿", sentence: "Twenty billion dollars.", translation: "二百亿美元。", homophoneSentence: "特温提比尔金道乐兹." },
+
+        { word: "Thirty billion", phonetic: "/ˈθɜːti ˈbɪljən/", homophone: "瑟提比尔金", meaning: "三百亿", sentence: "Thirty billion dollars.", translation: "三百亿美元。", homophoneSentence: "瑟提比尔金道乐兹." },
+
+        { word: "Forty billion", phonetic: "/ˈfɔːti ˈbɪljən/", homophone: "佛提比尔金", meaning: "四百亿", sentence: "Forty billion dollars.", translation: "四百亿美元。", homophoneSentence: "佛提比尔金道乐兹." },
+
+        { word: "Fifty billion", phonetic: "/ˈfɪfti ˈbɪljən/", homophone: "菲夫提比尔金", meaning: "五百亿", sentence: "Fifty billion dollars.", translation: "五百亿美元。", homophoneSentence: "菲夫提比尔金道乐兹." },
+
+        { word: "Sixty billion", phonetic: "/ˈsɪksti ˈbɪljən/", homophone: "西克斯提比尔金", meaning: "六百亿", sentence: "Sixty billion dollars.", translation: "六百亿美元。", homophoneSentence: "西克斯提比尔金道乐兹." },
+
+        { word: "Seventy billion", phonetic: "/ˈsevnti ˈbɪljən/", homophone: "赛文提比尔金", meaning: "七百亿", sentence: "Seventy billion dollars.", translation: "七百亿美元。", homophoneSentence: "赛文提比尔金道乐兹." },
+
+        { word: "Eighty billion", phonetic: "/ˈeɪti ˈbɪljən/", homophone: "艾提比尔金", meaning: "八百亿", sentence: "Eighty billion dollars.", translation: "八百亿美元。", homophoneSentence: "艾提比尔金道乐兹." },
+
+        { word: "Ninety billion", phonetic: "/ˈnaɪnti ˈbɪljən/", homophone: "奈恩提比尔金", meaning: "九百亿", sentence: "Ninety billion dollars.", translation: "九百亿美元。", homophoneSentence: "奈恩提比尔金道乐兹." },
+
+        { word: "One hundred billion", phonetic: "/wʌn ˈhʌndrəd ˈbɪljən/", homophone: "万汉卓德比尔金", meaning: "一千亿", sentence: "One hundred billion dollars.", translation: "一千亿美元。", homophoneSentence: "万汉卓德比尔金道乐兹." },
+
+        { word: "Two hundred billion", phonetic: "/tuː ˈhʌndrəd ˈbɪljən/", homophone: "图汉卓德比尔金", meaning: "二千亿", sentence: "Two hundred billion dollars.", translation: "二千亿美元。", homophoneSentence: "图汉卓德比尔金道乐兹." },
+
+        { word: "Three hundred billion", phonetic: "/θriː ˈhʌndrəd ˈbɪljən/", homophone: "斯瑞汉卓德比尔金", meaning: "三千亿", sentence: "Three hundred billion dollars.", translation: "三千亿美元。", homophoneSentence: "斯瑞汉卓德比尔金道乐兹." },
+
+        { word: "Four hundred billion", phonetic: "/fɔː ˈhʌndrəd ˈbɪljən/", homophone: "佛汉卓德比尔金", meaning: "四千亿", sentence: "Four hundred billion dollars.", translation: "四千亿美元。", homophoneSentence: "佛汉卓德比尔金道乐兹." },
+
+        { word: "Five hundred billion", phonetic: "/faɪv ˈhʌndrəd ˈbɪljən/", homophone: "法艾夫汉卓德比尔金", meaning: "五千亿", sentence: "Five hundred billion dollars.", translation: "五千亿美元。", homophoneSentence: "法艾夫汉卓德比尔金道乐兹." },
+
+        { word: "Six hundred billion", phonetic: "/sɪks ˈhʌndrəd ˈbɪljən/", homophone: "西克斯汉卓德比尔金", meaning: "六千亿", sentence: "Six hundred billion dollars.", translation: "六千亿美元。", homophoneSentence: "西克斯汉卓德比尔金道乐兹." },
+
+        { word: "Seven hundred billion", phonetic: "/ˈsevn ˈhʌndrəd ˈbɪljən/", homophone: "赛文汉卓德比尔金", meaning: "七千亿", sentence: "Seven hundred billion dollars.", translation: "七千亿美元。", homophoneSentence: "赛文汉卓德比尔金道乐兹." },
+
+        { word: "Eight hundred billion", phonetic: "/eɪt ˈhʌndrəd ˈbɪljən/", homophone: "艾特汉卓德比尔金", meaning: "八千亿", sentence: "Eight hundred billion dollars.", translation: "八千亿美元。", homophoneSentence: "艾特汉卓德比尔金道乐兹." },
+
+        { word: "Nine hundred billion", phonetic: "/naɪn ˈhʌndrəd ˈbɪljən/", homophone: "奈恩汉卓德比尔金", meaning: "九千亿", sentence: "Nine hundred billion dollars.", translation: "九千亿美元。", homophoneSentence: "奈恩汉卓德比尔金道乐兹." },
+
+        { word: "Twenty trillion", phonetic: "/ˈtwenti ˈtrɪljən/", homophone: "特温提特里利恩", meaning: "二十万亿", sentence: "Twenty trillion dollars.", translation: "二十万亿美元。", homophoneSentence: "特温提特里利恩道乐兹." },
+
+        { word: "Thirty trillion", phonetic: "/ˈθɜːti ˈtrɪljən/", homophone: "瑟提特里利恩", meaning: "三十万亿", sentence: "Thirty trillion dollars.", translation: "三十万亿美元。", homophoneSentence: "瑟提特里利恩道乐兹." },
+
+        { word: "Forty trillion", phonetic: "/ˈfɔːti ˈtrɪljən/", homophone: "佛提特里利恩", meaning: "四十万亿", sentence: "Forty trillion dollars.", translation: "四十万亿美元。", homophoneSentence: "佛提特里利恩道乐兹." },
+
+        { word: "Fifty trillion", phonetic: "/ˈfɪfti ˈtrɪljən/", homophone: "菲夫提特里利恩", meaning: "五十万亿", sentence: "Fifty trillion dollars.", translation: "五十万亿美元。", homophoneSentence: "菲夫提特里利恩道乐兹." },
+
+        { word: "Sixty trillion", phonetic: "/ˈsɪksti ˈtrɪljən/", homophone: "西克斯提特里利恩", meaning: "六十万亿", sentence: "Sixty trillion dollars.", translation: "六十万亿美元。", homophoneSentence: "西克斯提特里利恩道乐兹." },
+
+        { word: "Seventy trillion", phonetic: "/ˈsevnti ˈtrɪljən/", homophone: "赛文提特里利恩", meaning: "七十万亿", sentence: "Seventy trillion dollars.", translation: "七十万亿美元。", homophoneSentence: "赛文提特里利恩道乐兹." },
+
+        { word: "Eighty trillion", phonetic: "/ˈeɪti ˈtrɪljən/", homophone: "艾提特里利恩", meaning: "八十万亿", sentence: "Eighty trillion dollars.", translation: "八十万亿美元。", homophoneSentence: "艾提特里利恩道乐兹." },
+
+        { word: "Ninety trillion", phonetic: "/ˈnaɪnti ˈtrɪljən/", homophone: "奈恩提特里利恩", meaning: "九十万亿", sentence: "Ninety trillion dollars.", translation: "九十万亿美元。", homophoneSentence: "奈恩提特里利恩道乐兹." },
+
+        { word: "One hundred trillion", phonetic: "/wʌn ˈhʌndrəd ˈtrɪljən/", homophone: "万汉卓德特里利恩", meaning: "一百万亿", sentence: "One hundred trillion dollars.", translation: "一百万亿美元。", homophoneSentence: "万汉卓德特里利恩道乐兹." },
+],
     colors: [
 { word: 'Red', phonetic: '/red/', homophone: '瑞德', meaning: '红色', sentence: 'The rose is red.', translation: '玫瑰是红色的。', homophoneSentence: '则柔兹瑞德.' },
         { word: 'Blue', phonetic: '/bluː/', homophone: '布鲁', meaning: '蓝色', sentence: 'The sky is blue.', translation: '天空是蓝色的。', homophoneSentence: '则斯凯is布鲁.' },
@@ -3363,7 +3895,7 @@ const wordDatabase = {
         { word: 'Phosphorescent', phonetic: '/ˌfɒsfəˈresnt/', homophone: '福斯福雷斯恩特', meaning: '磷光紫', sentence: 'The phosphorescent purple glows.', translation: '磷光紫会发光。', homophoneSentence: '则福斯福雷斯恩特珀普尔格洛兹.' },
         { word: 'Aqua', phonetic: '/ˈækwə/', homophone: '阿夸', meaning: '水色', sentence: 'The aqua color is fresh.', translation: '水色很清新。', homophoneSentence: '则阿夸卡乐is弗瑞什.' },
         { word: 'Rose', phonetic: '/rəʊz/', homophone: '柔兹', meaning: '玫瑰金', sentence: 'The rose gold is pink.', translation: '玫瑰金是粉色的。', homophoneSentence: '则柔兹勾德is平克.' },
-        { word: 'Cream', phonetic: '/kriːm/', homophone: '克里姆', meaning: '奶油色', sentence: 'The cream dress is soft.', translation: '奶油色裙子很柔和。', homophoneSentence: '则克里姆拽斯is索夫特.' }
+        { word: 'Cream', phonetic: '/kriːm/', homophone: '克里姆', meaning: '奶油色', sentence: 'The cream dress is soft.', translation: '奶油色裙子很柔和。', homophoneSentence: '则克里姆拽斯is索夫特.' },
         { word: 'Howdy', phonetic: '/ˈhaʊdi/', homophone: '豪迪', meaning: '你好', sentence: 'Howdy, partner!', translation: '你好，伙伴！', homophoneSentence: '豪迪，帕特纳!' },
         { word: 'Salutations', phonetic: '/ˌsæljuˈteɪʃənz/', homophone: '萨柳忒申兹', meaning: '问候', sentence: 'Salutations to all!', translation: '向大家问好！', homophoneSentence: '萨柳忒申兹图奥!' },
         { word: 'Greetings', phonetic: '/ɡrɪˈtiːŋz/', homophone: '格瑞廷兹', meaning: '问候', sentence: 'Season\'s greetings!', translation: '节日问候！', homophoneSentence: '西森兹格瑞廷兹!' },
@@ -3447,6 +3979,7 @@ const wordDatabase = {
         { word: 'Emerald', phonetic: '/ˈemərəld/', homophone: '埃默拉尔德', meaning: '翡翠色', sentence: 'The gem is emerald.', translation: '这颗宝石是翡翠色的。', homophoneSentence: '泽吉姆伊埃默拉尔德.' },
         { word: 'Teal', phonetic: '/tiːl/', homophone: '蒂尔', meaning: '蓝绿色', sentence: 'The water is teal.', translation: '水是蓝绿色的。', homophoneSentence: '泽沃特伊蒂尔.' },
         { word: 'Turquoise', phonetic: '/ˈtɜːkwɔɪz/', homophone: '特克沃伊兹', meaning: '青绿色', sentence: 'The stone is turquoise.', translation: '这块石头是青绿色的。', homophoneSentence: '泽斯通伊特克沃伊兹.' },
+        { word: 'Azure', phonetic: '/ˈæʒə/', homophone: '阿热', meaning: '天蓝色', sentence: 'Azure sky.', translation: '天蓝色天空。', homophoneSentence: '阿热斯凯.' },
         { word: 'Cyan', phonetic: '/ˈsaɪən/', homophone: '赛安', meaning: '青色', sentence: 'The color is cyan.', translation: '这种颜色是青色的。', homophoneSentence: '泽卡勒伊赛安.' },
         { word: 'Blue', phonetic: '/bluː/', homophone: '布卢', meaning: '蓝色', sentence: 'The sky is blue.', translation: '天空是蓝色的。', homophoneSentence: '泽斯凯伊布卢.' },
         { word: 'Navy', phonetic: '/ˈneɪvi/', homophone: '内维', meaning: '藏青色', sentence: 'The uniform is navy.', translation: '这种制服是藏青色的。', homophoneSentence: '泽尤尼弗姆伊内维.' },
@@ -3455,7 +3988,75 @@ const wordDatabase = {
         { word: 'Purple', phonetic: '/ˈpɜːpl/', homophone: '珀普尔', meaning: '紫色', sentence: 'The dress is purple.', translation: '这件连衣裙是紫色的。', homophoneSentence: '泽德雷斯伊珀普尔.' },
         { word: 'Magenta', phonetic: '/məˈdʒentə/', homophone: '马金塔', meaning: '品红色', sentence: 'The color is magenta.', translation: '这种颜色是品红色的。', homophoneSentence: '泽卡勒伊马金塔.' },
         { word: 'Pink', phonetic: '/pɪŋk/', homophone: '平克', meaning: '粉色', sentence: 'The flower is pink.', translation: '这朵花是粉色的。', homophoneSentence: '泽弗劳尔伊平克.' },
-    ],
+    
+        { word: 'Dark brown', phonetic: '/dɑːk braʊn/', homophone: '达克布朗', meaning: '深棕色', sentence: 'Dark brown dress.', translation: '深棕色连衣裙。', homophoneSentence: '达克布朗德雷斯.' },
+
+        { word: 'Light brown', phonetic: '/laɪt braʊn/', homophone: '莱特布朗', meaning: '浅棕色', sentence: 'Light brown dress.', translation: '浅棕色连衣裙。', homophoneSentence: '莱特布朗德雷斯.' },
+
+        { word: 'Light gray', phonetic: '/laɪt ɡreɪ/', homophone: '莱特格雷', meaning: '浅灰色', sentence: 'Light gray dress.', translation: '浅灰色连衣裙。', homophoneSentence: '莱特格雷德雷斯.' },
+
+        { word: 'Dark gray', phonetic: '/dɑːk ɡreɪ/', homophone: '达克格雷', meaning: '深灰色', sentence: 'Dark gray dress.', translation: '深灰色连衣裙。', homophoneSentence: '达克格雷德雷斯.' },
+
+        { word: 'Jet black', phonetic: '/dʒet blæk/', homophone: '杰特布莱克', meaning: '墨黑色', sentence: 'Jet black dress.', translation: '墨黑色连衣裙。', homophoneSentence: '杰特布莱克德雷斯.' },
+
+        { word: 'Snow white', phonetic: '/snəʊ waɪt/', homophone: '斯诺怀特', meaning: '雪白色', sentence: 'Snow white dress.', translation: '雪白色连衣裙。', homophoneSentence: '斯诺怀特德雷斯.' },
+
+        { word: 'Ivory white', phonetic: '/ˈaɪvəri waɪt/', homophone: '艾弗里怀特', meaning: '象牙白', sentence: 'Ivory white dress.', translation: '象牙白连衣裙。', homophoneSentence: '艾弗里怀特德雷斯.' },
+
+        { word: 'Pearl white', phonetic: '/pɜːl waɪt/', homophone: '珀尔怀特', meaning: '珍珠白', sentence: 'Pearl white dress.', translation: '珍珠白连衣裙。', homophoneSentence: '珀尔怀特德雷斯.' },
+
+        { word: 'Cream white', phonetic: '/kriːm waɪt/', homophone: '克里姆怀特', meaning: '奶油白', sentence: 'Cream white dress.', translation: '奶油白连衣裙。', homophoneSentence: '克里姆怀特德雷斯.' },
+
+        { word: 'Off white', phonetic: '/ɒf waɪt/', homophone: '奥夫怀特', meaning: '米白色', sentence: 'Off white dress.', translation: '米白色连衣裙。', homophoneSentence: '奥夫怀特德雷斯.' },
+
+        { word: 'Bone white', phonetic: '/bəʊn waɪt/', homophone: '伯恩怀特', meaning: '骨白色', sentence: 'Bone white dress.', translation: '骨白色连衣裙。', homophoneSentence: '伯恩怀特德雷斯.' },
+
+        { word: 'Porcelain', phonetic: '/ˈpɔːsəlɪn/', homophone: '波塞林', meaning: '瓷白色', sentence: 'Porcelain dress.', translation: '瓷白色连衣裙。', homophoneSentence: '波塞林德雷斯.' },
+
+        { word: "Terra cotta", phonetic: "/ˈterə ˈkɒtə/", homophone: "特拉科塔", meaning: "赤陶色", sentence: "The pots are terra cotta.", translation: "这些花盆是赤陶色的。", homophoneSentence: "泽波茨啊特拉科塔." },
+
+        { word: "Goldenrod", phonetic: "/ˈɡəʊldənrɒd/", homophone: "勾德恩罗德", meaning: "金菊黄", sentence: "The goldenrod flowers are blooming.", translation: "金菊黄色的花正在盛开。", homophoneSentence: "泽勾德恩罗德弗劳尔斯啊布鲁明." },
+
+        { word: "Sky blue", phonetic: "/skaɪ bluː/", homophone: "斯凯布鲁", meaning: "天蓝色", sentence: "The sky blue dress is lovely.", translation: "这件天蓝色连衣裙很可爱。", homophoneSentence: "泽斯凯布鲁德雷斯is拉夫利." },
+
+        { word: "Baby blue", phonetic: "/ˈbeɪbi bluː/", homophone: "贝比布鲁", meaning: "婴儿蓝", sentence: "The baby blue room is calming.", translation: "这个婴儿蓝色的房间很宁静。", homophoneSentence: "泽贝比布鲁鲁姆is卡明." },
+
+        { word: "Powder blue", phonetic: "/ˈpaʊdə bluː/", homophone: "鲍德布鲁", meaning: "粉蓝色", sentence: "She wore powder blue eyeshadow.", translation: "她涂了粉蓝色眼影。", homophoneSentence: "希沃鲍德布鲁艾沙多." },
+
+        { word: "Steel blue", phonetic: "/stiːl bluː/", homophone: "斯蒂尔布鲁", meaning: "钢蓝色", sentence: "The steel blue suit is professional.", translation: "这套钢蓝色西装很专业。", homophoneSentence: "泽斯蒂尔布鲁苏特is普若费申诺." },
+
+        { word: "Midnight blue", phonetic: "/ˈmɪdnaɪt bluː/", homophone: "米德奈特布鲁", meaning: "午夜蓝", sentence: "The midnight blue sky has stars.", translation: "午夜蓝色的天空有星星。", homophoneSentence: "泽米德奈特布鲁斯凯海兹斯塔斯." },
+
+        { word: "Graphite", phonetic: "/ˈɡræfaɪt/", homophone: "格拉法伊特", meaning: "石墨灰", sentence: "The graphite pencil is sharp.", translation: "这支石墨灰铅笔很尖。", homophoneSentence: "泽格拉法伊特彭西利斯夏普." },
+
+        { word: "Jungle", phonetic: "/ˈdʒʌŋɡl/", homophone: "江格尔", meaning: "丛林绿", sentence: "The jungle green is vibrant.", translation: "这种丛林绿很鲜艳。", homophoneSentence: "泽江格尔格林is歪布兰特." },
+
+        { word: "Malachite", phonetic: "/ˈmæləkaɪt/", homophone: "马拉凯特", meaning: "孔雀石绿", sentence: "The malachite stone is beautiful.", translation: "这块孔雀石绿石头很美。", homophoneSentence: "泽马拉凯特斯通is比欧特夫欧." },
+
+        { word: "Peridot", phonetic: "/ˈperɪdɒt/", homophone: "佩里多特", meaning: "橄榄石绿", sentence: "The peridot gem is bright.", translation: "这颗橄榄石绿宝石很亮。", homophoneSentence: "泽佩里多特杰姆is布瑞特." },
+
+        { word: "Kelly green", phonetic: "/ˈkeli ɡriːn/", homophone: "凯利格林", meaning: "凯利绿", sentence: "The kelly green shirt is bright.", translation: "这件凯利绿衬衫很亮。", homophoneSentence: "泽凯利格林舍特is布瑞特." },
+
+        { word: "Neon green", phonetic: "/ˈniːɒn ɡriːn/", homophone: "尼昂格林", meaning: "霓虹绿", sentence: "The neon green sign glows.", translation: "这个霓虹绿标志发光。", homophoneSentence: "泽尼昂格林萨因格洛兹." },
+
+        { word: "Electric blue", phonetic: "/ɪˈlektrɪk bluː/", homophone: "伊莱克特里克布鲁", meaning: "电光蓝", sentence: "The electric blue is shocking.", translation: "这种电光蓝很震撼。", homophoneSentence: "泽伊莱克特里克布鲁is绍克英." },
+
+        { word: "Hot pink", phonetic: "/hɒt pɪŋk/", homophone: "豪特平克", meaning: "热粉色", sentence: "The hot pink dress is bold.", translation: "这件热粉色连衣裙很大胆。", homophoneSentence: "泽豪特平克德雷斯is博尔德." },
+
+        { word: "Fluorescent yellow", phonetic: "/ˌflɔːˈresnt ˈjeləʊ/", homophone: "弗洛雷斯恩特耶洛", meaning: "荧光黄", sentence: "The fluorescent yellow vest is safe.", translation: "这件荧光黄背心很安全。", homophoneSentence: "泽弗洛雷斯恩特耶洛维斯特is塞夫." },
+
+        { word: "Day glo", phonetic: "/ˈdeɪ ɡləʊ/", homophone: "戴格洛", meaning: "荧光色", sentence: "The day glo colors are bright.", translation: "这些荧光色很亮。", homophoneSentence: "泽戴格洛卡乐斯啊布瑞特." },
+
+        { word: "Metallic gold", phonetic: "/məˈtælɪk ɡəʊld/", homophone: "马塔里克勾德", meaning: "金属金", sentence: "The metallic gold paint shines.", translation: "这种金属金油漆闪闪发光。", homophoneSentence: "泽马塔里克勾德佩因特晒恩兹." },
+
+        { word: "Metallic silver", phonetic: "/məˈtælɪk ˈsɪlvə/", homophone: "马塔里克西尔弗", meaning: "金属银", sentence: "The metallic silver car is sleek.", translation: "这辆金属银汽车很时尚。", homophoneSentence: "泽马塔里克西尔弗卡is斯利克." },
+
+        { word: "Rose gold", phonetic: "/rəʊz ɡəʊld/", homophone: "柔兹勾德", meaning: "玫瑰金", sentence: "The rose gold watch is trendy.", translation: "这块玫瑰金手表很时髦。", homophoneSentence: "泽柔兹勾德沃奇is特伦迪." },
+
+        { word: "Ballet slipper", phonetic: "/ˈbæleɪ ˈslɪpə/", homophone: "芭蕾斯利珀", meaning: "芭蕾舞鞋粉", sentence: "The ballet slipper pink is sweet.", translation: "这种芭蕾舞鞋粉很甜美。", homophoneSentence: "泽芭蕾斯利珀平克is斯威特." },
+
+        { word: "Millennial pink", phonetic: "/mɪˈleniəl pɪŋk/", homophone: "米伦尼尔平克", meaning: "千禧粉", sentence: "The millennial pink is popular.", translation: "这种千禧粉很流行。", homophoneSentence: "泽米伦尼尔平克is波普尤勒." },
+],
     family: [
 { word: 'Father', phonetic: '/ˈfɑːðə(r)/', homophone: '法泽', meaning: '父亲', sentence: 'Father is my hero.', translation: '爸爸是我的英雄。', homophoneSentence: '法泽is麦黑柔.' },
         { word: 'Mother', phonetic: '/ˈmʌðə(r)/', homophone: '马泽', meaning: '母亲', sentence: 'Mother cooks for us.', translation: '妈妈为我们做饭。', homophoneSentence: '马泽库克斯for啊斯.' },
@@ -3483,7 +4084,7 @@ const wordDatabase = {
         { word: 'Stepbrother', phonetic: '/ˈstepbrʌðər/', homophone: '斯泰普布拉泽', meaning: '继兄弟', sentence: 'My stepbrother is cool.', translation: '我继兄弟很酷。', homophoneSentence: '麦斯泰普布拉泽is酷.' },
         { word: 'Stepsister', phonetic: '/ˈstepsɪstər/', homophone: '斯泰普西斯特', meaning: '继姐妹', sentence: 'My stepsister is sweet.', translation: '我继姐妹很甜美。', homophoneSentence: '麦斯泰普西斯特is斯威特.' },
         { word: 'Godfather', phonetic: '/ˈɡɒdfɑːðər/', homophone: '高德法泽', meaning: '教父', sentence: 'My godfather is wise.', translation: '我教父很明智。', homophoneSentence: '麦高德法泽is外斯.' },
-        { word: 'Godmother', phonetic: '/ˈɡɒdmʌðər/', homophone: '高德马泽', meaning: '教母', sentence: 'My godmother is kind.', translation: '我教母很善良。', homophoneSentence: '麦高德马泽is凯恩德.' }
+        { word: 'Godmother', phonetic: '/ˈɡɒdmʌðər/', homophone: '高德马泽', meaning: '教母', sentence: 'My godmother is kind.', translation: '我教母很善良。', homophoneSentence: '麦高德马泽is凯恩德.' },
         { word: 'Stepfather', phonetic: '/ˈstepfɑːðə(r)/', homophone: '斯泰普法泽', meaning: '继父', sentence: 'My stepfather is kind to me.', translation: '我的继父对我很好。', homophoneSentence: '麦斯泰普法泽is凯恩德图密.' },
         { word: 'Stepmother', phonetic: '/ˈstepmʌðə(r)/', homophone: '斯泰普马泽', meaning: '继母', sentence: 'My stepmother cooks delicious food.', translation: '我的继母做美味的食物。', homophoneSentence: '麦斯泰普马泽库克斯迪利秀斯夫德.' },
         { word: 'Stepsister', phonetic: '/ˈstepsɪstə(r)/', homophone: '斯泰普西斯特', meaning: '继姐', sentence: 'My stepsister is my best friend.', translation: '我的继姐是我最好的朋友。', homophoneSentence: '麦斯泰普西斯特is麦贝斯特夫瑞恩德.' },
@@ -3619,6 +4220,9 @@ const wordDatabase = {
         { word: 'Great-grandmother', phonetic: '/ɡreɪt ˈɡrænmʌðə/', homophone: '格瑞特格兰马泽', meaning: '曾祖母', sentence: 'My great-grandmother was a teacher.', translation: '我的曾祖母是一个老师。', homophoneSentence: '麦格瑞特格兰马泽沃阿提彻.' },
         { word: 'In-law', phonetic: '/ˈɪnlɔː/', homophone: '因劳', meaning: '姻亲', sentence: 'My in-law is nice.', translation: '我的姻亲很好。', homophoneSentence: '麦因劳伊奈斯.' },
         { word: 'Brother-in-law', phonetic: '/ˈbrʌðər ɪn lɔː/', homophone: '布拉泽因劳', meaning: '姐夫/妹夫', sentence: 'My brother-in-law is tall.', translation: '我的姐夫很高。', homophoneSentence: '麦布拉泽因劳伊托尔.' },
+        { word: 'Godson', phonetic: '/ˈɡɒdsʌn/', homophone: '高德森', meaning: '教子', sentence: 'My godson is cute.', translation: '我的教子很可爱。', homophoneSentence: '麦高德森伊丘特.' },
+        { word: 'Granddaughter', phonetic: '/ˈɡrændɔːtə/', homophone: '格兰道特', meaning: '孙女', sentence: 'My granddaughter is smart.', translation: '我的孙女很聪明。', homophoneSentence: '麦格兰道特伊斯马特.' },
+        { word: 'Grandson', phonetic: '/ˈɡrænsʌn/', homophone: '格兰森', meaning: '孙子', sentence: 'My grandson is cute.', translation: '我的孙子很可爱。', homophoneSentence: '麦格兰森伊丘特.' },
         { word: 'Sister-in-law', phonetic: '/ˈsɪstər ɪn lɔː/', homophone: '西斯泽因劳', meaning: '嫂子/弟妹', sentence: 'My sister-in-law is kind.', translation: '我的嫂子很善良。', homophoneSentence: '麦西斯泽因劳伊凯恩德.' },
         { word: 'Father-in-law', phonetic: '/ˈfɑːðər ɪn lɔː/', homophone: '法泽因劳', meaning: '岳父/公公', sentence: 'My father-in-law is old.', translation: '我的岳父年纪大了。', homophoneSentence: '麦法泽因劳伊欧尔德.' },
         { word: 'Mother-in-law', phonetic: '/ˈmʌðər ɪn lɔː/', homophone: '马泽因劳', meaning: '岳母/婆婆', sentence: 'My mother-in-law is kind.', translation: '我的岳母很善良。', homophoneSentence: '麦马泽因劳伊凯恩德.' },
@@ -3627,7 +4231,147 @@ const wordDatabase = {
         { word: 'Fiancé', phonetic: '/fiˈɒnseɪ/', homophone: '菲昂塞', meaning: '未婚夫', sentence: 'My fiancé is kind.', translation: '我的未婚夫很善良。', homophoneSentence: '麦菲昂塞伊凯恩德.' },
         { word: 'Fiancée', phonetic: '/fiˈɒnseɪ/', homophone: '菲昂塞', meaning: '未婚妻', sentence: 'My fiancée is beautiful.', translation: '我的未婚妻很漂亮。', homophoneSentence: '麦菲昂塞伊比尤蒂夫欧.' },
         { word: 'Soulmate', phonetic: '/ˈsəʊlmeɪt/', homophone: '索尔梅特', meaning: '灵魂伴侣', sentence: 'My soulmate is my spouse.', translation: '我的灵魂伴侣是我的配偶。', homophoneSentence: '麦索尔梅特伊麦斯帕斯.' },
-    ],
+    
+        { word: 'Goddaughter', phonetic: '/ˈɡɒddɔːtə/', homophone: '高德道特', meaning: '教女', sentence: 'My goddaughter is cute.', translation: '我的教女很可爱。', homophoneSentence: '麦高德道特伊丘特.' },
+
+        { word: 'Great-grandson', phonetic: '/ɡreɪt ˈɡrænsʌn/', homophone: '格瑞特格兰森', meaning: '曾孙子', sentence: 'My great-grandson is cute.', translation: '我的曾孙子很可爱。', homophoneSentence: '麦格瑞特格兰森伊丘特.' },
+
+        { word: 'Great-granddaughter', phonetic: '/ɡreɪt ˈɡrændɔːtə/', homophone: '格瑞特格兰道特', meaning: '曾孙女', sentence: 'My great-granddaughter is smart.', translation: '我的曾孙女很聪明。', homophoneSentence: '麦格瑞特格兰道特伊斯马特.' },
+
+        { word: 'Step-grandfather', phonetic: '/step ˈɡrænfɑːðə/', homophone: '斯特普格兰法泽', meaning: '继祖父', sentence: 'My step-grandfather is nice.', translation: '我的继祖父很好。', homophoneSentence: '麦斯特普格兰法泽伊奈斯.' },
+
+        { word: 'Step-grandmother', phonetic: '/step ˈɡrænmʌðə/', homophone: '斯特普格兰玛泽', meaning: '继祖母', sentence: 'My step-grandmother is kind.', translation: '我的继祖母很善良。', homophoneSentence: '麦斯特普格兰玛泽伊凯恩德.' },
+
+        { word: 'Step-grandson', phonetic: '/step ˈɡrænsʌn/', homophone: '斯特普格兰森', meaning: '继孙子', sentence: 'My step-grandson is cute.', translation: '我的继孙子很可爱。', homophoneSentence: '麦斯特普格兰森伊丘特.' },
+
+        { word: 'Step-granddaughter', phonetic: '/step ˈɡrændɔːtə/', homophone: '斯特普格兰道特', meaning: '继孙女', sentence: 'My step-granddaughter is smart.', translation: '我的继孙女很聪明。', homophoneSentence: '麦斯特普格兰道特伊斯马特.' },
+
+        { word: 'Adopted father', phonetic: '/əˈdɒptɪd ˈfɑːðə/', homophone: '阿多普蒂德法泽', meaning: '养父', sentence: 'My adopted father is kind.', translation: '我的养父很善良。', homophoneSentence: '麦阿多普蒂德法泽伊凯恩德.' },
+
+        { word: 'Adopted mother', phonetic: '/əˈdɒptɪd ˈmʌðə/', homophone: '阿多普蒂德玛泽', meaning: '养母', sentence: 'My adopted mother is kind.', translation: '我的养母很善良。', homophoneSentence: '麦阿多普蒂德玛泽伊凯恩德.' },
+
+        { word: 'Foster son', phonetic: '/ˈfɒstə sʌn/', homophone: '福斯特森', meaning: '养子', sentence: 'My foster son is smart.', translation: '我的养子很聪明。', homophoneSentence: '麦福斯特森伊斯马特.' },
+
+        { word: 'Foster daughter', phonetic: '/ˈfɒstə ˈdɔːtə/', homophone: '福斯特道特', meaning: '养女', sentence: 'My foster daughter is smart.', translation: '我的养女很聪明。', homophoneSentence: '麦福斯特道特伊斯马特.' },
+
+        { word: 'Biological son', phonetic: '/ˌbaɪəˈlɒdʒɪkl sʌn/', homophone: '拜欧劳吉科森', meaning: '生子', sentence: 'My biological son is smart.', translation: '我的生子很聪明。', homophoneSentence: '麦拜欧劳吉科森伊斯马特.' },
+
+        { word: 'Biological daughter', phonetic: '/ˌbaɪəˈlɒdʒɪkl ˈdɔːtə/', homophone: '拜欧劳吉科道特', meaning: '生女', sentence: 'My biological daughter is smart.', translation: '我的生女很聪明。', homophoneSentence: '麦拜欧劳吉科道特伊斯马特.' },
+
+        { word: 'Step-sibling', phonetic: '/step ˈsɪblɪŋ/', homophone: '斯特普西布林', meaning: '继兄弟姐妹', sentence: 'My step-sibling is kind.', translation: '我的继兄弟姐妹很善良。', homophoneSentence: '麦斯特普西布林伊凯恩德.' },
+
+        { word: 'Half-sibling', phonetic: '/hɑːf ˈsɪblɪŋ/', homophone: '哈夫西布林', meaning: '同父异母兄弟姐妹', sentence: 'My half-sibling is kind.', translation: '我的同父异母兄弟姐妹很善良。', homophoneSentence: '麦哈夫西布林伊凯恩德.' },
+
+        { word: 'Adoptive parent', phonetic: '/əˈdɒptɪv ˈpeərənt/', homophone: '阿多普蒂夫佩伦特', meaning: '养父母', sentence: 'My adoptive parent is kind.', translation: '我的养父母很善良。', homophoneSentence: '麦阿多普蒂夫佩伦特伊凯恩德.' },
+
+        { word: 'Godparent', phonetic: '/ˈɡɒdpeərənt/', homophone: '高德佩伦特', meaning: '教父母', sentence: 'My godparent is kind.', translation: '我的教父母很善良。', homophoneSentence: '麦高德佩伦特伊凯恩德.' },
+
+        { word: 'Great-grandparent', phonetic: '/ɡreɪt ˈɡrænpeərənt/', homophone: '格瑞特格兰佩伦特', meaning: '曾祖父母', sentence: 'My great-grandparent is old.', translation: '我的曾祖父母年纪大了。', homophoneSentence: '麦格瑞特格兰佩伦特伊欧德.' },
+
+        { word: 'Great-great-grandparent', phonetic: '/ɡreɪt ɡreɪt ˈɡrænpeərənt/', homophone: '格瑞特格瑞特格兰佩伦特', meaning: '高曾祖父母', sentence: 'My great-great-grandparent is very old.', translation: '我的高曾祖父母非常老了。', homophoneSentence: '麦格瑞特格瑞特格兰佩伦特伊歪瑞欧德.' },
+
+        { word: "Generation", phonetic: "/ˌdʒenəˈreɪʃn/", homophone: "杰纳瑞申", meaning: "一代人", sentence: "This tradition passes through generations.", translation: "这个传统代代相传。", homophoneSentence: "迪斯垂迪申帕西斯斯鲁杰纳瑞申斯." },
+
+        { word: "Pedigree", phonetic: "/ˈpedɪɡriː/", homophone: "佩迪格里", meaning: "家谱", sentence: "The dog has an impressive pedigree.", translation: "这只狗有令人印象深刻的家谱。", homophoneSentence: "泽道格海兹安因普瑞西夫佩迪格里." },
+
+        { word: "Kinship", phonetic: "/ˈkɪnʃɪp/", homophone: "金希普", meaning: "亲属关系", sentence: "Kinship bonds are important in many cultures.", translation: "亲属关系纽带在许多文化中很重要。", homophoneSentence: "金希普邦兹啊因波腾特因梅尼卡尔彻斯." },
+
+        { word: "Affinity", phonetic: "/əˈfɪnəti/", homophone: "阿菲纳提", meaning: "亲密关系", sentence: "They share a natural affinity.", translation: "他们有着天然的亲密关系。", homophoneSentence: "德伊舍尔啊纳彻若阿菲纳提." },
+
+        { word: "Nuclear family", phonetic: "/ˈnjuːkliə ˈfæməli/", homophone: "纽克利尔法梅里", meaning: "核心家庭", sentence: "A nuclear family consists of parents and children.", translation: "核心家庭由父母和孩子组成。", homophoneSentence: "啊纽克利尔法梅里康西斯茨奥夫佩润茨安得秋准." },
+
+        { word: "Blended family", phonetic: "/ˈblendɪd ˈfæməli/", homophone: "布伦迪德法梅里", meaning: "重组家庭", sentence: "A blended family combines two families.", translation: "重组家庭结合了两个家庭。", homophoneSentence: "啊布伦迪德法梅里康拜恩斯图法梅里斯." },
+
+        { word: "Stepfamily", phonetic: "/ˈstepfæməli/", homophone: "斯泰普法梅里", meaning: "继亲家庭", sentence: "Adjusting to a stepfamily takes time.", translation: "适应继亲家庭需要时间。", homophoneSentence: "阿贾斯听图啊斯泰普法梅里泰克斯泰姆." },
+
+        { word: "Foster family", phonetic: "/ˈfɒstə ˈfæməli/", homophone: "福斯特法梅里", meaning: "寄养家庭", sentence: "They became a foster family last year.", translation: "他们去年成为了寄养家庭。", homophoneSentence: "德伊比凯姆啊福斯特法梅里拉斯特伊尔." },
+
+        { word: "Adoptive parents", phonetic: "/əˈdɒptɪv ˈpeərənts/", homophone: "阿多普提夫佩润茨", meaning: "养父母", sentence: "Her adoptive parents love her deeply.", translation: "她的养父母深爱她。", homophoneSentence: "赫尔阿多普提夫佩润茨拉夫赫尔迪普利." },
+
+        { word: "Biological parents", phonetic: "/ˌbaɪəˈlɒdʒɪkl ˈpeərənts/", homophone: "拜奥洛吉克尔佩润茨", meaning: "亲生父母", sentence: "She met her biological parents recently.", translation: "她最近见到了她的亲生父母。", homophoneSentence: "希米特赫尔拜奥洛吉克尔佩润茨瑞森特里." },
+
+        { word: "Birth mother", phonetic: "/bɜːθ ˈmʌðə/", homophone: "伯斯马德", meaning: "生母", sentence: "Her birth mother lives abroad.", translation: "她的生母住在国外。", homophoneSentence: "赫尔伯斯马德利维斯阿布罗德." },
+
+        { word: "Birth father", phonetic: "/bɜːθ ˈfɑːðə/", homophone: "伯斯法德", meaning: "生父", sentence: "He never knew his birth father.", translation: "他从未认识他的生父。", homophoneSentence: "希奈弗纽伊兹海兹伯斯法德." },
+
+        { word: "Surrogate mother", phonetic: "/ˈsʌrəɡət ˈmʌðə/", homophone: "萨罗盖特马德", meaning: "代孕母亲", sentence: "The surrogate mother carried the baby.", translation: "代孕母亲怀了这个宝宝。", homophoneSentence: "泽萨罗盖特马德凯瑞德泽贝比." },
+
+        { word: "Ward", phonetic: "/wɔːd/", homophone: "沃德", meaning: "被监护人", sentence: "The child became his ward.", translation: "这个孩子成为了他的被监护人。", homophoneSentence: "泽秋尔德比凯姆伊兹沃德." },
+
+        { word: "Custody", phonetic: "/ˈkʌstədi/", homophone: "卡斯特迪", meaning: "监护权", sentence: "They fought for custody of the children.", translation: "他们为孩子的监护权而战。", homophoneSentence: "德伊佛特佛卡斯特迪奥夫泽秋准." },
+
+        { word: "Visitation rights", phonetic: "/ˌvɪzɪˈteɪʃn raɪts/", homophone: "维泽泰申瑞茨", meaning: "探视权", sentence: "He has visitation rights every weekend.", translation: "他每个周末有探视权。", homophoneSentence: "希海兹维泽泰申瑞茨艾弗里维肯德." },
+
+        { word: "Alimony", phonetic: "/ˈælɪməni/", homophone: "阿利莫尼", meaning: "赡养费", sentence: "He pays alimony to his ex-wife.", translation: "他向前妻支付赡养费。", homophoneSentence: "希佩兹阿利莫尼图伊兹艾克斯外夫." },
+
+        { word: "Child support", phonetic: "/tʃaɪld səˈpɔːt/", homophone: "秋尔德瑟波特", meaning: "子女抚养费", sentence: "Child support is paid monthly.", translation: "子女抚养费按月支付。", homophoneSentence: "秋尔德瑟波特is佩德曼斯里." },
+
+        { word: "Paternity", phonetic: "/pəˈtɜːnəti/", homophone: "帕特尼提", meaning: "父权", sentence: "The paternity test confirmed he was the father.", translation: "亲子鉴定证实他是父亲。", homophoneSentence: "泽帕特尼提泰斯特康弗尔姆德希沃兹泽法德." },
+
+        { word: "Maternity", phonetic: "/məˈtɜːnəti/", homophone: "马特尼提", meaning: "母性", sentence: "She embraced her maternity fully.", translation: "她完全拥抱了她的母性。", homophoneSentence: "希伊姆布雷斯特赫尔马特尼提夫利." },
+
+        { word: "Maternity leave", phonetic: "/məˈtɜːnəti liːv/", homophone: "马特尼提利夫", meaning: "产假", sentence: "She took three months of maternity leave.", translation: "她休了三个月的产假。", homophoneSentence: "希图克斯里芒斯奥夫马特尼提利夫." },
+
+        { word: "Paternity leave", phonetic: "/pəˈtɜːnəti liːv/", homophone: "帕特尼提利夫", meaning: "陪产假", sentence: "He requested paternity leave.", translation: "他申请了陪产假。", homophoneSentence: "希瑞奎斯特德帕特尼提利夫." },
+
+        { word: "Parental leave", phonetic: "/pəˈrentl liːv/", homophone: "帕润塔尔利夫", meaning: "育儿假", sentence: "Both parents can take parental leave.", translation: "两位父母都可以休育儿假。", homophoneSentence: "博斯佩润茨肯泰克帕润塔尔利夫." },
+
+        { word: "Genealogy", phonetic: "/ˌdʒiːniˈælədʒi/", homophone: "吉尼艾洛吉", meaning: "家谱学", sentence: "Genealogy is her favorite hobby.", translation: "家谱学是她最喜欢的爱好。", homophoneSentence: "吉尼艾洛吉is赫尔费沃瑞特霍比." },
+
+        { word: "Ancestry", phonetic: "/ˈænsestri/", homophone: "安塞斯特瑞", meaning: "祖先", sentence: "She researched her ancestry online.", translation: "她在网上研究她的祖先。", homophoneSentence: "希瑞瑟奇特赫尔安塞斯特瑞昂莱恩." },
+
+        { word: "Legacy", phonetic: "/ˈleɡəsi/", homophone: "莱格西", meaning: "遗产", sentence: "He left a lasting legacy.", translation: "他留下了持久的遗产。", homophoneSentence: "希莱夫特啊拉斯听莱格西." },
+
+        { word: "Inheritance", phonetic: "/ɪnˈherɪtəns/", homophone: "因赫里腾斯", meaning: "继承", sentence: "She received a large inheritance.", translation: "她收到了一大笔遗产。", homophoneSentence: "希瑞西夫德啊拉只因赫里腾斯." },
+
+        { word: "Heir", phonetic: "/eə/", homophone: "艾尔", meaning: "继承人", sentence: "He is the sole heir to the fortune.", translation: "他是这笔财产的唯一继承人。", homophoneSentence: "希is泽索艾尔图泽佛辰." },
+
+        { word: "Heiress", phonetic: "/ˈeərəs/", homophone: "艾瑞斯", meaning: "女继承人", sentence: "The heiress inherited the estate.", translation: "这位女继承人继承了庄园。", homophoneSentence: "泽艾瑞斯因赫里提德泽伊斯泰特." },
+
+        { word: "Next of kin", phonetic: "/ˌnekst əv ˈkɪn/", homophone: "奈克斯特奥夫金", meaning: "最近亲属", sentence: "Please contact the next of kin.", translation: "请联系最近亲属。", homophoneSentence: "普利斯卡恩泰克特泽奈克斯特奥夫金." },
+
+        { word: "Relative by marriage", phonetic: "/ˈrelətɪv baɪ ˈmærɪdʒ/", homophone: "瑞拉提夫拜麦瑞吉", meaning: "姻亲", sentence: "He is a relative by marriage.", translation: "他是姻亲。", homophoneSentence: "希is啊瑞拉提夫拜麦瑞吉." },
+
+        { word: "Blood relative", phonetic: "/blʌd ˈrelətɪv/", homophone: "布拉德瑞拉提夫", meaning: "血亲", sentence: "She is my blood relative.", translation: "她是我的血亲。", homophoneSentence: "希is迈布拉德瑞拉提夫." },
+
+        { word: "Distant relative", phonetic: "/ˈdɪstənt ˈrelətɪv/", homophone: "迪斯坦特瑞拉提夫", meaning: "远亲", sentence: "He is a distant relative from Italy.", translation: "他是来自意大利的远亲。", homophoneSentence: "希is啊迪斯坦特瑞拉提夫夫绕米伊塔利." },
+
+        { word: "Close relative", phonetic: "/kləʊz ˈrelətɪv/", homophone: "克洛斯瑞拉提夫", meaning: "近亲", sentence: "Only close relatives were invited.", translation: "只有近亲被邀请了。", homophoneSentence: "欧尼克洛斯瑞拉提夫斯沃因歪提德." },
+
+        { word: "In-laws", phonetic: "/ˈɪn lɔːz/", homophone: "因洛兹", meaning: "姻亲", sentence: "My in-laws are very kind.", translation: "我的姻亲很友善。", homophoneSentence: "迈因洛兹啊歪瑞康德." },
+
+        { word: "Grandchild", phonetic: "/ˈɡræntʃaɪld/", homophone: "格兰秋尔德", meaning: "孙辈", sentence: "They have three grandchildren.", translation: "他们有三个孙辈。", homophoneSentence: "德伊海夫斯里格兰秋准." },
+
+        { word: "Great-grandchild", phonetic: "/ɡreɪt ˈɡræntʃaɪld/", homophone: "格瑞特格兰秋尔德", meaning: "曾孙", sentence: "The great-grandchild was born yesterday.", translation: "曾孙昨天出生了。", homophoneSentence: "泽格瑞特格兰秋尔德沃兹伯恩耶斯特得." },
+
+        { word: "Stepchild", phonetic: "/ˈsteptʃaɪld/", homophone: "斯泰普秋尔德", meaning: "继子/继女", sentence: "He has two stepchildren.", translation: "他有两个继子/继女。", homophoneSentence: "希海夫图斯泰普秋准." },
+
+        { word: "Adopted child", phonetic: "/əˈdɒptɪd tʃaɪld/", homophone: "阿多普提德秋尔德", meaning: "养子/养女", sentence: "The adopted child felt loved.", translation: "这个养子/养女感到被爱。", homophoneSentence: "泽阿多普提德秋尔德费尔特拉夫德." },
+
+        { word: "Orphan", phonetic: "/ˈɔːfn/", homophone: "奥芬", meaning: "孤儿", sentence: "The orphan was raised by nuns.", translation: "这个孤儿被修女抚养长大。", homophoneSentence: "泽奥芬沃兹瑞伊兹德拜纳恩兹." },
+
+        { word: "Widow", phonetic: "/ˈwɪdəʊ/", homophone: "维豆", meaning: "寡妇", sentence: "The widow lives alone now.", translation: "这位寡妇现在独自生活。", homophoneSentence: "泽维豆利维斯啊隆恩纳." },
+
+        { word: "Widower", phonetic: "/ˈwɪdəʊə/", homophone: "维豆尔", meaning: "鳏夫", sentence: "He became a widower last year.", translation: "他去年成为了鳏夫。", homophoneSentence: "希比凯姆啊维豆尔拉斯特伊尔." },
+
+        { word: "Bachelor", phonetic: "/ˈbætʃələ/", homophone: "巴彻勒", meaning: "单身汉", sentence: "He remained a bachelor all his life.", translation: "他一生都是单身汉。", homophoneSentence: "希瑞梅因德啊巴彻勒奥利伊兹莱夫." },
+
+        { word: "Spinster", phonetic: "/ˈspɪnstə/", homophone: "斯平斯特", meaning: "老处女", sentence: "She was considered a spinster at thirty.", translation: "她三十岁时被认为是老处女。", homophoneSentence: "希沃兹康西德尔德啊斯平斯特艾特泽提." },
+
+        { word: "Bride", phonetic: "/braɪd/", homophone: "布瑞德", meaning: "新娘", sentence: "The bride wore a white dress.", translation: "新娘穿了一件白色连衣裙。", homophoneSentence: "泽布瑞德沃啊怀特德雷斯." },
+
+        { word: "Groom", phonetic: "/ɡruːm/", homophone: "格鲁姆", meaning: "新郎", sentence: "The groom looked nervous.", translation: "新郎看起来很紧张。", homophoneSentence: "泽格鲁姆卢克特纳弗斯." },
+
+        { word: "Newlyweds", phonetic: "/ˈnjuːliwedz/", homophone: "纽利维兹", meaning: "新婚夫妇", sentence: "The newlyweds went to Hawaii.", translation: "这对新婚夫妇去了夏威夷。", homophoneSentence: "泽纽利维兹温特图哈歪." },
+
+        { word: "Newlywed", phonetic: "/ˈnjuːliwed/", homophone: "纽利维德", meaning: "新婚者", sentence: "She is a happy newlywed.", translation: "她是一个快乐的新婚者。", homophoneSentence: "希is啊海皮纽利维德." },
+
+        { word: "Significant other", phonetic: "/sɪɡˈnɪfɪkənt ˈʌðə/", homophone: "西格尼菲肯特阿德", meaning: "重要他人", sentence: "I want you to meet my significant other.", translation: "我想让你见见我的重要他人。", homophoneSentence: "艾旺特优图米特迈西格尼菲肯特阿德." },
+
+        { word: "Better half", phonetic: "/ˈbetə hɑːf/", homophone: "贝特哈夫", meaning: "另一半", sentence: "I am going out with my better half.", translation: "我要和我的另一半出去。", homophoneSentence: "艾艾姆勾英奥特维斯迈贝特哈夫." },
+
+        { word: "Other half", phonetic: "/ˈʌðə hɑːf/", homophone: "阿德哈夫", meaning: "另一半", sentence: "My other half is cooking dinner.", translation: "我的另一半在做晚餐。", homophoneSentence: "迈阿德哈夫is库克英迪纳." },
+],
     time: [
 { word: 'Morning', phonetic: '/ˈmɔːnɪŋ/', homophone: '莫宁', meaning: '早晨', sentence: 'Good morning!', translation: '早上好！', homophoneSentence: '古德莫宁!' },
         { word: 'Afternoon', phonetic: '/ˌɑːftəˈnuːn/', homophone: '阿夫特努恩', meaning: '下午', sentence: 'Good afternoon!', translation: '下午好！', homophoneSentence: '古德阿夫特努恩!' },
@@ -3638,7 +4382,7 @@ const wordDatabase = {
         { word: 'Yesterday', phonetic: '/ˈjestədeɪ/', homophone: '耶斯特戴', meaning: '昨天', sentence: 'Yesterday was Sunday.', translation: '昨天是周日。', homophoneSentence: '耶斯特戴沃兹桑迪.' },
         { word: 'Week', phonetic: '/wiːk/', homophone: '维克', meaning: '周', sentence: 'A week has seven days.', translation: '一周有七天。', homophoneSentence: '啊维克哈兹赛文戴兹.' },
         { word: 'Month', phonetic: '/mʌnθ/', homophone: '芒斯', meaning: '月', sentence: 'A month has thirty days.', translation: '一个月有三十天。', homophoneSentence: '啊芒斯哈兹色提戴兹.' },
-        { word: 'Year', phonetic: '/jɪə(r)/', homophone: '耶', meaning: '年', sentence: 'Happy New Year!', translation: '新年快乐！', homophoneSentence: '嗨皮纽耶!' }
+        { word: 'Year', phonetic: '/jɪə(r)/', homophone: '耶', meaning: '年', sentence: 'Happy New Year!', translation: '新年快乐！', homophoneSentence: '嗨皮纽耶!' },
         { word: 'Spring', phonetic: '/sprɪŋ/', homophone: '斯普林', meaning: '春天', sentence: 'Spring is beautiful.', translation: '春天很美丽。', homophoneSentence: '斯普林is比优踢佛尔.' },
         { word: 'Summer', phonetic: '/ˈsʌmə(r)/', homophone: '萨默', meaning: '夏天', sentence: 'Summer is hot.', translation: '夏天很热。', homophoneSentence: '萨默is浩特.' },
         { word: 'Autumn', phonetic: '/ˈɔːtəm/', homophone: '奥特姆', meaning: '秋天', sentence: 'Autumn leaves fall.', translation: '秋天树叶落下。', homophoneSentence: '奥特姆利夫斯佛尔.' },
@@ -3695,7 +4439,7 @@ const wordDatabase = {
         { word: 'Easter', phonetic: '/ˈiːstə(r)/', homophone: '伊斯特', meaning: '复活节', sentence: 'Happy Easter!', translation: '复活节快乐！', homophoneSentence: '嗨皮伊斯特!' },
         { word: 'Thanksgiving', phonetic: '/ˌθæŋksˈɡɪvɪŋ/', homophone: '桑克斯给文', meaning: '感恩节', sentence: 'Happy Thanksgiving!', translation: '感恩节快乐！', homophoneSentence: '嗨皮桑克斯给文!' },
         { word: 'Halloween', phonetic: '/ˌhæləˈwiːn/', homophone: '哈罗温', meaning: '万圣节', sentence: 'Happy Halloween!', translation: '万圣节快乐！', homophoneSentence: '嗨皮哈罗温!' },
-        { word: 'Valentine's Day', phonetic: '/ˈvæləntaɪnz deɪ/', homophone: '瓦伦泰因戴', meaning: '情人节', sentence: 'Happy Valentine\'s Day!', translation: '情人节快乐！', homophoneSentence: '嗨皮瓦伦泰因戴!' },
+        { word: "Valentine's Day", phonetic: '/ˈvæləntaɪnz deɪ/', homophone: '瓦伦泰因戴', meaning: '情人节', sentence: "Happy Valentine's Day!", translation: '情人节快乐！', homophoneSentence: '嗨皮瓦伦泰因戴!' },
         { word: 'Birthday', phonetic: '/ˈbɜːθdeɪ/', homophone: '伯斯戴', meaning: '生日', sentence: 'Happy Birthday!', translation: '生日快乐！', homophoneSentence: '嗨皮伯斯戴!' },
         { word: 'Anniversary', phonetic: '/ˌænɪˈvɜːsəri/', homophone: '安尼沃色瑞', meaning: '周年纪念', sentence: 'Happy Anniversary!', translation: '周年快乐！', homophoneSentence: '嗨皮安尼沃色瑞!' },
         { word: 'Leap year', phonetic: '/liːp jɪə(r)/', homophone: '利普耶', meaning: '闰年', sentence: '2024 is a leap year.', translation: '2024年是闰年。', homophoneSentence: '2024is啊利普耶.' },
@@ -3856,6 +4600,13 @@ const wordDatabase = {
         { word: 'Second', phonetic: '/ˈsekənd/', homophone: '塞肯德', meaning: '秒', sentence: 'One second, please!', translation: '请等一秒！', homophoneSentence: '万塞肯德,普利斯!' },
         { word: 'Minute', phonetic: '/ˈmɪnɪt/', homophone: '米尼特', meaning: '分钟', sentence: 'Wait a minute!', translation: '等一下！', homophoneSentence: '威特啊米尼特!' },
         { word: 'Hour', phonetic: '/aʊə/', homophone: '奥厄', meaning: '小时', sentence: 'Wait an hour!', translation: '等一小时！', homophoneSentence: '威特安奥厄!' },
+        { word: 'Graduation', phonetic: '/ˌɡrædʒuˈeɪʃn/', homophone: '格拉乔艾申', meaning: '毕业', sentence: 'Graduation is exciting.', translation: '毕业很令人兴奋。', homophoneSentence: '格拉乔艾申伊伊克赛特英.' },
+        { word: 'Funeral', phonetic: '/ˈfjuːnərəl/', homophone: '弗尤内若', meaning: '葬礼', sentence: 'Funeral is sad.', translation: '葬礼很悲伤。', homophoneSentence: '弗尤内若伊赛德.' },
+        { word: 'Wedding', phonetic: '/ˈwedɪŋ/', homophone: '威丁', meaning: '婚礼', sentence: 'Wedding is beautiful.', translation: '婚礼很美。', homophoneSentence: '威丁伊比欧特夫欧.' },
+        { word: 'Celebration', phonetic: '/ˌselɪˈbreɪʃn/', homophone: '塞勒布雷申', meaning: '庆祝', sentence: 'Celebration is joyful.', translation: '庆祝很欢乐。', homophoneSentence: '塞勒布雷申伊乔伊夫欧.' },
+        { word: 'Festival', phonetic: '/ˈfestɪvl/', homophone: '费斯特夫欧', meaning: '节日', sentence: 'Festival is lively.', translation: '节日很热闹。', homophoneSentence: '费斯特夫欧伊莱夫利.' },
+        { word: 'Sabbath', phonetic: '/ˈsæbəθ/', homophone: '萨巴斯', meaning: '安息日', sentence: 'Sabbath is holy.', translation: '安息日是神圣的。', homophoneSentence: '萨巴斯伊霍利.' },
+        { word: 'Weekday', phonetic: '/ˈwiːkdeɪ/', homophone: '威克戴', meaning: '工作日', sentence: 'Today is a weekday.', translation: '今天是工作日。', homophoneSentence: '特戴伊啊威克戴.' },
         { word: 'Day', phonetic: '/deɪ/', homophone: '戴', meaning: '天', sentence: 'Wait a day!', translation: '等一天！', homophoneSentence: '威特啊戴!' },
         { word: 'Week', phonetic: '/wiːk/', homophone: '威克', meaning: '周', sentence: 'Wait a week!', translation: '等一周！', homophoneSentence: '威特啊威克!' },
         { word: 'Month', phonetic: '/mʌnθ/', homophone: '芒斯', meaning: '月', sentence: 'Wait a month!', translation: '等一个月！', homophoneSentence: '威特啊芒斯!' },
@@ -3868,7 +4619,139 @@ const wordDatabase = {
         { word: 'Tomorrow morning', phonetic: '/təˈmɒrəʊ ˈmɔːnɪŋ/', homophone: '特莫柔莫宁', meaning: '明天早上', sentence: 'I will see him tomorrow morning.', translation: '我明天早上会看到他。', homophoneSentence: '爱威尔西黑姆特莫柔莫宁.' },
         { word: 'Yesterday afternoon', phonetic: '/ˈjestədeɪ ˌɑːftəˈnuːn/', homophone: '耶斯特戴阿夫特努恩', meaning: '昨天下午', sentence: 'I saw him yesterday afternoon.', translation: '我昨天下午看到他了。', homophoneSentence: '爱索黑姆耶斯特戴阿夫特努恩.' },
         { word: 'Today afternoon', phonetic: '/təˈdeɪ ˌɑːftəˈnuːn/', homophone: '特戴阿夫特努恩', meaning: '今天下午', sentence: 'I will see him today afternoon.', translation: '我今天下午会看到他。', homophoneSentence: '爱威尔西黑姆特戴阿夫特努恩.' },
-    ],
+    
+        { word: 'Minute hand', phonetic: '/ˈmɪnɪt hænd/', homophone: '米尼特汉德', meaning: '分针', sentence: 'The minute hand is long.', translation: '分针很长。', homophoneSentence: '泽米尼特汉德伊朗.' },
+
+        { word: 'Hour hand', phonetic: '/aʊə hænd/', homophone: '奥阿汉德', meaning: '时针', sentence: 'The hour hand is short.', translation: '时针很短。', homophoneSentence: '泽奥阿汉德伊肖特.' },
+
+        { word: 'Second hand', phonetic: '/ˈsekənd hænd/', homophone: '塞肯德汉德', meaning: '秒针', sentence: 'The second hand is thin.', translation: '秒针很细。', homophoneSentence: '泽塞肯德汉德伊森.' },
+
+        { word: 'Alarm clock', phonetic: '/əˈlɑːm klɒk/', homophone: '阿朗克洛科', meaning: '闹钟', sentence: 'The alarm clock is loud.', translation: '闹钟很响。', homophoneSentence: '泽阿朗克洛科伊劳德.' },
+
+        { word: "Era", phonetic: "/ˈɪərə/", homophone: "伊拉", meaning: "时代", sentence: "We live in a digital era.", translation: "我们生活在数字时代。", homophoneSentence: "威利夫因啊迪吉特尔伊拉." },
+
+        { word: "Epoch", phonetic: "/ˈiːpɒk/", homophone: "伊波克", meaning: "纪元", sentence: "The invention marked a new epoch.", translation: "这项发明标志着一个新纪元。", homophoneSentence: "泽因文申马克德啊纽伊波克." },
+
+        { word: "Lustrum", phonetic: "/ˈlʌstrəm/", homophone: "拉斯特勒姆", meaning: "五年", sentence: "A lustrum is a period of five years.", translation: "五年是一个五年的时期。", homophoneSentence: "啊拉斯特勒姆is啊皮瑞奥德奥夫法伊夫伊尔兹." },
+
+        { word: "Biennium", phonetic: "/baɪˈeniəm/", homophone: "拜艾尼姆", meaning: "两年", sentence: "The project spans a biennium.", translation: "这个项目跨越两年。", homophoneSentence: "泽普若杰克特斯潘斯啊拜艾尼姆." },
+
+        { word: "Triennium", phonetic: "/traɪˈeniəm/", homophone: "吹艾尼姆", meaning: "三年", sentence: "The triennium brought many changes.", translation: "这三年带来了许多变化。", homophoneSentence: "泽吹艾尼姆布罗特梅尼琴吉兹." },
+
+        { word: "Quadrennium", phonetic: "/kwɒˈdreniəm/", homophone: "夸德雷尼姆", meaning: "四年", sentence: "A quadrennium passes quickly.", translation: "四年很快就过去了。", homophoneSentence: "啊夸德雷尼姆帕西斯奎克利." },
+
+        { word: "Quinquennium", phonetic: "/kwɪŋˈkweniəm/", homophone: "昆奎尼姆", meaning: "五年", sentence: "The quinquennium was productive.", translation: "这五年很富有成效。", homophoneSentence: "泽昆奎尼姆沃兹普若达克提夫." },
+
+        { word: "Semester", phonetic: "/sɪˈmestə/", homophone: "西梅斯特", meaning: "学期", sentence: "This semester is almost over.", translation: "这个学期快结束了。", homophoneSentence: "迪斯西梅斯特is奥莫斯特欧弗." },
+
+        { word: "Trimester", phonetic: "/traɪˈmestə/", homophone: "吹梅斯特", meaning: "三个月", sentence: "The pregnancy is in the second trimester.", translation: "怀孕进入了第二个月。", homophoneSentence: "泽普瑞格南西is因泽塞肯德吹梅斯特." },
+
+        { word: "Fiscal year", phonetic: "/ˈfɪskl jɪə/", homophone: "菲斯克尔伊尔", meaning: "财政年度", sentence: "The fiscal year ends in June.", translation: "财政年度在六月结束。", homophoneSentence: "泽菲斯克尔伊尔恩兹因朱恩." },
+
+        { word: "Academic year", phonetic: "/ˌækəˈdemɪk jɪə/", homophone: "艾卡德米克伊尔", meaning: "学年", sentence: "The academic year starts in September.", translation: "学年在九月开始。", homophoneSentence: "泽艾卡德米克伊尔斯塔尔茨因塞普腾伯." },
+
+        { word: "School year", phonetic: "/skuːl jɪə/", homophone: "斯库尔伊尔", meaning: "学年", sentence: "The school year has 180 days.", translation: "学年有180天。", homophoneSentence: "泽斯库尔伊尔海兹万艾提迪兹." },
+
+        { word: "Calendar year", phonetic: "/ˈkælɪndə jɪə/", homophone: "卡林德尔伊尔", meaning: "日历年", sentence: "The calendar year has 365 days.", translation: "日历年有365天。", homophoneSentence: "泽卡林德尔伊尔海兹斯里辛迪赛克斯蒂法伊夫迪兹." },
+
+        { word: "Common year", phonetic: "/ˈkɒmən jɪə/", homophone: "科门伊尔", meaning: "平年", sentence: "2023 was a common year.", translation: "2023年是平年。", homophoneSentence: "图萨恩德安得文提斯里沃兹啊科门伊尔." },
+
+        { word: "Solar year", phonetic: "/ˈsəʊlə jɪə/", homophone: "索拉伊尔", meaning: "太阳年", sentence: "A solar year is about 365 days.", translation: "太阳年大约是365天。", homophoneSentence: "啊索拉伊尔is啊鲍特斯里辛迪赛克斯蒂法伊夫迪兹." },
+
+        { word: "Lunar year", phonetic: "/ˈluːnə jɪə/", homophone: "卢纳伊尔", meaning: "阴历年", sentence: "The lunar year has 354 days.", translation: "阴历年有354天。", homophoneSentence: "泽卢纳伊尔海兹斯里辛迪佛提佛迪兹." },
+
+        { word: "Sidereal year", phonetic: "/saɪˈdɪəriəl jɪə/", homophone: "赛迪瑞尔伊尔", meaning: "恒星年", sentence: "A sidereal year is slightly longer.", translation: "恒星年稍微长一点。", homophoneSentence: "啊赛迪瑞尔伊尔is斯莱特利朗格尔." },
+
+        { word: "Tropical year", phonetic: "/ˈtrɒpɪkl jɪə/", homophone: "特罗皮克尔伊尔", meaning: "回归年", sentence: "The tropical year marks the seasons.", translation: "回归年标志着季节。", homophoneSentence: "泽特罗皮克尔伊尔马克斯泽西曾斯." },
+
+        { word: "Annum", phonetic: "/ˈænəm/", homophone: "阿纳姆", meaning: "年", sentence: "Per annum means per year.", translation: "每年意味着每年。", homophoneSentence: "珀阿纳姆米因斯珀伊尔." },
+
+        { word: "Chronology", phonetic: "/krəˈnɒlədʒi/", homophone: "克罗诺洛吉", meaning: "年代学", sentence: "Chronology helps us understand history.", translation: "年代学帮助我们理解历史。", homophoneSentence: "克罗诺洛吉海尔普斯阿斯安德斯丹德希斯特瑞." },
+
+        { word: "Agenda", phonetic: "/əˈdʒendə/", homophone: "阿真达", meaning: "议程", sentence: "What is on the agenda today?", translation: "今天的议程是什么？", homophoneSentence: "沃特is昂泽阿真达特得?" },
+
+        { word: "Itinerary", phonetic: "/aɪˈtɪnərəri/", homophone: "艾提纳瑞瑞", meaning: "行程", sentence: "The itinerary includes five cities.", translation: "行程包括五个城市。", homophoneSentence: "泽艾提纳瑞瑞因克卢兹法伊夫西提斯." },
+
+        { word: "Routine", phonetic: "/ruːˈtiːn/", homophone: "鲁廷", meaning: "常规", sentence: "My morning routine includes exercise.", translation: "我的早晨常规包括锻炼。", homophoneSentence: "迈莫宁鲁廷因克卢兹艾克瑟赛兹." },
+
+        { word: "Regimen", phonetic: "/ˈredʒɪmən/", homophone: "雷吉门", meaning: "养生法", sentence: "She follows a strict health regimen.", translation: "她遵循严格的健康养生法。", homophoneSentence: "希佛洛兹啊斯特里克特海尔斯雷吉门." },
+
+        { word: "Duration", phonetic: "/djuˈreɪʃn/", homophone: "久瑞申", meaning: "持续时间", sentence: "The duration of the movie is two hours.", translation: "这部电影的持续时间是两小时。", homophoneSentence: "泽久瑞申奥夫泽穆维is图奥尔斯." },
+
+        { word: "Span", phonetic: "/spæn/", homophone: "斯潘", meaning: "跨度", sentence: "The bridge has a long span.", translation: "这座桥有很长的跨度。", homophoneSentence: "泽布里吉海兹啊朗斯潘." },
+
+        { word: "Interval", phonetic: "/ˈɪntəvl/", homophone: "因特弗欧", meaning: "间隔", sentence: "There is a ten-minute interval.", translation: "有十分钟的间隔。", homophoneSentence: "德尔is啊腾米尼特因特弗欧." },
+
+        { word: "Interim", phonetic: "/ˈɪntərɪm/", homophone: "因特里姆", meaning: "过渡期", sentence: "In the interim, we will wait.", translation: "在此期间，我们将等待。", homophoneSentence: "因泽因特里姆威威尔威特." },
+
+        { word: "Meantime", phonetic: "/ˈmiːntaɪm/", homophone: "明泰姆", meaning: "同时", sentence: "In the meantime, prepare dinner.", translation: "同时，准备晚餐。", homophoneSentence: "因泽明泰姆普瑞佩尔迪纳." },
+
+        { word: "Meanwhile", phonetic: "/ˈmiːnwaɪl/", homophone: "明歪尔", meaning: "与此同时", sentence: "Meanwhile, the situation worsened.", translation: "与此同时，情况恶化了。", homophoneSentence: "明歪尔泽西图埃申沃森德." },
+
+        { word: "Simultaneously", phonetic: "/ˌsɪmlˈteɪniəsli/", homophone: "西姆尔特埃尼厄斯利", meaning: "同时地", sentence: "The events occurred simultaneously.", translation: "这些事件同时发生。", homophoneSentence: "泽伊文茨奥克德西姆尔特埃尼厄斯利." },
+
+        { word: "Concurrently", phonetic: "/kənˈkʌrəntli/", homophone: "康卡伦特利", meaning: "同时发生地", sentence: "Two meetings are happening concurrently.", translation: "两个会议同时发生。", homophoneSentence: "图米听斯啊海潘宁康卡伦特利." },
+
+        { word: "Synchronously", phonetic: "/ˈsɪŋkrənəsli/", homophone: "辛克若纳斯利", meaning: "同步地", sentence: "The machines operate synchronously.", translation: "这些机器同步运行。", homophoneSentence: "泽马辛斯奥佩瑞特斯辛克若纳斯利." },
+
+        { word: "Asynchronously", phonetic: "/eɪˈsɪŋkrənəsli/", homophone: "艾辛克若纳斯利", meaning: "异步地", sentence: "The tasks run asynchronously.", translation: "任务异步运行。", homophoneSentence: "泽塔斯克斯拉恩艾辛克若纳斯利." },
+
+        { word: "Temporarily", phonetic: "/ˈtemprərəli/", homophone: "坦普若若利", meaning: "暂时地", sentence: "The store is temporarily closed.", translation: "商店暂时关闭。", homophoneSentence: "泽斯托is坦普若若利克洛兹德." },
+
+        { word: "Permanently", phonetic: "/ˈpɜːmənəntli/", homophone: "珀门恩特利", meaning: "永久地", sentence: "The changes are permanently saved.", translation: "这些更改被永久保存。", homophoneSentence: "泽琴吉兹啊珀门恩特利塞夫德." },
+
+        { word: "Briefly", phonetic: "/ˈbriːfli/", homophone: "布里夫利", meaning: "短暂地", sentence: "She spoke briefly about the issue.", translation: "她简短地谈到了这个问题。", homophoneSentence: "希斯波克布里夫利啊鲍特泽伊舒." },
+
+        { word: "Momentarily", phonetic: "/ˈməʊməntərəli/", homophone: "莫门塔若利", meaning: "片刻地", sentence: "We will stop momentarily.", translation: "我们将片刻停留。", homophoneSentence: "威威尔斯托普莫门塔若利." },
+
+        { word: "Instantly", phonetic: "/ˈɪnstəntli/", homophone: "因斯坦特利", meaning: "立即", sentence: "The medicine worked instantly.", translation: "药物立即起效。", homophoneSentence: "泽梅迪森沃克特因斯坦特利." },
+
+        { word: "Promptly", phonetic: "/ˈprɒmptli/", homophone: "普朗普特利", meaning: "迅速地", sentence: "Please reply promptly.", translation: "请迅速回复。", homophoneSentence: "普利斯里普莱普朗普特利." },
+
+        { word: "Punctually", phonetic: "/ˈpʌŋktʃuəli/", homophone: "庞克丘厄利", meaning: "准时地", sentence: "He arrived punctually at nine.", translation: "他准时九点到达。", homophoneSentence: "希厄瑞伊夫德庞克丘厄利艾特奈恩." },
+
+        { word: "Prematurely", phonetic: "/ˌpreməˈtjʊəli/", homophone: "普瑞马丘厄利", meaning: "过早地", sentence: "The baby was born prematurely.", translation: "婴儿过早出生。", homophoneSentence: "泽贝比沃兹伯恩普瑞马丘厄利." },
+
+        { word: "Belatedly", phonetic: "/bɪˈleɪtɪdli/", homophone: "比莱提德利", meaning: "延迟地", sentence: "She apologized belatedly.", translation: "她延迟道歉。", homophoneSentence: "希阿波勒吉兹德比莱提德利." },
+
+        { word: "Tardily", phonetic: "/ˈtɑːdɪli/", homophone: "塔迪利", meaning: "迟到地", sentence: "He arrived tardily to the meeting.", translation: "他开会迟到了。", homophoneSentence: "希厄瑞伊夫德塔迪利图泽米听." },
+
+        { word: "Posthumously", phonetic: "/ˈpɒstjʊməsli/", homophone: "波斯丘厄斯利", meaning: "死后", sentence: "The award was given posthumously.", translation: "这个奖项是死后授予的。", homophoneSentence: "泽厄沃德沃兹吉文波斯丘厄斯利." },
+
+        { word: "Retroactively", phonetic: "/ˌretrəʊˈæktɪvli/", homophone: "瑞特若艾克提夫利", meaning: "追溯地", sentence: "The law applies retroactively.", translation: "这项法律追溯适用。", homophoneSentence: "泽洛阿普莱兹瑞特若艾克提夫利." },
+
+        { word: "Prospectively", phonetic: "/prəˈspektɪvli/", homophone: "普若斯佩克提夫利", meaning: "预期地", sentence: "The changes apply prospectively.", translation: "这些变化预期适用。", homophoneSentence: "泽琴吉兹阿普莱兹普若斯佩克提夫利." },
+
+        { word: "Consecutively", phonetic: "/kənˈsekjətɪvli/", homophone: "康塞克优提夫利", meaning: "连续地", sentence: "She won three games consecutively.", translation: "她连续赢了三场比赛。", homophoneSentence: "希万斯里盖姆斯康塞克优提夫利." },
+
+        { word: "Successively", phonetic: "/səkˈsesɪvli/", homophone: "瑟克塞西夫利", meaning: "相继地", sentence: "The events occurred successively.", translation: "这些事件相继发生。", homophoneSentence: "泽伊文茨奥克德瑟克塞西夫利." },
+
+        { word: "Sequentially", phonetic: "/sɪˈkwenʃəli/", homophone: "西昆申厄利", meaning: "按顺序地", sentence: "The steps must be done sequentially.", translation: "这些步骤必须按顺序完成。", homophoneSentence: "泽斯泰普斯马斯特比邓西昆申厄利." },
+
+        { word: "Chronologically", phonetic: "/ˌkrɒnəˈlɒdʒɪkli/", homophone: "克罗诺洛吉克里", meaning: "按时间顺序地", sentence: "Arrange the photos chronologically.", translation: "按时间顺序排列照片。", homophoneSentence: "厄瑞恩吉泽夫欧图斯克罗诺洛吉克里." },
+
+        { word: "Annually", phonetic: "/ˈænjuəli/", homophone: "安尼厄利", meaning: "每年", sentence: "The festival is held annually.", translation: "这个节日每年举行。", homophoneSentence: "泽费斯蒂沃is海尔德安尼厄利." },
+
+        { word: "Biannually", phonetic: "/baɪˈænjuəli/", homophone: "拜安尼厄利", meaning: "每半年", sentence: "The meeting occurs biannually.", translation: "这个会议每半年举行一次。", homophoneSentence: "泽米听奥克尔斯拜安尼厄利." },
+
+        { word: "Biennially", phonetic: "/baɪˈeniəli/", homophone: "拜艾尼厄利", meaning: "每两年", sentence: "The conference meets biennially.", translation: "这个会议每两年举行一次。", homophoneSentence: "泽康弗伦斯米茨拜艾尼厄利." },
+
+        { word: "Semiannually", phonetic: "/ˌsemiˈænjuəli/", homophone: "西米安尼厄利", meaning: "每半年", sentence: "Interest is paid semiannually.", translation: "利息每半年支付一次。", homophoneSentence: "因特瑞斯特is佩德西米安尼厄利." },
+
+        { word: "Quarterly", phonetic: "/ˈkwɔːtəli/", homophone: "夸特利", meaning: "每季度", sentence: "The report is published quarterly.", translation: "报告每季度发布。", homophoneSentence: "泽瑞波特is帕布利希德夸特利." },
+
+        { word: "Monthly", phonetic: "/ˈmʌnθli/", homophone: "曼斯里", meaning: "每月", sentence: "The magazine comes out monthly.", translation: "杂志每月出版。", homophoneSentence: "泽马格呃怎卡姆斯奥特曼斯里." },
+
+        { word: "Weekly", phonetic: "/ˈwiːkli/", homophone: "威克利", meaning: "每周", sentence: "We have meetings weekly.", translation: "我们每周开会。", homophoneSentence: "威海夫米听斯威克利." },
+
+        { word: "Daily", phonetic: "/ˈdeɪli/", homophone: "戴利", meaning: "每天", sentence: "Exercise daily for good health.", translation: "每天锻炼有益健康。", homophoneSentence: "艾克瑟赛兹戴利佛古德海尔斯." },
+
+        { word: "Hourly", phonetic: "/ˈaʊəli/", homophone: "奥厄利", meaning: "每小时", sentence: "The bus runs hourly.", translation: "公交车每小时一班。", homophoneSentence: "泽巴斯冉兹奥厄利." },
+
+        { word: "Nightly", phonetic: "/ˈnaɪtli/", homophone: "奈特利", meaning: "每晚", sentence: "The show airs nightly.", translation: "这个节目每晚播出。", homophoneSentence: "泽瘦艾尔兹奈特利." },
+
+        { word: "Fortnightly", phonetic: "/ˈfɔːtnaɪtli/", homophone: "福特奈特利", meaning: "每两周", sentence: "We meet fortnightly.", translation: "我们每两周见面。", homophoneSentence: "威米特福特奈特利." },
+],
     food: [
 { word: 'Apple', phonetic: '/ˈæpl/', homophone: '艾坡', meaning: '苹果', sentence: 'An apple a day.', translation: '一天一个苹果。', homophoneSentence: '嗯艾坡啊戴.' },
         { word: 'Banana', phonetic: '/bəˈnɑːnə/', homophone: '巴娜娜', meaning: '香蕉', sentence: 'I like bananas.', translation: '我喜欢香蕉。', homophoneSentence: '爱来克斯巴娜娜z.' },
@@ -4211,6 +5094,11 @@ const wordDatabase = {
         { word: 'Sushi', phonetic: '/ˈsuːʃi/', homophone: '寿司', meaning: '寿司', sentence: 'I like sushi.', translation: '我喜欢寿司。', homophoneSentence: '爱莱克寿司.' },
         { word: 'Sandwich', phonetic: '/ˈsænwɪdʒ/', homophone: '桑威奇', meaning: '三明治', sentence: 'I like sandwiches.', translation: '我喜欢三明治。', homophoneSentence: '爱莱克桑威奇兹.' },
         { word: 'Burger', phonetic: '/ˈbɜːɡə/', homophone: '伯格泽', meaning: '汉堡', sentence: 'I like burgers.', translation: '我喜欢汉堡。', homophoneSentence: '爱莱克伯格泽兹.' },
+        { word: 'Vegetables', phonetic: '/ˈvedʒtəblz/', homophone: '维杰特布兹', meaning: '蔬菜', sentence: 'I love vegetables.', translation: '我喜欢蔬菜。', homophoneSentence: '爱拉乌维杰特布兹.' },
+        { word: 'Fruit', phonetic: '/fruːt/', homophone: '弗鲁特', meaning: '水果', sentence: 'I love fruit.', translation: '我喜欢水果。', homophoneSentence: '爱拉乌弗鲁特.' },
+        { word: 'Cookies', phonetic: '/ˈkʊkiz/', homophone: '库基兹', meaning: '饼干', sentence: 'I love cookies.', translation: '我喜欢饼干。', homophoneSentence: '爱拉乌库基兹.' },
+        { word: 'Steak', phonetic: '/steɪk/', homophone: '斯泰克', meaning: '牛排', sentence: 'I love steak.', translation: '我喜欢牛排。', homophoneSentence: '爱拉乌斯泰克.' },
+        { word: 'Hotdog', phonetic: '/ˈhɒtdɒɡ/', homophone: '霍特道格', meaning: '热狗', sentence: 'I love hotdog.', translation: '我喜欢热狗。', homophoneSentence: '爱拉乌霍特道格.' },
         { word: 'Hot dog', phonetic: '/hɒt dɒɡ/', homophone: '热狗', meaning: '热狗', sentence: 'I like hot dogs.', translation: '我喜欢热狗。', homophoneSentence: '爱莱克热狗兹.' },
         { word: 'Fries', phonetic: '/fraɪz/', homophone: '弗赖兹', meaning: '薯条', sentence: 'I like fries.', translation: '我喜欢薯条。', homophoneSentence: '爱莱克弗赖兹.' },
         { word: 'Salad', phonetic: '/ˈsæləd/', homophone: '萨拉德', meaning: '沙拉', sentence: 'I like salad.', translation: '我喜欢沙拉。', homophoneSentence: '爱莱克萨拉德.' },
@@ -4231,39 +5119,187 @@ const wordDatabase = {
         { word: 'Bitter', phonetic: '/ˈbɪtə/', homophone: '比特泽', meaning: '苦的', sentence: 'I like bitter food.', translation: '我喜欢苦的食物。', homophoneSentence: '爱莱克比特泽福德.' },
         { word: 'Salty', phonetic: '/ˈsɔːlti/', homophone: '索尔蒂', meaning: '咸的', sentence: 'I like salty food.', translation: '我喜欢咸的食物。', homophoneSentence: '爱莱克索尔蒂福德.' },
         { word: 'Savory', phonetic: '/ˈseɪvəri/', homophone: '塞沃里', meaning: '咸鲜的', sentence: 'I like savory food.', translation: '我喜欢咸鲜的食物。', homophoneSentence: '爱莱克塞沃里福德.' },
-    ],
+    
+        { word: 'Cherimoya', phonetic: '/ˌtʃerɪˈmɔɪə/', homophone: '切里莫亚', meaning: '释迦果', sentence: 'I love cherimoya.', translation: '我喜欢释迦果。', homophoneSentence: '爱拉乌切里莫亚.' },
+
+        { word: 'Pitaya', phonetic: '/pɪˈtaɪə/', homophone: '皮塔亚', meaning: '火龙果', sentence: 'I love pitaya.', translation: '我喜欢火龙果。', homophoneSentence: '爱拉乌皮塔亚.' },
+
+        { word: 'Kiwi fruit', phonetic: '/ˈkiːwiː fruːt/', homophone: '猕猴桃', meaning: '猕猴桃', sentence: 'I love kiwi fruit.', translation: '我喜欢猕猴桃。', homophoneSentence: '爱拉乌猕猴桃.' },
+
+        { word: "Cuisine", phonetic: "/kwɪˈziːn/", homophone: "奎津", meaning: "烹饪", sentence: "French cuisine is world-famous.", translation: "法国烹饪举世闻名。", homophoneSentence: "弗伦奇奎津is沃尔德费莫斯." },
+
+        { word: "Gastronomy", phonetic: "/ɡæˈstrɒnəmi/", homophone: "加斯特朗诺米", meaning: "美食学", sentence: "Gastronomy combines art and science.", translation: "美食学结合艺术与科学。", homophoneSentence: "加斯特朗诺米康拜恩兹阿特安得赛恩斯." },
+
+        { word: "Culinary", phonetic: "/ˈkʌlɪnəri/", homophone: "卡利纳瑞", meaning: "烹饪的", sentence: "She has culinary skills.", translation: "她有烹饪技能。", homophoneSentence: "希海兹卡利纳瑞斯基尔斯." },
+
+        { word: "Gourmet", phonetic: "/ˈɡʊəmeɪ/", homophone: "古尔梅", meaning: "美食家", sentence: "He is a true gourmet.", translation: "他是一个真正的美食家。", homophoneSentence: "希is啊特鲁古尔梅." },
+
+        { word: "Gourmand", phonetic: "/ˈɡʊəmɒnd/", homophone: "古尔蒙德", meaning: "贪吃的人", sentence: "The gourmand ate everything.", translation: "这个贪吃的人什么都吃。", homophoneSentence: "泽古尔蒙德艾特艾弗里辛." },
+
+        { word: "Epicure", phonetic: "/ˈepɪkjʊə/", homophone: "艾皮丘尔", meaning: "讲究饮食的人", sentence: "An epicure appreciates fine food.", translation: "讲究饮食的人欣赏美食。", homophoneSentence: "安艾皮丘尔阿普瑞西艾茨法因富德." },
+
+        { word: "Connoisseur", phonetic: "/ˌkɒnəˈsɜː/", homophone: "科诺瑟", meaning: "鉴赏家", sentence: "He is a wine connoisseur.", translation: "他是葡萄酒鉴赏家。", homophoneSentence: "希is啊温科诺瑟." },
+
+        { word: "Sommelier", phonetic: "/ˈsɒməljeɪ/", homophone: "索梅利埃", meaning: "侍酒师", sentence: "The sommelier recommended a red wine.", translation: "侍酒师推荐了一款红酒。", homophoneSentence: "泽索梅利埃瑞科门迪德啊瑞德温." },
+
+        { word: "Chef", phonetic: "/ʃef/", homophone: "舍夫", meaning: "厨师", sentence: "The chef prepared a special meal.", translation: "厨师准备了一顿特别的饭菜。", homophoneSentence: "泽舍夫普瑞佩尔德啊斯佩舍尔米尔." },
+
+        { word: "Sous chef", phonetic: "/suː ʃef/", homophone: "苏舍夫", meaning: "副厨师", sentence: "The sous chef assists the head chef.", translation: "副厨师协助主厨。", homophoneSentence: "泽苏舍夫阿西斯茨泽海德舍夫." },
+
+        { word: "Pastry chef", phonetic: "/ˈpeɪstri ʃef/", homophone: "佩斯特里舍夫", meaning: "糕点师", sentence: "The pastry chef makes delicious cakes.", translation: "糕点师做美味的蛋糕。", homophoneSentence: "泽佩斯特里舍夫梅克斯迪利修斯凯克斯." },
+
+        { word: "Baker", phonetic: "/ˈbeɪkə/", homophone: "贝克", meaning: "面包师", sentence: "The baker wakes up early.", translation: "面包师醒得很早。", homophoneSentence: "泽贝克威克斯阿普厄利." },
+
+        { word: "Butcher", phonetic: "/ˈbʊtʃə/", homophone: "布彻", meaning: "屠夫", sentence: "The butcher cut the meat.", translation: "屠夫切了肉。", homophoneSentence: "泽布彻卡特泽米特." },
+
+        { word: "Fishmonger", phonetic: "/ˈfɪʃmʌŋɡə/", homophone: "菲什芒格", meaning: "鱼贩", sentence: "The fishmonger sells fresh seafood.", translation: "鱼贩卖新鲜海鲜。", homophoneSentence: "泽菲什芒格塞尔兹弗雷什西夫乌德." },
+
+        { word: "Grocer", phonetic: "/ˈɡrəʊsə/", homophone: "格罗瑟", meaning: "杂货商", sentence: "The grocer stocks many items.", translation: "杂货商储存了许多商品。", homophoneSentence: "泽格罗瑟斯托克斯梅尼艾特姆斯." },
+
+        { word: "Nutritionist", phonetic: "/njuːˈtrɪʃənɪst/", homophone: "纽特里申尼斯特", meaning: "营养师", sentence: "The nutritionist planned my diet.", translation: "营养师为我规划了饮食。", homophoneSentence: "泽纽特里申尼斯特普兰德迈戴特." },
+
+        { word: "Dietitian", phonetic: "/ˌdaɪəˈtɪʃn/", homophone: "戴厄提申", meaning: "营养师", sentence: "A dietitian can help with meal planning.", translation: "营养师可以帮助规划膳食。", homophoneSentence: "啊戴厄提申肯海尔普维斯米尔普兰宁." },
+
+        { word: "Nutrient", phonetic: "/ˈnjuːtriənt/", homophone: "纽特里恩特", meaning: "营养素", sentence: "Vegetables provide essential nutrients.", translation: "蔬菜提供必需的营养素。", homophoneSentence: "维吉特波欧斯普若歪迪森舍尔纽特里恩茨." },
+
+        { word: "Protein", phonetic: "/ˈprəʊtiːn/", homophone: "普罗廷", meaning: "蛋白质", sentence: "Athletes need extra protein.", translation: "运动员需要额外的蛋白质。", homophoneSentence: "艾斯利茨尼德艾克斯特拉普罗廷." },
+
+        { word: "Carbohydrate", phonetic: "/ˌkɑːbəʊˈhaɪdreɪt/", homophone: "卡波海德瑞特", meaning: "碳水化合物", sentence: "Carbohydrates provide energy.", translation: "碳水化合物提供能量。", homophoneSentence: "卡波海德瑞茨普若歪德艾纳吉." },
+
+        { word: "Fiber", phonetic: "/ˈfaɪbə/", homophone: "法伊伯", meaning: "纤维", sentence: "Fiber aids digestion.", translation: "纤维有助于消化。", homophoneSentence: "法伊伯艾兹戴杰斯辰." },
+
+        { word: "Vitamin", phonetic: "/ˈvɪtəmɪn/", homophone: "维塔敏", meaning: "维生素", sentence: "Vitamins are essential for health.", translation: "维生素对健康至关重要。", homophoneSentence: "维塔敏斯啊因森舍尔佛海尔斯." },
+
+        { word: "Mineral", phonetic: "/ˈmɪnərəl/", homophone: "米纳若", meaning: "矿物质", sentence: "Minerals strengthen bones.", translation: "矿物质强化骨骼。", homophoneSentence: "米纳若斯斯特伦森伯恩斯." },
+
+        { word: "Calorie", phonetic: "/ˈkæləri/", homophone: "卡乐瑞", meaning: "卡路里", sentence: "This meal has 500 calories.", translation: "这顿饭有500卡路里。", homophoneSentence: "迪斯米尔海兹法伊夫汉卓德卡乐瑞斯." },
+
+        { word: "Cholesterol", phonetic: "/kəˈlestərɒl/", homophone: "科莱斯特朗", meaning: "胆固醇", sentence: "High cholesterol can be dangerous.", translation: "高胆固醇可能很危险。", homophoneSentence: "嗨科莱斯特朗肯比丹杰若斯." },
+
+        { word: "Gluten", phonetic: "/ˈɡluːtn/", homophone: "格鲁滕", meaning: "麸质", sentence: "This bread is gluten-free.", translation: "这种面包不含麸质。", homophoneSentence: "迪斯布雷迪斯格鲁滕弗瑞." },
+
+        { word: "Lactose", phonetic: "/ˈlæktəʊs/", homophone: "拉克托斯", meaning: "乳糖", sentence: "Some people are lactose intolerant.", translation: "有些人对乳糖不耐受。", homophoneSentence: "萨姆皮普尔啊拉克托斯因托勒润特." },
+
+        { word: "Preservative", phonetic: "/prɪˈzɜːvətɪv/", homophone: "普瑞泽弗提夫", meaning: "防腐剂", sentence: "This food contains no preservatives.", translation: "这种食物不含防腐剂。", homophoneSentence: "迪斯富德康泰恩斯诺普瑞泽弗提夫斯." },
+
+        { word: "Additive", phonetic: "/ˈædɪtɪv/", homophone: "阿迪提夫", meaning: "添加剂", sentence: "Food additives improve shelf life.", translation: "食品添加剂延长保质期。", homophoneSentence: "富德阿迪提夫斯因普鲁夫谢尔夫莱夫." },
+
+        { word: "Organic", phonetic: "/ɔːˈɡænɪk/", homophone: "奥甘尼克", meaning: "有机的", sentence: "Organic vegetables taste better.", translation: "有机蔬菜味道更好。", homophoneSentence: "奥甘尼克维吉特波欧斯特斯贝特." },
+
+        { word: "GMO", phonetic: "/ˌdʒiː em ˈəʊ/", homophone: "吉艾姆欧", meaning: "转基因生物", sentence: "Some people avoid GMO foods.", translation: "有些人避免转基因食品。", homophoneSentence: "萨姆皮普尔阿沃伊德吉艾姆欧富兹." },
+
+        { word: "Pesticide", phonetic: "/ˈpestɪsaɪd/", homophone: "佩斯蒂赛德", meaning: "杀虫剂", sentence: "Farmers use pesticides on crops.", translation: "农民在作物上使用杀虫剂。", homophoneSentence: "法默斯尤斯佩斯蒂赛德昂克洛普斯." },
+
+        { word: "Herbicide", phonetic: "/ˈhɜːbɪsaɪd/", homophone: "赫比萨伊德", meaning: "除草剂", sentence: "Herbicides kill unwanted plants.", translation: "除草剂杀死不需要的植物。", homophoneSentence: "赫比萨伊德斯基尔昂万提德普兰茨." },
+
+        { word: "Fertilizer", phonetic: "/ˈfɜːtəlaɪzə/", homophone: "弗特拉伊泽", meaning: "肥料", sentence: "Fertilizer helps plants grow.", translation: "肥料帮助植物生长。", homophoneSentence: "弗特拉伊泽海尔普斯普兰茨格柔." },
+
+        { word: "Compost", phonetic: "/ˈkɒmpɒst/", homophone: "康波斯特", meaning: "堆肥", sentence: "We make compost from kitchen waste.", translation: "我们用厨余垃圾制作堆肥。", homophoneSentence: "威梅克康波斯特夫绕姆基辰威斯." },
+
+        { word: "Hydroponics", phonetic: "/ˌhaɪdrəˈpɒnɪks/", homophone: "海德罗波尼克斯", meaning: "水培", sentence: "Hydroponics grows plants without soil.", translation: "水培可以在没有土壤的情况下种植植物。", homophoneSentence: "海德罗波尼克斯格柔兹普兰茨维斯奥特索伊尔." },
+
+        { word: "Aquaponics", phonetic: "/ˌækwəˈpɒnɪks/", homophone: "阿夸波尼克斯", meaning: "鱼菜共生", sentence: "Aquaponics combines fish and plants.", translation: "鱼菜共生结合了鱼和植物。", homophoneSentence: "阿夸波尼克斯康拜恩兹菲什安得普兰茨." },
+
+        { word: "Permaculture", phonetic: "/ˈpɜːməkʌltʃə/", homophone: "珀马卡尔彻", meaning: "永续农业", sentence: "Permaculture is sustainable farming.", translation: "永续农业是可持续的农业。", homophoneSentence: "珀马卡尔彻is瑟斯泰纳波欧法明." },
+
+        { word: "Foraging", phonetic: "/ˈfɒrɪdʒɪŋ/", homophone: "福里金", meaning: "觅食", sentence: "Foraging for wild mushrooms is fun.", translation: "寻找野生蘑菇很有趣。", homophoneSentence: "福里金佛外尔德马什鲁姆斯is范." },
+
+        { word: "Hunting", phonetic: "/ˈhʌntɪŋ/", homophone: "亨廷", meaning: "狩猎", sentence: "Hunting is regulated by laws.", translation: "狩猎受法律管制。", homophoneSentence: "亨廷is瑞古雷特德拜洛兹." },
+
+        { word: "Fishing", phonetic: "/ˈfɪʃɪŋ/", homophone: "菲什英", meaning: "钓鱼", sentence: "Fishing requires patience.", translation: "钓鱼需要耐心。", homophoneSentence: "菲什英瑞夸伊尔泽佩申斯." },
+
+        { word: "Trawling", phonetic: "/ˈtrɔːlɪŋ/", homophone: "特罗林", meaning: "拖网捕鱼", sentence: "Trawling catches many fish at once.", translation: "拖网捕鱼一次捕获很多鱼。", homophoneSentence: "特罗林凯切斯梅尼菲什艾特万斯." },
+
+        { word: "Aquaculture", phonetic: "/ˈækwəkʌltʃə/", homophone: "阿夸卡尔彻", meaning: "水产养殖", sentence: "Aquaculture provides sustainable seafood.", translation: "水产养殖提供可持续海鲜。", homophoneSentence: "阿夸卡尔彻普若歪德斯瑟斯泰纳波欧西夫乌德." },
+
+        { word: "Mariculture", phonetic: "/ˈmærɪkʌltʃə/", homophone: "马里卡尔彻", meaning: "海水养殖", sentence: "Mariculture farms fish in ocean waters.", translation: "海水养殖在海水中养鱼。", homophoneSentence: "马里卡尔彻法姆斯菲什因欧申沃特斯." },
+
+        { word: "Apiary", phonetic: "/ˈeɪpiəri/", homophone: "艾皮厄瑞", meaning: "养蜂场", sentence: "The apiary produces honey.", translation: "养蜂场生产蜂蜜。", homophoneSentence: "泽艾皮厄瑞普若丢西斯哈尼." },
+
+        { word: "Beekeeping", phonetic: "/ˈbiːkiːpɪŋ/", homophone: "比基平", meaning: "养蜂", sentence: "Beekeeping is an ancient practice.", translation: "养蜂是一种古老的实践。", homophoneSentence: "比基平is安安申特普拉克提斯." },
+
+        { word: "Dairy farming", phonetic: "/ˈdeəri ˈfɑːmɪŋ/", homophone: "戴瑞法明", meaning: "奶牛养殖", sentence: "Dairy farming produces milk and cheese.", translation: "奶牛养殖生产牛奶和奶酪。", homophoneSentence: "戴瑞法明普若丢西斯米尔克安得奇兹." },
+
+        { word: "Poultry farming", phonetic: "/ˈpəʊltri ˈfɑːmɪŋ/", homophone: "波尔特里法明", meaning: "家禽养殖", sentence: "Poultry farming raises chickens and turkeys.", translation: "家禽养殖饲养鸡和火鸡。", homophoneSentence: "波尔特里法明瑞伊泽斯奇肯斯安得特基斯." },
+
+        { word: "Livestock", phonetic: "/ˈlaɪvstɒk/", homophone: "莱夫斯托克", meaning: "牲畜", sentence: "Livestock includes cattle and sheep.", translation: "牲畜包括牛和羊。", homophoneSentence: "莱夫斯托克因克卢兹卡特欧安得希普." },
+
+        { word: "Pasture", phonetic: "/ˈpɑːstʃə/", homophone: "帕斯彻", meaning: "牧场", sentence: "Cows graze in the pasture.", translation: "牛在牧场吃草。", homophoneSentence: "考兹格雷兹因泽帕斯彻." },
+
+        { word: "Grazing", phonetic: "/ˈɡreɪzɪŋ/", homophone: "格雷津", meaning: "放牧", sentence: "Grazing land is essential for cattle.", translation: "放牧地对牛来说至关重要。", homophoneSentence: "格雷津兰德is因森舍尔佛卡特欧." },
+
+        { word: "Silage", phonetic: "/ˈsaɪlɪdʒ/", homophone: "赛利吉", meaning: "青贮饲料", sentence: "Silage feeds livestock in winter.", translation: "青贮饲料在冬季喂养牲畜。", homophoneSentence: "赛利吉菲兹莱夫斯托克因温特." },
+
+        { word: "Hay", phonetic: "/heɪ/", homophone: "嘿", meaning: "干草", sentence: "Farmers harvest hay in summer.", translation: "农民在夏天收割干草。", homophoneSentence: "法默斯哈维斯特点因萨默." },
+
+        { word: "Fodder", phonetic: "/ˈfɒdə/", homophone: "福德", meaning: "饲料", sentence: "The farmer bought fodder for the cows.", translation: "农民为牛买了饲料。", homophoneSentence: "泽法默波特福德佛泽考兹." },
+
+        { word: "Feed", phonetic: "/fiːd/", homophone: "菲德", meaning: "饲料", sentence: "The chickens need more feed.", translation: "鸡需要更多饲料。", homophoneSentence: "泽奇肯斯尼德莫尔菲德." },
+
+        { word: "Slaughter", phonetic: "/ˈslɔːtə/", homophone: "斯洛特", meaning: "屠宰", sentence: "The slaughter of animals is regulated.", translation: "动物屠宰受到管制。", homophoneSentence: "泽斯洛特奥夫艾尼梅尔sis瑞古雷特德." },
+
+        { word: "Butchery", phonetic: "/ˈbʊtʃəri/", homophone: "布彻瑞", meaning: "屠宰业", sentence: "Butchery requires skill and precision.", translation: "屠宰业需要技能和精确度。", homophoneSentence: "布彻瑞瑞夸伊尔泽斯基尔安得普瑞西真." },
+
+        { word: "Curing", phonetic: "/ˈkjʊərɪŋ/", homophone: "丘尔英", meaning: "腌制", sentence: "Curing preserves meat for months.", translation: "腌制使肉保存数月。", homophoneSentence: "丘尔英普瑞泽夫斯米特佛芒斯." },
+
+        { word: "Smoking", phonetic: "/ˈsməʊkɪŋ/", homophone: "斯莫金", meaning: "熏制", sentence: "Smoking gives fish a unique flavor.", translation: "熏制赋予鱼独特的风味。", homophoneSentence: "斯莫金吉夫斯菲什啊尤尼克里弗勒弗." },
+
+        { word: "Drying", phonetic: "/ˈdraɪɪŋ/", homophone: "德赖英", meaning: "干燥", sentence: "Drying fruits preserves them.", translation: "干燥水果可以保存它们。", homophoneSentence: "德赖英弗鲁茨普瑞泽夫斯德姆." },
+
+        { word: "Dehydration", phonetic: "/ˌdiːhaɪˈdreɪʃn/", homophone: "迪海德瑞申", meaning: "脱水", sentence: "Dehydration removes water from food.", translation: "脱水从食物中去除水分。", homophoneSentence: "迪海德瑞申瑞穆夫斯沃特夫绕姆富德." },
+
+        { word: "Freeze-drying", phonetic: "/ˈfriːz ˈdraɪɪŋ/", homophone: "弗里兹德赖英", meaning: "冷冻干燥", sentence: "Freeze-drying preserves nutrients.", translation: "冷冻干燥保存营养素。", homophoneSentence: "弗里兹德赖英普瑞泽夫斯纽特里恩茨." },
+
+        { word: "Canning", phonetic: "/ˈkænɪŋ/", homophone: "坎宁", meaning: "罐装", sentence: "Canning preserves vegetables year-round.", translation: "罐装使蔬菜全年可食用。", homophoneSentence: "坎宁普瑞泽夫斯维吉特波欧斯伊尔朗德." },
+
+        { word: "Pickling", phonetic: "/ˈpɪklɪŋ/", homophone: "皮克林", meaning: "腌制", sentence: "Pickling adds flavor to vegetables.", translation: "腌制为蔬菜增添风味。", homophoneSentence: "皮克林艾兹弗勒弗图维吉特波欧斯." },
+
+        { word: "Fermentation", phonetic: "/ˌfɜːmenˈteɪʃn/", homophone: "弗门泰申", meaning: "发酵", sentence: "Fermentation creates alcohol and acids.", translation: "发酵产生酒精和酸。", homophoneSentence: "弗门泰申克里艾茨艾尔科霍尔安得艾西兹." },
+
+        { word: "Distillation", phonetic: "/ˌdɪstɪˈleɪʃn/", homophone: "迪斯蒂莱申", meaning: "蒸馏", sentence: "Distillation purifies liquids.", translation: "蒸馏提纯液体。", homophoneSentence: "迪斯蒂莱申普尤瑞法伊斯利奎兹." },
+
+        { word: "Brewing", phonetic: "/ˈbruːɪŋ/", homophone: "布鲁英", meaning: "酿造", sentence: "Brewing beer takes several weeks.", translation: "酿造啤酒需要几周时间。", homophoneSentence: "布鲁英比尔泰克斯塞夫若尔威克斯." },
+
+        { word: "Winemaking", phonetic: "/ˈwaɪnmeɪkɪŋ/", homophone: "温梅金", meaning: "酿酒", sentence: "Winemaking is both art and science.", translation: "酿酒既是艺术也是科学。", homophoneSentence: "温梅金is博斯阿特安得赛恩斯." },
+
+        { word: "Viticulture", phonetic: "/ˈvɪtɪkʌltʃə/", homophone: "维提卡尔彻", meaning: "葡萄栽培", sentence: "Viticulture requires specific climate.", translation: "葡萄栽培需要特定的气候。", homophoneSentence: "维提卡尔彻瑞夸伊尔泽斯佩西菲克克莱麦特." },
+
+        { word: "Oenology", phonetic: "/iːˈnɒlədʒi/", homophone: "伊诺洛吉", meaning: "酿酒学", sentence: "Oenology studies wine production.", translation: "酿酒学研究葡萄酒生产。", homophoneSentence: "伊诺洛吉斯达迪斯温普若达克申." },
+
+        { word: "Malolactic", phonetic: "/ˌmæləˈlæktɪk/", homophone: "马洛拉克提克", meaning: "苹果乳酸发酵", sentence: "Malolactic fermentation softens wine.", translation: "苹果乳酸发酵使葡萄酒更柔和。", homophoneSentence: "马洛拉克提克弗门泰申索夫滕斯温." },
+],
     conversations: [
         { word: 'How are you', phonetic: '/haʊ ɑː juː/', homophone: '好啊油', meaning: '你好吗', sentence: 'How are you today?', translation: '你今天好吗？', homophoneSentence: '好啊油特戴?' },
-        { word: 'I'm fine', phonetic: '/aɪm faɪn/', homophone: '爱姆法因', meaning: '我很好', sentence: 'I\'m fine, thank you.', translation: '我很好，谢谢。', homophoneSentence: '爱姆法因，森克油.' },
-        { word: "What's your name', phonetic: '/wɒts jɔː neɪm/', homophone: '沃特兹哟内姆', meaning: '你叫什么名字', sentence: 'What\'s your name?', translation: '你叫什么名字？', homophoneSentence: '沃特兹哟内姆?' },
+        { word: "I'm fine", phonetic: '/aɪm faɪn/', homophone: '爱姆法因', meaning: '我很好', sentence: "I'm fine, thank you.", translation: '我很好，谢谢。', homophoneSentence: '爱姆法因，森克油.' },
+        { word: "What's your name", phonetic: '/wɒts jɔː neɪm/', homophone: '沃特兹哟内姆', meaning: '你叫什么名字', sentence: "What's your name?", translation: '你叫什么名字？', homophoneSentence: '沃特兹哟内姆?' },
         { word: 'My name is', phonetic: '/maɪ neɪm ɪz/', homophone: '麦内姆伊兹', meaning: '我的名字是', sentence: 'My name is Tom.', translation: '我的名字是汤姆。', homophoneSentence: '麦内姆伊兹汤姆.' },
         { word: 'Nice to meet you', phonetic: '/naɪs tuː miːt juː/', homophone: '奈斯图米特油', meaning: '很高兴认识你', sentence: 'Nice to meet you.', translation: '很高兴认识你。', homophoneSentence: '奈斯图米特油.' },
         { word: 'Where are you from', phonetic: '/weə ɑː juː frɒm/', homophone: '威尔阿油弗罗姆', meaning: '你来自哪里', sentence: 'Where are you from?', translation: '你来自哪里？', homophoneSentence: '威尔阿油弗罗姆?' },
-        { word: 'I'm from', phonetic: '/aɪm frɒm/', homophone: '爱姆弗罗姆', meaning: '我来自', sentence: 'I\'m from China.', translation: '我来自中国。', homophoneSentence: '爱姆弗罗姆恰伊那.' },
+        { word: "I'm from", phonetic: '/aɪm frɒm/', homophone: '爱姆弗罗姆', meaning: '我来自', sentence: "I'm from China.", translation: '我来自中国。', homophoneSentence: '爱姆弗罗姆恰伊那.' },
         { word: 'How old are you', phonetic: '/haʊ əʊld ɑː juː/', homophone: '好欧尔德阿油', meaning: '你多大了', sentence: 'How old are you?', translation: '你多大了？', homophoneSentence: '好欧尔德阿油?' },
-        { word: 'I'm', phonetic: '/aɪm/', homophone: '爱姆', meaning: '我是', sentence: 'I\'m 20 years old.', translation: '我20岁了。', homophoneSentence: '爱姆20叶尔兹欧尔德.' },
+        { word: "I'm", phonetic: '/aɪm/', homophone: '爱姆', meaning: '我是', sentence: "I'm 20 years old.", translation: '我20岁了。', homophoneSentence: '爱姆20叶尔兹欧尔德.' },
         { word: 'What do you do', phonetic: '/wɒt duː juː duː/', homophone: '沃特度油度', meaning: '你是做什么的', sentence: 'What do you do?', translation: '你是做什么的？', homophoneSentence: '沃特度油度?' },
-        { word: 'I'm a', phonetic: '/aɪm ə/', homophone: '爱姆啊', meaning: '我是一个', sentence: 'I\'m a student.', translation: '我是一个学生。', homophoneSentence: '爱姆啊斯图登特.' },
+        { word: "I'm a", phonetic: '/aɪm ə/', homophone: '爱姆啊', meaning: '我是一个', sentence: "I'm a student.", translation: '我是一个学生。', homophoneSentence: '爱姆啊斯图登特.' },
         { word: 'Do you like', phonetic: '/duː juː laɪk/', homophone: '度油莱克', meaning: '你喜欢', sentence: 'Do you like coffee?', translation: '你喜欢咖啡吗？', homophoneSentence: '度油莱克咖啡?' },
         { word: 'Yes, I do', phonetic: '/jes aɪ duː/', homophone: '耶斯，爱度', meaning: '是的，我喜欢', sentence: 'Yes, I do.', translation: '是的，我喜欢。', homophoneSentence: '耶斯，爱度.' },
-        { word: 'No, I don't', phonetic: '/nəʊ aɪ dəʊnt/', homophone: '诺，爱东特', meaning: '不，我不喜欢', sentence: 'No, I don\'t.', translation: '不，我不喜欢。', homophoneSentence: '诺，爱东特.' },
-        { word: "What's your favorite', phonetic: '/wɒts jɔː ˈfeɪvərɪt/', homophone: '沃特兹哟费沃里特', meaning: '你最喜欢的', sentence: 'What\'s your favorite color?', translation: '你最喜欢的颜色是什么？', homophoneSentence: '沃特兹哟费沃里特卡勒?' },
+        { word: "No, I don't", phonetic: '/nəʊ aɪ dəʊnt/', homophone: '诺，爱东特', meaning: '不，我不喜欢', sentence: "No, I don't.", translation: '不，我不喜欢。', homophoneSentence: '诺，爱东特.' },
+        { word: "What's your favorite", phonetic: '/wɒts jɔː ˈfeɪvərɪt/', homophone: '沃特兹哟费沃里特', meaning: '你最喜欢的', sentence: "What's your favorite color?", translation: '你最喜欢的颜色是什么？', homophoneSentence: '沃特兹哟费沃里特卡勒?' },
         { word: 'My favorite is', phonetic: '/maɪ ˈfeɪvərɪt ɪz/', homophone: '麦费沃里特伊兹', meaning: '我最喜欢的是', sentence: 'My favorite color is blue.', translation: '我最喜欢的颜色是蓝色。', homophoneSentence: '麦费沃里特卡勒伊兹布卢.' },
         { word: 'How was your day', phonetic: '/haʊ wɒz jɔː deɪ/', homophone: '好沃兹哟戴', meaning: '你今天过得怎么样', sentence: 'How was your day?', translation: '你今天过得怎么样？', homophoneSentence: '好沃兹哟戴?' },
         { word: 'It was good', phonetic: '/ɪt wɒz ɡʊd/', homophone: '伊特沃兹古德', meaning: '很好', sentence: 'It was good.', translation: '很好。', homophoneSentence: '伊特沃兹古德.' },
         { word: 'What are you doing', phonetic: '/wɒt ɑː juː ˈduːɪŋ/', homophone: '沃特阿油杜英', meaning: '你在做什么', sentence: 'What are you doing?', translation: '你在做什么？', homophoneSentence: '沃特阿油杜英?' },
-        { word: 'I'm doing', phonetic: '/aɪm ˈduːɪŋ/', homophone: '爱姆杜英', meaning: '我在做', sentence: 'I\'m doing homework.', translation: '我在做作业。', homophoneSentence: '爱姆杜英后姆沃克.' },
+        { word: "I'm doing", phonetic: '/aɪm ˈduːɪŋ/', homophone: '爱姆杜英', meaning: '我在做', sentence: "I'm doing homework.", translation: '我在做作业。', homophoneSentence: '爱姆杜英后姆沃克.' },
         { word: 'Where are you going', phonetic: '/weə ɑː juː ˈɡəʊɪŋ/', homophone: '威尔阿油勾英', meaning: '你要去哪里', sentence: 'Where are you going?', translation: '你要去哪里？', homophoneSentence: '威尔阿油勾英?' },
-        { word: 'I'm going to', phonetic: '/aɪm ˈɡəʊɪŋ tuː/', homophone: '爱姆勾英图', meaning: '我要去', sentence: 'I\'m going to the store.', translation: '我要去商店。', homophoneSentence: '爱姆勾英图泽斯道.' },
+        { word: "I'm going to", phonetic: '/aɪm ˈɡəʊɪŋ tuː/', homophone: '爱姆勾英图', meaning: '我要去', sentence: "I'm going to the store.", translation: '我要去商店。', homophoneSentence: '爱姆勾英图泽斯道.' },
         { word: 'When are you coming back', phonetic: '/wen ɑː juː ˈkʌmɪŋ bæk/', homophone: '温阿油卡明拜克', meaning: '你什么时候回来', sentence: 'When are you coming back?', translation: '你什么时候回来？', homophoneSentence: '温阿油卡明拜克?' },
-        { word: 'I'll be back', phonetic: '/aɪl biː bæk/', homophone: '爱欧比拜克', meaning: '我会回来', sentence: 'I\'ll be back soon.', translation: '我很快就会回来。', homophoneSentence: '爱欧比拜克苏恩.' },
+        { word: "I'll be back", phonetic: '/aɪl biː bæk/', homophone: '爱欧比拜克', meaning: '我会回来', sentence: "I'll be back soon.", translation: '我很快就会回来。', homophoneSentence: '爱欧比拜克苏恩.' },
         { word: 'Can you help me', phonetic: '/kæn juː help miː/', homophone: '坎油赫尔普米', meaning: '你能帮我吗', sentence: 'Can you help me?', translation: '你能帮我吗？', homophoneSentence: '坎油赫尔普米?' },
         { word: 'Sure', phonetic: '/ʃʊə/', homophone: '休尔', meaning: '当然', sentence: 'Sure, I can help you.', translation: '当然，我可以帮助你。', homophoneSentence: '休尔，爱坎赫尔普油.' },
         { word: 'Thank you', phonetic: '/θæŋk juː/', homophone: '森克油', meaning: '谢谢', sentence: 'Thank you for your help.', translation: '谢谢你的帮助。', homophoneSentence: '森克油佛哟赫尔普.' },
-        { word: 'You're welcome', phonetic: '/jɔː ˈwelkəm/', homophone: '哟威尔康', meaning: '不客气', sentence: 'You\'re welcome.', translation: '不客气。', homophoneSentence: '哟威尔康.' },
+        { word: "You're welcome", phonetic: '/jɔː ˈwelkəm/', homophone: '哟威尔康', meaning: '不客气', sentence: "You're welcome.", translation: '不客气。', homophoneSentence: '哟威尔康.' },
         { word: 'Excuse me', phonetic: '/ɪkˈskjuːs miː/', homophone: '伊克斯库兹米', meaning: '打扰一下', sentence: 'Excuse me, where is the bathroom?', translation: '打扰一下，洗手间在哪里？', homophoneSentence: '伊克斯库兹米，威尔伊兹泽巴森rum?' },
-        { word: 'I'm sorry', phonetic: '/aɪm ˈsɒri/', homophone: '爱姆索里', meaning: '对不起', sentence: 'I\'m sorry for being late.', translation: '对不起，我迟到了。', homophoneSentence: '爱姆索里佛宾雷特.' },
-        { word: 'That's okay', phonetic: '/ðæts əʊˈkeɪ/', homophone: '泽茨欧凯', meaning: '没关系', sentence: 'That\'s okay.', translation: '没关系。', homophoneSentence: '泽茨欧凯.' },
+        { word: "I'm sorry", phonetic: '/aɪm ˈsɒri/', homophone: '爱姆索里', meaning: '对不起', sentence: "I'm sorry for being late.", translation: '对不起，我迟到了。', homophoneSentence: '爱姆索里佛宾雷特.' },
+        { word: "That's okay", phonetic: '/ðæts əʊˈkeɪ/', homophone: '泽茨欧凯', meaning: '没关系', sentence: "That's okay.", translation: '没关系。', homophoneSentence: '泽茨欧凯.' },
         { word: 'Good morning', phonetic: '/ɡʊd ˈmɔːnɪŋ/', homophone: '古德莫宁', meaning: '早上好', sentence: 'Good morning!', translation: '早上好！', homophoneSentence: '古德莫宁!' },
         { word: 'Good afternoon', phonetic: '/ɡʊd ˌɑːftəˈnuːn/', homophone: '古德阿夫特努恩', meaning: '下午好', sentence: 'Good afternoon!', translation: '下午好！', homophoneSentence: '古德阿夫特努恩!' },
         { word: 'Good evening', phonetic: '/ɡʊd ˈiːvnɪŋ/', homophone: '古德伊夫宁', meaning: '晚上好', sentence: 'Good evening!', translation: '晚上好！', homophoneSentence: '古德伊夫宁!' },
@@ -4272,16 +5308,16 @@ const wordDatabase = {
         { word: 'See you tomorrow', phonetic: '/siː juː təˈmɒrəʊ/', homophone: '西油特莫柔', meaning: '明天见', sentence: 'See you tomorrow!', translation: '明天见！', homophoneSentence: '西油特莫柔!' },
         { word: 'Have a nice day', phonetic: '/hæv ə naɪs deɪ/', homophone: '海夫啊奈斯戴', meaning: '祝你有个愉快的一天', sentence: 'Have a nice day!', translation: '祝你有个愉快的一天！', homophoneSentence: '海夫啊奈斯戴!' },
         { word: 'Take care', phonetic: '/teɪk keə/', homophone: '泰克凯尔', meaning: '保重', sentence: 'Take care!', translation: '保重！', homophoneSentence: '泰克凯尔!' },
-        { word: 'How's it going', phonetic: '/haʊz ɪt ˈɡəʊɪŋ/', homophone: '好兹伊特勾英', meaning: '最近怎么样', sentence: 'How\'s it going?', translation: '最近怎么样？', homophoneSentence: '好兹伊特勾英?' },
+        { word: "How's it going", phonetic: '/haʊz ɪt ˈɡəʊɪŋ/', homophone: '好兹伊特勾英', meaning: '最近怎么样', sentence: "How's it going?", translation: '最近怎么样？', homophoneSentence: '好兹伊特勾英?' },
         { word: 'Long time no see', phonetic: '/lɒŋ taɪm nəʊ siː/', homophone: '朗泰姆诺西', meaning: '好久不见', sentence: 'Long time no see!', translation: '好久不见！', homophoneSentence: '朗泰姆诺西!' },
-        { word: "What's new', phonetic: '/wɒts njuː/', homophone: '沃特兹纽', meaning: '有什么新鲜事', sentence: 'What\'s new?', translation: '有什么新鲜事？', homophoneSentence: '沃特兹纽?' },
+        { word: "What's new", phonetic: '/wɒts njuː/', homophone: '沃特兹纽', meaning: '有什么新鲜事', sentence: "What's new?", translation: '有什么新鲜事？', homophoneSentence: '沃特兹纽?' },
         { word: 'Not much', phonetic: '/nɒt mʌtʃ/', homophone: '诺特马奇', meaning: '没什么', sentence: 'Not much, how about you?', translation: '没什么，你呢？', homophoneSentence: '诺特马奇，好阿鲍特油?' },
         { word: 'How about you', phonetic: '/haʊ əˈbaʊt juː/', homophone: '好阿鲍特油', meaning: '你呢', sentence: 'How about you?', translation: '你呢？', homophoneSentence: '好阿鲍特油?' },
-        { word: 'I'm good', phonetic: '/aɪm ɡʊd/', homophone: '爱姆古德', meaning: '我很好', sentence: 'I\'m good, thanks.', translation: '我很好，谢谢。', homophoneSentence: '爱姆古德，森克斯.' },
+        { word: "I'm good", phonetic: '/aɪm ɡʊd/', homophone: '爱姆古德', meaning: '我很好', sentence: "I'm good, thanks.", translation: '我很好，谢谢。', homophoneSentence: '爱姆古德，森克斯.' },
         { word: 'Do you speak English', phonetic: '/duː juː spiːk ˈɪŋɡlɪʃ/', homophone: '度油斯皮克英格丽希', meaning: '你说英语吗', sentence: 'Do you speak English?', translation: '你说英语吗？', homophoneSentence: '度油斯皮克英格丽希?' },
         { word: 'Yes, I do', phonetic: '/jes aɪ duː/', homophone: '耶斯，爱度', meaning: '是的，我会', sentence: 'Yes, I do.', translation: '是的，我会。', homophoneSentence: '耶斯，爱度.' },
-        { word: 'No, I don't', phonetic: '/nəʊ aɪ dəʊnt/', homophone: '诺，爱东特', meaning: '不，我不会', sentence: 'No, I don\'t.', translation: '不，我不会。', homophoneSentence: '诺，爱东特.' },
-        { word: 'I don't understand', phonetic: '/aɪ dəʊnt ˌʌndəˈstænd/', homophone: '爱东特安德斯塔恩德', meaning: '我不明白', sentence: 'I don\'t understand.', translation: '我不明白。', homophoneSentence: '爱东特安德斯塔恩德.' },
+        { word: "No, I don't", phonetic: '/nəʊ aɪ dəʊnt/', homophone: '诺，爱东特', meaning: '不，我不会', sentence: "No, I don't.", translation: '不，我不会。', homophoneSentence: '诺，爱东特.' },
+        { word: "I don't understand", phonetic: '/aɪ dəʊnt ˌʌndəˈstænd/', homophone: '爱东特安德斯塔恩德', meaning: '我不明白', sentence: "I don't understand.", translation: '我不明白。', homophoneSentence: '爱东特安德斯塔恩德.' },
         { word: 'Can you repeat that', phonetic: '/kæn juː rɪˈpiːt ðæt/', homophone: '坎油瑞皮特泽特', meaning: '你能再说一遍吗', sentence: 'Can you repeat that?', translation: '你能再说一遍吗？', homophoneSentence: '坎油瑞皮特泽特?' },
         { word: 'Slow down', phonetic: '/sləʊ daʊn/', homophone: '斯洛当', meaning: '慢一点', sentence: 'Please slow down.', translation: '请慢一点。', homophoneSentence: '普利斯斯洛当.' },
         { word: 'What does that mean', phonetic: '/wɒt dʌz ðæt miːn/', homophone: '沃特达兹泽特米恩', meaning: '那是什么意思', sentence: 'What does that mean?', translation: '那是什么意思？', homophoneSentence: '沃特达兹泽特米恩?' },
@@ -4289,7 +5325,7 @@ const wordDatabase = {
         { word: 'That makes sense', phonetic: '/ðæt meɪks sens/', homophone: '泽特梅克斯森斯', meaning: '有道理', sentence: 'That makes sense.', translation: '有道理。', homophoneSentence: '泽特梅克斯森斯.' },
         { word: 'I agree', phonetic: '/aɪ əˈɡriː/', homophone: '爱阿格丽', meaning: '我同意', sentence: 'I agree with you.', translation: '我同意你的看法。', homophoneSentence: '爱阿格丽威泽油.' },
         { word: 'I disagree', phonetic: '/aɪ ˌdɪsəˈɡriː/', homophone: '爱迪斯阿格丽', meaning: '我不同意', sentence: 'I disagree with you.', translation: '我不同意你的看法。', homophoneSentence: '爱迪斯阿格丽威泽油.' },
-        { word: 'That's a good point', phonetic: '/ðæts ə ɡʊd pɔɪnt/', homophone: '泽茨啊古德波因特', meaning: '说得好', sentence: 'That\'s a good point.', translation: '说得好。', homophoneSentence: '泽茨啊古德波因特.' },
+        { word: "That's a good point", phonetic: '/ðæts ə ɡʊd pɔɪnt/', homophone: '泽茨啊古德波因特', meaning: '说得好', sentence: "That's a good point.", translation: '说得好。', homophoneSentence: '泽茨啊古德波因特.' },
         { word: 'I think so', phonetic: '/aɪ θɪŋk səʊ/', homophone: '爱森克斯欧', meaning: '我也这么认为', sentence: 'I think so too.', translation: '我也这么认为。', homophoneSentence: '爱森克斯欧图.' },
         { word: 'Maybe', phonetic: '/ˈmeɪbi/', homophone: '梅比', meaning: '也许', sentence: 'Maybe we can go tomorrow.', translation: '也许我们明天可以去。', homophoneSentence: '梅比威肯够特莫柔.' },
         { word: 'Probably', phonetic: '/ˈprɒbəbli/', homophone: '普若布布利', meaning: '可能', sentence: 'Probably not.', translation: '可能不行。', homophoneSentence: '普若布布利诺特.' },
@@ -4352,6 +5388,7 @@ const wordDatabase = {
         { word: 'It depends', phonetic: '/ɪt dɪˈpendz/', homophone: '伊特迪盆兹', meaning: '看情况', sentence: 'It depends on the weather.', translation: '这取决于天气。', homophoneSentence: '伊特迪盆兹昂泽威泽尔.' },
         { word: 'It varies', phonetic: '/ɪt ˈveərɪz/', homophone: '伊特维尔瑞兹', meaning: '视情况而定', sentence: 'It varies from person to person.', translation: '这因人而异。', homophoneSentence: '伊特维尔瑞兹弗罗姆皮尔森图皮尔森.' },
         { word: 'More or less', phonetic: '/mɔːr ɔːr les/', homophone: '莫尔奥莱斯', meaning: '或多或少', sentence: 'More or less, that\'s correct.', translation: '或多或少，那是对的。', homophoneSentence: '莫尔奥莱斯,泽茨克瑞克特.' },
+        { word: 'Hows family', phonetic: '/haʊz ˈfæməli/', homophone: '好兹法梅里', meaning: '家人怎么样', sentence: 'Hows family?', translation: '家人怎么样？', homophoneSentence: '好兹法梅里?' },
         { word: 'Sort of', phonetic: '/sɔːt ɒv/', homophone: '索特奥夫', meaning: '有点', sentence: 'I sort of understand.', translation: '我有点明白。', homophoneSentence: '爱索特奥夫安德斯坦德.' },
         { word: 'Kind of', phonetic: '/kaɪnd ɒv/', homophone: '康德奥夫', meaning: '有点', sentence: 'It\'s kind of difficult.', translation: '这有点难。', homophoneSentence: '伊茨康德奥夫迪菲库尔特.' },
         { word: 'Not really', phonetic: '/nɒt ˈrɪəli/', homophone: '诺特里尔利', meaning: '不太', sentence: 'Not really, I\'m fine.', translation: '不太，我很好。', homophoneSentence: '诺特里尔利,爱姆法因.' },
@@ -4373,7 +5410,173 @@ const wordDatabase = {
         { word: 'Usually', phonetic: '/ˈjuːʒuəli/', homophone: '尤朱尔利', meaning: '通常', sentence: 'I usually wake up early.', translation: '我通常醒得很早。', homophoneSentence: '爱尤朱尔利威克阿普厄利.' },
         { word: 'Normally', phonetic: '/ˈnɔːməli/', homophone: '诺尔梅利', meaning: '正常地', sentence: 'Normally, I would agree.', translation: '正常情况下，我会同意。', homophoneSentence: '诺尔梅利,爱伍德阿格丽.' },
         { word: 'Typically', phonetic: '/ˈtɪpɪkli/', homophone: '提皮克利', meaning: '典型地', sentence: 'Typically, it takes an hour.', translation: '通常需要一个小时。', homophoneSentence: '提皮克利,伊特泰克斯啊阿乌尔.' },
-    ],
+    
+        { word: 'Im fine', phonetic: '/aɪm faɪn/', homophone: '爱姆法因', meaning: '我很好', sentence: 'Im fine, thank you.', translation: '我很好，谢谢。', homophoneSentence: '爱姆法因，桑克油.' },
+
+        { word: 'Im good', phonetic: '/aɪm ɡʊd/', homophone: '爱姆古德', meaning: '我很好', sentence: 'Im good, thank you.', translation: '我很好，谢谢。', homophoneSentence: '爱姆古德，桑克油.' },
+
+        { word: 'Im well', phonetic: '/aɪm wel/', homophone: '爱姆威尔', meaning: '我很好', sentence: 'Im well, thank you.', translation: '我很好，谢谢。', homophoneSentence: '爱姆威尔，桑克油.' },
+
+        { word: 'Thats okay', phonetic: '/ðæts əˈkeɪ/', homophone: '赞茨欧凯', meaning: '没关系', sentence: 'Thats okay!', translation: '没关系！', homophoneSentence: '赞茨欧凯!' },
+
+        { word: 'May I help you', phonetic: '/meɪ aɪ help juː/', homophone: '梅爱海尔普油', meaning: '我能帮你吗', sentence: 'May I help you?', translation: '我能帮你吗？', homophoneSentence: '梅爱海尔普油?' },
+
+        { word: 'Yes please', phonetic: '/jes pliːz/', homophone: '耶斯普利兹', meaning: '是的，请', sentence: 'Yes please!', translation: '是的，请！', homophoneSentence: '耶斯普利兹!' },
+
+        { word: 'No thank you', phonetic: '/nəʊ θæŋk juː/', homophone: '诺桑克油', meaning: '不用了，谢谢', sentence: 'No thank you!', translation: '不用了，谢谢！', homophoneSentence: '诺桑克油!' },
+
+        { word: 'Im', phonetic: '/aɪm/', homophone: '爱姆', meaning: '我是', sentence: 'Im 18 years old.', translation: '我18岁了。', homophoneSentence: '爱姆18伊尔兹欧尔德.' },
+
+        { word: 'What did you do today', phonetic: '/wɒt dɪd juː duː təˈdeɪ/', homophone: '沃茨迪德油杜特德', meaning: '你今天做了什么', sentence: 'What did you do today?', translation: '你今天做了什么？', homophoneSentence: '沃茨迪德油杜特德?' },
+
+        { word: 'I did', phonetic: '/aɪ dɪd/', homophone: '爱迪德', meaning: '我做了', sentence: 'I did homework.', translation: '我做了作业。', homophoneSentence: '爱迪德霍姆沃克.' },
+
+        { word: 'Im going to', phonetic: '/aɪm ˈɡəʊɪŋ tuː/', homophone: '爱姆够英图', meaning: '我要去', sentence: 'Im going to school.', translation: '我要去上学。', homophoneSentence: '爱姆够英图斯库.' },
+
+        { word: 'When will you be back', phonetic: '/wen wɪl juː biː bæk/', homophone: '温威尔油比贝克', meaning: '你什么时候回来', sentence: 'When will you be back?', translation: '你什么时候回来？', homophoneSentence: '温威尔油比贝克?' },
+
+        { word: 'I will be back', phonetic: '/aɪ wɪl biː bæk/', homophone: '爱威尔比贝克', meaning: '我会回来', sentence: 'I will be back soon.', translation: '我很快会回来。', homophoneSentence: '爱威尔比贝克苏恩.' },
+
+        { word: 'Do you need help', phonetic: '/duː juː niːd help/', homophone: '杜油尼德海尔普', meaning: '你需要帮助吗', sentence: 'Do you need help?', translation: '你需要帮助吗？', homophoneSentence: '杜油尼德海尔普?' },
+
+        { word: 'Yes I need help', phonetic: '/jes aɪ niːd help/', homophone: '耶斯爱尼德海尔普', meaning: '是的，我需要帮助', sentence: 'Yes I need help!', translation: '是的，我需要帮助！', homophoneSentence: '耶斯爱尼德海尔普!' },
+
+        { word: "Dialogue", phonetic: "/ˈdaɪəlɒɡ/", homophone: "戴厄洛格", meaning: "对话", sentence: "The dialogue between them was tense.", translation: "他们之间的对话很紧张。", homophoneSentence: "泽戴厄洛格比图因德姆沃兹腾斯." },
+
+        { word: "Monologue", phonetic: "/ˈmɒnəlɒɡ/", homophone: "莫诺洛格", meaning: "独白", sentence: "He delivered a long monologue.", translation: "他发表了一段长长的独白。", homophoneSentence: "希迪利弗德啊朗莫诺洛格." },
+
+        { word: "Soliloquy", phonetic: "/səˈlɪləkwi/", homophone: "瑟利勒奎", meaning: "独白", sentence: "Hamlet's soliloquy is famous.", translation: "哈姆雷特的独白很有名。", homophoneSentence: "哈姆雷特瑟利勒奎is费莫斯." },
+
+        { word: "Discourse", phonetic: "/ˈdɪskɔːs/", homophone: "迪斯科斯", meaning: "演讲", sentence: "The professor gave a discourse on philosophy.", translation: "教授做了一场关于哲学的演讲。", homophoneSentence: "泽普若费瑟尔盖夫啊迪斯科斯昂菲洛索菲." },
+
+        { word: "Oration", phonetic: "/ɔːˈreɪʃn/", homophone: "奥瑞申", meaning: "演说", sentence: "His oration moved the audience.", translation: "他的演说感动了听众。", homophoneSentence: "伊兹奥瑞申穆德泽奥迪恩斯." },
+
+        { word: "Eloquence", phonetic: "/ˈeləkwəns/", homophone: "埃勒昆斯", meaning: "口才", sentence: "Her eloquence impressed everyone.", translation: "她的口才给所有人留下了深刻印象。", homophoneSentence: "赫尔埃勒昆斯因普雷斯德艾弗里万." },
+
+        { word: "Rhetoric", phonetic: "/ˈretərɪk/", homophone: "雷特里克", meaning: "修辞", sentence: "His rhetoric was persuasive.", translation: "他的修辞很有说服力。", homophoneSentence: "伊兹雷特里克沃兹珀斯维西夫." },
+
+        { word: "Articulation", phonetic: "/ɑːˌtɪkjuˈleɪʃn/", homophone: "阿提丘莱申", meaning: "发音清晰", sentence: "Her articulation is very clear.", translation: "她的发音非常清晰。", homophoneSentence: "赫尔阿提丘莱申is歪瑞克利尔." },
+
+        { word: "Enunciation", phonetic: "/ɪˌnʌnsiˈeɪʃn/", homophone: "伊纳西埃申", meaning: "发音", sentence: "Proper enunciation is important.", translation: "正确的发音很重要。", homophoneSentence: "普罗珀伊纳西埃申is因波腾特." },
+
+        { word: "Pronunciation", phonetic: "/prəˌnʌnsiˈeɪʃn/", homophone: "普罗纳西埃申", meaning: "发音", sentence: "Her pronunciation is excellent.", translation: "她的发音很棒。", homophoneSentence: "赫尔普罗纳西埃申is艾克瑟伦特." },
+
+        { word: "Intonation", phonetic: "/ˌɪntəˈneɪʃn/", homophone: "因托内申", meaning: "语调", sentence: "Her intonation expressed surprise.", translation: "她的语调表达了惊讶。", homophoneSentence: "赫尔因托内申伊克斯普雷斯德瑟普瑞兹." },
+
+        { word: "Inflection", phonetic: "/ɪnˈflekʃn/", homophone: "因弗莱克申", meaning: "变调", sentence: "The inflection in his voice changed.", translation: "他声音中的变调改变了。", homophoneSentence: "泽因弗莱克申因伊兹沃伊斯琴吉德." },
+
+        { word: "Cadence", phonetic: "/ˈkeɪdns/", homophone: "凯登斯", meaning: "韵律", sentence: "The speaker had a pleasing cadence.", translation: "演讲者有一种悦耳的韵律。", homophoneSentence: "泽斯皮克尔海兹啊普利辛凯登斯." },
+
+        { word: "Modulation", phonetic: "/ˌmɒdjuˈleɪʃn/", homophone: "莫久莱申", meaning: "调节", sentence: "Voice modulation keeps listeners engaged.", translation: "声音调节让听众保持参与。", homophoneSentence: "沃伊斯莫久莱申基普斯利森恩茨因盖吉德." },
+
+        { word: "Diction", phonetic: "/ˈdɪkʃn/", homophone: "迪克申", meaning: "措辞", sentence: "His diction was formal and precise.", translation: "他的措辞正式而精确。", homophoneSentence: "伊兹迪克申沃兹佛莫尔安得普瑞赛斯." },
+
+        { word: "Syntax", phonetic: "/ˈsɪntæks/", homophone: "辛泰克斯", meaning: "句法", sentence: "Proper syntax makes sentences clear.", translation: "正确的句法使句子清晰。", homophoneSentence: "普罗珀辛泰克斯梅克斯森腾斯斯克利尔." },
+
+        { word: "Semantics", phonetic: "/sɪˈmæntɪks/", homophone: "西曼提克斯", meaning: "语义学", sentence: "Semantics studies meaning in language.", translation: "语义学研究语言中的意义。", homophoneSentence: "西曼提克斯斯达迪斯米宁因兰格威吉." },
+
+        { word: "Pragmatics", phonetic: "/præɡˈmætɪks/", homophone: "普拉克马提克斯", meaning: "语用学", sentence: "Pragmatics deals with context.", translation: "语用学处理语境。", homophoneSentence: "普拉克马提克斯迪尔兹维斯康泰克斯特." },
+
+        { word: "Linguistics", phonetic: "/lɪŋˈɡwɪstɪks/", homophone: "林格威斯蒂克斯", meaning: "语言学", sentence: "Linguistics is the study of language.", translation: "语言学是对语言的研究。", homophoneSentence: "林格威斯蒂克斯is泽斯达迪奥夫兰格威吉." },
+
+        { word: "Phonetics", phonetic: "/fəˈnetɪks/", homophone: "弗内提克斯", meaning: "语音学", sentence: "Phonetics studies speech sounds.", translation: "语音学研究语音。", homophoneSentence: "弗内提克斯斯达迪斯斯皮奇桑兹." },
+
+        { word: "Phonology", phonetic: "/fəˈnɒlədʒi/", homophone: "弗诺洛吉", meaning: "音系学", sentence: "Phonology examines sound patterns.", translation: "音系学检查声音模式。", homophoneSentence: "弗诺洛吉伊格泽明斯桑德帕腾斯." },
+
+        { word: "Morphology", phonetic: "/mɔːˈfɒlədʒi/", homophone: "莫弗洛吉", meaning: "形态学", sentence: "Morphology studies word structure.", translation: "形态学研究词结构。", homophoneSentence: "莫弗洛吉斯达迪斯沃德斯特拉克彻." },
+
+        { word: "Lexicon", phonetic: "/ˈleksɪkən/", homophone: "莱克西肯", meaning: "词汇", sentence: "The lexicon of a language is vast.", translation: "一种语言的词汇很庞大。", homophoneSentence: "泽莱克西肯奥夫啊兰格威吉is瓦斯特." },
+
+        { word: "Vocabulary", phonetic: "/vəˈkæbjələri/", homophone: "沃卡布尤勒瑞", meaning: "词汇量", sentence: "Reading expands your vocabulary.", translation: "阅读扩展你的词汇量。", homophoneSentence: "瑞丁伊克斯潘兹优沃卡布尤勒瑞." },
+
+        { word: "Terminology", phonetic: "/ˌtɜːmɪˈnɒlədʒi/", homophone: "特米诺洛吉", meaning: "术语", sentence: "Medical terminology is complex.", translation: "医学术语很复杂。", homophoneSentence: "梅迪克尔特米诺洛吉is康普莱克斯." },
+
+        { word: "Jargon", phonetic: "/ˈdʒɑːɡən/", homophone: "贾根", meaning: "行话", sentence: "Legal jargon is hard to understand.", translation: "法律行话很难理解。", homophoneSentence: "利格尔贾根is哈德图安德斯丹德." },
+
+        { word: "Slang", phonetic: "/slæŋ/", homophone: "斯朗", meaning: "俚语", sentence: "Teenagers often use slang.", translation: "青少年经常使用俚语。", homophoneSentence: "提内吉尔斯奥夫恩尤斯斯朗." },
+
+        { word: "Colloquialism", phonetic: "/kəˈləʊkwiəlɪzəm/", homophone: "科洛奎厄利泽姆", meaning: "口语", sentence: "Colloquialisms make speech natural.", translation: "口语使讲话自然。", homophoneSentence: "科洛奎厄利泽姆斯梅克斯斯皮奇纳彻若." },
+
+        { word: "Idiom", phonetic: "/ˈɪdiəm/", homophone: "伊迪姆", meaning: "习语", sentence: "Idioms are difficult for learners.", translation: "习语对学习者来说很难。", homophoneSentence: "伊迪姆斯啊迪菲库尔特佛勒纳斯." },
+
+        { word: "Proverb", phonetic: "/ˈprɒvɜːb/", homophone: "普罗弗伯", meaning: "谚语", sentence: "Proverbs contain cultural wisdom.", translation: "谚语包含文化智慧。", homophoneSentence: "普罗弗伯斯康泰恩卡尔彻尔威兹德姆." },
+
+        { word: "Adage", phonetic: "/ˈædɪdʒ/", homophone: "艾迪吉", meaning: "格言", sentence: "The adage says practice makes perfect.", translation: "格言说熟能生巧。", homophoneSentence: "泽艾迪吉塞兹普拉克提斯梅克斯珀费克特." },
+
+        { word: "Maxim", phonetic: "/ˈmæksɪm/", homophone: "马克西姆", meaning: "格言", sentence: "His favorite maxim is honesty is the best policy.", translation: "他最喜欢的格言是诚实是最好的策略。", homophoneSentence: "伊兹费沃瑞特马克西姆is奥尼斯蒂is泽贝斯特波利西." },
+
+        { word: "Aphorism", phonetic: "/ˈæfərɪzəm/", homophone: "艾弗瑞泽姆", meaning: "警句", sentence: "Aphorisms are brief and wise.", translation: "警句简短而智慧。", homophoneSentence: "艾弗瑞泽姆斯啊布里夫安得歪兹." },
+
+        { word: "Cliché", phonetic: "/ˈkliːʃeɪ/", homophone: "克利谢", meaning: "陈词滥调", sentence: "Avoid clichés in your writing.", translation: "避免在你的写作中使用陈词滥调。", homophoneSentence: "阿沃伊德克利谢斯因优瑞特英." },
+
+        { word: "Platitude", phonetic: "/ˈplætɪtjuːd/", homophone: "普拉提丘德", meaning: "陈词滥调", sentence: "His speech was full of platitudes.", translation: "他的演讲充满了陈词滥调。", homophoneSentence: "伊兹斯皮奇沃兹夫欧奥夫普拉提丘德斯." },
+
+        { word: "Banality", phonetic: "/bəˈnæləti/", homophone: "贝纳利提", meaning: "平庸", sentence: "The banality of his words bored everyone.", translation: "他话语的平庸让所有人厌烦。", homophoneSentence: "泽贝纳利提奥夫伊兹沃德兹博尔德艾弗里万." },
+
+        { word: "Triviality", phonetic: "/ˌtrɪviˈæləti/", homophone: "特里维艾利提", meaning: "琐事", sentence: "Don't waste time on trivialities.", translation: "不要在琐事上浪费时间。", homophoneSentence: "东特威斯泰姆昂特里维艾利提斯." },
+
+        { word: "Nuance", phonetic: "/ˈnjuːɑːns/", homophone: "纽昂斯", meaning: "细微差别", sentence: "Understanding nuance is important.", translation: "理解细微差别很重要。", homophoneSentence: "安德斯丹丁纽昂斯is因波腾特." },
+
+        { word: "Subtlety", phonetic: "/ˈsʌtlti/", homophone: "萨特尔提", meaning: "微妙", sentence: "The subtlety of her argument was impressive.", translation: "她论点的微妙令人印象深刻。", homophoneSentence: "泽萨特尔提奥夫赫尔阿格尤门特沃兹因普瑞西夫." },
+
+        { word: "Implication", phonetic: "/ˌɪmplɪˈkeɪʃn/", homophone: "因普利凯申", meaning: "含义", sentence: "What are the implications of this decision?", translation: "这个决定的含义是什么？", homophoneSentence: "沃特啊泽因普利凯申斯奥夫迪斯迪西真?" },
+
+        { word: "Inference", phonetic: "/ˈɪnfərəns/", homophone: "因弗润斯", meaning: "推断", sentence: "We can draw an inference from the data.", translation: "我们可以从数据中推断。", homophoneSentence: "威肯卓安因弗润斯夫绕姆泽德埃塔." },
+
+        { word: "Connotation", phonetic: "/ˌkɒnəˈteɪʃn/", homophone: "科诺泰申", meaning: "内涵", sentence: "Words have different connotations.", translation: "词语有不同的内涵。", homophoneSentence: "沃德兹海夫迪弗润特科诺泰申斯." },
+
+        { word: "Denotation", phonetic: "/ˌdiːnəʊˈteɪʃn/", homophone: "迪诺泰申", meaning: "外延", sentence: "The denotation is the literal meaning.", translation: "外延是字面意思。", homophoneSentence: "泽迪诺泰申is泽利特若尔米宁." },
+
+        { word: "Ambiguity", phonetic: "/ˌæmbɪˈɡjuːəti/", homophone: "安比吉尤厄提", meaning: "歧义", sentence: "Avoid ambiguity in your writing.", translation: "避免在你的写作中出现歧义。", homophoneSentence: "阿沃伊德安比吉尤厄提因优瑞特英." },
+
+        { word: "Vagueness", phonetic: "/ˈveɪɡnəs/", homophone: "维格内斯", meaning: "模糊", sentence: "The vagueness confused everyone.", translation: "模糊让所有人困惑。", homophoneSentence: "泽维格内斯康菲尤兹德艾弗里万." },
+
+        { word: "Explicit", phonetic: "/ɪkˈsplɪsɪt/", homophone: "伊克斯普利西特", meaning: "明确的", sentence: "Be explicit in your instructions.", translation: "在你的指示中要明确。", homophoneSentence: "比伊克斯普利西特因优因斯特拉克申斯." },
+
+        { word: "Implicit", phonetic: "/ɪmˈplɪsɪt/", homophone: "因普利西特", meaning: "含蓄的", sentence: "The threat was implicit.", translation: "威胁是含蓄的。", homophoneSentence: "泽斯雷特沃兹因普利西特." },
+
+        { word: "Literal", phonetic: "/ˈlɪtərəl/", homophone: "利特若尔", meaning: "字面的", sentence: "I meant it in the literal sense.", translation: "我是从字面意义上说的。", homophoneSentence: "艾门特伊特因泽利特若尔森斯." },
+
+        { word: "Figurative", phonetic: "/ˈfɪɡərətɪv/", homophone: "菲格若提夫", meaning: "比喻的", sentence: "That was a figurative expression.", translation: "那是一个比喻表达。", homophoneSentence: "戴特沃兹啊菲格若提夫伊克斯普雷申." },
+
+        { word: "Metaphor", phonetic: "/ˈmetəfə/", homophone: "梅塔弗", meaning: "隐喻", sentence: "Time is money is a common metaphor.", translation: "时间就是金钱是一个常见的隐喻。", homophoneSentence: "泰姆is马尼is啊科门梅塔弗." },
+
+        { word: "Simile", phonetic: "/ˈsɪməli/", homophone: "西米勒", meaning: "明喻", sentence: "Her smile was like sunshine is a simile.", translation: "她的微笑像阳光是一个明喻。", homophoneSentence: "赫尔斯迈尔沃兹莱克桑晒恩is啊西米勒." },
+
+        { word: "Analogy", phonetic: "/əˈnælədʒi/", homophone: "阿纳洛吉", meaning: "类比", sentence: "He used an analogy to explain.", translation: "他用类比来解释。", homophoneSentence: "希尤兹德安阿纳洛吉图伊克斯普莱恩." },
+
+        { word: "Allegory", phonetic: "/ˈælɪɡəri/", homophone: "艾利戈瑞", meaning: "寓言", sentence: "The story is an allegory for life.", translation: "这个故事是人生的寓言。", homophoneSentence: "泽斯托瑞is安艾利戈瑞佛莱夫." },
+
+        { word: "Parable", phonetic: "/ˈpærəbl/", homophone: "帕若波欧", meaning: "寓言", sentence: "Jesus taught using parables.", translation: "耶稣用寓言教导。", homophoneSentence: "吉泽斯托特尤辛帕若波欧斯." },
+
+        { word: "Fable", phonetic: "/ˈfeɪbl/", homophone: "费波欧", meaning: "寓言", sentence: "Aesop's fables are well-known.", translation: "伊索寓言很有名。", homophoneSentence: "伊索斯费波欧斯啊歪尔诺恩." },
+
+        { word: "Anecdote", phonetic: "/ˈænɪkdəʊt/", homophone: "艾尼克多特", meaning: "轶事", sentence: "He told a funny anecdote.", translation: "他讲了一个有趣的轶事。", homophoneSentence: "希托德啊法尼艾尼克多特." },
+
+        { word: "Narrative", phonetic: "/ˈnærətɪv/", homophone: "纳若提夫", meaning: "叙述", sentence: "The narrative was engaging.", translation: "叙述很吸引人。", homophoneSentence: "泽纳若提夫沃兹因盖金." },
+
+        { word: "Chronicle", phonetic: "/ˈkrɒnɪkl/", homophone: "克罗尼克尔", meaning: "编年史", sentence: "The historian wrote a detailed chronicle.", translation: "历史学家写了一部详细的编年史。", homophoneSentence: "泽希斯托瑞安若特啊迪泰尔德克罗尼克尔." },
+
+        { word: "Saga", phonetic: "/ˈsɑːɡə/", homophone: "萨嘎", meaning: "传奇", sentence: "The family saga spans generations.", translation: "这个家族传奇跨越了几代人。", homophoneSentence: "泽法梅里萨嘎斯潘斯杰纳瑞申斯." },
+
+        { word: "Epic", phonetic: "/ˈepɪk/", homophone: "艾皮克", meaning: "史诗", sentence: "The poem is an epic about heroes.", translation: "这首诗是关于英雄的史诗。", homophoneSentence: "泽波伊姆is安艾皮克啊鲍特希柔斯." },
+
+        { word: "Legend", phonetic: "/ˈledʒənd/", homophone: "莱真德", meaning: "传说", sentence: "The legend has been passed down.", translation: "这个传说代代相传。", homophoneSentence: "泽莱真德海兹比恩帕斯特当." },
+
+        { word: "Myth", phonetic: "/mɪθ/", homophone: "密斯", meaning: "神话", sentence: "Greek myths are fascinating.", translation: "希腊神话很迷人。", homophoneSentence: "格瑞克密斯啊费西内听." },
+
+        { word: "Folklore", phonetic: "/ˈfəʊklɔː/", homophone: "福克洛", meaning: "民间传说", sentence: "Folklore preserves cultural traditions.", translation: "民间传说保存文化传统。", homophoneSentence: "福克洛普瑞泽夫斯卡尔彻尔特瑞迪申斯." },
+
+        { word: "Oral tradition", phonetic: "/ˈɔːrəl trəˈdɪʃn/", homophone: "奥若尔特瑞迪申", meaning: "口述传统", sentence: "Oral tradition keeps stories alive.", translation: "口述传统使故事保持活力。", homophoneSentence: "奥若尔特瑞迪申基普斯斯托瑞斯啊莱夫." },
+
+        { word: "Testimony", phonetic: "/ˈtestɪməni/", homophone: "泰斯蒂莫尼", meaning: "证词", sentence: "His testimony was crucial.", translation: "他的证词至关重要。", homophoneSentence: "伊兹泰斯蒂莫尼沃兹克鲁舍尔." },
+
+        { word: "Deposition", phonetic: "/ˌdepəˈzɪʃn/", homophone: "戴珀齐申", meaning: "证词", sentence: "The lawyer took a deposition.", translation: "律师取了证词。", homophoneSentence: "泽洛亚图克啊戴珀齐申." },
+
+        { word: "Affidavit", phonetic: "/ˌæfɪˈdeɪvɪt/", homophone: "艾菲戴维特", meaning: "宣誓书", sentence: "He signed an affidavit.", translation: "他签署了一份宣誓书。", homophoneSentence: "希赛因德安艾菲戴维特." },
+
+        { word: "Warranty", phonetic: "/ˈwɒrənti/", homophone: "沃润提", meaning: "保修", sentence: "The warranty covers repairs.", translation: "保修涵盖维修。", homophoneSentence: "泽沃润提卡弗斯瑞佩尔斯." },
+],
     sentences: [
 { word: 'How are you', phonetic: '/haʊ ɑː juː/', homophone: '好啊 优', meaning: '你好吗', sentence: 'How are you today?', translation: '你今天好吗？', homophoneSentence: '好啊油特戴?' },
         { word: 'I\'m fine', phonetic: '/aɪm faɪn/', homophone: '爱姆 法艾恩', meaning: '我很好', sentence: 'I\'m fine, thank you!', translation: '我很好，谢谢你！', homophoneSentence: '爱姆法艾恩,三克油!' },
@@ -4500,40 +5703,40 @@ const wordDatabase = {
         { word: 'Congratulations', phonetic: '/kənˌɡrætʃuˈleɪʃnz/', homophone: '康格瑞丘雷申兹', meaning: '恭喜', sentence: 'Congratulations on your success!', translation: '恭喜你的成功！', homophoneSentence: '康格瑞丘雷申兹昂油儿萨克色斯!' },
         { word: 'Well done', phonetic: '/wel dʌn/', homophone: '威尔丹', meaning: '做得好', sentence: 'Well done!', translation: '做得好！', homophoneSentence: '威尔丹!' },
         { word: 'Great job', phonetic: '/ɡreɪt dʒɒb/', homophone: '格瑞特焦布', meaning: '做得好', sentence: 'Great job!', translation: '做得好！', homophoneSentence: '格瑞特焦布!' },
-        { word: 'How's it going?', phonetic: '/haʊz ɪt ˈɡəʊɪŋ/', homophone: '好兹伊特勾英?', meaning: '最近怎么样？', sentence: 'Hey, how\'s it going?', translation: '嘿，最近怎么样？', homophoneSentence: '嘿，好兹伊特勾英?' },
-        { word: "What's up?', phonetic: '/wɒts ʌp/', homophone: '沃特兹阿普?', meaning: '怎么了？', sentence: 'Hey, what\'s up?', translation: '嘿，怎么了？', homophoneSentence: '嘿，沃特兹阿普?' },
+        { word: "How's it going?", phonetic: '/haʊz ɪt ˈɡəʊɪŋ/', homophone: '好兹伊特勾英?', meaning: '最近怎么样？', sentence: 'Hey, how\'s it going?', translation: '嘿，最近怎么样？', homophoneSentence: '嘿，好兹伊特勾英?' },
+        { word: "What's up?", phonetic: '/wɒts ʌp/', homophone: '沃特兹阿普?', meaning: '怎么了？', sentence: "Hey, what's up?", translation: '嘿，怎么了？', homophoneSentence: '嘿，沃特兹阿普?' },
         { word: 'Long time no see!', phonetic: '/lɒŋ taɪm nəʊ siː/', homophone: '朗泰姆诺西!', meaning: '好久不见！', sentence: 'Hey, long time no see!', translation: '嘿，好久不见！', homophoneSentence: '嘿，朗泰姆诺西!' },
         { word: 'What have you been up to?', phonetic: '/wɒt hæv juː bɪn ʌp tuː/', homophone: '沃特海夫油宾阿普图?', meaning: '你最近在忙什么？', sentence: 'Hey, what have you been up to?', translation: '嘿，你最近在忙什么？', homophoneSentence: '嘿，沃特海夫油宾阿普图?' },
         { word: 'Nice to meet you!', phonetic: '/naɪs tuː miːt juː/', homophone: '奈斯图米特油!', meaning: '很高兴见到你！', sentence: 'Hello, nice to meet you!', translation: '你好，很高兴见到你！', homophoneSentence: '哈喽，奈斯图米特油!' },
         { word: 'How are you?', phonetic: '/haʊ ɑː juː/', homophone: '好啊油?', meaning: '你好吗？', sentence: 'Hello, how are you?', translation: '你好，你好吗？', homophoneSentence: '哈喽，好啊油?' },
-        { word: 'I'm fine, thank you!', phonetic: '/aɪm faɪn θæŋk juː/', homophone: '爱姆法因，森克油!', meaning: '我很好，谢谢！', sentence: 'I\'m fine, thank you!', translation: '我很好，谢谢！', homophoneSentence: '爱姆法因，森克油!' },
+        { word: "I'm fine, thank you!", phonetic: '/aɪm faɪn θæŋk juː/', homophone: '爱姆法因，森克油!', meaning: '我很好，谢谢！', sentence: "I'm fine, thank you!", translation: '我很好，谢谢！', homophoneSentence: '爱姆法因，森克油!' },
         { word: 'And you?', phonetic: '/ænd juː/', homophone: '安德油?', meaning: '你呢？', sentence: 'I\'m fine, thank you. And you?', translation: '我很好，谢谢。你呢？', homophoneSentence: '爱姆法因，森克油。安德油?' },
-        { word: "What's your name?', phonetic: '/wɒts jɔː neɪm/', homophone: '沃特兹油儿内姆?', meaning: '你叫什么名字？', sentence: 'What\'s your name?', translation: '你叫什么名字？', homophoneSentence: '沃特兹油儿内姆?' },
+        { word: "What's your name?", phonetic: '/wɒts jɔː neɪm/', homophone: '沃特兹油儿内姆?', meaning: '你叫什么名字？', sentence: "What's your name?", translation: '你叫什么名字？', homophoneSentence: '沃特兹油儿内姆?' },
         { word: 'My name is...', phonetic: '/maɪ neɪm ɪz/', homophone: '麦内姆伊兹...', meaning: '我的名字是...', sentence: 'My name is John.', translation: '我的名字是约翰。', homophoneSentence: '麦内姆伊兹约翰.' },
         { word: 'Where are you from?', phonetic: '/weə ɑː juː frɒm/', homophone: '威尔啊油夫罗姆?', meaning: '你来自哪里？', sentence: 'Where are you from?', translation: '你来自哪里？', homophoneSentence: '威尔啊油夫罗姆?' },
-        { word: 'I'm from...', phonetic: '/aɪm frɒm/', homophone: '爱姆夫罗姆...', meaning: '我来自...', sentence: 'I\'m from China.', translation: '我来自中国。', homophoneSentence: '爱姆夫罗姆中国.' },
+        { word: "I'm from...", phonetic: '/aɪm frɒm/', homophone: '爱姆夫罗姆...', meaning: '我来自...', sentence: "I'm from China.", translation: '我来自中国。', homophoneSentence: '爱姆夫罗姆中国.' },
         { word: 'How old are you?', phonetic: '/haʊ əʊld ɑː juː/', homophone: '好欧尔德啊油?', meaning: '你多大了？', sentence: 'How old are you?', translation: '你多大了？', homophoneSentence: '好欧尔德啊油?' },
-        { word: 'I'm... years old.', phonetic: '/aɪm jɪəz əʊld/', homophone: '爱姆耶尔兹欧尔德.', meaning: '我...岁了。', sentence: 'I\'m 25 years old.', translation: '我25岁了。', homophoneSentence: '爱姆25耶尔兹欧尔德.' },
+        { word: "I'm... years old.", phonetic: '/aɪm jɪəz əʊld/', homophone: '爱姆耶尔兹欧尔德.', meaning: '我...岁了。', sentence: "I'm 25 years old.", translation: '我25岁了。', homophoneSentence: '爱姆25耶尔兹欧尔德.' },
         { word: 'What do you do?', phonetic: '/wɒt duː juː duː/', homophone: '沃特杜油杜?', meaning: '你是做什么的？', sentence: 'What do you do?', translation: '你是做什么的？', homophoneSentence: '沃特杜油杜?' },
-        { word: 'I'm a...', phonetic: '/aɪm ə/', homophone: '爱姆啊...', meaning: '我是一名...', sentence: 'I\'m a teacher.', translation: '我是一名教师。', homophoneSentence: '爱姆啊提切.' },
+        { word: "I'm a...", phonetic: '/aɪm ə/', homophone: '爱姆啊...', meaning: '我是一名...', sentence: "I'm a teacher.", translation: '我是一名教师。', homophoneSentence: '爱姆啊提切.' },
         { word: 'Where do you work?', phonetic: '/weə duː juː wɜːk/', homophone: '威尔杜油沃克?', meaning: '你在哪里工作？', sentence: 'Where do you work?', translation: '你在哪里工作？', homophoneSentence: '威尔杜油沃克?' },
         { word: 'I work at...', phonetic: '/aɪ wɜːk æt/', homophone: '爱沃克艾特...', meaning: '我在...工作。', sentence: 'I work at a school.', translation: '我在一所学校工作。', homophoneSentence: '爱沃克艾特啊斯酷.' },
         { word: 'Do you have any hobbies?', phonetic: '/duː juː hæv eni ˈhɒbiz/', homophone: '杜油海夫埃尼霍比兹?', meaning: '你有什么爱好吗？', sentence: 'Do you have any hobbies?', translation: '你有什么爱好吗？', homophoneSentence: '杜油海夫埃尼霍比兹?' },
         { word: 'I like to...', phonetic: '/aɪ laɪk tuː/', homophone: '爱莱克特图...', meaning: '我喜欢...', sentence: 'I like to read books.', translation: '我喜欢读书。', homophoneSentence: '爱莱克特图瑞德布克斯.' },
-        { word: "What's your favorite color?', phonetic: '/wɒts jɔː ˈfeɪvərɪt ˈkʌlə/', homophone: '沃特兹油儿费沃瑞特卡乐?', meaning: '你最喜欢的颜色是什么？', sentence: 'What\'s your favorite color?', translation: '你最喜欢的颜色是什么？', homophoneSentence: '沃特兹油儿费沃瑞特卡乐?' },
+        { word: "What's your favorite color?", phonetic: "/wɒts jɔː ˈfeɪvərɪt ˈkʌlə/", homophone: "沃特兹油儿费沃瑞特卡乐?", meaning: "你最喜欢的颜色是什么？", sentence: "What's your favorite color?", translation: "你最喜欢的颜色是什么？", homophoneSentence: "沃特兹油儿费沃瑞特卡乐?" },
         { word: 'My favorite color is...', phonetic: '/maɪ ˈfeɪvərɪt ˈkʌlə ɪz/', homophone: '麦费沃瑞特卡乐伊兹...', meaning: '我最喜欢的颜色是...', sentence: 'My favorite color is blue.', translation: '我最喜欢的颜色是蓝色。', homophoneSentence: '麦费沃瑞特卡乐伊兹布鲁.' },
-        { word: "What's your favorite food?', phonetic: '/wɒts jɔː ˈfeɪvərɪt fuːd/', homophone: '沃特兹油儿费沃瑞特福德?', meaning: '你最喜欢的食物是什么？', sentence: 'What\'s your favorite food?', translation: '你最喜欢的食物是什么？', homophoneSentence: '沃特兹油儿费沃瑞特福德?' },
+        { word: "What's your favorite food?", phonetic: "/wɒts jɔː ˈfeɪvərɪt fuːd/", homophone: "沃特兹油儿费沃瑞特福德?", meaning: "你最喜欢的食物是什么？", sentence: "What's your favorite food?", translation: "你最喜欢的食物是什么？", homophoneSentence: "沃特兹油儿费沃瑞特福德?" },
         { word: 'My favorite food is...', phonetic: '/maɪ ˈfeɪvərɪt fuːd ɪz/', homophone: '麦费沃瑞特福德伊兹...', meaning: '我最喜欢的食物是...', sentence: 'My favorite food is pizza.', translation: '我最喜欢的食物是披萨。', homophoneSentence: '麦费沃瑞特福德伊兹披萨.' },
-        { word: "What's the weather like today?', phonetic: '/wɒts ðə ˈweðə laɪk təˈdeɪ/', homophone: '沃特兹泽威泽莱克特德?', meaning: '今天天气怎么样？', sentence: 'What\'s the weather like today?', translation: '今天天气怎么样？', homophoneSentence: '沃特兹泽威泽莱克特德?' },
-        { word: 'It's sunny today.', phonetic: '/ɪts ˈsʌni təˈdeɪ/', homophone: '伊兹桑尼特德.', meaning: '今天天气晴朗。', sentence: 'It\'s sunny today.', translation: '今天天气晴朗。', homophoneSentence: '伊兹桑尼特德.' },
+        { word: "What's the weather like today?", phonetic: "/wɒts ðə ˈweðə laɪk təˈdeɪ/", homophone: "沃特兹泽威泽莱克特德?", meaning: "今天天气怎么样？", sentence: "What's the weather like today?", translation: "今天天气怎么样？", homophoneSentence: "沃特兹泽威泽莱克特德?" },
+        { word: "It's sunny today.", phonetic: "/ɪts ˈsʌni təˈdeɪ/", homophone: "伊兹桑尼特德.", meaning: "今天天气晴朗。", sentence: "It's sunny today.", translation: "今天天气晴朗。", homophoneSentence: "伊兹桑尼特德." },
         { word: 'What time is it?', phonetic: '/wɒt taɪm ɪz ɪt/', homophone: '沃特泰姆伊兹伊特?', meaning: '现在几点了？', sentence: 'What time is it?', translation: '现在几点了？', homophoneSentence: '沃特泰姆伊兹伊特?' },
-        { word: 'It's... o'clock.', phonetic: '/ɪts əˈklɒk/', homophone: '伊兹啊克洛科.', meaning: '现在是...点。', sentence: 'It\'s 3 o\'clock.', translation: '现在是3点。', homophoneSentence: '伊兹3啊克洛科.' },
+        { word: "It's... o'clock.", phonetic: "/ɪts əˈklɒk/", homophone: "伊兹啊克洛科.", meaning: "现在是...点。", sentence: "It's 3 o'clock.", translation: "现在是3点。", homophoneSentence: "伊兹3啊克洛科." },
         { word: 'Where is...?', phonetic: '/weə ɪz/', homophone: '威尔伊兹...?', meaning: '...在哪里？', sentence: 'Where is the bathroom?', translation: '洗手间在哪里？', homophoneSentence: '威尔伊兹泽巴斯鲁姆?' },
-        { word: 'It's over there.', phonetic: '/ɪts ˈəʊvə ðeə/', homophone: '伊兹欧沃泽尔.', meaning: '在那边。', sentence: 'It\'s over there.', translation: '在那边。', homophoneSentence: '伊兹欧沃泽尔.' },
+        { word: "It's over there.", phonetic: "/ɪts ˈəʊvə ðeə/", homophone: "伊兹欧沃泽尔.", meaning: "在那边。", sentence: "It's over there.", translation: "在那边。", homophoneSentence: "伊兹欧沃泽尔." },
         { word: 'Thank you!', phonetic: '/θæŋk juː/', homophone: '森克油!', meaning: '谢谢！', sentence: 'Thank you for your help!', translation: '谢谢你的帮助！', homophoneSentence: '森克油佛油儿海尔普!' },
-        { word: 'You're welcome!', phonetic: '/jɔː ˈwelkəm/', homophone: '油儿威尔康!', meaning: '不客气！', sentence: 'You\'re welcome!', translation: '不客气！', homophoneSentence: '油儿威尔康!' },
-        { word: 'I'm sorry.', phonetic: '/aɪm ˈsɒri/', homophone: '爱姆索瑞.', meaning: '对不起。', sentence: 'I\'m sorry for being late.', translation: '对不起，我迟到了。', homophoneSentence: '爱姆索瑞佛宾雷特.' },
-        { word: 'That's okay.', phonetic: '/ðæts əˈkeɪ/', homophone: '泽茨欧凯.', meaning: '没关系。', sentence: 'I\'m sorry for being late. That\'s okay.', translation: '对不起，我迟到了。没关系。', homophoneSentence: '爱姆索瑞佛宾雷特。泽茨欧凯.' },
+        { word: "You're welcome!", phonetic: "/jɔː ˈwelkəm/", homophone: "油儿威尔康!", meaning: "不客气！", sentence: "You're welcome!", translation: "不客气！", homophoneSentence: "油儿威尔康!" },
+        { word: "I'm sorry.", phonetic: "/aɪm ˈsɒri/", homophone: "爱姆索瑞.", meaning: "对不起。", sentence: "I'm sorry for being late.", translation: "对不起，我迟到了。", homophoneSentence: "爱姆索瑞佛宾雷特." },
+        { word: "That's okay.", phonetic: "/ðæts əˈkeɪ/", homophone: "泽茨欧凯.", meaning: "没关系。", sentence: "I'm sorry for being late. That's okay.", translation: "对不起，我迟到了。没关系。", homophoneSentence: "爱姆索瑞佛宾雷特。泽茨欧凯." },
         { word: 'Good morning!', phonetic: '/ɡʊd ˈmɔːnɪŋ/', homophone: '古德莫宁!', meaning: '早上好！', sentence: 'Good morning!', translation: '早上好！', homophoneSentence: '古德莫宁!' },
         { word: 'Good afternoon!', phonetic: '/ɡʊd ˌɑːftəˈnuːn/', homophone: '古德阿夫特努恩!', meaning: '下午好！', sentence: 'Good afternoon!', translation: '下午好！', homophoneSentence: '古德阿夫特努恩!' },
         { word: 'Good evening!', phonetic: '/ɡʊd ˈiːvnɪŋ/', homophone: '古德伊夫宁!', meaning: '晚上好！', sentence: 'Good evening!', translation: '晚上好！', homophoneSentence: '古德伊夫宁!' },
@@ -4561,21 +5764,21 @@ const wordDatabase = {
         { word: 'Hello there', phonetic: '/həˈləʊ ðeə/', homophone: '哈罗泽尔', meaning: '你好', sentence: 'Hello there, how\'s it going?', translation: '你好，最近怎么样？', homophoneSentence: '哈罗泽尔，好兹伊特勾英?' },
         { word: "What's up", phonetic: '/wɒts ʌp/', homophone: '沃特兹阿普', meaning: '怎么了', sentence: 'What\'s up with you?', translation: '你怎么了？', homophoneSentence: '沃特兹阿普威泽油?' },
         { word: 'How are you', phonetic: '/haʊ ɑː juː/', homophone: '好啊油', meaning: '你好吗', sentence: 'How are you today?', translation: '你今天好吗？', homophoneSentence: '好啊油特戴?' },
-        { word: 'I'm fine', phonetic: '/aɪm faɪn/', homophone: '爱姆法因', meaning: '我很好', sentence: 'I\'m fine, thank you.', translation: '我很好，谢谢。', homophoneSentence: '爱姆法因，森克油.' },
+        { word: "I'm fine", phonetic: '/aɪm faɪn/', homophone: '爱姆法因', meaning: '我很好', sentence: "I'm fine, thank you.", translation: '我很好，谢谢。', homophoneSentence: '爱姆法因，森克油.' },
         { word: 'And you', phonetic: '/ænd juː/', homophone: '安德油', meaning: '你呢', sentence: 'And you?', translation: '你呢？', homophoneSentence: '安德油?' },
         { word: 'Nice to meet you', phonetic: '/naɪs tuː miːt juː/', homophone: '奈斯图米特油', meaning: '很高兴认识你', sentence: 'Nice to meet you, too.', translation: '我也很高兴认识你。', homophoneSentence: '奈斯图米特油，图.' },
         { word: 'Where are you from', phonetic: '/weə ɑː juː frɒm/', homophone: '威尔阿油弗罗姆', meaning: '你来自哪里', sentence: 'Where are you from?', translation: '你来自哪里？', homophoneSentence: '威尔阿油弗罗姆?' },
-        { word: 'I'm from', phonetic: '/aɪm frɒm/', homophone: '爱姆弗罗姆', meaning: '我来自', sentence: 'I\'m from China.', translation: '我来自中国。', homophoneSentence: '爱姆弗罗姆恰伊那.' },
-        { word: "What's your name', phonetic: '/wɒts jɔː neɪm/', homophone: '沃特兹哟内姆', meaning: '你叫什么名字', sentence: 'What\'s your name?', translation: '你叫什么名字？', homophoneSentence: '沃特兹哟内姆?' },
+        { word: "I'm from", phonetic: '/aɪm frɒm/', homophone: '爱姆弗罗姆', meaning: '我来自', sentence: "I'm from China.", translation: '我来自中国。', homophoneSentence: '爱姆弗罗姆恰伊那.' },
+        { word: "What's your name", phonetic: '/wɒts jɔː neɪm/', homophone: '沃特兹哟内姆', meaning: '你叫什么名字', sentence: "What's your name?", translation: '你叫什么名字？', homophoneSentence: '沃特兹哟内姆?' },
         { word: 'My name is', phonetic: '/maɪ neɪm ɪz/', homophone: '麦内姆伊兹', meaning: '我的名字是', sentence: 'My name is Tom.', translation: '我的名字是汤姆。', homophoneSentence: '麦内姆伊兹汤姆.' },
         { word: 'How old are you', phonetic: '/haʊ əʊld ɑː juː/', homophone: '好欧尔德阿油', meaning: '你多大了', sentence: 'How old are you?', translation: '你多大了？', homophoneSentence: '好欧尔德阿油?' },
-        { word: 'I'm', phonetic: '/aɪm/', homophone: '爱姆', meaning: '我是', sentence: 'I\'m 20 years old.', translation: '我20岁了。', homophoneSentence: '爱姆20叶尔兹欧尔德.' },
+        { word: "I'm", phonetic: '/aɪm/', homophone: '爱姆', meaning: '我是', sentence: "I'm 20 years old.", translation: '我20岁了。', homophoneSentence: '爱姆20叶尔兹欧尔德.' },
         { word: 'What do you do', phonetic: '/wɒt duː juː duː/', homophone: '沃特度油度', meaning: '你是做什么的', sentence: 'What do you do?', translation: '你是做什么的？', homophoneSentence: '沃特度油度?' },
-        { word: 'I'm a', phonetic: '/aɪm ə/', homophone: '爱姆啊', meaning: '我是一个', sentence: 'I\'m a student.', translation: '我是一个学生。', homophoneSentence: '爱姆啊斯图登特.' },
+        { word: "I'm a", phonetic: '/aɪm ə/', homophone: '爱姆啊', meaning: '我是一个', sentence: "I'm a student.", translation: '我是一个学生。', homophoneSentence: '爱姆啊斯图登特.' },
         { word: 'Do you like', phonetic: '/duː juː laɪk/', homophone: '度油莱克', meaning: '你喜欢', sentence: 'Do you like coffee?', translation: '你喜欢咖啡吗？', homophoneSentence: '度油莱克咖啡?' },
         { word: 'Yes, I do', phonetic: '/jes aɪ duː/', homophone: '耶斯，爱度', meaning: '是的，我喜欢', sentence: 'Yes, I do.', translation: '是的，我喜欢。', homophoneSentence: '耶斯，爱度.' },
-        { word: 'No, I don't', phonetic: '/nəʊ aɪ dəʊnt/', homophone: '诺，爱东特', meaning: '不，我不喜欢', sentence: 'No, I don\'t.', translation: '不，我不喜欢。', homophoneSentence: '诺，爱东特.' },
-        { word: "What's your favorite', phonetic: '/wɒts jɔː ˈfeɪvərɪt/', homophone: '沃特兹哟费沃里特', meaning: '你最喜欢的', sentence: 'What\'s your favorite color?', translation: '你最喜欢的颜色是什么？', homophoneSentence: '沃特兹哟费沃里特卡勒?' },
+        { word: "No, I don't", phonetic: '/nəʊ aɪ dəʊnt/', homophone: '诺，爱东特', meaning: '不，我不喜欢', sentence: "No, I don't.", translation: '不，我不喜欢。', homophoneSentence: '诺，爱东特.' },
+        { word: "What's your favorite", phonetic: '/wɒts jɔː ˈfeɪvərɪt/', homophone: '沃特兹哟费沃里特', meaning: '你最喜欢的', sentence: "What's your favorite color?", translation: '你最喜欢的颜色是什么？', homophoneSentence: '沃特兹哟费沃里特卡勒?' },
         { word: 'Goodbye', phonetic: '/ˌɡʊdˈbaɪ/', homophone: '古德拜', meaning: '再见', sentence: 'Goodbye for now!', translation: '暂时再见！', homophoneSentence: '古德拜佛闹!' },
         { word: 'Bye bye', phonetic: '/ˈbaɪ ˈbaɪ/', homophone: '拜拜', meaning: '拜拜', sentence: 'Bye bye!', translation: '拜拜！', homophoneSentence: '拜拜!' },
         { word: 'Catch you later', phonetic: '/kætʃ juː ˈleɪtə/', homophone: '凯奇油雷特', meaning: '回头见', sentence: 'Catch you later!', translation: '回头见！', homophoneSentence: '凯奇油雷特!' },
@@ -4829,6 +6032,41 @@ const wordDatabase = {
         { word: 'Let\'s get started', phonetic: '/lets ɡet ˈstɑːtɪd/', homophone: '莱茨盖特斯达提德', meaning: '让我们开始吧', sentence: 'Let\'s get started!', translation: '让我们开始吧！', homophoneSentence: '莱茨盖特斯达提德!' },
         { word: 'Let\'s call it a day', phonetic: '/lets kɔːl ɪt ə deɪ/', homophone: '莱茨考尔伊特啊戴', meaning: '今天就到这里吧', sentence: 'Let\'s call it a day.', translation: '今天就到这里吧。', homophoneSentence: '莱茨考尔伊特啊戴.' },
         { word: 'That\'s all for today', phonetic: '/ðæts ɔːl fɔː təˈdeɪ/', homophone: '泽茨奥尔佛特戴', meaning: '今天就这些', sentence: 'That\'s all for today.', translation: '今天就这些。', homophoneSentence: '泽茨奥尔佛特戴.' },
+        { word: 'I hope you are happy', phonetic: '/aɪ həʊp juː ɑː ˈhæpi/', homophone: '爱霍普油阿嗨皮', meaning: '我希望你快乐', sentence: 'I hope you are happy!', translation: '我希望你快乐！', homophoneSentence: '爱霍普油阿嗨皮!' },
+        { word: 'I wish you well', phonetic: '/aɪ wɪʃ juː wel/', homophone: '爱威什油威尔', meaning: '我祝你一切顺利', sentence: 'I wish you well!', translation: '我祝你一切顺利！', homophoneSentence: '爱威什油威尔!' },
+        { word: 'I bless you', phonetic: '/aɪ bles juː/', homophone: '爱布雷斯油', meaning: '我祝福你', sentence: 'I bless you!', translation: '我祝福你！', homophoneSentence: '爱布雷斯油!' },
+        { word: 'I celebrate you', phonetic: '/aɪ ˈselɪbreɪt juː/', homophone: '爱塞勒布雷伊特油', meaning: '我庆祝你', sentence: 'I celebrate you!', translation: '我庆祝你！', homophoneSentence: '爱塞勒布雷伊特油!' },
+        { word: 'I congratulate you', phonetic: '/aɪ kənˈɡrætʃuleɪt juː/', homophone: '爱康格瑞丘雷伊特油', meaning: '我祝贺你', sentence: 'I congratulate you!', translation: '我祝贺你！', homophoneSentence: '爱康格瑞丘雷伊特油!' },
+        { word: 'I encourage you', phonetic: '/aɪ ɪnˈkʌrɪdʒ juː/', homophone: '爱因卡瑞奇油', meaning: '我鼓励你', sentence: 'I encourage you!', translation: '我鼓励你！', homophoneSentence: '爱因卡瑞奇油!' },
+        { word: 'I support you', phonetic: '/aɪ səˈpɔːt juː/', homophone: '爱萨波特油', meaning: '我支持你', sentence: 'I support you!', translation: '我支持你！', homophoneSentence: '爱萨波特油!' },
+
+        { word: 'I understand you', phonetic: '/aɪ ˌʌndəˈstænd juː/', homophone: '爱安德斯塔恩德油', meaning: '我理解你', sentence: 'I understand you!', translation: '我理解你！', homophoneSentence: '爱安德斯塔恩德油!' },
+
+        { word: 'I believe you', phonetic: '/aɪ bɪˈliːv juː/', homophone: '爱比里夫油', meaning: '我相信你', sentence: 'I believe you!', translation: '我相信你！', homophoneSentence: '爱比里夫油!' },
+
+        { word: 'I trust you', phonetic: '/aɪ trʌst juː/', homophone: '爱特拉斯油', meaning: '我信任你', sentence: 'I trust you!', translation: '我信任你！', homophoneSentence: '爱特拉斯油!' },
+
+        { word: 'I admire you', phonetic: '/aɪ ədˈmaɪə juː/', homophone: '爱阿德麦尔油', meaning: '我钦佩你', sentence: 'I admire you!', translation: '我钦佩你！', homophoneSentence: '爱阿德麦尔油!' },
+
+        { word: 'I respect you', phonetic: '/aɪ rɪˈspekt juː/', homophone: '爱瑞思佩克特油', meaning: '我尊重你', sentence: 'I respect you!', translation: '我尊重你！', homophoneSentence: '爱瑞思佩克特油!' },
+
+        { word: 'I appreciate you', phonetic: '/aɪ əˈpriːʃieɪt juː/', homophone: '爱阿普瑞舍伊特油', meaning: '我感激你', sentence: 'I appreciate you!', translation: '我感激你！', homophoneSentence: '爱阿普瑞舍伊特油!' },
+
+        { word: 'I thank you', phonetic: '/aɪ θæŋk juː/', homophone: '爱桑克油', meaning: '我谢谢你', sentence: 'I thank you!', translation: '我谢谢你！', homophoneSentence: '爱桑克油!' },
+
+        { word: 'I forgive you', phonetic: '/aɪ fəˈɡɪv juː/', homophone: '爱佛吉夫油', meaning: '我原谅你', sentence: 'I forgive you!', translation: '我原谅你！', homophoneSentence: '爱佛吉夫油!' },
+
+        { word: 'I hate you', phonetic: '/aɪ heɪt juː/', homophone: '爱海特油', meaning: '我讨厌你', sentence: 'I hate you!', translation: '我讨厌你！', homophoneSentence: '爱海特油!' },
+
+        { word: 'I like you', phonetic: '/aɪ laɪk juː/', homophone: '爱莱克油', meaning: '我喜欢你', sentence: 'I like you!', translation: '我喜欢你！', homophoneSentence: '爱莱克油!' },
+
+        { word: 'I want you', phonetic: '/aɪ wɒnt juː/', homophone: '爱旺特油', meaning: '我想要你', sentence: 'I want you!', translation: '我想要你！', homophoneSentence: '爱旺特油!' },
+
+        { word: 'I need you', phonetic: '/aɪ niːd juː/', homophone: '爱尼德油', meaning: '我需要你', sentence: 'I need you!', translation: '我需要你！', homophoneSentence: '爱尼德油!' },
+
+        { word: 'I miss you', phonetic: '/aɪ mɪs juː/', homophone: '爱米斯油', meaning: '我想你', sentence: 'I miss you!', translation: '我想你！', homophoneSentence: '爱米斯油!' },
+
+        { word: 'I love you', phonetic: '/aɪ lʌv juː/', homophone: '爱拉乌油', meaning: '我爱你', sentence: 'I love you!', translation: '我爱你！', homophoneSentence: '爱拉乌油!' },
         { word: 'We\'ll continue tomorrow', phonetic: '/wiːl kənˈtɪnjuː təˈmɒrəʊ/', homophone: '威尔康提纽特莫柔', meaning: '我们明天继续', sentence: 'We\'ll continue tomorrow.', translation: '我们明天继续。', homophoneSentence: '威尔康提纽特莫柔.' },
         { word: 'See you then', phonetic: '/siː juː ðen/', homophone: '西油泽恩', meaning: '到时候见', sentence: 'See you then!', translation: '到时候见！', homophoneSentence: '西油泽恩!' },
         { word: 'Have a good weekend', phonetic: '/hæv ə ɡʊd ˈwiːkend/', homophone: '海夫啊古德威肯德', meaning: '周末愉快', sentence: 'Have a good weekend!', translation: '周末愉快！', homophoneSentence: '海夫啊古德威肯德!' },
@@ -4851,8 +6089,157 @@ const wordDatabase = {
         { word: 'You made my day', phonetic: '/juː meɪd maɪ deɪ/', homophone: '优梅德麦戴', meaning: '你让我很开心', sentence: 'You made my day!', translation: '你让我很开心！', homophoneSentence: '优梅德麦戴!' },
         { word: 'That\'s very kind of you', phonetic: '/ðæts ˈveri kaɪnd əv juː/', homophone: '泽茨维里坎德啊夫油', meaning: '你真是太好了', sentence: 'That\'s very kind of you.', translation: '你真是太好了。', homophoneSentence: '泽茨维里坎德啊夫油.' },
         { word: 'You shouldn\'t have', phonetic: '/juː ˈʃʊdnt hæv/', homophone: '优休登特海夫', meaning: '你太客气了', sentence: 'You shouldn\'t have!', translation: '你太客气了！', homophoneSentence: '优休登特海夫!' },
-        { word: 'It\'s the thought that counts', phonetic: '/ɪts ðə θɔːt ðæt kaʊnts/', homophone: '伊茨泽索特泽特康茨', meaning: '心意最重要', sentence: 'It\'s the thought that counts.', translation: '心意最重要。', homophoneSentence: '伊茨泽索特泽特康茨.' }
-    ]
+        { word: 'It\'s the thought that counts', phonetic: '/ɪts ðə θɔːt ðæt kaʊnts/', homophone: '伊茨泽索特泽特康茨', meaning: '心意最重要', sentence: 'It\'s the thought that counts.', translation: '心意最重要。', homophoneSentence: '伊茨泽索特泽特康茨.' },
+        { word: 'I am proud of you', phonetic: '/aɪ æm praʊd əv juː/', homophone: '爱阿姆普劳德阿乌油', meaning: '我为你感到骄傲', sentence: 'I am proud of you!', translation: '我为你感到骄傲！', homophoneSentence: '爱阿姆普劳德阿乌油!' },
+        { word: 'I am ashamed of you', phonetic: '/aɪ æm əˈʃeɪmd əv juː/', homophone: '爱阿姆阿舍姆德阿乌油', meaning: '我为你感到羞耻', sentence: 'I am ashamed of you!', translation: '我为你感到羞耻！', homophoneSentence: '爱阿姆阿舍姆德阿乌油!' },
+        { word: 'I am jealous of you', phonetic: '/aɪ æm ˈdʒeləs əv juː/', homophone: '爱阿姆杰勒斯阿乌油', meaning: '我嫉妒你', sentence: 'I am jealous of you!', translation: '我嫉妒你！', homophoneSentence: '爱阿姆杰勒斯阿乌油!' },
+        { word: 'I am envious of you', phonetic: '/aɪ æm ˈenviəs əv juː/', homophone: '爱阿姆恩维阿乌油', meaning: '我羡慕你', sentence: 'I am envious of you!', translation: '我羡慕你！', homophoneSentence: '爱阿姆恩维阿乌油!' },
+        { word: 'I am afraid of you', phonetic: '/aɪ æm əˈfreɪd əv juː/', homophone: '爱阿姆阿弗雷德阿乌油', meaning: '我害怕你', sentence: 'I am afraid of you!', translation: '我害怕你！', homophoneSentence: '爱阿姆阿弗雷德阿乌油!' },
+        { word: 'I am scared of you', phonetic: '/aɪ æm skeəd əv juː/', homophone: '爱阿姆斯凯德阿乌油', meaning: '我害怕你', sentence: 'I am scared of you!', translation: '我害怕你！', homophoneSentence: '爱阿姆斯凯德阿乌油!' },
+        { word: 'I am tired of you', phonetic: '/aɪ æm ˈtaɪəd əv juː/', homophone: '爱阿姆泰尔德阿乌油', meaning: '我厌倦你', sentence: 'I am tired of you!', translation: '我厌倦你！', homophoneSentence: '爱阿姆泰尔德阿乌油!' },
+
+        { word: 'I am sick of you', phonetic: '/aɪ æm sɪk əv juː/', homophone: '爱阿姆西克阿乌油', meaning: '我讨厌你', sentence: 'I am sick of you!', translation: '我讨厌你！', homophoneSentence: '爱阿姆西克阿乌油!' },
+
+        { word: 'I am fond of you', phonetic: '/aɪ æm fɒnd əv juː/', homophone: '爱阿姆方德阿乌油', meaning: '我喜欢你', sentence: 'I am fond of you!', translation: '我喜欢你！', homophoneSentence: '爱阿姆方德阿乌油!' },
+
+        { word: 'I am crazy about you', phonetic: '/aɪ æm ˈkreɪzi əˈbaʊt juː/', homophone: '爱阿姆克雷齐阿鲍特油', meaning: '我为你疯狂', sentence: 'I am crazy about you!', translation: '我为你疯狂！', homophoneSentence: '爱阿姆克雷齐阿鲍特油!' },
+
+        { word: 'I am obsessed with you', phonetic: '/aɪ æm əbˈsesd wɪð juː/', homophone: '爱阿姆阿博塞斯德威兹油', meaning: '我迷恋你', sentence: 'I am obsessed with you!', translation: '我迷恋你！', homophoneSentence: '爱阿姆阿博塞斯德威兹油!' },
+
+        { word: 'I am in love with you', phonetic: '/aɪ æm ɪn lʌv wɪð juː/', homophone: '爱阿姆因拉乌威兹油', meaning: '我爱上你了', sentence: 'I am in love with you!', translation: '我爱上你了！', homophoneSentence: '爱阿姆因拉乌威兹油!' },
+
+        { word: "Nevertheless", phonetic: "/ˌnevəðəˈles/", homophone: "内弗泽莱斯", meaning: "尽管如此", sentence: "Nevertheless, we must try.", translation: "尽管如此，我们必须尝试。", homophoneSentence: "内弗泽莱斯威马斯特吹." },
+
+        { word: "Nonetheless", phonetic: "/ˌnʌnðəˈles/", homophone: "农泽莱斯", meaning: "尽管如此", sentence: "It was raining; nonetheless, we went out.", translation: "天在下雨；尽管如此，我们还是出去了。", homophoneSentence: "伊特沃兹瑞宁农泽莱斯威温特奥特." },
+
+        { word: "Notwithstanding", phonetic: "/ˌnɒtwɪθˈstændɪŋ/", homophone: "诺特威斯斯坦丁", meaning: "尽管", sentence: "Notwithstanding the difficulties, we succeeded.", translation: "尽管有困难，我们还是成功了。", homophoneSentence: "诺特威斯斯坦丁泽迪菲库尔提斯威瑟克西迪德." },
+
+        { word: "Whereas", phonetic: "/ˌweərˈæz/", homophone: "威尔阿兹", meaning: "然而", sentence: "He is tall, whereas she is short.", translation: "他很高，然而她很矮。", homophoneSentence: "希is托尔威尔阿兹希is肖特." },
+
+        { word: "Whilst", phonetic: "/waɪlst/", homophone: "歪尔斯特", meaning: "当...时", sentence: "Whilst I was waiting, I read a book.", translation: "当我在等待时，我读了一本书。", homophoneSentence: "歪尔斯特艾沃兹威特英艾瑞德啊布克." },
+
+        { word: "Provided that", phonetic: "/prəˈvaɪdɪd ðæt/", homophone: "普罗歪迪德戴特", meaning: "假如", sentence: "I will go, provided that you come too.", translation: "假如你也来，我就去。", homophoneSentence: "艾威尔勾普罗歪迪德戴特优卡姆图." },
+
+        { word: "Given that", phonetic: "/ˈɡɪvn ðæt/", homophone: "吉文戴特", meaning: "鉴于", sentence: "Given that it's late, we should leave.", translation: "鉴于很晚了，我们应该离开。", homophoneSentence: "吉文戴特伊茨莱特威舒德利夫." },
+
+        { word: "Assuming that", phonetic: "/əˈsjuːmɪŋ ðæt/", homophone: "阿休明戴特", meaning: "假设", sentence: "Assuming that he agrees, we can start.", translation: "假设他同意，我们可以开始。", homophoneSentence: "阿休明戴特希阿格瑞斯威肯斯塔特." },
+
+        { word: "Supposing that", phonetic: "/səˈpəʊzɪŋ ðæt/", homophone: "瑟波津戴特", meaning: "假设", sentence: "Supposing that it rains, what will we do?", translation: "假设下雨，我们会做什么？", homophoneSentence: "瑟波津戴特伊特瑞恩兹沃特威尔威杜?" },
+
+        { word: "Inasmuch as", phonetic: "/ˌɪnəzˈmʌtʃ æz/", homophone: "伊纳兹马奇艾兹", meaning: "因为", sentence: "Inasmuch as you are busy, I will leave.", translation: "因为你很忙，我要走了。", homophoneSentence: "伊纳兹马奇艾兹优啊比兹艾威利夫." },
+
+        { word: "Insofar as", phonetic: "/ˌɪnsəʊˈfɑːr æz/", homophone: "因索法艾兹", meaning: "就...而言", sentence: "Insofar as I know, he is honest.", translation: "就我所知，他是诚实的。", homophoneSentence: "因索法艾兹艾诺希is奥尼斯特." },
+
+        { word: "To the extent that", phonetic: "/tuː ði ɪkˈstent ðæt/", homophone: "图泽伊克斯滕特戴特", meaning: "在...程度上", sentence: "To the extent that he tried, he succeeded.", translation: "在他尝试的程度上，他成功了。", homophoneSentence: "图泽伊克斯滕特戴特希吹德希瑟克西迪德." },
+
+        { word: "Be that as it may", phonetic: "/biː ðæt æz ɪt meɪ/", homophone: "比戴特艾兹伊特梅", meaning: "尽管如此", sentence: "Be that as it may, I still disagree.", translation: "尽管如此，我仍然不同意。", homophoneSentence: "比戴特艾兹伊特梅艾斯蒂尔迪斯阿格瑞." },
+
+        { word: "Come what may", phonetic: "/kʌm wɒt meɪ/", homophone: "卡姆沃特梅", meaning: "不管怎样", sentence: "Come what may, I will finish this project.", translation: "不管怎样，我会完成这个项目。", homophoneSentence: "卡姆沃特梅艾威尔菲尼什迪斯普若杰克特." },
+
+        { word: "Rain or shine", phonetic: "/reɪn ɔː ʃaɪn/", homophone: "瑞恩奥晒恩", meaning: "无论晴雨", sentence: "Rain or shine, the event will happen.", translation: "无论晴雨，活动都会举行。", homophoneSentence: "瑞恩奥晒恩泽伊文特威尔海潘." },
+
+        { word: "Sink or swim", phonetic: "/sɪŋk ɔː swɪm/", homophone: "辛克奥斯威姆", meaning: "成败在此一举", sentence: "It's sink or swim for the new company.", translation: "对新公司来说是成败在此一举。", homophoneSentence: "伊茨辛克奥斯威姆佛泽纽康帕尼." },
+
+        { word: "Make or break", phonetic: "/meɪk ɔː breɪk/", homophone: "梅克奥布雷克", meaning: "成败关键", sentence: "This deal is make or break for us.", translation: "这笔交易是我们的成败关键。", homophoneSentence: "迪斯迪利斯梅克奥布雷克佛阿斯." },
+
+        { word: "Do or die", phonetic: "/duː ɔː daɪ/", homophone: "杜奥戴", meaning: "决一死战", sentence: "It was a do or die situation.", translation: "这是一个决一死战的情况。", homophoneSentence: "伊特沃兹啊杜奥戴西图埃申." },
+
+        { word: "Now or never", phonetic: "/naʊ ɔː ˈnevə/", homophone: "瑙奥内弗", meaning: "机不可失", sentence: "It's now or never - take the chance!", translation: "机不可失 - 抓住这个机会！", homophoneSentence: "伊茨瑙奥内弗泰克泽昌斯!" },
+
+        { word: "All or nothing", phonetic: "/ɔːl ɔː ˈnʌθɪŋ/", homophone: "奥尔奥纳辛", meaning: "孤注一掷", sentence: "He played all or nothing.", translation: "他孤注一掷。", homophoneSentence: "希普莱德奥尔奥纳辛." },
+
+        { word: "Take it or leave it", phonetic: "/teɪk ɪt ɔː liːv ɪt/", homophone: "泰克伊特奥利夫伊特", meaning: "要么接受要么放弃", sentence: "That's my final offer - take it or leave it.", translation: "这是我的最终报价 - 要么接受要么放弃。", homophoneSentence: "戴茨迈法伊诺尔奥弗泰克伊特奥利夫伊特." },
+
+        { word: "Believe it or not", phonetic: "/bɪˈliːv ɪt ɔː nɒt/", homophone: "比利夫伊特奥诺特", meaning: "信不信由你", sentence: "Believe it or not, I won the lottery.", translation: "信不信由你，我中了彩票。", homophoneSentence: "比利夫伊特奥诺特艾万泽洛特里." },
+
+        { word: "Like it or not", phonetic: "/laɪk ɪt ɔː nɒt/", homophone: "莱克伊特奥诺特", meaning: "不管你喜不喜欢", sentence: "Like it or not, we have to finish.", translation: "不管你喜不喜欢，我们必须完成。", homophoneSentence: "莱克伊特奥诺特威海夫图菲尼什." },
+
+        { word: "Willingly or unwillingly", phonetic: "/ˈwɪlɪŋli ɔːr ʌnˈwɪlɪŋli/", homophone: "威林利奥昂威林利", meaning: "愿意或不愿意", sentence: "Willingly or unwillingly, he had to agree.", translation: "愿意或不愿意，他不得不同意。", homophoneSentence: "威林利奥昂威林利希海德图阿格瑞." },
+
+        { word: "Sooner or later", phonetic: "/ˈsuːnə ɔː ˈleɪtə/", homophone: "苏纳奥莱特", meaning: "迟早", sentence: "Sooner or later, the truth will come out.", translation: "迟早，真相会大白。", homophoneSentence: "苏纳奥莱特泽特鲁斯威尔卡姆奥特." },
+
+        { word: "Sooner rather than later", phonetic: "/ˈsuːnə ˈrɑːðə ðæn ˈleɪtə/", homophone: "苏纳拉泽戴恩莱特", meaning: "越早越好", sentence: "We should do this sooner rather than later.", translation: "我们应该越早做这件事越好。", homophoneSentence: "威舒德杜迪斯苏纳拉泽戴恩莱特." },
+
+        { word: "Better late than never", phonetic: "/ˈbetə leɪt ðæn ˈnevə/", homophone: "贝特莱特戴恩内弗", meaning: "迟做总比不做好", sentence: "He finally apologized - better late than never.", translation: "他终于道歉了 - 迟做总比不做好。", homophoneSentence: "希法伊纳利阿波勒吉兹德贝特莱特戴恩内弗." },
+
+        { word: "Better safe than sorry", phonetic: "/ˈbetə seɪf ðæn ˈsɒri/", homophone: "贝特塞夫戴恩索瑞", meaning: "小心驶得万年船", sentence: "Take an umbrella - better safe than sorry.", translation: "带把伞 - 小心驶得万年船。", homophoneSentence: "泰克安昂布雷拉贝特塞夫戴恩索瑞." },
+
+        { word: "Prevention is better than cure", phonetic: "/prɪˈvenʃn ɪz ˈbetə ðæn kjʊə/", homophone: "普瑞文申is贝特戴恩丘尔", meaning: "预防胜于治疗", sentence: "Remember: prevention is better than cure.", translation: "记住：预防胜于治疗。", homophoneSentence: "瑞门伯普瑞文申is贝特戴恩丘尔." },
+
+        { word: "Actions speak louder than words", phonetic: "/ˈækʃnz spiːk ˈlaʊdə ðæn wɜːdz/", homophone: "阿克申斯斯比克劳德戴恩沃德兹", meaning: "行动胜于言语", sentence: "Actions speak louder than words.", translation: "行动胜于言语。", homophoneSentence: "阿克申斯斯比克劳德戴恩沃德兹." },
+
+        { word: "A friend in need is a friend indeed", phonetic: "/ə frend ɪn niːd ɪz ə frend ɪnˈdiːd/", homophone: "啊弗伦德因尼迪斯啊弗伦德因迪德", meaning: "患难见真情", sentence: "A friend in need is a friend indeed.", translation: "患难见真情。", homophoneSentence: "啊弗伦德因尼迪斯啊弗伦德因迪德." },
+
+        { word: "All that glitters is not gold", phonetic: "/ɔːl ðæt ˈɡlɪtəz ɪz nɒt ɡəʊld/", homophone: "奥尔戴特格利特斯is诺特勾德", meaning: "闪光的未必都是金子", sentence: "All that glitters is not gold.", translation: "闪光的未必都是金子。", homophoneSentence: "奥尔戴特格利特斯is诺特勾德." },
+
+        { word: "Don't count your chickens before they hatch", phonetic: "/dəʊnt kaʊnt jɔː ˈtʃɪkɪnz bɪˈfɔː ðeɪ hætʃ/", homophone: "东特康特约奇肯斯比佛德伊哈奇", meaning: "不要过早乐观", sentence: "Don't count your chickens before they hatch.", translation: "不要过早乐观。", homophoneSentence: "东特康特约奇肯斯比佛德伊哈奇." },
+
+        { word: "Honesty is the best policy", phonetic: "/ˈɒnɪsti ɪz ðə best ˈpɒləsi/", homophone: "奥尼斯蒂is泽贝斯特波利西", meaning: "诚实是最好的策略", sentence: "Honesty is the best policy.", translation: "诚实是最好的策略。", homophoneSentence: "奥尼斯蒂is泽贝斯特波利西." },
+
+        { word: "The early bird catches the worm", phonetic: "/ði ˈɜːli bɜːd ˈkætʃɪz ðə wɜːm/", homophone: "泽厄利伯德凯奇泽沃姆", meaning: "早起的鸟儿有虫吃", sentence: "The early bird catches the worm.", translation: "早起的鸟儿有虫吃。", homophoneSentence: "泽厄利伯德凯奇泽沃姆." },
+
+        { word: "When in Rome, do as the Romans do", phonetic: "/wen ɪn rəʊm duː æz ðə ˈrəʊmənz duː/", homophone: "温因柔姆杜艾兹泽柔门兹杜", meaning: "入乡随俗", sentence: "When in Rome, do as the Romans do.", translation: "入乡随俗。", homophoneSentence: "温因柔姆杜艾兹泽柔门兹杜." },
+
+        { word: "Where there's a will, there's a way", phonetic: "/weər ðeəz ə wɪl ðeəz ə weɪ/", homophone: "威尔德尔兹啊威尔德尔兹啊威", meaning: "有志者事竟成", sentence: "Where there's a will, there's a way.", translation: "有志者事竟成。", homophoneSentence: "威尔德尔兹啊威尔德尔兹啊威." },
+
+        { word: "You can't have your cake and eat it", phonetic: "/juː kɑːnt hæv jɔː keɪk ænd iːt ɪt/", homophone: "优康特哈夫约凯克安迪特伊特", meaning: "鱼与熊掌不可兼得", sentence: "You can't have your cake and eat it.", translation: "鱼与熊掌不可兼得。", homophoneSentence: "优康特哈夫约凯克安迪特伊特." },
+
+        { word: "A penny for your thoughts", phonetic: "/ə ˈpeni fɔː jɔː θɔːts/", homophone: "啊佩尼佛约索茨", meaning: "你在想什么", sentence: "A penny for your thoughts?", translation: "你在想什么？", homophoneSentence: "啊佩尼佛约索茨?" },
+
+        { word: "Bite the bullet", phonetic: "/baɪt ðə ˈbʊlɪt/", homophone: "拜特泽布利特", meaning: "咬紧牙关", sentence: "I had to bite the bullet and tell her.", translation: "我不得不咬紧牙关告诉她。", homophoneSentence: "艾海德图拜特泽布利特安得泰尔赫尔." },
+
+        { word: "Call it a day", phonetic: "/kɔːl ɪt ə deɪ/", homophone: "科尔伊特啊戴", meaning: "收工", sentence: "Let's call it a day and go home.", translation: "我们收工回家吧。", homophoneSentence: "莱茨科尔伊特啊戴安得勾侯姆." },
+
+        { word: "Cut corners", phonetic: "/kʌt ˈkɔːnəz/", homophone: "卡特科纳兹", meaning: "偷工减料", sentence: "Don't cut corners on this project.", translation: "不要在这个项目上偷工减料。", homophoneSentence: "东特卡特科纳兹昂迪斯普若杰克特." },
+
+        { word: "Cutting edge", phonetic: "/ˈkʌtɪŋ edʒ/", homophone: "卡廷艾吉", meaning: "尖端", sentence: "This technology is cutting edge.", translation: "这项技术是尖端的。", homophoneSentence: "迪斯特克诺洛吉is卡廷艾吉." },
+
+        { word: "Get out of hand", phonetic: "/ɡet aʊt əv hænd/", homophone: "盖特奥特奥夫汉德", meaning: "失控", sentence: "The situation got out of hand.", translation: "情况失控了。", homophoneSentence: "泽西图埃申盖特奥特奥夫汉德." },
+
+        { word: "Get something out of your system", phonetic: "/ɡet ˈsʌmθɪŋ aʊt əv jɔː ˈsɪstəm/", homophone: "盖特萨姆辛奥特奥夫约西斯特姆", meaning: "发泄", sentence: "Go ahead and get it out of your system.", translation: "去吧，发泄出来。", homophoneSentence: "勾阿赫德安得盖特伊特奥特奥夫约西斯特姆." },
+
+        { word: "Give someone the benefit of the doubt", phonetic: "/ɡɪv ˈsʌmwʌn ðə ˈbenɪfɪt əv ðə daʊt/", homophone: "吉夫萨姆万泽贝尼菲特奥夫泽道特", meaning: "姑且相信", sentence: "I'll give him the benefit of the doubt.", translation: "我姑且相信他。", homophoneSentence: "艾尔吉夫伊姆泽贝尼菲特奥夫泽道特." },
+
+        { word: "Go back to the drawing board", phonetic: "/ɡəʊ bæk tuː ðə ˈdrɔːɪŋ bɔːd/", homophone: "勾拜克图泽德若英博德", meaning: "从头再来", sentence: "We need to go back to the drawing board.", translation: "我们需要从头再来。", homophoneSentence: "威尼德图勾拜克图泽德若英博德." },
+
+        { word: "Hit the sack", phonetic: "/hɪt ðə sæk/", homophone: "希特泽萨克", meaning: "睡觉", sentence: "I'm tired - I'm going to hit the sack.", translation: "我累了 - 我要去睡觉了。", homophoneSentence: "艾姆泰尔德艾姆勾英图希特泽萨克." },
+
+        { word: "It's not rocket science", phonetic: "/ɪts nɒt ˈrɒkɪt ˈsaɪəns/", homophone: "伊茨诺特罗基特赛恩斯", meaning: "不是难事", sentence: "Come on, it's not rocket science!", translation: "来吧，这不是什么难事！", homophoneSentence: "卡姆昂伊茨诺特罗基特赛恩斯!" },
+
+        { word: "Let someone off the hook", phonetic: "/let ˈsʌmwʌn ɒf ðə hʊk/", homophone: "莱特萨姆万奥夫泽胡克", meaning: "放某人一马", sentence: "I'll let you off the hook this time.", translation: "这次我放你一马。", homophoneSentence: "艾尔莱特优奥夫泽胡克迪斯泰姆." },
+
+        { word: "Make a long story short", phonetic: "/meɪk ə lɒŋ ˈstɔːri ʃɔːt/", homophone: "梅克啊朗斯托瑞肖特", meaning: "长话短说", sentence: "To make a long story short, we won.", translation: "长话短说，我们赢了。", homophoneSentence: "图梅克啊朗斯托瑞肖特威万." },
+
+        { word: "Miss the boat", phonetic: "/mɪs ðə bəʊt/", homophone: "密斯泽波特", meaning: "错失良机", sentence: "Don't miss the boat - apply now!", translation: "不要错失良机 - 现在就申请！", homophoneSentence: "东特密斯泽波特阿普莱瑙!" },
+
+        { word: "No pain, no gain", phonetic: "/nəʊ peɪn nəʊ ɡeɪn/", homophone: "诺佩恩诺盖恩", meaning: "不劳无获", sentence: "No pain, no gain - you have to work hard.", translation: "不劳无获 - 你必须努力工作。", homophoneSentence: "诺佩恩诺盖恩优海夫图沃克哈德." },
+
+        { word: "On the ball", phonetic: "/ɒn ðə bɔːl/", homophone: "昂泽波尔", meaning: "机警", sentence: "He's really on the ball at work.", translation: "他在工作中真的很机警。", homophoneSentence: "希兹瑞利昂泽波尔艾特沃克." },
+
+        { word: "Pull someone's leg", phonetic: "/pʊl ˈsʌmwʌnz leɡ/", homophone: "普尔萨姆万兹莱格", meaning: "开玩笑", sentence: "Are you pulling my leg?", translation: "你在开玩笑吗？", homophoneSentence: "啊优普尔英迈莱格?" },
+
+        { word: "Pull yourself together", phonetic: "/pʊl jɔːˈself təˈɡeðə/", homophone: "普尔约塞尔夫图盖德尔", meaning: "振作起来", sentence: "Pull yourself together - you can do this!", translation: "振作起来 - 你能做到的！", homophoneSentence: "普尔约塞尔夫图盖德尔优肯杜迪斯!" },
+
+        { word: "So far so good", phonetic: "/səʊ fɑː səʊ ɡʊd/", homophone: "索法索古德", meaning: "到目前为止一切顺利", sentence: "So far so good - no problems yet.", translation: "到目前为止一切顺利 - 还没有问题。", homophoneSentence: "索法索古德诺普罗布勒姆兹耶特." },
+
+        { word: "Speak of the devil", phonetic: "/spiːk əv ðə ˈdevl/", homophone: "斯比克奥夫泽戴弗欧", meaning: "说曹操曹操到", sentence: "Speak of the devil, we were just talking about you!", translation: "说曹操曹操到，我们正说起你呢！", homophoneSentence: "斯比克奥夫泽戴弗欧威沃朱斯特托克英啊鲍特优!" },
+
+        { word: "That's the last straw", phonetic: "/ðæts ðə lɑːst strɔː/", homophone: "戴茨泽拉斯特斯特若", meaning: "忍无可忍", sentence: "That's the last straw - I'm leaving!", translation: "忍无可忍 - 我要走了！", homophoneSentence: "戴茨泽拉斯特斯特若艾姆利夫英!" },
+
+        { word: "The best of both worlds", phonetic: "/ðə best əv bəʊθ wɜːldz/", homophone: "泽贝斯特奥夫博斯沃尔兹", meaning: "两全其美", sentence: "This job offers the best of both worlds.", translation: "这份工作两全其美。", homophoneSentence: "迪斯卓布奥弗斯泽贝斯特奥夫博斯沃尔兹." },
+
+        { word: "Time flies when you're having fun", phonetic: "/taɪm flaɪz wen jʊə ˈhævɪŋ fʌn/", homophone: "泰姆弗莱兹温优哈文范", meaning: "欢乐时光飞逝", sentence: "Time flies when you're having fun.", translation: "欢乐时光飞逝。", homophoneSentence: "泰姆弗莱兹温优哈文范." },
+
+        { word: "To get bent out of shape", phonetic: "/tuː ɡet bent aʊt əv ʃeɪp/", homophone: "图盖特本特奥特奥夫谢普", meaning: "生气", sentence: "Don't get bent out of shape over it.", translation: "不要为此生气。", homophoneSentence: "东特盖特本特奥特奥夫谢普欧弗伊特." },
+
+        { word: "To make matters worse", phonetic: "/tuː meɪk ˈmætəz wɜːs/", homophone: "图梅克马特尔兹沃斯", meaning: "雪上加霜", sentence: "To make matters worse, it started raining.", translation: "雪上加霜的是，开始下雨了。", homophoneSentence: "图梅克马特尔兹沃斯伊特斯塔尔提德瑞宁." },
+
+        { word: "Under the weather", phonetic: "/ˈʌndə ðə ˈweðə/", homophone: "昂德泽韦德尔", meaning: "身体不适", sentence: "I'm feeling under the weather today.", translation: "我今天感觉身体不适。", homophoneSentence: "艾姆菲林昂德泽韦德尔特得." },
+
+        { word: "We'll cross that bridge when we come to it", phonetic: "/wiːl krɒs ðæt brɪdʒ wen wiː kʌm tuː ɪt/", homophone: "威尔克罗斯戴特布里吉温威卡姆图伊特", meaning: "船到桥头自然直", sentence: "We'll cross that bridge when we come to it.", translation: "船到桥头自然直。", homophoneSentence: "威尔克罗斯戴特布里吉温威卡姆图伊特." },
+
+        { word: "Wrap your head around something", phonetic: "/ræp jɔː hed əˈraʊnd ˈsʌmθɪŋ/", homophone: "拉普约海德阿朗德萨姆辛", meaning: "理解", sentence: "I can't wrap my head around this concept.", translation: "我无法理解这个概念。", homophoneSentence: "艾康特拉普迈海德阿朗德迪斯康塞普特." },
+]
 };
 
 // Test modification
