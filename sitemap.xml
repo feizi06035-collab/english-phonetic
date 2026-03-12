@@ -11,16 +11,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/What</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/My%20name%20is</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -36,27 +26,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/How%20old%20are%20you</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/What%20do%20you%20do</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -67,16 +42,6 @@
   </url>
   <url>
     <loc>https://english-phonetic.example.com/word/Yes%2C%20I%20do</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/No%2C%20I%20don</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/What</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -101,27 +66,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Where%20are%20you%20going</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/When%20are%20you%20coming%20back</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -141,22 +91,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/You</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Excuse%20me</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/That</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -201,17 +136,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/How</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Long%20time%20no%20see</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/What</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -226,27 +151,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Do%20you%20speak%20English</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Yes%2C%20I%20do</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/No%2C%20I%20don</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I%20don</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -282,11 +187,6 @@
   </url>
   <url>
     <loc>https://english-phonetic.example.com/word/I%20disagree</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/That</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -337,21 +237,6 @@
   </url>
   <url>
     <loc>https://english-phonetic.example.com/word/No%20problem</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Alright</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Okay</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Fine</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -446,11 +331,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/It%5C</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Welcome</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -501,11 +381,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/Follow%20me</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Right%20this%20way</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -541,42 +416,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/That%5C</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I%5C</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I%5C</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Let%20me%20think</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/I%5C</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I%5C</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/I%20have%20no%20idea</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I%20don%5C</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -596,11 +441,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/More%20or%20less</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Hows%20family</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -611,52 +451,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/Kind%20of</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Not%20really</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Not%20exactly</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Not%20quite</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Almost</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Nearly</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Practically</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Basically</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Essentially</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/In%20a%20way</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -687,11 +482,6 @@
   </url>
   <url>
     <loc>https://english-phonetic.example.com/word/For%20the%20most%20part</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/As%20a%20rule</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -792,11 +582,6 @@
   </url>
   <url>
     <loc>https://english-phonetic.example.com/word/Monologue</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Soliloquy</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -966,11 +751,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/Triviality</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Nuance</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1056,11 +836,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/Fable</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Anecdote</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1126,11 +901,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Could%20you%20clarify</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1151,11 +921,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/So%20what%20you</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/In%20other%20words</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1171,32 +936,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/The%20point%20I</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/That</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/Let%20me%20think%20about%20that</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/That</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1207,21 +947,6 @@
   </url>
   <url>
     <loc>https://english-phonetic.example.com/word/On%20a%20side%20note</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/That</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/That</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1242,16 +967,6 @@
   </url>
   <url>
     <loc>https://english-phonetic.example.com/word/It%20could%20happen%20to%20anyone</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Don</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/I%20couldn</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20576,11 +20291,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://english-phonetic.example.com/word/What%20is%20today</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://english-phonetic.example.com/word/What%20month%20is%20this</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -23347,11 +23057,6 @@
   </url>
   <url>
     <loc>https://english-phonetic.example.com/word/Contribute%20to%20others</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://english-phonetic.example.com/word/Make%20a%20difference%20in%20someone</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
