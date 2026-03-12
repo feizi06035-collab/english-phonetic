@@ -1,0 +1,22 @@
+{
+  "name": "english-phonetic",
+  "version": "1.0.0",
+  "description": "英语单词学习网站",
+  "main": "index.html",
+  "scripts": {
+    "sync": "node auto-sync.js",
+    "start": "npx http-server -p 8080 -o",
+    "dev": "npx http-server -p 8080 -o"
+  },
+  "keywords": [
+    "english",
+    "phonetic",
+    "vocabulary",
+    "learning"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
